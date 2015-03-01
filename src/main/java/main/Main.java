@@ -12,10 +12,17 @@ import static spark.Spark.staticFileLocation;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
-        setPort(8080);
         staticFileLocation("/static_files");
         new GitRoute().setup();
         new JetbrainsRoute().setup();
         new IndexRoute().setup();
+    }
+
+    public void setupPort() {
+        String port = System.getenv("PORT");
+        if(port == null || port.isEmpty()) {
+            port = "8080";
+        }
+        setPort(Integer.valueOf(port));
     }
 }
