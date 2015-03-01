@@ -4,6 +4,7 @@ import routes.debian.DebianRoute;
 import routes.git.GitRoute;
 import routes.index.IndexRoute;
 import routes.jetbrains.JetbrainsRoute;
+import routes.subversion.SubversionRoute;
 
 import java.io.FileNotFoundException;
 
@@ -30,6 +31,7 @@ public class Main {
         new GitRoute().setup();
         new JetbrainsRoute().setup();
         new DebianRoute().setup();
+        new SubversionRoute().setup();
         new IndexRoute().setup();
     }
 }

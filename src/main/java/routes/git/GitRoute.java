@@ -15,7 +15,7 @@ public class GitRoute implements Route {
         get("/git", (request, response) -> {
             response.type("application/json");
             Map<String, String> result = new HashMap<String, String>();
-            result.put("version", new GitVersionParser().parseVersion());
+            result.put("git", new GitVersionParser().parseVersion());
             return new Gson().toJson(result);
         });
     }

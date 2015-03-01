@@ -1,7 +1,7 @@
-package routes.debian;
+package routes.subversion;
 
 import com.google.gson.Gson;
-import parsers.debian.DebianVersionParser;
+import parsers.subversion.SubversionVersionParser;
 import routes.Route;
 
 import java.util.HashMap;
@@ -9,14 +9,14 @@ import java.util.Map;
 
 import static spark.Spark.get;
 
-public class DebianRoute implements Route {
+public class SubversionRoute implements Route {
 
     @Override
     public void setup() {
-        get("/debian", (request, response) -> {
+        get("/subversion", (request, response) -> {
             response.type("application/json");
             Map<String, String> result = new HashMap<String, String>();
-            result.put("debian", new DebianVersionParser().parseVersion());
+            result.put("subversion", new SubversionVersionParser().parseVersion());
             return new Gson().toJson(result);
         });
     }
