@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <log4j.version>2.0</log4j.version>
         <sparkjava.version>2.0.0</sparkjava.version>
         <junit.version>4.11</junit.version>
