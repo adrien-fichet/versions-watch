@@ -10,7 +10,7 @@ public class JetbrainsVersionParserTest {
 
     @Before
     public void setup() throws Exception {
-        String documentOrigin = this.getClass().getResource("/parsers/jetbrains/version.js").getPath();
+        String documentOrigin = getClass().getResource("/parsers/jetbrains/version.js").getPath();
         jetbrainsVersionParser = new FakeJetbrainsVersionParser(documentOrigin);
     }
 

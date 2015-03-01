@@ -8,7 +8,7 @@ public class GitVersionParserTest {
 
     @Test
     public void testParseVersion() throws Exception {
-        String documentOrigin = this.getClass().getResource("/parsers/git/Git.html").getPath();
+        String documentOrigin = getClass().getResource("/parsers/git/Git.html").getPath();
         GitVersionParser gitVersionParser = new FakeGitVersionParser(documentOrigin);
         assertEquals("2.3.1", gitVersionParser.parseVersion());
     }

@@ -1,5 +1,6 @@
 package main;
 
+import routes.debian.DebianRoute;
 import routes.git.GitRoute;
 import routes.index.IndexRoute;
 import routes.jetbrains.JetbrainsRoute;
@@ -12,11 +13,9 @@ import static spark.Spark.staticFileLocation;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
-        setupPort();
         staticFileLocation("/static_files");
-        new GitRoute().setup();
-        new JetbrainsRoute().setup();
-        new IndexRoute().setup();
+        setupPort();
+        setupRoutes();
     }
 
     public static void setupPort() {
@@ -25,5 +24,12 @@ public class Main {
             port = "8080";
         }
         setPort(Integer.valueOf(port));
+    }
+
+    private static void setupRoutes() {
+        new GitRoute().setup();
+        new JetbrainsRoute().setup();
+        new DebianRoute().setup();
+        new IndexRoute().setup();
     }
 }
