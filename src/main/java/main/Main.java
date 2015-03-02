@@ -1,15 +1,18 @@
 package main;
 
-import routes.debian.DebianRoute;
-import routes.git.GitRoute;
-import routes.index.IndexRoute;
-import routes.jetbrains.JetbrainsRoute;
-import routes.subversion.SubversionRoute;
+import parsers.debian.DebianVersionParser;
+import parsers.git.GitVersionParser;
+import parsers.jetbrains.JetbrainsVersionsParser;
+import parsers.jetbrains.idea.IdeaVersionParser;
+import parsers.jetbrains.youtrack.YoutrackVersionParser;
+import parsers.subversion.SubversionVersionParser;
+import routes.Route;
+import spark.ModelAndView;
+import spark.template.mustache.MustacheTemplateEngine;
 
 import java.io.FileNotFoundException;
 
-import static spark.Spark.setPort;
-import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
 
 public class Main {
 
@@ -28,10 +31,12 @@ public class Main {
     }
 
     private static void setupRoutes() {
-        new GitRoute().setup();
-        new JetbrainsRoute().setup();
-        new DebianRoute().setup();
-        new SubversionRoute().setup();
-        new IndexRoute().setup();
+        JetbrainsVersionsParser jetbrainsVersionsParser = new JetbrainsVersionsParser();
+        new Route("git", new GitVersionParser()).setup();
+        new Route("debian", new DebianVersionParser()).setup();
+        new Route("subversion", new SubversionVersionParser()).setup();
+        new Route("youtrack", new YoutrackVersionParser(jetbrainsVersionsParser)).setup();
+        new Route("idea", new IdeaVersionParser(jetbrainsVersionsParser)).setup();
+        get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
