@@ -11,6 +11,6 @@ td, th {
   padding: 0px 10px 0px 10px;
 }
 
-th {
+th, .icon {
   text-align: center;
 }
