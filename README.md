@@ -1,6 +1,11 @@
 [![Build Status](https://api.travis-ci.org/sniksnp/versions-watch.svg?branch=master)](https://travis-ci.org/sniksnp/versions-watch)
 
 ### TODO
+- [x] debian
+- [x] git
+- [x] subversion
+- [x] youtrack
+- [x] intellij idea
 - [ ] mysql
 - [ ] jbehave
 - [ ] eclipse
@@ -31,6 +36,9 @@
 - [ ] logstash-forwarder
 - [ ] nagios
 - [ ] cobertura
+- [ ] gatling
+- [ ] scala
+- [ ] selenium
 
 ### Ideas
 - item categories (IDE, libraries, etc.)
