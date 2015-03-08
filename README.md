@@ -6,6 +6,7 @@
 - [x] subversion
 - [x] youtrack
 - [x] intellij idea
+- [x] apache
 - [ ] mysql
 - [ ] jbehave
 - [ ] eclipse
@@ -27,7 +28,6 @@
 - [ ] ubuntu
 - [ ] openssl
 - [ ] openssh
-- [ ] apache
 - [ ] nginx
 - [ ] zabbix
 - [ ] elasticsearch

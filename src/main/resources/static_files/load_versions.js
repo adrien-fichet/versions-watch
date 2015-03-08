@@ -1,5 +1,5 @@
 $(function() {
-  var versions = ['git', 'debian', 'subversion', 'youtrack', 'idea'];
+  var versions = ['git', 'debian', 'subversion', 'apache', 'youtrack', 'idea'];
   createVersionTableRows(versions);
   loadVersions(versions, 0);
 });

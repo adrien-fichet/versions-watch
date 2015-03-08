@@ -1,5 +1,6 @@
 package main;
 
+import parsers.apache.ApacheVersionParser;
 import parsers.debian.DebianVersionParser;
 import parsers.git.GitVersionParser;
 import parsers.jetbrains.JetbrainsVersionsParser;
@@ -35,6 +36,7 @@ public class Main {
         new Route("git", new GitVersionParser()).setup();
         new Route("debian", new DebianVersionParser()).setup();
         new Route("subversion", new SubversionVersionParser()).setup();
+        new Route("apache", new ApacheVersionParser()).setup();
         new Route("youtrack", new YoutrackVersionParser(jetbrainsVersionsParser)).setup();
         new Route("idea", new IdeaVersionParser(jetbrainsVersionsParser)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
