@@ -6,6 +6,7 @@ import parsers.git.GitVersionParser;
 import parsers.jetbrains.JetbrainsVersionsParser;
 import parsers.jetbrains.idea.IdeaVersionParser;
 import parsers.jetbrains.youtrack.YoutrackVersionParser;
+import parsers.mysql.MysqlVersionParser;
 import parsers.subversion.SubversionVersionParser;
 import routes.Route;
 import spark.ModelAndView;
@@ -39,6 +40,7 @@ public class Main {
         new Route("apache", new ApacheVersionParser()).setup();
         new Route("youtrack", new YoutrackVersionParser(jetbrainsVersionsParser)).setup();
         new Route("idea", new IdeaVersionParser(jetbrainsVersionsParser)).setup();
+        new Route("mysql", new MysqlVersionParser()).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

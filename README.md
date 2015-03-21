@@ -7,7 +7,7 @@
 - [x] youtrack
 - [x] intellij idea
 - [x] apache
-- [ ] mysql
+- [x] mysql
 - [ ] jbehave
 - [ ] eclipse
 - [ ] jenkins
