@@ -1,12 +1,21 @@
 $(function() {
-  var versions = ['git', 'debian', 'subversion', 'apache', 'youtrack', 'idea', 'mysql', 'eclipse'];
-  createVersionTableRows(versions);
-  loadVersions(versions, 0);
+  var versions = [
+    {"category": "IDEs", "items": ['idea', 'eclipse']},
+    {"category": "SCMs", "items": ['git', 'subversion']},
+    {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql']}
+  ];
+  createVersionsTables(versions);
+  for (var i=0; i < versions.length; i++) {
+    loadVersions(versions[i].items, 0);
+  }
 });
 
-function createVersionTableRows(versions) {
+function createVersionsTables(versions) {
   for (var i=0; i < versions.length; i++) {
-    $('#versions').append(createVersionRow(versions[i]));
+    $('#content').append('<table id="' + versions[i].category + '"><tr><th colspan="3">' + versions[i].category + '</th></tr></table>');
+    for (var j=0; j < versions[i].items.length; j++) {
+      $('#' + versions[i].category).append(createVersionRow(versions[i].items[j]));
+    }
   }
 }
 

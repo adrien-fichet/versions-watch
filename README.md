@@ -38,6 +38,3 @@
 - [ ] gatling
 - [ ] scala
 - [ ] selenium
-
-### Ideas
-- item categories (IDE, libraries, etc.)
