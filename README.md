@@ -8,8 +8,7 @@
 - [x] intellij idea
 - [x] apache
 - [x] mysql
-- [ ] jbehave
-- [ ] eclipse
+- [x] eclipse
 - [ ] jenkins
 - [ ] puppet
 - [ ] spring

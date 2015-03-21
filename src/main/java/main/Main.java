@@ -2,6 +2,7 @@ package main;
 
 import parsers.apache.ApacheVersionParser;
 import parsers.debian.DebianVersionParser;
+import parsers.eclipse.EclipseVersionParser;
 import parsers.git.GitVersionParser;
 import parsers.jetbrains.JetbrainsVersionsParser;
 import parsers.jetbrains.idea.IdeaVersionParser;
@@ -41,6 +42,7 @@ public class Main {
         new Route("youtrack", new YoutrackVersionParser(jetbrainsVersionsParser)).setup();
         new Route("idea", new IdeaVersionParser(jetbrainsVersionsParser)).setup();
         new Route("mysql", new MysqlVersionParser()).setup();
+        new Route("eclipse", new EclipseVersionParser()).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
