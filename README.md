@@ -1,8 +1,8 @@
 [![Build Status](https://api.travis-ci.org/sniksnp/versions-watch.svg?branch=master)](https://travis-ci.org/sniksnp/versions-watch)
 
 ### How to add a new version
-1. Add a new version parser configuration to src/main/java/main/Conf.java OR add a new version parser implementation in
-src/main/java/parsers
+1. Add a new SimpleVersionParserConfiguration to src/main/java/main/Conf.java OR add a new VersionParser
+implementation in src/main/java/parsers
 2. Add a new version parser test in src/test/java/parsers
 3. Add a new version parser image in src/main/resources/static_files/im
 4. Add the new version name to the 'versions' variable in src/main/resources/static_files/load_versions.js, in the 
@@ -20,7 +20,7 @@ right category
 - [x] eclipse
 - [x] jenkins
 - [x] puppet
-- [ ] spring
+- [x] spring
 - [ ] netbeans
 - [ ] php
 - [ ] tomcat

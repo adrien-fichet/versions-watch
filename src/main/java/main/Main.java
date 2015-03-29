@@ -4,6 +4,7 @@ import parsers.jetbrains.JetbrainsVersionsParser;
 import parsers.jetbrains.idea.IdeaVersionParser;
 import parsers.jetbrains.youtrack.YoutrackVersionParser;
 import parsers.simple.SimpleVersionParser;
+import parsers.spring.SpringVersionParser;
 import routes.Route;
 import spark.ModelAndView;
 import spark.template.mustache.MustacheTemplateEngine;
@@ -40,6 +41,7 @@ public class Main {
         new Route("eclipse", new SimpleVersionParser(Conf.eclipseVersionParserConfiguration)).setup();
         new Route("jenkins", new SimpleVersionParser(Conf.jenkinsVersionParserConfiguration)).setup();
         new Route("puppet", new SimpleVersionParser(Conf.puppetVersionParserConfiguration)).setup();
+        new Route("spring", new SpringVersionParser()).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
