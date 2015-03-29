@@ -5,7 +5,7 @@
 implementation in src/main/java/parsers
 2. Add a new version parser test in src/test/java/parsers
 3. Add a new version parser image in src/main/resources/static_files/im
-4. Add the new version name to the 'versions' variable in src/main/resources/static_files/load_versions.js, in the 
+4. Add the new item to the 'versions' variable in src/main/resources/static_files/load_versions.js, in the 
 right category
 5. Setup a new Route in src/main/java/main/Main.java
 
