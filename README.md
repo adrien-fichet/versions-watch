@@ -23,7 +23,7 @@ right category
 - [x] spring
 - [x] netbeans
 - [x] php
-- [ ] tomcat
+- [x] tomcat
 - [ ] solr
 - [ ] junit
 - [ ] vmware

@@ -1,14 +1,67 @@
 $(function() {
   var versions = [
-    {"category": "IDEs", "items": ['idea', 'eclipse', 'netbeans']},
-    {"category": "SCMs", "items": ['git', 'subversion']},
-    {"category": "Languages", "items": ['php']},
-    {"category": "Web", "items": ['apache', 'tomcat']},
-    {"category": "Others", "items": ['debian', 'youtrack', 'mysql', 'jenkins', 'puppet', 'spring']}
+    {
+      "category": "IDEs",
+      "items": [{
+        "id": "idea",
+        "name": "IntelliJ IDEA"
+      }, {
+        "id": "eclipse",
+        "name": "Eclipse"
+      }, {
+        "id": "netbeans",
+        "name": "Netbeans"
+      }]
+    }, {
+      "category": "SCMs",
+      "items": [{
+        "id": "git",
+        "name": "Git"
+      }, {
+        "id": "subversion",
+        "name": "Subversion"
+      }]
+    }, {
+      "category": "Languages",
+      "items": [{
+        "id": "php",
+        "name": "PHP"
+      }]
+    }, {
+      "category": "Web",
+      "items": [{
+        "id": "apache",
+        "name": "Apache"
+      }, {
+        "id": "tomcat",
+        "name": "Tomcat"
+      }]
+    }, {
+      "category": "Others",
+      "items": [{
+        "id": "debian",
+        "name": "Debian"
+      }, {
+        "id": "youtrack",
+        "name": "YouTrack"
+      }, {
+        "id": "mysql",
+        "name": "MySQL"
+      }, {
+        "id": "jenkins",
+        "name": "Jenkins"
+      }, {
+        "id": "puppet",
+        "name": "Puppet"
+      }, {
+        "id": "spring",
+        "name": "Spring"
+      }]
+    }
   ];
   createVersionsTables(versions);
   for (var i=0; i < versions.length; i++) {
-    loadVersions(versions[i].items, 0);
+    loadVersionsItems(versions[i].items, 0);
   }
 });
 
@@ -21,17 +74,17 @@ function createVersionsTables(versions) {
   }
 }
 
-function createVersionRow(name) {
-  var formattedName = name.charAt(0).toUpperCase() + name.slice(1);
-  return '<tr><td class="icon"><img src="/im/' + name + '.png"/></td><td>' + formattedName + '</td>' +
-    '<td id="' + name + '">loading...</td></tr>';
+function createVersionRow(item) {
+  return '<tr><td class="icon"><img src="/im/' + item.id + '.png"/></td><td>' + item.name + '</td>' +
+    '<td id="' + item.id + '">loading...</td></tr>';
 }
 
-function loadVersions(versions, index) {
-  $.getJSON('/' + versions[index], function(data) {
-    $('#' + versions[index]).text(data[versions[index]]);
-    if (index < versions.length - 1) {
-      loadVersions(versions, index + 1);
+function loadVersionsItems(versionsItems, index) {
+  var currentItemId = versionsItems[index].id;
+  $.getJSON('/' + currentItemId, function(data) {
+    $('#' + currentItemId).text(data[currentItemId]);
+    if (index < versionsItems.length - 1) {
+      loadVersionsItems(versionsItems, index + 1);
     }
   });
 }
