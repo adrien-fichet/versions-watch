@@ -57,7 +57,7 @@ function createVersionsTables(versions) {
 
 function createVersionRow(item) {
   return '<tr><td class="icon"><img src="/im/' + item.id + '.png"/></td><td>' + item.name + '</td>' +
-    '<td id="' + item.id + '">loading...</td></tr>';
+    '<td id="' + item.id + '"><img class="loading" src="/im/loading.gif" alt="loading..." /></td></tr>';
 }
 
 function loadVersionsItems(versionsItems, index) {

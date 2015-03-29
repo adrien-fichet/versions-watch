@@ -24,3 +24,9 @@ th, .icon {
   vertical-align: middle;
   padding: 2px 0px;
 }
+
+.loading {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}

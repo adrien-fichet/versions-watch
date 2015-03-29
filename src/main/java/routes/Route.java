@@ -21,7 +21,13 @@ public class Route {
         get("/" + name, (request, response) -> {
             response.type("application/json");
             Map<String, String> result = new HashMap<String, String>();
-            result.put(name, parser.parseVersion());
+            String version = VersionParser.UNKNOWN_VERSION;
+
+            try {
+                version = parser.parseVersion();
+            } catch (Exception e) { /* Do not crash if version couldn't be retrieved */ }
+
+            result.put(name, version);
             return new Gson().toJson(result);
         });
     }
