@@ -12,13 +12,11 @@ import java.util.regex.Pattern;
 public class SimpleVersionParser extends VersionParser {
     protected String url;
     private String versionCssSelector;
-    private String[][] replacements;
     private String extractorRegex;
 
     public SimpleVersionParser(VersionParserConfiguration conf) {
         this.url = conf.getUrl();
         this.versionCssSelector = conf.getCssSelector();
-        this.replacements = conf.getReplacements();
         this.extractorRegex = conf.getExtractorRegex();
     }
 
@@ -34,12 +32,6 @@ public class SimpleVersionParser extends VersionParser {
             versionText = loadDocument().select(versionCssSelector).first().text();
         } catch (IOException e) {
             return UNKNOWN_VERSION;
-        }
-
-        if (replacements != null) {
-            for (String[] substitution : replacements) {
-                versionText = versionText.replaceAll(substitution[0], substitution[1]);
-            }
         }
 
         if (extractorRegex != null) {
