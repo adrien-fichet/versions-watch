@@ -19,6 +19,7 @@ public class SimpleVersionParserTest {
         testSimpleVersionParser("/parsers/jenkins/Jenkins.html", Conf.jenkinsVersionParserConfiguration, "1.606");
         testSimpleVersionParser("/parsers/puppet/Puppet.html", Conf.puppetVersionParserConfiguration, "3.7.5");
         testSimpleVersionParser("/parsers/netbeans/Netbeans.html", Conf.netbeansVersionParserConfiguration, "8.0.2");
+        testSimpleVersionParser("/parsers/php/Php.html", Conf.phpVersionParserConfiguration, "5.6.7");
     }
 
     public void testSimpleVersionParser(String documentOriginPath, VersionParserConfiguration conf,

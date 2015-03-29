@@ -25,7 +25,7 @@ public class Conf {
             "https://en.wikipedia.org/wiki/Apache_Subversion",
             ".infobox tr:eq(4)",
             null,
-            "Stable release (.*) \\("
+            "Stable release (.*?) \\("
     );
     public static VersionParserConfiguration eclipseVersionParserConfiguration = new VersionParserConfiguration(
             "http://www.eclipse.org/downloads",
@@ -56,5 +56,11 @@ public class Conf {
             "#middle > table > tbody > tr > td:nth-child(1) > div.f-page-auto-cell > center > table > tbody > tr:nth-child(4) > td:nth-child(1)",
             null,
             null
+    );
+    public static VersionParserConfiguration phpVersionParserConfiguration = new VersionParserConfiguration(
+            "https://php.net/downloads.php",
+            "#layout-content",
+            null,
+            "Current Stable PHP (.*?) \\(Changelog\\)"
     );
 }

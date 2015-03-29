@@ -22,7 +22,7 @@ right category
 - [x] puppet
 - [x] spring
 - [x] netbeans
-- [ ] php
+- [x] php
 - [ ] tomcat
 - [ ] solr
 - [ ] junit

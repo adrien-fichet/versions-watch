@@ -2,6 +2,7 @@ $(function() {
   var versions = [
     {"category": "IDEs", "items": ['idea', 'eclipse', 'netbeans']},
     {"category": "SCMs", "items": ['git', 'subversion']},
+    {"category": "Langages", "items": ['php']},
     {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql', 'jenkins', 'puppet', 'spring']}
   ];
   createVersionsTables(versions);
