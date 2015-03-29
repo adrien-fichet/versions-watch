@@ -3,7 +3,8 @@ $(function() {
     {"category": "IDEs", "items": ['idea', 'eclipse', 'netbeans']},
     {"category": "SCMs", "items": ['git', 'subversion']},
     {"category": "Languages", "items": ['php']},
-    {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql', 'jenkins', 'puppet', 'spring']}
+    {"category": "Web", "items": ['apache', 'tomcat']},
+    {"category": "Others", "items": ['debian', 'youtrack', 'mysql', 'jenkins', 'puppet', 'spring']}
   ];
   createVersionsTables(versions);
   for (var i=0; i < versions.length; i++) {

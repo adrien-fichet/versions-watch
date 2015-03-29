@@ -63,4 +63,10 @@ public class Conf {
             null,
             "Current Stable PHP (.*?) \\(Changelog\\)"
     );
+    public static VersionParserConfiguration tomcatVersionParserConfiguration = new VersionParserConfiguration(
+            "https://tomcat.apache.org/whichversion.html",
+            "#content > div:nth-child(3) > table > tbody > tr:nth-child(3) > td:nth-child(6)",
+            null,
+            null
+    );
 }
