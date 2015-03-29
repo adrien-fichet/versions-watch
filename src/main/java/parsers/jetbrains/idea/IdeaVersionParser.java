@@ -12,7 +12,6 @@ public class IdeaVersionParser extends VersionParser {
         this.jetbrainsVersionsParser = jetbrainsVersionsParser;
     }
 
-    @Override
     public String parseVersion() {
         return jetbrainsVersionsParser.parseVersion(Pattern.compile("var versionIDEALong = \"(.*)\";"));
     }

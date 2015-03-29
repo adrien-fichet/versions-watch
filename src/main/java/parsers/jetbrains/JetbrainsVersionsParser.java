@@ -1,7 +1,7 @@
 package parsers.jetbrains;
 
 import org.apache.commons.io.IOUtils;
-import parsers.VersionParser;
+import parsers.simple.SimpleVersionParser;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +19,7 @@ public class JetbrainsVersionsParser {
     }
 
     public String parseVersion(Pattern pattern) {
-        String result = VersionParser.UNKNOWN_VERSION;
+        String result = SimpleVersionParser.UNKNOWN_VERSION;
 
         try {
             String doc = loadDocument();

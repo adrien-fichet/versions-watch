@@ -38,3 +38,4 @@
 - [ ] gatling
 - [ ] scala
 - [ ] selenium
+- [ ] sublime text
