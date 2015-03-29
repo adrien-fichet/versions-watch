@@ -38,6 +38,7 @@ public class Main {
         new Route("idea", new IdeaVersionParser(jetbrainsVersionsParser)).setup();
         new Route("mysql", new SimpleVersionParser(Conf.mysqlVersionParserConfiguration)).setup();
         new Route("eclipse", new SimpleVersionParser(Conf.eclipseVersionParserConfiguration)).setup();
+        new Route("jenkins", new SimpleVersionParser(Conf.jenkinsVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

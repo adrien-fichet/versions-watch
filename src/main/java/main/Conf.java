@@ -39,4 +39,10 @@ public class Conf {
             null,
             null
     );
+    public static VersionParserConfiguration jenkinsVersionParserConfiguration = new VersionParserConfiguration(
+            "https://jenkins-ci.org",
+            "#release > dl > dd:nth-child(2) > div:nth-child(1) > a > strong",
+            new String[][]{{"Latest and greatest \\(", ""}, {"\\)", ""}},
+            null
+    );
 }
