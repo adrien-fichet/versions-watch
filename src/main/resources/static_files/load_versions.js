@@ -2,7 +2,7 @@ $(function() {
   var versions = [
     {"category": "IDEs", "items": ['idea', 'eclipse']},
     {"category": "SCMs", "items": ['git', 'subversion']},
-    {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql', 'jenkins']}
+    {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql', 'jenkins', 'puppet']}
   ];
   createVersionsTables(versions);
   for (var i=0; i < versions.length; i++) {

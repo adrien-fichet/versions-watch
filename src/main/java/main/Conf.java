@@ -45,4 +45,10 @@ public class Conf {
             new String[][]{{"Latest and greatest \\(", ""}, {"\\)", ""}},
             null
     );
+    public static VersionParserConfiguration puppetVersionParserConfiguration = new VersionParserConfiguration(
+            "http://docs.puppetlabs.com/references/stable/",
+            "#content > div > div > div h1",
+            new String[][]{{" References", ""}},
+            null
+    );
 }

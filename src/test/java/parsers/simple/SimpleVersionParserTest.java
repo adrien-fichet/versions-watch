@@ -17,6 +17,7 @@ public class SimpleVersionParserTest {
         testSimpleVersionParser("/parsers/mysql/Mysql.html", Conf.mysqlVersionParserConfiguration, "5.6");
         testSimpleVersionParser("/parsers/subversion/Subversion.html", Conf.subversionVersionParserConfiguration, "1.8.11");
         testSimpleVersionParser("/parsers/jenkins/Jenkins.html", Conf.jenkinsVersionParserConfiguration, "1.606");
+        testSimpleVersionParser("/parsers/puppet/Puppet.html", Conf.puppetVersionParserConfiguration, "3.7.5");
     }
 
     public void testSimpleVersionParser(String documentOriginPath, VersionParserConfiguration conf,
