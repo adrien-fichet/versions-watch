@@ -75,4 +75,10 @@ public class Conf {
             null,
             "Version (.*?), "
     );
+    public static VersionParserConfiguration javaVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.oracle.com/technetwork/java/javase/downloads/index.html",
+            "#javasejdk > a",
+            null,
+            "Java SE (.*)"
+    );
 }

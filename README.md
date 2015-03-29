@@ -3,7 +3,7 @@
 ### How to add a new version
 1. Add a new SimpleVersionParserConfiguration to src/main/java/main/Conf.java OR add a new VersionParser
 implementation in src/main/java/parsers
-2. Add a new version parser test in src/test/java/parsers
+2. Add a new version parser test in src/test/java/parsers (based on a local test file instead of a remote website)
 3. Setup a new Route in src/main/java/main/Main.java
 4. Add a new version parser image in src/main/resources/static_files/im
 5. Add a new item to the 'versions' variable in src/main/resources/static_files/load_versions.js, in the 
@@ -25,12 +25,12 @@ right category
 - [x] php
 - [x] tomcat
 - [x] sublime text
+- [x] java
 - [ ] solr
 - [ ] junit
 - [ ] vmware
 - [ ] vagrant
 - [ ] extjs
-- [ ] java
 - [ ] maven
 - [ ] hibernate
 - [ ] javascript
@@ -48,4 +48,3 @@ right category
 - [ ] gatling
 - [ ] scala
 - [ ] selenium
-

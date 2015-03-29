@@ -17,7 +17,8 @@ $(function() {
     }, {
       "category": { "id": "languages", "name": "Languages" },
       "items": [
-        { "id": "php", "name": "PHP" }
+        { "id": "php", "name": "PHP" },
+        { "id": "java", "name": "Java SE" }
       ]
     }, {
       "category": { "id": "web", "name": "Web" },

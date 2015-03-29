@@ -22,6 +22,7 @@ public class SimpleVersionParserTest {
         testSimpleVersionParser("/parsers/php/Php.html", Conf.phpVersionParserConfiguration, "5.6.7");
         testSimpleVersionParser("/parsers/tomcat/Tomcat.html", Conf.tomcatVersionParserConfiguration, "8.0.21");
         testSimpleVersionParser("/parsers/sublime_text/SublimeText.html", Conf.sublimeTextVersionParserConfiguration, "2.0.2");
+        testSimpleVersionParser("/parsers/java/JavaSE.html", Conf.javaVersionParserConfiguration, "8u40");
     }
 
     public void testSimpleVersionParser(String documentOriginPath, VersionParserConfiguration conf,
