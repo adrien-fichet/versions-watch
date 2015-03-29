@@ -21,7 +21,7 @@ right category
 - [x] jenkins
 - [x] puppet
 - [x] spring
-- [ ] netbeans
+- [x] netbeans
 - [ ] php
 - [ ] tomcat
 - [ ] solr

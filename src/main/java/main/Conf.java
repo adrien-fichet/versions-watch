@@ -51,4 +51,10 @@ public class Conf {
             new String[][]{{" References", ""}},
             null
     );
+    public static VersionParserConfiguration netbeansVersionParserConfiguration = new VersionParserConfiguration(
+            "https://netbeans.org/community/releases/roadmap.html",
+            "#middle > table > tbody > tr > td:nth-child(1) > div.f-page-auto-cell > center > table > tbody > tr:nth-child(4) > td:nth-child(1)",
+            null,
+            null
+    );
 }

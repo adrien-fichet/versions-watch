@@ -42,6 +42,7 @@ public class Main {
         new Route("jenkins", new SimpleVersionParser(Conf.jenkinsVersionParserConfiguration)).setup();
         new Route("puppet", new SimpleVersionParser(Conf.puppetVersionParserConfiguration)).setup();
         new Route("spring", new SpringVersionParser()).setup();
+        new Route("netbeans", new SimpleVersionParser(Conf.netbeansVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

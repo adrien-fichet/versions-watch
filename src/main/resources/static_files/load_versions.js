@@ -1,6 +1,6 @@
 $(function() {
   var versions = [
-    {"category": "IDEs", "items": ['idea', 'eclipse']},
+    {"category": "IDEs", "items": ['idea', 'eclipse', 'netbeans']},
     {"category": "SCMs", "items": ['git', 'subversion']},
     {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql', 'jenkins', 'puppet', 'spring']}
   ];
