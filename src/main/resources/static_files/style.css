@@ -17,3 +17,10 @@ td, th {
 th, .icon {
   text-align: center;
 }
+
+.icon img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  padding: 2px 0px;
+}

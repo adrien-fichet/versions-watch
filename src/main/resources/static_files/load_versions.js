@@ -2,7 +2,7 @@ $(function() {
   var versions = [
     {"category": "IDEs", "items": ['idea', 'eclipse', 'netbeans']},
     {"category": "SCMs", "items": ['git', 'subversion']},
-    {"category": "Langages", "items": ['php']},
+    {"category": "Languages", "items": ['php']},
     {"category": "Others", "items": ['debian', 'apache', 'youtrack', 'mysql', 'jenkins', 'puppet', 'spring']}
   ];
   createVersionsTables(versions);
@@ -22,7 +22,7 @@ function createVersionsTables(versions) {
 
 function createVersionRow(name) {
   var formattedName = name.charAt(0).toUpperCase() + name.slice(1);
-  return '<tr><td class="icon"><img src="/im/' + name + '.jpg"/></td><td>' + formattedName + '</td>' +
+  return '<tr><td class="icon"><img src="/im/' + name + '.png"/></td><td>' + formattedName + '</td>' +
     '<td id="' + name + '">loading...</td></tr>';
 }
 
