@@ -26,7 +26,7 @@ right category
 - [x] tomcat
 - [x] sublime text
 - [x] java
-- [ ] solr
+- [x] solr
 - [ ] junit
 - [ ] vmware
 - [ ] vagrant

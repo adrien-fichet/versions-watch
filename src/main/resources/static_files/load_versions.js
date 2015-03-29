@@ -34,7 +34,8 @@ $(function() {
         { "id": "mysql", "name": "MySQL" },
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
-        { "id": "spring", "name": "Spring" }
+        { "id": "spring", "name": "Spring" },
+        { "id": "solr", "name": "Solr" }
       ]
     }
   ];

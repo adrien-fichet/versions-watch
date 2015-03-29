@@ -4,6 +4,7 @@ import parsers.jetbrains.JetbrainsVersionsParser;
 import parsers.jetbrains.idea.IdeaVersionParser;
 import parsers.jetbrains.youtrack.YoutrackVersionParser;
 import parsers.simple.SimpleVersionParser;
+import parsers.solr.SolrVersionParser;
 import parsers.spring.SpringVersionParser;
 import routes.Route;
 import spark.ModelAndView;
@@ -47,6 +48,7 @@ public class Main {
         new Route("tomcat", new SimpleVersionParser(Conf.tomcatVersionParserConfiguration)).setup();
         new Route("sublime_text", new SimpleVersionParser(Conf.sublimeTextVersionParserConfiguration)).setup();
         new Route("java", new SimpleVersionParser(Conf.javaVersionParserConfiguration)).setup();
+        new Route("solr", new SolrVersionParser()).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
