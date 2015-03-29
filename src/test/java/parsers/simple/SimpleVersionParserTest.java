@@ -21,6 +21,7 @@ public class SimpleVersionParserTest {
         testSimpleVersionParser("/parsers/netbeans/Netbeans.html", Conf.netbeansVersionParserConfiguration, "8.0.2");
         testSimpleVersionParser("/parsers/php/Php.html", Conf.phpVersionParserConfiguration, "5.6.7");
         testSimpleVersionParser("/parsers/tomcat/Tomcat.html", Conf.tomcatVersionParserConfiguration, "8.0.21");
+        testSimpleVersionParser("/parsers/sublime_text/SublimeText.html", Conf.sublimeTextVersionParserConfiguration, "2.0.2");
     }
 
     public void testSimpleVersionParser(String documentOriginPath, VersionParserConfiguration conf,

@@ -24,6 +24,7 @@ right category
 - [x] netbeans
 - [x] php
 - [x] tomcat
+- [x] sublime text
 - [ ] solr
 - [ ] junit
 - [ ] vmware
@@ -47,4 +48,4 @@ right category
 - [ ] gatling
 - [ ] scala
 - [ ] selenium
-- [ ] sublime text
+

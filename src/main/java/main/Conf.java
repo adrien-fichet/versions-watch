@@ -69,4 +69,10 @@ public class Conf {
             null,
             null
     );
+    public static VersionParserConfiguration sublimeTextVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.sublimetext.com/",
+            "#download-container > p",
+            null,
+            "Version (.*?), "
+    );
 }

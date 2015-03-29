@@ -45,6 +45,7 @@ public class Main {
         new Route("netbeans", new SimpleVersionParser(Conf.netbeansVersionParserConfiguration)).setup();
         new Route("php", new SimpleVersionParser(Conf.phpVersionParserConfiguration)).setup();
         new Route("tomcat", new SimpleVersionParser(Conf.tomcatVersionParserConfiguration)).setup();
+        new Route("sublime_text", new SimpleVersionParser(Conf.sublimeTextVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

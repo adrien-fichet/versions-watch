@@ -1,62 +1,40 @@
 $(function() {
   var versions = [
     {
-      "category": "IDEs",
-      "items": [{
-        "id": "idea",
-        "name": "IntelliJ IDEA"
-      }, {
-        "id": "eclipse",
-        "name": "Eclipse"
-      }, {
-        "id": "netbeans",
-        "name": "Netbeans"
-      }]
+      "category": { "id": "ide", "name": "IDEs / Text editors" },
+      "items": [
+        { "id": "idea", "name": "IntelliJ IDEA" },
+        { "id": "eclipse", "name": "Eclipse" },
+        { "id": "netbeans", "name": "Netbeans" },
+        { "id": "sublime_text", "name": "Sublime Text" }
+      ]
     }, {
-      "category": "SCMs",
-      "items": [{
-        "id": "git",
-        "name": "Git"
-      }, {
-        "id": "subversion",
-        "name": "Subversion"
-      }]
+      "category": { "id": "scm", "name": "SCMs" },
+      "items": [
+        { "id": "git", "name": "Git" },
+        { "id": "subversion", "name": "Subversion" }
+      ]
     }, {
-      "category": "Languages",
-      "items": [{
-        "id": "php",
-        "name": "PHP"
-      }]
+      "category": { "id": "languages", "name": "Languages" },
+      "items": [
+        { "id": "php", "name": "PHP" }
+      ]
     }, {
-      "category": "Web",
-      "items": [{
-        "id": "apache",
-        "name": "Apache"
-      }, {
-        "id": "tomcat",
-        "name": "Tomcat"
-      }]
+      "category": { "id": "web", "name": "Web" },
+      "items": [
+        { "id": "apache", "name": "Apache" },
+        { "id": "tomcat", "name": "Tomcat" }
+      ]
     }, {
-      "category": "Others",
-      "items": [{
-        "id": "debian",
-        "name": "Debian"
-      }, {
-        "id": "youtrack",
-        "name": "YouTrack"
-      }, {
-        "id": "mysql",
-        "name": "MySQL"
-      }, {
-        "id": "jenkins",
-        "name": "Jenkins"
-      }, {
-        "id": "puppet",
-        "name": "Puppet"
-      }, {
-        "id": "spring",
-        "name": "Spring"
-      }]
+      "category": { "id": "other", "name": "Others" },
+      "items": [
+        { "id": "debian", "name": "Debian" },
+        { "id": "youtrack", "name": "YouTrack"},
+        { "id": "mysql", "name": "MySQL" },
+        { "id": "jenkins", "name": "Jenkins" },
+        { "id": "puppet", "name": "Puppet" },
+        { "id": "spring", "name": "Spring" }
+      ]
     }
   ];
   createVersionsTables(versions);
@@ -67,9 +45,10 @@ $(function() {
 
 function createVersionsTables(versions) {
   for (var i=0; i < versions.length; i++) {
-    $('#content').append('<table id="' + versions[i].category + '"><tr><th colspan="3">' + versions[i].category + '</th></tr></table>');
+    var currentCategory = versions[i].category;
+    $('#content').append('<table id="' + currentCategory.id + '"><tr><th colspan="3">' + currentCategory.name + '</th></tr></table>');
     for (var j=0; j < versions[i].items.length; j++) {
-      $('#' + versions[i].category).append(createVersionRow(versions[i].items[j]));
+      $('#' + currentCategory.id).append(createVersionRow(versions[i].items[j]));
     }
   }
 }
