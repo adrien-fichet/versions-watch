@@ -103,4 +103,9 @@ public class Conf {
             "#main-content > div.row.row-grey > div > div > div.eight-col.no-margin-bottom > h2",
             "Ubuntu (.*)"
     );
+    public static VersionParserConfiguration nginxVersionParserConfiguration = new VersionParserConfiguration(
+            "http://nginx.org/en/download.html",
+            "#content > table:nth-child(3) > tbody > tr > td:nth-child(2) > a:nth-child(1)",
+            "nginx-(.*)"
+    );
 }

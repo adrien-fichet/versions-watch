@@ -56,6 +56,7 @@ public class Main {
         new Route("hibernate", new SimpleVersionParser(Conf.hibernateVersionParserConfiguration)).setup();
         new Route("javascript", new SimpleVersionParser(Conf.javascriptVersionParserConfiguration)).setup();
         new Route("ubuntu", new SimpleVersionParser(Conf.ubuntuVersionParserConfiguration)).setup();
+        new Route("nginx", new SimpleVersionParser(Conf.nginxVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

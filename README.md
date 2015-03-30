@@ -34,9 +34,9 @@ right category
 - [x] hibernate
 - [x] javascript
 - [x] ubuntu
+- [x] nginx
 - [ ] openssl
 - [ ] openssh
-- [ ] nginx
 - [ ] zabbix
 - [ ] elasticsearch
 - [ ] kibana

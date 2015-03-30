@@ -113,4 +113,9 @@ public class SimpleVersionParserTest {
     public void testUbuntuSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Ubuntu.html", Conf.ubuntuVersionParserConfiguration, "14.10");
     }
+
+    @Test
+    public void testNginxSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Nginx.html", Conf.nginxVersionParserConfiguration, "1.7.11");
+    }
 }
