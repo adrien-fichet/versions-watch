@@ -98,4 +98,9 @@ public class Conf {
             "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
             "(.*?)(\\[[0-9]*\\])? / "
     );
+    public static VersionParserConfiguration ubuntuVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.ubuntu.com/download/desktop",
+            "#main-content > div.row.row-grey > div > div > div.eight-col.no-margin-bottom > h2",
+            "Ubuntu (.*)"
+    );
 }

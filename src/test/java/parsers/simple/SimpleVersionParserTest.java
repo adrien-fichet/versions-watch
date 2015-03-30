@@ -108,4 +108,9 @@ public class SimpleVersionParserTest {
     public void testJavascriptSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Javascript.html", Conf.javascriptVersionParserConfiguration, "1.8.5");
     }
+
+    @Test
+    public void testUbuntuSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Ubuntu.html", Conf.ubuntuVersionParserConfiguration, "14.10");
+    }
 }

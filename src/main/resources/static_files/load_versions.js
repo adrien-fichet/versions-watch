@@ -31,7 +31,6 @@ $(function() {
     }, {
       "category": { "id": "ops", "name": "Ops" },
       "items": [
-        { "id": "debian", "name": "Debian" },
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
         { "id": "vagrant", "name": "Vagrant" }
@@ -42,6 +41,12 @@ $(function() {
         { "id": "spring", "name": "Spring" },
         { "id": "junit", "name": "JUnit" },
         { "id": "hibernate", "name": "Hibernate" }
+      ]
+    }, {
+      "category": { "id": "os", "name": "Operating Systems" },
+      "items": [
+        { "id": "debian", "name": "Debian" },
+        { "id": "ubuntu", "name": "Ubuntu" }
       ]
     }, {
       "category": { "id": "other", "name": "Others" },

@@ -33,7 +33,7 @@ right category
 - [x] maven
 - [x] hibernate
 - [x] javascript
-- [ ] ubuntu
+- [x] ubuntu
 - [ ] openssl
 - [ ] openssh
 - [ ] nginx
@@ -48,3 +48,4 @@ right category
 - [ ] scala
 - [ ] selenium
 - [ ] virtualbox
+- [ ] windows

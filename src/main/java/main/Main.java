@@ -55,6 +55,7 @@ public class Main {
         new Route("maven", new SimpleVersionParser(Conf.mavenVersionParserConfiguration)).setup();
         new Route("hibernate", new SimpleVersionParser(Conf.hibernateVersionParserConfiguration)).setup();
         new Route("javascript", new SimpleVersionParser(Conf.javascriptVersionParserConfiguration)).setup();
+        new Route("ubuntu", new SimpleVersionParser(Conf.ubuntuVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
