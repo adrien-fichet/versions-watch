@@ -103,4 +103,9 @@ public class SimpleVersionParserTest {
     public void testHibernateSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Hibernate.html", Conf.hibernateVersionParserConfiguration, "4.3.8");
     }
+
+    @Test
+    public void testJavascriptSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Javascript.html", Conf.javascriptVersionParserConfiguration, "1.8.5");
+    }
 }

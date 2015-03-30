@@ -32,7 +32,7 @@ right category
 - [x] extjs
 - [x] maven
 - [x] hibernate
-- [ ] javascript
+- [x] javascript
 - [ ] ubuntu
 - [ ] openssl
 - [ ] openssh

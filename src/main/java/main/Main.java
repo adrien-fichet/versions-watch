@@ -54,6 +54,7 @@ public class Main {
         new Route("extjs", new SimpleVersionParser(Conf.extjsVersionParserConfiguration)).setup();
         new Route("maven", new SimpleVersionParser(Conf.mavenVersionParserConfiguration)).setup();
         new Route("hibernate", new SimpleVersionParser(Conf.hibernateVersionParserConfiguration)).setup();
+        new Route("javascript", new SimpleVersionParser(Conf.javascriptVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

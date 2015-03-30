@@ -18,7 +18,8 @@ $(function() {
       "category": { "id": "languages", "name": "Languages" },
       "items": [
         { "id": "php", "name": "PHP" },
-        { "id": "java", "name": "Java SE" }
+        { "id": "java", "name": "Java SE" },
+        { "id": "javascript", "name": "Javascript" }
       ]
     }, {
       "category": { "id": "web", "name": "Web" },

@@ -93,4 +93,9 @@ public class Conf {
             "#content > div.row-fluid > div.span10 > div:nth-child(4) > div > dl:nth-child(2) > dt",
             "(.*?)\\.Final"
     );
+    public static VersionParserConfiguration javascriptVersionParserConfiguration = new VersionParserConfiguration(
+            "https://en.wikipedia.org/wiki/JavaScript",
+            "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
+            "(.*?)(\\[[0-9]*\\])? / "
+    );
 }
