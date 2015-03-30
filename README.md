@@ -53,3 +53,8 @@ right category
 - [ ] fedora
 - [ ] gentoo
 - [ ] archlinux
+- [ ] vim
+- [ ] emacs
+- [ ] gnome
+- [ ] xfce
+- [ ] linux kernel
