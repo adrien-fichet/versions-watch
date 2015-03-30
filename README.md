@@ -30,7 +30,7 @@ right category
 - [x] junit
 - [x] vagrant
 - [x] extjs
-- [ ] maven
+- [x] maven
 - [ ] hibernate
 - [ ] javascript
 - [ ] ubuntu

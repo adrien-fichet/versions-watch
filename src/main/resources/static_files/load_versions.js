@@ -42,7 +42,8 @@ $(function() {
         { "id": "mysql", "name": "MySQL" },
         { "id": "spring", "name": "Spring" },
         { "id": "solr", "name": "Solr" },
-        { "id": "junit", "name": "JUnit" }
+        { "id": "junit", "name": "JUnit" },
+        { "id": "maven", "name": "Maven" }
       ]
     }
   ];

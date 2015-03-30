@@ -83,4 +83,9 @@ public class Conf {
             "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td",
             "(.*?) / "
     );
+    public static VersionParserConfiguration mavenVersionParserConfiguration = new VersionParserConfiguration(
+            "https://maven.apache.org/download.cgi",
+            "#contentBox > div > h2",
+            "Download Apache Maven (.*)"
+    );
 }

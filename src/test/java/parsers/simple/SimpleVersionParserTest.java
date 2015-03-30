@@ -93,4 +93,9 @@ public class SimpleVersionParserTest {
     public void testExtjsSimpleVersionParser() throws Exception {
         testSimpleVersionParser("ExtJS.html", Conf.extjsVersionParserConfiguration, "5.1.0");
     }
+
+    @Test
+    public void testMavenSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Maven.html", Conf.mavenVersionParserConfiguration, "3.3.1");
+    }
 }
