@@ -78,4 +78,9 @@ public class SimpleVersionParserTest {
     public void testTomcatSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Tomcat.html", Conf.tomcatVersionParserConfiguration, "8.0.21");
     }
+
+    @Test
+    public void testJunitSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("JUnit.html", Conf.junitVersionParserConfiguration, "4.12");
+    }
 }

@@ -68,4 +68,9 @@ public class Conf {
             "#javasejdk > a",
             "Java SE (.*)"
     );
+    public static VersionParserConfiguration junitVersionParserConfiguration = new VersionParserConfiguration(
+            "http://junit.org/",
+            "#projectVersion",
+            "Version: (.*)"
+    );
 }

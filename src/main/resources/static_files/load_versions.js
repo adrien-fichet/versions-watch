@@ -35,7 +35,8 @@ $(function() {
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
         { "id": "spring", "name": "Spring" },
-        { "id": "solr", "name": "Solr" }
+        { "id": "solr", "name": "Solr" },
+        { "id": "junit", "name": "JUnit" }
       ]
     }
   ];

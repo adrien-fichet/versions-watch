@@ -27,7 +27,7 @@ right category
 - [x] sublime text
 - [x] java
 - [x] solr
-- [ ] junit
+- [x] junit
 - [ ] vmware
 - [ ] vagrant
 - [ ] extjs

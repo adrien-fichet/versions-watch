@@ -49,6 +49,7 @@ public class Main {
         new Route("sublime_text", new SimpleVersionParser(Conf.sublimeTextVersionParserConfiguration)).setup();
         new Route("java", new SimpleVersionParser(Conf.javaVersionParserConfiguration)).setup();
         new Route("solr", new SolrVersionParser()).setup();
+        new Route("junit", new SimpleVersionParser(Conf.junitVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
