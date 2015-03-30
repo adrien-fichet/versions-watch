@@ -83,4 +83,9 @@ public class SimpleVersionParserTest {
     public void testJunitSimpleVersionParser() throws Exception {
         testSimpleVersionParser("JUnit.html", Conf.junitVersionParserConfiguration, "4.12");
     }
+
+    @Test
+    public void testVagrantSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Vagrant.html", Conf.vagrantVersionParserConfiguration, "1.7.2");
+    }
 }

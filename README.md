@@ -28,8 +28,8 @@ right category
 - [x] java
 - [x] solr
 - [x] junit
+- [x] vagrant
 - [ ] vmware
-- [ ] vagrant
 - [ ] extjs
 - [ ] maven
 - [ ] hibernate
@@ -48,3 +48,4 @@ right category
 - [ ] gatling
 - [ ] scala
 - [ ] selenium
+- [ ] virtualbox

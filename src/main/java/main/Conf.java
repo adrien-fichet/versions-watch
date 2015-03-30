@@ -73,4 +73,9 @@ public class Conf {
             "#projectVersion",
             "Version: (.*)"
     );
+    public static VersionParserConfiguration vagrantVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.vagrantup.com/downloads.html",
+            ".description > p",
+            "the latest version of Vagrant \\((.*?)\\)."
+    );
 }

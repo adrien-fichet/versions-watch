@@ -27,13 +27,18 @@ $(function() {
         { "id": "tomcat", "name": "Tomcat" }
       ]
     }, {
-      "category": { "id": "other", "name": "Others" },
+      "category": { "id": "ops", "name": "Ops" },
       "items": [
         { "id": "debian", "name": "Debian" },
-        { "id": "youtrack", "name": "YouTrack"},
-        { "id": "mysql", "name": "MySQL" },
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
+        { "id": "vagrant", "name": "Vagrant" }
+      ]
+    }, {
+      "category": { "id": "other", "name": "Others" },
+      "items": [
+        { "id": "youtrack", "name": "YouTrack"},
+        { "id": "mysql", "name": "MySQL" },
         { "id": "spring", "name": "Spring" },
         { "id": "solr", "name": "Solr" },
         { "id": "junit", "name": "JUnit" }

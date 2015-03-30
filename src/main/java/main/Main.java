@@ -50,6 +50,7 @@ public class Main {
         new Route("java", new SimpleVersionParser(Conf.javaVersionParserConfiguration)).setup();
         new Route("solr", new SolrVersionParser()).setup();
         new Route("junit", new SimpleVersionParser(Conf.junitVersionParserConfiguration)).setup();
+        new Route("vagrant", new SimpleVersionParser(Conf.vagrantVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
