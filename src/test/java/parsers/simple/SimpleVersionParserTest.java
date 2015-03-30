@@ -98,4 +98,9 @@ public class SimpleVersionParserTest {
     public void testMavenSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Maven.html", Conf.mavenVersionParserConfiguration, "3.3.1");
     }
+
+    @Test
+    public void testHibernateSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Hibernate.html", Conf.hibernateVersionParserConfiguration, "4.3.8");
+    }
 }

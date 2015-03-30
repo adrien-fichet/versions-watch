@@ -36,13 +36,18 @@ $(function() {
         { "id": "vagrant", "name": "Vagrant" }
       ]
     }, {
+      "category": { "id": "frameworks", "name": "Java frameworks" },
+      "items": [
+        { "id": "spring", "name": "Spring" },
+        { "id": "junit", "name": "JUnit" },
+        { "id": "hibernate", "name": "Hibernate" }
+      ]
+    }, {
       "category": { "id": "other", "name": "Others" },
       "items": [
         { "id": "youtrack", "name": "YouTrack"},
         { "id": "mysql", "name": "MySQL" },
-        { "id": "spring", "name": "Spring" },
         { "id": "solr", "name": "Solr" },
-        { "id": "junit", "name": "JUnit" },
         { "id": "maven", "name": "Maven" }
       ]
     }

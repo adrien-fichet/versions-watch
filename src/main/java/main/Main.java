@@ -53,6 +53,7 @@ public class Main {
         new Route("vagrant", new SimpleVersionParser(Conf.vagrantVersionParserConfiguration)).setup();
         new Route("extjs", new SimpleVersionParser(Conf.extjsVersionParserConfiguration)).setup();
         new Route("maven", new SimpleVersionParser(Conf.mavenVersionParserConfiguration)).setup();
+        new Route("hibernate", new SimpleVersionParser(Conf.hibernateVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

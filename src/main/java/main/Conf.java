@@ -88,4 +88,9 @@ public class Conf {
             "#contentBox > div > h2",
             "Download Apache Maven (.*)"
     );
+    public static VersionParserConfiguration hibernateVersionParserConfiguration = new VersionParserConfiguration(
+            "http://hibernate.org/orm/downloads/",
+            "#content > div.row-fluid > div.span10 > div:nth-child(4) > div > dl:nth-child(2) > dt",
+            "(.*?)\\.Final"
+    );
 }

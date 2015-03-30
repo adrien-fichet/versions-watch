@@ -31,7 +31,7 @@ right category
 - [x] vagrant
 - [x] extjs
 - [x] maven
-- [ ] hibernate
+- [x] hibernate
 - [ ] javascript
 - [ ] ubuntu
 - [ ] openssl
