@@ -52,4 +52,4 @@ right category
 - [ ] centos
 - [ ] fedora
 - [ ] gentoo
-- [ ] archlinux
+- [ ] archlinux
