@@ -29,8 +29,7 @@ right category
 - [x] solr
 - [x] junit
 - [x] vagrant
-- [ ] vmware
-- [ ] extjs
+- [x] extjs
 - [ ] maven
 - [ ] hibernate
 - [ ] javascript

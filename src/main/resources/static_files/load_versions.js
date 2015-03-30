@@ -24,7 +24,8 @@ $(function() {
       "category": { "id": "web", "name": "Web" },
       "items": [
         { "id": "apache", "name": "Apache" },
-        { "id": "tomcat", "name": "Tomcat" }
+        { "id": "tomcat", "name": "Tomcat" },
+        { "id": "extjs", "name": "ExtJS" }
       ]
     }, {
       "category": { "id": "ops", "name": "Ops" },

@@ -78,4 +78,9 @@ public class Conf {
             ".description > p",
             "the latest version of Vagrant \\((.*?)\\)."
     );
+    public static VersionParserConfiguration extjsVersionParserConfiguration = new VersionParserConfiguration(
+            "https://en.wikipedia.org/wiki/Ext_JS",
+            "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td",
+            "(.*?) / "
+    );
 }

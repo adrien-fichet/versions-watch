@@ -88,4 +88,9 @@ public class SimpleVersionParserTest {
     public void testVagrantSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Vagrant.html", Conf.vagrantVersionParserConfiguration, "1.7.2");
     }
+
+    @Test
+    public void testExtjsSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("ExtJS.html", Conf.extjsVersionParserConfiguration, "5.1.0");
+    }
 }
