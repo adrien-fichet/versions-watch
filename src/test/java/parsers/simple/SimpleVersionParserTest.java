@@ -26,7 +26,7 @@ public class SimpleVersionParserTest {
 
     @Test
     public void testEclipseSimpleVersionParser() throws Exception {
-        testSimpleVersionParser("Eclipse.html", Conf.eclipseVersionParserConfiguration, "Luna SR2 (4.4.2)");
+        testSimpleVersionParser("Eclipse.html", Conf.eclipseVersionParserConfiguration, "4.4.2");
     }
 
     @Test
@@ -117,5 +117,25 @@ public class SimpleVersionParserTest {
     @Test
     public void testNginxSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Nginx.html", Conf.nginxVersionParserConfiguration, "1.7.11");
+    }
+
+    @Test
+    public void testElasticsearchSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Elasticsearch.html", Conf.elasticsearchVersionParserConfiguration, "1.5.0");
+    }
+
+    @Test
+    public void testLogstashSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Logstash.html", Conf.logstashVersionParserConfiguration, "1.4.2");
+    }
+
+    @Test
+    public void testKibanaSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Kibana.html", Conf.kibanaVersionParserConfiguration, "4.0.1");
+    }
+
+    @Test
+    public void testLogstashForwarderSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("LogstashForwarder.html", Conf.logstashForwarderVersionParserConfiguration, "0.4.0");
     }
 }

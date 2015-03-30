@@ -9,10 +9,28 @@ $(function() {
         { "id": "sublime_text", "name": "Sublime Text" }
       ]
     }, {
-      "category": { "id": "scm", "name": "SCMs" },
+      "category": { "id": "web", "name": "Web" },
       "items": [
-        { "id": "git", "name": "Git" },
-        { "id": "subversion", "name": "Subversion" }
+        { "id": "apache", "name": "Apache" },
+        { "id": "tomcat", "name": "Tomcat" },
+        { "id": "extjs", "name": "ExtJS" },
+        { "id": "nginx", "name": "Nginx" }
+      ]
+    }, {
+      "category": { "id": "elk", "name": "ELK" },
+      "items": [
+        { "id": "elasticsearch", "name": "Elasticsearch" },
+        { "id": "kibana", "name": "Kibana" },
+        { "id": "logstash", "name": "Logstash" },
+        { "id": "logstashforwarder", "name": "Logstash-forwarder" }
+      ]
+    }, {
+      "category": { "id": "other", "name": "Others" },
+      "items": [
+        { "id": "youtrack", "name": "YouTrack"},
+        { "id": "mysql", "name": "MySQL" },
+        { "id": "solr", "name": "Solr" },
+        { "id": "maven", "name": "Maven" }
       ]
     }, {
       "category": { "id": "languages", "name": "Languages" },
@@ -20,14 +38,6 @@ $(function() {
         { "id": "php", "name": "PHP" },
         { "id": "java", "name": "Java SE" },
         { "id": "javascript", "name": "Javascript" }
-      ]
-    }, {
-      "category": { "id": "web", "name": "Web" },
-      "items": [
-        { "id": "apache", "name": "Apache" },
-        { "id": "tomcat", "name": "Tomcat" },
-        { "id": "extjs", "name": "ExtJS" },
-        { "id": "nginx", "name": "Nginx" }
       ]
     }, {
       "category": { "id": "ops", "name": "Ops" },
@@ -50,12 +60,10 @@ $(function() {
         { "id": "ubuntu", "name": "Ubuntu" }
       ]
     }, {
-      "category": { "id": "other", "name": "Others" },
+      "category": { "id": "scm", "name": "SCMs" },
       "items": [
-        { "id": "youtrack", "name": "YouTrack"},
-        { "id": "mysql", "name": "MySQL" },
-        { "id": "solr", "name": "Solr" },
-        { "id": "maven", "name": "Maven" }
+        { "id": "git", "name": "Git" },
+        { "id": "subversion", "name": "Subversion" }
       ]
     }
   ];

@@ -57,6 +57,10 @@ public class Main {
         new Route("javascript", new SimpleVersionParser(Conf.javascriptVersionParserConfiguration)).setup();
         new Route("ubuntu", new SimpleVersionParser(Conf.ubuntuVersionParserConfiguration)).setup();
         new Route("nginx", new SimpleVersionParser(Conf.nginxVersionParserConfiguration)).setup();
+        new Route("elasticsearch", new SimpleVersionParser(Conf.elasticsearchVersionParserConfiguration)).setup();
+        new Route("kibana", new SimpleVersionParser(Conf.kibanaVersionParserConfiguration)).setup();
+        new Route("logstash", new SimpleVersionParser(Conf.logstashVersionParserConfiguration)).setup();
+        new Route("logstashforwarder", new SimpleVersionParser(Conf.logstashForwarderVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

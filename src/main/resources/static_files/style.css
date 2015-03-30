@@ -5,8 +5,9 @@ body {
 
 table {
   border-collapse: collapse;
-  float: left;
+  display: inline-block;
   margin: 5px 0px 0px 5px;
+  vertical-align: top;
 }
 
 td, th {

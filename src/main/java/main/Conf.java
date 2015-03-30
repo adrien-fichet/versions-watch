@@ -26,7 +26,7 @@ public class Conf {
     public static VersionParserConfiguration eclipseVersionParserConfiguration = new VersionParserConfiguration(
             "http://www.eclipse.org/downloads",
             "#descriptionText",
-            "Eclipse (.*?) Release"
+            "Eclipse .* \\((.*?)\\) Release"
     );
     public static VersionParserConfiguration mysqlVersionParserConfiguration = new VersionParserConfiguration(
             "https://dev.mysql.com/doc",
@@ -107,5 +107,25 @@ public class Conf {
             "http://nginx.org/en/download.html",
             "#content > table:nth-child(3) > tbody > tr > td:nth-child(2) > a:nth-child(1)",
             "nginx-(.*)"
+    );
+    public static VersionParserConfiguration elasticsearchVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.elastic.co/downloads/elasticsearch",
+            "#main-wrapper > div > div > div > header:nth-child(1) > h2",
+            "Elasticsearch (.*)"
+    );
+    public static VersionParserConfiguration logstashVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.elastic.co/downloads/logstash",
+            "#main-wrapper > div > div > div:nth-child(1) > header:nth-child(1) > h2",
+            "Logstash (.*)"
+    );
+    public static VersionParserConfiguration kibanaVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.elastic.co/downloads/kibana",
+            "#main-wrapper > div > div > div > header:nth-child(1) > h2",
+            "Kibana (.*)"
+    );
+    public static VersionParserConfiguration logstashForwarderVersionParserConfiguration = new VersionParserConfiguration(
+            "https://github.com/elastic/logstash-forwarder/releases",
+            "#js-repo-pjax-container > div.release-timeline > ul > li > .main",
+            "v(.*?) "
     );
 }

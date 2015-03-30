@@ -35,13 +35,13 @@ right category
 - [x] javascript
 - [x] ubuntu
 - [x] nginx
+- [x] elasticsearch
+- [x] kibana
+- [x] logstash
+- [x] logstash-forwarder
 - [ ] openssl
 - [ ] openssh
 - [ ] zabbix
-- [ ] elasticsearch
-- [ ] kibana
-- [ ] logstash
-- [ ] logstash-forwarder
 - [ ] nagios
 - [ ] cobertura
 - [ ] gatling
@@ -49,3 +49,7 @@ right category
 - [ ] selenium
 - [ ] virtualbox
 - [ ] windows
+- [ ] centos
+- [ ] fedora
+- [ ] gentoo
+- [ ] archlinux
