@@ -47,6 +47,13 @@ $(function() {
         { "id": "javascript", "name": "Javascript" }
       ]
     }, {
+      "category": { "id": "testing", "name": "Testing" },
+      "items": [
+        { "id": "junit", "name": "JUnit" },
+        { "id": "cobertura", "name": "Cobertura" },
+        { "id": "gatling", "name": "Gatling" }
+      ]
+    }, {
       "category": { "id": "sec", "name": "Sec" },
       "items": [
         { "id": "openssl", "name": "OpenSSL" },
@@ -63,12 +70,6 @@ $(function() {
       "items": [
         { "id": "zabbix", "name": "Zabbix" },
         { "id": "nagios", "name": "Nagios" }
-      ]
-    }, {
-      "category": { "id": "testing", "name": "Testing" },
-      "items": [
-        { "id": "junit", "name": "JUnit" },
-        { "id": "cobertura", "name": "Cobertura" }
       ]
     }, {
       "category": { "id": "os", "name": "Operating Systems" },

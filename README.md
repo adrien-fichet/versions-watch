@@ -44,7 +44,7 @@ right category
 - [x] zabbix
 - [x] nagios
 - [x] cobertura
-- [ ] gatling
+- [x] gatling
 - [ ] scala
 - [ ] selenium
 - [ ] virtualbox

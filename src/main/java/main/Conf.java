@@ -153,4 +153,9 @@ public class Conf {
             "#main_content > h3",
             "Cobertura (.*)"
     );
+    public static VersionParserConfiguration gatlingVersionParserConfiguration = new VersionParserConfiguration(
+            "http://gatling.io/views/docs.html",
+            "h1",
+            "Latest release : Gatling (.*)"
+    );
 }

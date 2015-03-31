@@ -163,4 +163,9 @@ public class SimpleVersionParserTest {
     public void testCoberturaSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Cobertura.html", Conf.coberturaVersionParserConfiguration, "2.1.1");
     }
+
+    @Test
+    public void testGatlingSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Gatling.html", Conf.gatlingVersionParserConfiguration, "2.1.4");
+    }
 }
