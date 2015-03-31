@@ -128,4 +128,9 @@ public class Conf {
             "#js-repo-pjax-container > div.release-timeline > ul > li > .main",
             "v(.*?) "
     );
+    public static VersionParserConfiguration opensslForwarderVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.openssl.org/source/",
+            "body > table > tbody > tr:nth-child(3) > td:nth-child(3) > pre",
+            "openssl-(.*?).tar.gz \\(MD5\\) \\(SHA1\\) \\(PGP sign\\)  \\[LATEST\\]"
+    );
 }

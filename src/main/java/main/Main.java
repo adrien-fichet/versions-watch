@@ -61,6 +61,7 @@ public class Main {
         new Route("kibana", new SimpleVersionParser(Conf.kibanaVersionParserConfiguration)).setup();
         new Route("logstash", new SimpleVersionParser(Conf.logstashVersionParserConfiguration)).setup();
         new Route("logstashforwarder", new SimpleVersionParser(Conf.logstashForwarderVersionParserConfiguration)).setup();
+        new Route("openssl", new SimpleVersionParser(Conf.opensslForwarderVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

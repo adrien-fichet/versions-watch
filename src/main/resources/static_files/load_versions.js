@@ -44,7 +44,8 @@ $(function() {
       "items": [
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
-        { "id": "vagrant", "name": "Vagrant" }
+        { "id": "vagrant", "name": "Vagrant" },
+        { "id": "openssl", "name": "OpenSSL" }
       ]
     }, {
       "category": { "id": "frameworks", "name": "Java frameworks" },

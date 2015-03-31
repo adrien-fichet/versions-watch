@@ -39,7 +39,7 @@ right category
 - [x] kibana
 - [x] logstash
 - [x] logstash-forwarder
-- [ ] openssl
+- [x] openssl
 - [ ] openssh
 - [ ] zabbix
 - [ ] nagios
