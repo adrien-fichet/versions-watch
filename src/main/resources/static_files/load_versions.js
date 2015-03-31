@@ -1,23 +1,12 @@
 $(function() {
   var versions = [
     {
-      "category": { "id": "monitoring", "name": "Monitoring" },
+      "category": { "id": "elk", "name": "ELK" },
       "items": [
         { "id": "elasticsearch", "name": "Elasticsearch" },
         { "id": "kibana", "name": "Kibana" },
         { "id": "logstash", "name": "Logstash" },
-        { "id": "logstashforwarder", "name": "Logstash-forwarder" },
-        { "id": "zabbix", "name": "Zabbix" },
-        { "id": "nagios", "name": "Nagios" }
-      ]
-    }, {
-      "category": { "id": "ops", "name": "Ops" },
-      "items": [
-        { "id": "jenkins", "name": "Jenkins" },
-        { "id": "puppet", "name": "Puppet" },
-        { "id": "vagrant", "name": "Vagrant" },
-        { "id": "openssl", "name": "OpenSSL" },
-        { "id": "openssh", "name": "OpenSSH" }
+        { "id": "logstashforwarder", "name": "Logstash-forwarder" }
       ]
     }, {
       "category": { "id": "ide", "name": "IDEs / Text editors" },
@@ -44,6 +33,13 @@ $(function() {
         { "id": "maven", "name": "Maven" }
       ]
     }, {
+      "category": { "id": "ops", "name": "Ops" },
+      "items": [
+        { "id": "jenkins", "name": "Jenkins" },
+        { "id": "puppet", "name": "Puppet" },
+        { "id": "vagrant", "name": "Vagrant" }
+      ]
+    }, {
       "category": { "id": "languages", "name": "Languages" },
       "items": [
         { "id": "php", "name": "PHP" },
@@ -51,11 +47,28 @@ $(function() {
         { "id": "javascript", "name": "Javascript" }
       ]
     }, {
+      "category": { "id": "sec", "name": "Sec" },
+      "items": [
+        { "id": "openssl", "name": "OpenSSL" },
+        { "id": "openssh", "name": "OpenSSH" }
+      ]
+    }, {
       "category": { "id": "frameworks", "name": "Java frameworks" },
       "items": [
         { "id": "spring", "name": "Spring" },
-        { "id": "junit", "name": "JUnit" },
         { "id": "hibernate", "name": "Hibernate" }
+      ]
+    }, {
+      "category": { "id": "monitoring", "name": "Monitoring" },
+      "items": [
+        { "id": "zabbix", "name": "Zabbix" },
+        { "id": "nagios", "name": "Nagios" }
+      ]
+    }, {
+      "category": { "id": "testing", "name": "Testing" },
+      "items": [
+        { "id": "junit", "name": "JUnit" },
+        { "id": "cobertura", "name": "Cobertura" }
       ]
     }, {
       "category": { "id": "os", "name": "Operating Systems" },
@@ -99,5 +112,7 @@ function loadVersionsItems(versionsItems, index) {
     if (index < versionsItems.length - 1) {
       loadVersionsItems(versionsItems, index + 1);
     }
+  }).fail(function() {
+    $('#' + currentItemId).text('Unknown');
   });
 }

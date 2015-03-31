@@ -65,6 +65,7 @@ public class Main {
         new Route("openssh", new SimpleVersionParser(Conf.opensshVersionParserConfiguration)).setup();
         new Route("zabbix", new SimpleVersionParser(Conf.zabbixVersionParserConfiguration)).setup();
         new Route("nagios", new SimpleVersionParser(Conf.nagiosVersionParserConfiguration)).setup();
+        new Route("cobertura", new SimpleVersionParser(Conf.coberturaVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

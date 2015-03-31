@@ -43,7 +43,7 @@ right category
 - [x] openssh
 - [x] zabbix
 - [x] nagios
-- [ ] cobertura
+- [x] cobertura
 - [ ] gatling
 - [ ] scala
 - [ ] selenium
@@ -58,3 +58,7 @@ right category
 - [ ] gnome
 - [ ] xfce
 - [ ] linux kernel
+- [ ] jquery
+- [ ] grunt
+- [ ] bower
+- [ ] angularjs

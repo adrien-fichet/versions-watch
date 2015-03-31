@@ -148,4 +148,9 @@ public class Conf {
             "#component > div > div > table:nth-child(2) > tbody > tr > td > h2:nth-child(5)",
             "Nagios (.*)"
     );
+    public static VersionParserConfiguration coberturaVersionParserConfiguration = new VersionParserConfiguration(
+            "https://cobertura.github.io/cobertura/",
+            "#main_content > h3",
+            "Cobertura (.*)"
+    );
 }
