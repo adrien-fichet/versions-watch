@@ -1,6 +1,16 @@
 $(function() {
   var versions = [
     {
+      "category": { "id": "monitoring", "name": "Monitoring" },
+      "items": [
+        { "id": "elasticsearch", "name": "Elasticsearch" },
+        { "id": "kibana", "name": "Kibana" },
+        { "id": "logstash", "name": "Logstash" },
+        { "id": "logstashforwarder", "name": "Logstash-forwarder" },
+        { "id": "zabbix", "name": "Zabbix" },
+        { "id": "nagios", "name": "Nagios" }
+      ]
+    }, {
       "category": { "id": "ops", "name": "Ops" },
       "items": [
         { "id": "jenkins", "name": "Jenkins" },
@@ -8,15 +18,6 @@ $(function() {
         { "id": "vagrant", "name": "Vagrant" },
         { "id": "openssl", "name": "OpenSSL" },
         { "id": "openssh", "name": "OpenSSH" }
-      ]
-    }, {
-      "category": { "id": "monitoring", "name": "Monitoring" },
-      "items": [
-        { "id": "elasticsearch", "name": "Elasticsearch" },
-        { "id": "kibana", "name": "Kibana" },
-        { "id": "logstash", "name": "Logstash" },
-        { "id": "logstashforwarder", "name": "Logstash-forwarder" },
-        { "id": "zabbix", "name": "Zabbix" }
       ]
     }, {
       "category": { "id": "ide", "name": "IDEs / Text editors" },

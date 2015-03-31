@@ -42,7 +42,7 @@ right category
 - [x] openssl
 - [x] openssh
 - [x] zabbix
-- [ ] nagios
+- [x] nagios
 - [ ] cobertura
 - [ ] gatling
 - [ ] scala

@@ -141,16 +141,21 @@ public class SimpleVersionParserTest {
 
     @Test
     public void testOpensslForwarderSimpleVersionParser() throws Exception {
-        testSimpleVersionParser("OpenSSL.html", Conf.opensslForwarderVersionParserConfiguration, "1.0.2a");
+        testSimpleVersionParser("OpenSSL.html", Conf.opensslVersionParserConfiguration, "1.0.2a");
     }
 
     @Test
     public void testOpensshForwarderSimpleVersionParser() throws Exception {
-        testSimpleVersionParser("OpenSSH.html", Conf.opensshForwarderVersionParserConfiguration, "6.8");
+        testSimpleVersionParser("OpenSSH.html", Conf.opensshVersionParserConfiguration, "6.8");
     }
 
     @Test
     public void testZabbixForwarderSimpleVersionParser() throws Exception {
-        testSimpleVersionParser("Zabbix.html", Conf.zabbixForwarderVersionParserConfiguration, "2.4");
+        testSimpleVersionParser("Zabbix.html", Conf.zabbixVersionParserConfiguration, "2.4");
+    }
+
+    @Test
+    public void testNagiosForwarderSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Nagios.html", Conf.nagiosVersionParserConfiguration, "XI");
     }
 }

@@ -61,9 +61,10 @@ public class Main {
         new Route("kibana", new SimpleVersionParser(Conf.kibanaVersionParserConfiguration)).setup();
         new Route("logstash", new SimpleVersionParser(Conf.logstashVersionParserConfiguration)).setup();
         new Route("logstashforwarder", new SimpleVersionParser(Conf.logstashForwarderVersionParserConfiguration)).setup();
-        new Route("openssl", new SimpleVersionParser(Conf.opensslForwarderVersionParserConfiguration)).setup();
-        new Route("openssh", new SimpleVersionParser(Conf.opensshForwarderVersionParserConfiguration)).setup();
-        new Route("zabbix", new SimpleVersionParser(Conf.zabbixForwarderVersionParserConfiguration)).setup();
+        new Route("openssl", new SimpleVersionParser(Conf.opensslVersionParserConfiguration)).setup();
+        new Route("openssh", new SimpleVersionParser(Conf.opensshVersionParserConfiguration)).setup();
+        new Route("zabbix", new SimpleVersionParser(Conf.zabbixVersionParserConfiguration)).setup();
+        new Route("nagios", new SimpleVersionParser(Conf.nagiosVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

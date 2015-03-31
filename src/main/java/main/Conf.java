@@ -128,19 +128,24 @@ public class Conf {
             "#js-repo-pjax-container > div.release-timeline > ul > li > .main",
             "v(.*?) "
     );
-    public static VersionParserConfiguration opensslForwarderVersionParserConfiguration = new VersionParserConfiguration(
+    public static VersionParserConfiguration opensslVersionParserConfiguration = new VersionParserConfiguration(
             "https://www.openssl.org/source/",
             "body > table > tbody > tr:nth-child(3) > td:nth-child(3) > pre",
             "openssl-(.*?).tar.gz \\(MD5\\) \\(SHA1\\) \\(PGP sign\\)  \\[LATEST\\]"
     );
-    public static VersionParserConfiguration opensshForwarderVersionParserConfiguration = new VersionParserConfiguration(
+    public static VersionParserConfiguration opensshVersionParserConfiguration = new VersionParserConfiguration(
             "http://www.openssh.com/",
             "body > table > tbody > tr:nth-child(1) > td:nth-child(3) > center:nth-child(3) > font > a",
             "OpenSSH (.*)"
     );
-    public static VersionParserConfiguration zabbixForwarderVersionParserConfiguration = new VersionParserConfiguration(
+    public static VersionParserConfiguration zabbixVersionParserConfiguration = new VersionParserConfiguration(
             "http://www.zabbix.com/download.php",
             "#content > div > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(1)",
             "Zabbix (.*)"
+    );
+    public static VersionParserConfiguration nagiosVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.nagios.com/products/",
+            "#component > div > div > table:nth-child(2) > tbody > tr > td > h2:nth-child(5)",
+            "Nagios (.*)"
     );
 }
