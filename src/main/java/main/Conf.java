@@ -133,4 +133,9 @@ public class Conf {
             "body > table > tbody > tr:nth-child(3) > td:nth-child(3) > pre",
             "openssl-(.*?).tar.gz \\(MD5\\) \\(SHA1\\) \\(PGP sign\\)  \\[LATEST\\]"
     );
+    public static VersionParserConfiguration opensshForwarderVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.openssh.com/",
+            "body > table > tbody > tr:nth-child(1) > td:nth-child(3) > center:nth-child(3) > font > a",
+            "OpenSSH (.*)"
+    );
 }

@@ -1,6 +1,15 @@
 $(function() {
   var versions = [
     {
+      "category": { "id": "ops", "name": "Ops" },
+      "items": [
+        { "id": "jenkins", "name": "Jenkins" },
+        { "id": "puppet", "name": "Puppet" },
+        { "id": "vagrant", "name": "Vagrant" },
+        { "id": "openssl", "name": "OpenSSL" },
+        { "id": "openssh", "name": "OpenSSH" }
+      ]
+    }, {
       "category": { "id": "ide", "name": "IDEs / Text editors" },
       "items": [
         { "id": "idea", "name": "IntelliJ IDEA" },
@@ -38,14 +47,6 @@ $(function() {
         { "id": "php", "name": "PHP" },
         { "id": "java", "name": "Java SE" },
         { "id": "javascript", "name": "Javascript" }
-      ]
-    }, {
-      "category": { "id": "ops", "name": "Ops" },
-      "items": [
-        { "id": "jenkins", "name": "Jenkins" },
-        { "id": "puppet", "name": "Puppet" },
-        { "id": "vagrant", "name": "Vagrant" },
-        { "id": "openssl", "name": "OpenSSL" }
       ]
     }, {
       "category": { "id": "frameworks", "name": "Java frameworks" },

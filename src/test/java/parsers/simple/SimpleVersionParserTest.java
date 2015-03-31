@@ -143,4 +143,9 @@ public class SimpleVersionParserTest {
     public void testOpensslForwarderSimpleVersionParser() throws Exception {
         testSimpleVersionParser("OpenSSL.html", Conf.opensslForwarderVersionParserConfiguration, "1.0.2a");
     }
+
+    @Test
+    public void testOpensshForwarderSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("OpenSSH.html", Conf.opensshForwarderVersionParserConfiguration, "6.8");
+    }
 }

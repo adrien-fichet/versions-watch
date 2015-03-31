@@ -40,7 +40,7 @@ right category
 - [x] logstash
 - [x] logstash-forwarder
 - [x] openssl
-- [ ] openssh
+- [x] openssh
 - [ ] zabbix
 - [ ] nagios
 - [ ] cobertura
