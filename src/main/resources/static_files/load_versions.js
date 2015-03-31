@@ -10,6 +10,15 @@ $(function() {
         { "id": "openssh", "name": "OpenSSH" }
       ]
     }, {
+      "category": { "id": "monitoring", "name": "Monitoring" },
+      "items": [
+        { "id": "elasticsearch", "name": "Elasticsearch" },
+        { "id": "kibana", "name": "Kibana" },
+        { "id": "logstash", "name": "Logstash" },
+        { "id": "logstashforwarder", "name": "Logstash-forwarder" },
+        { "id": "zabbix", "name": "Zabbix" }
+      ]
+    }, {
       "category": { "id": "ide", "name": "IDEs / Text editors" },
       "items": [
         { "id": "idea", "name": "IntelliJ IDEA" },
@@ -24,14 +33,6 @@ $(function() {
         { "id": "tomcat", "name": "Tomcat" },
         { "id": "extjs", "name": "ExtJS" },
         { "id": "nginx", "name": "Nginx" }
-      ]
-    }, {
-      "category": { "id": "elk", "name": "ELK" },
-      "items": [
-        { "id": "elasticsearch", "name": "Elasticsearch" },
-        { "id": "kibana", "name": "Kibana" },
-        { "id": "logstash", "name": "Logstash" },
-        { "id": "logstashforwarder", "name": "Logstash-forwarder" }
       ]
     }, {
       "category": { "id": "other", "name": "Others" },

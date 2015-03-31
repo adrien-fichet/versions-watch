@@ -41,7 +41,7 @@ right category
 - [x] logstash-forwarder
 - [x] openssl
 - [x] openssh
-- [ ] zabbix
+- [x] zabbix
 - [ ] nagios
 - [ ] cobertura
 - [ ] gatling

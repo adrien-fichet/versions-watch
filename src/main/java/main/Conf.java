@@ -138,4 +138,9 @@ public class Conf {
             "body > table > tbody > tr:nth-child(1) > td:nth-child(3) > center:nth-child(3) > font > a",
             "OpenSSH (.*)"
     );
+    public static VersionParserConfiguration zabbixForwarderVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.zabbix.com/download.php",
+            "#content > div > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(1)",
+            "Zabbix (.*)"
+    );
 }

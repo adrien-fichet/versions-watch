@@ -148,4 +148,9 @@ public class SimpleVersionParserTest {
     public void testOpensshForwarderSimpleVersionParser() throws Exception {
         testSimpleVersionParser("OpenSSH.html", Conf.opensshForwarderVersionParserConfiguration, "6.8");
     }
+
+    @Test
+    public void testZabbixForwarderSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Zabbix.html", Conf.zabbixForwarderVersionParserConfiguration, "2.4");
+    }
 }

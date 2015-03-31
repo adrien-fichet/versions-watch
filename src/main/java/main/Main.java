@@ -63,6 +63,7 @@ public class Main {
         new Route("logstashforwarder", new SimpleVersionParser(Conf.logstashForwarderVersionParserConfiguration)).setup();
         new Route("openssl", new SimpleVersionParser(Conf.opensslForwarderVersionParserConfiguration)).setup();
         new Route("openssh", new SimpleVersionParser(Conf.opensshForwarderVersionParserConfiguration)).setup();
+        new Route("zabbix", new SimpleVersionParser(Conf.zabbixForwarderVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
