@@ -158,4 +158,9 @@ public class Conf {
             "h1",
             "Latest release : Gatling (.*)"
     );
+    public static VersionParserConfiguration scalaVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.scala-lang.org/",
+            "body > div.container.central > div.central-btn.scala-version",
+            "Scala (.*)"
+    );
 }

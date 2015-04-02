@@ -45,7 +45,7 @@ right category
 - [x] nagios
 - [x] cobertura
 - [x] gatling
-- [ ] scala
+- [x] scala
 - [ ] selenium
 - [ ] virtualbox
 - [ ] windows
@@ -62,3 +62,5 @@ right category
 - [ ] grunt
 - [ ] bower
 - [ ] angularjs
+- [ ] elasticdump
+- [ ] curator

@@ -168,4 +168,9 @@ public class SimpleVersionParserTest {
     public void testGatlingSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Gatling.html", Conf.gatlingVersionParserConfiguration, "2.1.4");
     }
+
+    @Test
+    public void testScalaSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Scala.html", Conf.scalaVersionParserConfiguration, "2.11.6");
+    }
 }

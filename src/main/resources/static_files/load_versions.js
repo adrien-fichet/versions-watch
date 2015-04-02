@@ -33,18 +33,19 @@ $(function() {
         { "id": "maven", "name": "Maven" }
       ]
     }, {
+      "category": { "id": "languages", "name": "Languages" },
+      "items": [
+        { "id": "php", "name": "PHP" },
+        { "id": "java", "name": "Java SE" },
+        { "id": "javascript", "name": "Javascript" },
+        { "id": "scala", "name": "Scala" }
+      ]
+    }, {
       "category": { "id": "ops", "name": "Ops" },
       "items": [
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
         { "id": "vagrant", "name": "Vagrant" }
-      ]
-    }, {
-      "category": { "id": "languages", "name": "Languages" },
-      "items": [
-        { "id": "php", "name": "PHP" },
-        { "id": "java", "name": "Java SE" },
-        { "id": "javascript", "name": "Javascript" }
       ]
     }, {
       "category": { "id": "testing", "name": "Testing" },

@@ -67,6 +67,7 @@ public class Main {
         new Route("nagios", new SimpleVersionParser(Conf.nagiosVersionParserConfiguration)).setup();
         new Route("cobertura", new SimpleVersionParser(Conf.coberturaVersionParserConfiguration)).setup();
         new Route("gatling", new SimpleVersionParser(Conf.gatlingVersionParserConfiguration)).setup();
+        new Route("scala", new SimpleVersionParser(Conf.scalaVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }
