@@ -47,7 +47,7 @@ right category
 - [x] gatling
 - [x] scala
 - [x] selenium
-- [ ] virtualbox
+- [x] virtualbox
 - [ ] windows
 - [ ] centos
 - [ ] fedora

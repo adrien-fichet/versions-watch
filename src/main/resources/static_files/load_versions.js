@@ -53,7 +53,8 @@ $(function() {
       "items": [
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
-        { "id": "vagrant", "name": "Vagrant" }
+        { "id": "vagrant", "name": "Vagrant" },
+        { "id": "virtualbox", "name": "VirtualBox" }
       ]
     }, {
       "category": { "id": "sec", "name": "Sec" },

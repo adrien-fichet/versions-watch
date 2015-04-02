@@ -168,4 +168,9 @@ public class Conf {
             "#mainContent > p:nth-child(5) > a",
             null
     );
+    public static VersionParserConfiguration virtualboxVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.virtualbox.org/wiki/Downloads",
+            "#wikipage > ul:nth-child(5) > li > ul > li:nth-child(3) > strong > a",
+            "VirtualBox (.*?) for Linux hosts"
+    );
 }

@@ -178,4 +178,9 @@ public class SimpleVersionParserTest {
     public void testSeleniumSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Selenium.html", Conf.seleniumVersionParserConfiguration, "2.45.0");
     }
+
+    @Test
+    public void testVirtualboxSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Virtualbox.html", Conf.virtualboxVersionParserConfiguration, "4.3.26");
+    }
 }
