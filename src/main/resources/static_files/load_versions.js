@@ -41,18 +41,19 @@ $(function() {
         { "id": "scala", "name": "Scala" }
       ]
     }, {
+      "category": { "id": "testing", "name": "Testing" },
+      "items": [
+        { "id": "junit", "name": "JUnit" },
+        { "id": "cobertura", "name": "Cobertura" },
+        { "id": "gatling", "name": "Gatling" },
+        { "id": "selenium", "name": "Selenium" }
+      ]
+    }, {
       "category": { "id": "ops", "name": "Ops" },
       "items": [
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
         { "id": "vagrant", "name": "Vagrant" }
-      ]
-    }, {
-      "category": { "id": "testing", "name": "Testing" },
-      "items": [
-        { "id": "junit", "name": "JUnit" },
-        { "id": "cobertura", "name": "Cobertura" },
-        { "id": "gatling", "name": "Gatling" }
       ]
     }, {
       "category": { "id": "sec", "name": "Sec" },

@@ -173,4 +173,9 @@ public class SimpleVersionParserTest {
     public void testScalaSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Scala.html", Conf.scalaVersionParserConfiguration, "2.11.6");
     }
+
+    @Test
+    public void testSeleniumSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Selenium.html", Conf.seleniumVersionParserConfiguration, "2.45.0");
+    }
 }

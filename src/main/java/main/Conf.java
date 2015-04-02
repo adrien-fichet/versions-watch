@@ -163,4 +163,9 @@ public class Conf {
             "body > div.container.central > div.central-btn.scala-version",
             "Scala (.*)"
     );
+    public static VersionParserConfiguration seleniumVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.seleniumhq.org/download/",
+            "#mainContent > p:nth-child(5) > a",
+            null
+    );
 }

@@ -68,6 +68,7 @@ public class Main {
         new Route("cobertura", new SimpleVersionParser(Conf.coberturaVersionParserConfiguration)).setup();
         new Route("gatling", new SimpleVersionParser(Conf.gatlingVersionParserConfiguration)).setup();
         new Route("scala", new SimpleVersionParser(Conf.scalaVersionParserConfiguration)).setup();
+        new Route("selenium", new SimpleVersionParser(Conf.seleniumVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

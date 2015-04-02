@@ -46,7 +46,7 @@ right category
 - [x] cobertura
 - [x] gatling
 - [x] scala
-- [ ] selenium
+- [x] selenium
 - [ ] virtualbox
 - [ ] windows
 - [ ] centos
