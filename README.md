@@ -48,10 +48,10 @@ right category
 - [x] scala
 - [x] selenium
 - [x] virtualbox
+- [x] gentoo
 - [ ] windows
 - [ ] centos
 - [ ] fedora
-- [ ] gentoo
 - [ ] archlinux
 - [ ] vim
 - [ ] emacs
@@ -64,3 +64,10 @@ right category
 - [ ] angularjs
 - [ ] elasticdump
 - [ ] curator
+- [ ] coreos
+- [ ] firefox
+- [ ] google chrome
+- [ ] chromium
+- [ ] safari
+- [ ] internet explorer
+- [ ] opera

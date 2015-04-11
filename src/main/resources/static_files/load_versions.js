@@ -57,6 +57,13 @@ $(function() {
         { "id": "virtualbox", "name": "VirtualBox" }
       ]
     }, {
+      "category": { "id": "os", "name": "Operating Systems" },
+      "items": [
+        { "id": "debian", "name": "Debian" },
+        { "id": "ubuntu", "name": "Ubuntu" },
+        { "id": "gentoo", "name": "Gentoo" }
+      ]
+    }, {
       "category": { "id": "sec", "name": "Sec" },
       "items": [
         { "id": "openssl", "name": "OpenSSL" },
@@ -73,12 +80,6 @@ $(function() {
       "items": [
         { "id": "zabbix", "name": "Zabbix" },
         { "id": "nagios", "name": "Nagios" }
-      ]
-    }, {
-      "category": { "id": "os", "name": "Operating Systems" },
-      "items": [
-        { "id": "debian", "name": "Debian" },
-        { "id": "ubuntu", "name": "Ubuntu" }
       ]
     }, {
       "category": { "id": "scm", "name": "SCMs" },
@@ -117,6 +118,10 @@ function loadVersionsItems(versionsItems, index) {
       loadVersionsItems(versionsItems, index + 1);
     }
   }).fail(function() {
-    $('#' + currentItemId).text('Unknown');
+    if (currentItemId == "gentoo") {
+      $('#gentoo').html('<a href="https://www.youtube.com/watch?v=VjGSMUep6_4">install it</a>');
+    } else {
+      $('#' + currentItemId).text('Unknown');
+    }
   });
 }
