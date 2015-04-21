@@ -1,6 +1,15 @@
 $(function() {
   var versions = [
     {
+      "category": { "id": "os", "name": "Operating Systems" },
+      "items": [
+        { "id": "debian", "name": "Debian" },
+        { "id": "ubuntu", "name": "Ubuntu" },
+        { "id": "gentoo", "name": "Gentoo" },
+        { "id": "windows", "name": "Windows NT" },
+        { "id": "centos", "name": "CentOS" }
+      ]
+    }, {
       "category": { "id": "elk", "name": "ELK" },
       "items": [
         { "id": "elasticsearch", "name": "Elasticsearch" },
@@ -55,14 +64,6 @@ $(function() {
         { "id": "puppet", "name": "Puppet" },
         { "id": "vagrant", "name": "Vagrant" },
         { "id": "virtualbox", "name": "VirtualBox" }
-      ]
-    }, {
-      "category": { "id": "os", "name": "Operating Systems" },
-      "items": [
-        { "id": "debian", "name": "Debian" },
-        { "id": "ubuntu", "name": "Ubuntu" },
-        { "id": "gentoo", "name": "Gentoo" },
-        { "id": "windows", "name": "Windows NT" }
       ]
     }, {
       "category": { "id": "sec", "name": "Sec" },

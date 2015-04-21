@@ -13,11 +13,13 @@ public class SimpleVersionParser extends VersionParser {
     protected String url;
     private String versionCssSelector;
     private String extractorRegex;
+    private String[][] replacements;
 
     public SimpleVersionParser(VersionParserConfiguration conf) {
-        this.url = conf.getUrl();
-        this.versionCssSelector = conf.getCssSelector();
-        this.extractorRegex = conf.getExtractorRegex();
+        url = conf.getUrl();
+        versionCssSelector = conf.getCssSelector();
+        extractorRegex = conf.getExtractorRegex();
+        replacements = conf.getReplacements();
     }
 
     public Document loadDocument() throws IOException {
@@ -40,6 +42,12 @@ public class SimpleVersionParser extends VersionParser {
 
             if (matcher.find()) {
                 versionText = matcher.group(1);
+            }
+        }
+
+        if (replacements != null) {
+            for (String[] replacement : replacements) {
+                versionText = versionText.replaceAll(replacement[0], replacement[1]);
             }
         }
 

@@ -71,6 +71,7 @@ public class Main {
         new Route("selenium", new SimpleVersionParser(Conf.seleniumVersionParserConfiguration)).setup();
         new Route("virtualbox", new SimpleVersionParser(Conf.virtualboxVersionParserConfiguration)).setup();
         new Route("windows", new SimpleVersionParser(Conf.windowsVersionParserConfiguration)).setup();
+        new Route("centos", new SimpleVersionParser(Conf.centosVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

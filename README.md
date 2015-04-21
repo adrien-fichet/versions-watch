@@ -50,7 +50,7 @@ right category
 - [x] virtualbox
 - [x] gentoo
 - [x] windows
-- [ ] centos
+- [x] centos
 - [ ] fedora
 - [ ] archlinux
 - [ ] vim

@@ -178,4 +178,10 @@ public class Conf {
             "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td",
             "(.*?) \\("
     );
+    public static VersionParserConfiguration centosVersionParserConfiguration = new VersionParserConfiguration(
+            "http://wiki.centos.org/Download",
+            "#content > div:nth-child(14) > table > tbody > tr:nth-child(2) > td:nth-child(2)",
+            null,
+            new String[][]{{" \\(", "."}, {"\\)", ""}}
+    );
 }

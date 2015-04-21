@@ -188,4 +188,9 @@ public class SimpleVersionParserTest {
     public void testWindowsSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Windows.html", Conf.windowsVersionParserConfiguration, "6.3.9600");
     }
+
+    @Test
+    public void testCentosSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Centos.html", Conf.centosVersionParserConfiguration, "7.1503");
+    }
 }
