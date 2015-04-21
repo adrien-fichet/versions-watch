@@ -184,4 +184,9 @@ public class Conf {
             null,
             new String[][]{{" \\(", "."}, {"\\)", ""}}
     );
+    public static VersionParserConfiguration fedoraVersionParserConfiguration = new VersionParserConfiguration(
+            "https://getfedora.org/en/workstation/download/",
+            "#head > div > div > div > h2",
+            "Download Fedora (.*?) Workstation"
+    );
 }

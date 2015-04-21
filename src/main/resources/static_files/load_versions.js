@@ -7,7 +7,8 @@ $(function() {
         { "id": "ubuntu", "name": "Ubuntu" },
         { "id": "gentoo", "name": "Gentoo" },
         { "id": "windows", "name": "Windows NT" },
-        { "id": "centos", "name": "CentOS" }
+        { "id": "centos", "name": "CentOS" },
+        { "id": "fedora", "name": "Fedora" }
       ]
     }, {
       "category": { "id": "elk", "name": "ELK" },

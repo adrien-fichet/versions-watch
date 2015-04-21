@@ -51,7 +51,7 @@ right category
 - [x] gentoo
 - [x] windows
 - [x] centos
-- [ ] fedora
+- [x] fedora
 - [ ] archlinux
 - [ ] vim
 - [ ] emacs

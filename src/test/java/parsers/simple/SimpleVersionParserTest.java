@@ -193,4 +193,9 @@ public class SimpleVersionParserTest {
     public void testCentosSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Centos.html", Conf.centosVersionParserConfiguration, "7.1503");
     }
+
+    @Test
+    public void testFedoraSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Fedora.html", Conf.fedoraVersionParserConfiguration, "21");
+    }
 }
