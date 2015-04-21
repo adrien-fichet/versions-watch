@@ -61,7 +61,8 @@ $(function() {
       "items": [
         { "id": "debian", "name": "Debian" },
         { "id": "ubuntu", "name": "Ubuntu" },
-        { "id": "gentoo", "name": "Gentoo" }
+        { "id": "gentoo", "name": "Gentoo" },
+        { "id": "windows", "name": "Windows NT" }
       ]
     }, {
       "category": { "id": "sec", "name": "Sec" },
@@ -112,16 +113,19 @@ function createVersionRow(item) {
 
 function loadVersionsItems(versionsItems, index) {
   var currentItemId = versionsItems[index].id;
-  $.getJSON('/' + currentItemId, function(data) {
-    $('#' + currentItemId).text(data[currentItemId]);
+  if (currentItemId == "gentoo") {
+    $('#gentoo').html('<a href="https://www.youtube.com/watch?v=VjGSMUep6_4">install it</a>');
     if (index < versionsItems.length - 1) {
       loadVersionsItems(versionsItems, index + 1);
     }
-  }).fail(function() {
-    if (currentItemId == "gentoo") {
-      $('#gentoo').html('<a href="https://www.youtube.com/watch?v=VjGSMUep6_4">install it</a>');
-    } else {
+  } else {
+    $.getJSON('/' + currentItemId, function(data) {
+      $('#' + currentItemId).text(data[currentItemId]);
+      if (index < versionsItems.length - 1) {
+        loadVersionsItems(versionsItems, index + 1);
+      }
+    }).fail(function() {
       $('#' + currentItemId).text('Unknown');
-    }
-  });
+    });
+  }
 }

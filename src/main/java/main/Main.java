@@ -70,6 +70,7 @@ public class Main {
         new Route("scala", new SimpleVersionParser(Conf.scalaVersionParserConfiguration)).setup();
         new Route("selenium", new SimpleVersionParser(Conf.seleniumVersionParserConfiguration)).setup();
         new Route("virtualbox", new SimpleVersionParser(Conf.virtualboxVersionParserConfiguration)).setup();
+        new Route("windows", new SimpleVersionParser(Conf.windowsVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

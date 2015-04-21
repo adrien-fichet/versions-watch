@@ -183,4 +183,9 @@ public class SimpleVersionParserTest {
     public void testVirtualboxSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Virtualbox.html", Conf.virtualboxVersionParserConfiguration, "4.3.26");
     }
+
+    @Test
+    public void testWindowsSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Windows.html", Conf.windowsVersionParserConfiguration, "6.3.9600");
+    }
 }

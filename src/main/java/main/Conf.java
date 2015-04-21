@@ -173,4 +173,9 @@ public class Conf {
             "#wikipage > ul:nth-child(5) > li > ul > li:nth-child(3) > strong > a",
             "VirtualBox (.*?) for Linux hosts"
     );
+    public static VersionParserConfiguration windowsVersionParserConfiguration = new VersionParserConfiguration(
+            "https://en.wikipedia.org/wiki/Microsoft_Windows",
+            "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td",
+            "(.*?) \\("
+    );
 }

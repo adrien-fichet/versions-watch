@@ -49,7 +49,7 @@ right category
 - [x] selenium
 - [x] virtualbox
 - [x] gentoo
-- [ ] windows
+- [x] windows
 - [ ] centos
 - [ ] fedora
 - [ ] archlinux
