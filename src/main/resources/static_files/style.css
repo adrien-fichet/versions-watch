@@ -1,29 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Jaldi);
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0px;
+  font-family: 'Jaldi', 'Arial', sans-serif;
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
 }
 
 table {
   border-collapse: collapse;
   display: inline-block;
-  margin: 5px 0px 0px 5px;
+  margin: 2px 0 0 2px;
   vertical-align: top;
+  border: 1px solid #3a75b1;
+  text-align: left;
 }
 
 td, th {
-  border: 1px solid silver;
-  padding: 0px 10px 0px 10px;
+  padding: 0 5px 0 5px;
 }
+
 
 th, .icon {
   text-align: center;
 }
 
+th {
+  background-color: #3a75b1;
+  color: white;
+}
+
 .icon img {
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
-  padding: 2px 0px;
+  padding: 2px 0;
 }
 
 .loading {
