@@ -3,25 +3,18 @@
 body {
   font-family: 'Jaldi', 'Arial', sans-serif;
   margin: auto;
-  max-width: 1000px;
-  text-align: center;
+  max-width: 400px;
 }
 
 table {
   border-collapse: collapse;
-  display: inline-block;
-  margin: 2px 0 0 2px;
   vertical-align: top;
   border: 1px solid #3a75b1;
-  text-align: left;
+  width: 100%;
 }
 
 td, th {
   padding: 0 5px 0 5px;
-}
-
-th, .icon {
-  text-align: center;
 }
 
 th {
@@ -40,4 +33,17 @@ th {
   width: 16px;
   height: 16px;
   vertical-align: middle;
+}
+
+.icon {
+  width: 30%;
+  text-align: center;
+}
+
+.name {
+  width: 40%;
+}
+
+.version {
+  width: 30%;
 }
