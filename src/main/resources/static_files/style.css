@@ -10,6 +10,7 @@ table {
   border-collapse: collapse;
   vertical-align: top;
   border: 1px solid #3a75b1;
+  margin: 5px 0;
   width: 100%;
 }
 
@@ -23,8 +24,8 @@ th {
 }
 
 .icon img {
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
   vertical-align: middle;
   padding: 2px 0;
 }
