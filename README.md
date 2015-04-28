@@ -71,3 +71,5 @@ right category
 - [ ] safari
 - [ ] internet explorer
 - [ ] opera
+- [ ] drupal
+- [ ] wordpress
