@@ -3,6 +3,7 @@
 body {
   font-family: 'Jaldi', 'Arial', sans-serif;
   margin: auto;
+  padding: 0 5px;
   max-width: 400px;
 }
 
