@@ -3,8 +3,13 @@ package parsers;
 public class VersionParserConfiguration {
     private String url;
     private String cssSelector;
-    private String extractorRegex;
+    private String extractorRegex = null;
     private String[][] replacements = null;
+
+    public VersionParserConfiguration(String url, String cssSelector) {
+        this.url = url;
+        this.cssSelector = cssSelector;
+    }
 
     public VersionParserConfiguration(String url, String cssSelector, String extractorRegex) {
         this.url = url;

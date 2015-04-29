@@ -5,8 +5,7 @@ import parsers.VersionParserConfiguration;
 public class Conf {
     public static VersionParserConfiguration gitVersionParserConfiguration = new VersionParserConfiguration(
             "http://git-scm.com/",
-            "span.version",
-            null
+            "span.version"
     );
     public static VersionParserConfiguration apacheVersionParserConfiguration = new VersionParserConfiguration(
             "https://httpd.apache.org/download.cgi",
@@ -30,8 +29,7 @@ public class Conf {
     );
     public static VersionParserConfiguration mysqlVersionParserConfiguration = new VersionParserConfiguration(
             "https://dev.mysql.com/doc",
-            "#rowid-0 > td:nth-child(2)",
-            null
+            "#rowid-0 > td:nth-child(2)"
     );
     public static VersionParserConfiguration jenkinsVersionParserConfiguration = new VersionParserConfiguration(
             "https://jenkins-ci.org",
@@ -45,8 +43,7 @@ public class Conf {
     );
     public static VersionParserConfiguration netbeansVersionParserConfiguration = new VersionParserConfiguration(
             "https://netbeans.org/community/releases/roadmap.html",
-            "#middle > table > tbody > tr > td:nth-child(1) > div.f-page-auto-cell > center > table > tbody > tr:nth-child(4) > td:nth-child(1)",
-            null
+            "#middle > table > tbody > tr > td:nth-child(1) > div.f-page-auto-cell > center > table > tbody > tr:nth-child(4) > td:nth-child(1)"
     );
     public static VersionParserConfiguration phpVersionParserConfiguration = new VersionParserConfiguration(
             "https://php.net/downloads.php",
@@ -55,8 +52,7 @@ public class Conf {
     );
     public static VersionParserConfiguration tomcatVersionParserConfiguration = new VersionParserConfiguration(
             "https://tomcat.apache.org/whichversion.html",
-            "#content > div:nth-child(3) > table > tbody > tr:nth-child(3) > td:nth-child(6)",
-            null
+            "#content > div:nth-child(3) > table > tbody > tr:nth-child(3) > td:nth-child(6)"
     );
     public static VersionParserConfiguration sublimeTextVersionParserConfiguration = new VersionParserConfiguration(
             "https://www.sublimetext.com/",
@@ -165,8 +161,7 @@ public class Conf {
     );
     public static VersionParserConfiguration seleniumVersionParserConfiguration = new VersionParserConfiguration(
             "http://www.seleniumhq.org/download/",
-            "#mainContent > p:nth-child(5) > a",
-            null
+            "#mainContent > p:nth-child(5) > a"
     );
     public static VersionParserConfiguration virtualboxVersionParserConfiguration = new VersionParserConfiguration(
             "https://www.virtualbox.org/wiki/Downloads",
@@ -188,5 +183,10 @@ public class Conf {
             "https://getfedora.org/en/workstation/download/",
             "#head > div > div > div > h2",
             "Download Fedora (.*?) Workstation"
+    );
+    public static VersionParserConfiguration proxmoxVersionParserConfiguration = new VersionParserConfiguration(
+            "http://www.proxmox.com/en/downloads/category/iso-images-pve",
+            "#yoo-zoo > div.items > div.row.first-row > div.width50.first-cell > div > ul > li",
+            "Version: (.*)"
     );
 }

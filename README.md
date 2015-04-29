@@ -52,7 +52,7 @@ right category
 - [x] windows
 - [x] centos
 - [x] fedora
-- [ ] archlinux
+- [x] proxmox ve
 - [ ] vim
 - [ ] emacs
 - [ ] gnome
@@ -73,7 +73,6 @@ right category
 - [ ] opera
 - [ ] drupal
 - [ ] wordpress
-- [ ] proxmox
 - [ ] nexus
 - [ ] postgresql
 - [ ] sqlite

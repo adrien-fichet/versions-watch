@@ -198,4 +198,9 @@ public class SimpleVersionParserTest {
     public void testFedoraSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Fedora.html", Conf.fedoraVersionParserConfiguration, "21");
     }
+
+    @Test
+    public void testProxmoxSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Proxmox.html", Conf.proxmoxVersionParserConfiguration, "3.4-3f2d890e-1");
+    }
 }

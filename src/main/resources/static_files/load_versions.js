@@ -56,7 +56,8 @@ $(function() {
         { "id": "jenkins", "name": "Jenkins" },
         { "id": "puppet", "name": "Puppet" },
         { "id": "vagrant", "name": "Vagrant" },
-        { "id": "virtualbox", "name": "VirtualBox" }
+        { "id": "virtualbox", "name": "VirtualBox" },
+        { "id": "proxmox", "name": "Proxmox VE" }
       ]
     }, {
       "category": { "id": "sec", "name": "Sec" },
