@@ -73,3 +73,7 @@ right category
 - [ ] opera
 - [ ] drupal
 - [ ] wordpress
+- [ ] proxmox
+- [ ] nexus
+- [ ] postgresql
+- [ ] sqlite

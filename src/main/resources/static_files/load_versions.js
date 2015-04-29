@@ -35,14 +35,6 @@ $(function() {
         { "id": "nginx", "name": "Nginx" }
       ]
     }, {
-      "category": { "id": "other", "name": "Others" },
-      "items": [
-        { "id": "youtrack", "name": "YouTrack"},
-        { "id": "mysql", "name": "MySQL" },
-        { "id": "solr", "name": "Solr" },
-        { "id": "maven", "name": "Maven" }
-      ]
-    }, {
       "category": { "id": "languages", "name": "Languages" },
       "items": [
         { "id": "php", "name": "PHP" },
@@ -89,6 +81,18 @@ $(function() {
       "items": [
         { "id": "git", "name": "Git" },
         { "id": "subversion", "name": "Subversion" }
+      ]
+    }, {
+      "category": { "id": "databases", "name": "Databases" },
+      "items": [
+        { "id": "mysql", "name": "MySQL" }
+      ]
+    },  {
+      "category": { "id": "other", "name": "Others" },
+      "items": [
+        { "id": "youtrack", "name": "YouTrack"},
+        { "id": "solr", "name": "Solr" },
+        { "id": "maven", "name": "Maven" }
       ]
     }
   ];
