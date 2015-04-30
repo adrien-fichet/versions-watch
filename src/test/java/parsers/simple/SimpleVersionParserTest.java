@@ -203,4 +203,9 @@ public class SimpleVersionParserTest {
     public void testProxmoxSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Proxmox.html", Conf.proxmoxVersionParserConfiguration, "3.4-3f2d890e-1");
     }
+
+    @Test
+    public void testSqliteSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("SQLite.html", Conf.sqliteVersionParserConfiguration, "3.8.9");
+    }
 }

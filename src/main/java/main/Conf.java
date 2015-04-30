@@ -189,4 +189,9 @@ public class Conf {
             "#yoo-zoo > div.items > div.row.first-row > div.width50.first-cell > div > ul > li",
             "Version: (.*)"
     );
+    public static VersionParserConfiguration sqliteVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.sqlite.org/",
+            "body > div > table:nth-child(6) > tbody > tr > td:nth-child(5) > ul:nth-child(3) > li > a",
+            "Version (.*)"
+    );
 }

@@ -53,6 +53,7 @@ right category
 - [x] centos
 - [x] fedora
 - [x] proxmox ve
+- [x] sqlite
 - [ ] vim
 - [ ] emacs
 - [ ] gnome
@@ -75,4 +76,5 @@ right category
 - [ ] wordpress
 - [ ] nexus
 - [ ] postgresql
-- [ ] sqlite
+
+- Load order: loading image -> icons -> versions

@@ -74,6 +74,7 @@ public class Main {
         new Route("centos", new SimpleVersionParser(Conf.centosVersionParserConfiguration)).setup();
         new Route("fedora", new SimpleVersionParser(Conf.fedoraVersionParserConfiguration)).setup();
         new Route("proxmox", new SimpleVersionParser(Conf.proxmoxVersionParserConfiguration)).setup();
+        new Route("sqlite", new SimpleVersionParser(Conf.sqliteVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

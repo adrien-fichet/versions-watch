@@ -86,7 +86,8 @@ $(function() {
     }, {
       "category": { "id": "databases", "name": "Databases" },
       "items": [
-        { "id": "mysql", "name": "MySQL" }
+        { "id": "mysql", "name": "MySQL" },
+        { "id": "sqlite", "name": "SQLite" }
       ]
     },  {
       "category": { "id": "other", "name": "Others" },
