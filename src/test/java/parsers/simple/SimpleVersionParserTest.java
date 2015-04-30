@@ -213,4 +213,9 @@ public class SimpleVersionParserTest {
     public void testGruntSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Grunt.html", Conf.gruntVersionParserConfiguration, "0.4.5");
     }
+
+    @Test
+    public void testEmacsSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Emacs.html", Conf.emacsVersionParserConfiguration, "24.5");
+    }
 }

@@ -24,7 +24,8 @@ $(function() {
         { "id": "idea", "name": "IntelliJ IDEA" },
         { "id": "eclipse", "name": "Eclipse" },
         { "id": "netbeans", "name": "Netbeans" },
-        { "id": "sublime_text", "name": "Sublime Text" }
+        { "id": "sublime_text", "name": "Sublime Text" },
+        { "id": "emacs", name: "Emacs" }
       ]
     }, {
       "category": { "id": "web", "name": "Web" },

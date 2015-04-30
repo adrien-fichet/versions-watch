@@ -55,8 +55,8 @@ right category
 - [x] proxmox ve
 - [x] sqlite
 - [x] grunt
+- [x] emacs
 - [ ] vim
-- [ ] emacs
 - [ ] gnome
 - [ ] xfce
 - [ ] linux kernel
@@ -76,6 +76,9 @@ right category
 - [ ] wordpress
 - [ ] nexus
 - [ ] postgresql
+- [ ] docker
+- [ ] lxc
+- [ ] openvz
 
 ### Ideas
 - Load order: loading image -> icons -> versions

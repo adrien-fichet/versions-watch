@@ -199,4 +199,9 @@ public class Conf {
             "body > div.content > div > div > div.span3 > div > div.latest-version > ul > li:nth-child(1) > a",
             "v(.*)"
     );
+    public static VersionParserConfiguration emacsVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.gnu.org/software/emacs/",
+            "#content > p:nth-child(7) > b",
+            "The current stable release is (.*)"
+    );
 }
