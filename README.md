@@ -78,7 +78,7 @@ right category
 - [ ] postgresql
 - [ ] docker
 - [ ] lxc
-- [ ] openvz
+- [ ] openvz
 
 ### Ideas
 - Load order: loading image -> icons -> versions
