@@ -54,13 +54,13 @@ right category
 - [x] fedora
 - [x] proxmox ve
 - [x] sqlite
+- [x] grunt
 - [ ] vim
 - [ ] emacs
 - [ ] gnome
 - [ ] xfce
 - [ ] linux kernel
 - [ ] jquery
-- [ ] grunt
 - [ ] bower
 - [ ] angularjs
 - [ ] elasticdump
@@ -77,4 +77,5 @@ right category
 - [ ] nexus
 - [ ] postgresql
 
+### Ideas
 - Load order: loading image -> icons -> versions

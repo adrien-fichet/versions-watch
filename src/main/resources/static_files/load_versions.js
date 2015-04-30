@@ -32,7 +32,8 @@ $(function() {
         { "id": "apache", "name": "Apache" },
         { "id": "tomcat", "name": "Tomcat" },
         { "id": "extjs", "name": "ExtJS" },
-        { "id": "nginx", "name": "Nginx" }
+        { "id": "nginx", "name": "Nginx" },
+        { "id": "grunt", "name": "Grunt" }
       ]
     }, {
       "category": { "id": "languages", "name": "Languages" },

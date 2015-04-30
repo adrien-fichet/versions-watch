@@ -75,6 +75,7 @@ public class Main {
         new Route("fedora", new SimpleVersionParser(Conf.fedoraVersionParserConfiguration)).setup();
         new Route("proxmox", new SimpleVersionParser(Conf.proxmoxVersionParserConfiguration)).setup();
         new Route("sqlite", new SimpleVersionParser(Conf.sqliteVersionParserConfiguration)).setup();
+        new Route("grunt", new SimpleVersionParser(Conf.gruntVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

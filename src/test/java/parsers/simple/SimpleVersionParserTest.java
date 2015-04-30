@@ -208,4 +208,9 @@ public class SimpleVersionParserTest {
     public void testSqliteSimpleVersionParser() throws Exception {
         testSimpleVersionParser("SQLite.html", Conf.sqliteVersionParserConfiguration, "3.8.9");
     }
+
+    @Test
+    public void testGruntSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Grunt.html", Conf.gruntVersionParserConfiguration, "0.4.5");
+    }
 }

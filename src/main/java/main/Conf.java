@@ -194,4 +194,9 @@ public class Conf {
             "body > div > table:nth-child(6) > tbody > tr > td:nth-child(5) > ul:nth-child(3) > li > a",
             "Version (.*)"
     );
+    public static VersionParserConfiguration gruntVersionParserConfiguration = new VersionParserConfiguration(
+            "http://gruntjs.com/",
+            "body > div.content > div > div > div.span3 > div > div.latest-version > ul > li:nth-child(1) > a",
+            "v(.*)"
+    );
 }
