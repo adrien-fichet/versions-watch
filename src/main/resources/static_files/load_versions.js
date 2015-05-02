@@ -42,7 +42,8 @@ $(function() {
         { "id": "php", "name": "PHP" },
         { "id": "java", "name": "Java SE" },
         { "id": "javascript", "name": "Javascript" },
-        { "id": "scala", "name": "Scala" }
+        { "id": "scala", "name": "Scala" },
+        { "id": "python", "name": "Python" }
       ]
     }, {
       "category": { "id": "testing", "name": "Testing" },
@@ -125,17 +126,20 @@ function loadVersionsItems(versionsItems, index) {
   var currentItemId = versionsItems[index].id;
   if (currentItemId == "gentoo") {
     $('#gentoo').html('<a href="https://www.youtube.com/watch?v=VjGSMUep6_4">install it</a>');
-    if (index < versionsItems.length - 1) {
-      loadVersionsItems(versionsItems, index + 1);
-    }
+    loadNextVersionItem(versionsItems, index);
   } else {
     $.getJSON('/' + currentItemId, function(data) {
       $('#' + currentItemId).text(data[currentItemId]);
-      if (index < versionsItems.length - 1) {
-        loadVersionsItems(versionsItems, index + 1);
-      }
     }).fail(function() {
       $('#' + currentItemId).text('Unknown');
+    }).always(function() {
+      loadNextVersionItem(versionsItems, index);
     });
+  }
+}
+
+function loadNextVersionItem(versionsItems, index) {
+  if (index < versionsItems.length - 1) {
+    loadVersionsItems(versionsItems, index + 1);
   }
 }

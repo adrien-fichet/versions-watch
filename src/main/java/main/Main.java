@@ -77,6 +77,7 @@ public class Main {
         new Route("sqlite", new SimpleVersionParser(Conf.sqliteVersionParserConfiguration)).setup();
         new Route("grunt", new SimpleVersionParser(Conf.gruntVersionParserConfiguration)).setup();
         new Route("emacs", new SimpleVersionParser(Conf.emacsVersionParserConfiguration)).setup();
+        new Route("python", new SimpleVersionParser(Conf.pythonVersionParserConfiguration)).setup();
         get("/", (request, response) -> new MustacheTemplateEngine().render(new ModelAndView(null, "index.mustache")));
     }
 }

@@ -218,4 +218,9 @@ public class SimpleVersionParserTest {
     public void testEmacsSimpleVersionParser() throws Exception {
         testSimpleVersionParser("Emacs.html", Conf.emacsVersionParserConfiguration, "24.5");
     }
+
+    @Test
+    public void testPythonSimpleVersionParser() throws Exception {
+        testSimpleVersionParser("Python.html", Conf.pythonVersionParserConfiguration, "3.4.3");
+    }
 }

@@ -204,4 +204,9 @@ public class Conf {
             "#content > p:nth-child(7) > b",
             "The current stable release is (.*)"
     );
+    public static VersionParserConfiguration pythonVersionParserConfiguration = new VersionParserConfiguration(
+            "https://www.python.org/downloads/",
+            "#touchnav-wrapper > header > div > div.header-banner > div > div.download-os-source > p > a:nth-child(1)",
+            "Download Python (.*)"
+    );
 }

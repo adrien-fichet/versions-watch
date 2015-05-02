@@ -56,6 +56,7 @@ right category
 - [x] sqlite
 - [x] grunt
 - [x] emacs
+- [x] python
 - [ ] vim
 - [ ] gnome
 - [ ] xfce
