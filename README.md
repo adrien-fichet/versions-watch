@@ -84,3 +84,14 @@ right category
 - [ ] nmap
 - [ ] nessus
 - [ ] metasploit
+- [ ] latex
+- [ ] ruby
+- [ ] bash
+- [ ] zsh
+- [ ] css
+- [ ] html
+- [ ] perl
+- [ ] lisp
+- [ ] lua
+- [ ] dart
+- [ ] bootstrap
