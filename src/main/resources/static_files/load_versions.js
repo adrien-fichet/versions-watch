@@ -91,7 +91,7 @@ var versions = [
       { "id": "mysql", "name": "MySQL" },
       { "id": "sqlite", "name": "SQLite" }
     ]
-  },  {
+  }, {
     "category": { "id": "other", "name": "Others" },
     "items": [
       { "id": "youtrack", "name": "YouTrack"},

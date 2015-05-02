@@ -1,6 +1,7 @@
 package parsers.jetbrains.idea;
 
 import org.junit.Test;
+import parsers.ExpectedVersions;
 import parsers.jetbrains.FakeJetbrainsVersionParser;
 import parsers.jetbrains.JetbrainsVersionsParser;
 
@@ -13,6 +14,6 @@ public class IdeaVersionParserTest {
         String documentOrigin = getClass().getResource("/parsers/jetbrains/version.js").getPath();
         JetbrainsVersionsParser jbParser = new FakeJetbrainsVersionParser(documentOrigin);
         IdeaVersionParser parser = new IdeaVersionParser(jbParser);
-        assertEquals("14.0.3", parser.parseVersion());
+        assertEquals(ExpectedVersions.ideaVersion, parser.parseVersion());
     }
 }

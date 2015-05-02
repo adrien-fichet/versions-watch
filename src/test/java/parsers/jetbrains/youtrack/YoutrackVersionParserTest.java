@@ -1,6 +1,7 @@
 package parsers.jetbrains.youtrack;
 
 import org.junit.Test;
+import parsers.ExpectedVersions;
 import parsers.jetbrains.FakeJetbrainsVersionParser;
 import parsers.jetbrains.JetbrainsVersionsParser;
 
@@ -13,6 +14,6 @@ public class YoutrackVersionParserTest {
         String documentOrigin = getClass().getResource("/parsers/jetbrains/version.js").getPath();
         JetbrainsVersionsParser jbParser = new FakeJetbrainsVersionParser(documentOrigin);
         YoutrackVersionParser parser = new YoutrackVersionParser(jbParser);
-        assertEquals("6.0.12619", parser.parseVersion());
+        assertEquals(ExpectedVersions.youtrackVersion, parser.parseVersion());
     }
 }

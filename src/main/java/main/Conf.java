@@ -28,7 +28,7 @@ public class Conf {
             "Eclipse .* \\((.*?)\\) Release"
     );
     public static VersionParserConfiguration mysqlVersionParserConfiguration = new VersionParserConfiguration(
-            "https://dev.mysql.com/doc",
+            "https://dev.mysql.com/doc/",
             "#rowid-0 > td:nth-child(2)"
     );
     public static VersionParserConfiguration jenkinsVersionParserConfiguration = new VersionParserConfiguration(
@@ -86,8 +86,8 @@ public class Conf {
     );
     public static VersionParserConfiguration hibernateVersionParserConfiguration = new VersionParserConfiguration(
             "http://hibernate.org/orm/downloads/",
-            "#content > div.row-fluid > div.span10 > div:nth-child(4) > div > dl:nth-child(2) > dt",
-            "(.*?)\\.Final"
+            "#content > div.row-fluid > div.span10 > div.release-bottons.visible-desktop > div > a.btn.btn-large.btn-success",
+            "stable (.*?)\\.Final"
     );
     public static VersionParserConfiguration javascriptVersionParserConfiguration = new VersionParserConfiguration(
             "https://en.wikipedia.org/wiki/JavaScript",

@@ -1,6 +1,6 @@
 //IDEA
-var versionIDEAShort = "14";
-var versionIDEALong = "14.0.3";
+var versionIDEAShort = "14.1";
+var versionIDEALong = "14.1.2";
 function versionIDEA(el) {
     if (el == "short") {
         document.write(versionIDEAShort);
@@ -21,7 +21,7 @@ function onloadVersionIDEADownload() {
 
 //Resharper
 var versionRSShort = "9";
-var versionRSLong = "9.0";
+var versionRSLong = "9.1";
 function versionRS(el) {
     if (el == "short") {
         document.write(versionRSShort);
@@ -39,9 +39,21 @@ function onloadVersionRSDownload() {
     document.getElementById('vb_').innerHTML = document.getElementById('vb_').innerHTML.replace(/#Numberversion/gi, versionRSLong);
 }
 
+//Resharper C++
+var versionRSCppShort = "1";
+var versionRSCppLong = "1.0";
+function versionRSCpp(el) {
+    if (el == "short") {
+        document.write(versionRSCppShort);
+    }
+    if (el == "long") {
+        document.write(versionRSCppLong);
+    }
+}
+
 //dotTrace
 var versionDTShort = "6";
-var versionDTLong = "6.0";
+var versionDTLong = "6.1";
 var versionDTMLong = "3.5";
 function versionDT(el) {
     if (el == "short") {
@@ -61,7 +73,7 @@ function onloadVersionDTDownload() {
 
 //dotMemory
 var versionDMShort = "4";
-var versionDMLong = "4.2";
+var versionDMLong = "4.3";
 function versionDM(el) {
     if (el == "short") {
         document.write(versionDMShort);
@@ -80,7 +92,7 @@ function onloadVersionDMDownload() {
 
 //dotCover
 var versionDCShort = "3";
-var versionDCLong = "3.0";
+var versionDCLong = "3.1";
 function versionDC(el) {
     if (el == "short") {
         document.write(versionDCShort);
@@ -99,7 +111,7 @@ function onloadVersionDCDownload() {
 
 //dotPeek
 var versionDPShort = "1";
-var versionDPLong = "1.3";
+var versionDPLong = "1.4";
 function versionDP(el) {
     if (el == "short") {
         document.write(versionDPShort);
@@ -118,7 +130,7 @@ function onloadVersionDPDownload() {
 
 //TeamCity
 var versionTCShort = "9.0";
-var versionTCLong = "9.0.2";
+var versionTCLong = "9.0.4";
 function versionTC(el) {
     if (el == "short") {
         document.write(versionTCShort);
@@ -139,8 +151,8 @@ function onloadVersionTCownload() {
 
 
 //RubyMine
-var versionRubyShort = "7.0";
-var versionRubyLong = "7.0.4";
+var versionRubyShort = "7.1";
+var versionRubyLong = "7.1";
 function versionRuby(el) {
     if (el == "short") {
         document.write(versionRubyShort);
@@ -160,8 +172,8 @@ function onloadVersionRMDownload() {
 }
 
 //MPS
-var versionMPSShort = "3.1";
-var versionMPSLong = "3.1.5";
+var versionMPSShort = "3.2";
+var versionMPSLong = "3.2.1";
 function versionMPS(el) {
     if (el == "short") {
         document.write(versionMPSShort);
@@ -205,7 +217,7 @@ function onloadVersionWebIDEownload() {
 
 //PyCharm
 var versionPyCharmShort = "4.0";
-var versionPyCharmLong = "4.0.4";
+var versionPyCharmLong = "4.0.6";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -243,7 +255,7 @@ function onloadVersionPyCharmEDU() {
 
 //YouTrack
 var versionYTShort = "6.0";
-var versionYTLong = "6.0.12619";
+var versionYTLong = "6.0.12634";
 function versionYT(el) {
     if (el == "short") {
         document.write(versionYTShort);
@@ -265,8 +277,8 @@ function onloadVersionYTownload() {
 
 
 //WebStorm
-var versionWebStormShort = "9.0";
-var versionWebStormLong = "9.0.3";
+var versionWebStormShort = "10.0";
+var versionWebStormLong = "10.0.2";
 function versionWebStorm(el) {
     if (el == "short") {
         document.write(versionWebStormShort);
@@ -307,7 +319,7 @@ function onloadVersionPhpStormDownload() {
 
 //AppCode
 var versionAppCodeShort = "3.1";
-var versionAppCodeLong = "3.1.3";
+var versionAppCodeLong = "3.1.5";
 function versionAppCode(el) {
     if (el == "short") {
         document.write(versionAppCodeShort);
@@ -340,7 +352,7 @@ function versionUpsource(el) {
 
 //CLion
 var versionCLionShort = "1.0";
-var versionCLionLong = "1.0 EAP";
+var versionCLionLong = "1.0.1";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);
