@@ -80,6 +80,7 @@ right category
 - [ ] docker
 - [ ] lxc
 - [ ] openvz
-
-### Ideas
-- Load order: loading image -> icons -> versions
+- [ ] kali
+- [ ] nmap
+- [ ] nessus
+- [ ] metasploit
