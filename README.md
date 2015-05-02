@@ -95,3 +95,7 @@ right category
 - [ ] lua
 - [ ] dart
 - [ ] bootstrap
+- [ ] polymer
+- [ ] react
+- [ ] backbone
+- [ ] emberjs
