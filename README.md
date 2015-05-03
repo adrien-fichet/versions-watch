@@ -72,8 +72,10 @@ Then :
 - [x] awesome
 - [x] i3
 - [x] linux kernel
+- [x] xfce
 - [ ] gnome
-- [ ] xfce
+- [ ] kde
+- [ ] visual studio
 - [ ] jquery
 - [ ] bower
 - [ ] angularjs
@@ -85,6 +87,7 @@ Then :
 - [ ] chromium
 - [ ] safari
 - [ ] internet explorer
+- [ ] edge
 - [ ] opera
 - [ ] drupal
 - [ ] wordpress
@@ -118,3 +121,4 @@ Then :
 - [ ] memcached
 - [ ] varnish
 - [ ] openbsd
+- [ ] dropbox

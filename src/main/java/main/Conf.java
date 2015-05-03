@@ -233,8 +233,12 @@ public class Conf {
         ));
         configurations.put("linux", new VersionParserConfiguration(
                 "https://www.kernel.org/",
-                "#latest_link > a",
-                null
+                "#latest_link > a"
+        ));
+        configurations.put("xfce", new VersionParserConfiguration(
+                "http://www.xfce.org/download",
+                "#stable",
+                "Stable release (.*)"
         ));
     }
 

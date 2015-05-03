@@ -100,6 +100,11 @@ var versions = [
       { "id": "awesome", "name": "Awesome" }
     ]
   }, {
+    "category": { "id": "desktopenvironments", "name": "Desktop environments" },
+    "items": [
+      { "id": "xfce", "name": "XFCE" }
+    ]
+  }, {
     "category": { "id": "other", "name": "Others" },
     "items": [
       { "id": "youtrack", "name": "YouTrack"},

@@ -58,6 +58,7 @@ public class ExpectedVersions {
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
         expectedVersions.put("linux", "4.0.1");
+        expectedVersions.put("xfce", "4.12");
     }
 
     public Map<String, String> getExpectedVersions() {
