@@ -216,6 +216,11 @@ public class Conf {
                 "#touchnav-wrapper > header > div > div.header-banner > div > div.download-os-source > p > a:nth-child(1)",
                 "Download Python (.*)"
         ));
+        configurations.put("vim", new VersionParserConfiguration(
+                "http://www.vim.org/",
+                "body > table:nth-child(2) > tbody > tr > td:nth-child(3) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > small",
+                "Vim (.*?) is the current version"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
