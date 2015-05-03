@@ -95,6 +95,7 @@ var versions = [
   }, {
     "category": { "id": "windowmanagers", "name": "Window managers" },
     "items": [
+      { "id": "i3", "name": "i3" },
       { "id": "awesome", "name": "Awesome" }
     ]
   }, {

@@ -70,6 +70,7 @@ Then :
 - [x] python
 - [x] vim
 - [x] awesome
+- [x] i3
 - [ ] gnome
 - [ ] xfce
 - [ ] linux kernel
@@ -112,4 +113,3 @@ Then :
 - [ ] backbone
 - [ ] emberjs
 - [ ] openbox
-- [ ] i3

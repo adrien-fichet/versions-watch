@@ -226,6 +226,11 @@ public class Conf {
                 "#left > p:nth-child(3)",
                 "Latest stable version of awesome is version (.*?) "
         ));
+        configurations.put("i3", new VersionParserConfiguration(
+                "https://i3wm.org/",
+                "#download > a",
+                "Download the latest version (.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
