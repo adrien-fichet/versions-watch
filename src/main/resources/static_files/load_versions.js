@@ -93,6 +93,11 @@ var versions = [
       { "id": "sqlite", "name": "SQLite" }
     ]
   }, {
+    "category": { "id": "windowmanagers", "name": "Window managers" },
+    "items": [
+      { "id": "awesome", "name": "Awesome" }
+    ]
+  }, {
     "category": { "id": "other", "name": "Others" },
     "items": [
       { "id": "youtrack", "name": "YouTrack"},

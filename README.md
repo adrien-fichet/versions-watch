@@ -6,8 +6,8 @@ If the new version can be retrieved using SimpleVersionParser :
   1.1 Add a new item to the 'configurations' map in src/main/java/main/Conf.java
   1.2 Add the expected version to the 'expectedVersions' map in 
       src/test/java/parsers/ExpectedVersions.java
-  1.3 Launch src/test/java/TestFilesUpdate to update the HTML test files (and add 
-      the new one)
+  1.3 Launch src/test/java/TestFilesUpdate to update the HTML test files 
+      (and download the new one)
   1.4 Launch tests and fix them
 Else :
   1.1 Add a new VersionParser implementation in src/main/java/parsers
@@ -69,6 +69,7 @@ Then :
 - [x] emacs
 - [x] python
 - [x] vim
+- [x] awesome
 - [ ] gnome
 - [ ] xfce
 - [ ] linux kernel
@@ -110,3 +111,5 @@ Then :
 - [ ] react
 - [ ] backbone
 - [ ] emberjs
+- [ ] openbox
+- [ ] i3

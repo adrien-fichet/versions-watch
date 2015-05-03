@@ -221,6 +221,11 @@ public class Conf {
                 "body > table:nth-child(2) > tbody > tr > td:nth-child(3) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > small",
                 "Vim (.*?) is the current version"
         ));
+        configurations.put("awesome", new VersionParserConfiguration(
+                "http://awesome.naquadah.org/download/",
+                "#left > p:nth-child(3)",
+                "Latest stable version of awesome is version (.*?) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
