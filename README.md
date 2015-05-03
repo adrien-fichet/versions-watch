@@ -4,8 +4,10 @@
 ```
 If the new version can be retrieved using SimpleVersionParser :
   1.1 Add a new item to the 'configurations' map in src/main/java/main/Conf.java
-  1.2 Add the expected version to the 'expectedVersions' map in src/test/java/parsers/ExpectedVersions.java
-  1.3 Launch src/test/java/TestFilesUpdate to update the HTML test files (and add the new one)
+  1.2 Add the expected version to the 'expectedVersions' map in 
+      src/test/java/parsers/ExpectedVersions.java
+  1.3 Launch src/test/java/TestFilesUpdate to update the HTML test files (and add 
+      the new one)
   1.4 Launch tests and fix them
 Else :
   1.1 Add a new VersionParser implementation in src/main/java/parsers
@@ -14,7 +16,8 @@ Else :
   1.3 Setup a new Route in src/main/java/main/Main.java
 Then :
   2. Add a new version parser image in src/main/resources/static_files/im
-  3. Add a new item to the 'versions' variable in src/main/resources/static_files/load_versions.js, in the right category
+  3. Add a new item to the 'versions' variable in 
+     src/main/resources/static_files/load_versions.js, in the right category
 ```
 
 ### Versions list
