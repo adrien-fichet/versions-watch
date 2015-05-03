@@ -23,7 +23,7 @@ var versions = [
       { "id": "idea", "name": "IntelliJ IDEA" },
       { "id": "eclipse", "name": "Eclipse" },
       { "id": "netbeans", "name": "Netbeans" },
-      { "id": "sublime_text", "name": "Sublime Text" },
+      { "id": "sublimetext", "name": "Sublime Text" },
       { "id": "emacs", name: "Emacs" }
     ]
   }, {
@@ -39,7 +39,7 @@ var versions = [
     "category": { "id": "languages", "name": "Languages" },
     "items": [
       { "id": "php", "name": "PHP" },
-      { "id": "java", "name": "Java SE" },
+      { "id": "javase", "name": "Java SE" },
       { "id": "javascript", "name": "Javascript" },
       { "id": "scala", "name": "Scala" },
       { "id": "python", "name": "Python" }

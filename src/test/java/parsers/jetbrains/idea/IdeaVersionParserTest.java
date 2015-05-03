@@ -14,6 +14,6 @@ public class IdeaVersionParserTest {
         String documentOrigin = getClass().getResource("/parsers/jetbrains/version.js").getPath();
         JetbrainsVersionsParser jbParser = new FakeJetbrainsVersionParser(documentOrigin);
         IdeaVersionParser parser = new IdeaVersionParser(jbParser);
-        assertEquals(ExpectedVersions.ideaVersion, parser.parseVersion());
+        assertEquals(new ExpectedVersions().getExpectedVersions().get("idea"), parser.parseVersion());
     }
 }

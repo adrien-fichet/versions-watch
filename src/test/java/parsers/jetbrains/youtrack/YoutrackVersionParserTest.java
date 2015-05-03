@@ -14,6 +14,6 @@ public class YoutrackVersionParserTest {
         String documentOrigin = getClass().getResource("/parsers/jetbrains/version.js").getPath();
         JetbrainsVersionsParser jbParser = new FakeJetbrainsVersionParser(documentOrigin);
         YoutrackVersionParser parser = new YoutrackVersionParser(jbParser);
-        assertEquals(ExpectedVersions.youtrackVersion, parser.parseVersion());
+        assertEquals(new ExpectedVersions().getExpectedVersions().get("youtrack"), parser.parseVersion());
     }
 }

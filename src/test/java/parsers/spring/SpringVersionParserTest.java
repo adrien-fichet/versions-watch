@@ -11,6 +11,6 @@ public class SpringVersionParserTest {
     public void testParseSpringVersion() throws Exception {
         String documentOrigin = getClass().getResource("/parsers/spring/spring.js").getPath();
         SpringVersionParser springVersionParser = new FakeSpringVersionParser(documentOrigin);
-        assertEquals(ExpectedVersions.springVersion, springVersionParser.parseVersion());
+        assertEquals(new ExpectedVersions().getExpectedVersions().get("spring"), springVersionParser.parseVersion());
     }
 }

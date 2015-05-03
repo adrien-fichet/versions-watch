@@ -9,8 +9,8 @@ public class SolrVersionParserTest {
 
     @Test
     public void testParseSolrVersion() throws Exception {
-        String documentOrigin = getClass().getResource("/parsers/solr/Solr.html").getPath();
+        String documentOrigin = getClass().getResource("/parsers/solr/solr.html").getPath();
         SolrVersionParser solrVersionParser = new FakeSolrVersionParser(documentOrigin);
-        assertEquals(ExpectedVersions.solrVersion, solrVersionParser.parseVersion());
+        assertEquals(new ExpectedVersions().getExpectedVersions().get("solr"), solrVersionParser.parseVersion());
     }
 }
