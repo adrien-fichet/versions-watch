@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -29,15 +30,15 @@ public class TestFilesUpdate {
         downloadResourceFile("https://www.jetbrains.com/js2/version.js", "/jetbrains/version.js");
         downloadResourceFile("https://lucene.apache.org/solr/resources.html", "/solr/solr.html");
         downloadResourceFile("https://spring.io/project_metadata/spring-framework", "/spring/spring.js");
-        new Conf().getConfigurations().forEach((id, conf) -> {
-            try {
-                downloadResourceFile(conf.getUrl(), "/simple/" + id + ".html");
-            } catch (IOException e) {}
-        });
+        new Conf().getConfigurations().forEach((id, conf) -> downloadResourceFile(conf.getUrl(), "/simple/" + id + ".html"));
     }
 
-    private void downloadResourceFile(String url, String dest) throws IOException {
+    private void downloadResourceFile(String url, String dest) {
         logger.info("Downloading " + url + " to " + resourcePath + dest + "...");
-        FileUtils.copyURLToFile(new URL(url), new File(resourcePath + dest));
+        try {
+            FileUtils.copyURLToFile(new URL(url), new File(resourcePath + dest));
+        } catch (IOException e) {
+            logger.error("Could not download " + url + ": " + e.getMessage());
+        }
     }
 }

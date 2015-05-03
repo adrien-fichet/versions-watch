@@ -71,9 +71,9 @@ Then :
 - [x] vim
 - [x] awesome
 - [x] i3
+- [x] linux kernel
 - [ ] gnome
 - [ ] xfce
-- [ ] linux kernel
 - [ ] jquery
 - [ ] bower
 - [ ] angularjs
@@ -113,3 +113,8 @@ Then :
 - [ ] backbone
 - [ ] emberjs
 - [ ] openbox
+- [ ] naxsi
+- [ ] fail2ban
+- [ ] memcached
+- [ ] varnish
+- [ ] openbsd

@@ -57,6 +57,7 @@ public class ExpectedVersions {
         expectedVersions.put("vim", "7.4.712");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
+        expectedVersions.put("linux", "4.0.1");
     }
 
     public Map<String, String> getExpectedVersions() {

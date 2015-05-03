@@ -60,7 +60,8 @@ var versions = [
       { "id": "puppet", "name": "Puppet" },
       { "id": "vagrant", "name": "Vagrant" },
       { "id": "virtualbox", "name": "VirtualBox" },
-      { "id": "proxmox", "name": "Proxmox VE" }
+      { "id": "proxmox", "name": "Proxmox VE" },
+      { "id": "linux", "name": "Linux kernel" }
     ]
   }, {
     "category": { "id": "sec", "name": "Sec" },

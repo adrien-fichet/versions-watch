@@ -231,6 +231,11 @@ public class Conf {
                 "#download > a",
                 "Download the latest version (.*)"
         ));
+        configurations.put("linux", new VersionParserConfiguration(
+                "https://www.kernel.org/",
+                "#latest_link > a",
+                null
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
