@@ -240,6 +240,10 @@ public class Conf {
                 "#stable",
                 "Stable release (.*)"
         ));
+        configurations.put("elasticdump", new VersionParserConfiguration(
+                "https://www.npmjs.com/package/elasticdump",
+                "body > div.container.content > div.sidebar > ul:nth-child(2) > li:nth-child(2) > strong"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

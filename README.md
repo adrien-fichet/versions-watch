@@ -73,13 +73,13 @@ Then :
 - [x] i3
 - [x] linux kernel
 - [x] xfce
+- [x] elasticdump
 - [ ] gnome
 - [ ] kde
 - [ ] visual studio
 - [ ] jquery
 - [ ] bower
 - [ ] angularjs
-- [ ] elasticdump
 - [ ] curator
 - [ ] coreos
 - [ ] firefox

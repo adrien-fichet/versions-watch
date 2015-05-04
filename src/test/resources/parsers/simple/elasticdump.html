@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>elasticdump</title>
+
+    <meta name="description" content="import and export tools for elasticsearch">
+    <meta name="keywords" content="transfer,export,migartion,import,migrate,elasticdump,elasticsearch,dump">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/elasticdump">
+    <meta name="twitter:title" content="npm: elasticdump">
+    <meta name="twitter:description" content="import and export tools for elasticsearch">
+
+  <meta charset="utf-8">
+  <meta http-equiv="cleartype" content="on" />
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="npm is the package manager for javascript">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+  <link rel="canonical" href="https://www.npmjs.com/package/elasticdump">
+  <link type="text/css" rel="stylesheet" media="all" href="/static/css/index.css">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+
+  <script defer src="/static/js/index.js"></script>
+  <script defer src="/static/js/vendor.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="_DsFULwCT5I-Uj6oOtiX3tLDXi_5pvYQi3rppAzeOlj">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+  <div id="notification-banner" style="display:none">
+    <div class="container">
+      <hgroup>
+        <a href="/private-modules"
+          data-event-trigger="click"
+          data-event-name="private-modules-banner-signup-via-wombat">
+          <img src="/static/images/wombat-by-night.svg" alt="night wombat">
+        </a>
+        <h2>private npm is here.</h2>
+        <h3>publish unlimited private modules for just $7/month</h3>
+      </hgroup>
+      <a class="button" href="/private-modules"
+        data-event-trigger="click"
+        data-event-name="private-modules-banner-signup">sign up</a>
+      <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+      <a href="/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+      <a href="/enterprise">npm Enterprise</a>
+      <a href="https://docs.npmjs.com">documentation</a>
+      <a href="http://blog.npmjs.org/">blog</a>
+      <a href="/npm-weekly">npm weekly</a>
+      <a href="/jobs">jobs</a>
+      <a href="/support">support</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <a href="/" id="npm-logo"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+
+      <div id="user-info" class="anonymous">
+          <a href="/login"><img src="/static/images/wombat-avatar-small.png" /></a>
+          <ul class="single">
+            <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+          </ul>
+
+      </div>
+
+      <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+        <input type="submit" id="site-search-submit" />
+      </form>
+
+    </div>
+  </header>
+
+  <div class="container content">
+    
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a href="/package/elasticdump">elasticdump</a>
+  </h1>
+  <p class="package-description">import and export tools for elasticsearch</p>
+
+  <form class="star">
+    <input type="hidden" name="name" value="elasticdump">
+    <input id="star-input" type="checkbox" name="isStarred" value="true" >
+    <label for="star-input" class="icon-star"></label>
+    <div class="honey">
+      <label>If you are a robot, enter text here</label>
+      <input type="text" name="honey">
+    </div>
+    
+      <input type="hidden" name="crumb" value="_DsFULwCT5I-Uj6oOtiX3tLDXi_5pvYQi3rppAzeOlj"/>
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 id="user-content-elasticdump" class="deep-link package-name-redundant"><a href="#elasticdump">elasticdump</a></h1>
+<p>Tools for moving and saving indicies.</p>
+<p><img src="https://raw.github.com/taskrabbit/elasticsearch-dump/master/elasticdump.jpg"></p>
+<p class="badge-only"><a href="https://npmjs.org/package/elasticdump"><img src="https://nodei.co/npm/elasticdump.png?downloads=true" class="badge"></a></p>
+<p><a href="http://travis-ci.org/taskrabbit/elasticsearch-dump"><img src="https://secure.travis-ci.org/taskrabbit/elasticsearch-dump.png?branch=master" class="badge"></a>  <a href="https://codeclimate.com/github/taskrabbit/elasticsearch-dump"><img src="https://codeclimate.com/github/taskrabbit/elasticsearch-dump/badges/gpa.svg"></a></p>
+<h2 id="user-content-installing" class="deep-link"><a href="#installing">Installing</a></h2>
+<p>(local)</p>
+<pre><code class="highlight bash"><pre class="editor editor-colors"><div class="line"><span class="text"><span>npm&#xA0;install&#xA0;elasticdump</span></span></div><div class="line"><span class="text"><span>./bin/elasticdump</span></span></div></pre></code></pre>
+<p>(global)</p>
+<pre><code class="highlight bash"><pre class="editor editor-colors"><div class="line"><span class="text"><span>npm&#xA0;install&#xA0;elasticdump&#xA0;-g</span></span></div><div class="line"><span class="text"><span>elasticdump</span></span></div></pre></code></pre>
+<h2 id="user-content-use" class="deep-link"><a href="#use">Use</a></h2>
+<p>elasticdump works by sending an <code>input</code> to an <code>output</code>.  Both can be either an elasticsearch URL or a File.</p>
+<p>Elasticsearch:</p>
+<ul>
+<li>format:  <code>{protocol}://{host}:{port}/{index}</code></li>
+<li>example: <code>http://127.0.0.1:9200/my_index</code></li>
+</ul>
+<p>File:</p>
+<ul>
+<li>format:  <code>{FilePath}</code></li>
+<li>example: <code>/Users/evantahler/Desktop/dump.json</code></li>
+</ul>
+<p>Stdio:</p>
+<ul>
+<li>format: stdin / stdout</li>
+<li>format: <code>$</code></li>
+</ul>
+<p>You can then do things like:</p>
+<pre><code class="highlight bash"><pre class="editor editor-colors"><div class="line"><span class="text"><span>#&#xA0;Copy&#xA0;an&#xA0;index&#xA0;from&#xA0;production&#xA0;to&#xA0;staging&#xA0;with&#xA0;mappings:</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=</span><span class="markup underline link hyperlink"><span>http://staging.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=mapping</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=</span><span class="markup underline link hyperlink"><span>http://staging.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=data</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>#&#xA0;Backup&#xA0;index&#xA0;data&#xA0;to&#xA0;a&#xA0;file:</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=/data/my_index_mapping.json&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=mapping</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=/data/my_index.json&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=data</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>#&#xA0;Backup&#xA0;and&#xA0;index&#xA0;to&#xA0;a&#xA0;gzip&#xA0;using&#xA0;stdout:</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=$&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;|&#xA0;gzip&#xA0;&gt;&#xA0;/data/my_index.json.gz</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>#&#xA0;Backup&#xA0;ALL&#xA0;indices,&#xA0;then&#xA0;use&#xA0;Bulk&#xA0;API&#xA0;to&#xA0;populate&#xA0;another&#xA0;ES&#xA0;cluster:</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--all=true&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production-a.es.com:9200/</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=/data/production.json</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--bulk=true&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=/data/production.json&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=</span><span class="markup underline link hyperlink"><span>http://production-b.es.com:9200/</span></span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>#&#xA0;Backup&#xA0;the&#xA0;results&#xA0;of&#xA0;a&#xA0;query&#xA0;to&#xA0;a&#xA0;file</span></span></div><div class="line"><span class="text"><span>elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=query.json&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--searchBody&#xA0;&apos;{&quot;query&quot;:{&quot;term&quot;:{&quot;username&quot;:&#xA0;&quot;admin&quot;}}}&apos;</span></span></div></pre></code></pre>
+<h2 id="user-content-options" class="deep-link"><a href="#options">Options</a></h2>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>Usage:&#xA0;elasticdump&#xA0;--input&#xA0;[SOURCE]&#xA0;--output&#xA0;[DESTINATION]&#xA0;[OPTIONS]</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>--input&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Source&#xA0;location&#xA0;(required)</span></span></div><div class="line"><span class="text"><span>--output&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Destination&#xA0;location&#xA0;(required)</span></span></div><div class="line"><span class="text"><span>--limit&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;How&#xA0;many&#xA0;objects&#xA0;to&#xA0;move&#xA0;in&#xA0;bulk&#xA0;per&#xA0;operation&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;100)</span></span></div><div class="line"><span class="text"><span>--debug&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Display&#xA0;the&#xA0;elasticsearch&#xA0;commands&#xA0;being&#xA0;used&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--type&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;What&#xA0;are&#xA0;we&#xA0;exporting?&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;data,&#xA0;options:&#xA0;[data,&#xA0;mapping])</span></span></div><div class="line"><span class="text"><span>--delete&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Delete&#xA0;documents&#xA0;one-by-one&#xA0;from&#xA0;the&#xA0;input&#xA0;as&#xA0;they&#xA0;are&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;moved.&#xA0;&#xA0;Will&#xA0;not&#xA0;delete&#xA0;the&#xA0;source&#xA0;index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--searchBody&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Preform&#xA0;a&#xA0;partial&#xA0;extract&#xA0;based&#xA0;on&#xA0;search&#xA0;results&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(when&#xA0;ES&#xA0;is&#xA0;the&#xA0;input,&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;default:&#xA0;&apos;{&quot;query&quot;:&#xA0;{&#xA0;&quot;match_all&quot;:&#xA0;{}&#xA0;}&#xA0;}&apos;)</span></span></div><div class="line"><span class="text"><span>--all&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Load/store&#xA0;documents&#xA0;from&#xA0;ALL&#xA0;indexes&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--bulk&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Leverage&#xA0;elasticsearch&#xA0;Bulk&#xA0;API&#xA0;when&#xA0;writing&#xA0;documents&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--ignore-errors&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Will&#xA0;continue&#xA0;the&#xA0;read/write&#xA0;loop&#xA0;on&#xA0;write&#xA0;error&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--scrollTime&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Time&#xA0;the&#xA0;nodes&#xA0;will&#xA0;hold&#xA0;the&#xA0;requested&#xA0;search&#xA0;in&#xA0;order.&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;10m)</span></span></div><div class="line"><span class="text"><span>--maxSockets&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;How&#xA0;many&#xA0;simultaneous&#xA0;HTTP&#xA0;requests&#xA0;can&#xA0;we&#xA0;process&#xA0;make?&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;5&#xA0;[node&#xA0;&lt;=&#xA0;v0.10.x]&#xA0;/&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Infinity&#xA0;[node&#xA0;&gt;=&#xA0;v0.11.x]&#xA0;)</span></span></div><div class="line"><span class="text"><span>--bulk-use-output-index-name&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Force&#xA0;use&#xA0;of&#xA0;destination&#xA0;index&#xA0;name&#xA0;(the&#xA0;actual&#xA0;output&#xA0;URL)</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;as&#xA0;destination&#xA0;while&#xA0;bulk&#xA0;writing&#xA0;to&#xA0;ES.&#xA0;Allows&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;leveraging&#xA0;Bulk&#xA0;API&#xA0;copying&#xA0;data&#xA0;inside&#xA0;the&#xA0;same&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;elasticsearch&#xA0;instance.&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--timeout&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Integer&#xA0;containing&#xA0;the&#xA0;number&#xA0;of&#xA0;milliseconds&#xA0;to&#xA0;wait&#xA0;for&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;a&#xA0;request&#xA0;to&#xA0;respond&#xA0;before&#xA0;aborting&#xA0;the&#xA0;request.&#xA0;Passed&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;directly&#xA0;to&#xA0;the&#xA0;request&#xA0;library.&#xA0;If&#xA0;used&#xA0;in&#xA0;bulk&#xA0;writing,&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;it&#xA0;will&#xA0;result&#xA0;in&#xA0;the&#xA0;entire&#xA0;batch&#xA0;not&#xA0;being&#xA0;written.&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Mostly&#xA0;used&#xA0;when&#xA0;you&#xA0;don&apos;t&#xA0;care&#xA0;too&#xA0;much&#xA0;if&#xA0;you&#xA0;lose&#xA0;some</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;data&#xA0;when&#xA0;importing&#xA0;but&#xA0;rather&#xA0;have&#xA0;speed.</span></span></div><div class="line"><span class="text"><span>--skip</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Integer&#xA0;containing&#xA0;the&#xA0;number&#xA0;of&#xA0;rows&#xA0;you&#xA0;wish&#xA0;to&#xA0;skip&#xA0;ahead&#xA0;from&#xA0;the&#xA0;input&#xA0;transport.&#xA0;&#xA0;When&#xA0;importing&#xA0;a&#xA0;large&#xA0;index,&#xA0;things&#xA0;can&#xA0;go&#xA0;wrong,&#xA0;be&#xA0;it&#xA0;connectivity,&#xA0;crashes,&#xA0;someone&#xA0;forgetting&#xA0;to&#xA0;`screen`,&#xA0;etc.&#xA0;&#xA0;This&#xA0;allows&#xA0;you&#xA0;to&#xA0;start&#xA0;the&#xA0;dump&#xA0;again&#xA0;from&#xA0;the&#xA0;last&#xA0;known&#xA0;line&#xA0;written&#xA0;(as&#xA0;logged&#xA0;by&#xA0;the&#xA0;`offset`&#xA0;in&#xA0;the&#xA0;output).&#xA0;&#xA0;Please&#xA0;be&#xA0;advised&#xA0;that&#xA0;since&#xA0;no&#xA0;sorting&#xA0;is&#xA0;specified&#xA0;when&#xA0;the&#xA0;dump&#xA0;is&#xA0;initially&#xA0;created,&#xA0;there&apos;s&#xA0;no&#xA0;real&#xA0;way&#xA0;to&#xA0;guarantee&#xA0;that&#xA0;the&#xA0;skipped&#xA0;rows&#xA0;have&#xA0;already&#xA0;been&#xA0;written/parsed.&#xA0;&#xA0;This&#xA0;is&#xA0;more&#xA0;of&#xA0;an&#xA0;option&#xA0;for&#xA0;when&#xA0;you&#xA0;want&#xA0;to&#xA0;get&#xA0;most&#xA0;data&#xA0;as&#xA0;possible&#xA0;in&#xA0;the&#xA0;index&#xA0;without&#xA0;concern&#xA0;for&#xA0;losing&#xA0;some&#xA0;rows&#xA0;in&#xA0;the&#xA0;process,&#xA0;similar&#xA0;to&#xA0;the&#xA0;`timeout`&#xA0;option.</span></span></div><div class="line"><span class="text"><span>--help</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;This&#xA0;page</span></span></div></pre></code></pre>
+<h2 id="user-content-elasticsearch-s-scan-and-scroll-method" class="deep-link"><a href="#elasticsearch-s-scan-and-scroll-method">Elasticsearch&apos;s scan and scroll method</a></h2>
+<p>Elasticsearch provides a scan and scroll method to fetch all documents of an index. This method is much safer to use since
+it will maintain the result set in cache for the given period of time. This means it will be a lot faster to export the data
+and more important it will keep the result set in order. While dumping the result set in batches it won&apos;t export duplicate
+documents in the export. All documents in the export will unique and therefore no missing documents.</p>
+<p>NOTE: only works for output</p>
+<h2 id="user-content-notes" class="deep-link"><a href="#notes">Notes</a></h2>
+<ul>
+<li>elasticdump (and elasticsearch in general) will create indices if they don&apos;t exist upon import</li>
+<li>when exporting from elasticsearch, you can have export an entire index (<code>--input=&quot;http://localhost:9200/index&quot;</code>) or a type of object from that index (<code>--input=&quot;http://localhost:9200/index/type&quot;</code>).  This requires ElasticSearch 1.2.0 or higher</li>
+<li>we are using the <code>put</code> method to write objects.  This means new objects will be created and old objects with the same ID will be updated</li>
+<li>the <code>file</code> transport will overwrite any existing files</li>
+<li>If you need basic http auth, you can use it like this: <code>--input=http://name:password@production.es.com:9200/my_index</code></li>
+<li>if you choose a stdio output (<code>--output=$</code>), you can also request a more human-readable output with <code>--format=human</code></li>
+<li>if you choose a stdio output (<code>--output=$</code>), all logging output will be suppressed</li>
+</ul>
+<p>Inspired by https://github.com/crate/elasticsearch-inout-plugin and https://github.com/jprante/elasticsearch-knapsack</p>
+<p>Built at <a href="https://www.taskrabbit.com">TaskRabbit</a></p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input type="text" value="npm install elasticdump" readonly>
+    </div>
+
+	<ul class="box">
+
+      <li class="last-publisher">
+        <a href="/~evantahler">
+          <img src="https://secure.gravatar.com/avatar/173e23850a81c3f494ae957e1417c02d?size=100&amp;default=retro" alt="evantahler" />
+          <span>evantahler</span>
+        </a>
+          published
+          <span data-date="2015-03-11T18:06:18.312Z" data-date-format="relative">
+            2015-03-11T18:06:18.312Z
+          </span>
+      </li>
+
+    <li>
+      <strong>0.12.0</strong>
+      is the latest
+        of 33 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/taskrabbit/elasticsearch-dump">github.com/taskrabbit/elasticsearch-dump</a>
+      </li>
+
+
+      <li>
+          none
+        <span> license</span>
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+        <a href="/package/elasticdump/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+          <a href="/~evantahler" rel="tipsy" title="evantahler">
+            <img src="https://secure.gravatar.com/avatar/c3339f88dd7f3183e74ddb1971c59b6c?size=100&amp;default=retro" alt="evantahler">
+          </a>
+        </li>
+        <li>
+          <a href="/~bleonard" rel="tipsy" title="bleonard">
+            <img src="https://secure.gravatar.com/avatar/cfdb92c645b1580f950c1df747a20ee6?size=100&amp;default=retro" alt="bleonard">
+          </a>
+        </li>
+        <li>
+          <a href="/~davidjairala" rel="tipsy" title="davidjairala">
+            <img src="https://secure.gravatar.com/avatar/2586e5f8354e486901c5ced0f9033a0b?size=100&amp;default=retro" alt="davidjairala">
+          </a>
+        </li>
+
+
+    </ul>
+
+  <h3>Stats</h3>
+  <ul class="box">
+
+      <li>
+        <strong class="pretty-number daily-downloads">24</strong>
+        downloads in the last day
+      </li>
+      <li>
+        <strong class="pretty-number weekly-downloads">617</strong>
+        downloads in the last week
+      </li>
+      <li>
+        <strong class="pretty-number monthly-downloads">2698</strong>
+        downloads in the last month
+      </li>
+
+      <li id="issues" data-ghapi="https://api.github.com/repos/taskrabbit/elasticsearch-dump">
+        <span class="original">Have an issue? <a href="https://github.com/taskrabbit/elasticsearch-dump/issues">File it.</a></span>
+          <span class="enhanced" style="display:none">
+            <a href="https://github.com/taskrabbit/elasticsearch-dump/issues"></a> on GitHub
+          </span>
+      </li>
+
+      <li id="pull_requests" style="display:none">
+        <a href="https://github.com/taskrabbit/elasticsearch-dump/pulls"></a> on GitHub
+      </li>
+
+  </ul>
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+        <a href="/browse/keyword/transfer">transfer</a>, 
+        <a href="/browse/keyword/export">export</a>, 
+        <a href="/browse/keyword/migartion">migartion</a>, 
+        <a href="/browse/keyword/import">import</a>, 
+        <a href="/browse/keyword/migrate">migrate</a>, 
+        <a href="/browse/keyword/elasticdump">elasticdump</a>, 
+        <a href="/browse/keyword/elasticsearch">elasticsearch</a>, 
+        <a href="/browse/keyword/dump">dump</a>
+  </p>
+
+  <h3>Dependencies (4)</h3>
+  <p class="list-of-links">
+          <a href="/package/line-reader">line-reader</a>,
+          <a href="/package/request">request</a>,
+          <a href="/package/JSONStream">JSONStream</a>,
+                <a href="/package/optimist">optimist</a>
+  </p>
+
+    <h3><a href="/browse/depended/elasticdump">Dependents</a></h3>
+    <p class="list-of-links dependents">
+          <a href="/package/kibana4-backup">kibana4-backup</a>    </p>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "elasticdump",
+      "description": "import and export tools for elasticsearch",
+      "url": "https://www.npmjs.com/package/elasticdump",
+      "keywords": "transfer,export,migartion,import,migrate,elasticdump,elasticsearch,dump",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+  <div class="hiring-container" data-template="sidebar"></div>
+
+</div>
+
+
+  </div>
+
+  <footer>
+
+    <div class="container">
+
+      <ul class="columnar">
+        <li>
+          <h3>You Need Help</h3>
+          <ul class="links">
+            <li><a href="https://docs.npmjs.com">Documentation</a></li>
+            <li><a href="/support">Support / Contact Us</a></li>
+            <li><a href="http://status.npmjs.org/">Registry Status</a></li>
+            <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+            <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+            <li><a href="/security">Security</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>About npm</h3>
+          <ul class="links">
+            <li><a href="/about">About npm, Inc</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/private-modules">npm private modules</a></li>
+            <li><a href="http://blog.npmjs.org">Blog</a></li>
+            <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+            <li><a href="https://github.com/npm">GitHub</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Legal Stuff</h3>
+          <ul class="links">
+            <li><a href="/policies/conduct">Code of Conduct</a></li>
+            <li><a href="/policies/disputes">Package Name Disputes</a></li>
+            <li><a href="/policies/npm-license">npm License</a></li>
+            <li><a href="/policies/privacy">Privacy Policy</a></li>
+            <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
+            <li><a href="/policies/trademark">Trademark Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="container centered">
+      <a href="/" id="npm-loves-you">
+        npm loves you
+      </a>
+    </div>
+
+
+  </footer>
+</body>
+</html>
+
+<!-- pid=8200 610fd4c344bab17c81062c88dadab57dc9aaa0a8 https://www.npmjs.com www-9-west.internal.npmjs.com  -->
