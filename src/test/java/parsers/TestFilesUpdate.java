@@ -28,7 +28,6 @@ public class TestFilesUpdate {
 
     private void updateResourceFiles() throws IOException {
         downloadResourceFile("https://www.jetbrains.com/js2/version.js", "/jetbrains/version.js");
-        downloadResourceFile("https://lucene.apache.org/solr/resources.html", "/solr/solr.html");
         downloadResourceFile("https://spring.io/project_metadata/spring-framework", "/spring/spring.js");
         new Conf().getConfigurations().forEach((id, conf) -> downloadResourceFile(conf.getUrl(), "/simple/" + id + ".html"));
     }

@@ -54,12 +54,13 @@ public class ExpectedVersions {
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
-        expectedVersions.put("vim", "7.4.725");
+        expectedVersions.put("vim", "7.4.726");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
         expectedVersions.put("linux", "4.0.1");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.12.0");
+        expectedVersions.put("solr", "5.1.0");
     }
 
     public Map<String, String> getExpectedVersions() {

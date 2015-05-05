@@ -244,6 +244,11 @@ public class Conf {
                 "https://www.npmjs.com/package/elasticdump",
                 "body > div.container.content > div.sidebar > ul:nth-child(2) > li:nth-child(2) > strong"
         ));
+        configurations.put("solr", new VersionParserConfiguration(
+                "https://lucene.apache.org/index.html",
+                "#sidebar > div:nth-child(5)",
+                "Apache Solr (.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

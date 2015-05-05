@@ -1,0 +1,899 @@
+
+<!-- main.html -->
+<!doctype html>
+<html>
+<head>
+  <!--
+      Licensed to the Apache Software Foundation (ASF) under one or more
+      contributor license agreements.  See the NOTICE file distributed with
+      this work for additional information regarding copyright ownership.
+      The ASF licenses this file to You under the Apache License, Version 2.0
+      (the "License"); you may not use this file except in compliance with
+      the License.  You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE- 2.0
+
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      See the License for the specific language governing permissions and
+      limitations under the License.
+  -->
+
+  
+    <link href="./css/global.css" rel="stylesheet" type="text/css">
+
+  <title>Apache Lucene - Welcome to Apache Lucene</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <meta name="Distribution" content="Global"/>
+  <meta name="Robots" content="index,follow"/>
+  <meta name="keywords"
+        content="apache, apache lucene, apache solr, solr, lucene
+        search, information retrieval, spell checking, faceting, inverted index, open source"/>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/lucene-favicon.ico"/>
+  
+<script type="text/javascript" src="./scripts/prototype.js"></script>
+<script type="text/javascript" src="./scripts/effects.js"></script>
+<script type="text/javascript" src="./scripts/search.js"></script>
+<script type="text/javascript" src="./scripts/slides.js"></script>
+
+<!--<script type="text/javascript" src="scripts/jquery.js"></script>-->
+
+</head>
+
+
+ 
+<body id="home">
+<div id="wrap">
+  <div id="header">
+    <div id="logo" style="float:left">
+      
+      <a href="http://lucene.apache.org/"><img border="0" src="images/lucene_logo_green_300.png" alt="Lucene Logo"/></a><div style="position:absolute;right:100px;top:10px;"><span style="vertical-align: super; font-size: xx-small">TM</span></div>
+      
+    </div>
+    <div id="search" style="float:right;zoom:1">
+  <script type="text/javascript">
+    function getBlank(input, stdValue) {
+      if (input.value == stdValue) {
+        input.value = '';
+      }
+      return true;
+    }
+
+    function submitForm(form) {
+      provider = form.elements['searchProvider'].value;
+      if (provider == "any") {
+        if (Math.random() > 0.5) {
+          provider = "lucid";
+        } else {
+          provider = "sl";
+        }
+      }
+
+      if (provider == "lucid") {
+        form.action = "http://find.searchhub.org/p:lucene,solr";
+      } else if (provider == "sl") {
+        form.action = "http://search-lucene.com/lucene";
+      }
+
+      days = 90; // cookie will be valid for 90 days
+      date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toGMTString();
+      document.cookie = "searchProvider=" + provider + expires + "; path=/";
+
+      return true;
+    }
+  </script>
+  <form id="quick-search" method="GET" onsubmit="return submitForm(this)"
+        action="http://search-lucene.com/lucene"
+        name="searchform">
+    <fieldset>
+      <input type="search" id="q" name="q" value="Search with Apache Solr..." class="class1 class2 hint" accesskey="q"
+             onfocus="getBlank(this, 'Search with Apache Solr...')">
+      <span style="color:white">@</span>
+      <select name="searchProvider" id="searchProvider">
+        <option value="any">select provider</option>
+        <option value="lucid">Lucid Find</option>
+        <option value="sl">Search-Lucene</option>
+      </select>
+    </fieldset>
+    <script type="text/javascript">
+      if (document.cookie.length > 0) {
+        cStart = document.cookie.indexOf("searchProvider=");
+        if (cStart != -1) {
+          cStart = cStart + "searchProvider=".length;
+          cEnd = document.cookie.indexOf(";", cStart);
+          if (cEnd == -1) {
+            cEnd = document.cookie.length;
+          }
+          provider = unescape(document.cookie.substring(cStart, cEnd));
+          document.forms['searchform'].elements['searchProvider'].value = provider;
+        }
+      }
+    </script>
+  </form>
+</div>
+
+    <div id="nav">
+      
+      <ul>
+        <li><a href="./core/">Core (Java)</a></li>
+        <li><a href="./solr/">Solr</a></li>
+        <li><a href="./pylucene/index.html">PyLucene</a></li>
+        <li><a class="last" href="./openrelevance/">Open Relevance</a></li>
+      </ul>
+      
+    </div>
+    
+    <div id="slides">
+      <div class="slideshow" id="mantleSlides">
+        <div id="slide1" >
+          <div class="callout">
+            Ultra-fast Search Library and Server<br/>
+          </div>
+          <div class="descwrapper"><div class="description">
+            Apache Lucene and Solr set the standard for search and indexing performance
+          </div></div>
+          <div class="mantle">
+            <img alt="Apache Lucene" src="images/mantle-lucene-solr.png"/>
+          </div>
+        </div>
+        <div id="slide2" style="display:none">
+          <div class="callout">
+            Proven search capabilities<br/>
+          </div>
+          <div class="descwrapper"><div class="description">
+            Our core algorithms along with the Solr search server power applications the world over, ranging
+            from mobile devices to sites like Twitter, Apple and Wikipedia.
+          </div></div>
+          <div class="mantle">
+            <img alt="Lucene Power" src="images/mantle-power.png"/>
+          </div>
+        </div>
+        <div id="slide3" style="display:none">
+          <div class="callout">
+            Large, Vibrant community
+          </div>
+          <div class="descwrapper"><div class="description">
+            The goal of Apache Lucene and Solr is to provide world class search capabilities
+          </div></div>
+          <div class="mantle">
+            <img alt="Apache Mahout community" src="images/mantle-community.png"/>
+          </div>
+        </div>
+        <div id="slide4" style="display:none">
+          <div class="callout">
+            Apache 2.0 licensed
+          </div>
+          <div class="descwrapper"><div class="description">
+            Apache Lucene and Solr are distributed under a commercially friendly Apache Software license
+          </div></div>
+          <div class="mantle">
+            <img alt="Apache Software Foundation" src="images/mantle-asf.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <a class="next" id="next" title="Next" href="#">Next</a>
+        <a class="previous" id="previous" title="Previous" href="#">Previous</a>
+        <a class="start" id="start" title="Start" href="#" style="display: none; ">Start</a>
+        <a class="stop" id="stop" title="Stop" href="#">Stop</a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function StartSlides() {
+        new Slides('mantleSlides');
+      }
+      document.observe('dom:loaded', StartSlides);
+    </script>
+    
+  </div> 
+  <div id="content-wrap" class="clearfix">
+    <div id="main">
+      <h1 class="title">Welcome to Apache Lucene</h1>
+
+      <div><p>The Apache Lucene<span style="vertical-align: super; font-size: xx-small">TM</span> project develops open-source search software, including:</p>
+<ul>
+<li><em><a href="./core/">Lucene Core</a></em>, our flagship sub-project, provides Java-based indexing and search technology, as well as spellchecking, hit highlighting and advanced analysis/tokenization capabilities.</li>
+<li><em><a href="./solr">Solr</a></em><span style="vertical-align: super; font-size: xx-small">TM</span> is a high performance search server built using Lucene Core, with XML/HTTP and JSON/Python/Ruby APIs, hit highlighting, faceted search, caching, replication, and a web admin interface.</li>
+<li><a href="./openrelevance/">Open Relevance Project</a> is a subproject with the aim of collecting and distributing free materials for relevance testing and performance.</li>
+<li><a href="./pylucene/index.html">PyLucene</a> is a Python port of the Core project.</li>
+</ul>
+<div><h1 id="lucenewzxhzdk0tmwzxhzdk1-news">Lucene<span style="vertical-align: super; font-size: xx-small">TM</span> News</h1>
+<h2 id="14-april-2015-apache-lucene-510-and-apache-solr-510-available">14 April 2015 - Apache Lucene 5.1.0 and Apache Solr 5.1.0 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 5.1.0 and Apache Solr 5.1.0.</p>
+<p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/java/5.1.0">http://www.apache.org/dyn/closer.cgi/lucene/java/5.1.0</a>
+and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/solr/5.1.0">http://www.apache.org/dyn/closer.cgi/lucene/solr/5.1.0</a></p>
+<p>Both releases contain a number of new features, bug fixes, and optimizations.</p>
+<p>See the <a href="/core/5_1_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/5_1_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="5-march-2015-apache-lucene-4104-and-apache-solr-4104-available">5 March 2015 - Apache Lucene 4.10.4 and Apache Solr 4.10.4 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.10.4 and Apache Solr 4.10.4.</p>
+<p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/java/4.10.4">http://www.apache.org/dyn/closer.cgi/lucene/java/4.10.4</a>
+and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/solr/4.10.4">http://www.apache.org/dyn/closer.cgi/lucene/solr/4.10.4</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_10_4/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_10_4/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="20-february-2015-apache-lucene-500-and-apache-solr-500-available">20 February 2015 - Apache Lucene 5.0.0 and Apache Solr 5.0.0 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 5.0.0 and Apache Solr 5.0.0.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>See the <a href="/core/5_0_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/5_0_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h3 id="highlights-of-the-lucene-release-include">Highlights of the Lucene release include:</h3>
+<p>Stronger index safety</p>
+<ul>
+<li>
+<p>All file access now uses Java’s NIO.2 APIs which give Lucene stronger index safety in terms of better error handling and safer commits.</p>
+</li>
+<li>
+<p>Every Lucene segment now stores a unique id per-segment and per-commit to aid in accurate replication of index files.</p>
+</li>
+<li>
+<p>During merging, IndexWriter now always checks the incoming segments for corruption before merging. This can mean, on upgrading to 5.0.0, that merging may uncover long-standing latent corruption in an older 4.x index.</p>
+</li>
+</ul>
+<p>Reduced heap usage</p>
+<ul>
+<li>
+<p>Lucene now supports random-writable and advance-able sparse bitsets (RoaringDocIdSet and SparseFixedBitSet), so the heap required is in proportion to how many bits are set, not how many total documents exist in the index.</p>
+</li>
+<li>
+<p>Heap usage during IndexWriter merging is also much lower with the new Lucene50Codec, since doc values and norms for the segments being merged are no longer fully loaded into heap for all fields; now they are loaded for the one field currently being merged, and then dropped.</p>
+</li>
+<li>
+<p>The default norms format now uses sparse encoding when appropriate, so indices that enable norms for many sparse fields will see a large reduction in required heap at search time.</p>
+</li>
+<li>
+<p>5.0 has a new API to print a tree structure showing a recursive breakdown of which parts are using how much heap.</p>
+</li>
+</ul>
+<p>Other features</p>
+<ul>
+<li>
+<p>FieldCache is gone (moved to a dedicated UninvertingReader in the misc module). This means when you intend to sort on a field, you should index that field using doc values, which is much faster and less heap consuming than FieldCache.</p>
+</li>
+<li>
+<p>Tokenizers and Analyzers no longer require Reader on init.</p>
+</li>
+<li>
+<p>NormsFormat now gets its own dedicated NormsConsumer/Producer</p>
+</li>
+<li>
+<p>SortedSetSortField, used to sort on a multi-valued field, is promoted from sandbox to Lucene's core.</p>
+</li>
+<li>
+<p>PostingsFormat now uses a "pull" API when writing postings, just like doc values. This is powerful because you can do things in your postings format that require making more than one pass through the postings such as iterating over all postings for each term to decide which compression format it should use.</p>
+</li>
+<li>
+<p>New DateRangeField type enables Indexing and searching of date ranges, particularly multi-valued ones.</p>
+</li>
+<li>
+<p>A new ExitableDirectoryReader extends FilterDirectoryReader and enables exiting requests that take too long to enumerate over terms.</p>
+</li>
+<li>
+<p>Suggesters from multi-valued field can now be built as DocumentDictionary now enumerates each value separately in a multi-valued field.</p>
+</li>
+<li>
+<p>ConcurrentMergeScheduler detects whether the index is on SSD or not and does a better job defaulting its settings. This only works on Linux for now; other OS's will continue to use the previous defaults (tuned for spinning disks).</p>
+</li>
+<li>
+<p>Auto-IO-throttling has been added to ConcurrentMergeScheduler, to rate limit IO writes for each merge depending on incoming merge rate.</p>
+</li>
+<li>
+<p>CustomAnalyzer has been added that allows to configure analyzers like you do in Solr's index schema. This class has a builder API to configure Tokenizers, TokenFilters, and CharFilters based on their SPI names and parameters as documented by the corresponding factories.</p>
+</li>
+<li>
+<p>Memory index now supports payloads.</p>
+</li>
+<li>
+<p>Added a filter cache with a usage tracking policy that caches filters based on frequency of use.</p>
+</li>
+<li>
+<p>The default codec has an option to control BEST_SPEED or BEST_COMPRESSION for stored fields.</p>
+</li>
+<li>
+<p>Stored fields are merged more efficiently, especially when upgrading from previous versions or using SortingMergePolicy</p>
+</li>
+</ul>
+<h3 id="highlights-of-the-solr-release-include">Highlights of the Solr release include:</h3>
+<ul>
+<li>
+<p>Usability improvements that include improved bin scripts and new and restructured examples.</p>
+</li>
+<li>
+<p>Scripts to support installing and running Solr as a service on Linux.</p>
+</li>
+<li>
+<p>Distributed IDF is now supported and can be enabled via the config. Currently, there are four supported implementations for the same:</p>
+<ul>
+<li>LocalStatsCache: Local document stats.</li>
+<li>ExactStatsCache: One time use aggregation</li>
+<li>ExactSharedStatsCache: Stats shared across requests</li>
+<li>LRUStatsCache: Stats shared in an LRU cache across requests</li>
+</ul>
+</li>
+<li>
+<p>Solr will no longer ship a war file and instead be a downloadable application.</p>
+</li>
+<li>
+<p>SolrJ now has first class support for Collections API.</p>
+</li>
+<li>
+<p>Implicit registration of replication,get and admin handlers.</p>
+</li>
+<li>
+<p>Config API that supports paramsets for easily configuring solr parameters and configuring fields. This API also supports managing of pre-existing request handlers and editing common solrconfig.xml via overlay.</p>
+</li>
+<li>
+<p>API for managing blobs allows uploading request handler jars and registering them via config API.</p>
+</li>
+<li>
+<p>BALANCESHARDUNIQUE Collection API that allows for even distribution of custom replica properties.</p>
+</li>
+<li>
+<p>There's now an option to not shuffle the nodeSet provided during collection creation.</p>
+</li>
+<li>
+<p>Option to configure bandwidth usage by Replication handler to prevent it from using up all the bandwidth.</p>
+</li>
+<li>
+<p>Splitting of clusterstate to per-collection enables scalability improvement in SolrCloud. This is also the default format for new Collections that would be created going forward.</p>
+</li>
+<li>
+<p>timeAllowed is now used to prematurely terminate requests during query expansion and SolrClient request retry.</p>
+</li>
+<li>
+<p>pivot.facet results can now include nested stats.field results constrained by those pivots.</p>
+</li>
+<li>
+<p>stats.field can be used to generate stats over the results of arbitrary numeric functions.
+  It also allows for requesting for statistics for pivot facets using tags.</p>
+</li>
+<li>
+<p>A new DateRangeField has been added for indexing date ranges, especially multi-valued ones.</p>
+</li>
+<li>
+<p>Spatial fields that used to require units=degrees now take distanceUnits=degrees/kilometers miles instead.</p>
+</li>
+<li>
+<p>MoreLikeThis query parser allows requesting for documents similar to an existing document and also works in SolrCloud mode.</p>
+</li>
+<li>
+<p>Logging improvements:</p>
+<ul>
+<li>Transaction log replay status is now logged</li>
+<li>Optional logging of slow requests.</li>
+</ul>
+</li>
+</ul>
+<h2 id="29-december-2014-apache-lucene-4103-and-apache-solr-4103-available">29 December 2014 - Apache Lucene 4.10.3 and Apache Solr 4.10.3 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.10.3 and Apache Solr 4.10.3.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes. The Solr release includes a security vulnerability
+fix that you can read about on the Solr news page: <a href="http://lucene.apache.org/solr/news.html">http://lucene.apache.org/solr/news.html</a></p>
+<p>See the <a href="/core/4_10_3/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_10_3/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details, and Happy Holidays!</p>
+<h2 id="31-october-2014-apache-lucene-4102-and-apache-solr-4102-available">31 October 2014 - Apache Lucene 4.10.2 and Apache Solr 4.10.2 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.10.2 and Apache Solr 4.10.2.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_10_2/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_10_2/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details, and Happy Halloween!</p>
+<h2 id="29-september-2014-apache-lucene-4101-and-apache-solr-4101-available">29 September 2014 - Apache Lucene 4.10.1 and Apache Solr 4.10.1 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.10.1 and Apache Solr 4.10.1.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_10_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_10_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="22-september-2014-apache-lucene-491-and-apache-solr-491-available">22 September 2014 - Apache Lucene 4.9.1 and Apache Solr 4.9.1 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.9.1 and Apache Solr 4.9.1.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_9_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_9_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="03-september-2014-apache-lucene-4100-and-apache-solr-4100-available">03 September 2014 - Apache Lucene 4.10.0 and Apache Solr 4.10.0 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.10.0 and Apache Solr 4.10.0.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>See the <a href="/core/4_10_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_10_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h3 id="highlights-of-the-lucene-release-include_1">Highlights of the Lucene release include:</h3>
+<ul>
+<li>
+<p>New TermAutomatonQuery using an automaton for proximity queries.
+  <a href="http://blog.mikemccandless.com/2014/08/a-new-proximity-query-for-lucene-using.html">http://blog.mikemccandless.com/2014/08/a-new-proximity-query-for-lucene-using.html</a></p>
+</li>
+<li>
+<p>New OrdsBlockTree terms dictionary supporting ord lookup.</p>
+</li>
+<li>
+<p>Simplified matchVersion handling for Analyzers with new setVersion method, as well as Analyzer constructors not requiring Version.</p>
+</li>
+<li>
+<p>Fixed possible corruption when opening a 3.x index with NRT reader.</p>
+</li>
+<li>
+<p>Fixed edge case in StandardTokenizer that caused extremely slow parsing times with long text which partially matched grammar rules.</p>
+</li>
+</ul>
+<h3 id="highlights-of-the-solr-release-include_1">Highlights of the Solr release include:</h3>
+<ul>
+<li>
+<p>This release upgrades Solr Cell's (contrib/extraction) dependency
+  on Apache POI to mitigate
+  <a href="/solr/solrnews.html#18-august-2014-recommendation-to-update-apache-poi-in-apache-solr-480-481-and-490-installations">2 security vulnerabilities</a>.</p>
+</li>
+<li>
+<p>Scripts for starting, stopping, and running Solr examples</p>
+</li>
+<li>
+<p>Distributed query support for facet.pivot</p>
+</li>
+<li>
+<p>Interval Faceting for Doc Values fields</p>
+</li>
+<li>
+<p>New "terms" QParser for efficiently filtering documents by a list of values</p>
+</li>
+</ul>
+<h2 id="18-august-2014-recommendation-to-update-apache-poi-in-apache-solr-480-481-and-490-installations">18 August 2014 - Recommendation to update Apache POI in Apache Solr 4.8.0, 4.8.1, and 4.9.0 installations</h2>
+<p>Apache Solr versions 4.8.0, 4.8.1, 4.9.0 bundle Apache POI 3.10-beta2 with its binary release tarball.
+This version (and all previous ones) of Apache POI are vulnerable to the following issues:
+CVE-2014-3529 <em>(XML External Entity (XXE) problem in Apache POI's OpenXML parser)</em>, 
+CVE-2014-3574 <em>(XML Entity Expansion (XEE) problem in Apache POI's OpenXML parser)</em>.</p>
+<p>The Apache POI PMC released a bugfix version (3.10.1) today.</p>
+<p>Solr users are affected by these issues, if they enable the "Apache Solr Content Extraction Library (Solr Cell)"
+contrib module from the folder "contrib/extraction" of the release tarball.</p>
+<p>Users of Apache Solr are strongly advised to keep the module disabled if they don't use it.
+Alternatively, users of Apache Solr 4.8.0, 4.8.1, or 4.9.0 can update the affected libraries by
+replacing the vulnerable JAR files in the distribution folder. Users of previous versions have
+to update their Solr release first, patching older versions is impossible.</p>
+<p>For detailed instructions, see <a href="/solr/solrnews.html#18-august-2014-recommendation-to-update-apache-poi-in-apache-solr-480-481-and-490-installations">Solr's News</a></p>
+<h2 id="25-june-2014-apache-lucene-490-and-apache-solr-490-available">25 June 2014 - Apache Lucene 4.9.0 and Apache Solr 4.9.0 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.9.0 and Apache Solr 4.9.0.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>See the <a href="/core/4_9_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_9_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h3 id="highlights-of-the-lucene-release-include_2">Highlights of the Lucene release include:</h3>
+<ul>
+<li>
+<p>New Terms.getMin/Max methods to retrieve the lowest and highest
+  terms per field.</p>
+</li>
+<li>
+<p>New IDVersionPostingsFormat, optimized for ID lookups that associate
+  a monotonically increasing version per ID.</p>
+</li>
+<li>
+<p>Atomic update of a set of doc values fields.</p>
+</li>
+<li>
+<p>Numerous optimizations for doc values search-time performance.</p>
+</li>
+<li>
+<p>New (default) Lucene49NormsFormat to better compress certain cases
+  such as very short fields.</p>
+</li>
+<li>
+<p>New SORTED_NUMERIC docvalues type for efficient processing of
+  multi-valued numeric fields.</p>
+</li>
+<li>
+<p>Indexer passes previous token stream for easier reuse.</p>
+</li>
+<li>
+<p>MoreLikeThis accepts multiple values per field.</p>
+</li>
+<li>
+<p>All classes that estimate their RAM usage now implement a new
+  Accountable interface.</p>
+</li>
+<li>
+<p>Lucene files are now written by (File)OutputStream on all platforms,
+  completely disallowing seeking with simplified IO APIs.</p>
+</li>
+<li>
+<p>Improve the confusing error message when MMapDirectory cannot create
+  a new map.</p>
+</li>
+</ul>
+<h3 id="highlights-of-the-solr-release-include_2">Highlights of the Solr release include:</h3>
+<ul>
+<li>
+<p>Numerous optimizations for doc values search-time performance</p>
+</li>
+<li>
+<p>Allow a client application to request the minium achieved replication
+  factor for an update request (single or batch) by sending an optional
+  parameter "min_rf".</p>
+</li>
+<li>
+<p>Query re-ranking support with the new ReRankingQParserPlugin.</p>
+</li>
+<li>
+<p>A new [child ...] DocTransformer for optionally including Block-Join
+  decendent documents inline in the results of a search.</p>
+</li>
+<li>
+<p>A new (default) Lucene49NormsFormat to better compress certain cases
+  such as very short fields.</p>
+</li>
+</ul>
+<h2 id="11-june-2014-open-relevance-sub-project-closed">11 June 2014 - Open Relevance sub-project closed</h2>
+<p>The Apache Lucene Project Management Committee decided in a vote,
+that the Apache Lucene sub-project "Open Relevance" will be discontinued. There was only modest activity during the last
+years and the project made no releases. Thank you to all committers for their support in this project!</p>
+<h2 id="20-may-2014-apache-lucene-481-and-apache-solr-481-available">20 May 2014 - Apache Lucene 4.8.1 and Apache Solr 4.8.1 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.8.1 and Apache Solr 4.8.1.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_8_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_8_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="28-april-2014-apache-lucene-480-and-apache-solr-480-available">28 April 2014 - Apache Lucene 4.8.0 and Apache Solr 4.8.0 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.8.0 and Apache Solr 4.8.0.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases now require Java 7 or greater (recommended is
+Oracle Java 7 or OpenJDK 7, minimum update 55; earlier versions
+have known JVM bugs affecting Lucene and Solr). In addition,
+both are fully compatible with Java 8.</p>
+<p>See the <a href="/core/4_8_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_8_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h3 id="highlights-of-the-lucene-release-include_3">Highlights of the Lucene release include:</h3>
+<ul>
+<li>
+<p>All index files now store end-to-end checksums, which are
+  now validated during merging and reading. This ensures that
+  corruptions caused by any bit-flipping hardware problems or bugs
+  in the JVM can be detected earlier.  For full detection be sure
+  to enable all checksums during merging (it's disabled by default).</p>
+</li>
+<li>
+<p>Lucene has a new Rescorer/QueryRescorer API to perform second-pass
+  rescoring or reranking of search results using more expensive scoring
+  functions after first-pass hit collection.</p>
+</li>
+<li>
+<p>AnalyzingInfixSuggester now supports near-real-time autosuggest.</p>
+</li>
+<li>
+<p>Simplified impact-sorted postings (using SortingMergePolicy and
+  EarlyTerminatingCollector) to use Lucene's Sort class
+  to express the sort order.</p>
+</li>
+<li>
+<p>Bulk scoring and normal iterator-based scoring were separated,
+  so some queries can do bulk scoring more effectively.</p>
+</li>
+<li>
+<p>Switched to MurmurHash3 to hash terms during indexing.</p>
+</li>
+<li>
+<p>IndexWriter now supports updating of binary doc value fields.</p>
+</li>
+<li>
+<p>HunspellStemFilter now uses 10 to 100x less RAM. It also loads
+  all known OpenOffice dictionaries without error.</p>
+</li>
+<li>
+<p>Lucene now also fsyncs the directory metadata on commits, if the
+  operating system and file system allow it (Linux, MacOSX are
+  known to work).</p>
+</li>
+<li>
+<p>Lucene now uses Java 7 file system functions under the hood,
+  so index files can be deleted on Windows, even when readers are
+  still open.</p>
+</li>
+<li>
+<p>A serious bug in NativeFSLockFactory was fixed, which could
+  allow multiple IndexWriters to acquire the same lock.  The
+  lock file is no longer deleted from the index directory
+  even when the lock is not held.</p>
+</li>
+</ul>
+<h3 id="highlights-of-the-solr-release-include_3">Highlights of the Solr release include:</h3>
+<ul>
+<li>
+<p><code class="inline">&lt;fields&gt;</code> and <code class="inline">&lt;types&gt;</code> tags have been deprecated from schema.xml.
+  There is no longer any reason to keep them in the schema file,
+  they may be safely removed. This allows intermixing of <code class="inline">&lt;fieldType&gt;</code>,
+  <code class="inline">&lt;field&gt;</code> and <code class="inline">&lt;copyField&gt;</code> definitions if desired.</p>
+</li>
+<li>
+<p>The new {!complexphrase} query parser supports wildcards, ORs etc.
+  inside Phrase Queries. </p>
+</li>
+<li>
+<p>New Collections API CLUSTERSTATUS action reports the status of
+  collections, shards, and replicas, and also lists collection
+  aliases and cluster properties.</p>
+</li>
+<li>
+<p>Added managed synonym and stopword filter factories, which enable
+  synonym and stopword lists to be dynamically managed via REST API.</p>
+</li>
+<li>
+<p>JSON updates now support nested child documents, enabling {!child}
+  and {!parent} block join queries. </p>
+</li>
+<li>
+<p>Added ExpandComponent to expand results collapsed by the
+  CollapsingQParserPlugin, as well as the parent/child relationship
+  of nested child documents.</p>
+</li>
+<li>
+<p>Long-running Collections API tasks can now be executed
+  asynchronously; the new REQUESTSTATUS action provides status.</p>
+</li>
+<li>
+<p>Added a hl.qparser parameter to allow you to define a query parser
+  for hl.q highlight queries.</p>
+</li>
+<li>
+<p>In Solr single-node mode, cores can now be created using named
+  configsets.</p>
+</li>
+<li>
+<p>New DocExpirationUpdateProcessorFactory supports computing an
+  expiration date for documents from the "TTL" expression, as well as
+  automatically deleting expired documents on a periodic basis. </p>
+</li>
+</ul>
+<h2 id="15-april-2014-apache-lucene-472-and-apache-solr-472-available">15 April 2014 - Apache Lucene 4.7.2 and Apache Solr 4.7.2 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.7.2 and Apache Solr 4.7.2.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_7_2/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_7_2/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="02-april-2014-apache-lucene-471-and-apache-solr-471-available">02 April 2014 - Apache Lucene 4.7.1 and Apache Solr 4.7.1 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.7.1 and Apache Solr 4.7.1.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_7_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_7_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="12-march-2014-apache-lucene-48-and-apache-solr-48-will-require-java-7">12 March 2014 - Apache Lucene 4.8 and Apache Solr 4.8 will require Java 7</h2>
+<p>The Apache Lucene/Solr committers decided with a large majority on the vote to require <strong>Java 7</strong> for the next minor release of Apache Lucene and Apache Solr (version 4.8)!</p>
+<p>The next release will also contain some improvements for Java 7:</p>
+<ul>
+<li>
+<p>Better file handling (especially on Windows) in the directory implementations. Files can now be deleted on windows, although the index is still open - like it was always possible on Unix environments (delete on last close semantics).</p>
+</li>
+<li>
+<p>Speed improvements in sorting comparators: Sorting now uses Java 7's own comparators for integer and long sorts, which are highly optimized by the Hotspot VM.</p>
+</li>
+</ul>
+<p>If you want to stay up-to-date with Lucene and Solr, you should upgrade your infrastructure to Java 7.
+Please be aware that you must use at least use Java 7u1.
+The recommended version at the moment is Java 7u25. Later versions like 7u40, 7u45,... have a bug causing index corrumption.
+Ideally use the Java 7u60 prerelease, which has fixed this bug. Once 7u60 is out, this will be the recommended version.
+In addition, there is no more Oracle/BEA JRockit available for Java 7, use the official Oracle Java 7.
+JRockit was never working correctly with Lucene/Solr (causing index corrumption), so this should not be an issue.
+Please also review our list of JVM bugs: <a href="http://wiki.apache.org/lucene-java/JavaBugs">http://wiki.apache.org/lucene-java/JavaBugs</a></p>
+<p><em>EDIT (as of 15 April 2014):</em> The recently released Java 7u55 fixes the above bug causing index corrumption.
+This version is now the recommended version for running Apache Lucene and Solr.</p>
+<h2 id="26-february-2014-apache-lucene-470-and-apache-solrwzxhzdk2tmwzxhzdk3-470-available">26 February 2014 - Apache Lucene 4.7.0 and Apache Solr<span style="vertical-align: super; font-size: xx-small">TM</span> 4.7.0 available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.7.0 and Apache Solr 4.7.0.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_7_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_7_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="28-january-2014-apache-lucene-461-and-apache-solrwzxhzdk4tmwzxhzdk5-461-available">28 January 2014 - Apache Lucene 4.6.1 and Apache Solr<span style="vertical-align: super; font-size: xx-small">TM</span> 4.6.1 available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.6.1 and Apache Solr 4.6.1.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_6_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_6_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="24-november-2013-apache-lucene-460-and-apache-solrwzxhzdk6tmwzxhzdk7-460-available">24 November 2013 - Apache Lucene 4.6.0 and Apache Solr<span style="vertical-align: super; font-size: xx-small">TM</span> 4.6.0 available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.6.0 and Apache Solr 4.6.0.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_6_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_6_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="24-october-2013-apache-lucene-451-and-apache-solrwzxhzdk8tmwzxhzdk9-451-available">24 October 2013 - Apache Lucene 4.5.1 and Apache Solr<span style="vertical-align: super; font-size: xx-small">TM</span> 4.5.1 available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.5.1 and Apache Solr 4.5.1.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>Both releases contain a number of bug fixes.</p>
+<p>See the <a href="/core/4_5_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_5_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h2 id="5-october-2013-apache-lucene-45-and-apache-solrwzxhzdk10tmwzxhzdk11-45-available">5 October 2013 - Apache Lucene 4.5 and Apache Solr<span style="vertical-align: super; font-size: xx-small">TM</span> 4.5 available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 4.5 and Apache Solr 4.5.</p>
+<p>Lucene can be downloaded from <a href="http://lucene.apache.org/core/mirrors-core-latest-redir.html">http://lucene.apache.org/core/mirrors-core-latest-redir.html</a>
+and Solr can be downloaded from <a href="http://lucene.apache.org/solr/mirrors-solr-latest-redir.html">http://lucene.apache.org/solr/mirrors-solr-latest-redir.html</a></p>
+<p>See the <a href="/core/4_5_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/4_5_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
+<h3 id="highlights-of-the-lucene-release-include_4">Highlights of the Lucene release include:</h3>
+<ul>
+<li>
+<p>Added support for missing values to DocValues fields through
+  AtomicReader.getDocsWithField.</p>
+</li>
+<li>
+<p>Lucene 4.5 has a new Lucene45Codec with Lucene45DocValues, supporting missing
+  values and with most datastructures residing off-heap.</p>
+</li>
+<li>
+<p>New in-memory DocIdSet implementations which are especially better than
+  FixedBitSet on small sets: WAH8DocIdSet, PFORDeltaDocIdSet and EliasFanoDocIdSet.</p>
+</li>
+<li>
+<p>CachingWrapperFilter now caches filters with WAH8DocIdSet by default, which
+  has the same memory usage as FixedBitSet in the worst case but is smaller and faster on small sets.</p>
+</li>
+<li>
+<p>TokenStreams now set the position increment in end(), so we can handle trailing holes.</p>
+</li>
+<li>
+<p>IndexWriter no longer clones the given IndexWriterConfig.</p>
+</li>
+</ul>
+<p>Lucene 4.5 also includes numerous optimizations and bugfixes.</p>
+<h3 id="highlights-of-the-solr-release-include_4">Highlights of the Solr release include:</h3>
+<ul>
+<li>
+<p>Custom sharding support, including the ability to shard by field.</p>
+</li>
+<li>
+<p>DocValue improvements: single valued fields no longer require a default
+  value, allowiing dynamicFields to contain doc values, as well as
+  sortMissingFirst and sortMissingLast on docValue fields.</p>
+</li>
+<li>
+<p>Ability to store solr.xml in ZooKeeper.</p>
+</li>
+<li>
+<p>Multithreaded faceting.</p>
+</li>
+<li>
+<p>CloudSolrServer can now route updates directly to the appropriate shard
+  leader.</p>
+</li>
+</ul>
+<p>Solr 4.5 also includes numerous optimizations and bugfixes.</p></div></div>
+      
+
+
+      
+      <div><h2 id="the-apache-software-foundation">The Apache Software Foundation</h2>
+<p>The <a href="http://www.apache.org">Apache Software Foundation</a> provides support for the Apache community of open-source software projects. The Apache projects are defined by collaborative consensus based processes, an open, pragmatic software license and a desire to create high quality software that leads the way in its field. Apache Lucene, Apache Solr, Apache PyLucene, Apache Open Relevance Project and their respective logos are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners.</p></div>
+      
+    </div>
+    
+    <div id="sidebar">
+      <p><div class="button-green">
+    <a href="core/mirrors-core-latest-redir.html?">Download</a>
+    <div class="flap top">Click to begin</div>
+    <div class="flap bottom">of Apache Lucene 5.1.0</div>
+  </div>
+  <div class="download-desc">Apache Lucene 5.1.0</div>
+  <div class="button-orange">
+    <a href="solr/mirrors-solr-latest-redir.html?">Download</a>
+    <div class="flap top">Click to begin</div>
+    <div class="flap bottom">of Apache Solr 5.1.0</div>
+  </div>
+  <div class="download-desc">Apache Solr 5.1.0</div></p>
+<h1 id="projects">Projects</h1>
+<ul>
+<li><a href="./core/">Lucene Core (Java)</a></li>
+<li><a href="./solr/">Solr</a></li>
+<li><a href="./pylucene/">PyLucene</a></li>
+<li><a href="./openrelevance/">Open Relevance</a></li>
+</ul>
+<h1 id="about">About</h1>
+<ul>
+<li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+<li><a href="./whoweare.html">Who We are</a></li>
+</ul>
+<h1 id="asf-links">ASF links</h1>
+<ul>
+<li><a href="http://www.apache.org">Apache Software Foundation</a></li>
+<li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+<li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+<li><a href="http://www.apache.org/security/">Security</a></li>
+</ul>
+<h1 id="editing-this-site">Editing This Site</h1>
+<ul>
+<li><a href="site-instructions.html">Instructions</a></li>
+<li><a href="http://www.apache.org/dev/cms.html">ASF CMS</a></li>
+<li><a href="http://www.apache.org/dev/cmsref.html">ASF CMS Reference/FAQ</a></li>
+<li><a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a></li>
+</ul>
+<h1 id="related-projects">Related Projects</h1>
+<ul>
+<li><a href="http://hadoop.apache.org">Apache Hadoop</a></li>
+<li><a href="http://manifoldcf.apache.org/">Apache ManifoldCF</a></li>
+<li><a href="http://lucenenet.apache.org/">Apache Lucene.Net</a></li>
+<li><a href="http://lucy.apache.org/">Apache Lucy</a></li>
+<li><a href="http://mahout.apache.org">Apache Mahout</a></li>
+<li><a href="http://nutch.apache.org">Apache Nutch</a></li>
+<li><a href="http://opennlp.apache.org/">Apache OpenNLP</a></li>
+<li><a href="http://tika.apache.org">Apache Tika</a></li>
+<li><a href="http://zookeeper.apache.org">Apache Zookeeper</a></li>
+</ul>
+      
+    </div>
+    
+  </div>
+  <div id="footer">
+  <div class="copyright">
+    <p>
+      Copyright &copy; 2011-2012 The Apache Software Foundation, Licensed under
+      the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.  <a href="/privacy.html">Privacy Policy</a>
+      <br/>
+      Apache and the Apache feather logo are trademarks of The Apache Software Foundation.  Apache Lucene, Apache Solr and their
+      respective logos are trademarks of the Apache Software Foundation.  Please see the <a href="http://www.apache.org/foundation/marks/">Apache Trademark Policy</a>
+      for more information.
+    </p>
+  </div>
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-94576-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+
+</html>
