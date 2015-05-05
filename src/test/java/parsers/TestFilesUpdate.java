@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -32,12 +32,16 @@ public class TestFilesUpdate {
         new Conf().getConfigurations().forEach((id, conf) -> downloadResourceFile(conf.getUrl(), "/simple/" + id + ".html"));
     }
 
-    private void downloadResourceFile(String url, String dest) {
-        logger.info("Downloading " + url + " to " + resourcePath + dest + "...");
+    private void downloadResourceFile(String urlString, String dest) {
+        logger.info("Downloading " + urlString + " to " + resourcePath + dest + "...");
         try {
-            FileUtils.copyURLToFile(new URL(url), new File(resourcePath + dest));
+            URL url=new URL(urlString);
+            URLConnection conn = url.openConnection();
+            conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0");
+            conn.connect();
+            FileUtils.copyInputStreamToFile(conn.getInputStream(), new File(resourcePath + dest));
         } catch (IOException e) {
-            logger.error("Could not download " + url + ": " + e.getMessage());
+            logger.error("Could not download " + urlString + ": " + e.getMessage());
         }
     }
 }

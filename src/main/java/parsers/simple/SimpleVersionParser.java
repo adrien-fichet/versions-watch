@@ -23,7 +23,7 @@ public class SimpleVersionParser extends VersionParser {
     }
 
     public Document loadDocument() throws IOException {
-        return Jsoup.connect(url).get();
+        return Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0").get();
     }
 
     @Override

@@ -249,6 +249,11 @@ public class Conf {
                 "#sidebar > div:nth-child(5)",
                 "Apache Solr (.*)"
         ));
+        configurations.put("jquery", new VersionParserConfiguration(
+                "https://jquery.com/",
+                "#banner-secondary > div.downloads-box.four.columns.push-eight > div > a > span:nth-child(2)",
+                "v.*? or v(.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

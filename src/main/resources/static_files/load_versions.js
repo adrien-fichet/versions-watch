@@ -35,7 +35,8 @@ var versions = [
       { "id": "tomcat", "name": "Tomcat" },
       { "id": "extjs", "name": "ExtJS" },
       { "id": "nginx", "name": "Nginx" },
-      { "id": "grunt", "name": "Grunt" }
+      { "id": "grunt", "name": "Grunt" },
+      { "id": "jquery", "name": "jQuery" }
     ]
   }, {
     "category": { "id": "languages", "name": "Languages" },

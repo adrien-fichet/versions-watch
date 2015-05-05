@@ -61,6 +61,7 @@ public class ExpectedVersions {
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.12.0");
         expectedVersions.put("solr", "5.1.0");
+        expectedVersions.put("jquery", "2.1.4");
     }
 
     public Map<String, String> getExpectedVersions() {
