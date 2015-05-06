@@ -254,6 +254,11 @@ public class Conf {
                 "#banner-secondary > div.downloads-box.four.columns.push-eight > div > a > span:nth-child(2)",
                 "v.*? or v(.*)"
         ));
+        configurations.put("nexus", new VersionParserConfiguration(
+                "http://www.sonatype.com/nexus/try-compare-buy/try",
+                "#try-page > section > div > div > section.slice.slice-order-4.full-width-static.orangetintbg > div > div > p",
+                "Version: (.*?),"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

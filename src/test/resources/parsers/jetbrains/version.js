@@ -152,7 +152,7 @@ function onloadVersionTCownload() {
 
 //RubyMine
 var versionRubyShort = "7.1";
-var versionRubyLong = "7.1";
+var versionRubyLong = "7.1.1";
 function versionRuby(el) {
     if (el == "short") {
         document.write(versionRubyShort);

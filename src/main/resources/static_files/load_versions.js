@@ -111,7 +111,8 @@ var versions = [
     "items": [
       { "id": "youtrack", "name": "YouTrack"},
       { "id": "solr", "name": "Solr" },
-      { "id": "maven", "name": "Maven" }
+      { "id": "maven", "name": "Maven" },
+      { "id": "nexus", "name": "Nexus" }
     ]
   }
 ];

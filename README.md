@@ -74,6 +74,7 @@ Then :
 - [x] linux kernel
 - [x] xfce
 - [x] elasticdump
+- [x] nexus
 - [ ] gnome
 - [ ] kde
 - [ ] visual studio
@@ -91,7 +92,6 @@ Then :
 - [ ] opera
 - [ ] drupal
 - [ ] wordpress
-- [ ] nexus
 - [ ] postgresql
 - [ ] docker
 - [ ] lxc
