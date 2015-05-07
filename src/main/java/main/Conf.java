@@ -256,7 +256,7 @@ public class Conf {
         ));
         configurations.put("nexus", new VersionParserConfiguration(
                 "http://www.sonatype.com/nexus/try-compare-buy/try",
-                "#try-page > section > div > div > section.slice.slice-order-4.full-width-static.orangetintbg > div > div > p",
+                "#try-page > section > div > div > section.slice.slice-order-3.full-width-static.orangetintbg > div > div > p",
                 "Version: (.*?),"
         ));
     }

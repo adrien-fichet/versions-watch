@@ -24,7 +24,7 @@ public class ExpectedVersions {
         expectedVersions.put("puppet", "4.0.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.8.13");
-        expectedVersions.put("tomcat", "8.0.21");
+        expectedVersions.put("tomcat", "8.0.22");
         expectedVersions.put("junit", "4.12");
         expectedVersions.put("vagrant", "1.7.2");
         expectedVersions.put("extjs", "5.1.0");
@@ -50,14 +50,14 @@ public class ExpectedVersions {
         expectedVersions.put("centos", "7.1503");
         expectedVersions.put("fedora", "21");
         expectedVersions.put("proxmox", "3.4-3f2d890e-1");
-        expectedVersions.put("sqlite", "3.8.9");
+        expectedVersions.put("sqlite", "3.8.10");
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
         expectedVersions.put("vim", "7.4.728");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
-        expectedVersions.put("linux", "4.0.1");
+        expectedVersions.put("linux", "4.0.2");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.12.0");
         expectedVersions.put("solr", "5.1.0");
