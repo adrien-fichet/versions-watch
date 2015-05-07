@@ -39,6 +39,11 @@ var versions = [
       { "id": "jquery", "name": "jQuery" }
     ]
   }, {
+    "category": { "id": "browsers", "name": "Web browsers" },
+    "items": [
+      { "id": "googlechrome", "name": "Google Chrome" },
+    ]
+  }, {
     "category": { "id": "languages", "name": "Languages" },
     "items": [
       { "id": "php", "name": "PHP" },

@@ -74,18 +74,17 @@ Then :
 - [x] linux kernel
 - [x] xfce
 - [x] elasticdump
+- [x] jquery
 - [x] nexus
+- [x] google chrome
 - [ ] gnome
 - [ ] kde
 - [ ] visual studio
-- [ ] jquery
 - [ ] bower
 - [ ] angularjs
 - [ ] curator
 - [ ] coreos
 - [ ] firefox
-- [ ] google chrome
-- [ ] chromium
 - [ ] safari
 - [ ] internet explorer
 - [ ] edge

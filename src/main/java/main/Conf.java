@@ -259,6 +259,11 @@ public class Conf {
                 "#try-page > section > div > div > section.slice.slice-order-3.full-width-static.orangetintbg > div > div > p",
                 "Version: (.*?),"
         ));
+        configurations.put("googlechrome", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Google_Chrome",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td > p:nth-child(2)",
+                "(.*?) \\("
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

@@ -63,6 +63,7 @@ public class ExpectedVersions {
         expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
+        expectedVersions.put("googlechrome", "42.0.2311.135");
     }
 
     public Map<String, String> getExpectedVersions() {
