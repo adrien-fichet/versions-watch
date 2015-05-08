@@ -264,6 +264,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td > p:nth-child(2)",
                 "(.*?) \\("
         ));
+        configurations.put("firefox", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Firefox",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td > p",
+                "(.*?) \\("
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

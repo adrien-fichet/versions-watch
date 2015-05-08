@@ -64,6 +64,7 @@ public class ExpectedVersions {
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
         expectedVersions.put("googlechrome", "42.0.2311.135");
+        expectedVersions.put("firefox", "37.0.2");
     }
 
     public Map<String, String> getExpectedVersions() {

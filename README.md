@@ -77,6 +77,7 @@ Then :
 - [x] jquery
 - [x] nexus
 - [x] google chrome
+- [x] firefox
 - [ ] gnome
 - [ ] kde
 - [ ] visual studio
@@ -84,7 +85,6 @@ Then :
 - [ ] angularjs
 - [ ] curator
 - [ ] coreos
-- [ ] firefox
 - [ ] safari
 - [ ] internet explorer
 - [ ] edge

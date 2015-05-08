@@ -42,6 +42,7 @@ var versions = [
     "category": { "id": "browsers", "name": "Web browsers" },
     "items": [
       { "id": "googlechrome", "name": "Google Chrome" },
+      { "id": "firefox", "name": "Firefox" }
     ]
   }, {
     "category": { "id": "languages", "name": "Languages" },
