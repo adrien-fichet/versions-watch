@@ -78,7 +78,7 @@ Then :
 - [x] nexus
 - [x] google chrome
 - [x] firefox
-- [ ] gnome
+- [x] gnome shell
 - [ ] kde
 - [ ] visual studio
 - [ ] bower

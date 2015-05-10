@@ -88,8 +88,8 @@ public class Conf {
         ));
         configurations.put("maven", new VersionParserConfiguration(
                 "https://maven.apache.org/download.cgi",
-                "#contentBox > div > h2",
-                "Download Apache Maven (.*)"
+                "#bodyColumn > div > div:nth-child(13) > h3",
+                "Maven (.*)"
         ));
         configurations.put("hibernate", new VersionParserConfiguration(
                 "http://hibernate.org/orm/downloads/",
@@ -267,6 +267,11 @@ public class Conf {
         configurations.put("firefox", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Firefox",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td > p",
+                "(.*?) \\("
+        ));
+        configurations.put("gnomeshell", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/GNOME_Shell",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
                 "(.*?) \\("
         ));
     }

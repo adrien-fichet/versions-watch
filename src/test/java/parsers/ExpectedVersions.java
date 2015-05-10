@@ -50,7 +50,7 @@ public class ExpectedVersions {
         expectedVersions.put("centos", "7.1503");
         expectedVersions.put("fedora", "21");
         expectedVersions.put("proxmox", "3.4-3f2d890e-1");
-        expectedVersions.put("sqlite", "3.8.10");
+        expectedVersions.put("sqlite", "3.8.10.1");
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
@@ -65,6 +65,7 @@ public class ExpectedVersions {
         expectedVersions.put("nexus", "2.11.2");
         expectedVersions.put("googlechrome", "42.0.2311.135");
         expectedVersions.put("firefox", "37.0.2");
+        expectedVersions.put("gnomeshell", "3.16");
     }
 
     public Map<String, String> getExpectedVersions() {
