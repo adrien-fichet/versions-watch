@@ -1,672 +1,431 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
 <head>
-
-<meta name="google-site-verification" content="4__ZcreJCSHF0TR5b-KwQLBzLBS0946Dz0Ueht7Z-ok"/>
-
-
-<meta http-equiv="cache-control" content="max-age=0"/>
-<meta http-equiv="cache-control" content="no-cache"/>
-<meta http-equiv="expires" content="0"/>
-<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
-<meta http-equiv="pragma" content="no-cache"/>
-
-
-
-<script type="text/javascript">function dw_loadExternal(url,ifrmId,divId,bLoadMsg){ifrmId=ifrmId||'buffer';divId=divId||'display';if(window.frames[ifrmId]){window.frames[ifrmId].location=url;var lyr=document.getElementById?document.getElementById(divId):null;if(lyr&&bLoadMsg){lyr.innerHTML='<p>Retrieving data. Please wait ...</p>';lyr.style.display='block';}
-return false;}
-return true;}
-function dw_displayExternal(ifrmId,divId,fp){ifrmId=ifrmId||'buffer';divId=divId||'display';var lyr=document.getElementById?document.getElementById(divId):null;if(window.frames[ifrmId]&&lyr){lyr.innerHTML=window.frames[ifrmId].document.body.innerHTML;lyr.style.display='block';if(typeof fp=='function'){fp();}
-if(typeof window.frames[ifrmId].doOnIframedLoad=='function'){window.frames[ifrmId].doOnIframedLoad();}}}</script>
-<link rel="icon" href="http://www.nagios.org/images/favicon.ico" type="image/ico"/>
-
-<meta name="verify-v1" content="OVzss05fYKdI3GTx/1z9V67t0G43JiHWtkHZ5//KZZA="/>
-
-
-
-
-<link href="/templates/rt_equinox_j15/css/template_css.css" rel="stylesheet" type="text/css"/> 
-
-<link href="/templates/rt_equinox_j15/css/support.css" rel="stylesheet" type="text/css"/>
-
-<link href="/templates/rt_equinox_j15/css/mod_jw_srfr.css" rel="stylesheet" type="text/css"/>
-
-<link href="/templates/rt_equinox_j15/css/rokslidestrip.css" rel="stylesheet" type="text/css"/>
-
-<link href="/templates/rt_equinox_j15/css/login.css" rel="stylesheet" type="text/css"/>
-
-<link href="/templates/rt_equinox_j15/css/style2.css" rel="stylesheet" type="text/css"/>
-
-
-<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css"/>
-
-<link href="/templates/rt_equinox_j15/html/mod_random_image/imageslider.css" rel="stylesheet" type="text/css"/>
-
-<link href="/templates/rt_equinox_j15/html/mod_newsflash/contentslider.css" rel="stylesheet" type="text/css"/>
-
-  <base href="http://www.nagios.com/products/"/>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="keywords" content="nagios,nagios enterprises, nagios inc, nagios network monitor,nagios system monitor,monitoring,monitor,linux,network monitor,free monitor,free network monitor,linux network monitor,network monitoring,system monitor,system monitoring,free system monitor,linux system monitor,alert,network alert,network trouble,network downtime"/>
-  <meta name="title" content="Products"/>
-  <meta name="description" content="Nagios Enterprises provides commercial solutions around Nagios - the industry standard in IT infrastructure monitoring.  Learn why organizations around the world trust our products to handle their IT infrastructure monitoring and business process continuity."/>
-  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management"/>
-  <title>Products  -  Nagios</title>
-  <link href="/xfavicon.ico.pagespeed.ic.eTvVPq29hf.png" rel="shortcut icon" type="image/x-icon"/>
-  <link rel="stylesheet" href="http://www.nagios.com/A.plugins,,_content,,_ultimate_social_bookmarking_plugin.css+modules,,_mod_superfishmenu,,_tmpl,,_css,,_superfish.css,Mcc.glYfQN-ODO.css.pagespeed.cf.H_5IS8jqTn.css" type="text/css"/>
-  
-  <script src="/media,_system,_js,_mootools.js+media,_system,_js,_caption.js+modules,_mod_superfishmenu,_tmpl,_js,_jquery.js+modules,_mod_superfishmenu,_tmpl,_js,_jquery.event.hover.js+modules,_mod_superfishmenu,_tmpl,_js,_jquery.bgiframe.min.js+modules,_mod_superfishmenu,_tmpl,_js,_supersubs.js+modules,_mod_superfishmenu,_tmpl,_js,_superfish.js.pagespeed.jc.OZGWNVnTyk.js"></script><script>eval(mod_pagespeed_oyvkv_fmkk);</script>
-  <script>eval(mod_pagespeed_DYGoTP34MQ);</script>
-  <script>eval(mod_pagespeed_MkQ1KnivVi);</script>
-  <script>eval(mod_pagespeed_mOzxES2A9j);</script>
-  <script>eval(mod_pagespeed_DVUAc6WJaJ);</script>
-  <script>eval(mod_pagespeed_XnyyY5vP9g);</script>
-  <script>eval(mod_pagespeed_FcL5y49OkF);</script>
-  <script type="text/javascript">jQuery(function($){$("ul.sf-menu").supersubs({minWidth:10,maxWidth:15,extraWidth:0}).superfish({hoverClass:'sfHover',pathClass:'active',pathLevels:0,delay:600,animation:{opacity:'show'},speed:200,autoArrows:1,dropShadows:1}).find('ul').bgIframe({top:'auto',left:'auto',width:'auto',height:'auto',opacity:1,src:'javascript:false;'})});jQuery.event.special.hover.delay=10;jQuery.event.special.hover.speed=10;</script>
-
-
-<script src="/templates/rt_equinox_j15/html/mod_random_image,_imageslider.js+mod_newsflash,_contentslider.js.pagespeed.jc.qF9zd0MnEp.js"></script><script>eval(mod_pagespeed_$VhQa1rj32);</script>
-
-<script>eval(mod_pagespeed_4US4eHSNTj);</script>
-
-
-
-
-<!-- SELF = /index.php -->
-
-<!-- added 04/12/14 EG -->
-<script type="text/javascript" src="http://assets.nagios.com/includes/js/jquery/jquery-1.9.0.min.js"></script>
-<script type="text/javascript" src="http://assets.nagios.com/includes/js/jquery/jquery-ui-1.9.0.custom.min.js"></script>
-<link rel="stylesheet" href="http://assets.nagios.com/includes/js/jquery/css/smoothness/jquery-ui-1.9.0.custom.min.css">
-
-
-
-
-
-<style type="text/css">div.wrapper{margin:0 auto;width:910px;background-color:#fff;margin-top:-20px}#sidecol{width:222px}#content{margin-left:222px;margin-right:220px}#top-content{margin-left:222px}#top-module{margin-left:5px}</style>
-
-
-
-
-
-<link rel="stylesheet" href="http://assets.nagios.com/pageparts/styles/shared_style.css" type="text/css"/>
-<script type="text/javascript" src="http://assets.nagios.com/pageparts/js/shared_js.js"></script>
-
+<meta charset="UTF-8" />
+<title>Nagios - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.26wmf4" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Nagios" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Nagios&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Nagios&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="/wiki/Nagios" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="http://en.wikipedia.org/wiki/Nagios" />
+<link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.rtlcite%2Cwikihiero%2CwikimediaBadges%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+<script src="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Nagios","wgTitle":"Nagios","wgCurRevisionId":660835182,"wgRevisionId":660835182,"wgArticleId":855571,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Commons category with local link same as on Wikidata","Commons category template with no category set","Commons category with page title same as on Wikidata","Internet Protocol based network software","Free network management software","Multi-agent systems","Network analyzers","Linux security software","Nagios"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Nagios","wgRelevantArticleId":855571,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":false,"publish":false},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wikilove-recipient":"","wikilove-anon":0,"wgGatherShouldShowTutorial":true,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nagios_main_screen.png/100px-Nagios_main_screen.png","wgPoweredByHHVM":true,"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgBetaFeaturesFeatures":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1134360"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:a5c52c063dc436c1ca7c9f456936a5e9 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","mmv.head","ext.imageMetrics.head","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf4/skins/Vector/csshover.min.htc")}</style><![endif]-->
 </head>
-<body class="f-default style2">
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Nagios skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
 
-<!-- Creates shadow border -->
-
-<div id="encapsulate">
-
-<div class="wrapper">
-
-  <div id="masthead"> <a href="/" class="nounder"><script pagespeed_no_defer="" type="text/javascript">//<![CDATA[
-(function(){var g=this,h=function(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var l=function(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var m=function(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n,p=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},q=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e&&!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e.height&&c<=b.e.width)}a&&(b.a.push(e),b.d[e]=!0)};p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});var r=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.g&&(e="&rd="+encodeURIComponent(JSON.stringify(s())),131072>=a.length+e.length&&(a+=e),d=!0);t=a;if(d){c=b.f;b=b.h;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(u){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},s=function(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].k&&a.height>=b[e].j)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b},t="";h("pagespeed.CriticalImages.getBeaconData",function(){return t});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://www.nagios.com/products/','SLoDkQnME-',true,false,'zd4JgNgUROg');
-//]]></script><img src="http://assets.nagios.com/images/header/Nagios-bluebg.png" style="border:0;" alt="Nagios" id="logo" pagespeed_url_hash="3498125129" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
-
-	<div id="headernavbar">
-	<div class="headnav">
-	<a href="http://network.nagios.org/">Network:</a>
-	<ul>
-	<li class="active"><a href="http://www.nagios.com/">Enterprise</a></li>
-	<li><a href="http://support.nagios.com/">Support</a></li>
-	<li><a href="http://library.nagios.com/">Library</a></li>
-	<li><a href="http://labs.nagios.com/">Labs</a></li>
-	<li><a href="http://www.nagios.org/">Project</a></li>
-	<li><a href="http://exchange.nagios.org/">Exchange</a></li>
-	<!--<li><a href="http://community.nagios.org/">Community</a></li>-->
-	<li><a href="http://network.nagios.org/" title="More Nagios Network Sites">[+]</a></li>
-	</ul>
-	</div>
-	</div>
-
-
-
-    
-    
-    <div id="mod-top">
-
-      <div class="padding">
-
-        		<div class="moduletable">
-					<div id="slogan">The Industry Standard in IT Infrastructure Monitoring</div>		</div>
-	
-
-      </div>
-
-    </div>
-
-    
-    <div id="primary-nav">
-
-      <div class="nav2">
-
-        <div class="nav3">
-<div id="sf-container" style="position:relative;z-index:1000;">
-          <div id="horiz-menu" class="splitmenu">
-
-<!--Template rt_equinox
-             -->
-
-			<ul class="menu sf-menu sf-horizontal"><li class="item1"><a href="http://www.nagios.com/"><span>Home</span></a></li><li class="parent item144"><a href="/news"><span>News</span></a><ul><li class="item210"><a href="/news/company-news"><span>Company News</span></a></li><li class="item287"><a href="/news/mediacoverage"><span>Media Coverage</span></a></li><li class="item209"><a href="/news/pr"><span>Press Releases</span></a></li></ul></li><li id="current" class="parent active item171"><a href="/products"><span>Products</span></a><ul><li rel="171" class="item172"><a href="/products"><span>Products Overview</span></a></li><li class="parent item186"><a href="/products/nagiosxi"><span>Nagios XI</span></a><ul><li rel="186" class="item199"><a href="/products/nagiosxi"><span>Overview</span></a></li><li class="item198"><a href="/products/nagiosxi/features"><span>Features</span></a></li><li class="item605"><a href="/products/nagiosxi/use-cases"><span>Use Cases</span></a></li><li class="item200"><a href="/products/nagiosxi/try"><span>Try It</span></a></li><li rel="195" class="item282"><a href="/products/nagiosxi/pricing/buynow"><span>Buy Now</span></a></li><li class="item279"><a href="/products/nagiosxi/screenshots"><span>Screenshots</span></a></li><li class="item228"><a href="http://nagiosxi.demos.nagios.com/" target="_blank"><span>Online Demo</span></a></li><li class="parent item194"><a href="/products/nagiosxi/pricing"><span>Pricing</span></a><ul><li class="parent item195"><a href="/products/nagiosxi/pricing/buynow"><span>Buy Now</span></a><ul><li class="item472"><a href="/products/nagiosxi/pricing/buynow/buy-nagiosxi-online"><span>Buy Nagios XI Online</span></a></li></ul></li><li class="item262"><a href="/products/nagiosxi/pricing/renew"><span>Renew</span></a></li></ul></li><li class="item197"><a href="/products/nagiosxi/fornagiosadmins"><span>For Nagios Admins</span></a></li><li class="item188"><a href="/products/nagiosxi/architecture"><span>Architecture</span></a></li><li class="item283"><a href="/products/nagiosxi/whatsnew"><span>What's New</span></a></li><li class="item552"><a href="/products/nagiosxi/edition-comparison"><span>Edition Comparison</span></a></li><li class="item196"><a href="/products/nagiosxi/faqs"><span>FAQs</span></a></li><li class="item187"><a href="/products/nagiosxi/stayinformed"><span>Stay Informed</span></a></li><li class="item451"><a href="/products/nagiosxi/webinar"><span>Nagios XI Webinar</span></a></li></ul></li><li class="parent item563"><a href="/products/nagios-log-server"><span>Nagios Log Server</span></a><ul><li class="item564"><a href="/products/nagios-log-server/overview"><span>Overview</span></a></li><li class="item565"><a href="/products/nagios-log-server/features"><span>Features</span></a></li><li class="item569"><a href="/products/nagios-log-server/use-cases"><span>Use Cases</span></a></li><li class="item566"><a href="/products/nagios-log-server/try"><span>Try It</span></a></li><li class="item567"><a href="/products/nagios-log-server/screenshots"><span>Screenshots</span></a></li><li class="item568"><a href="/products/nagios-log-server/pricing"><span>Pricing</span></a></li><li class="item571"><a href="/products/nagios-log-server/buy"><span>Buy Now</span></a></li><li class="item570"><a href="/products/nagios-log-server/faqs"><span>FAQs</span></a></li><li class="item573"><a href="/products/nagios-log-server/stay-informed"><span>Stay Informed</span></a></li><li class="item578"><a href="/products/nagios-log-server/contest"><span>Contest</span></a></li><li class="item597"><a href="/products/nagios-log-server/log-server-webinar"><span>Log Server Webinar</span></a></li></ul></li><li class="parent item482"><a href="/products/nagios-network-analyzer"><span>Nagios Network Analyzer</span></a><ul><li rel="482" class="item486"><a href="/products/nagios-network-analyzer"><span>Overview</span></a></li><li class="item488"><a href="/products/nagios-network-analyzer/features"><span>Features</span></a></li><li class="item602"><a href="/products/nagios-network-analyzer/use-cases"><span>Use Cases</span></a></li><li class="item483"><a href="/products/nagios-network-analyzer/try"><span>Try It</span></a></li><li rel="485" class="item493"><a href="/products/nagios-network-analyzer/pricing/buy"><span>Buy Now</span></a></li><li class="item489"><a href="/products/nagios-network-analyzer/screenshots"><span>Screenshots</span></a></li><li class="item490"><a href="http://nagiosna.demos.nagios.com"><span>Online Demo</span></a></li><li class="parent item484"><a href="/products/nagios-network-analyzer/pricing"><span>Pricing</span></a><ul><li class="parent item485"><a href="/products/nagios-network-analyzer/pricing/buy"><span>Buy Now</span></a><ul><li class="item494"><a href="/products/nagios-network-analyzer/pricing/buy/buy-nagios-network-analyzer-online"><span>Buy Network Analyzer Online</span></a></li></ul></li></ul></li><li class="item491"><a href="/products/nagios-network-analyzer/faqs"><span>FAQs</span></a></li><li class="item492"><a href="/products/nagios-network-analyzer/register-for-network-analyzer-news"><span>Stay Informed</span></a></li></ul></li><li class="parent item216"><a href="/products/nagiosfusion"><span>Nagios Fusion</span></a><ul><li rel="216" class="item252"><a href="/products/nagiosfusion"><span>Overview</span></a></li><li class="item522"><a href="/products/nagiosfusion/features"><span>Features</span></a></li><li class="item604"><a href="/products/nagiosfusion/use-cases"><span>Use Cases</span></a></li><li class="item253"><a href="/products/nagiosfusion/try"><span>Try It</span></a></li><li class="parent item219"><a href="/products/nagiosfusion/buynow"><span>Buy Now</span></a><ul><li class="item220"><a href="/products/nagiosfusion/buynow/license"><span>Single License</span></a></li></ul></li><li class="item521"><a href="/products/nagiosfusion/screenshots"><span>Screenshots</span></a></li><li class="item229"><a href="http://nagiosfusion.demos.nagios.com/" target="_blank"><span>Online Demo</span></a></li><li class="item218"><a href="/products/nagiosfusion/pricing"><span>Pricing</span></a></li><li class="item560"><a href="/products/nagiosfusion/nagios-fusion-faqs"><span>FAQs</span></a></li><li class="item217"><a href="/products/nagiosfusion/stayinformed"><span>Stay Informed</span></a></li></ul></li><li class="parent item434"><a href="/products/nagiosincidentmanager"><span>Nagios Incident Manager</span></a><ul><li rel="434" class="item480"><a href="/products/nagiosincidentmanager"><span>Overview</span></a></li><li class="item518"><a href="/products/nagiosincidentmanager/features"><span>Features</span></a></li><li class="item435"><a href="/products/nagiosincidentmanager/try"><span>Try It</span></a></li><li class="item437"><a href="/products/nagiosincidentmanager/buy"><span>Buy Now</span></a></li><li class="item517"><a href="/products/nagiosincidentmanager/screenshots"><span>Screenshots</span></a></li><li class="item436"><a href="/products/nagiosincidentmanager/pricing"><span>Pricing</span></a></li><li class="item559"><a href="/products/nagiosincidentmanager/nagios-incident-manager-faqs"><span>FAQs</span></a></li></ul></li><li class="parent item497"><a href="/products/nagios-reactor"><span>Nagios Reactor</span></a><ul><li rel="497" class="item501"><a href="/products/nagios-reactor"><span>Overview</span></a></li><li class="item502"><a href="/products/nagios-reactor/features"><span>Features</span></a></li><li class="item603"><a href="/products/nagios-reactor/use-cases"><span>Use Cases</span></a></li><li class="item498"><a href="/products/nagios-reactor/try"><span>Free Download</span></a></li><li class="item503"><a href="/products/nagios-reactor/screenshots"><span>Screenshots</span></a></li><li class="item509"><a href="/products/nagios-reactor/faqs"><span>FAQs</span></a></li></ul></li><li class="parent item173"><a href="/products/nagioscore"><span>Nagios Core</span></a><ul><li rel="173" class="item235"><a href="/products/nagioscore"><span>Overview</span></a></li><li class="item236"><a href="/products/nagioscore/features"><span>Features</span></a></li><li class="item237"><a href="/products/nagioscore/howitworks"><span>How It Works</span></a></li><li class="item230"><a href="http://www.nagios.org/download"><span>Download</span></a></li><li class="item278"><a href="/products/nagioscore/screenshots"><span>Screenshots</span></a></li><li class="item231"><a href="http://nagioscore.demos.nagios.com" target="_blank"><span>Online Demo</span></a></li><li rel="147" class="item238"><a href="/services/support/coresupportplans"><span>Support Plans</span></a></li></ul></li><li class="parent item411"><a href="/products/nagiosmobile"><span>Nagios Mobile</span></a><ul><li rel="411" class="item412"><a href="/products/nagiosmobile"><span>Overview</span></a></li><li class="item413"><a href="http://exchange.nagios.org/directory/Addons/Frontends-%28GUIs-and-CLIs%29/Mobile-Device-Interfaces/Nagios-Mobile/details"><span>Download</span></a></li></ul></li><li class="item548"><a href="http://support.nagios.com/"><span>Support Resources</span></a></li></ul></li><li class="parent item145"><a href="/services"><span>Services</span></a><ul><li rel="145" class="item146"><a href="/services"><span>Overview</span></a></li><li class="item148"><a href="/services/consulting"><span>Implementation</span></a></li><li class="item547"><a href="http://support.nagios.com/"><span>Support Links</span></a></li><li class="parent item204"><a href="/services/support"><span>Support Plans</span></a><ul><li class="parent item205"><a href="/services/support/xisupportplans"><span>Nagios XI Support Plans</span></a><ul><li class="item224"><a href="/services/support/xisupportplans/support-access-form"><span>Support Access Form</span></a></li></ul></li><li class="parent item147"><a href="/services/support/coresupportplans"><span>Nagios Core Support Plans</span></a><ul><li class="item157"><a href="/services/support/coresupportplans/requestquote"><span>Request a Quote</span></a></li><li class="item202"><a href="/services/support/coresupportplans/specify-designated-contacts"><span>Specify Designated Contacts</span></a></li></ul></li></ul></li><li class="parent item232"><a href="/services/quickstart"><span>Quickstart</span></a><ul><li class="item233"><a href="/services/quickstart/request"><span>Quickstart Request Form</span></a></li></ul></li><li class="parent item257"><a href="/services/training"><span>Training</span></a><ul><li class="parent item258"><a href="/services/training/live"><span>Live Training</span></a><ul><li class="item276"><a href="/services/training/live/courses"><span>Course Descriptions</span></a></li><li class="item275"><a href="/services/training/live/schedule"><span>Upcoming Classes</span></a></li><li class="item408"><a href="/services/training/live/pricing"><span>Pricing</span></a></li><li class="item266"><a href="/services/training/live/buynow"><span>Buy Now</span></a></li><li class="item267"><a href="/services/training/live/requestquote"><span>Request a Quote</span></a></li></ul></li><li class="item259"><a href="/services/training/selfpaced"><span>Self-Paced Training</span></a></li><li class="item260"><a href="/services/training/partners"><span>Training Partners</span></a></li></ul></li><li class="parent item286"><a href="/services/certification"><span>Certification</span></a><ul><li class="item424"><a href="/services/certification/process"><span>Exam Process</span></a></li><li class="item425"><a href="http://www.nagios.com/verify/certification/"><span>Online Certificates</span></a></li><li class="item428"><a href="/services/certification/prep"><span>Preparation Material</span></a></li></ul></li></ul></li><li rel="289" class="item319"><a href="/solutions"><span>Solutions</span></a></li><li class="parent item239"><a href="/events"><span>Events</span></a><ul><li class="parent item240"><a href="/events/nagiosworldconference"><span>Nagios World Conference</span></a><ul><li class="parent item280"><a href="/events/nagiosworldconference/northamerica"><span>North America</span></a><ul><li class="parent item574"><a href="/events/nagiosworldconference/northamerica/2015"><span>2015</span></a><ul><li class="item600"><a href="/events/nagiosworldconference/northamerica/2015/speaker-application"><span>Speaker Application</span></a></li></ul></li><li class="parent item525"><a href="/events/nagiosworldconference/northamerica/2014"><span>2014</span></a><ul><li class="item544"><a href="/events/nagiosworldconference/northamerica/2014/why-you-should-attend"><span>Why You Should Attend</span></a></li><li class="item546"><a href="/events/nagiosworldconference/northamerica/2014/what-others-are-saying"><span>What Others Are Saying</span></a></li><li class="item526"><a href="/events/nagiosworldconference/northamerica/2014/call-for-papers"><span>Call For Papers</span></a></li><li class="parent item527"><a href="/events/nagiosworldconference/northamerica/2014/registration"><span>Registration</span></a><ul><li class="item537"><a href="/events/nagiosworldconference/northamerica/2014/registration/terms-and-conditions"><span>Terms and Conditions</span></a></li></ul></li><li class="item530"><a href="/events/nagiosworldconference/northamerica/2014/schedule"><span>Schedule</span></a></li><li class="item531"><a href="/events/nagiosworldconference/northamerica/2014/speakers"><span>Speakers</span></a></li><li class="item528"><a href="/events/nagiosworldconference/northamerica/2014/location"><span>Location</span></a></li><li class="item529"><a href="/events/nagiosworldconference/northamerica/2014/travel-information"><span>Travel Info</span></a></li><li class="item534"><a href="/events/nagiosworldconference/northamerica/2014/presentations"><span>Presentations</span></a></li><li class="item535"><a href="/events/nagiosworldconference/northamerica/2014/photos"><span>Photos</span></a></li><li class="item536"><a href="/events/nagiosworldconference/northamerica/2014/videos"><span>Videos</span></a></li><li class="item541"><a href="/events/nagiosworldconference/northamerica/2014/promotional-material"><span>Promo Material</span></a></li><li class="item551"><a href="/events/nagiosworldconference/northamerica/2014/mvp-awards"><span>MVP Awards</span></a></li><li class="item558"><a href="/events/nagiosworldconference/northamerica/2014/press-and-media"><span>Press &amp; Media</span></a></li><li class="item577"><a href="/events/nagiosworldconference/northamerica/2014/stay-connected"><span>Stay Connected</span></a></li></ul></li><li class="parent item460"><a href="/events/nagiosworldconference/northamerica/2013"><span>2013</span></a><ul><li class="item461"><a href="/events/nagiosworldconference/northamerica/2013/callforpapers"><span>Call For Papers</span></a></li><li class="parent item464"><a href="/events/nagiosworldconference/northamerica/2013/registration"><span>Registration</span></a><ul><li class="item487"><a href="/events/nagiosworldconference/northamerica/2013/registration/terms-and-conditions"><span>Terms And Conditions</span></a></li></ul></li><li class="item462"><a href="/events/nagiosworldconference/northamerica/2013/location"><span>Location</span></a></li><li class="item463"><a href="/events/nagiosworldconference/northamerica/2013/travelinfo"><span>Travel Info</span></a></li><li class="item465"><a href="/events/nagiosworldconference/northamerica/2013/schedule"><span>Schedule</span></a></li><li class="item466"><a href="/events/nagiosworldconference/northamerica/2013/speakers"><span>Speakers</span></a></li><li class="item467"><a href="/events/nagiosworldconference/northamerica/2013/attendees"><span>Attendees</span></a></li><li class="item512"><a href="/events/nagiosworldconference/northamerica/2013/stay-connected"><span>Stay Connected</span></a></li><li class="item513"><a href="/events/nagiosworldconference/northamerica/2013/presentations"><span>Presentations</span></a></li><li class="item514"><a href="/events/nagiosworldconference/northamerica/2013/photos"><span>Photos</span></a></li><li class="item516"><a href="/events/nagiosworldconference/northamerica/2013/videos"><span>Videos</span></a></li></ul></li><li class="parent item415"><a href="/events/nagiosworldconference/northamerica/2012"><span>2012</span></a><ul><li class="item416"><a href="/events/nagiosworldconference/northamerica/2012/callforpapers"><span>Call For Papers</span></a></li><li class="parent item419"><a href="/events/nagiosworldconference/northamerica/2012/registration"><span>Registration</span></a><ul><li class="item538"><a href="/events/nagiosworldconference/northamerica/2012/registration/terms-and-conditions"><span>Terms and Conditions</span></a></li></ul></li><li class="item417"><a href="/events/nagiosworldconference/northamerica/2012/location"><span>Location</span></a></li><li class="item418"><a href="/events/nagiosworldconference/northamerica/2012/travelinfo"><span>Travel Info</span></a></li><li class="item420"><a href="/events/nagiosworldconference/northamerica/2012/schedule"><span>Schedule</span></a></li><li class="item422"><a href="/events/nagiosworldconference/northamerica/2012/speakers"><span>Speakers</span></a></li><li class="item440"><a href="/events/nagiosworldconference/northamerica/2012/attendees"><span>Attendees</span></a></li><li class="item441"><a href="/events/nagiosworldconference/northamerica/2012/presentations"><span>Presentations</span></a></li><li class="item442"><a href="/events/nagiosworldconference/northamerica/2012/photos"><span>Photos</span></a></li><li class="item515"><a href="/events/nagiosworldconference/northamerica/2012/videos"><span>Videos</span></a></li></ul></li><li class="parent item242"><a href="/events/nagiosworldconference/northamerica/2011"><span>2011</span></a><ul><li class="item243"><a href="/events/nagiosworldconference/northamerica/2011/callforpapers"><span>Call For Papers</span></a></li><li class="parent item244"><a href="/events/nagiosworldconference/northamerica/2011/registration"><span>Registration</span></a><ul><li class="item281"><a href="/events/nagiosworldconference/northamerica/2011/registration/terms"><span>Terms And Conditions</span></a></li></ul></li><li class="item245"><a href="/events/nagiosworldconference/northamerica/2011/schedule"><span>Schedule</span></a></li><li class="item246"><a href="/events/nagiosworldconference/northamerica/2011/speakers"><span>Speakers</span></a></li><li class="item284"><a href="/events/nagiosworldconference/northamerica/2011/eveningevent"><span>Evening Event</span></a></li><li class="item247"><a href="/events/nagiosworldconference/northamerica/2011/location"><span>Location</span></a></li><li class="item285"><a href="/events/nagiosworldconference/northamerica/2011/travelinfo"><span>Travel Info</span></a></li><li class="item406"><a href="/events/nagiosworldconference/northamerica/2011/photos"><span>Photos</span></a></li><li class="item407"><a href="/events/nagiosworldconference/northamerica/2011/presentations"><span>Presentations</span></a></li><li class="item414"><a href="/events/nagiosworldconference/northamerica/2011/videos"><span>Videos</span></a></li></ul></li></ul></li></ul></li><li class="item481"><a href="/events/webinars"><span>Webinars</span></a></li></ul></li><li class="parent item161"><a href="/partners"><span>Partners</span></a><ul><li class="item165"><a href="/partners/resellers"><span>Resellers</span></a></li><li class="parent item162"><a href="/partners/apply"><span>Become a Nagios Partner</span></a><ul><li class="item474"><a href="/partners/apply/reseller-application"><span>Reseller Application</span></a></li></ul></li></ul></li><li class="parent item134"><a href="/about"><span>About</span></a><ul><li rel="134" class="item139"><a href="/about"><span>Overview</span></a></li><li class="item288"><a href="http://www.nagios.com/heroes"><span>Hero Stories</span></a></li><li class="item167"><a href="http://www.nagios.com/casestudies"><span>Case Studies</span></a></li><li class="item170"><a href="http://www.nagios.com/testimonials"><span>Testimonials</span></a></li><li class="item168"><a href="http://www.nagios.com/awards"><span>Awards and Recognition</span></a></li><li class="item177"><a href="http://www.nagios.com/users"><span>Customers and Users</span></a></li><li class="item234"><a href="/about/community"><span>Community Involvement</span></a></li><li class="item141"><a href="/about/company"><span>Company Information</span></a></li></ul></li><li class="parent item138"><a href="/contact"><span>Contact</span></a><ul><li rel="138" class="item543"><a href="/contact"><span>Contact Nagios</span></a></li><li class="item268"><a href="/contact/hours"><span>Company Hours</span></a></li></ul></li></ul>
-
-
-            <div class="clr"></div>
-
-
-          </div>
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
 </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  
-  <div id="pathway" class="pathway">
-
-    <span class="breadcrumbs pathway">
-<a href="http://www.nagios.com/" class="pathway">Home</a> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABGdBTUEAALGPC/xhBQAAAANQTFRF////p8QbyAAAAAF0Uk5TAEDm2GYAAAAKSURBVAjXY2AAAAACAAHiIbwzAAAAAElFTkSuQmCC" alt="" pagespeed_url_hash="391238287" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> Products</span>
-
-
-  </div>
-
-  
-  
-  
-  
-  <div id="mainbody">
-
-    
-	
-
-
-
-    
-    
-    
-    
-
-        <!-- Start Topcontent -->
-
-	<div id="top-content">	
-
-          <div id="top-module">
-
-          		
-
-          </div>	
-
-	</div>
-
-<!-- start secondary column area -->
-
-	
-    <div id="secondcol">
-
-      <div class="col1">
-
-        <div class="col2">
-          
-          <div id="sub-menu">		<div class="module">
-			<div>
-				<div>
-					<div>
-											<ul class="menu"><li rel="171" class="item172"><a href="/products"><span>Products Overview</span></a></li><li class="parent item186"><a href="/products/nagiosxi" class="daddy"><span>Nagios XI</span></a></li><li class="parent item563"><a href="/products/nagios-log-server" class="daddy"><span>Nagios Log Server</span></a></li><li class="parent item482"><a href="/products/nagios-network-analyzer" class="daddy"><span>Nagios Network Analyzer</span></a></li><li class="parent item216"><a href="/products/nagiosfusion" class="daddy"><span>Nagios Fusion</span></a></li><li class="parent item434"><a href="/products/nagiosincidentmanager" class="daddy"><span>Nagios Incident Manager</span></a></li><li class="parent item497"><a href="/products/nagios-reactor" class="daddy"><span>Nagios Reactor</span></a></li><li class="parent item173"><a href="/products/nagioscore" class="daddy"><span>Nagios Core</span></a></li><li class="parent item411"><a href="/products/nagiosmobile" class="daddy"><span>Nagios Mobile</span></a></li><li class="item548"><a href="http://support.nagios.com/"><span>Support Resources</span></a></li></ul>					</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Nagios</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
 				</div>
-			</div>
-		</div>
-	  </div>
-
-          		  
-          		<div class="module">
-			<div>
-				<div>
-					<div>
-											<a title="Nagios Log Server Now Available - Download Now" href="http://go.nagios.com/logserver?utm_source=Nagios.com&amp;utm_medium=Banner&amp;utm_content=Nagios-Log-Server-Now-Available-Download-Now&amp;utm_campaign=Nagios+Log+Server"><img title="Nagios Log Server Now Available - Download Now" style="border: 1px solid #2891f3;" alt="Nagios Log Server Now Available - Download Now" src="http://assets.nagios.com/images/products/nagioslogserver/site-promos/Nagios-Log-Server-Side-Bar-Promo.png" height="54" width="174" pagespeed_url_hash="1885630407" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>					</div>
-				</div>
-			</div>
-		</div>
-			<div class="module">
-			<div>
-				<div>
-					<div>
-													<h3>Search</h3>
-											<script type="text/javascript" src="//www.google.com/jsapi"><!--
-
-// --></script>
-<script type="text/javascript">var autoCompletionOptions={};google.load('search','1');google.setOnLoadCallback(function(){var cx='006051881870060158283:s3wh1-w-5k4';google.search.CustomSearchControl.attachAutoCompletionWithOptions(cx,document.getElementById('search'),'searchForm',autoCompletionOptions);});</script>
-<form id="searchForm" action="http://www.nagios.com/search"><input id="search" name="q" size="15" type="text"/> <input name="btnG" value="Go" type="submit"/> </form> <!-- <form action="http://www.nagios.com/search"> <input name="client" value="nagios" type="hidden" /> <input name="output" value="xml_no_dtd" type="hidden" /> <input name="proxystylesheet" value="nagios" type="hidden" /> <input name="q" size="15" type="text" /> <input name="btnG" value="Go" type="submit" /> </form> //-->					</div>
-				</div>
-			</div>
-		</div>
-			<div class="module">
-			<div>
-				<div>
-					<div>
-													<h3>Contact Us</h3>
-											Phone: 1-888-NAGIOS-1<br/> Email: <a href="mailto:sales@nagios.com">sales@nagios.com</a>					</div>
-				</div>
-			</div>
-		</div>
-			<div class="module">
-			<div>
-				<div>
-					<div>
-													<h3>Nagios Live Webinars</h3>
-											Let our experts show you how Nagios can help your organization.
-<div style="width: 174px; margin-top: 10px;" class="bluebutton" id="registerwebinar"><a href="http://www.nagios.com/products/nagiosxi/webinar">Register Now<br/></a></div>
-<script type="text/javascript">$(function(){$('#registerwebinar a').each(function(){this.href="http://www.nagios.com/products/nagiosxi/webinar?from="+document.URL});})</script>					</div>
-				</div>
-			</div>
-		</div>
-			<div class="module">
-			<div>
-				<div>
-					<div>
-													<h3>What People Say</h3>
-											<ul>
-<li><a href="http://www.nagios.com/heroes/">Hero stories</a></li>
-<li><a href="http://www.nagios.com/testimonials/">Testimonials</a></li>
-<li><a href="http://www.nagios.com/users/">Customers</a></li>
-<li><a href="http://www.nagios.com/awards/">Awards</a></li>
-<li><a href="http://www.nagios.com/casestudies/">Case studies</a></li>
-</ul>					</div>
-				</div>
-			</div>
-		</div>
-			<div class="module">
-			<div>
-				<div>
-					<div>
-													<h3>Stay Informed</h3>
-											<a href="http://visitor.constantcontact.com/d.jsp?m=1102343288653&amp;p=oi" target="_blank">Subscribe To Our Newsletter</a>
-<div style="padding-top: 3px; margin: 0px"><a href="http://www.constantcontact.com/safesubscribe.jsp" target="_blank"><img src="http://img.constantcontact.com/ui/images1/safe_subscribe_logo.gif" alt="constant contact" border="0" pagespeed_url_hash="3403952724" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></div>					</div>
-				</div>
-			</div>
-		</div>
-			<div class="module">
-			<div>
-				<div>
-					<div>
-													<h3>Connect With Us</h3>
-											<a href="http://www.facebook.com/pages/Nagios/194145247332208" target="_blank"><img src="http://assets.nagios.com/images/social/facebook-32x32.png" title="Facebook" alt="Facebook" width="30" pagespeed_url_hash="4086430905" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a> <a href="http://twitter.com/#!/nagiosinc" target="_blank"><img src="http://assets.nagios.com/images/social/twitter-32x32.png" title="Twitter" alt="Twitter" width="30" pagespeed_url_hash="118566392" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a> <a href="http://www.youtube.com/nagiosvideo" target="_blank"><img src="http://assets.nagios.com/images/social/youtube-32x32.png" title="YouTube" alt="YouTube" width="30" pagespeed_url_hash="758862972" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a> <a href="http://www.linkedin.com/groups?gid=131532" target="_blank"><img src="http://assets.nagios.com/images/social/linkedin-32x32.png" title="LinkedIn" alt="LinkedIn" width="30" pagespeed_url_hash="2122245625" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
-<div class="g-plusone" data-annotation="none"></div>
-<!-- Place this tag after the last +1 button tag. -->
-<script type="text/javascript">(function(){var po=document.createElement('script');po.type='text/javascript';po.async=true;po.src='https://apis.google.com/js/plusone.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po,s);})();</script>					</div>
-				</div>
-			</div>
-		</div>
-	
-
-        </div>
-
-      </div>
-
-    </div>
-
-    	
-		<div id="userTop">
-		    
-	</div>
-		
-	
-	<!-- start main content area -->
-
-	<div id="content">
-
-
-      
-        
-        
-        
-        
-      </div>
-
-            <!-- Melvin 1803 checks if component position is found -->
-
-            	
-				
-								  <div id="component">
-									 <div class="padding">
-										 <div class="padding2">
-											  
-
-<table class="contentpaneopen">
-
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Nagios</caption>
 <tr>
-
-	
-	<td class="contentheading"> 
-		<h1>Products</h1>
-	</td>
-
-	
-	
-		
-
-
-		
-		<td align="right" width="100%" class="buttonheading">
-
-		<a href="/products?tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">|&nbsp;Print&nbsp;|</a>
-		</td>
-
-		
-
-
-		
-		<td align="right" width="100%" class="buttonheading">
-
-		<a href="/component/mailto/?tmpl=component&amp;link=aHR0cDovL3d3dy5uYWdpb3MuY29tL3Byb2R1Y3Rz" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;">&nbsp;E-mail</a>
-		</td>
-
-		
-		
-	
-</tr>
-
-</table>
-
-
-
-
-
-
-<table class="contentpaneopen">
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-
-<td valign="top" colspan="2">
-
-
-<div class="ultimatesbplugin_top"><script type="text/javascript">var addthis_pub="nagiosinc";</script><a href="http://www.addthis.com/bookmark.php?v=20" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0" pagespeed_url_hash="2755271565" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script></div><p><strong>Nagios is a powerful IT management system that enables organizations to identify and resolve IT infrastructure problems before they affect critical business processes.</strong></p>
-<p>With Nagios you'll never be left having to explain why an unseen infrastructure outage hurt your organization's bottom line.  The Nagios® product line delivers outstanding value to thousands of organizations worldwide.</p>
-<br/> <!--
-<h2>Product Comparisons</h2>
-<p><strong>Nagios is a powerful IT management system that enables organizations to identify and resolve IT infrastructure problems before they affect critical business processes.</strong></p>
-<p>With Nagios you'll never be left having to explain why an unseen infrastructure outage hurt your organization's bottom line.  The Nagios® product line delivers outstanding value to thousands of organizations worldwide.</p>
-<br /> <!
-<h2>Product Comparisons</h2>
-<div style="float: left;" ><img alt="pdf" src="http://www.nagios.com/supportMedia/images/pdf.png" height="25" width="30" /></div>
-<div style="float: left;" >
-<p>Need help deciding which monitoring solution is right for your organization?<br />Download our <a href="http://www.nagios.com/supportMedia/files/datasheets/Monitoring Product Feature Matrix.pdf" >monitoring product feature matrix</a> for a quick comparison of Nagios XI and Nagios Core.</p>
-</div>
-<br clear="all" /> //-->
-<h2>Nagios XI</h2>
-<p><a href="http://www.nagios.com/products/nagiosxi"> <img title="Nagios XI 2014 Product Overview" style="margin-left: 10px; margin-bottom: 10px; float: right;" class="dropshadow" alt="Service Status Dashboard Nagios XI 2014" src="http://assets.nagios.com/images/products/nagiosxi/2014/screenshots/thumb/Service-Status-Dashboard-Nagios-XI-2014-thumb.png" width="275" pagespeed_url_hash="2496660087" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a> Our most powerful IT infrastructure monitoring and alerting solution for today's demanding organizational requirements.</p>
-<p>Going beyond basic IT monitoring capabilities, Nagios XI provides organizations with extended insight of their IT infrastructure before problems affect critical business processes.</p>
-<p>Designed with both power and ease of use in mind, Nagios XI provides unparalleled useability, flexibility and customizability to meet your needs.</p>
-<p><a title="Learn More About Nagios XI" href="http://www.nagios.com/products/nagiosxi">Learn More</a></p>
-<p><a title="Download Free Nagios XI Trial" href="http://www.nagios.com/products/nagiosxi/try">Download Trial Copy</a></p>
-<br clear="all"/>
-<h2>Nagios Log Server</h2>
-<p><a href="http://www.nagios.com/products/nagios-log-server"> <img title="Nagios Log Server Product Overview" style="margin-left: 10px; margin-bottom: 10px; float: right;" class="dropshadow" alt="Nagios Log Server" src="http://assets.nagios.com/images/products/nagioslogserver/screenshots/thumb/Nagios-Log-Server-Dashboard-thumb.png" width="275" pagespeed_url_hash="2272676789" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a> Our powerful enterprise-class log monitoring and management application that allows organizations to quickly and easily view, sort, and configure logs from any source on any given network. Log Server is designed to analyze, collect, and store log data based on custom specifications, and provide users with extended insight into the data on their network's infrastructue.</p>
-<p>Nagios Log Server provides users the ability to quickly and easily search and analyze all types of log data from one location. Users can then easily drill down to specific problems enabling faster problem resolution across an entire infrastructure.</p>
-<p><a title="Learn More About Nagios Log Server" href="http://www.nagios.com/products/nagios-log-server">Learn More</a></p>
-<p><a title="Download Free Nagios Log Server Trial" href="http://www.nagios.com/products/nagios-log-server/try">Download Trial Copy</a></p>
-<br clear="all"/>
-<h2>Nagios Network Analyzer</h2>
-<p><a href="http://www.nagios.com/products/nagios-network-analyzer"> <img style="margin-left: 10px; margin-bottom: 10px; float: right;" alt="Nagios-Network-Analyzer" src="http://www.nagios.com/supportMedia/images/products/network-analyzer/275x186xnagios-network-analyzer-dashboard-full-screen-thumb.png.pagespeed.ic.d_alh1TwN2.png" height="186px" width="275px" pagespeed_url_hash="2754901295" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a>Our commercial-grade network flow data analysis solution for providing organizations with extended insight into their IT infrastructure and network traffic. Network Analyzer allows you to be proactive in resolving outages, aberrant behavior, and security threats before they affect critical business processes.</p>
-<p>Nagios Network Analyzer provides network traffic and bandwidth information for your entire IT infrastructure, making it easier for teams and individuals to ensure that systems, applications, services, and business processes are functioning properly.</p>
-<p><a href="http://www.nagios.com/products/nagios-network-analyzer">Learn More</a></p>
-<p><a href="http://www.nagios.com/products/nagios-network-analyzer/try#download">Download Trial Copy</a></p>
-<br clear="all"/>
-<h2>Nagios Fusion</h2>
-<p><a href="http://www.nagios.com/products/nagiosfusion"> <img style="margin-left: 10px; margin-bottom: 10px; float: right;" alt="Nagios Fusion" src="http://assets.nagios.com/images/products/nagiosfusion/screenshots/thumb/Nagios-Fusion-2014-Tactical-Overview-thumb.png" pagespeed_url_hash="4045894523" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a>The solution for visualizing operational status and enabling faster problem resolution across an organization's entire IT infrastructure.</p>
-<p>Nagios Fusion provides organizations with the ability to quickly identify and solve problems on an infrastructure-wide basis before they affect critical business processes.</p>
-<p>IT operations staff use Nagios Fusion to gain insight into in the health of the organization's entire network through a centralized view of their monitoring infrastructure, enabling faster problem detection and resolution.</p>
-<p><a href="http://www.nagios.com/products/nagiosfusion">Learn More</a></p>
-<br clear="all"/>
-<h2>Nagios Incident Manager</h2>
-<p><a href="http://www.nagios.com/products/nagiosincidentmanager"> <img style="margin-left: 10px; margin-bottom: 10px; float: right;" alt="Nagios-Incident-Manager" src="http://assets.nagios.com/images/products/nagiosincidentmanager/splash2.png" pagespeed_url_hash="4051298771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a>Our powerful tool for managing infrastructure incidents and enabling faster problem resolution across an organization's entire IT infrastructure.</p>
-<p>Nagios Incident Manager is an enterprise-class incident management application that allows teams and individuals to track and solve problems faster using a powerful web-based application that offers security, mobility, third-party integration, and tools for collaboration.</p>
-<p><a href="http://www.nagios.com/products/nagiosincidentmanager">Learn More</a></p>
-<p><a href="http://www.nagios.com/products/nagiosincidentmanager/try#download">Download Trial Copy</a></p>
-<br clear="all"/>
-<h2>Nagios Reactor</h2>
-<p><a href="http://www.nagios.com/products/nagios-reactor"> <img style="margin-left: 10px; margin-bottom: 10px; float: right;" alt="Nagios-Reactor" src="http://assets.nagios.com/images/products/nagiosreactor/screenshots/thumb/Nagios-Reactor-Dashboard-thumb.png" width="275" pagespeed_url_hash="3454690464" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a>An open source automation engine designed to save organizations time and money by reacting to problems automagically.</p>
-<p><a href="http://www.nagios.com/products/nagios-reactor">Learn More</a></p>
-<br clear="all"/>
-<h2>Nagios Core</h2>
-<p><a href="http://www.nagios.com/products/nagioscore"> <img style="margin-left: 10px; margin-bottom: 10px; float: right;" alt="Nagios Core" src="http://assets.nagios.com/images/products/nagioscore/screenshots/thumb/nagios-core-service-detail-thumb.png" height="149" width="250" pagespeed_url_hash="2252559635" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/> </a>The highly awarded, industry standard Open Source core for IT infrastructure monitoring.</p>
-<p><a href="http://www.nagios.com/products/nagioscore">Learn More</a></p>
-<br clear="all"/>
-<div style="float: left;"><img alt="pdf" src="http://www.nagios.com/supportMedia/images/30x25xpdf.png.pagespeed.ic.1vnXDolFRY.jpg" height="25" width="30" pagespeed_url_hash="3102724486" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div>
-<div style="float: left;">
-<p>Need help deciding which monitoring solution is right for your organization?<br/>Download our <a href="http://www.nagios.com/supportMedia/files/datasheets/Monitoring Product Feature Matrix.pdf">monitoring product feature matrix</a> for a quick comparison of Nagios XI and Nagios Core.</p>
-</div>
-<br clear="all"/>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Nagios_main_screen.png" class="image"><img alt="Nagios main screen.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nagios_main_screen.png/250px-Nagios_main_screen.png" width="250" height="161" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nagios_main_screen.png/375px-Nagios_main_screen.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nagios_main_screen.png/500px-Nagios_main_screen.png 2x" data-file-width="1144" data-file-height="737" /></a>
+<div>Screenshot of the Nagios Core web interface</div>
 </td>
-
 </tr>
-
-
-
-
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;"><a href="/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td>Ethan Galstad and <a rel="nofollow" class="external text" href="http://www.nagios.org/about/team">others</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;">Initial release</th>
+<td>March 14, 1999<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>4.0.8 / August&#160;12,&#160;2014<span style="display:none">&#160;(<span class="bday dtstart published updated">2014-08-12</span>)</span><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;"><a href="/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td><a href="/wiki/Network_monitoring" title="Network monitoring">Network monitoring</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a rel="nofollow" class="external text" href="http://sourceforge.net/p/nagios/nagioscore/ci/master/tree/LICENSE">GPLv2</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;white-space: nowrap;">Website</th>
+<td><a rel="nofollow" class="external text" href="http://www.nagios.org">www.nagios.org</a></td>
+</tr>
 </table>
-
-<span class="article_separator">&nbsp;</span>
-
-
-										</div>
-									 </div>
-								   </div>
-								   
-								   
-					
-    
-    
-	<!-- Begin Bottom Content MELVIN 2803 -->
-
-	<div id="bottomContent">
-
-	  
-
-	</div>
-
-	<!-- END BottomFooter MELVIN 2803 -->
-
-	<!-- Begin Content Footer MELVIN 2803 -->
-
-	<div id="contentFooter">
-
-	  
-
-	</div>
-
-	<!-- END Content Footer MELVIN 2803 -->
-
-  </div>
-
-  
-
-<div id="footer-bar">
-
-  <div id="bottom" class="wrapper">
-
-    
-    <div id="footer-outer-container">
-
-      <div class="centred-container" id="centred-container-footer">
-
-        
-        
-        
-      </div>
-
-    </div>
-
-    
-  </div>
-
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Monitoring.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Monitoring.png/300px-Monitoring.png" width="300" height="183" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Monitoring.png/450px-Monitoring.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Monitoring.png/600px-Monitoring.png 2x" data-file-width="625" data-file-height="382" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Monitoring.png" class="internal" title="Enlarge"></a></div>
+Operating principle of Nagios</div>
+</div>
+</div>
+<p><b>Nagios</b> <span class="nowrap"><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="/wiki/Help:IPA_for_English" title="Help:IPA for English">/</a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ˈ/ primary stress follows" style="border-bottom:1px dotted">ˈ</span></a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'n' in 'nigh'" style="border-bottom:1px dotted">n</span></a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ɑː/ 'a' in 'spa'" style="border-bottom:1px dotted">ɑː</span></a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'g' in 'guy'" style="border-bottom:1px dotted">ɡ</span></a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/iː/ long 'e' in 'bead'" style="border-bottom:1px dotted">iː</span></a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/oʊ/ long 'o' in 'bode'" style="border-bottom:1px dotted">oʊ</span></a></span><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'s' in 'sigh'" style="border-bottom:1px dotted">s</span></a></span><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="/wiki/Help:IPA_for_English" title="Help:IPA for English">/</a></span></span> is an <a href="/wiki/Open_source" title="Open source">open source</a> <a href="/wiki/Computer" title="Computer">computer</a> <a href="/wiki/System_monitor" title="System monitor">system monitoring</a>, <a href="/wiki/Network_monitoring" title="Network monitoring">network monitoring</a> and infrastructure monitoring <a href="/wiki/Software_application" title="Software application" class="mw-redirect">software application</a>. Nagios offers monitoring and alerting services for servers, switches, applications, and services. It alerts the users when things go wrong and alerts them a second time when the problem has been resolved.</p>
+<p>Nagios, originally created under the name <i>NetSaint</i>, was written and is currently maintained by Ethan Galstad along with a group of <a href="/wiki/Software_developer" title="Software developer">developers</a> who are actively maintaining both the official and unofficial <a href="/wiki/Plug-in_(computing)" title="Plug-in (computing)">plugins</a>. Nagios is a <a href="/wiki/Recursive_acronym" title="Recursive acronym">recursive acronym</a>: "Nagios Ain't Gonna Insist On Sainthood",<sup id="cite_ref-NagiosFAQ_3-0" class="reference"><a href="#cite_note-NagiosFAQ-3"><span>[</span>3<span>]</span></a></sup> 'Sainthood' being a reference to the original name <i>NetSaint</i>, which was changed in response to a legal challenge by owners of a similar trademark.<sup id="cite_ref-Fosdem2005Galstad_4-0" class="reference"><a href="#cite_note-Fosdem2005Galstad-4"><span>[</span>4<span>]</span></a></sup> 'Agios' is also a transliteration of the Greek word <i>άγιος</i> which means 'saint'.</p>
+<p>Nagios was originally designed to run under <a href="/wiki/Linux" title="Linux">Linux</a> but also runs well on other <a href="/wiki/Unix" title="Unix">Unix</a> variants. It is a <a href="/wiki/Free_software" title="Free software">free software</a> licensed under the terms of the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> version 2 as published by the <a href="/wiki/Free_Software_Foundation" title="Free Software Foundation">Free Software Foundation</a>.</p>
+<p>In 2006, a survey among the nmap-hackers mailing list asked people what their favorite network security tools were. In the survey 3243 people voted; Nagios came in 67th overall and 5th among traffic monitoring tools. <a href="/wiki/Nmap" title="Nmap">Nmap</a> itself was excluded from the list. Another survey, in 2011, placed Nagios at 69th place.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Nagios_Agents"><span class="tocnumber">2</span> <span class="toctext">Nagios Agents</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#NRPE"><span class="tocnumber">2.1</span> <span class="toctext">NRPE</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#NRDP"><span class="tocnumber">2.2</span> <span class="toctext">NRDP</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#NSClient.2B.2B"><span class="tocnumber">2.3</span> <span class="toctext">NSClient++</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Controversial_takeover_of_nagios-plugins_site"><span class="tocnumber">3</span> <span class="toctext">Controversial takeover of nagios-plugins site</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Further_reading"><span class="tocnumber">5</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:ScalableGridEngineNagios2.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/48/ScalableGridEngineNagios2.png/300px-ScalableGridEngineNagios2.png" width="300" height="150" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/48/ScalableGridEngineNagios2.png/450px-ScalableGridEngineNagios2.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/48/ScalableGridEngineNagios2.png/600px-ScalableGridEngineNagios2.png 2x" data-file-width="1075" data-file-height="537" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:ScalableGridEngineNagios2.png" class="internal" title="Enlarge"></a></div>
+Status reporting in Nagios</div>
+</div>
+</div>
+<p>Nagios is open source software licensed under the GNU GPL V2. It provides:</p>
+<ul>
+<li>Monitoring of network services (<a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a>, <a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">POP3</a>, <a href="/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">HTTP</a>, <a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a>, <a href="/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a>, <a href="/wiki/Simple_network_management_protocol" title="Simple network management protocol" class="mw-redirect">SNMP</a>, <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a>, <a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a>)</li>
+<li>Monitoring of host resources (<a href="/wiki/Central_processing_unit" title="Central processing unit">processor</a> load, <a href="/wiki/Hard_disk" title="Hard disk" class="mw-redirect">disk</a> usage, system logs) on a majority of <a href="/wiki/Network_operating_system" title="Network operating system">network operating systems</a>, including <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> with the <a rel="nofollow" class="external text" href="http://nsclient.org/">NSClient++</a> plugin or <a href="/wiki/Check_MK" title="Check MK">Check MK</a>.</li>
+<li>Monitoring of anything else like probes (temperature, alarms,etc.) which have the ability to send collected data via a network to specifically written plugins</li>
+<li>Monitoring via remotely run scripts via <a href="/wiki/NRPE" title="NRPE" class="mw-redirect">Nagios Remote Plugin Executor</a></li>
+<li>Remote monitoring supported through <a href="/wiki/Secure_shell" title="Secure shell" class="mw-redirect">SSH</a> or <a href="/wiki/Secure_Sockets_Layer" title="Secure Sockets Layer" class="mw-redirect">SSL</a> <a href="/wiki/Encryption" title="Encryption">encrypted</a> tunnels.</li>
+<li>A simple plugin design that allows users to easily develop their own service checks depending on needs, by using their tools of choice (<a href="/wiki/Shell_scripts" title="Shell scripts" class="mw-redirect">shell scripts</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Perl" title="Perl">Perl</a>, <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/PHP" title="PHP">PHP</a>, <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, etc.)</li>
+<li>Available data graphing plugins</li>
+<li>Parallelized service checks</li>
+<li>The ability to define network host hierarchies using 'parent' hosts, allowing the detection of and distinction between hosts that are down or unreachable</li>
+<li>Contact notifications when service or host problems occur and get resolved (via <a href="/wiki/E-mail" title="E-mail" class="mw-redirect">e-mail</a>, <a href="/wiki/Pager" title="Pager">pager</a>, <a href="/wiki/Short_message_service" title="Short message service" class="mw-redirect">SMS</a>, or any user-defined method through plugin system)</li>
+<li>The ability to define event handlers to be run during service or host events for proactive problem resolution</li>
+<li>Automatic <a href="/wiki/Computer_data_logging" title="Computer data logging" class="mw-redirect">log file</a> rotation</li>
+<li>Support for implementing <a href="/wiki/Redundancy_(engineering)" title="Redundancy (engineering)">redundant</a> monitoring hosts</li>
+<li>An optional web-interface for viewing current network status, notifications, problem history, log files, etc.</li>
+<li>Data storage via text files rather than database</li>
+</ul>
+<h2><span class="mw-headline" id="Nagios_Agents">Nagios Agents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=2" title="Edit section: Nagios Agents">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="NRPE">NRPE</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=3" title="Edit section: NRPE">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Nagios Remote Plugin Executor (NRPE) is a Nagios agent that allows remote system monitoring using scripts that are hosted on the remote systems. It allows for monitoring of resources such as disk usage, system load or the number of users currently logged in. Nagios periodically polls the agent on remote system using the <code>check_nrpe</code> plugin.</p>
+<p><br />
+NRPE allows you to remotely execute Nagios plugins on other Linux/Unix machines. This allows you to monitor remote machine metrics (disk usage, CPU load, etc.). NRPE can also communicate with some of the Windows agent addons, so you can execute scripts and check metrics on remote Windows machines as well.</p>
+<h3><span class="mw-headline" id="NRDP">NRDP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=4" title="Edit section: NRDP">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Nagios Remote Data Processor (NRDP) is a Nagios agent with a flexible data transport mechanism and processor. It is designed with an architecture that allows it to be easily extended and customized. NRDP uses standard ports and protocols (HTTP(S) and XML) and can be implemented as a replacement for NSCA.</p>
+<h3><span class="mw-headline" id="NSClient.2B.2B">NSClient++</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=5" title="Edit section: NSClient++">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This program is mainly used to monitor Windows machines. Being installed on a remote system NSClient++ listens to port TCP 12489. Nagios plugin that is used to collect information from this addon is called <code>check_nt</code>. As NRPE, NSClient++ allows to monitor the so-called 'private services' (memory usage, CPU load, disk usage, running processes, etc.) Nagios is a host and service monitor. which is designed to inform your network problems</p>
+<h2><span class="mw-headline" id="Controversial_takeover_of_nagios-plugins_site">Controversial takeover of nagios-plugins site</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=6" title="Edit section: Controversial takeover of nagios-plugins site">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On 16 January 2014, Nagios Enterprises redirected the nagios-plugins.org domain to a web server controlled by Nagios Enterprises without notifying the Nagios Plugins community team. In response, the original community plugin team has renamed the project to Monitoring Plugins and created a new project website at monitoring-plugins.org. <sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="noprint portal tright" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 1em">
+<table style="background:#f9f9f9;font-size:85%;line-height:110%;max-width:175px">
+<tr style="vertical-align:middle">
+<td style="text-align:center"><a href="/wiki/File:Free_and_open-source_software_logo_(2009).svg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold"><a href="/wiki/Portal:Free_software" title="Portal:Free software">Free software portal</a></td>
+</tr>
+</table>
+</div>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Nagios" class="extiw" title="commons:Category:Nagios">Nagios</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a href="/wiki/Comparison_of_network_monitoring_systems" title="Comparison of network monitoring systems">Comparison of network monitoring systems</a></li>
+<li><a href="/wiki/Icinga" title="Icinga">Icinga</a> – A <a href="/wiki/Fork_(software_development)" title="Fork (software development)">fork</a> of Nagios</li>
+<li><a href="/wiki/Shinken_(software)" title="Shinken (software)">Shinken</a> – A Nagios compatible replacement</li>
+<li><a href="/wiki/Op5_Monitor" title="Op5 Monitor">op5 Monitor</a> – A network monitoring suite using the Nagios core</li>
+<li><a href="/wiki/N2rrd" title="N2rrd">N2rrd</a> – A Nagios add-on to record data in a <a href="/wiki/RRDtool" title="RRDtool">Round Robin Database</a></li>
+<li><a href="/wiki/Nconf" title="Nconf">NConf</a> – A tool for configuring Nagios</li>
+<li><a href="/wiki/Opsview" title="Opsview">Opsview</a> – An integrated bundle of tools that includes Nagios core</li>
+<li><a href="/wiki/Check_MK" title="Check MK">Check MK</a> – An extension to Nagios that offloads work from the Nagios core, and allows distributed monitoring from several Nagios servers</li>
+<li><a href="/wiki/GendBuntu" title="GendBuntu">GendBuntu</a> – <a href="/wiki/National_Gendarmerie" title="National Gendarmerie">National Gendarmerie</a>'s OS is supervised by Nagios</li>
+<li><a href="/w/index.php?title=ManageNow_DCM&amp;action=edit&amp;redlink=1" class="new" title="ManageNow DCM (page does not exist)">ManageNow DCM</a> –</li>
+</ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=8" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Barth, Wolfgang; (2006) <i><a rel="nofollow" class="external text" href="http://web.archive.org/web/20080531191735/http://www.nostarch.com/frameset.php?startat=nagios">Nagios: System And Network Monitoring</a></i> - No Starch Press <a href="/wiki/Special:BookSources/1593270704" class="internal mw-magiclink-isbn">ISBN 1-59327-070-4</a></li>
+<li>Barth, Wolfgang; (2008) "<a rel="nofollow" class="external text" href="http://www.nostarch.com/nagios_2e.htm">Nagios: System And Network Monitoring, 2nd edition</a> <i>- No Starch Press <a href="/wiki/Special:BookSources/1593271794" class="internal mw-magiclink-isbn">ISBN 1-59327-179-4</a></i></li>
+<li>Turnbull, James; (2006) <i><a rel="nofollow" class="external text" href="http://www.apress.com/book/bookDisplay.html?bID=10096">Pro Nagios 2.0</a></i> - San Francisco: Apress <a href="/wiki/Special:BookSources/1590596099" class="internal mw-magiclink-isbn">ISBN 1-59059-609-9</a></li>
+<li>Josephsen, David; (2007) <i><a rel="nofollow" class="external text" href="http://www.pearson.ch/Informatik/PrenticeHall/1471/9780132236935/Building_a_Monitoring_Infrastructure.aspx">Building a Monitoring Infrastructure with Nagios</a></i> - Prentice Hall <a href="/wiki/Special:BookSources/0132236931" class="internal mw-magiclink-isbn">ISBN 0-13-223693-1</a></li>
+<li>Dondich, Taylor; (2006) <i><a rel="nofollow" class="external text" href="http://www.oreilly.com/catalog/networknagios/index.html">Network Monitoring with Nagios</a></i> - O'Reilly <a href="/wiki/Special:BookSources/0596528191" class="internal mw-magiclink-isbn">ISBN 0-596-52819-1</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Nagios" class="extiw" title="commons:Category:Nagios">Nagios</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.nagios.org">Official Nagios Website</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nagios&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://web.archive.org/web/20060501150621/http://www.netsaint.org/changelog.php">"NetSaint Change Log"</a>. 2002-03-01. Archived from <a rel="nofollow" class="external text" href="http://www.netsaint.org/changelog.php">the original</a> on 2006-05-01.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.btitle=NetSaint+Change+Log&amp;rft.date=2002-03-01&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.netsaint.org%2Fchangelog.php&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.nagios.org/projects/nagioscore/history/nagios-4-version-history">"Nagios Core 4.x Version History"</a>. 2014-06-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-06-15</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.btitle=Nagios+Core+4.x+Version+History&amp;rft.date=2014-06-03&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.nagios.org%2Fprojects%2Fnagioscore%2Fhistory%2Fnagios-4-version-history&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-NagiosFAQ-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-NagiosFAQ_3-0">^</a></b></span> <span class="reference-text"><span class="citation web">Galstad, Ethan (2009-08-24). <a rel="nofollow" class="external text" href="http://support.nagios.com/knowledgebase/faqs/index.php?id=52&amp;catid=35&amp;faq_id=2">"FAQ Database: Miscellaneous: What does Nagios mean?"</a>. <i>Nagios: Frequently Asked Questions</i>. Nagios Enterprises, LLC<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-06-02</span></span>. <q>The official meaning is that N.A.G.I.O.S. is a recursive acronym which stands for "Nagios Ain't Gonna Insist On Sainthood".</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.atitle=FAQ+Database%3A+Miscellaneous%3A+What+does+Nagios+mean%3F&amp;rft.aufirst=Ethan&amp;rft.au=Galstad%2C+Ethan&amp;rft.aulast=Galstad&amp;rft.date=2009-08-24&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fsupport.nagios.com%2Fknowledgebase%2Ffaqs%2Findex.php%3Fid%3D52%26catid%3D35%26faq_id%3D2&amp;rft.jtitle=Nagios%3A+Frequently+Asked+Questions&amp;rft.pub=Nagios+Enterprises%2C+LLC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Fosdem2005Galstad-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Fosdem2005Galstad_4-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://archive.fosdem.org/2005/index/interviews/interviews_galstad.html">"2005-02-22 - Ethan Galstad"</a>. <i><a href="/wiki/FOSDEM" title="FOSDEM">FOSDEM</a> 2005</i>. 2005-02-22<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-06-02</span></span>. <q>Although we were able to eventually reach an amicable agreement on my future use of the name "NetSaint", I felt it was prudent to change the name in order to prevent any future mishaps.</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.atitle=2005-02-22+-+Ethan+Galstad&amp;rft.date=2005-02-22&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Farchive.fosdem.org%2F2005%2Findex%2Finterviews%2Finterviews_galstad.html&amp;rft.jtitle=FOSDEM+2005&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://sectools.org/tag/traffic-monitors/">"SecTools.Org: Top 125 Network Security Tools"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-06-02</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.btitle=SecTools.Org%3A+Top+125+Network+Security+Tools&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fsectools.org%2Ftag%2Ftraffic-monitors%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web">Holger Weiß (2014-01-16). <a rel="nofollow" class="external text" href="https://www.monitoring-plugins.org/archive/help/2014-January/006503.html">"HEADS UP New project name: Monitoring Plugins"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-06-02</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.au=Holger+Wei%C3%9F&amp;rft.aulast=Holger+Wei%C3%9F&amp;rft.btitle=HEADS+UP+New+project+name%3A+Monitoring+Plugins&amp;rft.date=2014-01-16&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fwww.monitoring-plugins.org%2Farchive%2Fhelp%2F2014-January%2F006503.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://bugzilla.redhat.com/show_bug.cgi?id=1054340">"Bug 1054340: Update upstream URL to https://www.monitoring-plugins.org"</a>. <a href="/wiki/Red_Hat" title="Red Hat">Red Hat</a>. 2014-01-16<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-06-02</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANagios&amp;rft.btitle=Bug+1054340%3A+Update+upstream+URL+to+https%3A%2F%2Fwww.monitoring-plugins.org&amp;rft.date=2014-01-16&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbugzilla.redhat.com%2Fshow_bug.cgi%3Fid%3D1054340&amp;rft.pub=Red+Hat&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
 </div>
 
-<div id="footer">
 
-  
+<!-- 
+NewPP limit report
+Parsed by mw1230
+CPU time usage: 0.206 seconds
+Real time usage: 0.375 seconds
+Preprocessor visited node count: 2357/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 27209/2097152 bytes
+Template argument size: 2518/2097152 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 1/500
+Lua time usage: 0.045/10.000 seconds
+Lua memory usage: 2.55 MB/50 MB
+-->
 
-</div>
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  301.098      1 - -total
+ 50.02%  150.599      2 - Template:Commons_category
+ 43.90%  132.196      2 - Template:Commons
+ 43.25%  130.212      2 - Template:Sister
+ 18.15%   54.644      1 - Template:Infobox_software
+ 16.68%   50.236      1 - Template:Infobox
+ 15.95%   48.010      1 - Template:Reflist
+ 11.93%   35.918      7 - Template:Cite_web
+ 11.40%   34.319      1 - Template:IPAc-en
+  9.81%   29.534      1 - Template:Nowrap
+-->
 
-<!-- Ends shadow border -->
-
-<!-- Changed 8/10/2012 EG -->
-<!-- Changed 09/23/2014 EG -->
-<style>#pagefooter #pagefootermap{clear:none}</style>
-<script type="text/javascript">piAId='16682';piCId='5251';(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.src=('https:'==document.location.protocol?'https://pi':'http://cdn')+'.pardot.com/pd.js';var c=document.getElementsByTagName('script')[0];c.parentNode.insertBefore(s,c);}
-if(window.attachEvent){window.attachEvent('onload',async_load);}
-else{window.addEventListener('load',async_load,false);}})();</script>
-
-<script type="text/javascript">if(window.location.hash.indexOf("ref=")>=0){document.write(unescape("%3Cscript id='pap_x2s6df8d' src='"+(("https:"==document.location.protocol)?"https://":"http://")+"affiliate.nagios.com/scripts/trackjs.js' type='text/javascript'%3E%3C/script%3E"));}</script>
-<script type="text/javascript">if(window.location.hash.indexOf("ref=")>=0){PostAffTracker.setAccountId('default1');try{PostAffTracker.track();}catch(err){}}</script>
-
-
-<!--
-<script type="text/javascript" src="http://assets.nagios.com/pageparts/footer/liveagent.php"></script>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:855571-0!*!0!!en!4!* and timestamp 20150504210605 and revision id 660835182
  -->
- 
-	
- 
- 
- <div id="end">
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://en.wikipedia.org/w/index.php?title=Nagios&amp;oldid=660835182">http://en.wikipedia.org/w/index.php?title=Nagios&amp;oldid=660835182</a>"					</div>
+													<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Internet_Protocol_based_network_software" title="Category:Internet Protocol based network software">Internet Protocol based network software</a></li><li><a href="/wiki/Category:Free_network_management_software" title="Category:Free network management software">Free network management software</a></li><li><a href="/wiki/Category:Multi-agent_systems" title="Category:Multi-agent systems">Multi-agent systems</a></li><li><a href="/wiki/Category:Network_analyzers" title="Category:Network analyzers">Network analyzers</a></li><li><a href="/wiki/Category:Linux_security_software" title="Category:Linux security software">Linux security software</a></li><li><a href="/wiki/Category:Nagios" title="Category:Nagios">Nagios</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li><li><a href="/wiki/Category:Commons_category_template_with_no_category_set" title="Category:Commons category template with no category set">Commons category template with no category set</a></li><li><a href="/wiki/Category:Commons_category_with_page_title_same_as_on_Wikidata" title="Category:Commons category with page title same as on Wikidata">Commons category with page title same as on Wikidata</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
 
-	<!-- Nagios Footer -->
-	<div id="pagefooter">
-	<div id="pagefootermap">
-	<div class="pagefootersection pagefootersection-left" id="pagefooterawards"><span class="header">Awards:</span>
-	<div class="pagefooteraward"><a href="http://www.nagios.com/awards/"><img src="http://assets.nagios.com/images/footer/award1.png" alt="Bossie Award" pagespeed_url_hash="3242379906" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></div>
-	<div class="pagefooteraward"><a href="http://www.nagios.com/awards/"><img src="http://assets.nagios.com/images/footer/award2.png" alt="Readers Choice Award" pagespeed_url_hash="3536879827" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></div>
-	<div class="pagefooteraward"><a href="http://www.nagios.com/awards/"><img src="http://assets.nagios.com/images/footer/award3.png" alt="Community Choice Award" pagespeed_url_hash="3831379748" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></div>
-	</div>	
-	<div class="pagefootersection" id="pagefootersitemap"><span class="header">Sitemap:</span> 
-	<ul>
-	<li><span class="sitemapsection"><a href="/">Home</a></span></li>
-	<li> <span class="sitemapsection"><a href="http://www.nagios.com/about/">About</a></span> 
-	<ul class="sitemappages">
-	<li class="sitemappage"><a href="http://www.nagios.com/casestudies/">Case Studies</a></li>
-	<li class="sitemappage"><a href="http://www.nagios.com/testimonials/">Testimonials</a></li>
-	<li class="sitemappage"><a href="http://www.nagios.com/users/">Customers</a></li>
-	<li class="sitemappage"><a href="http://www.nagios.com/about/">Company Info</a></li>
-	<li class="sitemappage"><a href="http://www.nagios.com/contact/">Contact Us</a></li>
-	</ul>
-	</li>
-	<li><span class="sitemapsection"><a href="http://www.nagios.com/legal/">Legal</a></span> 
-	<ul class="sitemappages">
-	<li class="sitemappage"><a href="http://www.nagios.com/legal/termsofuse/">Terms of Use</a></li>
-	<li class="sitemappage"><a href="http://www.nagios.com/legal/privacypolicy/">Privacy Policy</a></li>
-	<li class="sitemappage"><a href="http://www.nagios.com/legal/trademarks/">Trademarks</a></li>
-	</ul>
-	</li>
-	</ul>
-	</div>
-		
-	<div class="pagefootersection" id="pagefooternetwork"><span class="header">Network:</span> 
-	<ul style="float: left; margin: 0px; padding: 0 25px 0 15px;">
-		<li><a href="http://www.nagios.com/">Nagios Enterprises</a></li>
-		<li><a href="http://support.nagios.com/">Nagios Support</a></li>
-		<li><a href="http://library.nagios.com/">Nagios Library</a></li>
-		<li><a href="http://www.nagios.org/">Nagios Project</a></li>
-	</ul>
-	<ul style="margin: 0px; padding: 0px;">
-		<li><a href="http://exchange.nagios.org/">Nagios Exchange</a></li>
-		<li><a href="http://labs.nagios.com/">Nagios Labs</a></li>
-        <li><a href="http://affiliate.nagios.com/">Nagios Affiliate</a></li>
-		<li><a href="http://network.nagios.org/">More Sites [+]</a></li>
-	</ul>
-	</div>	</div>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Nagios&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Nagios" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Nagios"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Nagios"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
 
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Nagios" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Nagios&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Nagios&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
 
-<style type="text/css">#solutions-footer{margin-top:10px;font-family:Verdana,Helvetica,sans-serif;text-align:left}#solutions-footer a{text-decoration:none}</style>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
 
-<div id="solutions-footer"><a href="http://www.nagios.com/solutions"><strong>Nagios Solutions:</strong></a><br/><a href='http://www.nagios.com/solutions/website-performance-monitoring'>Website Performance Monitoring</a> |
-<a href='http://eventlogmonitoring.net'>Monitoring Security Event Logs</a> |
-<a href='http://www.nagios.com/solutions/websphere-monitoring'>Websphere Monitoring Tools</a> |
-<a href='http://www.nagios.com/solutions/rt-integration'>RT Integration</a> |
-<a href='http://applicationlogmonitoring.com'>Free Application Log Monitoring</a> |
-<a href='http://www.nagios.com/solutions/ping-monitoring'>Ping Monitor</a> |
-<a href='http://windows-log-management.org'>Windows Application Log Management</a> |
-<a href='http://www.nagios.com/solutions/ups-monitoring'>UPS Monitoring</a> |
-<a href='http://www.nagios.com/solutions/hard-drive-monitoring'>Monitoring Hard Drive</a> |
-<a href='http://windows-log-monitoring.com'>Windows Log Monitoring</a> |
-<a href='http://www.nagios.com/solutions/netapp-monitoring'>NetApp Performance Monitoring</a> |
-<a href='http://www.nagios.com/solutions/suse-monitoring'>SuSE Monitor</a> |
-<a href='http://www.nagios.com/solutions/ftp-monitoring'>Monitor FTP Traffic</a> |
-<a href='http://www.nagios.com/solutions/chloride-monitoring'>Chloride Monitor</a> |
-<a href='http://www.nagios.com/solutions/performance-counter-monitoring'>Performance Counter Monitoring</a> |
- <a href="http://www.nagios.com/solutions">+</a></div>
+						<form action="/w/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
 
-<style type="text/css">.solutions-callout{float:right;width:200px;border:1px solid gray;padding-left:10px;padding-right:10px}.solutions-callout ul{list-style:none;padding-left:0px}</style>
-	<div id="pagefootercredits">
-	<div id="nelogo"><a target="_blank" href="http://www.nagios.com/"><img src="http://assets.nagios.com/images/footer/NagiosEnterprises.png" alt="Nagios Enterprises" pagespeed_url_hash="494820357" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></div>
-	<div id="sitelegal">Nagios, the Nagios logo, and Nagios graphics are the servicemarks, trademarks, or registered trademarks owned by Nagios Enterprises. All other servicemarks and trademarks are the property of their respective owner. Website Copyright &copy; 2009-2015 Nagios Enterprises, LLC. All rights reserved.     
-	<ul>
-	<li class="page_item"><a title="Privacy Policy" href="http://www.nagios.com/legal/privacypolicy/">Privacy Policy</a></li>
-	<li class="page_item"><a title="Trademark Policy" href="http://www.nagios.com/legal/trademarks/ ">Trademarks</a></li>
-	<li class="page_item"><a title="Terms of Use" href="http://www.nagios.com/legal/termsofuse/">Terms of Use</a></li>
-	</ul>
-	</div>
-	<div id="sflogo"><a target="_blank" href="http://www.sf.net/projects/nagios/"><img src="http://sourceforge.net/sflogo.php?group_id=26589&amp;type=1" alt="Nagios on Sourceforge" pagespeed_url_hash="423642335" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></div>
-	</div>
-	</div>
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+													<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+													<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+													<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+													<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+													<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+													<li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikimedia Shop">Wikipedia store</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
 
-	<!-- End Nagios Footer -->
-</div>
+			<div class="body">
+									<ul>
+													<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+													<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+													<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+													<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+													<li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
 
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Nagios" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Nagios" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+													<li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+													<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+													<li id="t-permalink"><a href="/w/index.php?title=Nagios&amp;oldid=660835182" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="/w/index.php?title=Nagios&amp;action=info" title="More information about this page">Page information</a></li>
+													<li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1134360" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li>
+						<li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Nagios&amp;id=660835182" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
 
-<!--Analytics Code-->
-<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-2887186-1']);_gaq.push(['_setDomainName','nagios.com']);_gaq.push(['_setAllowLinker',true]);_gaq.push(['_trackPageview',location.pathname+location.search+location.hash]);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://':'http://')+'stats.g.doubleclick.net/dc.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+			<div class="body">
+									<ul>
+													<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Nagios">Create a book</a></li>
+													<li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Nagios&amp;oldid=660835182&amp;writer=rdf2latex">Download as PDF</a></li>
+													<li id="t-print"><a href="/w/index.php?title=Nagios&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
 
-<!--Adroll Code-->
-<script type="text/javascript">adroll_adv_id="RWNJNE4RXNBETJRREUHY2M";adroll_pix_id="NNBRSRDF2RC65PUHGJNQQ6";(function(){var oldonload=window.onload;window.onload=function(){__adroll_loaded=true;var scr=document.createElement("script");var host=(("https:"==document.location.protocol)?"https://s.adroll.com":"http://a.adroll.com");scr.setAttribute('async','true');scr.type="text/javascript";scr.src=host+"/j/roundtrip.js";((document.getElementsByTagName('head')||[null])[0]||document.getElementsByTagName('script')[0].parentNode).appendChild(scr);if(oldonload){oldonload()}};}());</script>
-
-
-<style>@import url(http://fonts.googleapis.com/css?family=Roboto:700,400) ;.nbar{background:#45484d;background:-moz-linear-gradient(top,#45484d 0%,#000 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#45484d),color-stop(100%,#000));background:-webkit-linear-gradient(top,#45484d 0%,#000 100%);background:-o-linear-gradient(top,#45484d 0%,#000 100%);background:-ms-linear-gradient(top,#45484d 0%,#000 100%);background:linear-gradient(to bottom,#45484d 0%,#000 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );line-height:2.8em;color:#fff;font-family:'Roboto',verdana;font-weight:300;font-size:1rem;text-align:center;position:relative;z-index:99999;border-bottom:2px solid #fff}.nbar.fixed{width:100%;position:fixed}.nbar a.button{font-size:.8125rem;padding-right:.9375rem;padding-left:.9375rem;background-color:#2891f3;border-color:#0c75d6;color:#fff;padding:.3em .75em .25em .75em;transition:background-color 300ms ease-out;font-size:.75rem;text-decoration:none}.nbar a.button.secondary{background-color:#e9e9e9;border-color:#bababa;color:#333;margin-left:.75em}.nbar a.button:hover{cursor:pointer;background-color:#0c75d6;text-decoration:none}.nbar a.button.secondary:hover{background-color:#bababa}.nbar span.buttons{margin-left:1em}#headernavbar{height:auto;width:auto;padding:4px}</style>
-<script>$(document).ready(function(){var nbar='<div class="nbar"><div>Join us at the <strong>2015</strong> Nagios World Conference &nbsp;&bull;&nbsp; September 28th - 30th <span class="buttons"><a href="http://conference.nagios.com?utm_source=nagios.com&utm_medium=hello%20bar&utm_content=Nagios.com%20Hello%20Bar%20-%20Register&utm_campaign=Nagios%20World%20Conference%202015#ref=qlOWKY&chan=26" class="button">Register</a> <a href="http://conference.nagios.com?utm_source=nagios.com&utm_medium=hello%20bar&utm_content=Nagios.com%20Hello%20Bar%20-%20Learn%20More&utm_campaign=Nagios%20World%20Conference%202015#ref=qlOWKY&chan=17" class="button secondary">Learn More</a></span></div></div>';$('body').prepend(nbar);});</script>
-
-
-<!-- Piwik -->
-<!--
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//corp.nagios.com/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 3]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-
-<noscript><p><img src="//corp.nagios.com/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
-//-->
-<!-- End Piwik Code -->
-
-<!-- Changed 6/4/2012 EG -->
-
-
-
-
-
-
-</div> <!-- end class wrapper -->
-</div> <!-- end id encapsulate -->
-</body>
-
+			<div class="body">
+									<ul>
+													<li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Nagios" title="Nagios – Catalan" lang="ca" hreflang="ca">Català</a></li>
+													<li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Nagios" title="Nagios – Czech" lang="cs" hreflang="cs">Čeština</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Nagios" title="Nagios – German" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Nagios" title="Nagios – Spanish" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Nagios" title="Nagios – French" lang="fr" hreflang="fr">Français</a></li>
+													<li class="interlanguage-link interwiki-hr"><a href="//hr.wikipedia.org/wiki/Nagios" title="Nagios – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Nagios" title="Nagios – Italian" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-ml"><a href="//ml.wikipedia.org/wiki/%E0%B4%A8%E0%B4%BE%E0%B4%9C%E0%B4%BF%E0%B4%AF%E0%B5%8B%E0%B4%B8%E0%B5%8D" title="നാജിയോസ് – Malayalam" lang="ml" hreflang="ml">മലയാളം</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Nagios" title="Nagios – Dutch" lang="nl" hreflang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/Nagios" title="Nagios – Japanese" lang="ja" hreflang="ja">日本語</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Nagios" title="Nagios – Polish" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Nagios" title="Nagios – Portuguese" lang="pt" hreflang="pt">Português</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/Nagios" title="Nagios – Russian" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-simple"><a href="//simple.wikipedia.org/wiki/Nagios" title="Nagios – Simple English" lang="simple" hreflang="simple">Simple English</a></li>
+													<li class="interlanguage-link interwiki-sk"><a href="//sk.wikipedia.org/wiki/Nagios" title="Nagios – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li>
+													<li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Nagios" title="Nagios – Swedish" lang="sv" hreflang="sv">Svenska</a></li>
+													<li class="interlanguage-link interwiki-ta"><a href="//ta.wikipedia.org/wiki/%E0%AE%A8%E0%AE%BE%E0%AE%95%E0%AE%BF%E0%AE%93%E0%AE%9A%E0%AF%81" title="நாகிஓசு – Tamil" lang="ta" hreflang="ta">தமிழ்</a></li>
+													<li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/Nagios" title="Nagios – Ukrainian" lang="uk" hreflang="uk">Українська</a></li>
+													<li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/Nagios" title="Nagios – Chinese" lang="zh" hreflang="zh">中文</a></li>
+													<li class="uls-p-lang-dummy"><a href="#"></a></li>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1134360#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 May 2015, at 21:06.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Nagios&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+															<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>
+													</li>
+											<li id="footer-poweredbyico">
+															<a href="//www.mediawiki.org/"><img src="//en.wikipedia.org/static/1.26wmf4/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="//en.wikipedia.org/static/1.26wmf4/resources/assets/poweredby_mediawiki_132x47.png 1.5x, //en.wikipedia.org/static/1.26wmf4/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.imageMetrics.loader","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents.statsd","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","ext.wikigrok.startup"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"//en.wikipedia.org/w/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":118,"wgHostname":"mw1062"});
+}</script>
+	</body>
 </html>

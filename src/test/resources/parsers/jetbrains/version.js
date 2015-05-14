@@ -1,6 +1,6 @@
 //IDEA
 var versionIDEAShort = "14.1";
-var versionIDEALong = "14.1.2";
+var versionIDEALong = "14.1.3";
 function versionIDEA(el) {
     if (el == "short") {
         document.write(versionIDEAShort);
@@ -319,7 +319,7 @@ function onloadVersionPhpStormDownload() {
 
 //AppCode
 var versionAppCodeShort = "3.1";
-var versionAppCodeLong = "3.1.5";
+var versionAppCodeLong = "3.1.6";
 function versionAppCode(el) {
     if (el == "short") {
         document.write(versionAppCodeShort);

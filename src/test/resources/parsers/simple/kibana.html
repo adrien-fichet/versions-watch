@@ -176,7 +176,7 @@
 				</h1>
 			</div>
 			<!-- Searchbar Input box -->
-			<form method="get" action="/search" name="searchForm" class="header-search-form">
+			<form method="get" action="/search" name="searchForm" class="header-search-form" id="searchMobileFrm">
 			   <input type="text" id="search-header-autocomplete" name="q" class="form-control global-input" placeholder="elastic{search}">
 			</form>
 			<div class="mobile-auto-complete"></div> 
@@ -210,6 +210,8 @@
 									<li><a href="/products/logstash" id="nav_logstash" >logstash</a></li>
 									
 									<li><a href="/products/kibana" id="nav_kibana" >kibana</a></li>
+									
+									<li><a href="/products/watcher" id="nav_watcher" >watcher</a></li>
 									
 									<li><a href="/products/shield" id="nav_shield" >shield</a></li>
 									
@@ -352,6 +354,8 @@
 							
 								<li><a href="/products/kibana" id="nav_kibana" >kibana</a></li>								
 							
+								<li><a href="/products/watcher" id="nav_watcher" >watcher</a></li>								
+							
 								<li><a href="/products/shield" id="nav_shield" >shield</a></li>								
 							
 								<li><a href="/products/marvel" id="nav_marvel" >marvel</a></li>								
@@ -443,7 +447,7 @@
 		<!-- Search -->
 		<div class="3u">
 			<div id="searchbar">
-				<form method="get" action="/search" name="searchForm">
+				<form method="get" action="/search" name="searchForm" id="searchfrm">
 					<input type="text" value="" name="q" placeholder="elastic{search}" id="autocomplete">
 					<button class="button icon" onclick="searchForm.submit()">GO</button>
 				</form>
@@ -720,7 +724,7 @@
 					
 						<li class="twitter grayscale"><a href="https://www.twitter.com/elastic" target="_blank" id="footer_twitter"></a></li>
 					
-						<li class="linkedin grayscale"><a href="http://www.linkedin.com/company/elasticsearch" target="_blank" id="footer_linkedin"></a></li>
+						<li class="linkedin grayscale"><a href="https://www.linkedin.com/company/elastic.co" target="_blank" id="footer_linkedin"></a></li>
 					
 						<li class="xing grayscale"><a href="https://www.xing.com/companies/elastic.co" target="_blank" id="footer_xing"></a></li>
 					

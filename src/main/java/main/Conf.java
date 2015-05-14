@@ -83,7 +83,7 @@ public class Conf {
         ));
         configurations.put("extjs", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Ext_JS",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(2) > td",
                 "(.*?) / "
         ));
         configurations.put("maven", new VersionParserConfiguration(
@@ -147,9 +147,9 @@ public class Conf {
                 "Zabbix (.*)"
         ));
         configurations.put("nagios", new VersionParserConfiguration(
-                "http://www.nagios.com/products/",
-                "#component > div > div > table:nth-child(2) > tbody > tr > td > h2:nth-child(5)",
-                "Nagios (.*)"
+                "https://en.wikipedia.org/wiki/Nagios",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "(.*?) "
         ));
         configurations.put("cobertura", new VersionParserConfiguration(
                 "https://cobertura.github.io/cobertura/",
@@ -178,7 +178,7 @@ public class Conf {
         configurations.put("windows", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Windows",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td",
-                "(.*?) \\("
+                "(.*?)\\["
         ));
         configurations.put("centos", new VersionParserConfiguration(
                 "http://wiki.centos.org/Download",
