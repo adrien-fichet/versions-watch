@@ -274,6 +274,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
                 "(.*?) \\("
         ));
+        configurations.put("kde", new VersionParserConfiguration(
+                "https://www.kde.org/download/",
+                "#main > p:nth-child(25)",
+                "Please see the (.*?) Info Page"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

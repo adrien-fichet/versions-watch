@@ -17,8 +17,8 @@ import static org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public class SimpleVersionParserTest {
     private Logger logger = LoggerFactory.getLogger(getClass());
-    private String id;
-    private VersionParserConfiguration conf;
+    private String versionId;
+    private VersionParserConfiguration versionParserConfiguration;
     private String expectedVersion;
 
     @Parameters
@@ -30,17 +30,17 @@ public class SimpleVersionParserTest {
         return data;
     }
 
-    public SimpleVersionParserTest (String id, VersionParserConfiguration conf, String expectedVersion) {
-        this.id = id;
-        this.conf = conf;
+    public SimpleVersionParserTest (String versionId, VersionParserConfiguration versionParserConfiguration, String expectedVersion) {
+        this.versionId = versionId;
+        this.versionParserConfiguration = versionParserConfiguration;
         this.expectedVersion = expectedVersion;
     }
 
     @Test
     public void testSimpleVersionParser() throws Exception {
-        String documentOrigin = getClass().getResource("/parsers/simple/" + id + ".html").getPath();
-        SimpleVersionParser simpleVersionParser = new FakeSimpleVersionParser(conf, documentOrigin);
-        logger.info(id + " version should be " + expectedVersion);
+        String documentOrigin = getClass().getResource("/parsers/simple/" + versionId + ".html").getPath();
+        SimpleVersionParser simpleVersionParser = new FakeSimpleVersionParser(versionParserConfiguration, documentOrigin);
+        logger.info(versionId + " version should be " + expectedVersion);
         assertEquals(expectedVersion, simpleVersionParser.parseVersion());
     }
 }

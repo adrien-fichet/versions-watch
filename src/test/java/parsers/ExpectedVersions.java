@@ -20,7 +20,7 @@ public class ExpectedVersions {
         expectedVersions.put("jenkins", "1.613");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
-        expectedVersions.put("php", "5.6.8");
+        expectedVersions.put("php", "5.6.9");
         expectedVersions.put("puppet", "4.0.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.8.13");
@@ -29,12 +29,12 @@ public class ExpectedVersions {
         expectedVersions.put("vagrant", "1.7.2");
         expectedVersions.put("extjs", "5.1.0");
         expectedVersions.put("maven", "3.3.3");
-        expectedVersions.put("hibernate", "4.3.9");
+        expectedVersions.put("hibernate", "4.3.10");
         expectedVersions.put("javascript", "1.8.5");
         expectedVersions.put("ubuntu", "15.04");
         expectedVersions.put("nginx", "1.9.0");
         expectedVersions.put("elasticsearch", "1.5.2");
-        expectedVersions.put("logstash", "1.4.2");
+        expectedVersions.put("logstash", "1.5.0");
         expectedVersions.put("kibana", "4.0.2");
         expectedVersions.put("logstashforwarder", "0.4.0");
         expectedVersions.put("openssl", "1.0.2a");
@@ -64,8 +64,9 @@ public class ExpectedVersions {
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
         expectedVersions.put("googlechrome", "42.0.2311.152");
-        expectedVersions.put("firefox", "38.0");
+        expectedVersions.put("firefox", "38.0.1");
         expectedVersions.put("gnomeshell", "3.16");
+        expectedVersions.put("kde", "4.14.3");
     }
 
     public Map<String, String> getExpectedVersions() {

@@ -111,7 +111,8 @@ var versions = [
     "category": { "id": "desktopenvironments", "name": "Desktop environments" },
     "items": [
       { "id": "xfce", "name": "XFCE" },
-      { "id": "gnomeshell", "name": "Gnome Shell" }
+      { "id": "gnomeshell", "name": "Gnome Shell" },
+      { "id": "kde", "name": "KDE" }
     ]
   }, {
     "category": { "id": "other", "name": "Others" },

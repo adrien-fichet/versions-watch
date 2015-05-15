@@ -79,7 +79,7 @@ Then :
 - [x] google chrome
 - [x] firefox
 - [x] gnome shell
-- [ ] kde
+- [x] kde
 - [ ] visual studio
 - [ ] bower
 - [ ] angularjs
