@@ -279,6 +279,11 @@ public class Conf {
                 "#main > p:nth-child(25)",
                 "Please see the (.*?) Info Page"
         ));
+        configurations.put("docker", new VersionParserConfiguration(
+                "https://docs.docker.com/",
+                "#document-version-number",
+                "Version v(.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

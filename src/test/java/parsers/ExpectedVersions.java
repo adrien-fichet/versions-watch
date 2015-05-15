@@ -67,6 +67,7 @@ public class ExpectedVersions {
         expectedVersions.put("firefox", "38.0.1");
         expectedVersions.put("gnomeshell", "3.16");
         expectedVersions.put("kde", "4.14.3");
+        expectedVersions.put("docker", "1.6");
     }
 
     public Map<String, String> getExpectedVersions() {

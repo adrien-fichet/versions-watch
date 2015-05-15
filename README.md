@@ -80,6 +80,7 @@ Then :
 - [x] firefox
 - [x] gnome shell
 - [x] kde
+- [x] docker
 - [ ] visual studio
 - [ ] bower
 - [ ] angularjs
@@ -92,7 +93,6 @@ Then :
 - [ ] drupal
 - [ ] wordpress
 - [ ] postgresql
-- [ ] docker
 - [ ] lxc
 - [ ] openvz
 - [ ] kali
