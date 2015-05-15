@@ -68,6 +68,7 @@ public class ExpectedVersions {
         expectedVersions.put("gnomeshell", "3.16");
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.6");
+        expectedVersions.put("kali", "1.1.0");
     }
 
     public Map<String, String> getExpectedVersions() {

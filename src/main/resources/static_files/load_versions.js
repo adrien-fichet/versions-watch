@@ -7,7 +7,8 @@ var versions = [
       { "id": "gentoo", "name": "Gentoo" },
       { "id": "windows", "name": "Windows NT" },
       { "id": "centos", "name": "CentOS" },
-      { "id": "fedora", "name": "Fedora" }
+      { "id": "fedora", "name": "Fedora" },
+      { "id": "kali", "name": "Kali" }
     ]
   }, {
     "category": { "id": "elk", "name": "ELK" },

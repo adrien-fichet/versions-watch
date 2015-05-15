@@ -284,6 +284,11 @@ public class Conf {
                 "#document-version-number",
                 "Version v(.*)"
         ));
+        configurations.put("kali", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Kali_Linux",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
+                "(.*?)\\["
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
