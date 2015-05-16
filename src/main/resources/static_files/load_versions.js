@@ -27,7 +27,8 @@ var versions = [
       { "id": "netbeans", "name": "Netbeans" },
       { "id": "sublimetext", "name": "Sublime Text" },
       { "id": "emacs", name: "Emacs" },
-      { "id": "vim", "name": "Vim" }
+      { "id": "vim", "name": "Vim" },
+      { "id": "visualstudio", "name": "Visual Studio" }
     ]
   }, {
     "category": { "id": "web", "name": "Web" },

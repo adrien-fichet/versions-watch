@@ -289,6 +289,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
                 "(.*?)\\["
         ));
+        configurations.put("visualstudio", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "\\((.*?)\\)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

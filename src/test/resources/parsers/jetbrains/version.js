@@ -216,8 +216,8 @@ function onloadVersionWebIDEownload() {
 }
 
 //PyCharm
-var versionPyCharmShort = "4.0";
-var versionPyCharmLong = "4.0.6";
+var versionPyCharmShort = "4.5";
+var versionPyCharmLong = "4.5";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);

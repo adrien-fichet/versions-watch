@@ -238,11 +238,42 @@ Bram has visited the Vim charity project, read about it in his
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr>
     <td class="lightbg"><span class="txth1">&nbsp;&nbsp;Recent Script Updates</span></td>
-    <td nowrap class="lightbg" align="right"><small>&nbsp;5,068 scripts, 10,283,909 downloads&nbsp;</small></td>
+    <td nowrap class="lightbg" align="right"><small>&nbsp;5,068 scripts, 10,286,201 downloads&nbsp;</small></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 </table>
 <table cellpadding="0" cellspacing="0" border="0">
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-05-16]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5166">foldMarker.vim</a> : Creat fold marker and adjust fold level with a new command ':FoldMarker'</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(1.1.0) *&nbsp;&nbsp; 1.1.0
+&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp; Fix: Change search pattern for script variable `s:FoldEnd`, so that the plugin can recognize fold markers such as `[[[`
+&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp; Add: Add 8 new arguments, L/A/B/S/C/r/R/h
+&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp; Add: Add a global variable `g:MoveFold_FoldMarker` to move new fold marker
+&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp; Add: Let `:FoldMarker` accpet more ranges besides `'&lt;` and `'&gt;`, such as `:1,5FoldMarker`
+ - <i>Tommy Chen</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-05-16]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=2526">Perl MooseX::Declare Syntax</a> : perl syntax with Moose and MooseX::Declare keywords</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(0.23) * merged upstream - <i>Rafael Kitover</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-05-15]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=1723">vimpager</a> : Use ViM as PAGER</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(2.03) * use getpos('.') instead of getcurpos() in ansi retab script, some vims do not have getcurpos() #114
+* add ,v mapping to switch back and forth between less mode and editing mode #101
+* add ,h mapping for help #107 - <i>Rafael Kitover</i></td>
+</tr>
 <tr>
     <td class="newsdate" nowrap valign="top">[2015-05-14]</td>
     <td>&nbsp;<a href="scripts/script.php?script_id=5173">systemrdl.vim</a> : Syntax highlighting for SystemRDL files</td>
@@ -258,37 +289,6 @@ Bram has visited the Vim charity project, read about it in his
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
     <td>(1.0) Initial upload - <i>J Baute</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-05-14]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5171">liblognorm.vim</a> : Syntax definition for liblognorm rules files</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.1) Initial upload - <i>Stanislaw Klekot</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-05-14]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5170">oasisprj.vim</a> : syntax highlighting for _oasis files</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.1) Initial upload - <i>Juan Chanco</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-05-12]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5157">Treemap</a> : Create Treemaps with VIM</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.0) Version 1.0:
-* New command TmOpen (Mapping &lt;leader&gt;to)
-&nbsp;&nbsp;This command opens a generated SVG/HTML treemap in a 
-&nbsp;&nbsp;web browser
-* Bugfix: Replace $lang with $LANG for compatibility with
-&nbsp;&nbsp;older VIM versions
-* New command TmClear to delete all generated files from TmOpen
-&nbsp;&nbsp;in the $HOME/treemaps/ directory - <i>Data Statiker</i></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr><td colspan="2"><a href="scripts/index.php">more recent</a> | 
@@ -353,7 +353,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         <tr valign="top">
           <td class="sidebar" align='center'>
              &nbsp;<br>
-	     <a href="http://iccf-holland.org/clickkindle.html"><img src="/images/kindle_125x125.gif" alt="Buy a book, help Uganda, learn Vim"></a>
+	     <a href="http://iccf-holland.org/clickkindle.html"><img src="/images/kindle-fire-125x125.jpg" alt="Buy a book, help Uganda, learn Vim"></a>
 	     <br>
 	     <a href="http://iccf-holland.org/click1.html">Buy at Amazon<br>Help Uganda</a>
           </td>

@@ -81,7 +81,7 @@ Then :
 - [x] gnome shell
 - [x] kde
 - [x] docker
-- [ ] visual studio
+- [x] visual studio
 - [ ] bower
 - [ ] angularjs
 - [ ] curator

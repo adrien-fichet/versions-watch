@@ -69,6 +69,7 @@ public class ExpectedVersions {
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.6");
         expectedVersions.put("kali", "1.1.0");
+        expectedVersions.put("visualstudio", "2013.4");
     }
 
     public Map<String, String> getExpectedVersions() {
