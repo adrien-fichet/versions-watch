@@ -38,7 +38,8 @@ var versions = [
       { "id": "extjs", "name": "ExtJS" },
       { "id": "nginx", "name": "Nginx" },
       { "id": "grunt", "name": "Grunt" },
-      { "id": "jquery", "name": "jQuery" }
+      { "id": "jquery", "name": "jQuery" },
+      { "id": "bower", "name": "Bower" }
     ]
   }, {
     "category": { "id": "browsers", "name": "Web browsers" },

@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>bower</title>
+
+    <meta name="description" content="The browser package manager">
+    <meta name="keywords" content="">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/bower">
+    <meta name="twitter:title" content="npm: bower">
+    <meta name="twitter:description" content="The browser package manager">
+
+  <meta charset="utf-8">
+  <meta http-equiv="cleartype" content="on" />
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="npm is the package manager for javascript">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+  <link rel="canonical" href="https://www.npmjs.com/package/bower">
+  <link type="text/css" rel="stylesheet" media="all" href="/static/css/index.css">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+
+  <script defer src="/static/js/index.js"></script>
+  <script defer src="/static/js/vendor.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="fXUAi8mZJAayP2Ha9E-NcgkhOpPpTBEbpdAM8Smh4Xp">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+  <div id="notification-banner" style="display:none">
+    <div class="container">
+      <hgroup>
+        <a href="/private-modules"
+          data-event-trigger="click"
+          data-event-name="private-modules-banner-signup-via-wombat">
+          <img src="/static/images/wombat-by-night.svg" alt="night wombat">
+        </a>
+        <h2>private npm is here.</h2>
+        <h3>publish unlimited private modules for just $7/month</h3>
+      </hgroup>
+      <a class="button" href="/private-modules"
+        data-event-trigger="click"
+        data-event-name="private-modules-banner-signup">sign up</a>
+      <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+      <a href="/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+      <a href="/enterprise">npm Enterprise</a>
+      <a href="https://docs.npmjs.com">documentation</a>
+      <a href="http://blog.npmjs.org/">blog</a>
+      <a href="/npm-weekly">npm weekly</a>
+      <a href="/jobs">jobs</a>
+      <a href="/support">support</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <a href="/" id="npm-logo"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+
+      <div id="user-info" class="anonymous">
+          <a href="/login"><img src="/static/images/wombat-avatar-small.png" /></a>
+          <ul class="single">
+            <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+          </ul>
+
+      </div>
+
+      <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+        <input type="submit" id="site-search-submit" />
+      </form>
+
+    </div>
+  </header>
+
+  <div class="container content">
+    
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a href="/package/bower">bower</a>
+  </h1>
+  <p class="package-description">The browser package manager</p>
+
+  <form class="star">
+    <input type="hidden" name="name" value="bower">
+    <input id="star-input" type="checkbox" name="isStarred" value="true" >
+    <label for="star-input" class="icon-star"></label>
+    <div class="honey">
+      <label>If you are a robot, enter text here</label>
+      <input type="text" name="honey">
+    </div>
+    
+      <input type="hidden" name="crumb" value="fXUAi8mZJAayP2Ha9E-NcgkhOpPpTBEbpdAM8Smh4Xp"/>
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 id="user-content-bower" class="deep-link package-name-redundant"><a href="#bower">Bower</a></h1>
+<p><a href="https://travis-ci.org/bower/bower"><img src="https://travis-ci.org/bower/bower.svg?branch=master" class="badge"></a> <a href="https://ci.appveyor.com/project/sheerun/bower/history"><img src="https://ci.appveyor.com/api/projects/status/jr6vfra8w84plh2g/branch/master?svg=true"></a> <a href="https://coveralls.io/r/bower/bower?branch=master"><img src="https://img.shields.io/coveralls/bower/bower.svg" class="badge"></a></p>
+<p><img src="http://bower.io/img/bower-logo.png"></p>
+<blockquote>
+<p>A package manager for the web</p>
+</blockquote>
+<p>Bower offers a generic, unopinionated solution to the problem of <strong>front-end package management</strong>, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack. There are no system wide dependencies, no dependencies are shared between different apps, and the dependency tree is flat.</p>
+<p>Bower runs over Git, and is package-agnostic. A packaged component can be made up of any type of asset, and use any type of transport (e.g., AMD, CommonJS, etc.).</p>
+<p><strong>View complete docs on <a href="http://bower.io">bower.io</a></strong></p>
+<p><a href="http://bower.io/search/">View all packages available through Bower&apos;s registry</a>.</p>
+<h2 id="user-content-install" class="deep-link"><a href="#install">Install</a></h2>
+<pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&#xA0;npm&#xA0;install&#xA0;-g&#xA0;bower</span></span></div></pre></code></pre>
+<p>Bower depends on <a href="http://nodejs.org/">Node.js</a> and <a href="http://npmjs.org/">npm</a>. Also make sure that <a href="http://git-scm.com/">git</a> is installed as some bower
+packages require it to be fetched and installed.</p>
+<h2 id="user-content-usage" class="deep-link"><a href="#usage">Usage</a></h2>
+<p>See complete command line reference at <a href="http://bower.io/docs/api/">bower.io/docs/api/</a></p>
+<h3 id="user-content-installing-packages-and-dependencies" class="deep-link"><a href="#installing-packages-and-dependencies">Installing packages and dependencies</a></h3>
+<pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span class="comment line number-sign shell"><span class="punctuation comment shell"><span>#</span></span><span>&#xA0;install&#xA0;dependencies&#xA0;listed&#xA0;in&#xA0;bower.json</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;install</span></span></div><div class="line"><span class="source shell"><span>&#xA0;</span></span></div><div class="line"><span class="source shell"><span class="comment line number-sign shell"><span class="punctuation comment shell"><span>#</span></span><span>&#xA0;install&#xA0;a&#xA0;package&#xA0;and&#xA0;add&#xA0;it&#xA0;to&#xA0;bower.json</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;install&#xA0;</span><span class="keyword operator shell"><span>&lt;</span></span><span>package</span><span class="keyword operator shell"><span>&gt;</span></span><span>&#xA0;--save</span></span></div><div class="line"><span class="source shell"><span>&#xA0;</span></span></div><div class="line"><span class="source shell"><span class="comment line number-sign shell"><span class="punctuation comment shell"><span>#</span></span><span>&#xA0;install&#xA0;specific&#xA0;version&#xA0;of&#xA0;a&#xA0;package&#xA0;and&#xA0;add&#xA0;it&#xA0;to&#xA0;bower.json</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;install&#xA0;</span><span class="keyword operator shell"><span>&lt;</span></span><span>package</span><span class="keyword operator shell"><span>&gt;</span></span><span>#</span><span class="keyword operator shell"><span>&lt;</span></span><span>version</span><span class="keyword operator shell"><span>&gt;</span></span><span>&#xA0;--save</span></span></div></pre></code></pre>
+<h3 id="user-content-using-packages" class="deep-link"><a href="#using-packages">Using packages</a></h3>
+<p>We discourage using bower components statically for performance and security reasons (if component has an <code>upload.php</code> file that is not ignored, that can be easily exploited to do malicious stuff).</p>
+<p>The best approach is to process components installed by bower with build tool (like <a href="http://gruntjs.com/">Grunt</a> or <a href="http://gulpjs.com/">gulp</a>), and serve them concatenated or using module loader (like <a href="http://requirejs.org/">RequireJS</a>).</p>
+<h3 id="user-content-uninstalling-packages" class="deep-link"><a href="#uninstalling-packages">Uninstalling packages</a></h3>
+<p>To uninstall a locally installed package:</p>
+<pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;uninstall&#xA0;</span><span class="keyword operator shell"><span>&lt;</span></span><span>package-name</span><span class="keyword operator shell"><span>&gt;</span></span></span></div></pre></code></pre>
+<h3 id="user-content-prezto-and-oh-my-zsh-users" class="deep-link"><a href="#prezto-and-oh-my-zsh-users">prezto and oh-my-zsh users</a></h3>
+<p>On <code>prezto</code> or <code>oh-my-zsh</code>, do not forget to <code>alias bower=&apos;noglob bower&apos;</code> or <code>bower install jquery\#1.9.1</code></p>
+<h3 id="user-content-running-commands-with-sudo" class="deep-link"><a href="#running-commands-with-sudo">Running commands with sudo</a></h3>
+<p>Bower is a user command, there is no need to execute it with superuser permissions.
+However, if you still want to run commands with sudo, use <code>--allow-root</code> option.</p>
+<h3 id="user-content-windows-users" class="deep-link"><a href="#windows-users">Windows users</a></h3>
+<p>To use Bower on Windows, you must install
+<a href="http://msysgit.github.io/">msysgit</a> correctly. Be sure to check the
+option shown below:</p>
+<p><img src="http://f.cl.ly/items/2V2O3i1p3R2F1r2v0a12/mysgit.png"></p>
+<p>Note that if you use TortoiseGit and if Bower keeps asking for your SSH
+password, you should add the following environment variable: <code>GIT_SSH - C:\Program Files\TortoiseGit\bin\TortoisePlink.exe</code>. Adjust the <code>TortoisePlink</code>
+path if needed.</p>
+<h2 id="user-content-configuration" class="deep-link"><a href="#configuration">Configuration</a></h2>
+<p>Bower can be configured using JSON in a <code>.bowerrc</code> file. Read over available options at <a href="http://bower.io/docs/config">bower.io/docs/config</a>.</p>
+<h2 id="user-content-completion-experimental" class="deep-link"><a href="#completion-experimental">Completion (experimental)</a></h2>
+<p><em>NOTE</em>: Completion is still not implemented for the 1.0.0 release</p>
+<p>Bower now has an experimental <code>completion</code> command that is based on, and works
+similarly to the <a href="https://npmjs.org/doc/cli/completion.html">npm completion</a>. It is
+not available for Windows users.</p>
+<p>This command will output a Bash / ZSH script to put into your <code>~/.bashrc</code>,
+<code>~/.bash_profile</code>, or <code>~/.zshrc</code> file.</p>
+<pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;completion&#xA0;</span><span class="keyword operator shell"><span>&gt;&gt;</span></span><span>&#xA0;</span><span class="keyword operator shell"><span>~</span></span><span>/.bash_profile</span></span></div></pre></code></pre>
+<h2 id="user-content-support" class="deep-link"><a href="#support">Support</a></h2>
+<ul>
+<li><a href="http://stackoverflow.com/questions/tagged/bower">StackOverflow</a></li>
+<li><a href="http://groups.google.com/group/twitter-bower">Mailinglist</a> - twitter-bower@googlegroups.com</li>
+<li><a href="http://webchat.freenode.net/?channels=bower">#bower</a> on Freenode</li>
+</ul>
+<h2 id="user-content-contributing" class="deep-link"><a href="#contributing">Contributing</a></h2>
+<p>We welcome contributions of all kinds from anyone. Please take a moment to
+review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">guidelines for contributing</a>.</p>
+<ul>
+<li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#bugs">Bug reports</a></li>
+<li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#features">Feature requests</a></li>
+<li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#pull-requests">Pull requests</a></li>
+</ul>
+<p>Note that on Windows for tests to pass you need to configure Git before cloning:</p>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>git&#xA0;config&#xA0;--global&#xA0;core.autocrlf&#xA0;input</span></span></div></pre></code></pre>
+<h2 id="user-content-bower-team" class="deep-link"><a href="#bower-team">Bower Team</a></h2>
+<p>Bower is made by lots of people across the globe, contributions large and small. Our thanks to everyone who has played a part.</p>
+<h3 id="user-content-core-team" class="deep-link"><a href="#core-team">Core team</a></h3>
+<ul>
+<li><a href="https://github.com/satazor">@satazor</a></li>
+<li><a href="https://github.com/wibblymat">@wibblymat</a></li>
+<li><a href="https://github.com/paulirish">@paulirish</a></li>
+<li><a href="https://github.com/benschwarz">@benschwarz</a></li>
+<li><a href="https://github.com/svnlto">@svnlto</a></li>
+<li><a href="https://github.com/sheerun">@sheerun</a></li>
+</ul>
+<h3 id="user-content-bower-alumni" class="deep-link"><a href="#bower-alumni">Bower Alumni</a></h3>
+<ul>
+<li><a href="https://github.com/fat">@fat</a></li>
+<li><a href="https://github.com/maccman">@maccman</a></li>
+</ul>
+<h2 id="user-content-license" class="deep-link"><a href="#license">License</a></h2>
+<p>Copyright (c) 2015 Twitter and other contributors</p>
+<p>Licensed under the MIT License</p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input type="text" value="npm install bower" readonly>
+    </div>
+
+	<ul class="box">
+
+      <li class="last-publisher">
+        <a href="/~sheerun">
+          <img src="https://secure.gravatar.com/avatar/306b63b79c78a1b67e1789790ad2db86?size=100&amp;default=retro" alt="sheerun" />
+          <span>sheerun</span>
+        </a>
+          published
+          <span data-date="2015-04-01T07:40:31.107Z" data-date-format="relative">
+            2015-04-01T07:40:31.107Z
+          </span>
+      </li>
+
+    <li>
+      <strong>1.4.1</strong>
+      is the latest
+        of 63 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/bower/bower">github.com/bower/bower</a>
+      </li>
+
+
+      <li>
+          <a href="http://opensource.org/licenses/MIT">MIT</a>
+        <span> license</span>
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+        <a href="/package/bower/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+          <a href="/~satazor" rel="tipsy" title="satazor">
+            <img src="https://secure.gravatar.com/avatar/da221b94a69db0390abab4c6d75496f6?size=100&amp;default=retro" alt="satazor">
+          </a>
+        </li>
+        <li>
+          <a href="/~wibblymat" rel="tipsy" title="wibblymat">
+            <img src="https://secure.gravatar.com/avatar/c2b874c38990ed90a0ed15ac33bda00f?size=100&amp;default=retro" alt="wibblymat">
+          </a>
+        </li>
+        <li>
+          <a href="/~paulirish" rel="tipsy" title="paulirish">
+            <img src="https://secure.gravatar.com/avatar/ffe68d6f71b225f7661d33f2a8908281?size=100&amp;default=retro" alt="paulirish">
+          </a>
+        </li>
+        <li>
+          <a href="/~sheerun" rel="tipsy" title="sheerun">
+            <img src="https://secure.gravatar.com/avatar/306b63b79c78a1b67e1789790ad2db86?size=100&amp;default=retro" alt="sheerun">
+          </a>
+        </li>
+        <li>
+          <a href="/~sindresorhus" rel="tipsy" title="sindresorhus">
+            <img src="https://secure.gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?size=100&amp;default=retro" alt="sindresorhus">
+          </a>
+        </li>
+
+
+    </ul>
+
+  <h3>Stats</h3>
+  <ul class="box">
+
+      <li>
+        <strong class="pretty-number daily-downloads">18087</strong>
+        downloads in the last day
+      </li>
+      <li>
+        <strong class="pretty-number weekly-downloads">333300</strong>
+        downloads in the last week
+      </li>
+      <li>
+        <strong class="pretty-number monthly-downloads">1385651</strong>
+        downloads in the last month
+      </li>
+
+      <li id="issues" data-ghapi="https://api.github.com/repos/bower/bower">
+        <span class="original">Have an issue? <a href="https://github.com/bower/bower/issues">File it.</a></span>
+          <span class="enhanced" style="display:none">
+            <a href="https://github.com/bower/bower/issues"></a> on GitHub
+          </span>
+      </li>
+
+      <li id="pull_requests" style="display:none">
+        <a href="https://github.com/bower/bower/pulls"></a> on GitHub
+      </li>
+
+  </ul>
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+      None
+  </p>
+
+  <h3>Dependencies (43)</h3>
+  <p class="list-of-links">
+          <a href="/package/which">which</a>,
+          <a href="/package/user-home">user-home</a>,
+          <a href="/package/update-notifier">update-notifier</a>,
+          <a href="/package/tmp">tmp</a>,
+          <a href="/package/tar-fs">tar-fs</a>,
+          <a href="/package/shell-quote">shell-quote</a>,
+          <a href="/package/semver">semver</a>,
+          <a href="/package/stringify-object">stringify-object</a>,
+          <a href="/package/rimraf">rimraf</a>,
+          <a href="/package/retry">retry</a>,
+          <a href="/package/request-progress">request-progress</a>,
+          <a href="/package/request">request</a>,
+          <a href="/package/q">q</a>,
+          <a href="/package/promptly">promptly</a>,
+          <a href="/package/opn">opn</a>,
+          <a href="/package/nopt">nopt</a>,
+          <a href="/package/mout">mout</a>,
+          <a href="/package/p-throttler">p-throttler</a>,
+          <a href="/package/mkdirp">mkdirp</a>,
+          <a href="/package/lru-cache">lru-cache</a>,
+          <a href="/package/lockfile">lockfile</a>,
+          <a href="/package/junk">junk</a>,
+          <a href="/package/is-root">is-root</a>,
+          <a href="/package/insight">insight</a>,
+          <a href="/package/handlebars">handlebars</a>,
+          <a href="/package/graceful-fs">graceful-fs</a>,
+          <a href="/package/inquirer">inquirer</a>,
+          <a href="/package/glob">glob</a>,
+          <a href="/package/github">github</a>,
+          <a href="/package/fstream-ignore">fstream-ignore</a>,
+          <a href="/package/fstream">fstream</a>,
+          <a href="/package/bower-registry-client">bower-registry-client</a>,
+          <a href="/package/decompress-zip">decompress-zip</a>,
+          <a href="/package/configstore">configstore</a>,
+          <a href="/package/chmodr">chmodr</a>,
+          <a href="/package/chalk">chalk</a>,
+          <a href="/package/cardinal">cardinal</a>,
+          <a href="/package/archy">archy</a>,
+          <a href="/package/bower-config">bower-config</a>,
+          <a href="/package/bower-logger">bower-logger</a>,
+          <a href="/package/bower-json">bower-json</a>,
+          <a href="/package/bower-endpoint-parser">bower-endpoint-parser</a>,
+                <a href="/package/abbrev">abbrev</a>
+  </p>
+
+    <h3><a href="/browse/depended/bower">Dependents</a></h3>
+    <p class="list-of-links dependents">
+
+          <a href="/package/grunt-bower">grunt-bower</a>,
+        
+          <a href="/package/polyfiller-catalog">polyfiller-catalog</a>,
+        
+          <a href="/package/evident-gulp-build">evident-gulp-build</a>,
+        
+          <a href="/package/webplatform">webplatform</a>,
+        
+          <a href="/package/knowhow-server">knowhow-server</a>,
+        
+          <a href="/package/ember-cli">ember-cli</a>,
+        
+          <a href="/package/kulor-cli">kulor-cli</a>,
+        
+          <a href="/package/lithium-sdk">lithium-sdk</a>,
+        
+          <a href="/package/web-caddy">web-caddy</a>,
+        
+          <a href="/package/generator-deli-line">generator-deli-line</a>,
+        
+          <a href="/package/steroids">steroids</a>,
+        
+          <a href="/package/nocca">nocca</a>,
+        
+          <a href="/package/appbuilder">appbuilder</a>,
+        
+          <a href="/package/fj">fj</a>,
+        
+          <a href="/package/grunt-angular-toolbox">grunt-angular-toolbox</a>,
+        
+          <a href="/package/mean-cli">mean-cli</a>,
+        
+          <a href="/package/buddhajs">buddhajs</a>,
+        
+          <a href="/package/gesso">gesso</a>,
+        
+          <a href="/package/web-component-tester">web-component-tester</a>,
+        
+          <a href="/package/ebash">ebash</a>,
+        
+          <a href="/package/my-library">my-library</a>,
+        
+          <a href="/package/generator-act">generator-act</a>,
+        
+          <a href="/package/slack-for-linux">slack-for-linux</a>,
+        
+          <a href="/package/atlassian-connect-js">atlassian-connect-js</a>,
+        
+          <a href="/package/bower-deploy">bower-deploy</a>,
+        
+          <a href="/package/bauhausjs">bauhausjs</a>,
+        
+          <a href="/package/grunt-jquery-toolbox">grunt-jquery-toolbox</a>,
+        
+          <a href="/package/adapt-cli">adapt-cli</a>,
+        
+          <a href="/package/ember-rickshaw">ember-rickshaw</a>,
+        
+          <a href="/package/generator-lionic">generator-lionic</a>,
+        
+          <a href="/package/chai-signals">chai-signals</a>,
+        
+          <a href="/package/geojs">geojs</a>,
+        
+          <a href="/package/wrigley">wrigley</a>,
+        
+          <a href="/package/grunt-cmp-builder">grunt-cmp-builder</a>,
+        
+          <a href="/package/nota">nota</a>,
+        
+          <a href="/package/codetron">codetron</a>,
+        
+          <a href="/package/pxlshopify-cli-preview">pxlshopify-cli-preview</a>,
+        
+          <a href="/package/grunt-bower-update">grunt-bower-update</a>,
+        
+          <a href="/package/roadiejs-home">roadiejs-home</a>,
+        
+          <a href="/package/backbone-model-file-upload">backbone-model-file-upload</a>,
+        
+          <a href="/package/nodecg-cli">nodecg-cli</a>,
+        
+          <a href="/package/download.jqueryui.com">download.jqueryui.com</a>,
+        
+          <a href="/package/jsnbt">jsnbt</a>,
+        
+          <a href="/package/proto-dash">proto-dash</a>,
+        
+          <a href="/package/ose-gaia">ose-gaia</a>,
+        
+          <a href="/package/ng-contextmenu">ng-contextmenu</a>,
+        
+          <a href="/package/6pm">6pm</a>,
+        
+          <a href="/package/grunt-bower-verify">grunt-bower-verify</a>,
+        
+          <a href="/package/grunt-bower-postinst">grunt-bower-postinst</a>,
+                  <a href="/package/grunt-polybrick">grunt-polybrick</a>,
+        <a href="/browse/depended/bower">and 353 more</a>
+    </p>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "bower",
+      "description": "The browser package manager",
+      "url": "https://www.npmjs.com/package/bower",
+      "keywords": "",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+  <div class="hiring-container" data-template="sidebar"></div>
+
+</div>
+
+
+  </div>
+
+  <footer>
+
+    <div class="container">
+
+      <ul class="columnar">
+        <li>
+          <h3>You Need Help</h3>
+          <ul class="links">
+            <li><a href="https://docs.npmjs.com">Documentation</a></li>
+            <li><a href="/support">Support / Contact Us</a></li>
+            <li><a href="http://status.npmjs.org/">Registry Status</a></li>
+            <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+            <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+            <li><a href="/security">Security</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>About npm</h3>
+          <ul class="links">
+            <li><a href="/about">About npm, Inc</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/private-modules">npm private modules</a></li>
+            <li><a href="http://blog.npmjs.org">Blog</a></li>
+            <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+            <li><a href="https://github.com/npm">GitHub</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Legal Stuff</h3>
+          <ul class="links">
+            <li><a href="/policies/conduct">Code of Conduct</a></li>
+            <li><a href="/policies/disputes">Package Name Disputes</a></li>
+            <li><a href="/policies/npm-license">npm License</a></li>
+            <li><a href="/policies/privacy">Privacy Policy</a></li>
+            <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
+            <li><a href="/policies/trademark">Trademark Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="container centered">
+      <a href="/" id="npm-loves-you">
+        npm loves you
+      </a>
+    </div>
+
+
+  </footer>
+</body>
+</html>
+
+<!-- pid=28955 627531d7f5fbfdd9006e46fadaed2aa066f0795e https://www.npmjs.com www-9-west.internal.npmjs.com  -->

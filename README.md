@@ -82,7 +82,7 @@ Then :
 - [x] kde
 - [x] docker
 - [x] visual studio
-- [ ] bower
+- [x] bower
 - [ ] angularjs
 - [ ] curator
 - [ ] coreos

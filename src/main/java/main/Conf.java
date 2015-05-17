@@ -98,7 +98,7 @@ public class Conf {
         ));
         configurations.put("javascript", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/JavaScript",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
                 "(.*?)(\\[[0-9]*\\])? / "
         ));
         configurations.put("ubuntu", new VersionParserConfiguration(
@@ -293,6 +293,10 @@ public class Conf {
                 "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
                 "\\((.*?)\\)"
+        ));
+        configurations.put("bower", new VersionParserConfiguration(
+                "https://www.npmjs.com/package/bower",
+                "body > div.container.content > div.sidebar > ul:nth-child(2) > li:nth-child(2) > strong"
         ));
     }
 
