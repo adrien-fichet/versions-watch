@@ -83,7 +83,7 @@ Then :
 - [x] docker
 - [x] visual studio
 - [x] bower
-- [ ] angularjs
+- [x] angularjs
 - [ ] curator
 - [ ] coreos
 - [ ] safari

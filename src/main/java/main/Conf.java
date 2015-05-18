@@ -298,6 +298,11 @@ public class Conf {
                 "https://www.npmjs.com/package/bower",
                 "body > div.container.content > div.sidebar > ul:nth-child(2) > li:nth-child(2) > strong"
         ));
+        configurations.put("angularjs", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/AngularJS",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "(.*?) /"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

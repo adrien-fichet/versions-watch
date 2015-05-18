@@ -39,7 +39,8 @@ var versions = [
       { "id": "nginx", "name": "Nginx" },
       { "id": "grunt", "name": "Grunt" },
       { "id": "jquery", "name": "jQuery" },
-      { "id": "bower", "name": "Bower" }
+      { "id": "bower", "name": "Bower" },
+      { "id": "angularjs", "name": "Angular JS" }
     ]
   }, {
     "category": { "id": "browsers", "name": "Web browsers" },

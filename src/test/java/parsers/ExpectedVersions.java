@@ -17,7 +17,7 @@ public class ExpectedVersions {
         expectedVersions.put("eclipse", "4.4.2");
         expectedVersions.put("git", "2.4.1");
         expectedVersions.put("javase", "8u45");
-        expectedVersions.put("jenkins", "1.613");
+        expectedVersions.put("jenkins", "1.614");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "5.6.9");
@@ -57,7 +57,7 @@ public class ExpectedVersions {
         expectedVersions.put("vim", "7.4.729");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
-        expectedVersions.put("linux", "4.0.3");
+        expectedVersions.put("linux", "4.0.4");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.12.0");
         expectedVersions.put("solr", "5.1.0");
@@ -71,6 +71,7 @@ public class ExpectedVersions {
         expectedVersions.put("kali", "1.1.0");
         expectedVersions.put("visualstudio", "2013.4");
         expectedVersions.put("bower", "1.4.1");
+        expectedVersions.put("angularjs", "1.3.15");
     }
 
     public Map<String, String> getExpectedVersions() {
