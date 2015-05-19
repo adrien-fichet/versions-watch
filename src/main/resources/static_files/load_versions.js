@@ -17,7 +17,8 @@ var versions = [
       { "id": "kibana", "name": "Kibana" },
       { "id": "logstash", "name": "Logstash" },
       { "id": "logstashforwarder", "name": "Logstash-forwarder" },
-      { "id": "elasticdump", "name": "Elasticdump" }
+      { "id": "elasticdump", "name": "Elasticdump" },
+      { "id": "curator", "name": "Curator" }
     ]
   }, {
     "category": { "id": "ide", "name": "IDEs / Text editors" },

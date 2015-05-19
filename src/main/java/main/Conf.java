@@ -303,6 +303,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
                 "(.*?) /"
         ));
+        configurations.put("curator", new VersionParserConfiguration(
+                "https://github.com/elastic/curator/releases",
+                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
+                "(.*?) \\("
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

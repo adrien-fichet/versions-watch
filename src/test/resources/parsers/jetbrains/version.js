@@ -352,7 +352,7 @@ function versionUpsource(el) {
 
 //CLion
 var versionCLionShort = "1.0";
-var versionCLionLong = "1.0.1";
+var versionCLionLong = "1.0.2";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);

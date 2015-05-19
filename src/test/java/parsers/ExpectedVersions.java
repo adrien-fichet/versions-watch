@@ -72,6 +72,7 @@ public class ExpectedVersions {
         expectedVersions.put("visualstudio", "2013.4");
         expectedVersions.put("bower", "1.4.1");
         expectedVersions.put("angularjs", "1.3.15");
+        expectedVersions.put("curator", "3.0.3");
     }
 
     public Map<String, String> getExpectedVersions() {

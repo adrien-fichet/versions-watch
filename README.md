@@ -84,7 +84,7 @@ Then :
 - [x] visual studio
 - [x] bower
 - [x] angularjs
-- [ ] curator
+- [x] curator
 - [ ] coreos
 - [ ] safari
 - [ ] internet explorer
@@ -121,3 +121,4 @@ Then :
 - [ ] varnish
 - [ ] openbsd
 - [ ] dropbox
+- [ ] foreman
