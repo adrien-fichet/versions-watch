@@ -8,7 +8,8 @@ var versions = [
       { "id": "windows", "name": "Windows NT" },
       { "id": "centos", "name": "CentOS" },
       { "id": "fedora", "name": "Fedora" },
-      { "id": "kali", "name": "Kali" }
+      { "id": "kali", "name": "Kali" },
+      { "id": "coreos", "name": "CoreOS" }
     ]
   }, {
     "category": { "id": "elk", "name": "ELK" },

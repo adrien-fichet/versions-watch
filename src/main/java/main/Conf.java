@@ -305,8 +305,16 @@ public class Conf {
         ));
         configurations.put("curator", new VersionParserConfiguration(
                 "https://github.com/elastic/curator/releases",
-                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
+                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body." +
+                        "commit.open > div.release-header > h1 > a",
                 "(.*?) \\("
+        ));
+        configurations.put("coreos", new VersionParserConfiguration(
+                "https://coreos.com/",
+                "body > div.co-p-homepage > div.co-p-header-masthead.co-p-header-masthead-large.homepage." +
+                        "co-p-background-hexagons > div.container.co-p-header-masthead-content." +
+                        "co-p-header-masthead-center > div > div > div > div > div:nth-child(2) > div",
+                "Latest version is CoreOS (.*)"
         ));
     }
 

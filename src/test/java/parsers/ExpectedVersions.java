@@ -63,7 +63,7 @@ public class ExpectedVersions {
         expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
-        expectedVersions.put("googlechrome", "42.0.2311.152");
+        expectedVersions.put("googlechrome", "43.0.2357.65");
         expectedVersions.put("firefox", "38.0.1");
         expectedVersions.put("gnomeshell", "3.16");
         expectedVersions.put("kde", "4.14.3");
@@ -73,6 +73,7 @@ public class ExpectedVersions {
         expectedVersions.put("bower", "1.4.1");
         expectedVersions.put("angularjs", "1.3.15");
         expectedVersions.put("curator", "3.0.3");
+        expectedVersions.put("coreos", "681.0.0");
     }
 
     public Map<String, String> getExpectedVersions() {
