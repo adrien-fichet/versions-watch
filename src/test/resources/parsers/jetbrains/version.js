@@ -338,8 +338,8 @@ function onloadVersionAppCodeDownload() {
 }
 
 //Upsource
-var versionUpsourceShort = "1";
-var versionUpsourceLong = "1.0.1";
+var versionUpsourceShort = "2";
+var versionUpsourceLong = "2.0";
 function versionUpsource(el) {
     if (el == "short") {
         document.write(versionUpsourceShort);

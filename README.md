@@ -86,7 +86,7 @@ Then :
 - [x] angularjs
 - [x] curator
 - [x] coreos
-- [ ] safari
+- [x] safari
 - [ ] internet explorer
 - [ ] edge
 - [ ] opera

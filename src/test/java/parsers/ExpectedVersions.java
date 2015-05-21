@@ -21,7 +21,7 @@ public class ExpectedVersions {
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "5.6.9");
-        expectedVersions.put("puppet", "4.0.0");
+        expectedVersions.put("puppet", "4.1.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.8.13");
         expectedVersions.put("tomcat", "8.0.22");
@@ -46,11 +46,11 @@ public class ExpectedVersions {
         expectedVersions.put("scala", "2.11.6");
         expectedVersions.put("selenium", "2.45.0");
         expectedVersions.put("virtualbox", "4.3.28");
-        expectedVersions.put("windows", "6.3.9600");
+        expectedVersions.put("windows", "10.0.10074");
         expectedVersions.put("centos", "7.1503");
         expectedVersions.put("fedora", "21");
         expectedVersions.put("proxmox", "3.4-3f2d890e-1");
-        expectedVersions.put("sqlite", "3.8.10.1");
+        expectedVersions.put("sqlite", "3.8.10.2");
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
@@ -74,6 +74,7 @@ public class ExpectedVersions {
         expectedVersions.put("angularjs", "1.3.15");
         expectedVersions.put("curator", "3.0.3");
         expectedVersions.put("coreos", "681.0.0");
+        expectedVersions.put("safari", "8.0.6");
     }
 
     public Map<String, String> getExpectedVersions() {

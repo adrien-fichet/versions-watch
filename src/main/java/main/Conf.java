@@ -177,7 +177,7 @@ public class Conf {
         ));
         configurations.put("windows", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Windows",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(9) > td",
                 "(.*?)\\["
         ));
         configurations.put("centos", new VersionParserConfiguration(
@@ -315,6 +315,11 @@ public class Conf {
                         "co-p-background-hexagons > div.container.co-p-header-masthead-content." +
                         "co-p-header-masthead-center > div > div > div > div > div:nth-child(2) > div",
                 "Latest version is CoreOS (.*)"
+        ));
+        configurations.put("safari", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Safari_version_history",
+                "#mw-content-text > table:nth-child(13) > tbody > tr:last-child > td:nth-child(1)",
+                null
         ));
     }
 
