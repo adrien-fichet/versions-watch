@@ -87,10 +87,10 @@ Then :
 - [x] curator
 - [x] coreos
 - [x] safari
+- [x] drupal
 - [ ] internet explorer
 - [ ] edge
 - [ ] opera
-- [ ] drupal
 - [ ] wordpress
 - [ ] postgresql
 - [ ] lxc

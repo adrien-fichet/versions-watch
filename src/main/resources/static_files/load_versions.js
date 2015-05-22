@@ -33,16 +33,24 @@ var versions = [
       { "id": "visualstudio", "name": "Visual Studio" }
     ]
   }, {
-    "category": { "id": "web", "name": "Web" },
+    "category": { "id": "web_servers", "name": "Web servers" },
     "items": [
       { "id": "apache", "name": "Apache" },
-      { "id": "tomcat", "name": "Tomcat" },
-      { "id": "extjs", "name": "ExtJS" },
-      { "id": "nginx", "name": "Nginx" },
+      { "id": "nginx", "name": "Nginx" }
+    ]
+  }, {
+    "category": { "id": "web_tools", "name": "Web tools" },
+    "items": [
       { "id": "grunt", "name": "Grunt" },
+      { "id": "bower", "name": "Bower" }
+    ]
+  }, {
+    "category": { "id": "web_frameworks", "name": "Web frameworks" },
+    "items": [
+      { "id": "extjs", "name": "ExtJS" },
       { "id": "jquery", "name": "jQuery" },
-      { "id": "bower", "name": "Bower" },
-      { "id": "angularjs", "name": "Angular JS" }
+      { "id": "angularjs", "name": "Angular JS" },
+      { "id": "drupal", "name": "Drupal" }
     ]
   }, {
     "category": { "id": "browsers", "name": "Web browsers" },
@@ -55,7 +63,6 @@ var versions = [
     "category": { "id": "languages", "name": "Languages" },
     "items": [
       { "id": "php", "name": "PHP" },
-      { "id": "javase", "name": "Java SE" },
       { "id": "javascript", "name": "Javascript" },
       { "id": "scala", "name": "Scala" },
       { "id": "python", "name": "Python" }
@@ -86,8 +93,10 @@ var versions = [
       { "id": "openssh", "name": "OpenSSH" }
     ]
   }, {
-    "category": { "id": "frameworks", "name": "Java frameworks" },
+    "category": { "id": "java", "name": "Java" },
     "items": [
+      { "id": "javase", "name": "Java SE" },
+      { "id": "tomcat", "name": "Tomcat" },
       { "id": "spring", "name": "Spring" },
       { "id": "hibernate", "name": "Hibernate" }
     ]

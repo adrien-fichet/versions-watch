@@ -321,6 +321,11 @@ public class Conf {
                 "#mw-content-text > table:nth-child(13) > tbody > tr:last-child > td:nth-child(1)",
                 null
         ));
+        configurations.put("drupal", new VersionParserConfiguration(
+                "https://www.drupal.org/download",
+                "#download > div.core > ul > li.first.download-core > a > span",
+                "Download Drupal (.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

@@ -21,7 +21,7 @@ function onloadVersionIDEADownload() {
 
 //Resharper
 var versionRSShort = "9";
-var versionRSLong = "9.1";
+var versionRSLong = "9.1.1";
 function versionRS(el) {
     if (el == "short") {
         document.write(versionRSShort);
@@ -41,7 +41,7 @@ function onloadVersionRSDownload() {
 
 //Resharper C++
 var versionRSCppShort = "1";
-var versionRSCppLong = "1.0";
+var versionRSCppLong = "1.0.1";
 function versionRSCpp(el) {
     if (el == "short") {
         document.write(versionRSCppShort);
@@ -53,7 +53,7 @@ function versionRSCpp(el) {
 
 //dotTrace
 var versionDTShort = "6";
-var versionDTLong = "6.1";
+var versionDTLong = "6.1.1";
 var versionDTMLong = "3.5";
 function versionDT(el) {
     if (el == "short") {
@@ -73,7 +73,7 @@ function onloadVersionDTDownload() {
 
 //dotMemory
 var versionDMShort = "4";
-var versionDMLong = "4.3";
+var versionDMLong = "4.3.1";
 function versionDM(el) {
     if (el == "short") {
         document.write(versionDMShort);
@@ -92,7 +92,7 @@ function onloadVersionDMDownload() {
 
 //dotCover
 var versionDCShort = "3";
-var versionDCLong = "3.1";
+var versionDCLong = "3.1.1";
 function versionDC(el) {
     if (el == "short") {
         document.write(versionDCShort);
@@ -111,7 +111,7 @@ function onloadVersionDCDownload() {
 
 //dotPeek
 var versionDPShort = "1";
-var versionDPLong = "1.4";
+var versionDPLong = "1.4.1";
 function versionDP(el) {
     if (el == "short") {
         document.write(versionDPShort);
@@ -173,7 +173,7 @@ function onloadVersionRMDownload() {
 
 //MPS
 var versionMPSShort = "3.2";
-var versionMPSLong = "3.2.1";
+var versionMPSLong = "3.2.2";
 function versionMPS(el) {
     if (el == "short") {
         document.write(versionMPSShort);
@@ -217,7 +217,7 @@ function onloadVersionWebIDEownload() {
 
 //PyCharm
 var versionPyCharmShort = "4.5";
-var versionPyCharmLong = "4.5";
+var versionPyCharmLong = "4.5.1";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -278,7 +278,7 @@ function onloadVersionYTownload() {
 
 //WebStorm
 var versionWebStormShort = "10.0";
-var versionWebStormLong = "10.0.2";
+var versionWebStormLong = "10.0.3";
 function versionWebStorm(el) {
     if (el == "short") {
         document.write(versionWebStormShort);
@@ -352,7 +352,7 @@ function versionUpsource(el) {
 
 //CLion
 var versionCLionShort = "1.0";
-var versionCLionLong = "1.0.2";
+var versionCLionLong = "1.0.3";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);
