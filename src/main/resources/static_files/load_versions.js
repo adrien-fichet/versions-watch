@@ -84,7 +84,8 @@ var versions = [
       { "id": "virtualbox", "name": "VirtualBox" },
       { "id": "proxmox", "name": "Proxmox VE" },
       { "id": "linux", "name": "Linux kernel" },
-      { "id": "docker", "name": "Docker" }
+      { "id": "docker", "name": "Docker" },
+      { "id": "foreman", "name": "Foreman" }
     ]
   }, {
     "category": { "id": "sec", "name": "Sec" },

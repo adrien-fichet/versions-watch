@@ -271,8 +271,8 @@ public class Conf {
         ));
         configurations.put("gnomeshell", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/GNOME_Shell",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
-                "(.*?) \\("
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
+                "(.*?) "
         ));
         configurations.put("kde", new VersionParserConfiguration(
                 "https://www.kde.org/download/",
@@ -325,6 +325,11 @@ public class Conf {
                 "https://www.drupal.org/download",
                 "#download > div.core > ul > li.first.download-core > a > span",
                 "Download Drupal (.*)"
+        ));
+        configurations.put("foreman", new VersionParserConfiguration(
+                "http://theforeman.org/",
+                "#latest-news > div > div > p:nth-child(1)",
+                "Foreman (.*?) has been released."
         ));
     }
 

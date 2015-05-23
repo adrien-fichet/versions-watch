@@ -88,6 +88,7 @@ Then :
 - [x] coreos
 - [x] safari
 - [x] drupal
+- [x] foreman
 - [ ] internet explorer
 - [ ] edge
 - [ ] opera
@@ -121,4 +122,3 @@ Then :
 - [ ] varnish
 - [ ] openbsd
 - [ ] dropbox
-- [ ] foreman

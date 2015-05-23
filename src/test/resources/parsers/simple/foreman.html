@@ -1,0 +1,280 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Organization" lang="en">
+  <head>
+    <base href="/">
+    
+    
+    
+
+    
+  <title>Foreman</title>
+
+  <script type="text/javascript" src="/static/js/jquery.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery-ui-1.9.2.custom.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.tocify.min.js"></script>
+  <script type="text/javascript" src="/static/js/scroll.js"></script>
+
+  <link rel="stylesheet" media="all" href="/static/css/bootstrap.min.css"/>
+  <link rel="stylesheet" media="all" href="/static/css/bootstrap-responsive.min.css"/>
+  <link rel="stylesheet" media="all" href="/static/css/jquery.tocify.css"/>
+  <link rel="stylesheet" media="all" href="/static/css/syntax.css" />
+	<link rel="stylesheet" media="all" href="/static/css/style.css"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+ 
+    <header id="page-header">
+  
+		<div class="container">
+      
+		    <nav class="navbar navbar-default navbar-static-top navbar-index" role="navigation">
+      
+				<ul class="nav navbar-nav nav-justified">
+          
+					
+			  		<li><a href="/introduction.html"> Introduction </a></li>
+					
+			  		<li><a href="/manuals/1.8/quickstart_guide.html#QuickstartGuide"> Quickstart </a></li>
+					
+			  		<li><a href="/documentation.html"> Documentation </a></li>
+					
+			  		<li><a href="/contribute.html"> Community </a></li>
+					
+			  		<li><a href="/media.html"> Videos </a></li>
+					
+					</li>
+				</ul>
+			</nav>
+      
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<a class="brand" href="/">
+						<img class="brand-logo" src="/static/images/foremanhelmet.svg" alt="Foreman" />
+						<span class="brand-name">
+              <img src="/static/images/foremanwhite.png"/>
+            </span>
+					</a>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <p>Foreman is a complete lifecycle management tool for physical and virtual servers. We give system administrators the power to easily automate repetitive tasks, quickly deploy applications, and proactively manage servers, on-premise or in the cloud.</p>
+        </div>
+      </div>
+			<div class='row'>
+				<div class="source-buttons">
+					<a href="/manuals/1.8/quickstart_guide.html" class="btn btn-primary">Get started</a>
+					<a href="/introduction.html" class="btn btn-default">Learn more</a>
+				</div>
+			</div>
+      
+		</div>
+  </header>
+<script>
+$(function(){
+  $('.nav > li a[href="'+window.location.pathname+'"]').parents('.nav > li').addClass('active')
+})
+</script>
+
+<section class="screenshots">
+	<div class="container">
+		<div class='row'>
+			<div class='col-md-4'>
+				<a href="#"><img src='plugins/foreman_chef/0.1/dashboard.png' class='img-thumbnail'/></a>
+			</div>
+			<div class='col-md-4'>
+				<h2>Provision from anywhere</h2>
+				<p>Bare metal, Amazon EC2, Google Compute Engine, OpenStack, Libvirt, oVirt, VMware, and many other providers allow you to manage a hybrid cloud through Foreman.</p>
+			</div>
+			<div class='col-md-4'>
+				<a href="#"><img src='plugins/foreman_chef/0.1/facts_distribution.png' class='img-thumbnail'/></a>
+			</div>
+		</div>
+		<hr /></a>
+		<div class='row'>
+			<div class='col-md-4'>
+				<a href="#"><img src='plugins/foreman_chef/0.1/reports_applied.png' class='img-thumbnail'/></a>
+			</div>
+			<div class='col-md-4'>
+				<h2>Configuration</h2>
+				<p>An external node classifier, hiera-like parameters, and reports monitoring for Puppet, Salt and Chef are included. Completely ready to tweak host groups in your data center.</p>
+			</div>
+			<div class='col-md-4'>
+			 	<a href="#"><img src='/static/images/screenshots/puppetclasses.png' class='img-thumbnail'/></a>
+			</div>
+		</div>
+		<hr /></a>
+   	<div class='row'>
+			<div class='col-md-4'>
+				<a href="#"><img src='plugins/foreman_chef/0.1/host_detail.png' class='img-thumbnail'/></a>
+			</div>
+			<div class='col-md-4'>
+				<h2>Monitor hosts</h2>
+				<p>Foreman reports will tell you exactly what happened in your nodes, and alert you when things go awry. See in your dashboard which hosts are healthy, and which ones are outdated.</p>
+			</div>
+			<div class='col-md-4'>
+				<a href="#"><img src='/static/images/screenshots/saltreports.gif' class='img-thumbnail'/></a>
+			</div>
+		</div>
+	</div>
+ 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</section>
+
+<script>
+$(document).ready(function(){
+		$('.img-thumbnail').on('click',function(){
+				var src = $(this).attr('src');
+				var img = '<img src="' + src + '" class="img-responsive"/>';
+				$('#myModal').modal();
+				$('#myModal').on('shown.bs.modal', function(){
+						$('#myModal .modal-body').html(img);
+						});
+				$('#myModal').on('hidden.bs.modal', function(){
+						$('#myModal .modal-body').html('');
+						});
+        return false;
+				});
+		})
+</script>
+
+<section class="features">
+  <div class="container">
+		<div class='row'>
+			<div class='col-md-6'>
+			  <div class='col-md-2'>
+					<h1><i class="fa fa-tty"></i></h1>
+			  </div>
+			  <div class='col-md-10'>
+					<h2>CLI</h2>
+					<p>UIs slow you down? <a href="manuals/1.8/index.html#3.5.6CLI">Hammer CLI</a> gives you easy access to all the API calls you need to stay on top of your data center.</p>
+			  </div>
+			</div>
+			<div class='col-md-6'>
+				<div class='col-md-2'>
+					<h1><i class="fa fa-terminal"></i></h1>
+				</div>
+				<div class='col-md-10'>
+					<h2>API</h2>
+					<p>We provide a RESTful API to give you the power to automate most tasks, such as registering hosts, assigning roles to users, and <a href="api/apidoc/v2.html">more.</a></p>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-6'>
+        <div class='col-md-2'>
+					<h1><i class="fa fa-user-plus"></i></h1>
+				</div>
+        <div class='col-md-10'>
+					<h2>RBAC and LDAP integration</h2>
+					<p>A thorough authorization system based on role based access control (RBAC) allows for tight policies for your Foreman users. If you use LDAP or FreeIPA, you can continue using them for authentication and authorization.</p>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='col-md-2'>
+					<h1><i class="fa fa-files-o"></i></h1>
+				</div>
+				<div class='col-md-10'>
+					<h2>Audits</h2>
+					<p>No more wondering why did your load balancer suddenly became a database. Check how, who and when in our audits system.</p>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='col-md-2'>
+					<h1><i class="fa fa-plug"></i></h1>
+				</div>
+				<div class='col-md-10'>
+					<h2>Plugins</h2>
+					<p>A pluggable architecture allows you to extend Foreman in almost any direction. Visit our <a href="/documentation.html">list of plugins</a> for a glimpse. </p>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='col-md-2'>
+					<h1><i class="fa fa-server"></i></h1>
+				</div>
+				<div class='col-md-10'>
+					<h2>Host groups</h2>
+					<p>Horizontal scaling is an ubiquitous architecture in IT. Group your hosts and modify their configuration as if they were just one with Foreman.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="home" data-type="background" style="background-position: 50% 0px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="homepage-img" src="/static/images/provisioning.png">
+<h2>Provisioning</h2>
+<p>Provision on bare-metal & public or private clouds all from one place with one simple process.</p>
+
+			</div>
+			<div class="col-md-4">
+				
+<img class="homepage-img" src="/static/images/configuration.png">
+<h2>Configuration</h2>
+<p>A complete configuration management solution including an ENC for Puppet and Salt, built-in support for parameterized classes and hierarchical parameter storage.</p>
+
+			</div>
+			<div class="col-md-4">
+				<img class="homepage-img" src="/static/images/monitoring.png">
+<h2>Monitoring</h2>
+<p>Collect Puppet, Chef and Salt reports and facts. Monitor host configuration, report status, distribution and trends.</p>
+
+			</div>
+		</div>
+		<hr />
+		<div class='row center'>
+			<div class="source-buttons">
+ 				<a href="/manuals/1.8/quickstart_guide.html" class="btn btn-primary">Get started</a>
+		 		<a href="/introduction.html" class="btn btn-default">Learn more</a>
+		  </div>
+		</div>
+	</div>
+</section>
+
+<section id="latest-news" class="center">
+	<div class="container">
+		<div class="latest-news col-md-offset-3 col-md-6">
+			<p>Foreman 1.8.0 has been released. Performance improvements, major networking changes have been added. <a href="manuals/1.8/index.html#Releasenotesfor1.8">Read more in the release notes.</a></p>
+<p>April's newsletter is out. Learn what happened during the last month at <a href="http://blog.theforeman.org/2015/04/foreman-community-newsletter-april-2015.html?view=classic">the Foreman blog.</a></p>
+
+		</div>
+	</div>
+</section>
+<div class="footer">
+  <div class="container">
+    <p>This web site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.  Source available: <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/theforeman/theforeman.org" rel="dct:source">github/theforeman/theforeman.org</a></p>
+		<a style='visibility:hidden;' href="https://plus.google.com/102496134326414788199" rel="publisher">Google+ community</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2134730-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
+

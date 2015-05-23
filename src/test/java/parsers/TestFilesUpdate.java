@@ -15,11 +15,13 @@ import java.nio.file.Paths;
 public class TestFilesUpdate {
     private Logger logger = LoggerFactory.getLogger(getClass());
     private Path resourcePath;
+    private int numberOfDownloadErrors = 0;
 
     public static void main(String[] args) throws Exception {
         TestFilesUpdate testFilesUpdate = new TestFilesUpdate();
         testFilesUpdate.getResourceDirectory();
         testFilesUpdate.updateResourceFiles();
+        testFilesUpdate.printNumberOfDownloadErrors();
     }
 
     private void getResourceDirectory() throws IOException {
@@ -41,7 +43,12 @@ public class TestFilesUpdate {
             conn.connect();
             FileUtils.copyInputStreamToFile(conn.getInputStream(), new File(resourcePath + dest));
         } catch (IOException e) {
+            numberOfDownloadErrors ++;
             logger.error("Could not download " + urlString + ": " + e.getMessage());
         }
+    }
+
+    private void printNumberOfDownloadErrors() {
+        logger.info("Number of download errors: " + numberOfDownloadErrors);
     }
 }
