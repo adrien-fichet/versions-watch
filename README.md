@@ -89,10 +89,10 @@ Then :
 - [x] safari
 - [x] drupal
 - [x] foreman
+- [x] wordpress
 - [ ] internet explorer
 - [ ] edge
 - [ ] opera
-- [ ] wordpress
 - [ ] postgresql
 - [ ] lxc
 - [ ] openvz

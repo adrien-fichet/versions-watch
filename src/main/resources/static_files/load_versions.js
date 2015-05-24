@@ -50,7 +50,8 @@ var versions = [
       { "id": "extjs", "name": "ExtJS" },
       { "id": "jquery", "name": "jQuery" },
       { "id": "angularjs", "name": "Angular JS" },
-      { "id": "drupal", "name": "Drupal" }
+      { "id": "drupal", "name": "Drupal" },
+      { "id": "wordpress", "name": "WordPress" }
     ]
   }, {
     "category": { "id": "browsers", "name": "Web browsers" },

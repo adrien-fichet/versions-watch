@@ -280,7 +280,7 @@ public class Conf {
                 "Please see the (.*?) Info Page"
         ));
         configurations.put("docker", new VersionParserConfiguration(
-                "https://docs.docker.com/",
+                "http://docs.docker.com/",
                 "#document-version-number",
                 "Version v(.*)"
         ));
@@ -330,6 +330,11 @@ public class Conf {
                 "http://theforeman.org/",
                 "#latest-news > div > div > p:nth-child(1)",
                 "Foreman (.*?) has been released."
+        ));
+        configurations.put("wordpress", new VersionParserConfiguration(
+                "https://wordpress.org/",
+                "#home-text > p:nth-child(3) > a",
+                "Download\\u00a0WordPress\\u00a0(.*)"
         ));
     }
 
