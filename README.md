@@ -90,13 +90,13 @@ Then :
 - [x] drupal
 - [x] foreman
 - [x] wordpress
-- [ ] internet explorer
+- [x] kali
+- [x] internet explorer
 - [ ] edge
 - [ ] opera
 - [ ] postgresql
 - [ ] lxc
 - [ ] openvz
-- [ ] kali
 - [ ] nmap
 - [ ] nessus
 - [ ] metasploit

@@ -336,6 +336,11 @@ public class Conf {
                 "#home-text > p:nth-child(3) > a",
                 "Download\\u00a0WordPress\\u00a0(.*)"
         ));
+        configurations.put("internetexplorer", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Internet_Explorer",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td > div > ul > li:nth-child(1)",
+                "Windows: (.*?) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

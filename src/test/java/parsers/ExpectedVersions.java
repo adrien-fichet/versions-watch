@@ -78,6 +78,7 @@ public class ExpectedVersions {
         expectedVersions.put("drupal", "7.37");
         expectedVersions.put("foreman", "1.8.0");
         expectedVersions.put("wordpress", "4.2.2");
+        expectedVersions.put("internetexplorer", "11.0.18");
     }
 
     public Map<String, String> getExpectedVersions() {
