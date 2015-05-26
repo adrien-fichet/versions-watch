@@ -194,7 +194,7 @@ public class Conf {
         configurations.put("proxmox", new VersionParserConfiguration(
                 "http://www.proxmox.com/en/downloads/category/iso-images-pve",
                 "#yoo-zoo > div.items > div.row.first-row > div.width50.first-cell > div > ul > li",
-                "Version: (.*)"
+                "Version: (.*?)-"
         ));
         configurations.put("sqlite", new VersionParserConfiguration(
                 "https://www.sqlite.org/",
@@ -340,6 +340,11 @@ public class Conf {
                 "https://en.wikipedia.org/wiki/Internet_Explorer",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td > div > ul > li:nth-child(1)",
                 "Windows: (.*?) "
+        ));
+        configurations.put("nmap", new VersionParserConfiguration(
+                "https://nmap.org/download.html",
+                "body > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr > td > p:nth-child(18) > a:nth-child(2)",
+                "nmap-(.*?)\\.tar\\.bz2"
         ));
     }
 

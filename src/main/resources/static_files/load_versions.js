@@ -93,7 +93,8 @@ var versions = [
     "category": { "id": "sec", "name": "Sec" },
     "items": [
       { "id": "openssl", "name": "OpenSSL" },
-      { "id": "openssh", "name": "OpenSSH" }
+      { "id": "openssh", "name": "OpenSSH" },
+      { "id": "nmap", "name": "Nmap" }
     ]
   }, {
     "category": { "id": "java", "name": "Java" },

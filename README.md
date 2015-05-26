@@ -92,12 +92,12 @@ Then :
 - [x] wordpress
 - [x] kali
 - [x] internet explorer
+- [x] nmap
 - [ ] edge
 - [ ] opera
 - [ ] postgresql
 - [ ] lxc
 - [ ] openvz
-- [ ] nmap
 - [ ] nessus
 - [ ] metasploit
 - [ ] latex
@@ -122,3 +122,7 @@ Then :
 - [ ] varnish
 - [ ] openbsd
 - [ ] dropbox
+- [ ] wireshark
+
+### Ideas
+- display links to versions websites when holding ctrl

@@ -11,20 +11,20 @@ public class ExpectedVersions {
         expectedVersions.put("idea", "14.1.3");
         expectedVersions.put("youtrack", "6.0.12634");
         expectedVersions.put("solr", "5.1.0");
-        expectedVersions.put("spring", "4.1.6");
+        expectedVersions.put("spring", "4.2.0");
         expectedVersions.put("apache", "2.4.12");
         expectedVersions.put("debian", "8.0");
         expectedVersions.put("eclipse", "4.4.2");
         expectedVersions.put("git", "2.4.1");
         expectedVersions.put("javase", "8u45");
-        expectedVersions.put("jenkins", "1.614");
+        expectedVersions.put("jenkins", "1.615");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "5.6.9");
         expectedVersions.put("puppet", "4.1.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.8.13");
-        expectedVersions.put("tomcat", "8.0.22");
+        expectedVersions.put("tomcat", "8.0.23");
         expectedVersions.put("junit", "4.12");
         expectedVersions.put("vagrant", "1.7.2");
         expectedVersions.put("extjs", "5.1.0");
@@ -32,7 +32,7 @@ public class ExpectedVersions {
         expectedVersions.put("hibernate", "4.3.10");
         expectedVersions.put("javascript", "1.8.5");
         expectedVersions.put("ubuntu", "15.04");
-        expectedVersions.put("nginx", "1.9.0");
+        expectedVersions.put("nginx", "1.9.1");
         expectedVersions.put("elasticsearch", "1.5.2");
         expectedVersions.put("logstash", "1.5.0");
         expectedVersions.put("kibana", "4.0.2");
@@ -48,8 +48,8 @@ public class ExpectedVersions {
         expectedVersions.put("virtualbox", "4.3.28");
         expectedVersions.put("windows", "10.0.10074");
         expectedVersions.put("centos", "7.1503");
-        expectedVersions.put("fedora", "21");
-        expectedVersions.put("proxmox", "3.4-3f2d890e-1");
+        expectedVersions.put("fedora", "22");
+        expectedVersions.put("proxmox", "3.4");
         expectedVersions.put("sqlite", "3.8.10.2");
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
@@ -63,7 +63,7 @@ public class ExpectedVersions {
         expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
-        expectedVersions.put("googlechrome", "43.0.2357.65");
+        expectedVersions.put("googlechrome", "43.0.2357.81");
         expectedVersions.put("firefox", "38.0.1");
         expectedVersions.put("gnomeshell", "3.15.92");
         expectedVersions.put("kde", "4.14.3");
@@ -79,6 +79,7 @@ public class ExpectedVersions {
         expectedVersions.put("foreman", "1.8.0");
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.18");
+        expectedVersions.put("nmap", "6.47");
     }
 
     public Map<String, String> getExpectedVersions() {
