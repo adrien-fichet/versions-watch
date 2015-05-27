@@ -93,7 +93,7 @@ Then :
 - [x] kali
 - [x] internet explorer
 - [x] nmap
-- [ ] edge
+- [x] edge
 - [ ] opera
 - [ ] postgresql
 - [ ] lxc
@@ -123,6 +123,9 @@ Then :
 - [ ] openbsd
 - [ ] dropbox
 - [ ] wireshark
+- [ ] ansible
+- [ ] chef
+- [ ] salt
 
 ### Ideas
-- display links to versions websites when holding ctrl
+- display links to versions websites when holding ctrl, or as a list at the end of the webpage

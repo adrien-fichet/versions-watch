@@ -59,7 +59,8 @@ var versions = [
       { "id": "googlechrome", "name": "Google Chrome" },
       { "id": "firefox", "name": "Firefox" },
       { "id": "safari", "name": "Safari" },
-      { "id": "internetexplorer", "name": "Internet Explorer" }
+      { "id": "internetexplorer", "name": "Internet Explorer" },
+      { "id": "edge", "name": "Edge" }
     ]
   }, {
     "category": { "id": "languages", "name": "Languages" },
@@ -82,12 +83,16 @@ var versions = [
     "items": [
       { "id": "jenkins", "name": "Jenkins" },
       { "id": "puppet", "name": "Puppet" },
+      { "id": "linux", "name": "Linux kernel" },
+      { "id": "foreman", "name": "Foreman" }
+    ]
+  }, {
+    "category": { "id": "virtualization", "name": "Virtualization" },
+    "items": [
       { "id": "vagrant", "name": "Vagrant" },
       { "id": "virtualbox", "name": "VirtualBox" },
       { "id": "proxmox", "name": "Proxmox VE" },
-      { "id": "linux", "name": "Linux kernel" },
-      { "id": "docker", "name": "Docker" },
-      { "id": "foreman", "name": "Foreman" }
+      { "id": "docker", "name": "Docker" }
     ]
   }, {
     "category": { "id": "sec", "name": "Sec" },

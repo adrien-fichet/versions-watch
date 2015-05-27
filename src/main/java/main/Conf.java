@@ -346,6 +346,11 @@ public class Conf {
                 "body > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr > td > p:nth-child(18) > a:nth-child(2)",
                 "nmap-(.*?)\\.tar\\.bz2"
         ));
+        configurations.put("edge", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Microsoft_Edge",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "Windows .*? (.*?) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

@@ -15,7 +15,7 @@ public class ExpectedVersions {
         expectedVersions.put("apache", "2.4.12");
         expectedVersions.put("debian", "8.0");
         expectedVersions.put("eclipse", "4.4.2");
-        expectedVersions.put("git", "2.4.1");
+        expectedVersions.put("git", "2.4.2");
         expectedVersions.put("javase", "8u45");
         expectedVersions.put("jenkins", "1.615");
         expectedVersions.put("mysql", "5.6");
@@ -59,7 +59,7 @@ public class ExpectedVersions {
         expectedVersions.put("i3", "4.10.2");
         expectedVersions.put("linux", "4.0.4");
         expectedVersions.put("xfce", "4.12");
-        expectedVersions.put("elasticdump", "0.12.0");
+        expectedVersions.put("elasticdump", "0.13.0");
         expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
@@ -80,6 +80,7 @@ public class ExpectedVersions {
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.18");
         expectedVersions.put("nmap", "6.47");
+        expectedVersions.put("edge", "0.13.10122.0");
     }
 
     public Map<String, String> getExpectedVersions() {
