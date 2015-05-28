@@ -94,7 +94,7 @@ Then :
 - [x] internet explorer
 - [x] nmap
 - [x] edge
-- [ ] opera
+- [x] opera
 - [ ] postgresql
 - [ ] lxc
 - [ ] openvz

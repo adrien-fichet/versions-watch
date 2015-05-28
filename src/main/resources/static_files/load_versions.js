@@ -60,7 +60,8 @@ var versions = [
       { "id": "firefox", "name": "Firefox" },
       { "id": "safari", "name": "Safari" },
       { "id": "internetexplorer", "name": "Internet Explorer" },
-      { "id": "edge", "name": "Edge" }
+      { "id": "edge", "name": "Edge" },
+      { "id": "opera", "name": "Opera" }
     ]
   }, {
     "category": { "id": "languages", "name": "Languages" },

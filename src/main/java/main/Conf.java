@@ -351,6 +351,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
                 "Windows .*? (.*?) "
         ));
+        configurations.put("opera", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Opera_(web_browser)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
+                "Windows, OS X, Linux (.*?) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

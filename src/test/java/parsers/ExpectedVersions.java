@@ -46,7 +46,7 @@ public class ExpectedVersions {
         expectedVersions.put("scala", "2.11.6");
         expectedVersions.put("selenium", "2.45.0");
         expectedVersions.put("virtualbox", "4.3.28");
-        expectedVersions.put("windows", "10.0.10074");
+        expectedVersions.put("windows", "10.0.10122");
         expectedVersions.put("centos", "7.1503");
         expectedVersions.put("fedora", "22");
         expectedVersions.put("proxmox", "3.4");
@@ -65,22 +65,23 @@ public class ExpectedVersions {
         expectedVersions.put("nexus", "2.11.2");
         expectedVersions.put("googlechrome", "43.0.2357.81");
         expectedVersions.put("firefox", "38.0.1");
-        expectedVersions.put("gnomeshell", "3.15.92");
+        expectedVersions.put("gnomeshell", "3.17.2");
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.6");
         expectedVersions.put("kali", "1.1.0");
         expectedVersions.put("visualstudio", "2013.4");
         expectedVersions.put("bower", "1.4.1");
-        expectedVersions.put("angularjs", "1.3.15");
+        expectedVersions.put("angularjs", "1.4.0");
         expectedVersions.put("curator", "3.1.0");
         expectedVersions.put("coreos", "681.0.0");
         expectedVersions.put("safari", "8.0.6");
         expectedVersions.put("drupal", "7.37");
-        expectedVersions.put("foreman", "1.8.0");
+        expectedVersions.put("foreman", "1.8.1");
         expectedVersions.put("wordpress", "4.2.2");
-        expectedVersions.put("internetexplorer", "11.0.18");
+        expectedVersions.put("internetexplorer", "11.0.19");
         expectedVersions.put("nmap", "6.47");
         expectedVersions.put("edge", "0.13.10122.0");
+        expectedVersions.put("opera", "29.0.1795.60");
     }
 
     public Map<String, String> getExpectedVersions() {
