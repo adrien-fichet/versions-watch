@@ -95,7 +95,7 @@ Then :
 - [x] nmap
 - [x] edge
 - [x] opera
-- [ ] postgresql
+- [x] postgresql
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus

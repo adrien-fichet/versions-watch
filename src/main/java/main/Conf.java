@@ -356,6 +356,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
                 "Windows, OS X, Linux (.*?) "
         ));
+        configurations.put("postgresql", new VersionParserConfiguration(
+                "http://www.postgresql.org/",
+                "#pgFrontLatestReleasesWrap",
+                "(.*?) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

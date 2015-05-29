@@ -126,7 +126,8 @@ var versions = [
     "category": { "id": "databases", "name": "Databases" },
     "items": [
       { "id": "mysql", "name": "MySQL" },
-      { "id": "sqlite", "name": "SQLite" }
+      { "id": "sqlite", "name": "SQLite" },
+      { "id": "postgresql", "name": "PostgreSQL"}
     ]
   }, {
     "category": { "id": "windowmanagers", "name": "Window managers" },
