@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Home - Lighttpd - fly light</title>
+
+	<link type="application/atom+xml" href="http://www.lighttpd.net/feed/atom.xml" rel="alternate" title="Atom feed" />
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid"><div class="row-fluid">
+
+		<div class="span2">
+			<div style="width: 170px; margin: 0 auto;">
+				<a href="/" id="logo" alt="lighttpd"></a>
+				<div class="well well-small">
+					<ul class="nav nav-list">
+						<li class="nav-header">
+							Search
+							<a class="pull-right feedicon" href="/feed/atom.xml">
+								<i class="feedicon-small"></i>
+							</a>
+						</li>
+						<li>
+							<form id="sform" method="get" action="http://www.google.com/search">
+								<input type="text" value="" name="q" style="width: 100%" placeholder="Search with google…" />
+								<input type="hidden" name="sitesearch" value="www.lighttpd.net" />
+							</form>
+						</li>
+
+						<li class="nav-header">Sections</li>
+
+						<li><a href="/">Home</a></li>
+
+						<li><a href="/benchmark/">benchmark</a></li>
+
+						<li><a href="/download/">download</a></li>
+
+						<li><a href="/thank-you/">thank-you</a></li>
+
+						<li><a href="/story/">story</a></li>
+
+
+						<li class="nav-header">Sites</li>
+						<li><a href="http://blog.lighttpd.net/">blog</a></li>
+						<li><a href="http://redmine.lighttpd.net/projects/lighttpd/wiki">docs</a></li>
+						<li><a href="http://redmine.lighttpd.net/projects/lighttpd/issues">bugs</a></li>
+						<li><a href="http://redmine.lighttpd.net/projects/lighttpd/boards">forum</a></li> 
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="span10">
+			<h1></h1>
+			<div id="content">
+				
+<p style="margin-top: 2em; margin-bottom: 2em;">
+	Security, speed, compliance, and flexibility -- all of these describe lighttpd (<i>pron.</i> <b>lighty</b>) which is rapidly redefining efficiency of a webserver; as it is designed and optimized for high performance environments. With a small memory footprint compared to other web-servers, effective management of the cpu-load, and advanced feature set (FastCGI, SCGI, Auth, Output-Compression, URL-Rewriting and many more) lighttpd is the perfect solution for every server that is suffering load problems. And best of all it's Open Source licensed under the <a href="http://www.lighttpd.net/assets/COPYING">revised BSD license</a>.
+</p>
+
+<h2>Web 2.0</h2>
+<p>
+	lighttpd <a href="http://redmine.lighttpd.net/projects/lighttpd/wiki/PoweredByLighttpd">powers</a> several popular Web 2.0 sites. Its
+	high speed io-infrastructure allows them to <a href="http://www.lighttpd.net/benchmark">scale several times better</a> with the same hardware than with alternative web-servers.
+</p>
+<p>
+	This fast web server and its <a href="http://redmine.lighttpd.net/projects/lighttpd/wiki/DevelopersList">development team</a> create a web-server with the needs of the future web in mind:
+	<ul>
+		<li><a href="http://blog.lighttpd.net/articles/2006/11/29/faster-fastcgi">Faster FastCGI</a></li>
+		<li><a href="http://blog.lighttpd.net/articles/2006/11/27/comet-meets-mod_mailbox">COMET meets mod_mailbox</a></li>
+		<li><a href="http://blog.lighttpd.net/articles/2006/11/12/lighty-1-5-0-and-linux-aio">Async IO</a></li>
+	</ul>
+
+	Its event-driven architecture is optimized for a large number of parallel connections (keep-alive) which is important for high performance AJAX applications.</p>
+</p>
+
+<br />
+<h1>News</h1>
+
+
+
+<div class="entry">
+	<div class="entrytitle">
+		<h2><a href="/2014/3/12/1.4.35/">1.4.35</a></h2>
+		<h3>March 12, 2014</h3>
+	</div>
+
+	<div class="entrybody">
+		<h2>Important changes</h2>
+<p>This release contains a lot of bug fixes, many detected by scan.coverity.com (and more to come). The main reason for the release is a fix for an <span class="caps">SQL</span> injection (and path traversal) bug triggered by specially crafted (and invalid) Host: headers.</p>
+<h2>Security fixes</h2>
+<ul>
+	<li><a href="http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2014_01.txt">lighttpd SA-2014-01</a> (<a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2323"><span class="caps">CVE</span>-2014-2323</a>, <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2324"><span class="caps">CVE</span>-2014-2324</a>)</li>
+</ul>
+<h2>Downloads</h2>
+<ul>
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.gz">lighttpd-1.4.35.tar.gz</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.gz.asc"><span class="caps">GPG</span> signature</a>)
+	<ul>
+		<li>SHA256: <code>62c23de053fd82e1bf64f204cb6c6e44ba3c16c01ff1e09da680d982802ef1cc</code></li>
+	</ul></li>
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.bz2">lighttpd-1.4.35.tar.bz2</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.bz2.asc"><span class="caps">GPG</span> signature</a>)
+	<ul>
+		<li>SHA256: <code>4a71c1f6d8af41ed894b507720c4c17184dc320590013881d5170ca7f15c5bf7</code></li>
+	</ul></li>
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.xz">lighttpd-1.4.35.tar.xz</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.xz.asc"><span class="caps">GPG</span> signature</a>)
+	<ul>
+		<li>SHA256: <code>113e9b72ccbd1da5deb0774bf93cf0ca15dc82aad2da0f04e5ab27d37d3f30a3</code></li>
+	</ul></li>
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.sha256sum">SHA256 checksums</a></li>
+</ul>
+	</div>
+
+	<div class="entrymore"><a href="/2014/3/12/1.4.35/">Read more ...</a></div>
+</div>
+
+
+<div class="pagination pagination-centered"><ul>
+	<li class="disabled"><a href="/">«</a></li>
+	
+	
+		
+		
+	<li class="active"><a href="/">1</a></li>
+		
+	<li class=""><a href="/page2.html">2</a></li>
+		
+	
+		
+	<li class="disabled"><a>...</a></li>
+		
+		
+	<li class=""><a href="/page13.html">13</a></li>
+		
+	
+	<li class=""><a href="/page2.html">»</a></li>
+</ul></div>
+
+
+
+			</div>
+
+		</div>
+
+	</div></div>
+
+	<script src="/js/jquery-1.8.3.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

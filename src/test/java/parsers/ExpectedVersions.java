@@ -83,6 +83,7 @@ public class ExpectedVersions {
         expectedVersions.put("edge", "0.13.10122.0");
         expectedVersions.put("opera", "29.0.1795.60");
         expectedVersions.put("postgresql", "9.4.2");
+        expectedVersions.put("lighttpd", "1.4.35");
     }
 
     public Map<String, String> getExpectedVersions() {

@@ -36,7 +36,8 @@ var versions = [
     "category": { "id": "web_servers", "name": "Web servers" },
     "items": [
       { "id": "apache", "name": "Apache" },
-      { "id": "nginx", "name": "Nginx" }
+      { "id": "nginx", "name": "Nginx" },
+      { "id": "lighttpd", "name": "lighttpd" }
     ]
   }, {
     "category": { "id": "web_tools", "name": "Web tools" },

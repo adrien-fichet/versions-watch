@@ -96,6 +96,7 @@ Then :
 - [x] edge
 - [x] opera
 - [x] postgresql
+- [x] lighttpd
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus

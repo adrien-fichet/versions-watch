@@ -361,6 +361,11 @@ public class Conf {
                 "#pgFrontLatestReleasesWrap",
                 "(.*?) "
         ));
+        configurations.put("lighttpd", new VersionParserConfiguration(
+                "http://www.lighttpd.net/",
+                "#content > div.entry > div.entrytitle > h2 > a",
+                null
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
