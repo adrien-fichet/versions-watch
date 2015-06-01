@@ -97,6 +97,7 @@ Then :
 - [x] opera
 - [x] postgresql
 - [x] lighttpd
+- [x] bootstrap
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
@@ -111,7 +112,6 @@ Then :
 - [ ] lisp
 - [ ] lua
 - [ ] dart
-- [ ] bootstrap
 - [ ] polymer
 - [ ] react
 - [ ] backbone

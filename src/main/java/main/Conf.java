@@ -366,6 +366,11 @@ public class Conf {
                 "#content > div.entry > div.entrytitle > h2 > a",
                 null
         ));
+        configurations.put("bootstrap", new VersionParserConfiguration(
+                "http://getbootstrap.com/",
+                "#content > div > p.version",
+                "Currently v(.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
