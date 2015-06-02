@@ -85,6 +85,7 @@ public class ExpectedVersions {
         expectedVersions.put("postgresql", "9.4.2");
         expectedVersions.put("lighttpd", "1.4.35");
         expectedVersions.put("bootstrap", "3.3.4");
+        expectedVersions.put("ruby", "2.2.2");
     }
 
     public Map<String, String> getExpectedVersions() {

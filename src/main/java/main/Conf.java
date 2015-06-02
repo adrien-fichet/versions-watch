@@ -371,6 +371,12 @@ public class Conf {
                 "#content > div > p.version",
                 "Currently v(.*)"
         ));
+        configurations.put("ruby", new VersionParserConfiguration(
+                "https://www.ruby-lang.org/en/downloads/",
+                "#content > p.summary",
+                "Here you can get the latest Ruby distributions in your favorite flavor\\. The current stable " +
+                        "version is (.*?)\\. Please be sure to read Ruby’s License\\."
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

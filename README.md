@@ -98,12 +98,12 @@ Then :
 - [x] postgresql
 - [x] lighttpd
 - [x] bootstrap
+- [x] ruby
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
 - [ ] metasploit
 - [ ] latex
-- [ ] ruby
 - [ ] bash
 - [ ] zsh
 - [ ] css
@@ -129,4 +129,4 @@ Then :
 - [ ] salt
 
 ### Ideas
-- display links to versions websites when holding ctrl, or as a list at the end of the webpage
+- version numbers should also be links to versions websites
