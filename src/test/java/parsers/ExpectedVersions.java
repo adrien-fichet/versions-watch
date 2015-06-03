@@ -87,6 +87,7 @@ public class ExpectedVersions {
         expectedVersions.put("bootstrap", "3.3.4");
         expectedVersions.put("ruby", "2.2.2");
         expectedVersions.put("zsh", "5.0.7");
+        expectedVersions.put("ansible", "1.8.2");
     }
 
     public Map<String, String> getExpectedVersions() {

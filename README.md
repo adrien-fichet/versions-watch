@@ -100,6 +100,7 @@ Then :
 - [x] bootstrap
 - [x] ruby
 - [x] zsh
+- [x] ansible
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
@@ -124,7 +125,6 @@ Then :
 - [ ] openbsd
 - [ ] dropbox
 - [ ] wireshark
-- [ ] ansible
 - [ ] chef
 - [ ] salt
 

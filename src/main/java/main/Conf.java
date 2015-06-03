@@ -382,6 +382,11 @@ public class Conf {
                 "body > p:nth-child(4)",
                 "Download zsh (.*?) "
         ));
+        configurations.put("ansible", new VersionParserConfiguration(
+                "http://docs.ansible.com/",
+                "#about-ansible > p:nth-child(7)",
+                "This documentation covers the current released version of Ansible \\((.*?)\\)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

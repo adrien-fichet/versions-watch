@@ -89,7 +89,8 @@ var versions = [
       { "id": "puppet", "name": "Puppet" },
       { "id": "linux", "name": "Linux kernel" },
       { "id": "foreman", "name": "Foreman" },
-      { "id": "zsh", "name": "zsh" }
+      { "id": "zsh", "name": "zsh" },
+      { "id": "ansible", "name": "Ansible" }
     ]
   }, {
     "category": { "id": "virtualization", "name": "Virtualization" },
