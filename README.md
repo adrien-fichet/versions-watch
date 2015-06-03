@@ -99,13 +99,13 @@ Then :
 - [x] lighttpd
 - [x] bootstrap
 - [x] ruby
+- [x] zsh
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
 - [ ] metasploit
 - [ ] latex
 - [ ] bash
-- [ ] zsh
 - [ ] css
 - [ ] html
 - [ ] perl

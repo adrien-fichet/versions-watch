@@ -377,6 +377,11 @@ public class Conf {
                 "Here you can get the latest Ruby distributions in your favorite flavor\\. The current stable " +
                         "version is (.*?)\\. Please be sure to read Ruby’s License\\."
         ));
+        configurations.put("zsh", new VersionParserConfiguration(
+                "http://zsh.sourceforge.net/Arc/source.html",
+                "body > p:nth-child(4)",
+                "Download zsh (.*?) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

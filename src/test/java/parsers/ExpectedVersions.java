@@ -59,12 +59,12 @@ public class ExpectedVersions {
         expectedVersions.put("i3", "4.10.2");
         expectedVersions.put("linux", "4.0.4");
         expectedVersions.put("xfce", "4.12");
-        expectedVersions.put("elasticdump", "0.13.0");
+        expectedVersions.put("elasticdump", "0.13.1");
         expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11.2");
         expectedVersions.put("googlechrome", "43.0.2357.81");
-        expectedVersions.put("firefox", "38.0.1");
+        expectedVersions.put("firefox", "38.0.5");
         expectedVersions.put("gnomeshell", "3.17.2");
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.6");
@@ -86,6 +86,7 @@ public class ExpectedVersions {
         expectedVersions.put("lighttpd", "1.4.35");
         expectedVersions.put("bootstrap", "3.3.4");
         expectedVersions.put("ruby", "2.2.2");
+        expectedVersions.put("zsh", "5.0.7");
     }
 
     public Map<String, String> getExpectedVersions() {
