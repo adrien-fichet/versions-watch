@@ -1,549 +1,187 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-  <head>
-  <meta charset='utf-8' />
-  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script><![endif]-->
-  <title>Nexus Repository Managers - Try, Compare &amp; Buy - Nexus OSS Download - Sonatype.com</title>
-  <meta name="google-site-verification" content="ZCyWdPSAwP3oiI3mQ69AAmnrm5xTeXHXCO35h_9hxTI" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <a href="https://plus.google.com/117596333621717490325" rel="publisher" ></a>
-    <link rel="canonical" content="/nexus/try-compare-buy/try" />
-  <!-- OpenGraph fields - see http://opengraphprotocol.org/ -->
-  <meta property="og:title" content="Nexus Repository Managers - Try, Compare &amp; Buy - Nexus OSS Download - Sonatype.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.sonatype.com/nexus/try-compare-buy/try" />
-  <meta name="og:image" content="http://www.sonatype.com/assets/logo_200px-af83e2f1c041fc35cea73b1d0f2bd591.png" />
+<html lang="en">
 
-    <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Sonatype" />
-
-    
-
-  <link href="/assets/application-613fa2965e8aa24c30cfb63ecdce0978.css" media="all" rel="stylesheet" type="text/css" />
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css' />
-  <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' />
-
-  <link href="/assets/sliced-964e31c256abe0daffdd85ff06d720df.css" media="screen" rel="stylesheet" type="text/css" />
-
-
-  <script src="/assets/modernizr-min-b4e303bfcf93f58fdc3793a72ff25471.js" type="text/javascript"></script>
+<head>
+  <meta charset="utf-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <title>Sonatype Nexus Documentation - Sonatype.com</title>
   
+   <!-- stylesheets from asciidoc itself -->
+  <link href="css/asciidoc/asciidoc.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/asciidoc/xhtml11-quirks.css" media="screen" rel="stylesheet" type="text/css">
+  <!-- stylesheet from bootstrap as used in the clm application -->
+  <link href="css/default.css" media="screen" rel="stylesheet" type="text/css">
+  <!-- stylesheet that overrides and adapts all the above to make the clm docs look like we want -->
+  <link href="css/clmBook.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 
-  <body id="try-page" class='interim-slicing'>
-    <script type="text/javascript">
-      var js_hideme = document.createElement('style');
-          js_hideme.type = 'text/css';
-          js_hideme.innerText = '.js-hideme{display:none;}';
-      var dom_h = document.getElementsByTagName('head');
-      if (typeof(dom_h) !== 'undefined' && dom_h.length > 0) document.getElementsByTagName('head')[0].appendChild(js_hideme);
-    </script>
-    
-        <!-- header_interim.html.erb -->
-    <header class='header hidden-phone'>
-      <div class="header-bar">
+<body>
+<div class="first-row navbar navbar-fixed-top">
+    <div class="navbar-inner">
         <div class="container-fluid">
-          <div class="row-fluid">
-            <div class="span12" style='min-height: 29px;'>
-              <div class="pull-right">
-                <ul>
-                  <li>
-                    <a href="http://blog.sonatype.com/people/" title="Visit the Sonatype blog">
-                      <img src='/assets/sitelink-blog.png' /> Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.sonatype.org/nexus" title="Community" target="_blank">
-                      <img src='/assets/sitelink-community.png' /> Community
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.sonatype.com/support">
-                      <img src='/assets/sitelink-support.png' /> Support
-                    </a>
-                  </li>
-                  <li class="no-border">
-                    <a href="http://www.sonatype.com/contact">
-                      <img src='/assets/sitelink-contact.png' /> Contact
-                    </a>
-                  </li>
-                  <li class="form-holder">
-                    <form action="/search" novalidate="novalidate">
-                      <input type="hidden" name="cx" value="017156762307045728421:nxzwpnwhlg8">
-                      <input type="hidden" name="ie" value="ISO-8859-1">
-                      <input type="hidden" name="cof" value="FORID:10">
-                      <input type="text" name="q" placeholder="Search" value="">
-                      <input type="submit" value="&#xf002">
-                    </form>
-                  </li>
-                </ul>
-              </div>
+            <span class="title brand">
+                <a href="./index.html"><img alt="Logo" style="float:left;" src="images/sonatype-24.png"/>
+                <span class="company">Sonatype Nexus</span></a>
+                <span class="book-title">Documentation</span>
+            </span>
+            <div class="search-box" style="display: none;">
+                <form action="./search.html" novalidate="novalidate">
+                  <input type="hidden" name="cx" value="011059148005191787079:ji60ljomyh8">
+                  <input type="hidden" name="ie" value="ISO-8859-1">
+                  <input type="hidden" name="cof" value="FORID:10">
+                  <input type="text" name="q" placeholder="Search" class="text-input" value="">
+                  <input type="submit" value="" class="glyphicons-icon search">
+                </form>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
-
-    <div class="navbar navbar-inverse" id='nav-main'>
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="/"><img src='/assets/logo-navbar.png' /></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
-              
-
-
-  <li class='dropdown'>
-    <a href="/nexus/product-overview" aria-expanded="false" class="dropdown-toggle active" data-toggle="dropdown">Nexus</a>
-
-
-    <ul class='dropdown-menu multi-columns columns-3'>
-      <div class='row-fluid'>
-        <div class='span4'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/nexus/product-overview" class="">Product Overview</a><ul><li><a href="/nexus/product-overview/nexus-lifecycle" class="">Nexus Lifecycle</a></li><li><a href="/nexus/product-overview/nexus-pro-plus" class="">Nexus Pro+</a></li><li><a href="/nexus/product-overview/nexus-pro" class="">Nexus Pro</a></li><li><a href="/nexus/product-overview/nexus-auditor" class="">Nexus Auditor</a></li><li><a href="http://www.sonatype.org/nexus/go/" class="">Nexus OSS</a></li></ul></li><li><a href="/nexus/feature-tours" class="">Feature Tours</a><ul><li><a href="/nexus/feature-tours/oss-pro-pro-plus" class="">OSS, Pro, Pro+</a></li><li><a href="/nexus/feature-tours/lifecycle-auditor" class="">Lifecycle &amp; Auditor</a></li></ul></li>
-          </ul>
-        </div>
-        <div class='span4'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/nexus/customer-experiences" class="">Customer Experiences</a><ul><li><a href="/nexus/customer-experiences/nexus-repositories" class="">Nexus Repositories</a></li><li><a href="/nexus/customer-experiences/nexus-lifecycle-auditor" class="">Nexus Lifecycle, Auditor</a></li></ul></li>
-          </ul>
-        </div>
-        <div class='span4'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/nexus/try-compare-buy" class="parent">Compare, Try, Buy</a><ul><li><a href="/nexus/try-compare-buy/compare" class="">Compare</a></li><li><a href="/nexus/try-compare-buy/nexus-pro-free-trial" class="">Free Trial</a></li><li><a href="/nexus/try-compare-buy/buy" class="">Nexus Pro Purchase</a></li><li><a href="/nexus/try-compare-buy/nexus-requirements" class="">System Requirements</a></li><li><a href="http://books.sonatype.com/nexus-book/reference/eval.html" class="">Evaluation Guide</a></li><li><a href="/nexus/try-compare-buy/try" class="active">Nexus OSS Download</a></li><li><a href="/nexus/try-compare-buy/nexus-customer-downloads" class="">Customer Downloads</a></li></ul></li>
-          </ul>
-        </div>
-      </div>
-    </ul>
-</li>
-
-
-  <li class='dropdown'>
-    <a href="/resources" aria-expanded="false" class="dropdown-toggle " data-toggle="dropdown">Resources</a>
-
-
-    <ul class='dropdown-menu multi-columns columns-2'>
-      <div class='row-fluid'>
-        <div class='span6'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/resources" class="">Overview</a></li><li><a href="/resources/events/" class="">Events</a></li><li><a href="/resources/webinars" class="">Webinars</a></li><li><a href="/resources/videos" class="">Videos</a></li><li><a href="/resources/whitepapers" class="">Whitepapers</a></li><li><a href="http://www.sonatype.org/nexus/resources/resources-book-links-and-downloads/" class="">Books</a></li><li><a href="/resources/infographics" class="">Infographics</a></li><li><a href="/resources/product-information" class="">Product Information</a></li><li><a href="/education/overview" class="">Education</a></li><li><a href="/about/media/" class="">Articles</a></li>
-          </ul>
-        </div>
-        <div class='span6'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/about/press/" class="">News Releases</a></li><li><a href="http://blog.sonatype.com/" class="">Blog</a></li><li><a href="/about/success-stories" class="">Successes</a></li><li><a href="http://www.slideshare.net/SonatypeCorp" class="">Presentations</a></li><li><a href="/resources/nexus-now-newsletter" class="">Newsletter</a></li>
-          </ul>
-        </div>
-      </div>
-    </ul>
-</li>
-
-
-  <li class='dropdown'>
-    <a href="/assessments" aria-expanded="false" class="dropdown-toggle " data-toggle="dropdown">Assessments</a>
-
-
-    <ul class='dropdown-menu single-column'>
-    <li><a href="/assessments/overview" class="">Overview</a></li><li><a href="/assessments/application-health-check" class="">Application Health Check</a><ul><li><a href="/assessments/application-health-check/analyze-your-app" class="">Analyze Your App</a></li><li><a href="/assessments/application-health-check/apps-to-get-started-with" class="">Sample Applications</a></li><li><a href="/assessments/application-health-check/guide" class="">Guide</a></li><li><a href="/assessments/application-health-check/faq" class="">FAQ</a></li></ul></li><li><a href="/assessments/repository-health-check" class="">Repository Health Check</a></li>
-    </ul>
-</li>
-
-
-  <li class='dropdown'>
-    <a href="/spotlight" aria-expanded="false" class="dropdown-toggle " data-toggle="dropdown">Spotlight</a>
-
-
-    <ul class='dropdown-menu single-column'>
-    <li><a href="/spotlight/cyber-supply-chain-act" class="">Cyber Supply Chain Act</a></li><li><a href="/spotlight/financial-services" class="">Financial Services</a></li><li><a href="/spotlight/owasp-top-ten" class="">OWASP Top Ten</a></li><li><a href="/spotlight/pci-compliance" class="">PCI Compliance</a></li><li><a href="/spotlight/heartbleed" class="">Heartbleed</a></li>
-    </ul>
-</li>
-
-
-  <li class='dropdown'>
-    <a href="/education" aria-expanded="false" class="dropdown-toggle " data-toggle="dropdown">Education</a>
-
-
-    <ul class='dropdown-menu single-column'>
-    <li><a href="/education/overview" class="">Overview</a></li><li><a href="/education/free-nexus-pro-video-training" class="">Free Nexus Pro Video Training</a></li><li><a href="/education/nexus-best-practices" class="">Nexus Best Practices</a></li><li><a href="/education/nexus-lifecycle-quickstart" class="">Nexus Lifecycle Quickstart</a></li><li><a href="/education/nexus-lifecycle-developer" class="">Nexus Lifecycle Developer</a></li><li><a href="/education/nexus-lifecycle-policy" class="">Nexus Lifecycle Policy</a></li><li><a href="/education/nexus-lifecycle-champion" class="">Nexus Lifecycle Champion</a></li>
-    </ul>
-</li>
-
-
-  <li class='dropdown'>
-    <a href="/about" aria-expanded="false" class="dropdown-toggle " data-toggle="dropdown">About</a>
-
-
-    <ul class='dropdown-menu multi-columns columns-3'>
-      <div class='row-fluid'>
-        <div class='span4'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/about/overview" class="">Overview</a></li><li><a href="/about/media/" class="">Press</a><ul><li><a href="/about/media/" class="">Sonatype in the News</a></li><li><a href="/about/press/" class="">Press Releases</a></li></ul></li><li><a href="/nexus/customer-experiences" class="">Real World Experiences</a><ul><li><a href="/nexus/customer-experiences/nexus-lifecycle-auditor" class="">CLM</a></li><li><a href="/nexus/customer-experiences/nexus-repositories" class="">Nexus</a></li></ul></li>
-          </ul>
-        </div>
-        <div class='span4'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/about/leadership" class="">Leadership</a><ul><li><a href="/about/leadership/executives" class="">Executives</a></li><li><a href="/about/leadership/board-of-directors" class="">Board of Directors</a></li><li><a href="/about/leadership/sales-leadership" class="">Sales Leadership</a></li></ul></li><li><a href="/about/partners" class="">Partners</a><ul><li><a href="/about/partners/microsoft" class="">Microsoft NuGet</a></li><li><a href="/about/partners/fortify" class="">HP Fortify On Demand</a></li></ul></li><li><a href="/about/investors" class="">Investors</a></li><li><a href="/about/careers" class="">Careers</a></li><li><a href="/about/2014-open-source-software-development-survey" class="">2014 Survey</a></li>
-          </ul>
-        </div>
-        <div class='span4'>
-          <ul class='multi-column-dropdown'>
-            <li><a href="/about/raise-the-barr" class="">Raise the B.A.R.R.</a></li><li><a href="/about/secure-access-to-central" class="">Secure Access to Central</a></li><li><a href="/about/community-contributions" class="">Community Contributions</a></li>
-          </ul>
-        </div>
-      </div>
-    </ul>
-</li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
     </div>
-
-
-    <section class="content">
-      <div class="container">
-        <div class="content-box">
-
-          <div class='row'>
-            <div class='span12'>
-              <div class='content-title'>
-                <div class='inner-elements intro'>
-                  <h1>Try, Compare &amp; Buy</h1>
-                </div>
-              </div>
-
-                <div class='content-nav'>
-                  <nav class='nav-holder'>
-                    <div class='navbar'>
-                      <button class='btn btn-navbar' data-target='.nav-collapse-content-tabs' data-toggle='collapse' type='button'>
-                        <span class='icon-bar'></span>
-                        <span class='icon-bar'></span>
-                        <span class='icon-bar'></span>
-                      </button>
-                      <div class='nav-collapse nav-collapse-content-tabs collapse'>
-                          <ul>
-<li>
-<a href="/nexus/try-compare-buy/compare" class="">Compare</a>
-</li>
-<li>
-<a href="/nexus/try-compare-buy/nexus-pro-free-trial" class="">Free Trial</a>
-</li>
-<li>
-<a href="/nexus/try-compare-buy/buy" class="">Nexus Pro Purchase</a>
-</li>
-<li>
-<a href="/nexus/try-compare-buy/nexus-requirements" class="">System Requirements</a>
-</li>
-<li>
-<a href="http://books.sonatype.com/nexus-book/reference/eval.html" class="">Evaluation Guide</a>
-</li>
-<li>
-<a href="/nexus/try-compare-buy/try" class="selected">Nexus OSS Download</a>
-</li>
-<li>
-<a href="/nexus/try-compare-buy/nexus-customer-downloads" class="">Customer Downloads</a>
-</li>
-</ul>
-
-                      </div>
-                    </div>
-                  </nav>
-                </div>
-                <div class='content-title-shadow'>
-                  <img alt="" src="/assets/title-shadow.png" />
-                </div>
-            </div>
-          </div>
-
-          <section class='slice slice-order-2 two-panes '>
-            <div class='slice-wrapper container-fluid' >
-              <div class='slice-content '>
-
-            <div class="pane" style="background-color: #eef1f9;">
-<h2 style="color: #336699;">Nexus Repository Manager</h2>
-<h1>Open Source Edition - Free Download</h1>
-<table>
-<tbody><tr><td style="width: 48.2%; "><a class="button button-green" href="http://www.sonatype.org/nexus/thank-you-for-downloading/?dl=tgz" style="width: 65%;">Nexus OSS (TGZ)</a>
-</td>
-<td> </td>
-<td style="width: 48.2%;"><a href="http://www.sonatype.org/nexus/thank-you-for-downloading/?dl=zip" class="button button-green" style="width: 65%;">Nexus OSS (ZIP)</a>
-</td>
-</tr>
-<tr><td colspan="3">&#160;</td>
+</div>
+<div class="left-sidebar">
+  <div class="sidebarTitle"><a href="./index.html">Documentation Index</a></div>
+  <br />
+  <div class="sidebarServer">Repository Management with Nexus</div>
+  <div class="sidebar">For Nexus 3 Preview: <a href="./3.0/reference/index.html">HTML</a> | <a href="./3.0/pdf/nxbook-pdf.pdf">PDF</a></div>
+  <!-- links to latest/top level folder for HTML so that search is in context  -->
+  <div class="sidebar">For Nexus 2.11: <a href="./reference/index.html">HTML</a> | <a href="./2.11/pdf/nxbook-pdf.pdf">PDF</a></div>
+  <div class="sidebar">For Nexus 2.10: <a href="./2.10/reference/index.html">HTML</a> | <a href="./2.10/pdf/nxbook-pdf.pdf">PDF</a></div>
+  <div class="sidebar">For Nexus 2.9: <a href="./2.9/reference/index.html">HTML</a> | <a href="./2.9/pdf/nxbook-pdf.pdf">PDF</a></div>
+  <div class="sidebar">For Nexus 2.8: <a href="./2.8/reference/index.html">HTML</a> | <a href="./2.8/pdf/nxbook-pdf.pdf">PDF</a></div>
+  <br />
+  <div class="sidebarServer">Downloads of...</div>
+  <div class="sidebar"><a href="http://www.sonatype.org/nexus/go/" target="_blank">Nexus OSS</a></div>
+  <div class="sidebar"><a href="http://www.sonatype.com/nexus/free-trial" target="_blank">Nexus Pro Trial</a></div>
+  <div class="sidebar"><a href="http://links.sonatype.com/products/nexus/pro/download" target="_blank">Nexus Pro</a></div>
+  <br />
+  <div class="sidebarServer">Other Resources</div>
+  <div class="sidebar"><a href="http://support.sonatype.com/" target="_blank">Sonatype Support</a></div>
+  <div class="sidebar"><a href="http://www.sonatype.org/nexus/" target="_blank">Nexus Community</a></div>
+  <div class="sidebar"><a href="http://www.sonatype.com" target="_blank">Sonatype.com</a></div>
+  <div class="sidebar"><a href="http://books.sonatype.com/sonatype-clm-book/html/" target="_blank">Sonatype CLM Documentation</a></div>
+  <div class="sidebar"><a href="http://www.sonatype.com/nexus/compare-repos" target="_blank">Compare Nexus Editions</a></div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="span9">
+      <div class="header-title"><h1>Repository Management with Nexus</h1></div>
+      <!-- AddToAny BEGIN -->
+      <div align="right">
+        <a class="a2a_dd" href="http://www.addtoany.com/share_save"><img src="images/share_save_256_24.png" width="256" height="24" border="0" alt="Share"/></a>
+      </div>
+      <!-- AddToAny END -->
+    </div>
+    <div class="span3" id="sidebar"></div>
+  </div><!-- END row -->
+  <div class="row book-body">
+    <div class="span9">
+      <!-- content  -->
+      
+<div id="header">
+<h1>Documentation Index</h1>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>The documentation for the Sonatype Nexus repository manager is written
+and maintained to match the latest available, stable release:</p></div>
+<div class="paragraph"><p><a href="./reference/index.html">Sonatype Nexus 2.11 - go there now&#8230;</a></p></div>
+<div class="paragraph"><p>If you feel curious about whats next, you might want to check out
+<a href="https://support.sonatype.com/forums/23079216-Nexus-3-Milestone-Releases">Nexus
+3.0 preview releases</a> and the related
+<a href="./3.0/reference/index.html">documentation</a>, which we are constantly
+improving as well.</p></div>
+<div class="paragraph"><p>Additionally we make the documentation for some older releases available
+here for your convenience.</p></div>
+<div class="paragraph"><p>Please use the links on the navigation menu to access other resources
+related to the Sonatype Nexus repository manager and the Nexus
+Lifecycle suite of tools.</p></div>
+<div class="paragraph"><p>If you need any further assistance, please don&#8217;t hesitate to consult
+<a href="https://support.sonatype.com/home">https://support.sonatype.com/home</a>
+or contact us at <a href="mailto:support@sonatype.com">support@sonatype.com</a>.</p></div>
+<div class="paragraph"><p>Thanks and we look forward to your feedback,</p></div>
+<div class="paragraph"><p>The Sonatype Nexus Team</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archives">Archives</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>As mentioned previously, our documentation is kept in sync with the
+latest available version of the Sonatype Nexus repository manager. The
+following table displays all available versions and formats of the
+documentation, in case you need access to older versions.</p></div>
+<div class="tableblock" id="nexus-doc-versions">
+<table rules="all"
+width="100%"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table 1. Nexus Documentation Versions</caption>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Nexus Version</p></td>
+<td align="left" valign="top"><p class="table">HTML</p></td>
+<td align="left" valign="top"><p class="table">PDF</p></td>
+<td align="left" valign="top"><p class="table">EPUB</p></td>
 </tr>
 <tr>
-<td>Checksums: <a href="http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz.md5">MD5</a> <a href="http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz.sha1">SHA</a>
-<br />Signature: <a href="http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz.asc">PGP</a>
-</td>
-<td> </td>
-<td>Checksums: <a href="http://www.sonatype.org/downloads/nexus-latest-bundle.zip.md5">MD5</a> <a href="http://www.sonatype.org/downloads/nexus-latest-bundle.zip.sha1">SHA</a>
-<br />Signature: <a href="http://www.sonatype.org/downloads/nexus-latest-bundle.zip.asc">PGP</a>
-</td>
+<td align="left" valign="top"><p class="table">3.0 Preview</p></td>
+<td align="left" valign="top"><p class="table"><a href="./3.0/reference/index.html">View</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./3.0/pdf/nxbook-pdf.pdf">Download</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./3.0/other/nexus-book.epub">Download</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.11</p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.11/reference/index.html">View</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.11/pdf/nxbook-pdf.pdf">Download</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.11/other/nexus-book.epub">Download</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.10</p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.10/reference/index.html">View</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.10/pdf/nxbook-pdf.pdf">Download</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.10/other/nexus-book.epub">Download</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.9</p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.9/reference/index.html">View</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.9/pdf/nxbook-pdf.pdf">Download</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.9/other/nexus-book.epub">Download</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.8</p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.8/reference/index.html">View</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="./2.8/pdf/nxbook-pdf.pdf">Download</a></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Powerful repository manager for Maven, NPM, .NuGet and other formats</li>
-<li>Proxy external repositories and host private internal repositories</li>
-<li>Support for build tools such as Maven, Gradle, Ant, npm, nuget</li>
-<li>Feature rich, configurable user interface with search, security restrictions and more</li>
-<li>Free to use and embed (source), Eclipse Public License</li>
-</ul>
+</div>
+<div class="paragraph"><p>Even older versions are only available in the
+<a href="https://github.com/sonatype/nexus-book">documentation source code
+repository</a> and require you to build the desired outputs from source.</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2015-05-28 12:33:51 EDT
+</div>
 </div>
 
-<div class="pane" style="background-color: #f9f9f9;">
-<h2>Nexus Repository Manager</h2>
-<h1>Nexus Pro Edition - Free 14-day trial</h1>
-<p style="text-align: center; margin-bottom: 1em;"><a class="button button-green" href="/nexus/try-compare-buy/nexus-pro-free-trial">Download Free Trial</a>
-</p>
-<ul>
-<li>Enterprise-ready expansion of Nexus OSS with additional security integrations and features</li>
-<li>Suitable to scale for large, distributed organizations</li>
-<li>Includes rich component security and license information feed data exposed in the user interface&#160;</li>
-<li>Features to enforce and improve your software release quality</li>
-<li>Licensed for unlimited deployments in your enterprise and backed by our support team</li>
-<li>For an evaluation of our other Nexus products, please <a href="/contact/general-inquiry" title="General Inquiry">contact us</a>.</li>
-</ul>
-</div>
-                
-              </div>
-            </div>
-          </section>
-
-          <section class='slice slice-order-3 full-width-static orangetintbg'>
-            <div class='slice-wrapper container-fluid' >
-              <div class='slice-content center setwidth'>
-
-            <p style="padding-bottom: 1em;">Version: 2.11.2, <a href="http://www.sonatype.org/nexus/archived">OSS archives</a>, <a href="nexus/try-compare-buy/nexus-requirements">System Requirements</a>,&#160;<a href="http://books.sonatype.com/nexus-book/reference/install.html">Installation Instructions</a> and <a href="http://links.sonatype.com/products/nexus/releasenotes" target="_blank">Release Notes</a>
-</p>
-                
-              </div>
-            </div>
-          </section>
-
-          <section class='slice slice-order-4 multiple-small-images '>
-            <div class='slice-wrapper container-fluid' >
-              <div class='slice-content '>
-
-            <div class="image" style="width: 160px;">
-<a href="http://www.sonatype.org/nexus/content/uploads/2014/11/Nexus-Pro-Deployment-Guidelines.pdf"><img src="/assets/slices/icon-orange-squares.png" /></a>
-<p><a href="http://www.sonatype.org/nexus/content/uploads/2014/11/Nexus-Pro-Deployment-Guidelines.pdf">Nexus Deployment Guide</a>
-</p>
-</div>
-
-<div class="image" style="width: 160px;">
-<a href="http://www.sonatype.org/nexus"><img src="/assets/slices/icon-orange-users.png" /></a>
-<p><a href="http://www.sonatype.org/nexus">Join THENEXUS Community</a>
-</p>
-</div>
-
-<div class="image" style="width: 160px;">
-<a href=" http://links.sonatype.com/products/nexus/pro-eval/eval-guide.html "><img src="/assets/slices/icon-orange-openbook.png" /></a>
-<p><a href=" http://links.sonatype.com/products/nexus/pro-eval/eval-guide.html ">Download free NEXUS Evaluation Guide</a>
-</p>
-</div>
-
-<div class="image" style="width: 160px;">
-<a href="https://support.sonatype.com/forums"><img src="/assets/slices/icon-orange-bookmark.png" /></a>
-<p><a href="https://support.sonatype.com/forums">Bookmark free Nexus support</a>
-</p>
-</div>
-
-<div class="image" style="width: 160px;">
-<a href="http://img.en25.com/Web/SonatypeInc/%7Ba5328c20-6433-472c-8951-82c16200b324%7D_Nexus-Repo-Datasheet-May.pdf"><img src="/assets/slices/icon-orange-pencil.png" /></a>
-<p><a href="http://img.en25.com/Web/SonatypeInc/%7Ba5328c20-6433-472c-8951-82c16200b324%7D_Nexus-Repo-Datasheet-May.pdf">Benefits of a Repository</a>
-</p>
-</div>
-
-<div style="width: 100%;">&#160;</div>
-                
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </section>
-
-    
-
-    <footer class="footer">
-      <div class="container-fluid">
-  <div class="inner-elements">
-    
-<nav id='footer-menu' class='nav-holder'>
-  <div class="navbar">
-    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse-footer">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="nav-collapse nav-collapse-footer collapse">
-      <ul class="nav footer-nav row-fluid">
-        <li>
-  <a href="/nexus/product-overview" class="has-child">Nexus</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/nexus/try-compare-buy" class="has-child">Compare, Try, Buy</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/nexus/try-compare-buy/nexus-pro-free-trial" class="has-child">Free Trial</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="http://books.sonatype.com/nexus-book/reference/eval.html" class="">Nexus Eval Guide</a></li>    </ul>
-</li><li>
-  <a href="/nexus/try-compare-buy/compare" class="">Compare</a></li><li>
-  <a href="/nexus/try-compare-buy/buy" class="">Nexus Pro Purchase</a></li><li>
-  <a href="/nexus/try-compare-buy/try" class="">Nexus OSS Download</a></li><li>
-  <a href="/nexus/try-compare-buy/nexus-customer-downloads" class="">Customer Downloads</a></li><li>
-  <a href="http://books.sonatype.com/nexus-book/reference/eval.html" class="">Evaluation Guide</a></li>    </ul>
-</li><li>
-  <a href="/nexus/product-overview" class="has-child">Product Overview</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/nexus/product-overview/nexus-lifecycle" class="">Nexus Lifecycle</a></li><li>
-  <a href="/nexus/product-overview/nexus-pro" class="">Nexus Pro</a></li><li>
-  <a href="/nexus/product-overview/nexus-pro-plus" class="">Nexus Pro+</a></li><li>
-  <a href="/nexus/product-overview/nexus-auditor" class="">Nexus Auditor</a></li><li>
-  <a href="http://www.sonatype.org/nexus/go/" class="">Nexus OSS</a></li>    </ul>
-</li><li>
-  <a href="/nexus/customer-experiences" class="has-child">Customer Experiences</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/nexus/customer-experiences/nexus-lifecycle-auditor" class="">Nexus Lifecycle, Auditor</a></li><li>
-  <a href="/nexus/customer-experiences/nexus-repositories" class="">Nexus Repositories</a></li>    </ul>
-</li><li>
-  <a href="/nexus/feature-tours" class="has-child">Feature Tours</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/nexus/feature-tours/lifecycle-auditor" class="">Lifecycle &amp; Auditor</a></li><li>
-  <a href="/nexus/feature-tours/oss-pro-pro-plus" class="">OSS, Pro, Pro+</a></li>    </ul>
-</li>    </ul>
-</li><li>
-  <a href="/education" class="has-child">Education</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/education/free-nexus-pro-video-training" class="">Free Nexus Pro Video Training</a></li><li>
-  <a href="/education/nexus-best-practices" class="">Nexus Best Practices</a></li><li>
-  <a href="/education/nexus-lifecycle-policy" class="">Nexus Lifecycle Policy</a></li><li>
-  <a href="/education/overview" class="">Overview</a></li><li>
-  <a href="/education/nexus-lifecycle-champion" class="">Nexus Lifecycle Champion</a></li><li>
-  <a href="/education/nexus-lifecycle-quickstart" class="">Nexus Lifecycle Quickstart</a></li><li>
-  <a href="/education/nexus-lifecycle-developer" class="">Nexus Lifecycle Developer</a></li>    </ul>
-</li><li>
-  <a href="/resources" class="has-child">Resources</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="http://www.sonatype.org/nexus/resources/resources-book-links-and-downloads/" class="">Books</a></li><li>
-  <a href="/resources/videos" class="">Videos</a></li><li>
-  <a href="/resources/events/" class="">Events</a></li><li>
-  <a href="/resources/webinars" class="">Webinars</a></li><li>
-  <a href="/resources/product-information" class="">Product Information</a></li><li>
-  <a href="/education/overview" class="">Education</a></li><li>
-  <a href="/resources/whitepapers" class="">Whitepapers</a></li><li>
-  <a href="/resources/infographics" class="">Infographics</a></li><li>
-  <a href="/about/press/" class="">News Releases</a></li><li>
-  <a href="http://blog.sonatype.com/" class="">Blog</a></li><li>
-  <a href="/about/media/" class="">Articles</a></li><li>
-  <a href="/about/success-stories" class="">Successes</a></li><li>
-  <a href="http://www.slideshare.net/SonatypeCorp" class="">Presentations</a></li><li>
-  <a href="/resources/nexus-now-newsletter" class="">Newsletter</a></li>    </ul>
-</li><li>
-  <a href="/about" class="has-child">About</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/about/secure-access-to-central" class="">Secure Access to Central</a></li><li>
-  <a href="/about/overview" class="">Overview</a></li><li>
-  <a href="/about/investors" class="">Investors</a></li><li>
-  <a href="/about/leadership" class="has-child">Leadership</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/about/leadership/executives" class="">Executives</a></li><li>
-  <a href="/about/leadership/board-of-directors" class="">Board of Directors</a></li><li>
-  <a href="/about/leadership/sales-leadership" class="">Sales Leadership</a></li>    </ul>
-</li><li>
-  <a href="/about/partners" class="has-child">Partners</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/about/partners/fortify" class="">HP Fortify On Demand</a></li><li>
-  <a href="/about/partners/microsoft" class="">Microsoft NuGet</a></li>    </ul>
-</li><li>
-  <a href="/about/community-contributions" class="">Community Contributions</a></li><li>
-  <a href="/about/2014-open-source-software-development-survey" class="">2014 Survey</a></li><li>
-  <a href="/about/raise-the-barr" class="">Raise the B.A.R.R.</a></li><li>
-  <a href="/about/careers" class="">Careers</a></li><li>
-  <a href="/about/media/" class="">Press</a></li><li>
-  <a href="/nexus/customer-experiences" class="has-child">Real World Experiences</a>      <ul class='clearfix sub-menu'>
-        <li>
-  <a href="/nexus/customer-experiences/nexus-lifecycle-auditor" class="">CLM</a></li><li>
-  <a href="/nexus/customer-experiences/nexus-repositories" class="">Nexus</a></li>    </ul>
-</li>    </ul>
-</li>        <li class="span2">
-          <h6>Connect</h6>
-          <div class="footer-social">
-            <a href="http://blog.sonatype.com/people/" target="_blank">
-              <img src="http://www.sonatype.com/system/images/W1siZiIsIjIwMTMvMDkvMjUvMTgvNTQvMTQvMzA1L2ljb25fZm9vdGVyQmxvZy5wbmciXV0/icon_footerBlog.png" />
-            </a>
-            <a href="http://twitter.com/Sonatype" target="_blank">
-              <img src="http://www.sonatype.com/system/images/W1siZiIsIjIwMTMvMDkvMjUvMTgvNTQvMTYvNzA3L2ljb25fZm9vdGVyVHdpdHRlci5wbmciXV0/icon_footerTwitter.png" />
-            </a>
-            <br/>
-            <a href="http://www.sonatype.com/resources/nexus-now-newsletter" target="_blank">
-              <img src="http://www.sonatype.com/system/images/W1siZiIsIjIwMTMvMDkvMjUvMTgvNTQvMTUvMzc0L2ljb25fZm9vdGVyTmV3c2xldHRlci5wbmciXV0/icon_footerNewsletter.png" />
-            </a>
-            <a href="http://www.facebook.com/sonatype" target="_blank">
-              <img src="http://www.sonatype.com/system/images/W1siZiIsIjIwMTMvMDkvMjUvMTgvNTQvMTUvMTkwL2ljb25fZm9vdGVyRmFjZWJvb2sucG5nIl1d/icon_footerFacebook.png" />
-            </a>
-            <br/>
-            <a href="http://www.linkedin.com/company/sonatype" target="_blank">
-              <img src="http://www.sonatype.com/system/images/W1siZiIsIjIwMTMvMDkvMjUvMTgvNTQvMTUvOTM1L2ljb25fZm9vdGVyTGlua2VkaW4ucG5nIl1d/icon_footerLinkedin.png" />
-            </a>
-            <a href="http://www.youtube.com/user/sonatype" target="_blank">
-              <img src="http://www.sonatype.com/system/images/W1siZiIsIjIwMTMvMDkvMjUvMTgvNTQvMTYvNzUzL2ljb25fZm9vdGVyWW91dHViZS5wbmciXV0/icon_footerYoutube.png" />
-            </a>
-            <br/>
-            <a href="https://plus.google.com/117596333621717490325?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
-              <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:24px;height:24px;"/>
-            </a>
-          </div>
-        </li>
-      </ul>
+      <!-- contend  ends -->
     </div>
-  </div>
-</nav>
-
-
-    <div class="row-fluid">
-      <div class="span12 copyright">
-        <p>
-          <a href="/usage/terms-of-service">Terms of Service</a> &nbsp; <a href="/usage/privacy-policy">Privacy Policy</a><br>
-          Copyright &copy; 2008-2015, Sonatype Inc. All rights reserved. Includes the third-party code 
-          listed here. Sonatype and Sonatype Nexus are trademarks of Sonatype, Inc. Apache Maven 
-          and Maven are trademarks of the Apache Software Foundation. M2Eclipse is a trademark of 
-          the Eclipse Foundation. All other trademarks are the property of their respective owners.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>    </footer>
-
-    
-
-
-<script src="/assets/application-a73068f49226ba52d2dc5e8e8a70c994.js" type="text/javascript"></script>
-
-  <script type="text/javascript">if (typeof NREUMQ !== "undefined") { if (!NREUMQ.f) { NREUMQ.f=function() {
-NREUMQ.push(["load",new Date().getTime()]);
-var e=document.createElement("script");
-e.type="text/javascript";
-e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
-  "js-agent.newrelic.com/nr-100.js";
-document.body.appendChild(e);
-if(NREUMQ.a)NREUMQ.a();
-};
-NREUMQ.a=window.onload;window.onload=NREUMQ.f;
-};
-NREUMQ.push(["nrfj","bam.nr-data.net","6f6612a326","2186366","cw1ZRUZXXl4HQkoRUFYLWVRGQR1CA1cAEBpDClhG",17,258,new Date().getTime(),"","","","",""]);}</script></body>
+    <div class="span3" id="sidebar"></div>
+  </div><!-- END row -->
+</div><!-- END content -->
+  
+  <!-- google analytics -->
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/analytics.js" type="text/javascript"></script>
+  <!-- Table of Contents rendered by Javascript -->
+  <!-- <script src="js/asciidoc-toc.js" type="text/javascript"></script>  -->
+  <script type="text/javascript" src="js/addtoany-page.js"></script>
+</body>
 </html>

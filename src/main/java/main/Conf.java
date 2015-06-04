@@ -255,9 +255,9 @@ public class Conf {
                 "v.*? or v(.*)"
         ));
         configurations.put("nexus", new VersionParserConfiguration(
-                "http://www.sonatype.com/nexus/try-compare-buy/try",
-                "#try-page > section > div > div > section.slice.slice-order-3.full-width-static.orangetintbg > div > div > p",
-                "Version: (.*?),"
+                "https://books.sonatype.com/nexus-book/index.html",
+                "#preamble > div > div:nth-child(2) > p > a",
+                "Sonatype Nexus (.*?) - go there now"
         ));
         configurations.put("googlechrome", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Google_Chrome",
@@ -386,6 +386,11 @@ public class Conf {
                 "http://docs.ansible.com/",
                 "#about-ansible > p:nth-child(7)",
                 "This documentation covers the current released version of Ansible \\((.*?)\\)"
+        ));
+        configurations.put("polymer", new VersionParserConfiguration(
+                "https://github.com/Polymer/polymer/releases",
+                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
+                "v(.*)"
         ));
     }
 

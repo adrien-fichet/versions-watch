@@ -53,7 +53,8 @@ var versions = [
       { "id": "angularjs", "name": "Angular JS" },
       { "id": "drupal", "name": "Drupal" },
       { "id": "wordpress", "name": "WordPress" },
-      { "id": "bootstrap", "name": "Bootstrap" }
+      { "id": "bootstrap", "name": "Bootstrap" },
+      { "id": "polymer", "name": "Polymer" }
     ]
   }, {
     "category": { "id": "browsers", "name": "Web browsers" },

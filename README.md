@@ -101,6 +101,7 @@ Then :
 - [x] ruby
 - [x] zsh
 - [x] ansible
+- [x] polymer
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
@@ -113,7 +114,6 @@ Then :
 - [ ] lisp
 - [ ] lua
 - [ ] dart
-- [ ] polymer
 - [ ] react
 - [ ] backbone
 - [ ] emberjs

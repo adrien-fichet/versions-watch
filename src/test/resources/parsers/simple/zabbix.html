@@ -3,11 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Zabbix :: The Enterprise-Class Open Source Network Monitoring Solution</title>
-<meta name="COPYRIGHT" content="Copyright (c) 2010 Zabbix SIA"/><meta name="title" content="Zabbix - Enterprise Class Network Monitoring Tool"/>
-<meta name="author" content="Zabbix SIA"/>
-<meta name="abstract" content="Zabbix is an enterprise-class open source distributed monitoring solution. A mature tool for network monitoring."/>
-<meta name="description" content="Zabbix is an enterprise-class open source distributed monitoring solution for networks and applications. A mature tool for network monitoring."/>
-<meta name="keywords" content="zabbix, zabbix monitoring, network monitor, free network monitor, free monitoring, free network monitor, network monitoring, linux monitoring, windows monitoring, alerts, alerting, gnu, linux, aix, hp-ux, windows, integrity checking, logging services, capacity planning,snmp, it services, trending, distributed monitoring, web monitoring, agentless monitoring, sla"/>
+<meta name="COPYRIGHT" content="Copyright (c) 2010 Zabbix SIA"/><meta name="title" content="Zabbix - Enterprise Class Network Monitoring Platform"/>
+<meta name="author" content="Zabbix LLC"/>
+<meta name="abstract" content="Zabbix is an uncompromising mature enterprise-level platform for distributed network monitoring of millions of metrics."/>
+<meta name="description" content="Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics."/>
+<meta name="keywords" content="zabbix, zabbix monitoring, network monitoring, free network monitoring, linux monitoring, windows monitoring,monitoring alerts, alerting, gnu, linux, aix, hp-ux, windows, integrity checking, logging services, capacity planning,snmp, it services, trending, distributed monitoring, web monitoring, agentless monitoring, sla"/>
 <link rel="stylesheet" href="http://www.zabbix.com/css/zabbix15.css?rand=123124" type="text/css"/>
 <link rel="stylesheet" href="http://www.zabbix.com/css/css3_2.css" type="text/css"/>
 <link rel="stylesheet" href="http://www.zabbix.com/css/basic.css" type="text/css"/>
@@ -230,6 +230,10 @@ function nav()
    window.location.href = url_add;
    }
 </script>
+
+<link rel="alternate" hreflang="en" href="http://www.zabbix.com/" />
+<link rel="alternate" hreflang="ru" href="http://www.zabbix.com/ru/" />
+<link rel="alternate" hreflang="jp" href="http://www.zabbix.com/jp/" />
 <!--[if IE 5]><style> div.image-title { display:none } </style><![endif]-->
 <!--[if IE 6]><style> td.customers a { margin: 20px 27px; } </style><![endif]-->
 </head>
@@ -276,10 +280,14 @@ function nav()
 							<h4><a href="presentation.php"><img alt="Introduction to Zabbix" src="http://www.zabbix.com/img/pics/menu/play.png"/></a></h4>
 							<h3>Introduction to Zabbix</h3>
 						</div>
-						<div class="col_2">
+						 <div class="col_2">
+				<h4 style="padding-top:4px;"><a href="documentation.php"><img alt="Documentation" src="http://www.zabbix.com/img/pics/menu/documentation.png"/></a></h4>
+                <h3>Documentation</h3>
+            </div>
+						<!--<div class="col_2">
 							<h4><a href="download.php"><img alt="Download Zabbix" src="http://www.zabbix.com/img/pics/menu/download.png"/></a></h4>
 							<h3>Download Zabbix</h3>
-						</div>
+						</div>-->
 					</div>
 				</li>
 
@@ -373,13 +381,16 @@ function nav()
                 <ul>
 					<li><a class="drop highlight" href="download.php">Download</a></li>
 					<li><a class="drop highlight" href="download2.php">Download Old Releases</a></li>
+					
+					<!--<li><a class="drop highlight" href="third_party_tools.php"></a></li>-->
+					<!--<li><a class="drop highlight" href="http://share.zabbix.com"></a></li>-->
+					<li><a class="drop highlight" href="documentation.php">Documentation</a></li>
 					<li><a class="drop highlight" href="rn2.4.5.php">Release Notes</a></li>
-					<li><a class="drop highlight" href="third_party_tools.php">3rd Party Tools</a></li>
                 </ul>
             </div>
-            <div class="col_2">
-				<h4 style="padding-top:4px;"><a href="documentation.php"><img alt="Documentation" src="http://www.zabbix.com/img/pics/menu/documentation.png"/></a></h4>
-                <h3>Documentation</h3>
+			<div class="col_2">
+				<h4 style="padding-top:4px;"><a target="_blank" id="menu_share_icon" href="http://share.zabbix.com"></a></h4>
+                <h3><a target="_blank" style="text-decoration: none; color: inherit; font-size: inherit;" href="http://share.zabbix.com">Templates, Modules & More</a></h3>
             </div>
         </div>
     </li>
@@ -447,7 +458,7 @@ function nav()
 </div>
 
 <!-- Central column -->
-<div class="clearfix"><div class="left_col"><div class="leftmenu"><h2>Download</h2><h4 style="border-top: 1px" class="selected"><a href="http://www.zabbix.com/download.php">Download</a></h4><h4 ><a href="http://www.zabbix.com/download2.php">Download Old Releases</a></h4><h4 ><a href="http://www.zabbix.com/rn2.4.5.php">Release Notes</a></h4><h4 ><a href="http://www.zabbix.com/third_party_tools.php">3rd Party Tools</a></h4></div></div><div id="content" class="inner"><!-- Start of article body -->
+<div class="clearfix"><div class="left_col"><div class="leftmenu"><h2>Download</h2><h4 style="border-top: 1px" class="selected"><a href="http://www.zabbix.com/download.php">Download</a></h4><h4 ><a href="http://www.zabbix.com/download2.php">Download Old Releases</a></h4><h4 ><a href="http://www.zabbix.com/rn2.4.5.php">Release Notes</a></h4><h4 ><a href="http://share.zabbix.com">Templates, Modules and More</a></h4><h4 ><a href="http://www.zabbix.com/third_party_tools.php">3rd Party Tools</a></h4></div></div><div id="content" class="inner"><!-- Start of article body -->
 <div class="article"><div class="section_header_support">Zabbix Packages</div>
 <table class="inline">
 <tr>
