@@ -397,6 +397,11 @@ public class Conf {
                 "#mw-content-text > div > table > tbody > tr:nth-child(1) > td:nth-child(3) > a",
                 "fail2ban-(.*)"
         ));
+        configurations.put("go", new VersionParserConfiguration(
+                "https://golang.org/",
+                "#footer",
+                "Build version go(([0-9]\\.){2}[0-9])\\."
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

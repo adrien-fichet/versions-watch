@@ -103,6 +103,7 @@ Then :
 - [x] ansible
 - [x] polymer
 - [x] fail2ban
+- [x] go
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus

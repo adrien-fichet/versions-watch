@@ -90,6 +90,7 @@ public class ExpectedVersions {
         expectedVersions.put("ansible", "1.8.4");
         expectedVersions.put("polymer", "1.0.2");
         expectedVersions.put("fail2ban", "0.9.1");
+        expectedVersions.put("go", "1.4.2");
     }
 
     public Map<String, String> getExpectedVersions() {
