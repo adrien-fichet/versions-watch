@@ -106,7 +106,8 @@ var versions = [
     "items": [
       { "id": "openssl", "name": "OpenSSL" },
       { "id": "openssh", "name": "OpenSSH" },
-      { "id": "nmap", "name": "Nmap" }
+      { "id": "nmap", "name": "Nmap" },
+      { "id": "fail2ban", "name": "Fail2ban" }
     ]
   }, {
     "category": { "id": "java", "name": "Java" },

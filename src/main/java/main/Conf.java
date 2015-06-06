@@ -392,6 +392,11 @@ public class Conf {
                 "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
                 "v(.*)"
         ));
+        configurations.put("fail2ban", new VersionParserConfiguration(
+                "http://www.fail2ban.org/wiki/index.php/Downloads",
+                "#mw-content-text > div > table > tbody > tr:nth-child(1) > td:nth-child(3) > a",
+                "fail2ban-(.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

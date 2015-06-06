@@ -102,6 +102,7 @@ Then :
 - [x] zsh
 - [x] ansible
 - [x] polymer
+- [x] fail2ban
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
@@ -119,7 +120,6 @@ Then :
 - [ ] emberjs
 - [ ] openbox
 - [ ] naxsi
-- [ ] fail2ban
 - [ ] memcached
 - [ ] varnish
 - [ ] openbsd
