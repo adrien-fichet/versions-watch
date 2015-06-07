@@ -402,6 +402,11 @@ public class Conf {
                 "#footer",
                 "Build version go(([0-9]\\.){2}[0-9])\\."
         ));
+        configurations.put("metasploit", new VersionParserConfiguration(
+                "https://github.com/rapid7/metasploit-framework/wiki/Downloads-by-Version",
+                "#wiki-body > div > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(1) > a",
+                "metasploit-(.*?)-"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

@@ -57,7 +57,7 @@ public class ExpectedVersions {
         expectedVersions.put("vim", "7.4.729");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
-        expectedVersions.put("linux", "4.0.4");
+        expectedVersions.put("linux", "4.0.5");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.13.1");
         expectedVersions.put("solr", "5.1.0");
@@ -91,6 +91,7 @@ public class ExpectedVersions {
         expectedVersions.put("polymer", "1.0.2");
         expectedVersions.put("fail2ban", "0.9.1");
         expectedVersions.put("go", "1.4.2");
+        expectedVersions.put("metasploit", "4.11.2");
     }
 
     public Map<String, String> getExpectedVersions() {

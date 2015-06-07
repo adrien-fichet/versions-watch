@@ -108,7 +108,8 @@ var versions = [
       { "id": "openssl", "name": "OpenSSL" },
       { "id": "openssh", "name": "OpenSSH" },
       { "id": "nmap", "name": "Nmap" },
-      { "id": "fail2ban", "name": "Fail2ban" }
+      { "id": "fail2ban", "name": "Fail2ban" },
+      { "id": "metasploit", "name": "Metasploit Frwk" }
     ]
   }, {
     "category": { "id": "java", "name": "Java" },

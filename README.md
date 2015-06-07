@@ -104,10 +104,10 @@ Then :
 - [x] polymer
 - [x] fail2ban
 - [x] go
+- [x] metasploit
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
-- [ ] metasploit
 - [ ] latex
 - [ ] bash
 - [ ] css
