@@ -204,6 +204,107 @@
 <li><a href="./pylucene/index.html">PyLucene</a> is a Python port of the Core project.</li>
 </ul>
 <div><h1 id="lucenewzxhzdk0tmwzxhzdk1-news">Lucene<span style="vertical-align: super; font-size: xx-small">TM</span> News</h1>
+<h2 id="7-june-2015-apache-lucene-520-and-apache-solr-520-available">7 June 2015 - Apache Lucene 5.2.0 and Apache Solr 5.2.0 Available</h2>
+<p>The Lucene PMC is pleased to announce the availability
+of Apache Lucene 5.2.0 and Apache Solr 5.2.0.</p>
+<p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/java/5.2.0">http://www.apache.org/dyn/closer.cgi/lucene/java/5.2.0</a>
+and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/solr/5.2.0">http://www.apache.org/dyn/closer.cgi/lucene/solr/5.2.0</a></p>
+<h3 id="highlights-of-this-lucene-release-include">Highlights of this Lucene release include:</h3>
+<ul>
+<li>
+<p>Span queries now share document conjunction/intersection code with boolean queries, and use two-phased iterators for faster intersection by avoiding loading positions in certain cases.</p>
+</li>
+<li>
+<p>Added two-phase support to SpanNotQuery, and SpanPositionCheckQuery and its subclasses: SpanPositionRangeQuery, SpanPayloadCheckQuery, SpanNearPayloadCheckQuery, SpanFirstQuery.</p>
+</li>
+<li>
+<p>Added a new query time join to the join module that uses global ordinals, which is faster for subsequent joins between reopens.</p>
+</li>
+<li>
+<p>New CompositeSpatialStrategy combines speed of RPT with accuracy of SDV. Includes optimized Intersect predicate to avoid many geometry checks. Uses TwoPhaseIterator.</p>
+</li>
+<li>
+<p>New LimitTokenOffsetFilter that limits tokens to those before a configured maximum start offset.</p>
+</li>
+<li>
+<p>New spatial PackedQuadPrefixTree, a generally more efficient choice than QuadPrefixTree, especially for high precision shapes. When used, you should typically disable RPT's pruneLeafyBranches option.</p>
+</li>
+<li>
+<p>Expressions now support bindings keys that look like zero arg functions</p>
+</li>
+<li>
+<p>Add SpanWithinQuery and SpanContainingQuery that return spans inside of / containing another spans.</p>
+</li>
+<li>
+<p>New Spatial "Geo3d" API with partial Spatial4j integration. It is a set of shapes implemented using 3D planar geometry for calculating spatial relations on the surface of a sphere. Shapes include Point, BBox, Circle, Path (buffered line string), and Polygon.</p>
+</li>
+<li>
+<p>Various bugfixes and optimizations since the 5.1.0 release.</p>
+</li>
+</ul>
+<h3 id="highlights-of-this-solr-release-include">Highlights of this Solr release include:</h3>
+<ul>
+<li>
+<p>Restore API allows restoring a core from an index backup.</p>
+</li>
+<li>
+<p>JSON Facet API</p>
+<ul>
+<li>unique() is now implemented for numeric and date fields</li>
+<li>Optional flatter form via a "type" parameter</li>
+<li>Added support for "mincount" parameter in range facets to suppress buckets less than that count</li>
+<li>Multi-select faceting support for the Facet Module via the "excludeTags" parameter which disregards any matching tagged filters for that facet.</li>
+<li>hll() facet function for distributed cardinality via HyperLogLog algorithm.
+See examples at http://yonik.com/solr-count-distinct/</li>
+</ul>
+</li>
+<li>
+<p>A new "facet.range.method" parameter to let users choose how to do range faceting between an implementation based on filters (previous algorithm, using "facet.range.method=filter") or DocValues ("facet.range.method=dv")</p>
+</li>
+<li>
+<p>Rule-based Replica assignment during collection, shard, and replica creation.</p>
+</li>
+<li>
+<p>Stats component:</p>
+<ul>
+<li>New 'cardinality' option for stats.field, uses HyperLogLog to efficiently estimate the cardinality of a field w/bounded RAM. Blog post: https://lucidworks.com/blog/hyperloglog-field-value-cardinality-stats/</li>
+<li>stats.field now supports individual local params for 'countDistinct' and 'distinctValues'. 'calcdistinct' is still supported as an alias for both options.</li>
+</ul>
+</li>
+<li>
+<p>Solr security</p>
+<ul>
+<li>Authentication and Authorization frameworks that define interfaces, and mechanisms to create, load, and use authorization/authentication plugins have been added.</li>
+<li>A Kerberos authentication plugin which would allow running a Kerberized Solr setup.</li>
+</ul>
+</li>
+<li>
+<p>Solr Streaming Expressions
+   See https://cwiki.apache.org/confluence/display/solr/Streaming+Expressions</p>
+</li>
+<li>
+<p>bin/post (and SimplePostTool in -Dauto=yes mode) now sends rather than skips files without a known content type, as "application/octet-stream", provided it still is in the allowed filetypes setting.</p>
+</li>
+<li>
+<p>HDFS transaction log replication factor is now configurable</p>
+</li>
+<li>
+<p>A cluster-wide property can now be be added/edited/deleted using the zkcli script and doesn't require a running Solr instance.</p>
+</li>
+<li>
+<p>New spatial RptWithGeometrySpatialField, based on CompositeSpatialStrategy, which blends RPT indexes for speed with serialized geometry for accuracy.  Includes a Lucene segment based in-memory shape cache.</p>
+</li>
+<li>
+<p>Refactored Admin UI using AngularJS. It isn't the default, but a parallel UI interface in this release.</p>
+</li>
+<li>
+<p>Solr has internally been upgraded to use Jetty 9.</p>
+</li>
+</ul>
+<p>Both releases contain a number of new features, bug fixes, and optimizations.</p>
+<p>See the <a href="/core/5_2_0/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/5_2_0/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
 <h2 id="14-april-2015-apache-lucene-510-and-apache-solr-510-available">14 April 2015 - Apache Lucene 5.1.0 and Apache Solr 5.1.0 Available</h2>
 <p>The Lucene PMC is pleased to announce the availability
 of Apache Lucene 5.1.0 and Apache Solr 5.1.0.</p>
@@ -816,15 +917,15 @@ with the release for a full list of details.</p>
       <p><div class="button-green">
     <a href="core/mirrors-core-latest-redir.html?">Download</a>
     <div class="flap top">Click to begin</div>
-    <div class="flap bottom">of Apache Lucene 5.1.0</div>
+    <div class="flap bottom">of Apache Lucene 5.2.0</div>
   </div>
-  <div class="download-desc">Apache Lucene 5.1.0</div>
+  <div class="download-desc">Apache Lucene 5.2.0</div>
   <div class="button-orange">
     <a href="solr/mirrors-solr-latest-redir.html?">Download</a>
     <div class="flap top">Click to begin</div>
-    <div class="flap bottom">of Apache Solr 5.1.0</div>
+    <div class="flap bottom">of Apache Solr 5.2.0</div>
   </div>
-  <div class="download-desc">Apache Solr 5.1.0</div></p>
+  <div class="download-desc">Apache Solr 5.2.0</div></p>
 <h1 id="projects">Projects</h1>
 <ul>
 <li><a href="./core/">Lucene Core (Java)</a></li>

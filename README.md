@@ -105,6 +105,7 @@ Then :
 - [x] fail2ban
 - [x] go
 - [x] metasploit
+- [x] varnish
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
@@ -122,7 +123,6 @@ Then :
 - [ ] openbox
 - [ ] naxsi
 - [ ] memcached
-- [ ] varnish
 - [ ] openbsd
 - [ ] dropbox
 - [ ] wireshark

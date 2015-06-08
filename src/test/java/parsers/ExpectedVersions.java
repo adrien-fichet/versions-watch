@@ -13,11 +13,11 @@ public class ExpectedVersions {
         expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("spring", "4.2.0");
         expectedVersions.put("apache", "2.4.12");
-        expectedVersions.put("debian", "8.0");
+        expectedVersions.put("debian", "8.1");
         expectedVersions.put("eclipse", "4.4.2");
         expectedVersions.put("git", "2.4.3");
         expectedVersions.put("javase", "8u45");
-        expectedVersions.put("jenkins", "1.616");
+        expectedVersions.put("jenkins", "1.617");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "5.6.9");
@@ -60,7 +60,7 @@ public class ExpectedVersions {
         expectedVersions.put("linux", "4.0.5");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.13.1");
-        expectedVersions.put("solr", "5.1.0");
+        expectedVersions.put("solr", "5.2.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "43.0.2357.81");
@@ -92,6 +92,7 @@ public class ExpectedVersions {
         expectedVersions.put("fail2ban", "0.9.1");
         expectedVersions.put("go", "1.4.2");
         expectedVersions.put("metasploit", "4.11.2");
+        expectedVersions.put("varnish", "4.0.3");
     }
 
     public Map<String, String> getExpectedVersions() {

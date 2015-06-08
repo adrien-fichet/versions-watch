@@ -43,7 +43,8 @@ var versions = [
     "category": { "id": "web_tools", "name": "Web tools" },
     "items": [
       { "id": "grunt", "name": "Grunt" },
-      { "id": "bower", "name": "Bower" }
+      { "id": "bower", "name": "Bower" },
+      { "id": "varnish", "name": "Varnish" }
     ]
   }, {
     "category": { "id": "web_frameworks", "name": "Web frameworks" },

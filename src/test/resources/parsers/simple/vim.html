@@ -238,58 +238,64 @@ Bram has visited the Vim charity project, read about it in his
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr>
     <td class="lightbg"><span class="txth1">&nbsp;&nbsp;Recent Script Updates</span></td>
-    <td nowrap class="lightbg" align="right"><small>&nbsp;5,092 scripts, 10,349,348 downloads&nbsp;</small></td>
+    <td nowrap class="lightbg" align="right"><small>&nbsp;5,092 scripts, 10,352,486 downloads&nbsp;</small></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 </table>
 <table cellpadding="0" cellspacing="0" border="0">
 <tr>
+    <td class="newsdate" nowrap valign="top">[2015-06-08]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5114">vim-webdevicons</a> : adds font icons (glyphs) to programming languages, libraries, and general web de</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(v0.4.0) <a target="_blank" href="https://github.com/ryanoasis/vim-webdevicons/releases/tag/v0.4.0">https://github.com/ryanoasis/vim-webdevicons/releases/tag/v0.4.0</A> - <i>Ryan M</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-06-08]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=4612">aPen</a> : like the Brackets</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(1.0.1) Converting file format for Unix. - <i>Pengkai Wang</i></td>
+</tr>
+<tr>
     <td class="newsdate" nowrap valign="top">[2015-06-07]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=4988">SpellLangIdentifier</a> : Automatically identify buffer's language and set the spell lang</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.0.0) * Fixes the issue with stray characters in console-based Vim when using on-the-fly language detection.
-* Better error handling.
-* Improves the sample configuration file.
-
- - <i>Douglas Augusto</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-06-07]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5047">VIntSearch</a> :  &quot;One should be able to jump between all kinds of search results&quot;.</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.2.0) - Fix find option bug related to grep search.
-- Rename & refactor all commands and whole code. The old commands (e.g. :VIntSearchListCursorGrep) are deprecated and will be removed in 1.3.0 version. - <i>yssl </i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-06-06]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5133">vim-compile</a> : Yet another compile plugin for vim</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.2.3) Since v0.2.3, vim-compile will try to retrieve the latex main file for compilation and execution.
-If latex-suite is activated, it search for a *.latexmain file, else it looks for a root file line, similar to the following:
-%!TEX root=my_main_file.tex
- - <i>David Beniamine</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-06-06]</td>
     <td>&nbsp;<a href="scripts/script.php?script_id=5197">Dokumentary</a> : Improve what K does.</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.0) Initial upload - <i>Gastón Simone</i></td>
+    <td>(1.1) Added 'g:dokumentary_open' variable to be able to customize where to
+locate the documentation window. Now by default the window is located on
+the right.
+
+Added the corresponding documentation.
+
+Thanks wimstefan (<a target="_blank" href="https://github.com/wimstefan">https://github.com/wimstefan</A>) for the suggestion! - <i>Gastón Simone</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-06-06]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=1723">vimpager</a> : Use ViM as PAGER</td>
+    <td class="newsdate" nowrap valign="top">[2015-06-07]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5198">vim-phpfmt</a> : Automatically formats PHP code (needs PHP 5.6 installed)</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(2.05) * minor AnsiEsc fixes - <i>Rafael Kitover</i></td>
+    <td>(1.0) Initial upload - <i>Soroso J M</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-06-07]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5038">incsearch.vim</a> : Improved incremental searching for Vim</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(v1.2.0) 1.2.0	2015-06-06
+	1. Now, fix unexpected key input with |feedkeys()| by auto-nohlsearch
+	&nbsp;&nbsp; feature (|incsearch-additional-usage|) #82
+	2. Avoid Unneeded loading for mappings like |&lt;Plug&gt;(incsearch-nohl)|
+	&nbsp;&nbsp; related with #81
+	3. Fix |nowrapscan| handling #83
+	4. Add |incsearch-config-prompt| option
+	5. auto-nohlsearch on |CursorMoved| after |InsertLeave| related with #80
+	6. Some refactor... - <i>haya14busa  </i></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr><td colspan="2"><a href="scripts/index.php">more recent</a> | 
@@ -354,7 +360,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         <tr valign="top">
           <td class="sidebar" align='center'>
              &nbsp;<br>
-	     <a href="http://iccf-holland.org/click5.html"><img src="/images/regexp.jpg" alt="Buy a book, help Uganda, learn Vim"></a>
+	     <a href="http://iccf-holland.org/click5.html"><img src="/images/gepackt.jpg" alt="Buy a book, help Uganda, learn Vim"></a>
 	     <br>
 	     <a href="http://iccf-holland.org/click1.html">Buy at Amazon<br>Help Uganda</a>
           </td>

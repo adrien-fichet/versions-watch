@@ -407,6 +407,11 @@ public class Conf {
                 "#wiki-body > div > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(1) > a",
                 "metasploit-(.*?)-"
         ));
+        configurations.put("varnish", new VersionParserConfiguration(
+                "https://www.varnish-cache.org/releases",
+                "#block-system-main > div > div > div > div:nth-child(1) > div > div > div > table > tbody > tr > td.views-field.views-field-title > a:nth-child(1)",
+                "Varnish Cache (.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
