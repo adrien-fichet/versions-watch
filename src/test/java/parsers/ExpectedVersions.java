@@ -33,7 +33,7 @@ public class ExpectedVersions {
         expectedVersions.put("javascript", "1.8.5");
         expectedVersions.put("ubuntu", "15.04");
         expectedVersions.put("nginx", "1.9.1");
-        expectedVersions.put("elasticsearch", "1.5.2");
+        expectedVersions.put("elasticsearch", "1.6.0");
         expectedVersions.put("logstash", "1.5.0");
         expectedVersions.put("kibana", "4.0.2");
         expectedVersions.put("logstashforwarder", "0.4.0");
@@ -46,7 +46,7 @@ public class ExpectedVersions {
         expectedVersions.put("scala", "2.11.6");
         expectedVersions.put("selenium", "2.46.0");
         expectedVersions.put("virtualbox", "4.3.28");
-        expectedVersions.put("windows", "10.0.10122");
+        expectedVersions.put("windows", "10.0");
         expectedVersions.put("centos", "7.1503");
         expectedVersions.put("fedora", "22");
         expectedVersions.put("proxmox", "3.4");
@@ -54,7 +54,7 @@ public class ExpectedVersions {
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
-        expectedVersions.put("vim", "7.4.729");
+        expectedVersions.put("vim", "7.4.738");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
         expectedVersions.put("linux", "4.0.5");
@@ -63,7 +63,7 @@ public class ExpectedVersions {
         expectedVersions.put("solr", "5.2.0");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
-        expectedVersions.put("googlechrome", "43.0.2357.81");
+        expectedVersions.put("googlechrome", "43.0");
         expectedVersions.put("firefox", "38.0.5");
         expectedVersions.put("gnomeshell", "3.17.2");
         expectedVersions.put("kde", "4.14.3");
@@ -80,19 +80,20 @@ public class ExpectedVersions {
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.19");
         expectedVersions.put("nmap", "6.49BETA1");
-        expectedVersions.put("edge", "15.10130.0.0");
-        expectedVersions.put("opera", "29.0.1795.60");
+        expectedVersions.put("edge", "15.10130");
+        expectedVersions.put("opera", "30.0");
         expectedVersions.put("postgresql", "9.4.3");
         expectedVersions.put("lighttpd", "1.4.35");
         expectedVersions.put("bootstrap", "3.3.4");
         expectedVersions.put("ruby", "2.2.2");
         expectedVersions.put("zsh", "5.0.7");
-        expectedVersions.put("ansible", "1.8.4");
+        expectedVersions.put("ansible", "1.9.1");
         expectedVersions.put("polymer", "1.0.2");
         expectedVersions.put("fail2ban", "0.9.1");
         expectedVersions.put("go", "1.4.2");
         expectedVersions.put("metasploit", "4.11.2");
         expectedVersions.put("varnish", "4.0.3");
+        expectedVersions.put("perl", "5.22.0");
     }
 
     public Map<String, String> getExpectedVersions() {

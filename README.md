@@ -106,6 +106,7 @@ Then :
 - [x] go
 - [x] metasploit
 - [x] varnish
+- [x] perl
 - [ ] lxc
 - [ ] openvz
 - [ ] nessus
@@ -113,7 +114,6 @@ Then :
 - [ ] bash
 - [ ] css
 - [ ] html
-- [ ] perl
 - [ ] lisp
 - [ ] lua
 - [ ] dart

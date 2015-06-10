@@ -75,7 +75,8 @@ var versions = [
       { "id": "scala", "name": "Scala" },
       { "id": "python", "name": "Python" },
       { "id": "ruby", "name": "Ruby" },
-      { "id": "go", "name": "Go" }
+      { "id": "go", "name": "Go" },
+      { "id": "perl", "name": "Perl" }
     ]
   }, {
     "category": { "id": "testing", "name": "Testing" },

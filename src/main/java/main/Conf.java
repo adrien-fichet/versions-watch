@@ -178,7 +178,7 @@ public class Conf {
         configurations.put("windows", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Windows",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(9) > td",
-                "(.*?)\\["
+                "(.*?)\\.([0-9]+)\\["
         ));
         configurations.put("centos", new VersionParserConfiguration(
                 "http://wiki.centos.org/Download",
@@ -262,7 +262,7 @@ public class Conf {
         configurations.put("googlechrome", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Google_Chrome",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td > p:nth-child(2)",
-                "(.*?) \\("
+                "(.*?)(\\.[0-9]+){2} \\("
         ));
         configurations.put("firefox", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Firefox",
@@ -349,12 +349,12 @@ public class Conf {
         configurations.put("edge", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Edge",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
-                "Windows .*? (.*?) "
+                "Windows [0-9]+ (.*?)(\\.[0-9]+){2} [a-zA-Z]+"
         ));
         configurations.put("opera", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Opera_(web_browser)",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
-                "Windows, OS X, Linux (.*?) "
+                "Windows, OS X, Linux (.*)(\\.[0-9]+){2}"
         ));
         configurations.put("postgresql", new VersionParserConfiguration(
                 "http://www.postgresql.org/",
@@ -411,6 +411,11 @@ public class Conf {
                 "https://www.varnish-cache.org/releases",
                 "#block-system-main > div > div > div > div:nth-child(1) > div > div > div > table > tbody > tr > td.views-field.views-field-title > a:nth-child(1)",
                 "Varnish Cache (.*)"
+        ));
+        configurations.put("perl", new VersionParserConfiguration(
+                "https://www.perl.org/",
+                "#short_lists > div:nth-child(1) > div > p > a",
+                "(.*?) - download now"
         ));
     }
 
