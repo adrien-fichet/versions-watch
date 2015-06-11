@@ -102,7 +102,8 @@ var versions = [
       { "id": "vagrant", "name": "Vagrant" },
       { "id": "virtualbox", "name": "VirtualBox" },
       { "id": "proxmox", "name": "Proxmox VE" },
-      { "id": "docker", "name": "Docker" }
+      { "id": "docker", "name": "Docker" },
+      { "id": "lxc", "name": "LXC" }
     ]
   }, {
     "category": { "id": "sec", "name": "Sec" },

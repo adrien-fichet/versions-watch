@@ -107,7 +107,7 @@ Then :
 - [x] metasploit
 - [x] varnish
 - [x] perl
-- [ ] lxc
+- [x] lxc
 - [ ] openvz
 - [ ] nessus
 - [ ] latex

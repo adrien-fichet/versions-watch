@@ -417,6 +417,11 @@ public class Conf {
                 "#short_lists > div:nth-child(1) > div > p > a",
                 "(.*?) - download now"
         ));
+        configurations.put("lxc", new VersionParserConfiguration(
+                "https://linuxcontainers.org/lxc/introduction/",
+                "body > div > p:nth-child(20)",
+                "At this time, the only such release is LXC (.*?) which was released"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

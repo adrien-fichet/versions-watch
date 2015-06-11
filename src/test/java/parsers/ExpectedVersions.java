@@ -20,7 +20,7 @@ public class ExpectedVersions {
         expectedVersions.put("jenkins", "1.617");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
-        expectedVersions.put("php", "5.6.9");
+        expectedVersions.put("php", "5.6.10");
         expectedVersions.put("puppet", "4.1.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.8.13");
@@ -35,9 +35,9 @@ public class ExpectedVersions {
         expectedVersions.put("nginx", "1.9.1");
         expectedVersions.put("elasticsearch", "1.6.0");
         expectedVersions.put("logstash", "1.5.0");
-        expectedVersions.put("kibana", "4.0.2");
+        expectedVersions.put("kibana", "4.1.0");
         expectedVersions.put("logstashforwarder", "0.4.0");
-        expectedVersions.put("openssl", "1.0.2a");
+        expectedVersions.put("openssl", "1.0.2b");
         expectedVersions.put("openssh", "6.8");
         expectedVersions.put("zabbix", "2.4");
         expectedVersions.put("nagios", "4.0.8");
@@ -73,12 +73,12 @@ public class ExpectedVersions {
         expectedVersions.put("bower", "1.4.1");
         expectedVersions.put("angularjs", "1.4.0");
         expectedVersions.put("curator", "3.1.0");
-        expectedVersions.put("coreos", "695.0.0");
+        expectedVersions.put("coreos", "709.0.0");
         expectedVersions.put("safari", "8.0.6");
         expectedVersions.put("drupal", "7.37");
         expectedVersions.put("foreman", "1.8.1");
         expectedVersions.put("wordpress", "4.2.2");
-        expectedVersions.put("internetexplorer", "11.0.19");
+        expectedVersions.put("internetexplorer", "11.0.20");
         expectedVersions.put("nmap", "6.49BETA1");
         expectedVersions.put("edge", "15.10130");
         expectedVersions.put("opera", "30.0");
@@ -94,6 +94,7 @@ public class ExpectedVersions {
         expectedVersions.put("metasploit", "4.11.2");
         expectedVersions.put("varnish", "4.0.3");
         expectedVersions.put("perl", "5.22.0");
+        expectedVersions.put("lxc", "1.0");
     }
 
     public Map<String, String> getExpectedVersions() {

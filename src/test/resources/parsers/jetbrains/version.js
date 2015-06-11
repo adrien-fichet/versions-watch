@@ -319,7 +319,7 @@ function onloadVersionPhpStormDownload() {
 
 //AppCode
 var versionAppCodeShort = "3.1";
-var versionAppCodeLong = "3.1.6";
+var versionAppCodeLong = "3.1.7";
 function versionAppCode(el) {
     if (el == "short") {
         document.write(versionAppCodeShort);
