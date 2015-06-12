@@ -108,8 +108,7 @@ Then :
 - [x] varnish
 - [x] perl
 - [x] lxc
-- [ ] openvz
-- [ ] nessus
+- [x] nessus
 - [ ] latex
 - [ ] bash
 - [ ] css
@@ -128,6 +127,7 @@ Then :
 - [ ] wireshark
 - [ ] chef
 - [ ] salt
+- [ ] mercurial
 
 ### Ideas
 - version numbers should also be links to versions websites

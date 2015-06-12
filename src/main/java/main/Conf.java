@@ -422,6 +422,11 @@ public class Conf {
                 "body > div > p:nth-child(20)",
                 "At this time, the only such release is LXC (.*?) which was released"
         ));
+        configurations.put("nessus", new VersionParserConfiguration(
+                "https://support.tenable.com/support-center/",
+                "#contentMain > table > tbody > tr > td > h3:nth-child(3)",
+                "Nessus (.*?) is available!"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

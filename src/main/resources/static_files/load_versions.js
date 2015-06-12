@@ -112,7 +112,8 @@ var versions = [
       { "id": "openssh", "name": "OpenSSH" },
       { "id": "nmap", "name": "Nmap" },
       { "id": "fail2ban", "name": "Fail2ban" },
-      { "id": "metasploit", "name": "Metasploit Frwk" }
+      { "id": "metasploit", "name": "Metasploit Frwk" },
+      { "id": "nessus", "name": "Nessus" }
     ]
   }, {
     "category": { "id": "java", "name": "Java" },

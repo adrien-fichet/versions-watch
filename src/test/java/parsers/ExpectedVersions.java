@@ -37,7 +37,7 @@ public class ExpectedVersions {
         expectedVersions.put("logstash", "1.5.0");
         expectedVersions.put("kibana", "4.1.0");
         expectedVersions.put("logstashforwarder", "0.4.0");
-        expectedVersions.put("openssl", "1.0.2b");
+        expectedVersions.put("openssl", "1.0.2c");
         expectedVersions.put("openssh", "6.8");
         expectedVersions.put("zabbix", "2.4");
         expectedVersions.put("nagios", "4.0.8");
@@ -82,7 +82,7 @@ public class ExpectedVersions {
         expectedVersions.put("nmap", "6.49BETA1");
         expectedVersions.put("edge", "15.10130");
         expectedVersions.put("opera", "30.0");
-        expectedVersions.put("postgresql", "9.4.3");
+        expectedVersions.put("postgresql", "9.4.4");
         expectedVersions.put("lighttpd", "1.4.35");
         expectedVersions.put("bootstrap", "3.3.4");
         expectedVersions.put("ruby", "2.2.2");
@@ -95,6 +95,7 @@ public class ExpectedVersions {
         expectedVersions.put("varnish", "4.0.3");
         expectedVersions.put("perl", "5.22.0");
         expectedVersions.put("lxc", "1.0");
+        expectedVersions.put("nessus", "6.3.7");
     }
 
     public Map<String, String> getExpectedVersions() {

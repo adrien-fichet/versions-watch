@@ -278,7 +278,7 @@ function onloadVersionYTownload() {
 
 //WebStorm
 var versionWebStormShort = "10.0";
-var versionWebStormLong = "10.0.3";
+var versionWebStormLong = "10.0.4";
 function versionWebStorm(el) {
     if (el == "short") {
         document.write(versionWebStormShort);
