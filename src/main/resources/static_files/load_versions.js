@@ -76,7 +76,8 @@ var versions = [
       { "id": "python", "name": "Python" },
       { "id": "ruby", "name": "Ruby" },
       { "id": "go", "name": "Go" },
-      { "id": "perl", "name": "Perl" }
+      { "id": "perl", "name": "Perl" },
+      { "id": "latex", "name": "LaTeX" }
     ]
   }, {
     "category": { "id": "testing", "name": "Testing" },

@@ -427,6 +427,12 @@ public class Conf {
                 "#contentMain > table > tbody > tr > td > h3:nth-child(3)",
                 "Nessus (.*?) is available!"
         ));
+        configurations.put("latex", new VersionParserConfiguration(
+                "http://latex-project.org/ltnews/",
+                "#content > p:nth-child(1)",
+                "The most recent version of LaTeX is nominally dated (.*?) ",
+                new String[][]{{"/", "."}}
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

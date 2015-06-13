@@ -109,7 +109,7 @@ Then :
 - [x] perl
 - [x] lxc
 - [x] nessus
-- [ ] latex
+- [x] latex
 - [ ] bash
 - [ ] css
 - [ ] html
@@ -128,6 +128,7 @@ Then :
 - [ ] chef
 - [ ] salt
 - [ ] mercurial
+- [ ] libreoffice
 
 ### Ideas
 - version numbers should also be links to versions websites

@@ -96,6 +96,7 @@ public class ExpectedVersions {
         expectedVersions.put("perl", "5.22.0");
         expectedVersions.put("lxc", "1.0");
         expectedVersions.put("nessus", "6.3.7");
+        expectedVersions.put("latex", "2015.01.01");
     }
 
     public Map<String, String> getExpectedVersions() {
