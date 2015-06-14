@@ -433,6 +433,11 @@ public class Conf {
                 "The most recent version of LaTeX is nominally dated (.*?) ",
                 new String[][]{{"/", "."}}
         ));
+        configurations.put("bash", new VersionParserConfiguration(
+                "https://tiswww.case.edu/php/chet/bash/bashtop.html",
+                "body > p:nth-child(16) > a:nth-child(1)",
+                "bash-(.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<HEAD>
+<TITLE>The GNU Bourne-Again Shell</TITLE>
+<META NAME="Author" CONTENT="Chet Ramey">
+<META NAME="Description" CONTENT="Bash Information Page">
+<META NAME="keywords" CONTENT="bash, chet ramey, bourne-again shell, bourne-again, gnu, shells, free software">
+</HEAD>
+
+<BODY>
+<CENTER>
+<HR SIZE=5 NOSHADE WIDTH="90%">
+</CENTER>
+
+<CENTER>
+<IMG SRC="../img/bash-org.jpg" ALT="BASH Image" HEIGHT=100 WIDTH=250>
+</CENTER>
+
+<CENTER>
+<HR SIZE=5 NOSHADE WIDTH="90%">
+</CENTER>
+
+<CENTER>
+<H3>The GNU Bourne-Again SHell</H3>
+</CENTER>
+
+<A HREF="http://www.gnu.org/graphics/agnuhead.html">
+<IMG SRC="../img/gnu-head-sm.jpg"
+     ALT=" [image of the Head of a GNU] "
+     WIDTH="129" HEIGHT="122">
+</A>
+
+<HR>
+<H4>Table of Contents</H4>
+<UL>
+  <LI><a href="#Introduction" name="TOCIntroduction">Introduction</a>
+  <LI><a href="#CurrentStatus" name="TOCCurrentStatus">Current Status</a>
+  <LI><a href="#Availability" name="TOCAvailability">Availability</a>
+  <LI><a href="#Resources" name="TOCResources">Other Resources</a>
+  <LI><a href="#Bugs" name="TOCBugs">Reporting Bugs</a>
+  <LI><a href="#Maintainer" name="TOCMaintainer">Maintainer</a>
+  <LI><a href="#Translations" name="TOCTranslationsr">Translations</a>
+</UL>
+<HR>
+
+<H3><a href="#TOCIntroduction" name="Introduction">Introduction</a></H3>
+<P>
+Bash is the
+<a href="http://www.gnu.org">GNU</a>
+Project's Bourne Again SHell, a complete implementation of the
+<a href="http://www.opengroup.org/onlinepubs/9699919799/nfindex.html">IEEE POSIX and Open Group shell specification</a>
+with interactive command line editing, job control on
+architectures that support it, csh-like features such as history
+substitution and brace expansion, and a slew of other features. 
+<a href="bash-intro.html">Here</a> is a
+short list of some of the features available in bash.
+<P>
+For more information on the features of Bash that are new to this
+type of shell, see the <a href="bashref.html">reference manual</a>.
+There is also a large Unix-style
+<a href="bash.html">man page</a>.
+The man page is the definitive description of the shell's features. 
+<P>
+Bash is free software, distributed under the terms of the
+<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License, version 3</a>.
+<P>
+A number of frequently-asked questions are answered in the
+<a href="FAQ">FAQ</a>.
+
+<H3><a href="#TOCCurrentStatus" name="CurrentStatus">Current Status</a></H3>
+<P>
+The current version of bash is
+<a href="ftp://ftp.cwru.edu/pub/bash/bash-4.3.tar.gz">bash-4.3</a>.
+(<a href="ftp://ftp.cwru.edu/pub/bash/bash-4.3.tar.gz.sig">GPG signature</a>).
+<P>
+A downloadable tar file of the current version with all official patches    
+applied is available from
+<a href="http://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-master.tar.gz">savannah</a>.
+<P>
+See the <a href="README">README</a> file for more information.
+<P>
+The <a href="NEWS">NEWS</a> file tersely lists the new features in
+bash-4.3.
+
+<H3><a href="#TOCAvailability" name="Availability">Availability</a></H3>
+<P>
+The current version of bash is available from
+<a href="ftp://ftp.cwru.edu/pub/bash/bash-4.3.tar.gz">ftp.cwru.edu</a>.
+
+This distribution file includes formatted copies of the documentation.
+<P>
+These files are signed with my <a href="http://cnswww.cns.cwru.edu/~chet/gpgkey.asc">GPG key</a>.
+<P>
+There are a number of files available for FTP from
+<a href="ftp://ftp.cwru.edu/pub/bash/">ftp.cwru.edu</a>.
+<P>
+Bash is always available from the
+<a href="ftp://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz">master GNU ftp site</a>
+and its many mirrors.
+<P>
+Any patches for the current version are available
+<a href="ftp://ftp.cwru.edu/pub/bash/bash-4.3-patches">here</a>.
+<P>
+A downloadable tar file of the current version with all official patches    
+applied is available from
+<a href="http://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-master.tar.gz">savannah</a>.
+<P>
+Previous Bash versions are available at
+<a href="ftp://ftp.gnu.org/gnu/bash/">ftp://ftp.gnu.org/gnu/bash</a>.
+<P>
+Bash is the standard shell on
+<a href="http://www.gnu.org/gnu/the-gnu-project.html">GNU</a>/<a href="http://www.linux.org">Linux</a>
+systems, most of which are using bash-4.2.
+Bash-4.2 is included as part of the
+<a href="http://www.freebsd.org">FreeBSD</a>
+<a href="http://www.freebsd.org/ports">ports</a>
+collection, the
+<a href="http://www.openbsd.org">OpenBSD</a>
+<a href="http://www.openbsd.org/faq/faq15.html">packages</a>
+collection, and the
+<a href="http://www.netbsd.org">NetBSD</a>
+<a href="http://www.netbsd.org/Documentation/software/packages.html">packages</a>
+collection.
+<P>
+The <a href="http://www.openpkg.org">OpenPKG project</a> makes source
+RPMs of bash-4.3
+available for a variety of Unix and Linux
+systems as a
+<a href="http://download.openpkg.org/packages/current/source/CORE/">core</a>
+part of the
+<a href="http://www.openpkg.org/download/">current</a> release.
+<P>
+Current versions of
+<a href="http://www.apple.com/macosx/">Mac OS X</a>
+(dating from Jaguar/Mac OS X 10.2) ship with bash as /bin/sh.
+There are also precompiled OS X packages of bash-4.2 and bash-4.3
+for both Intel and PPC available from many web sites, though the source packages
+are usually more up-to-date.
+Bash for <a href="http://www.opensource.apple.com/">Darwin</a>
+(the base for MacOS X) is available
+from <a href="http://pdb.finkproject.org/pdb/package.php/bash">Fink</a>
+(including old versions) or
+<a href="http://trac.macports.org/browser/trunk/dports/shells/bash">MacPorts</a>.
+<P>
+Solaris 2.x and Solaris 7/8/9/10/11 users can get a precompiled version of
+bash-4.2 from the
+<a href="http://www.unixpackages.com">Unixpackages</a>
+site or from
+<a href="http://www.opencsw.org/packages/bash/">OpenCSW</a>.
+Sun ships bash-2.03 with
+<a href="http://www.sun.com/solaris/freeware/">Solaris 8</a> distributions,
+ships bash-2.05 as a supported part of
+<a href="http://www.sun.com/software/solaris/freeware/index.html">Solaris 9</a>,
+and ships bash-3.0 as a supported part of
+<a href="http://www.sun.com/software/solaris/freeware/index.html">Solaris 10</a>
+(directly on the Solaris 10 CD).
+The version of Solaris 11 distributed as
+<a href="http://www.opensolaris.org">OpenSolaris</a> includes bash-4.1
+as of 20 October 2011.
+<P>
+AIX users can get precompiled versions of bash-4.2 and older releases
+for various versions of AIX from
+<a href="http://www.bullfreeware.com">Groupe Bull</a>,
+and sources and binaries of current releases for various AIX releases from
+<a href="http://www.perzl.org/aix/index.php?n=Main.Bash">perzl.org</a>.
+IBM makes bash-3.2 and bash-4.2 available for AIX 5L, AIX 6.1, and AIX 7.1
+as part of the
+<a href="http://www-03.ibm.com/systems/power/software/aix/linux/">
+AIX toolbox for [GNU/]Linux applications</a>.
+They use RPM format; you can get RPM for AIX from there, too.
+<P>
+SGI users can get an installable version of bash-2.05b from the
+<a href="http://freeware.sgi.com/index-by-alpha.html">SGI Freeware</a>
+page.
+HP-UX users can get bash-4.2 binaries and source code from the
+<a href="http://hpux.connect.org.uk/hppd/hpux/Shells/">
+Software Porting and Archive Center for HP-UX</a>.
+(The current version as of this date is
+<a href="http://hpux.connect.org.uk/hppd/hpux/Shells/bash-4.2.045/">bash-4.2.45</a>).
+<P>
+It's even available on <a href="http://www.minix3.org/software/">Minix</a>.
+If you are running Windows, I recommend that you use
+<a href="http://www.cygwin.com">Cygwin</a>, who currently ship
+<a href="http://www.cygwin.com/packages/x86/bash">bash-4.1.10</a> and
+<a href="http://www.cygwin.com/packages/x86_64/bash">bash-4.1.11</a>, or
+<a href="http://www.mingw.org">MinGW</a>, which currently has
+bash-3.1.17 as part of its MSYS base system.
+
+<H3><a href="#TOCResources" name="Resources">Other Resources</a></H3>
+<P>
+A list of
+<a href="FAQ">Frequently-Asked-Questions</a> with answers.
+<P>
+The discussion list
+<a href="mailto:bug-bash@gnu.org">bug-bash@gnu.org</a>
+often contains information
+about new ports of Bash, or discussions of new features or behavior
+changes that people would like.  The mailing list is where bugs in
+bash are reported and fixes are posted.
+This mailing list is also available
+as a Usenet newsgroup, 
+<a href="news:gnu.bash.bug">gnu.bash.bug</a>.
+<P>
+Archives of bug-bash dating from December, 1999 are available from
+<a href="http://lists.gnu.org/archive/html/bug-bash">lists.gnu.org</a>.
+Google Groups has an archive of
+<a href="https://groups.google.com/forum/#!forum/gnu.bash.bug">gnu.bash.bug</a>.
+<P>
+General questions about bash and shell programming should be sent to the 
+<a href="mailto:help-bash@gnu.org">help-bash@gnu.org</a>
+mailing list.  Its archives are also available from
+<a href="http://lists.gnu.org/archive/html/help-bash">lists.gnu.org</a>.
+<P>
+Some files from the current distribution may also be helpful.
+<UL>
+<LI><a href="README">README</a>: a file describing Bash
+<LI><a href="NEWS">NEWS</a>: a file tersely listing the notable changes between the current and previous versions
+<LI><a href="CHANGES">CHANGES</a>: a complete bash change history
+<LI><a href="INSTALL">INSTALL</a>: installation instructions
+<LI><a href="NOTES">NOTES</a>: platform-specific configuration and operation notes
+<LI><a href="COMPAT">COMPAT</a>: compatibility issues between bash4 and previous versions
+<LI><a href="POSIX">POSIX</a>: what changes when bash is in posix mode?</LI>
+</UL>
+
+<P>
+Here are a couple of the papers I've written on bash.
+<UL>
+<LI>A <a href="rose94.pdf">paper</a> I presented at ROSE 94 in Bucharest, Romania (<a href="rose94.ps">PS</a>).
+<LI>Another <a href="article.pdf">article</a>, from <a href="http://www.usenix.org">Usenix</a>'s ;login (<a href="article.ps">PS</a>).
+<LI>A <a href="http://aosabook.org/en/bash.html">chapter</a> in the
+<a href="http://aosabook.org/en/index.html">Architecture of Open Source Applications</a>.
+</UL>
+
+<H3><a href="#TOCBugs" name="Bugs">Reporting Bugs</a></H3>
+<P>
+Bug reports for bash should be sent to
+<a href="mailto:bug-bash@gnu.org">bug-bash@gnu.org</a>
+using the <I>bashbug</I> program that is built and installed at the
+same time as bash.
+<P>
+The discussion list
+<a href="mailto:bug-bash@gnu.org">bug-bash@gnu.org</a>
+often contains information
+about new ports of Bash, or discussions of new features or behavior
+changes that people would like.  This mailing list is also available
+as a usenet newsgroup, <a href="news:gnu.bash.bug">gnu.bash.bug</a>.
+You may subscribe to the mailing list at
+<a href="http://lists.gnu.org/mailman/listinfo/bug-bash">lists.gnu.org</a>.
+<P>
+When you send a bug report, please use the <I>bashbug</I> program that is
+built at the same time as bash.  If bash fails to build, try building
+bashbug directly with <I>make bashbug</I>.  If you cannot build <I>bashbug</I>,
+please send mail to
+<a href="mailto:bug-bash@gnu.org">bug-bash@gnu.org</a>
+with the following information:
+
+<UL>
+<LI>The version number and release status of Bash (e.g., 2.05-release)
+<LI>The machine and OS that it is running on (you may run
+    <I>bashversion -l</I> from the bash build directory or look at the
+    `.made' file in that directory for this information)</LI>
+<LI>A list of the compilation flags or the contents of `config.h', if appropriate
+<LI>A description of the bug
+<LI>A recipe for recreating the bug reliably
+<LI>A fix for the bug if you have one!
+</UL>
+
+<P>
+The <I>bashbug</I> program includes much of this automatically.
+<P>
+If you would like to contact the Bash maintainers directly, send mail
+to <a href="mailto:bash-maintainers@gnu.org">bash-maintainers@gnu.org</a>.
+
+<H3><a href="#TOCMaintainer" name="Maintainer">Maintainer</a></H3>
+<P>
+<a href="http://cnswww.cns.cwru.edu/~chet">I</a> am the current
+Bash maintainer, and may be reached as
+<a href="mailto:bash-maintainers@gnu.org">bash-maintainers@gnu.org</a>.
+Please send additions and corrections to this page to
+<a href="mailto:chet.ramey@case.edu">chet.ramey@case.edu</a>.
+
+<H3><a href="#TOCTranslations" name="Translations">Translations</a></H3>
+<P>
+There are several user-contributed translations of (older versions of) this
+page.  I welcome others.
+<UL>
+<LI> <a href="http://www.fatcow.com/edu/gnu-bourne-again-shell-be/">Belorussian translation</a> provided by <a href="http://pc.de/">PC.DE</a></LI>
+<LI> <a href="http://autoersatzteile.de/blog/die-gnu-bourne-again-shell">German</a></LI>
+<LI> <a href="http://www.portablecomponentsforall.com/edu/gnu-bourne-again-shell-be/">Russian translation</a> provided by <a href="http://www.portablecomponentsforall.com">PortableComponentsForAll</a></LI>
+<LI> <a href="http://sciologness.com/gnu-potocik-znovu-shelly/">Slovakian translation</a> provided by <a href="http://sciologness.com/">Sciologness Team</a></LI>
+<LI> <a href="http://www.onlinecarparts.co.uk/science/?p=331">Polish translation</a> provided by Marina Stepanenko</LI>
+<LI> <a href="http://czlib.bizow.com/post/gnu-bourne-again-shellem">Czech translation</a> provided by <a href="http://bizow.com/">Bizow.com</a></LI>
+<LI> <a href="http://www.ajoft.com/wpaper/aj-GNU.html">Bulgarian translation</a> provided by <a href="http://www.ajoft.com">Ajoft</a></LI>
+<LI> <a href="http://www.reservedeler-online.co.no/education/gnu-bourne-din-nou-shell/">Romanian Translation</a> provided by Silvia Moraru</LI>
+</UL>
+
+<HR>
+<ADDRESS>
+<a href="http://cnswww.cns.cwru.edu/~chet/">Chet Ramey</a> &lt;<a href="mailto:chet.ramey@case.edu">chet.ramey@case.edu</a>&gt;
+<BR>
+Last updated: Fri Apr 24 16:22:22 EDT 2015
+</ADDRESS>
+<HR>
+
+</BODY>
+</HTML>

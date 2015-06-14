@@ -95,7 +95,8 @@ var versions = [
       { "id": "linux", "name": "Linux kernel" },
       { "id": "foreman", "name": "Foreman" },
       { "id": "zsh", "name": "zsh" },
-      { "id": "ansible", "name": "Ansible" }
+      { "id": "ansible", "name": "Ansible" },
+      { "id": "bash", "name": "Bash" }
     ]
   }, {
     "category": { "id": "virtualization", "name": "Virtualization" },

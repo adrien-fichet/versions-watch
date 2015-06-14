@@ -110,7 +110,7 @@ Then :
 - [x] lxc
 - [x] nessus
 - [x] latex
-- [ ] bash
+- [x] bash
 - [ ] css
 - [ ] html
 - [ ] lisp
