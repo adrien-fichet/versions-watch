@@ -111,12 +111,9 @@ Then :
 - [x] nessus
 - [x] latex
 - [x] bash
-- [ ] css
-- [ ] html
-- [ ] lisp
+- [x] react
 - [ ] lua
 - [ ] dart
-- [ ] react
 - [ ] backbone
 - [ ] emberjs
 - [ ] openbox

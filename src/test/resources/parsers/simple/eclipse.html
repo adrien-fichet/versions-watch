@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="" id="body_solstice">
+  <body class="hidden-cfa-button" id="body_solstice">
 	  <a class="sr-only" href="#content">Skip to main content</a>
     <header role="banner">
       <div class="container">
@@ -80,7 +80,7 @@
                   </span>
                 </form>
               </div><!-- /input-group -->
-              <a id="btn-call-for-action" href="//www.eclipse.org/downloads/" class="btn btn-huge btn-warning"><i class="fa fa-download"></i> Download</a>            </div>
+                          </div>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
                     </div>
         </section>
           <div class="container"><div class="col-md-24"><style type="text/css" scoped>
-  .otJIFLrTAgHnabM{
+  .JsqyQpYRUawgetN{
     display:block;
     position:absolute;
     left:0;
@@ -106,12 +106,12 @@
     padding-top:0;
   }
   @media (max-width: 1380px) {
-    .otJIFLrTAgHnabM{
+    .JsqyQpYRUawgetN{
       display:none !important;
     }
   }
   @media (min-width: 1580px) {
-    .otJIFLrTAgHnabM{
+    .JsqyQpYRUawgetN{
        margin-left:-210px;
         width:160px;
     }
@@ -120,7 +120,7 @@
     min-height:700px;
   }
   </style>
-  <div class="otJIFLrTAgHnabM">
+  <div class="JsqyQpYRUawgetN">
   <a href="https://www.eclipsecon.org/france2015/?utm_source=eclipse.org&amp;utm_medium=sidebar_program&amp;utm_content=banner-160x600-fr2015&amp;utm_campaign=eclipse_org_econfrance2015">
     <img src="/home/content/france2015/eclipsecon-160x600_program.jpg" alt="EclipseCon FRANCE 2015"  class="img-responsive"/>
   </a>
@@ -135,6 +135,7 @@
           <ol class="breadcrumb">
             <li><i class="fa fa-angle-double-right orange fa-fw"></i> <a href="/downloads/index.php" class="active">Packages</a></li>
             <li><a href="/downloads/index-developer.php">Developer Builds</a></li>
+            <!--  <li><a href="/downloads/installer.php">Eclipse Installer</a></li>-->
           </ol>
         </div>
       </div>
@@ -147,260 +148,500 @@
 <div class="alert alert-warning" role="alert">
   <strong>Security release:</strong> A vulnerability with <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=456947">JGit client (CVE-2014-9390)</a> was found in Luna SR1, please <a href="https://wiki.eclipse.org/FAQ_How_do_I_upgrade_Eclipse%3F">check for updates</a> or download an updated package below.
 </div>
-<div class="row header-row background-purple">
-    <div class="col-md-16 header-row float-right text-right">
-    <span id="descriptionText">Eclipse Luna SR2 (4.4.2) Release</span> for 
+
+<div class="header-row">
+  <div class="row">
+        <div class="col-sm-12">
+      <h2>Package Solutions</h2>
+    </div>
+    <div class="col-sm-12 float-right text-right padding-top-15 form-choose-platform">
+      <span id="descriptionText">Eclipse Luna SR2 (4.4.2) Release</span> for 
       <select id="osSelect">
         <option selected value="win32">Windows</option>
         <option  value="linux">Linux</option>
         <option  value="macosx">Mac OS X (Cocoa)</option>
       </select>
 
-      </div>
+        </div>
+  </div>
 </div>
-        <div class="download-standard row">    <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Maven Integration for Eclipse, Mylyn Task List, Code Recommenders Tools for Java Developers, WindowBuilder Core, XML Editors and Tools">
-      <div class="col-xs-2 icon"><img src="/downloads/images/java.png" width="42" height="42" alt="Eclipse IDE for Java Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-java-developers/lunasr2" title="The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration and WindowBuilder">Eclipse IDE for Java Developers</a><small>, 155 MB</small></h2>
-        <span class="download-counts">Downloaded 3,835,095 Times</span>        <p>The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration...</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+       <div class="download-standard"></div>  <div id="download-packages-container"><div id="download-packages">    <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Maven Integration for Eclipse, Mylyn Task List, Code Recommenders Tools for Java Developers, WindowBuilder Core, XML Editors and Tools">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/java.png" width="42" height="42" alt="Eclipse IDE for Java Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-win32.zip" title="Download Eclipse IDE for Java Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-win32-x86_64.zip" title="Download Eclipse IDE for Java Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
-      </div>
-    </div>
-    </div>   <div id="download-packages-container" class="row"><div class="clearfix header-row background-charcoal"><div class="col-xs-16"><h2>Package Solutions</h2></div><div class="col-xs-8"><div class="btn btn-default float-right" id="filter-placeholder"></div></div></div><div id="download-packages">    <div class="package-row clearfix" data-Filter-packages="Data Tools Platform, Git Team Provider, Java Development Tools, Java EE Developer Tools, JavaScript Development Tools, Maven Integration for Eclipse, Mylyn Task List, Plug-in Development Environment, Remote System Explorer, XML Editors and Tools">
-      <div class="col-xs-2 icon"><img src="/downloads/images/javaee.png" width="42" height="42" alt="Eclipse IDE for Java EE Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-java-ee-developers/lunasr2" title="Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.">Eclipse IDE for Java EE Developers</a><small>, 254 MB</small></h2>
-        <span class="download-counts">Downloaded 2,049,847 Times</span>        <p>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn...</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr2" title="The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration and WindowBuilder">
+              Eclipse IDE for Java Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">155 MB</li>
+            <li class="download-counts">3,871,509 DOWNLOADS</li>
+          </ul>
+          <p>The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration...</p>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-jee-luna-SR2-win32.zip" title="Download Eclipse IDE for Java EE Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-jee-luna-SR2-win32-x86_64.zip" title="Download Eclipse IDE for Java EE Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
-      </div>
-    </div>
-        <div class="package-row clearfix promo">
-      <div class="col-xs-2 icon"><img src="/downloads/images/ftype-logo-metallic-icon.png" width="42" height="42" alt="Enterprise-Class BIRT Report Server (Free, Not a Trial)"/></div>
-      <div class="col-xs-15 text">
-        <h2 class="title">
-          <a class="promo-title" href="//eclipse.org/go/PROMO_DOWNLOAD_ACTUATE_C" title="Enterprise-Class BIRT Report Server (Free, Not a Trial)">Enterprise-Class BIRT Report Server (Free, Not a Trial)</a>
-        </h2>
-        <p>Instantly enhance your Eclipse BIRT reports with interactive, real-time analytics that can be seamlessly embedded into web and mobile apps.</p>
-      </div>
-      <div class="col-xs-7">
-        <div class="col-md-9 download-icon orange hidden-xs hidden-sm">
-          <i class="fa fa-download"></i>
-        </div>
-        <div class="col-md-15 download-link text-center">
-          <a class="orange" href="//eclipse.org/go/PROMO_DOWNLOAD_ACTUATE_C" title="Enterprise-Class BIRT Report Server (Free, Not a Trial)"><i class="fa fa-star"></i><br/>Promoted<br/>Download</a><br/>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-        <div class="package-row clearfix zebra" data-Filter-packages="C/C++ Development Tools, Git Team Provider, Mylyn Task List, Remote System Explorer">
-      <div class="col-xs-2 icon"><img src="/downloads/images/cdt.png" width="42" height="42" alt="Eclipse IDE for C/C++ Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-cc-developers/lunasr2" title="An IDE for C/C++ developers with Mylyn integration.">Eclipse IDE for C/C++ Developers</a><small>, 165 MB</small></h2>
-        <span class="download-counts">Downloaded 563,099 Times</span>        <p>An IDE for C/C++ developers with Mylyn integration.</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix" data-Filter-packages="Data Tools Platform, Git Team Provider, Java Development Tools, Java EE Developer Tools, JavaScript Development Tools, Maven Integration for Eclipse, Mylyn Task List, Plug-in Development Environment, Remote System Explorer, XML Editors and Tools">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/javaee.png" width="42" height="42" alt="Eclipse IDE for Java EE Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-cpp-luna-SR2-win32.zip" title="Download Eclipse IDE for C/C++ Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-cpp-luna-SR2-win32-x86_64.zip" title="Download Eclipse IDE for C/C++ Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunasr2" title="Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.">
+              Eclipse IDE for Java EE Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">254 MB</li>
+            <li class="download-counts">2,070,225 DOWNLOADS</li>
+          </ul>
+          <p>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn...</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-jee-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-jee-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix" data-Filter-packages="Git Team Provider, Mylyn Task List, PHP Development Tools (PDT), XML Editors and Tools">
-      <div class="col-xs-2 icon"><img src="/downloads/images/php.png" width="42" height="42" alt="Eclipse for PHP Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-php-developers/lunasr2" title="The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and XML.">Eclipse for PHP Developers</a><small>, 132 MB</small></h2>
-        <span class="download-counts">Downloaded 338,226 Times</span>        <p>The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and...</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix zebra promo">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon"><img src="/downloads/images/ftype-logo-metallic-icon.png" width="42" height="42" alt="Enterprise-Class BIRT Report Server (Free, Not a Trial)"/></div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3 class="title">
+            <a class="promo-title" href="//eclipse.org/go/PROMO_DOWNLOAD_ACTUATE_C" title="Enterprise-Class BIRT Report Server (Free, Not a Trial)">Enterprise-Class BIRT Report Server (Free, Not a Trial)</a>
+          </h3>
+          <p>Instantly enhance your Eclipse BIRT reports with interactive, real-time analytics that can be seamlessly embedded into web and mobile apps.</p>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-php-luna-SR2-win32.zip" title="Download Eclipse for PHP Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-php-luna-SR2-win32-x86_64.zip" title="Download Eclipse for PHP Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+            <div class="col-sm-15 downloadLink-content">
+              <div class="text-center">
+                <p>
+                  <a class="orange" href="//eclipse.org/go/PROMO_DOWNLOAD_ACTUATE_C" title="Enterprise-Class BIRT Report Server (Free, Not a Trial)">
+                    <span class="text-center"><i class="fa fa-star"></i></span><br/>Promoted<br/>Download
+                  </a>
+                </p>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Plug-in Development Environment">
-      <div class="col-xs-2 icon"><img src="/downloads/images/classic2.jpg" width="42" height="42" alt="Eclipse IDE for Eclipse Committers 4.4.2"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-eclipse-committers-442/lunasr2" title="Package suited for development of Eclipse itself at Eclipse.org; based on the Eclipse Platform adding PDE, Git, Marketplace Client, source code and developer documentation.
+        <div class="package-row clearfix" data-Filter-packages="C/C++ Development Tools, Git Team Provider, Mylyn Task List, Remote System Explorer">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/cdt.png" width="42" height="42" alt="Eclipse IDE for C/C++ Developers"/>
+        </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/lunasr2" title="An IDE for C/C++ developers with Mylyn integration.">
+              Eclipse IDE for C/C++ Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">165 MB</li>
+            <li class="download-counts">569,363 DOWNLOADS</li>
+          </ul>
+          <p>An IDE for C/C++ developers with Mylyn integration.</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-cpp-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-cpp-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Mylyn Task List, PHP Development Tools (PDT), XML Editors and Tools">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/php.png" width="42" height="42" alt="Eclipse for PHP Developers"/>
+        </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-php-developers/lunasr2" title="The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and XML.">
+              Eclipse for PHP Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">132 MB</li>
+            <li class="download-counts">343,286 DOWNLOADS</li>
+          </ul>
+          <p>The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and...</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-php-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-php-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="package-row clearfix" data-Filter-packages="Git Team Provider, Java Development Tools, Plug-in Development Environment">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/classic2.jpg" width="42" height="42" alt="Eclipse IDE for Eclipse Committers 4.4.2"/>
+        </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-eclipse-committers-442/lunasr2" title="Package suited for development of Eclipse itself at Eclipse.org; based on the Eclipse Platform adding PDE, Git, Marketplace Client, source code and developer documentation.
 Click here to file a bug against Eclipse Platform.
-Click here to file a bug against Eclipse Git team provider.">Eclipse IDE for Eclipse Committers 4.4.2</a><small>, 205 MB</small></h2>
-        <span class="download-counts">Downloaded 286,580 Times</span>        <p>Package suited for development of Eclipse itself at Eclipse.</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+Click here to file a bug against Eclipse Git team provider.">
+              Eclipse IDE for Eclipse Committers 4.4.2            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">205 MB</li>
+            <li class="download-counts">290,257 DOWNLOADS</li>
+          </ul>
+          <p>Package suited for development of Eclipse itself at Eclipse.</p>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-standard-luna-SR2-win32.zip" title="Download Eclipse IDE for Eclipse Committers 4.4.2 Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-standard-luna-SR2-win32-x86_64.zip" title="Download Eclipse IDE for Eclipse Committers 4.4.2 Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-standard-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-standard-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix" data-Filter-packages="Git Team Provider, Java Development Tools, Maven Integration for Eclipse, Plug-in Development Environment, XML Editors and Tools, Xtend, Xtext">
-      <div class="col-xs-2 icon"><img src="/downloads/images/dsl-package.jpg" width="42" height="42" alt="Eclipse IDE for Java and DSL Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-java-and-dsl-developers/lunasr2" title="The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.">Eclipse IDE for Java and DSL Developers</a><small>, 274 MB</small></h2>
-        <span class="download-counts">Downloaded 162,479 Times</span>        <p>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client.</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Maven Integration for Eclipse, Plug-in Development Environment, XML Editors and Tools, Xtend, Xtext">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/dsl-package.jpg" width="42" height="42" alt="Eclipse IDE for Java and DSL Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-dsl-luna-SR2-win32.zip" title="Download Eclipse IDE for Java and DSL Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-dsl-luna-SR2-win32-x86_64.zip" title="Download Eclipse IDE for Java and DSL Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-and-dsl-developers/lunasr2" title="The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.">
+              Eclipse IDE for Java and DSL Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">274 MB</li>
+            <li class="download-counts">165,277 DOWNLOADS</li>
+          </ul>
+          <p>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client.</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-dsl-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-dsl-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix zebra" data-Filter-packages="BIRT Framework, Data Tools Platform, Java Development Tools, Java EE Developer Tools, JavaScript Development Tools, Mylyn Task List, Remote System Explorer, XML Editors and Tools">
-      <div class="col-xs-2 icon"><img src="/downloads/images/birt-icon_48x48.png" width="42" height="42" alt="Eclipse IDE for Java and Report Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-java-and-report-developers/lunasr2" title="Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting needs.">Eclipse IDE for Java and Report Developers</a><small>, 283 MB</small></h2>
-        <span class="download-counts">Downloaded 126,963 Times</span>        <p>Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting...</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix" data-Filter-packages="BIRT Framework, Data Tools Platform, Java Development Tools, Java EE Developer Tools, JavaScript Development Tools, Mylyn Task List, Remote System Explorer, XML Editors and Tools">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/birt-icon_48x48.png" width="42" height="42" alt="Eclipse IDE for Java and Report Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-reporting-luna-SR2-win32.zip" title="Download Eclipse IDE for Java and Report Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-reporting-luna-SR2-win32-x86_64.zip" title="Download Eclipse IDE for Java and Report Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-and-report-developers/lunasr2" title="Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting needs.">
+              Eclipse IDE for Java and Report Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">283 MB</li>
+            <li class="download-counts">129,248 DOWNLOADS</li>
+          </ul>
+          <p>Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting...</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-reporting-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-reporting-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix" data-Filter-packages="Git Team Provider, Java Development Tools, Maven Integration for Eclipse, Mylyn Task List, Plug-in Development Environment, Remote Application Platform, Code Recommenders Tools for Java Developers, WindowBuilder Core, XML Editors and Tools">
-      <div class="col-xs-2 icon"><img src="/downloads/images/rcp.jpg" width="42" height="42" alt="Eclipse for RCP and RAP Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-rcp-and-rap-developers/lunasr2" title="A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client Applications or Remote Application Platform (RCP+RAP), plus Mylyn, the m2e Maven integration, and an XML editor. In addition to the CVS Eclipse Team provider, it also contains the EGit tooling for accessing Git version control systems.">Eclipse for RCP and RAP Developers</a><small>, 240 MB</small></h2>
-        <span class="download-counts">Downloaded 113,949 Times</span>        <p>A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client Applications or Remote Application Platform (RCP+RAP).</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Maven Integration for Eclipse, Mylyn Task List, Plug-in Development Environment, Remote Application Platform, Code Recommenders Tools for Java Developers, WindowBuilder Core, XML Editors and Tools">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/rcp.jpg" width="42" height="42" alt="Eclipse for RCP and RAP Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-rcp-luna-SR2-win32.zip" title="Download Eclipse for RCP and RAP Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-rcp-luna-SR2-win32-x86_64.zip" title="Download Eclipse for RCP and RAP Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/lunasr2" title="A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client Applications or Remote Application Platform (RCP+RAP), plus Mylyn, the m2e Maven integration, and an XML editor. In addition to the CVS Eclipse Team provider, it also contains the EGit tooling for accessing Git version control systems.">
+              Eclipse for RCP and RAP Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">240 MB</li>
+            <li class="download-counts">116,279 DOWNLOADS</li>
+          </ul>
+          <p>A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client Applications or Remote Application Platform (RCP+RAP).</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-rcp-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-rcp-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Mylyn Task List, Plug-in Development Environment">
-      <div class="col-xs-2 icon"><img src="/downloads/images/modeling.png" width="42" height="42" alt="Eclipse Modeling Tools"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-modeling-tools/lunasr2" title="The Modeling package provides tools and runtimes for building model-based applications.
+        <div class="package-row clearfix" data-Filter-packages="Git Team Provider, Java Development Tools, Mylyn Task List, Plug-in Development Environment">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/modeling/images/modeling_about.png" width="42" height="42" alt="Eclipse Modeling Tools"/>
+        </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/lunasr2" title="The Modeling package provides tools and runtimes for building model-based applications.
         You can use it to graphically design domain models, to leverage those models at design time by creating and editing dynamic instances, to collaborate via Eclipse's team support with facilities for comparing and merging models and model instances structurally, and finally to generate Java code from those models to produce complete applications.
-        In addition, via the package's discover catalog, you can easily install a wide range of additional powerful, model-based tools and runtimes to suit your specific needs.">Eclipse Modeling Tools</a><small>, 335 MB</small></h2>
-        <span class="download-counts">Downloaded 110,014 Times</span>        <p>The Modeling package provides tools and runtimes for building model-based applications.</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        In addition, via the package's discover catalog, you can easily install a wide range of additional powerful, model-based tools and runtimes to suit your specific needs.">
+              Eclipse Modeling Tools            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">335 MB</li>
+            <li class="download-counts">112,384 DOWNLOADS</li>
+          </ul>
+          <p>The Modeling package provides tools and runtimes for building model-based applications.</p>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-modeling-luna-SR2-win32.zip" title="Download Eclipse Modeling Tools Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-modeling-luna-SR2-win32-x86_64.zip" title="Download Eclipse Modeling Tools Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-modeling-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-modeling-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix" data-Filter-packages="C/C++ Development Tools, Git Team Provider, Mylyn Task List, Parallel Tools Platform, Remote System Explorer, XML Editors and Tools">
-      <div class="col-xs-2 icon"><img src="/downloads/images/parallel.png" width="42" height="42" alt="Eclipse for Parallel Application Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-parallel-application-developers/lunasr2" title="Tools for C, C++, Fortran, and UPC, including MPI, OpenMP, OpenACC, a parallel debugger, and remotely building, running and monitoring applications.">Eclipse for Parallel Application Developers</a><small>, 225 MB</small></h2>
-        <span class="download-counts">Downloaded 104,058 Times</span>        <p>Tools for C, C++, Fortran, and UPC, including MPI, OpenMP, OpenACC, a parallel debugger, and remotely building, running and monitoring applications...</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix zebra" data-Filter-packages="C/C++ Development Tools, Git Team Provider, Mylyn Task List, Parallel Tools Platform, Remote System Explorer, XML Editors and Tools">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/parallel.png" width="42" height="42" alt="Eclipse for Parallel Application Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-parallel-luna-SR2-win32.zip" title="Download Eclipse for Parallel Application Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-parallel-luna-SR2-win32-x86_64.zip" title="Download Eclipse for Parallel Application Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-parallel-application-developers/lunasr2" title="Tools for C, C++, Fortran, and UPC, including MPI, OpenMP, OpenACC, a parallel debugger, and remotely building, running and monitoring applications.">
+              Eclipse for Parallel Application Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">225 MB</li>
+            <li class="download-counts">106,336 DOWNLOADS</li>
+          </ul>
+          <p>Tools for C, C++, Fortran, and UPC, including MPI, OpenMP, OpenACC, a parallel debugger, and remotely building, running and monitoring applications...</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-parallel-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-parallel-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix zebra" data-Filter-packages="Jubula Functional Testing, Mylyn Task List">
-      <div class="col-xs-2 icon"><img src="/downloads/images/testing.png" width="42" height="42" alt="Eclipse for Testers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-testers/lunasr2" title="This package contains Eclipse features that support the software development quality assurance process, such as Jubula and Mylyn.">Eclipse for Testers</a><small>, 107 MB</small></h2>
-        <span class="download-counts">Downloaded 100,321 Times</span>        <p>This package contains Eclipse features that support the software development quality assurance process, such as Jubula and Mylyn.</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix" data-Filter-packages="Jubula Functional Testing, Mylyn Task List">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/testing.png" width="42" height="42" alt="Eclipse for Testers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-testing-luna-SR2-win32.zip" title="Download Eclipse for Testers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-testing-luna-SR2-win32-x86_64.zip" title="Download Eclipse for Testers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-testers/lunasr2" title="This package contains Eclipse features that support the software development quality assurance process, such as Jubula and Mylyn.">
+              Eclipse for Testers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">107 MB</li>
+            <li class="download-counts">102,429 DOWNLOADS</li>
+          </ul>
+          <p>This package contains Eclipse features that support the software development quality assurance process, such as Jubula and Mylyn.</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-testing-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-testing-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix" data-Filter-packages="C/C++ Development Tools, Java Development Tools, Plug-in Development Environment, XML Editors and Tools, Xtend, Xtext">
-      <div class="col-xs-2 icon"><img src="/downloads/images/classic.jpg" width="42" height="42" alt="Eclipse IDE for Automotive Software Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-ide-automotive-software-developers-includes-incubating-components/lunasr2" title="This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development Tools, and Plug-in Development Environment, it includes EMF, Sphinx, GMF, Xtext, Xtend, Xpand, UML2, selected other modeling components, C/C++ development tools, and XML/XSD editors and tools. To keep the package at a reasonable size, it includes only the runtime binaries but no source code and no developer documentation.">Eclipse IDE for Automotive Software Developers</a><small>, 211 MB</small></h2>
-        <span class="download-counts">Downloaded 96,313 Times</span>        <p>This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development...</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix zebra" data-Filter-packages="C/C++ Development Tools, Java Development Tools, Plug-in Development Environment, XML Editors and Tools, Xtend, Xtext">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/classic.jpg" width="42" height="42" alt="Eclipse IDE for Automotive Software Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-automotive-luna-SR2-incubation-win32.zip" title="Download Eclipse IDE for Automotive Software Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-automotive-luna-SR2-incubation-win32-x86_64.zip" title="Download Eclipse IDE for Automotive Software Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-automotive-software-developers-includes-incubating-components/lunasr2" title="This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development Tools, and Plug-in Development Environment, it includes EMF, Sphinx, GMF, Xtext, Xtend, Xpand, UML2, selected other modeling components, C/C++ development tools, and XML/XSD editors and tools. To keep the package at a reasonable size, it includes only the runtime binaries but no source code and no developer documentation.">
+              Eclipse IDE for Automotive Software Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">211 MB</li>
+            <li class="download-counts">98,392 DOWNLOADS</li>
+          </ul>
+          <p>This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development...</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-automotive-luna-SR2-incubation-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-automotive-luna-SR2-incubation-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        <div class="package-row clearfix zebra" data-Filter-packages="Git Team Provider, Java Development Tools, Mylyn Task List, Plug-in Development Environment, Scout">
-      <div class="col-xs-2 icon"><img src="/downloads/images/scout.jpg" width="42" height="42" alt="Eclipse for Scout Developers"/></div>
-      <div class="col-xs-22 col-md-15 text">
-        <h2><a href="/downloads/packages/eclipse-scout-developers/lunasr2" title="Eclipse Scout is a framework to develop Java/Eclipse based business applications that run on the desktop, in browsers, and on mobile devices. This package includes a complete SDK, useful developer tools and source code.">Eclipse for Scout Developers</a><small>, 297 MB</small></h2>
-        <span class="download-counts">Downloaded 92,817 Times</span>        <p>Eclipse Scout is a framework to develop Java/Eclipse based business applications that run on the desktop, in browsers, and on mobile.</p>
-      </div>
-      <div class="col-md-7 download">
-        <div class="download-icon col-md-9 hidden-xs hidden-sm">
-          <i class="fa fa-download orange"></i>
+        <div class="package-row clearfix" data-Filter-packages="Git Team Provider, Java Development Tools, Mylyn Task List, Plug-in Development Environment, Scout">
+      <div class="row vertical-align-min-md">
+        <div class="col-sm-3 icon">
+          <img src="/downloads/images/scout.jpg" width="42" height="42" alt="Eclipse for Scout Developers"/>
         </div>
-        <div class="col-md-15 download-link text-center">
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-scout-luna-SR2-win32.zip" title="Download Eclipse for Scout Developers Windows 32 Bit">Windows 32 Bit</a><br/>
-                      <a class="downloadLink" href="//www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-scout-luna-SR2-win32-x86_64.zip" title="Download Eclipse for Scout Developers Windows 64 Bit">Windows 64 Bit</a>
-                  </div>
+        <div class="col-sm-13 text xs-sm-text-center">
+          <h3>
+            <a href="http://www.eclipse.org/downloads/packages/eclipse-scout-developers/lunasr2" title="Eclipse Scout is a framework to develop Java/Eclipse based business applications that run on the desktop, in browsers, and on mobile devices. This package includes a complete SDK, useful developer tools and source code.">
+              Eclipse for Scout Developers            </a>
+          </h3>
+
+          
+          <ul class="list-inline">
+            <li class="download-counts">297 MB</li>
+            <li class="download-counts">94,983 DOWNLOADS</li>
+          </ul>
+          <p>Eclipse Scout is a framework to develop Java/Eclipse based business applications that run on the desktop, in browsers, and on mobile.</p>
+        </div>
+        <div class="col-sm-8 download">
+          <div class="col-sm-9 downloadLink-icon"><i class="fa fa-download"></i></div>
+          <div class="col-xs-24 col-sm-15 downloadLink-content">
+            <div class="text-center">
+              <p class="margin-bottom">Windows</p>
+              <ul class="list-inline">
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-scout-luna-SR2-win32.zip" title="Download">32 bit</a></li>
+                  <li class="divider black"></li>
+                                  <li><a class="downloadLink" href="download.php?file=/technology/epp/downloads/release/luna/SR2/eclipse-scout-luna-SR2-win32-x86_64.zip" title="Download">64 bit</a></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    </div></div><div id="show-packages" class="margin-top-10"><div class="text-center"><a href="index-developer-default.php" id="btn-package-toogle">Show all packages</a></div></div></div>
+    </div></div></div>
     </div>
     <div class="col-md-6">
-    <div class="ad">
-    <div style="text-align:center;">
-    <a href="/go/PROMO_OBEO" rel="nofollow">
-    <img width="200" height="200" src="/membership/promo/images/obeo_sirius.png" alt="Obeo" title="Obeo"/></a>
+    <div class="row">
+  <div class="ad col-sm-12 col-md-24 clearfix">
+      <div style="text-align:center;">
+    <a href="/go/PAID_JREBEL_C" rel="nofollow">
+    <img width="200" height="200" src="/membership/promo/images/jrebel-c-200x200.jpg" alt="JREBEL" title="JREBEL"/></a>
   </div>
+    </div>
+
+      <!--<div class="col-sm-12 col-md-24 padding-bottom-25 clearfix">
+      <a href="installer.php"><img class="img-responsive" src="assets/public/images/btn_goto_installer.jpg" alt="Try out the new Eclipse Installer!"/></a>
+    </div>-->
   </div>
-<div class="sideitem">
+<div class="sideitem clearfix">
   <h6>Related Links</h6>
   <ul id="installingEclipse">
-    <li><a href="compare.php?release=luna">Compare &amp; Combine Packages</a></li>
-    <li><a href="//wiki.eclipse.org/Eclipse/Installation">Install Guide</a></li>
+          <li><a href="compare.php?release=luna">Compare &amp; Combine Packages</a></li>
+        <li><a href="//wiki.eclipse.org/Eclipse/Installation">Install Guide</a></li>
     <li><a href="http://help.eclipse.org">Documentation</a></li>
     <li><a href="http://help.eclipse.org/luna/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-129.htm">Updating Eclipse</a></li>
     <li><a href="/forums/">Forums</a></li>

@@ -438,6 +438,11 @@ public class Conf {
                 "body > p:nth-child(16) > a:nth-child(1)",
                 "bash-(.*)"
         ));
+        configurations.put("react", new VersionParserConfiguration(
+                "https://facebook.github.io/react/",
+                "body > div.container > div.hero > div > div.buttons-unit > a:nth-child(2)",
+                "Download React v(.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

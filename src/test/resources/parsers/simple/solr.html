@@ -204,12 +204,36 @@
 <li><a href="./pylucene/index.html">PyLucene</a> is a Python port of the Core project.</li>
 </ul>
 <div><h1 id="lucenewzxhzdk0tmwzxhzdk1-news">Lucene<span style="vertical-align: super; font-size: xx-small">TM</span> News</h1>
+<h2 id="15-june-2015-apache-lucene-521-and-apache-solr-521-available">15 June 2015 - Apache Lucene 5.2.1 and Apache Solr 5.2.1 Available</h2>
+<p>The Lucene PMC is pleased to announce the release of Apache Lucene 5.2.1 and Apache Solr 5.2.1</p>
+<p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/java/5.2.1">http://www.apache.org/dyn/closer.cgi/lucene/java/5.2.1</a>
+and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/solr/5.2.1">http://www.apache.org/dyn/closer.cgi/lucene/solr/5.2.1</a></p>
+<h3 id="highlights-of-this-lucene-release-include">Highlights of this Lucene release include:</h3>
+<ul>
+<li>Fix class loading deadlock relating to Codec initialization, default codec and SPI discovery.</li>
+<li>NRT readers now reflect a new commit even if there is no change to the commit user data</li>
+<li>Queries now get a dummy Similarity when scores are not needed in order to not load unnecessary information like norms</li>
+</ul>
+<h3 id="highlights-of-this-solr-release-include">Highlights of this Solr release include:</h3>
+<ul>
+<li>Fix javascript bug introduced by SOLR-7409 that breaks the dataimport screen in the admin UI</li>
+<li>Faceting on a numeric field with a unique() subfacet function on another numeric field can result in incorrect results or an exception</li>
+<li>New Facet Module should respect shards.tolerant and process all non-failing shards instead of throwing an exception</li>
+<li>A request with a json content type but no body caused a null pointer exception</li>
+<li>SolrOutputFormat creates an invalid solr.xml in the solr home zip for MapReduceIndexerTool</li>
+<li>Fix new (Angular-based) admin UI Cloud pane</li>
+<li>The DefaultSolrHighlighter since 5.0 was determining if payloads were present in a way that was slow, especially when lots of fields were highlighted. It's now fast</li>
+<li>Requests are not distributed evenly if the collection isn't present locally</li>
+</ul>
+<p>See the <a href="/core/5_2_1/changes/Changes.html">Lucene CHANGES.txt</a> and
+<a href="/solr/5_2_1/changes/Changes.html">Solr CHANGES.txt</a> files included
+with the release for a full list of details.</p>
 <h2 id="7-june-2015-apache-lucene-520-and-apache-solr-520-available">7 June 2015 - Apache Lucene 5.2.0 and Apache Solr 5.2.0 Available</h2>
 <p>The Lucene PMC is pleased to announce the availability
 of Apache Lucene 5.2.0 and Apache Solr 5.2.0.</p>
 <p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/java/5.2.0">http://www.apache.org/dyn/closer.cgi/lucene/java/5.2.0</a>
 and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lucene/solr/5.2.0">http://www.apache.org/dyn/closer.cgi/lucene/solr/5.2.0</a></p>
-<h3 id="highlights-of-this-lucene-release-include">Highlights of this Lucene release include:</h3>
+<h3 id="highlights-of-this-lucene-release-include_1">Highlights of this Lucene release include:</h3>
 <ul>
 <li>
 <p>Span queries now share document conjunction/intersection code with boolean queries, and use two-phased iterators for faster intersection by avoiding loading positions in certain cases.</p>
@@ -242,7 +266,7 @@ and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.cgi/lu
 <p>Various bugfixes and optimizations since the 5.1.0 release.</p>
 </li>
 </ul>
-<h3 id="highlights-of-this-solr-release-include">Highlights of this Solr release include:</h3>
+<h3 id="highlights-of-this-solr-release-include_1">Highlights of this Solr release include:</h3>
 <ul>
 <li>
 <p>Restore API allows restoring a core from an index backup.</p>
@@ -917,15 +941,15 @@ with the release for a full list of details.</p>
       <p><div class="button-green">
     <a href="core/mirrors-core-latest-redir.html?">Download</a>
     <div class="flap top">Click to begin</div>
-    <div class="flap bottom">of Apache Lucene 5.2.0</div>
+    <div class="flap bottom">of Apache Lucene 5.2.1</div>
   </div>
-  <div class="download-desc">Apache Lucene 5.2.0</div>
+  <div class="download-desc">Apache Lucene 5.2.1</div>
   <div class="button-orange">
     <a href="solr/mirrors-solr-latest-redir.html?">Download</a>
     <div class="flap top">Click to begin</div>
-    <div class="flap bottom">of Apache Solr 5.2.0</div>
+    <div class="flap bottom">of Apache Solr 5.2.1</div>
   </div>
-  <div class="download-desc">Apache Solr 5.2.0</div></p>
+  <div class="download-desc">Apache Solr 5.2.1</div></p>
 <h1 id="projects">Projects</h1>
 <ul>
 <li><a href="./core/">Lucene Core (Java)</a></li>

@@ -10,7 +10,6 @@ public class ExpectedVersions {
         expectedVersions = new HashMap<String, String>();
         expectedVersions.put("idea", "14.1.3");
         expectedVersions.put("youtrack", "6.0.12634");
-        expectedVersions.put("solr", "5.1.0");
         expectedVersions.put("spring", "4.2.0");
         expectedVersions.put("apache", "2.4.12");
         expectedVersions.put("debian", "8.1");
@@ -60,7 +59,7 @@ public class ExpectedVersions {
         expectedVersions.put("linux", "4.0.5");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.13.1");
-        expectedVersions.put("solr", "5.2.0");
+        expectedVersions.put("solr", "5.2.1");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "43.0");
@@ -98,6 +97,7 @@ public class ExpectedVersions {
         expectedVersions.put("nessus", "6.3.7");
         expectedVersions.put("latex", "2015.01.01");
         expectedVersions.put("bash", "4.3");
+        expectedVersions.put("react", "0.13.3");
     }
 
     public Map<String, String> getExpectedVersions() {
