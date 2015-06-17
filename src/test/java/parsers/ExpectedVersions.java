@@ -14,7 +14,7 @@ public class ExpectedVersions {
         expectedVersions.put("apache", "2.4.12");
         expectedVersions.put("debian", "8.1");
         expectedVersions.put("eclipse", "4.4.2");
-        expectedVersions.put("git", "2.4.3");
+        expectedVersions.put("git", "2.4.4");
         expectedVersions.put("javase", "8u45");
         expectedVersions.put("jenkins", "1.617");
         expectedVersions.put("mysql", "5.6");
@@ -31,9 +31,9 @@ public class ExpectedVersions {
         expectedVersions.put("hibernate", "4.3.10");
         expectedVersions.put("javascript", "1.8.5");
         expectedVersions.put("ubuntu", "15.04");
-        expectedVersions.put("nginx", "1.9.1");
+        expectedVersions.put("nginx", "1.9.2");
         expectedVersions.put("elasticsearch", "1.6.0");
-        expectedVersions.put("logstash", "1.5.0");
+        expectedVersions.put("logstash", "1.5.1");
         expectedVersions.put("kibana", "4.1.0");
         expectedVersions.put("logstashforwarder", "0.4.0");
         expectedVersions.put("openssl", "1.0.2c");
@@ -75,15 +75,15 @@ public class ExpectedVersions {
         expectedVersions.put("coreos", "709.0.0");
         expectedVersions.put("safari", "8.0.6");
         expectedVersions.put("drupal", "7.37");
-        expectedVersions.put("foreman", "1.8.1");
+        expectedVersions.put("foreman", "1.8.2");
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.20");
-        expectedVersions.put("nmap", "6.49BETA1");
+        expectedVersions.put("nmap", "6.49BETA2");
         expectedVersions.put("edge", "15.10130");
         expectedVersions.put("opera", "30.0");
         expectedVersions.put("postgresql", "9.4.4");
         expectedVersions.put("lighttpd", "1.4.35");
-        expectedVersions.put("bootstrap", "3.3.4");
+        expectedVersions.put("bootstrap", "3.3.5");
         expectedVersions.put("ruby", "2.2.2");
         expectedVersions.put("zsh", "5.0.7");
         expectedVersions.put("ansible", "1.9.1");
@@ -98,6 +98,7 @@ public class ExpectedVersions {
         expectedVersions.put("latex", "2015.01.01");
         expectedVersions.put("bash", "4.3");
         expectedVersions.put("react", "0.13.3");
+        expectedVersions.put("lua", "5.3.1");
     }
 
     public Map<String, String> getExpectedVersions() {

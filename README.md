@@ -112,7 +112,7 @@ Then :
 - [x] latex
 - [x] bash
 - [x] react
-- [ ] lua
+- [x] lua
 - [ ] dart
 - [ ] backbone
 - [ ] emberjs

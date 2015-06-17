@@ -173,7 +173,7 @@ function onloadVersionRMDownload() {
 
 //MPS
 var versionMPSShort = "3.2";
-var versionMPSLong = "3.2.2";
+var versionMPSLong = "3.2.3";
 function versionMPS(el) {
     if (el == "short") {
         document.write(versionMPSShort);
@@ -217,7 +217,7 @@ function onloadVersionWebIDEownload() {
 
 //PyCharm
 var versionPyCharmShort = "4.5";
-var versionPyCharmLong = "4.5.1";
+var versionPyCharmLong = "4.5.2";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -352,7 +352,7 @@ function versionUpsource(el) {
 
 //CLion
 var versionCLionShort = "1.0";
-var versionCLionLong = "1.0.3";
+var versionCLionLong = "1.0.4";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);

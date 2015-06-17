@@ -443,6 +443,11 @@ public class Conf {
                 "body > div.container > div.hero > div > div.buttons-unit > a:nth-child(2)",
                 "Download React v(.*)"
         ));
+        configurations.put("lua", new VersionParserConfiguration(
+                "http://www.lua.org/",
+                "body > table > tbody > tr:nth-child(2) > td.news > span > a:nth-child(1)",
+                "Lua (.*)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
