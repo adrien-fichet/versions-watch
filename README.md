@@ -123,7 +123,7 @@ Then :
 - [ ] dropbox
 - [ ] wireshark
 - [ ] chef
-- [ ] salt
+- [ ] salt
 - [ ] mercurial
 - [ ] libreoffice
 
