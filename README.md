@@ -113,7 +113,7 @@ Then :
 - [x] bash
 - [x] react
 - [x] lua
-- [ ] dart
+- [x] dart
 - [ ] backbone
 - [ ] emberjs
 - [ ] openbox

@@ -74,7 +74,7 @@ public class ExpectedVersions {
         expectedVersions.put("curator", "3.1.0");
         expectedVersions.put("coreos", "709.0.0");
         expectedVersions.put("safari", "8.0.6");
-        expectedVersions.put("drupal", "7.37");
+        expectedVersions.put("drupal", "7.38");
         expectedVersions.put("foreman", "1.8.2");
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.20");
@@ -90,7 +90,7 @@ public class ExpectedVersions {
         expectedVersions.put("polymer", "1.0.2");
         expectedVersions.put("fail2ban", "0.9.1");
         expectedVersions.put("go", "1.4.2");
-        expectedVersions.put("metasploit", "4.11.2");
+        expectedVersions.put("metasploit", "4.11.3");
         expectedVersions.put("varnish", "4.0.3");
         expectedVersions.put("perl", "5.22.0");
         expectedVersions.put("lxc", "1.0");
@@ -99,6 +99,7 @@ public class ExpectedVersions {
         expectedVersions.put("bash", "4.3");
         expectedVersions.put("react", "0.13.3");
         expectedVersions.put("lua", "5.3.1");
+        expectedVersions.put("dart", "1.10.0");
     }
 
     public Map<String, String> getExpectedVersions() {

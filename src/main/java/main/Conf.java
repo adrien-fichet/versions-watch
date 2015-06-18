@@ -448,6 +448,11 @@ public class Conf {
                 "body > table > tbody > tr:nth-child(2) > td.news > span > a:nth-child(1)",
                 "Lua (.*)"
         ));
+        configurations.put("dart", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Dart_(programming_language)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
+                "(.*?)\\["
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
