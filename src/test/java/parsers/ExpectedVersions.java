@@ -53,7 +53,7 @@ public class ExpectedVersions {
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
-        expectedVersions.put("vim", "7.4.738");
+        expectedVersions.put("vim", "7.4.748");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
         expectedVersions.put("linux", "4.0.5");
@@ -66,20 +66,20 @@ public class ExpectedVersions {
         expectedVersions.put("firefox", "38.0.5");
         expectedVersions.put("gnomeshell", "3.17.2");
         expectedVersions.put("kde", "4.14.3");
-        expectedVersions.put("docker", "1.6");
+        expectedVersions.put("docker", "1.6.0");
         expectedVersions.put("kali", "1.1.0");
         expectedVersions.put("visualstudio", "2013.4");
         expectedVersions.put("bower", "1.4.1");
-        expectedVersions.put("angularjs", "1.4.0");
+        expectedVersions.put("angularjs", "1.4.1");
         expectedVersions.put("curator", "3.1.0");
-        expectedVersions.put("coreos", "709.0.0");
+        expectedVersions.put("coreos", "717.0.0");
         expectedVersions.put("safari", "8.0.6");
         expectedVersions.put("drupal", "7.38");
         expectedVersions.put("foreman", "1.8.2");
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.20");
         expectedVersions.put("nmap", "6.49BETA2");
-        expectedVersions.put("edge", "15.10130");
+        expectedVersions.put("edge", "16.10130");
         expectedVersions.put("opera", "30.0");
         expectedVersions.put("postgresql", "9.4.4");
         expectedVersions.put("lighttpd", "1.4.35");
@@ -100,6 +100,7 @@ public class ExpectedVersions {
         expectedVersions.put("react", "0.13.3");
         expectedVersions.put("lua", "5.3.1");
         expectedVersions.put("dart", "1.10.0");
+        expectedVersions.put("backbone", "1.2.1");
     }
 
     public Map<String, String> getExpectedVersions() {

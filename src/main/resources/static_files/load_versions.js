@@ -56,7 +56,8 @@ var versions = [
       { "id": "wordpress", "name": "WordPress" },
       { "id": "bootstrap", "name": "Bootstrap" },
       { "id": "polymer", "name": "Polymer" },
-      { "id": "react", "name": "React" }
+      { "id": "react", "name": "React" },
+      { "id": "backbone", "name": "Backbone" }
     ]
   }, {
     "category": { "id": "browsers", "name": "Web browsers" },

@@ -114,7 +114,7 @@ Then :
 - [x] react
 - [x] lua
 - [x] dart
-- [ ] backbone
+- [x] backbone
 - [ ] emberjs
 - [ ] openbox
 - [ ] naxsi

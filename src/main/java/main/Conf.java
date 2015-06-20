@@ -280,9 +280,9 @@ public class Conf {
                 "Please see the (.*?) Info Page"
         ));
         configurations.put("docker", new VersionParserConfiguration(
-                "http://docs.docker.com/",
-                "#document-version-number",
-                "Version v(.*)"
+                "https://docs.docker.com/docker/misc/release-notes/",
+                "#release-notes-version-1-6-0",
+                "Release notes version (.*)"
         ));
         configurations.put("kali", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Kali_Linux",
@@ -452,6 +452,11 @@ public class Conf {
                 "https://en.wikipedia.org/wiki/Dart_(programming_language)",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
                 "(.*?)\\["
+        ));
+        configurations.put("backbone", new VersionParserConfiguration(
+                "http://backbonejs.org/",
+                "body > div.container > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                "Production Version \\((.*)\\)"
         ));
     }
 
