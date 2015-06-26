@@ -1,6 +1,7 @@
 //IDEA
+//IDEA
 var versionIDEAShort = "14.1";
-var versionIDEALong = "14.1.3";
+var versionIDEALong = "14.1.4";
 function versionIDEA(el) {
     if (el == "short") {
         document.write(versionIDEAShort);
@@ -130,7 +131,7 @@ function onloadVersionDPDownload() {
 
 //TeamCity
 var versionTCShort = "9.0";
-var versionTCLong = "9.0.4";
+var versionTCLong = "9.0.5";
 function versionTC(el) {
     if (el == "short") {
         document.write(versionTCShort);
@@ -152,7 +153,7 @@ function onloadVersionTCownload() {
 
 //RubyMine
 var versionRubyShort = "7.1";
-var versionRubyLong = "7.1.2";
+var versionRubyLong = "7.1.3";
 function versionRuby(el) {
     if (el == "short") {
         document.write(versionRubyShort);
@@ -339,7 +340,7 @@ function onloadVersionAppCodeDownload() {
 
 //Upsource
 var versionUpsourceShort = "2";
-var versionUpsourceLong = "2.0";
+var versionUpsourceLong = "2.0.1";
 function versionUpsource(el) {
     if (el == "short") {
         document.write(versionUpsourceShort);

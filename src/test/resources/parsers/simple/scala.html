@@ -87,7 +87,7 @@
   <a class="central-btn download" id="main-download-button" href="/download/">Download</a>
   <a class="central-btn api" href="http://www.scala-lang.org/api/">API Docs&nbsp;&nbsp;&nbsp;&nbsp;</a>
   <div class="big-scala-spiral"><img src="/resources/img/smooth-spiral.png" alt="Spiral" /></div>
-  <div class="central-btn scala-version"><span class="superbold">Scala</span><br/>2.11.6</div>
+  <div class="central-btn scala-version"><span class="superbold">Scala</span><br/>2.11.7</div>
 </div>
 
 <div class="darkbluebar">
@@ -469,144 +469,42 @@ for (Person person : people) {
   
     <div class="news-item newsbox left">
       
-        <div class="news-category">announcement</div>
+        <div class="news-category">news</div>
       
       
-        <div class="news-title"><a href="/news/2.12.0-M1">Scala 2.12.0-M1 is now available!</a></div>
+        <div class="news-title"><a href="/news/2015/06/25/bagwell-award-2015.html">Bill Venners receives community award</a></div>
       
       
-      <div class="news-date"><img src="/resources/img/date-icon.png" alt="date icon" /> Tuesday, May 05, 2015</div>
+      <div class="news-date"><img src="/resources/img/date-icon.png" alt="date icon" /> Thursday, June 25, 2015</div>
       
-        <div class="news-body"><p>We are very pleased to announce the release of Scala 2.12.0-M1!</p>
-<!-- To be added:
-* Get started with the [Hello Scala 2.11 template](https://typesafe.com/activator/template/hello-scala-2_11) in [Typesafe Activator](https://typesafe.com/platform/getstarted)
--->
-<ul>
-<li>Download a distribution from <a href='http://scala-lang.org/download/2.12.0-M1.html'>scala-lang.org</a></li>
+        <div class="news-body"><p>We are pleased to announce that the Phil Bagwell Memorial Scala Community Award for 2015 has been awarded to <a href='https://twitter.com/bvenners'>Bill Venners</a>. The award was presented in Amsterdam at the outset of <a href='http://event.scaladays.org/scaladays-amsterdam-2015'>Scala Days</a>.</p>
 
-<li>Obtain it via <a href='http://search.maven.org/?search%7Cga%7C1%7Cg%3A%22org.scala-lang%22%20AND%20v%3A%222.11.0%22#search%7Cga%7C1%7Cg%3Aorg.scala-lang%20AND%20v%3A2.12.0-M1'>Maven Central</a></li>
-</ul>
-
-<p>Code that compiles on 2.11.x without deprecation warnings should compile on 2.12.x (we do not guarantee this for experimental APIs, such as reflection). If not, <a href='https://issues.scala-lang.org'>please file an issue</a>.</p>
-
-<p>We are working with the community to ensure availability of the core projects of the Scala 2.12 eco-system. This release is <em>not</em> binary compatible with the 2.11.x series, to allow us to keep improving the Scala standard library.</p>
-
-<p>The Scala 2.12 series targets Java 8. Programs written in Scala 2.12, including the Scala 2.12 compiler, can only be executed on Java 8 or newer. Note that the current milestone release (2.12.0-M1) still targets Java 6.</p>
-
-<h3 id='new_features_in_the_212_series'>New Features in the 2.12 Series</h3>
-
-<p>Scala 2.12 contains all of the bug fixes and improvements made in the 2.11 series.</p>
-
-<p>At the current stage in the milestone cycle, Scala 2.12 is still very similar to Scala 2.11.</p>
-
-<p>The following changes are planned for Scala 2.12:</p>
+<p>Bill is known to Scala users as:</p>
 
 <ul>
-<li>Java 8 style closures. The Scala compiler will emit closure classes (lambdas) in the same manner as Java 8. The design notes for this feature are available in <a href='https://gist.github.com/retronym/0178c212e4bacffed568'>this gist</a>.</li>
+<li>creator of <a href='http://scalatest.org'>ScalaTest</a>, a popular open-source test framework first <a href='http://www.artima.com/weblogs/viewpost.jsp?thread=222678'>released in 2008</a>, as well as other tools and libraries such as <a href='http://www.scalactic.org'>Scalactic</a></li>
 
-<li>Lambda syntax for SAM types. Similar to Java 8, Scala 2.12 allows instantiating any type with one single abstract method by passing a lambda. This feature is already avalable in Scala 2.11 using the <code>-Xexperimental</code> compiler option. It improves the experience of using libraries written for Java 8 in Scala.</li>
+<li>co-author of the first Scala book, <a href='http://www.artima.com/shop/programming_in_scala_2ed'><em>Programming in Scala</em></a> (Artima)</li>
 
-<li>New backend and optimizer. The &#8220;GenBCode&#8221; backend, which is already available in Scala 2.11 using the <code>-Ybackend:GenBCode</code> compiler option, will be enabled by default. Scala 2.12 will also ship with a new inliner and bytecode optimizer. We keep track of issues and work items for the new optimizer on the <a href='https://github.com/scala-opt/scala/issues'>scala-opt repostiory issue tracker</a>.</li>
+<li>founder of <a href='http://www.artima.com/aboutartima.html'>Artima</a>, which continues to publish <a href='http://www.artima.com/shop/catalog'>Scala-themed books</a>, and hosted Scala-themed blogs and forums which were important in spreading the news about Scala in its early years</li>
+
+<li>friendly and tireless conference-goer, presenter, and trainer</li>
 </ul>
 
-<p>The above list is incomplete and will be extended during the Scala 2.12 milestone cycle.</p>
+<p>The Bagwell Award is named in honor of Phil Bagwell, who passed away in 2012. In a <a href='https://www.typesafe.com/blog/rip-phil-bagwell'>2012 blog post</a>, Martin Odersky remembers Phil and his special place in the Scala community.</p>
 
-<p>Up the current milestone, the Scala team and contributors <a href='https://issues.scala-lang.org/browse/SI-9200?jql=project%20%3D%20SI%20and%20fixVersion%20%3E%3D%20%222.12.0-M1%22%20and%20fixVersion%20%3C%3D%20%222.12.0%22%20and%20resolution%20%3D%20fixed'>fixed 47 bugs</a> that are exclusive to Scala 2.12.0. During the development cycle of Scala 2.12, we will continue to backport issues to 2.11 whenever feasible. With the release of 2.12.0, backports to 2.11 will be dialed back.</p>
-<!-- Notes from 2.11.0
-#### Important Changes
-
-For most cases, code that compiled under 2.10.x without deprecation warnings should not be affected. We've verified this by [compiling](https://jenkins-dbuild.typesafe.com:8499/job/Community-2.11.x) a [sizeable number of open source projects](https://github.com/typesafehub/community-builds/blob/master/common-2.11.x.conf#L43).
-
-Changes to the reflection API may cause breakages...
-
-We've decided to fix the following more obscure deviations from specified behavior without deprecating them first.
-
-* [SI-4577](https://issues.scala-lang.org/browse/SI-4577) Compile `x match { case _ : Foo.type => }` to `Foo eq x`, as specified. It used to be `Foo == x` (without warning). If that's what you meant, write `case Foo =>`.
-* ...
-
-The following changes were made after a deprecation cycle
-
-* [SI-6809](https://issues.scala-lang.org/browse/SI-6809) Case classes without a parameter list are no longer allowed.
-* ...
-
-Finally, some notable improvements and bug fixes:
-
-* [SI-7296](https://issues.scala-lang.org/browse/SI-7296) Case classes with > 22 parameters are now allowed.
-*...
-
-
-#### Deprecations
-
-The following language "warts" have been deprecated:
-* [#3746](https://github.com/scala/scala/pull/3746) Generation of bean info classes using the `@BeanInfo` annotation.
-Deprecation is closely linked to source and binary compatibility. We say two versions are source compatible when they compile the same programs with the same results. Deprecation requires qualifying this statement: "assuming there are no deprecation warnings". This is what allows us to evolve the Scala platform and keep it healthy. We move slowly to guarantee smooth upgrades, but we want to keep improving as well!
--->
-<h4 id='removed_modules'>Removed Modules</h4>
-
-<p>The following modules have been removed from the Scala 2.12 distribution:</p>
+<p>Past winners of the award:</p>
 
 <ul>
-<li>The Scala actors library is no longer released with Scala 2.12. We recommend that you use the <a href='http://akka.io/'>Akka actors library</a> instead. To migrate your code, follow the <a href='http://docs.scala-lang.org/overviews/core/actors-migration-guide.html'>Scala actors migration guide</a> before upgrading your project to Scala 2.12.</li>
+<li>2014: <a href='https://kojoenv.wordpress.com/2014/09/27/phil-bagwell-award/'>Lalit Pant</a></li>
 
-<li>The Scala distribution archives and the <code>scala-library-all</code> maven dependency no longer inlcude Akka actors. To use the Akka actors library, add it to your project <a href='http://doc.akka.io/docs/akka/2.3.10/intro/getting-started.html'>as a dependency</a>.</li>
-
-<li>The continuations plugin is no longer shipped with the Scala 2.12 distribution.</li>
-</ul>
-
-<h4 id='contributors'>Contributors</h4>
-
-<p>A big thank you to everyone who&#8217;s helped improve Scala by reporting bugs, improving our documentation, spreading kindness in mailing lists and other public fora, and submitting and reviewing pull requests! You are all magnificent.</p>
-
-<p>According to <code>git shortlog -sn --no-merges 2.11.x..v2.12.0-M1</code>, 33 people contributed to this major release: Jason Zaugg, Lukas Rytz, A. P. Marki, Rex Kerr, Kato Kazuyoshi, Max Bileschi, jxcoder, François Garillot, rubyu, Adriaan Moors, Dominik Gruntz, Evgeny Vereshchagin, Marc Siegel, Masato Sogame, Simon Ochsenreither, Todd Vierling, Viktor Klang, cchantep, Denton Cockburn, Paolo Giarrusso, Denis Rosset, Roman Hargrave, Rui Gonçalves, Shadaj, harryhuk, Steven Scott, Antoine Gourlay, Aleksandar Prokopec, Lukas Elmer, Erlend Hamnaberg, Maks Atygaev, Malte Isberner, dgruntz. Thank you!</p>
-
-<p>These release notes are <a href='https://github.com/scala/make-release-notes/blob/2.12.x/hand-written.md'>hosted on GitHub</a> and are continuously updated during the Scala 2.12.0 release cycle. You are kindly invited to contribute!</p>
-
-<h3 id='reporting_bugs'>Reporting Bugs</h3>
-
-<p>Please file any bugs you encounter on <a href='https://issues.scala-lang.org'>our issue tracker</a>. If you&#8217;re unsure whether something is a bug, please contact the <a href='https://groups.google.com/forum/?fromgroups#!forum/scala-user'>scala-user</a> mailing list. Before creating a new issue, search search the issue tracker to see if your bug has already been reported.</p>
-
-<h3 id='scala_ide_for_eclipse'>Scala IDE for Eclipse</h3>
-
-<p>A release of the Scala IDE for Eclipse for Scala 2.12 will be available together with the release.</p>
-
-<p>Note that for the current milestone (2.12.0-M1), the Scala IDE is not yet available.</p>
-<!-- Notes from 2.11.0
-The Scala IDE with this release built in is [available from this update site](http://download.scala-ide.org/sdk/helium/e38/scala211/stable/site/) for [Eclipse 4.2/4.3 (Juno/Kepler)](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/keplersr2). Please have a look at the [getting started guide](http://scala-ide.org/docs/user/gettingstarted.html) for more info.
--->
-<h3 id='available_projects'>Available Projects</h3>
-
-<p>Please refer to the list of <a href='https://github.com/scala/make-release-notes/blob/2.12.x/projects-2.12.md'>libraries and frameworks available for Scala 2.12</a>.</p>
-
-<h3 id='binary_compatibility'>Binary Compatibility</h3>
-
-<p>Since Sala 2.11, minor releases of Scala are binary compatible. Scala 2.12 continues this tradition: every 2.12.x release will be binary compatible with 2.12.0. Note that milestone releases and release candidates are <strong>not</strong> binary compatible with any other release.</p>
-
-<h4 id='definition'>Definition</h4>
-
-<p>When two versions of Scala are binary compatible, it is safe to compile your project on one Scala version and link against another Scala version at run time. Safe run-time linkage (only!) means that the JVM does not throw a (subclass of) <a href='http://docs.oracle.com/javase/7/docs/api/java/lang/LinkageError.html'><code>LinkageError</code></a> when executing your program in the mixed scenario, assuming that none arise when compiling and running on the same version of Scala. Concretely, this means you may have external dependencies on your run-time classpath that use a different version of Scala than the one you&#8217;re compiling with, as long as they&#8217;re binary compatibile. In other words, separate compilation on different binary compatible versions does not introduce problems compared to compiling and running everything on the same version of Scala.</p>
-
-<p>We check binary compatibility automatically with <a href='https://github.com/typesafehub/migration-manager'>MiMa</a>.</p>
-
-<h4 id='forwards_and_back'>Forwards and Back</h4>
-
-<p>We distinguish forwards and backwards compatibility (think of these as properties of a sequence of versions, not of an individual version). Maintaining backwards compatibility means code compiled on an older version will link with code compiled with newer ones. Forwards compatibility allows you to compile on new versions and run on older ones.</p>
-
-<p>Thus, backwards compatibility precludes the removal of (non-private) methods, as older versions could call them, not knowing they would be removed, whereas forwards compatibility disallows adding new (non-private) methods, because newer programs may come to depend on them, which would prevent them from running on older versions (private methods are exempted here as well, as their definition and call sites must be in the same compilation unit).</p>
-
-<h4 id='meta'>Meta</h4>
-
-<p>Note that so far we&#8217;ve only talked about the jars generated by scalac for the standard library and reflection. Our policies do not extend to the meta-issue: ensuring binary compatibility for bytecode generated from identical sources, by different version of scalac? (The same problem exists for compiling on different JDKs.) While we strive to achieve this, it&#8217;s not something we can test in general. Notable examples where we know meta-binary compatibility is hard to achieve: specialisation and the optimizer.</p>
-
-<p>In short, if binary compatibility of your library is important to you, use <a href='https://github.com/typesafehub/migration-manager'>MiMa</a> to verify compatibility before releasing. Compiling identical sources with different versions of the Scala compiler (or on different JVM versions!) could result in binary incompatible bytecode. This is rare, and we try to avoid it, but we can&#8217;t guarantee it will never happen.</p>
-
-<h4 id='concretely'>Concretely</h4>
-
-<p>We guarantee forwards and backwards compatibility of the <code>&quot;org.scala-lang&quot; % &quot;scala-library&quot; % &quot;2.12.x&quot;</code> and <code>&quot;org.scala-lang&quot; % &quot;scala-reflect&quot; % &quot;2.12.x&quot;</code> artifacts, except for anything under the <code>scala.reflect.internal</code> package, as scala-reflect is still experimental. We also strongly discourage relying on the stability of <code>scala.concurrent.impl</code> and <code>scala.reflect.runtime</code>, though we will only break compatibility for severe bugs here.</p></div>
+<li>2013: <a href='https://twitter.com/dickwall'>Dick Wall</a></li>
+</ul></div>
       
     </div>
     <div class="shadow">
       
-        <div class="more"><a href="/news/2.12.0-M1">more...</a></div>
+        <div class="more"><a href="/news/2015/06/25/bagwell-award-2015.html">more...</a></div>
       
     </div>
   
@@ -617,6 +515,38 @@ The Scala IDE with this release built in is [available from this update site](ht
   
     
       
+    
+  
+    
+      <div class="recent-news-item">
+        
+          <div class="recent-news-title"><a href="/news/2.11.7">Scala 2.11.7 is now available!</a></div>
+        
+        
+        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Tuesday, June 23, 2015
+        
+          <span class="recent-news-category">announcement</span>
+        </div>
+        
+          <div class="recent-news-body">We are very pleased to announce the availability of Scala 2.11.7! We would like to highlight the following changes: Exhaustivity checking for pattern matching is...</div>
+        
+      </div>
+    
+  
+    
+      <div class="recent-news-item">
+        
+          <div class="recent-news-title"><a href="/news/2.12.0-M1">Scala 2.12.0-M1 is now available!</a></div>
+        
+        
+        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Tuesday, May 05, 2015
+        
+          <span class="recent-news-category">announcement</span>
+        </div>
+        
+          <div class="recent-news-body">We are very pleased to announce the release of Scala 2.12.0-M1! Download a distribution from scala-lang.org Obtain it via Maven Central Code that compiles on...</div>
+        
+      </div>
     
   
     
@@ -633,38 +563,6 @@ The Scala IDE with this release built in is [available from this update site](ht
         </div>
         
           <div class="recent-news-body">This year the Scala team applied again for Google Summer of Code, and we&#8217;re happy to announce that we have been approved to be mentoring...</div>
-        
-      </div>
-    
-  
-    
-      <div class="recent-news-item">
-        
-          <div class="recent-news-title"><a href="/news/2.11.6">Scala 2.11.6 is now available!</a></div>
-        
-        
-        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Thursday, March 05, 2015
-        
-          <span class="recent-news-category">announcement</span>
-        </div>
-        
-          <div class="recent-news-body">We are very pleased to announce the availability of Scala 2.11.6! Get started with the Hello Scala 2.11 template in Typesafe Activator Download a distribution...</div>
-        
-      </div>
-    
-  
-    
-      <div class="recent-news-item">
-        
-          <div class="recent-news-title"><a href="/news/2.10.5">Scala 2.10.5 is now available!</a></div>
-        
-        
-        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Thursday, March 05, 2015
-        
-          <span class="recent-news-category">announcement</span>
-        </div>
-        
-          <div class="recent-news-body">With pride and a pang of nostalgia, we announce the availability of Scala 2.10.5 &#8211; the last release in the 2.10.x series. We&#8217;d like to...</div>
         
       </div>
     

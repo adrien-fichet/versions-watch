@@ -280,9 +280,9 @@ public class Conf {
                 "Please see the (.*?) Info Page"
         ));
         configurations.put("docker", new VersionParserConfiguration(
-                "https://docs.docker.com/docker/misc/release-notes/",
-                "#release-notes-version-1-6-0",
-                "Release notes version (.*)"
+                "https://en.wikipedia.org/wiki/Docker_(software)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
+                "(.*?)\\["
         ));
         configurations.put("kali", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Kali_Linux",
@@ -457,6 +457,11 @@ public class Conf {
                 "http://backbonejs.org/",
                 "body > div.container > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
                 "Production Version \\((.*)\\)"
+        ));
+        configurations.put("naxsi", new VersionParserConfiguration(
+                "https://github.com/nbs-system/naxsi/releases",
+                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
+                "naxsi-(.*)"
         ));
     }
 

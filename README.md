@@ -115,9 +115,9 @@ Then :
 - [x] lua
 - [x] dart
 - [x] backbone
+- [x] naxsi
 - [ ] emberjs
 - [ ] openbox
-- [ ] naxsi
 - [ ] memcached
 - [ ] openbsd
 - [ ] dropbox

@@ -8,13 +8,13 @@ public class ExpectedVersions {
 
     public ExpectedVersions() {
         expectedVersions = new HashMap<String, String>();
-        expectedVersions.put("idea", "14.1.3");
+        expectedVersions.put("idea", "14.1.4");
         expectedVersions.put("youtrack", "6.0.12634");
         expectedVersions.put("spring", "4.2.0");
         expectedVersions.put("apache", "2.4.12");
         expectedVersions.put("debian", "8.1");
-        expectedVersions.put("eclipse", "4.4.2");
-        expectedVersions.put("git", "2.4.4");
+        expectedVersions.put("eclipse", "4.5");
+        expectedVersions.put("git", "2.4.5");
         expectedVersions.put("javase", "8u45");
         expectedVersions.put("jenkins", "1.617");
         expectedVersions.put("mysql", "5.6");
@@ -29,7 +29,7 @@ public class ExpectedVersions {
         expectedVersions.put("extjs", "5.1.0");
         expectedVersions.put("maven", "3.3.3");
         expectedVersions.put("hibernate", "4.3.10");
-        expectedVersions.put("javascript", "1.8.5");
+        expectedVersions.put("javascript", "ECMAScript 6");
         expectedVersions.put("ubuntu", "15.04");
         expectedVersions.put("nginx", "1.9.2");
         expectedVersions.put("elasticsearch", "1.6.0");
@@ -42,7 +42,7 @@ public class ExpectedVersions {
         expectedVersions.put("nagios", "4.0.8");
         expectedVersions.put("cobertura", "2.1.1");
         expectedVersions.put("gatling", "2.1.6");
-        expectedVersions.put("scala", "2.11.6");
+        expectedVersions.put("scala", "2.11.7");
         expectedVersions.put("selenium", "2.46.0");
         expectedVersions.put("virtualbox", "4.3.28");
         expectedVersions.put("windows", "10.0");
@@ -53,10 +53,10 @@ public class ExpectedVersions {
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.4.3");
-        expectedVersions.put("vim", "7.4.748");
+        expectedVersions.put("vim", "7.4.761");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.2");
-        expectedVersions.put("linux", "4.0.5");
+        expectedVersions.put("linux", "4.1");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.13.1");
         expectedVersions.put("solr", "5.2.1");
@@ -64,21 +64,21 @@ public class ExpectedVersions {
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "43.0");
         expectedVersions.put("firefox", "38.0.5");
-        expectedVersions.put("gnomeshell", "3.17.2");
+        expectedVersions.put("gnomeshell", "3.17.3");
         expectedVersions.put("kde", "4.14.3");
-        expectedVersions.put("docker", "1.6.0");
+        expectedVersions.put("docker", "1.7.0");
         expectedVersions.put("kali", "1.1.0");
         expectedVersions.put("visualstudio", "2013.4");
         expectedVersions.put("bower", "1.4.1");
         expectedVersions.put("angularjs", "1.4.1");
-        expectedVersions.put("curator", "3.1.0");
-        expectedVersions.put("coreos", "717.0.0");
+        expectedVersions.put("curator", "3.2.0");
+        expectedVersions.put("coreos", "723.0.0");
         expectedVersions.put("safari", "8.0.6");
         expectedVersions.put("drupal", "7.38");
         expectedVersions.put("foreman", "1.8.2");
         expectedVersions.put("wordpress", "4.2.2");
         expectedVersions.put("internetexplorer", "11.0.20");
-        expectedVersions.put("nmap", "6.49BETA2");
+        expectedVersions.put("nmap", "6.49BETA3");
         expectedVersions.put("edge", "16.10130");
         expectedVersions.put("opera", "30.0");
         expectedVersions.put("postgresql", "9.4.4");
@@ -87,7 +87,7 @@ public class ExpectedVersions {
         expectedVersions.put("ruby", "2.2.2");
         expectedVersions.put("zsh", "5.0.7");
         expectedVersions.put("ansible", "1.9.1");
-        expectedVersions.put("polymer", "1.0.2");
+        expectedVersions.put("polymer", "1.0.5");
         expectedVersions.put("fail2ban", "0.9.1");
         expectedVersions.put("go", "1.4.2");
         expectedVersions.put("metasploit", "4.11.3");
@@ -101,6 +101,7 @@ public class ExpectedVersions {
         expectedVersions.put("lua", "5.3.1");
         expectedVersions.put("dart", "1.10.0");
         expectedVersions.put("backbone", "1.2.1");
+        expectedVersions.put("naxsi", "0.54rc3");
     }
 
     public Map<String, String> getExpectedVersions() {

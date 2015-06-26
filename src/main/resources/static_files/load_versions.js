@@ -119,7 +119,8 @@ var versions = [
       { "id": "nmap", "name": "Nmap" },
       { "id": "fail2ban", "name": "Fail2ban" },
       { "id": "metasploit", "name": "Metasploit Frwk" },
-      { "id": "nessus", "name": "Nessus" }
+      { "id": "nessus", "name": "Nessus" },
+      { "id": "naxsi", "name": "Naxsi" }
     ]
   }, {
     "category": { "id": "java", "name": "Java" },
