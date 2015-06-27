@@ -116,9 +116,9 @@ Then :
 - [x] dart
 - [x] backbone
 - [x] naxsi
+- [x] memcached
 - [ ] emberjs
 - [ ] openbox
-- [ ] memcached
 - [ ] openbsd
 - [ ] dropbox
 - [ ] wireshark

@@ -44,7 +44,8 @@ var versions = [
     "items": [
       { "id": "grunt", "name": "Grunt" },
       { "id": "bower", "name": "Bower" },
-      { "id": "varnish", "name": "Varnish" }
+      { "id": "varnish", "name": "Varnish" },
+      { "id": "memcached", "name": "Memcached" }
     ]
   }, {
     "category": { "id": "web_frameworks", "name": "Web frameworks" },

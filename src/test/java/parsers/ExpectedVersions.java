@@ -72,7 +72,7 @@ public class ExpectedVersions {
         expectedVersions.put("bower", "1.4.1");
         expectedVersions.put("angularjs", "1.4.1");
         expectedVersions.put("curator", "3.2.0");
-        expectedVersions.put("coreos", "723.0.0");
+        expectedVersions.put("coreos", "723.1.0");
         expectedVersions.put("safari", "8.0.6");
         expectedVersions.put("drupal", "7.38");
         expectedVersions.put("foreman", "1.8.2");
@@ -102,6 +102,7 @@ public class ExpectedVersions {
         expectedVersions.put("dart", "1.10.0");
         expectedVersions.put("backbone", "1.2.1");
         expectedVersions.put("naxsi", "0.54rc3");
+        expectedVersions.put("memcached", "1.4.24");
     }
 
     public Map<String, String> getExpectedVersions() {

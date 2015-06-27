@@ -348,7 +348,7 @@ public class Conf {
         ));
         configurations.put("edge", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Edge",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
                 "Windows [0-9]+ (.*?)(\\.[0-9]+){2} [a-zA-Z]+"
         ));
         configurations.put("opera", new VersionParserConfiguration(
@@ -462,6 +462,11 @@ public class Conf {
                 "https://github.com/nbs-system/naxsi/releases",
                 "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
                 "naxsi-(.*)"
+        ));
+        configurations.put("memcached", new VersionParserConfiguration(
+                "http://memcached.org/",
+                "#ver",
+                "v(.*)"
         ));
     }
 
