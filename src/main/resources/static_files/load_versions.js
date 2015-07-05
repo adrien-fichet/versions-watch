@@ -169,7 +169,8 @@ var versions = [
       { "id": "youtrack", "name": "YouTrack"},
       { "id": "solr", "name": "Solr" },
       { "id": "maven", "name": "Maven" },
-      { "id": "nexus", "name": "Nexus" }
+      { "id": "nexus", "name": "Nexus" },
+      { "id": "libreoffice", "name": "LibreOffice" }
     ]
   }
 ];

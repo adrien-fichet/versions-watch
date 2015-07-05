@@ -88,8 +88,8 @@ public class Conf {
         ));
         configurations.put("maven", new VersionParserConfiguration(
                 "https://maven.apache.org/download.cgi",
-                "#bodyColumn > div > div:nth-child(13) > h3",
-                "Maven (.*)"
+                "#bodyColumn > div > p:nth-child(2)",
+                "Apache Maven (.*?) is the latest release"
         ));
         configurations.put("hibernate", new VersionParserConfiguration(
                 "http://hibernate.org/orm/downloads/",
@@ -444,9 +444,9 @@ public class Conf {
                 "Download React v(.*)"
         ));
         configurations.put("lua", new VersionParserConfiguration(
-                "http://www.lua.org/",
-                "body > table > tbody > tr:nth-child(2) > td.news > span > a:nth-child(1)",
-                "Lua (.*)"
+                "http://www.lua.org/versions.html",
+                "body > p:nth-child(11)",
+                "The current release is Lua (.*?), "
         ));
         configurations.put("dart", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Dart_(programming_language)",
@@ -467,6 +467,11 @@ public class Conf {
                 "http://memcached.org/",
                 "#ver",
                 "v(.*)"
+        ));
+        configurations.put("libreoffice", new VersionParserConfiguration(
+                "http://www.libreoffice.org/download/libreoffice-fresh/",
+                "#content1 > div > article > div.row.col-sm-8.margin-20 > p:nth-child(8) > a",
+                "Download Version (.*)"
         ));
     }
 

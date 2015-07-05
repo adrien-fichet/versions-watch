@@ -153,7 +153,7 @@ function onloadVersionTCownload() {
 
 //RubyMine
 var versionRubyShort = "7.1";
-var versionRubyLong = "7.1.3";
+var versionRubyLong = "7.1.4";
 function versionRuby(el) {
     if (el == "short") {
         document.write(versionRubyShort);
@@ -340,7 +340,7 @@ function onloadVersionAppCodeDownload() {
 
 //Upsource
 var versionUpsourceShort = "2";
-var versionUpsourceLong = "2.0.1";
+var versionUpsourceLong = "2.0.2";
 function versionUpsource(el) {
     if (el == "short") {
         document.write(versionUpsourceShort);

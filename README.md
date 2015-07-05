@@ -117,6 +117,7 @@ Then :
 - [x] backbone
 - [x] naxsi
 - [x] memcached
+- [x] libreoffice
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd
@@ -125,7 +126,8 @@ Then :
 - [ ] chef
 - [ ] salt
 - [ ] mercurial
-- [ ] libreoffice
+- [ ] audacity
+- [ ] ableton live
 
 ### Ideas
 - version numbers should also be links to versions websites
