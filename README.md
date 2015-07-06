@@ -118,11 +118,11 @@ Then :
 - [x] naxsi
 - [x] memcached
 - [x] libreoffice
+- [x] wireshark
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd
 - [ ] dropbox
-- [ ] wireshark
 - [ ] chef
 - [ ] salt
 - [ ] mercurial

@@ -101,7 +101,8 @@ var versions = [
       { "id": "foreman", "name": "Foreman" },
       { "id": "zsh", "name": "zsh" },
       { "id": "ansible", "name": "Ansible" },
-      { "id": "bash", "name": "Bash" }
+      { "id": "bash", "name": "Bash" },
+      { "id": "wireshark", "name": "Wireshark" }
     ]
   }, {
     "category": { "id": "virtualization", "name": "Virtualization" },

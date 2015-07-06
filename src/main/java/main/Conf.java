@@ -328,8 +328,8 @@ public class Conf {
         ));
         configurations.put("foreman", new VersionParserConfiguration(
                 "http://theforeman.org/",
-                "#latest-news > div > div > p:nth-child(1)",
-                "Foreman (.*?) has been released."
+                "#latest-news > div > div > p:nth-child(2)",
+                "Foreman (.*?) has been released"
         ));
         configurations.put("wordpress", new VersionParserConfiguration(
                 "https://wordpress.org/",
@@ -472,6 +472,11 @@ public class Conf {
                 "http://www.libreoffice.org/download/libreoffice-fresh/",
                 "#content1 > div > article > div.row.col-sm-8.margin-20 > p:nth-child(8) > a",
                 "Download Version (.*)"
+        ));
+        configurations.put("wireshark", new VersionParserConfiguration(
+                "https://www.wireshark.org/download.html",
+                "#content > div:nth-child(1) > div.col.col-lg-8 > div:nth-child(1) > p",
+                "The current stable release of Wireshark is (.*?)\\. "
         ));
     }
 
