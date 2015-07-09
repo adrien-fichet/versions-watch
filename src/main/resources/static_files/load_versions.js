@@ -171,7 +171,8 @@ var versions = [
       { "id": "solr", "name": "Solr" },
       { "id": "maven", "name": "Maven" },
       { "id": "nexus", "name": "Nexus" },
-      { "id": "libreoffice", "name": "LibreOffice" }
+      { "id": "libreoffice", "name": "LibreOffice" },
+      { "id": "audacity", "name": "Audacity" }
     ]
   }
 ];

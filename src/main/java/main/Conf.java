@@ -134,7 +134,7 @@ public class Conf {
         configurations.put("openssl", new VersionParserConfiguration(
                 "https://www.openssl.org/source/",
                 "body > table > tbody > tr:nth-child(3) > td:nth-child(3) > pre",
-                "openssl-(.*?).tar.gz \\(MD5\\) \\(SHA1\\) \\(PGP sign\\)  \\[LATEST\\]"
+                "openssl-(.*?).tar.gz \\(MD5\\) \\(SHA1\\) \\(SHA256\\) \\(PGP sign\\)  \\[LATEST\\]"
         ));
         configurations.put("openssh", new VersionParserConfiguration(
                 "http://www.openssh.com/",
@@ -451,7 +451,7 @@ public class Conf {
         configurations.put("dart", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Dart_(programming_language)",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
-                "(.*?)\\["
+                "(.*?)(\\[| )"
         ));
         configurations.put("backbone", new VersionParserConfiguration(
                 "http://backbonejs.org/",
@@ -477,6 +477,11 @@ public class Conf {
                 "https://www.wireshark.org/download.html",
                 "#content > div:nth-child(1) > div.col.col-lg-8 > div:nth-child(1) > p",
                 "The current stable release of Wireshark is (.*?)\\. "
+        ));
+        configurations.put("audacity", new VersionParserConfiguration(
+                "http://audacityteam.org/",
+                "#download_sub > a > h1",
+                "Download Audacity (.*)"
         ));
     }
 

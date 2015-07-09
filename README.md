@@ -119,6 +119,7 @@ Then :
 - [x] memcached
 - [x] libreoffice
 - [x] wireshark
+- [x] audacity
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd
@@ -126,7 +127,6 @@ Then :
 - [ ] chef
 - [ ] salt
 - [ ] mercurial
-- [ ] audacity
 - [ ] ableton live
 
 ### Ideas

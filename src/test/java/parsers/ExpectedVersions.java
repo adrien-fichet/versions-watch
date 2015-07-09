@@ -23,7 +23,7 @@ public class ExpectedVersions {
         expectedVersions.put("puppet", "4.2.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.8.13");
-        expectedVersions.put("tomcat", "8.0.23");
+        expectedVersions.put("tomcat", "8.0.24");
         expectedVersions.put("junit", "4.12");
         expectedVersions.put("vagrant", "1.7.2");
         expectedVersions.put("extjs", "5.1.0");
@@ -36,7 +36,7 @@ public class ExpectedVersions {
         expectedVersions.put("logstash", "1.5.2");
         expectedVersions.put("kibana", "4.1.1");
         expectedVersions.put("logstashforwarder", "0.4.0");
-        expectedVersions.put("openssl", "1.0.2c");
+        expectedVersions.put("openssl", "1.0.2d");
         expectedVersions.put("openssh", "6.9");
         expectedVersions.put("zabbix", "2.4");
         expectedVersions.put("nagios", "4.0.8");
@@ -44,7 +44,7 @@ public class ExpectedVersions {
         expectedVersions.put("gatling", "2.1.6");
         expectedVersions.put("scala", "2.11.7");
         expectedVersions.put("selenium", "2.46.0");
-        expectedVersions.put("virtualbox", "4.3.28");
+        expectedVersions.put("virtualbox", "5.0");
         expectedVersions.put("windows", "10.0");
         expectedVersions.put("centos", "7.1503");
         expectedVersions.put("fedora", "22");
@@ -67,12 +67,12 @@ public class ExpectedVersions {
         expectedVersions.put("gnomeshell", "3.17.3");
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.7.0");
-        expectedVersions.put("kali", "1.1.0");
+        expectedVersions.put("kali", "1.1.0a");
         expectedVersions.put("visualstudio", "2013.4");
         expectedVersions.put("bower", "1.4.1");
-        expectedVersions.put("angularjs", "1.4.1");
+        expectedVersions.put("angularjs", "1.4.2");
         expectedVersions.put("curator", "3.2.0");
-        expectedVersions.put("coreos", "723.1.0");
+        expectedVersions.put("coreos", "735.0.0");
         expectedVersions.put("safari", "8.0.7");
         expectedVersions.put("drupal", "7.38");
         expectedVersions.put("foreman", "1.8.2");
@@ -99,12 +99,13 @@ public class ExpectedVersions {
         expectedVersions.put("bash", "4.3");
         expectedVersions.put("react", "0.13.3");
         expectedVersions.put("lua", "5.3.1");
-        expectedVersions.put("dart", "1.10.0");
+        expectedVersions.put("dart", "1.11.1");
         expectedVersions.put("backbone", "1.2.1");
         expectedVersions.put("naxsi", "0.54rc3");
         expectedVersions.put("memcached", "1.4.24");
         expectedVersions.put("libreoffice", "4.4.4");
         expectedVersions.put("wireshark", "1.12.6");
+        expectedVersions.put("audacity", "2.1.0");
     }
 
     public Map<String, String> getExpectedVersions() {

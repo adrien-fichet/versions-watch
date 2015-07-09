@@ -218,7 +218,7 @@ function onloadVersionWebIDEownload() {
 
 //PyCharm
 var versionPyCharmShort = "4.5";
-var versionPyCharmLong = "4.5.2";
+var versionPyCharmLong = "4.5.3";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -299,8 +299,8 @@ function onloadVersionWebStormDownload() {
 
 
 //PhpStorm
-var versionPhpStormShort = "8.0";
-var versionPhpStormLong = "8.0.3";
+var versionPhpStormShort = "9.0";
+var versionPhpStormLong = "9.0";
 function versionPhpStorm(el) {
     if (el == "short") {
         document.write(versionPhpStormShort);
