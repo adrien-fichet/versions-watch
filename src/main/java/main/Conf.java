@@ -178,7 +178,7 @@ public class Conf {
         configurations.put("windows", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Windows",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(9) > td",
-                "(.*?)\\.([0-9]+)\\["
+                "(.*?)\\.([0-9]+)(\\[| )"
         ));
         configurations.put("centos", new VersionParserConfiguration(
                 "http://wiki.centos.org/Download",
@@ -482,6 +482,11 @@ public class Conf {
                 "http://audacityteam.org/",
                 "#download_sub > a > h1",
                 "Download Audacity (.*)"
+        ));
+        configurations.put("chef", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Chef_(software)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td > div > ul > li:nth-child(1)",
+                ".*? (.*?) "
         ));
     }
 

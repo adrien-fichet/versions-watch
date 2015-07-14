@@ -120,11 +120,11 @@ Then :
 - [x] libreoffice
 - [x] wireshark
 - [x] audacity
+- [x] chef
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd
 - [ ] dropbox
-- [ ] chef
 - [ ] salt
 - [ ] mercurial
 - [ ] ableton live
