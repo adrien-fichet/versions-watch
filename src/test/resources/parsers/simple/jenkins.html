@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jenkins-ci.org/blogapi/rsd" />
 <link rel="shortcut icon" href="/sites/default/files/jenkins_favicon.ico" type="image/x-icon" />
-    <link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/css/css_4379db8eb25d81aa4ed143ff65f55881.css" />
-    <script type="text/javascript" src="/sites/default/files/js/js_c790b78592b9665c83bc26df45687b04.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/css/css_d190874b169b79ccecd68da5be7705cd.css" />
+    <script type="text/javascript" src="/sites/default/files/js/js_587019c2339c40e96364f2449e0f7330.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
@@ -56,9 +56,17 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOut
 #middle { margin: 0px !important; padding: 0px !important; width:940px !important; }
 </style>
 <div style='width:940px; height:90px; padding-bottom: 10px; background-color: #ececec;'>
-<a href="http://www.cloudbees.com/jenkins/juc-2015/">
-<img src="https://jenkins-ci.org/sites/default/files/images/JUC_940-jenkinsci-earlybird-4-30-01_0.png" />
-</a>
+<script type="text/javascript">
+if (Date.now() % 2 == 0) {
+document.write('<a href="https://www.cloudbees.com/jenkins/juc-2015/us-west" target="_blank">');
+document.write('<img src="http://jenkins-ci.org/sites/default/files/images/JUC_940-updated.jpg" width=940 />');
+document.write('</a>');
+} else {
+document.write('<a href="http://www.code-conf.com/jues15/">');
+document.write('<img src="http://jenkins-ci.org/sites/default/files/images/cph2015.jpeg" width=940 />');
+document.write('</a>');
+}
+</script>
 </div>  </div>
 </div>
         </div>
@@ -135,7 +143,7 @@ Jenkins is an open-source continuous integration server with 300+ plugins to sup
 			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Plugins"><img src="/sites/default/files/images/plugin.png" class=logo></a></td> 
 			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Plugins"> 
 			<div class=title>Customize Jenkins</div> 
-			<div class=description>Choose from <strong>1060</strong> plugins to customize Jenkins exactly to your needs.</div> 
+			<div class=description>Choose from <strong>1065</strong> plugins to customize Jenkins exactly to your needs.</div> 
 			</a></td> 
 		</tr> 
 		<tr> 
@@ -266,7 +274,7 @@ function download(href) {
     <dt>Java Web Archive (.war)</dt> 
     <dd style="margin-bottom:1em"> 
       <div>
-        <a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war"><strong>Latest and greatest (1.620)</strong></a>
+        <a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war"><strong>Latest and greatest (1.623)</strong></a>
       </div> 
       <div class="release-block-small" style="text-align:right"> 
        <a href="/changelog" class=release-block-soft>changelog</a> | <a href="http://mirrors.jenkins-ci.org/war/" class=release-block-soft>past releases</a> | <a href="/rc" class=release-block-soft>RC</a>
@@ -277,7 +285,7 @@ function download(href) {
       </div> 
     </dd> 
     
-    <dt>Or native package</dt> 
+    <dt>Native packages</dt> 
     <dd class="release-block-platforms"> 
       <div> 
         <img src="/images/os/win_other.png"> 
@@ -305,7 +313,7 @@ function download(href) {
       </div> 
       <div> 
         <img src="/images/os/os_openbsd.png"> 
-        <a class=release-block-soft href="http://openports.se/devel/jenkins">OpenBSD</a> 
+        <a class=release-block-soft href="http://openports.se/devel/jenkins/devel">OpenBSD</a> 
       </div> 
       <div> 
         <img src="/images/os/os_gentoo.png"> 
@@ -313,6 +321,13 @@ function download(href) {
       </div> 
     </dd> 
     </dl> 
+
+    <dt>Docker</dt> 
+    <dd id="release-block-platforms"> 
+      <div> 
+        <a class="release-block-soft" href="https://registry.hub.docker.com/u/jenkinsci/jenkins/"><tt>docker pull jenkinsci/jenkins</tt></a> 
+      </div>
+     </dd>
   </div>
 
 
@@ -321,7 +336,7 @@ function download(href) {
     <dt>Java Web Archive (.war)</dt> 
     <dd style="margin-bottom:1em"> 
       <div>
-        <a href="http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war"><strong>Older but stable  (1.609.1)</strong></a>
+        <a href="http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war"><strong>Older but stable  (1.609.2)</strong></a>
       </div> 
       <div class="release-block-small" style="text-align:right"> 
        <a href="/changelog-stable" class=release-block-soft>changelog</a> | <a href="http://mirrors.jenkins-ci.org/war-stable/" class=release-block-soft>past releases</a> | <a href="/stable-rc" class=release-block-soft>RC</a>
@@ -335,7 +350,7 @@ function download(href) {
       </div> 
     </dd> 
     
-    <dt>Or native package</dt> 
+    <dt>Native packages</dt> 
     <dd class="release-block-platforms"> 
       <div> 
         <img src="/images/os/win_other.png"> 
@@ -362,11 +377,22 @@ function download(href) {
         <a class=release-block-soft href="http://www.freshports.org/devel/jenkins-lts">FreeBSD</a> 
       </div> 
       <div> 
+        <img src="/images/os/os_openbsd.png"> 
+        <a class=release-block-soft href="http://openports.se/devel/jenkins/stable">OpenBSD</a> 
+      </div> 
+      <div> 
         <img src="/images/os/os_gentoo.png"> 
         <a class=release-block-soft href="http://code.google.com/p/godin-gentoo-repository/wiki/Jenkins">Gentoo</a> 
       </div> 
     </dd> 
     </dl> 
+
+    <dt>Docker</dt> 
+    <dd id="release-block-platforms"> 
+      <div> 
+        <a class="release-block-soft" href="https://registry.hub.docker.com/_/jenkins/"><tt>docker pull jenkins</tt></a> 
+      </div>
+     </dd>
   </div>
 </div>  </div>
 </div>
@@ -379,13 +405,13 @@ function download(href) {
   <h3>Latest Blog Items</h3>
 
   <div class="content">
-    <div class="item-list"><ul><li class="first"><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/zVvu1sxQxeE/jenkins-user-event-scandinavia-2015">Jenkins User Event Scandinavia 2015</a>
+    <div class="item-list"><ul><li class="first"><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/a9v-k-cyyKw/just-month-left-until-juc-us-west">Just a month left until JUC U.S. West</a>
 </li>
-<li><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/lleGD41G7DM/new-wiki-url-requirement-plugins">New Wiki URL Requirement for Plugins</a>
+<li><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/953J8_LaRCQ/juc-us-west-news-agenda">JUC U.S. West News: Agenda is up</a>
 </li>
-<li><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/YuxDHQ7qH1c/juc-speaker-blog-series-martin-hobson-juc-us-east">JUC Speaker Blog Series: Martin Hobson, JUC U.S. East</a>
+<li><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/kxhlR8WbFD4/juc-europe-slides-and-video-are-now-available-online">JUC Europe slides and video are now available online</a>
 </li>
-<li class="last"><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/wONIKkRBKMg/juc-speaker-blog-series-stephan-hochd%C3%B6rfer-juc-europe">JUC Speaker Blog Series: Stephan Hochdörfer, JUC Europe</a>
+<li class="last"><a href="http://feedproxy.google.com/~r/ContinuousBlog/~3/uSSzMdTk0eE/reinforcements-subversion-plugin">Reinforcements for the Subversion Plugin</a>
 </li>
 </ul></div><div class="more-link"><a href="/aggregator/sources/2" title="View this feed&#039;s recent news.">more</a></div>  </div>
 </div>
@@ -449,7 +475,7 @@ function download(href) {
           </div>
     <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-4216293-5"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/sites/default/files/googleanalytics/ga.js?e";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-4216293-5"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/sites/default/files/googleanalytics/ga.js?o";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
 //--><!]]>
 </script>
   </body>

@@ -71,9 +71,6 @@
 <div class=container>
 <div class=row id=header>
 <div class="col col-lg-8" id=slogan>
-<span id=slogan-news>
-<a href="http://sharkfest.wireshark.org/">We're having a conference! You're invited!</a>
-</span>
 </div>
 <div class="col col-lg-4">
 <form class="navbar-search pull-right" action="https://www.google.com/cse" id=cse-search-box>
@@ -91,7 +88,7 @@
 <p>
 The current stable release of Wireshark is 1.12.6.
 It supersedes all previous releases.
-You can also download the latest development release (1.99.7)
+You can also download the latest development release (1.99.8)
 and documentation.
 </p>
 </div>
@@ -162,32 +159,32 @@ document.write("<p><span class=\"loading\">Loading…</span></p>");
 </tr>
 </tbody></table>
 </li>
-<li>Development Release (1.99.7)
+<li>Development Release (1.99.8)
 <table>
 <tbody>
 <tr>
 <td class=dl_arrow> </td>
-<td><a class=dl_link href="/download/win64/Wireshark-win64-1.99.7.exe">Windows Installer (64-bit)</a></td>
+<td><a class=dl_link href="/download/win64/Wireshark-win64-1.99.8.exe">Windows Installer (64-bit)</a></td>
 </tr>
 <tr>
 <td class=dl_arrow> </td>
-<td><a class=dl_link href="/download/win32/Wireshark-win32-1.99.7.exe">Windows Installer</a></td>
+<td><a class=dl_link href="/download/win32/Wireshark-win32-1.99.8.exe">Windows Installer</a></td>
 </tr>
 <tr>
 <td class=dl_arrow> </td>
-<td><a class=dl_link href="/download/win32/WiresharkPortable_1.99.7.paf.exe">Windows PortableApps</a></td>
+<td><a class=dl_link href="/download/win32/WiresharkPortable_1.99.8.paf.exe">Windows PortableApps</a></td>
 </tr>
 <tr>
 <td class=dl_arrow> </td>
-<td><a class=dl_link href="/download/osx/Wireshark 1.99.7 Intel 64.dmg">OS X 10.6 and later Intel 64-bit .dmg</a></td>
+<td><a class=dl_link href="/download/osx/Wireshark 1.99.8 Intel 64.dmg">OS X 10.6 and later Intel 64-bit .dmg</a></td>
 </tr>
 <tr>
 <td class=dl_arrow> </td>
-<td><a class=dl_link href="/download/osx/Wireshark 1.99.7 Intel 32.dmg">OS X 10.5 and later Intel 32-bit .dmg</a></td>
+<td><a class=dl_link href="/download/osx/Wireshark 1.99.8 Intel 32.dmg">OS X 10.5 and later Intel 32-bit .dmg</a></td>
 </tr>
 <tr>
 <td class=dl_arrow> </td>
-<td><a class=dl_link href="/download/src/wireshark-1.99.7.tar.bz2">Source Code</a></td>
+<td><a class=dl_link href="/download/src/wireshark-1.99.8.tar.bz2">Source Code</a></td>
 </tr>
 </tbody></table>
 </li>
@@ -456,10 +453,10 @@ $(function() {
 $(document).ready(function(){
   //var stable_ver = "1.12.6";
   //var oldstable_ver = "1.10.14";
-  //var devleopment_ver = "1.99.7";
+  //var devleopment_ver = "1.99.8";
 
-  fill_dl_box("1.12.6", "1.10.14", "1.99.7");
-  fill_dl_mirrors("1.12.6", "1.10.14", "1.99.7");
+  fill_dl_box("1.12.6", "1.10.14", "1.99.8");
+  fill_dl_mirrors("1.12.6", "1.10.14", "1.99.8");
 });
 </script>
 </div>
@@ -484,11 +481,16 @@ $(window).load(function() {
 });
 </script>
 <script>
-$(window).load(function(){
-  $.ajax({ cache: true, dataType: "script",
-    url: 'https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en'
-  });
-});
+  (function() {
+    var cx = 'partner-pub-8797272874272241:rr0bun-xdwz';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
+<gcse:search></gcse:search>
 </body>
 </html>

@@ -49,7 +49,7 @@
    -->
 <!-- end Google Custom Search Engine -->
 
-<h1><img title="Audacity: Free Sound Editor and Recording Software" alt="Audacity: Free Sound Editor and Recording Software" src="./images/Audacity-logo-r_50pct.jpg"></h1>
+<h1><a href="./"><img title="Audacity: Free Sound Editor and Recording Software" alt="Audacity: Free Sound Editor and Recording Software" src="./images/Audacity-logo-r_50pct.jpg"></a></h1>
 <!--<div align="right">
    <a title="Audacity Store, for Audacity-logo shirts, bags and ceramic mugs" href="http://audacitystore.com/">
    <img src="../images/Audacity Store_banner_50pct.jpg" alt="Audacity Store, for Audacity-logo shirts, bags and ceramic mugs" />
@@ -64,7 +64,7 @@
 </div>
 
 
-<div id="content">
+<div id="content" class="afternav">
 
 <div id="about">
   <h2>Audacity&reg; is free, open source, cross-platform software for recording and editing sounds.</h2>
@@ -83,8 +83,8 @@
 <div id="download">
   <center>
   <div id="download_sub">
-    <a href="http://www.fosshub.com/Audacity.html/audacity-win-2.1.0.exe">
-      <h1>Download Audacity 2.1.0</h1> <p><h3>for Windows 8/7/Vista/XP</h3></p></a>  </div>
+    <a href="http://www.fosshub.com/Audacity.html/audacity-win-2.1.1.exe">
+      <h1>Download Audacity 2.1.1</h1> <p><h3>for Windows 8/7/Vista/XP</h3></p></a>  </div>
 
   <div id="download_sub"><p><a href="download/windows">Other Audacity Downloads for Windows</a></p></div>
   <div id="download_sub">
@@ -98,43 +98,34 @@
 <div style="clear: both;"> </div>
 
 <div id="news">
-  <div class="newsitem"><h3>March 29, 2015: Audacity 2.1.0 Released</h3>
+  <div class="newsitem"><h3>July 15, 2015: Audacity 2.1.1 Released</h3>
 <p>
-<a href="/download">Audacity 2.1.0</a> replaces all previous versions. 
+<a href="/download">Audacity 2.1.1</a> replaces all previous versions. 
 </p>
 
 <p>
   <ul>
-    <li>For a long time, we have wanted Real-Time Preview for effects. 
-        It seemed nearly unachievable without major restructuring. 
-        But with Audacity 2.1.0, we have it in 
-        <a href="http://manual.audacityteam.org/o/man/real_time_preview_of_effects.html">
-          LADSPA, VST, and Audio Unit (OS X) effects</a>! 
-        Thanks to Leland Lucius for these great new capabilities!</li>
-
-    <li>Much improved 
-        <a href="http://manual.audacityteam.org/o/man/noise_reduction.html"><b>Noise Reduction</b></a> 
-        effect replaces <b>Noise Removal</b>. Thanks to new contributor Paul Licameli!</li>
-
-    <li>Lots of other improvements to effects, also thanks to Leland, including: 
-      <ul>
-        <li>VST: FXB preset banks, hosting multiple plug-ins</li>
-        <li>All effects can now be used in Chains, and can be sorted on name, publisher, or class.</li>
-        <li>Most Nyquist effects now have Preview button.</li>
-      </ul>
+    <li>The most visible new feature is 
+    <a href="http://manual.audacityteam.org/o/man/scrubbing_and_seeking.html">
+       scrubbing and seeking,
+    </a>including backwards play.
+    Updates to 
+    <a href="http://manual.audacityteam.org/o/man/timeline.html#tqp">
+       Quick-Play
+    </a> also help with finding a precise position in the audio.
     </li>
-
-    <li>Redesigned Meter Toolbars show a lot more information in smaller area. Thanks, Leland Lucius and James Crook!</li>
-    <li><a href="http://manual.audacityteam.org/o/man/spectral_selection.html">Spectral Selection</a> 
-        in Spectrogram view. Thanks to Paul Licameli!</li>
+    <li>You can now install plug-ins without restarting Audacity or add and remove any effect or generator
+    from the menus.</li>
+    <li>Over 50 bugs have been addressed with this release.  Edits are now processed much faster in longer projects of a few hours duration.</li>
+    <li> Effects now have presets.  A new Limiter replaces the Hard Limiter effect.  There's a new version of Vocal Removal, a cross-fade effect for combining clips on the same track and 'classic filters' available as an opt-in effect.</li>
   </ul>
 </p>
 
 <p>
-Audacity 2.1.0 also has lots of other improvements and bug fixes. 
-Many thanks to all the QA folks for helping hone these, especially Gale Andrews, Steve Daulton, Peter Sampson, and Bill Wharrie. 
-See the <a href="http://wiki.audacityteam.org/wiki/Release_Notes_2.1.0">2.1.0 Release Notes</a> 
-for details. 
+  There's also been lots of work behind the scenes, including VI usability enhancements and upgrade to new libraries.  Fuller details on the changes since 2.1.0 can be found in the 
+    <a href="http://wiki.audacityteam.org/wiki/Release_Notes_2.1.1">
+       2.1.1 Release Notes.
+    </a>
 </p>
 
 </div>  <h4>
@@ -143,10 +134,24 @@ for details.
   </h4>
 </div>
 
+<form id="notify" method="post" action="http://scripts.dreamhost.com/add_list.cgi">
   <h3 id="announce">Get Notified of New Versions</h3>
   <p>
-  To be notified of new versions, we suggest you subscribe to our audacity-announce mailing list, <a href="http://lists.audacityteam.org/cgi-bin/mailman/listinfo/audacity-announce">by filling the subscription form available here.</a>
+  <input type="hidden" name="list" value="audacity-announce">
+  <input type="hidden" name="url" value="http://audacityteam.org/list/subscribed.php">
+  <input type="hidden" name="emailconfirmurl" value="http://audacityteam.org/list/emailconfirm.php">
+  <input type="hidden" name="unsuburl" value="http://audacityteam.org/list/unsubscribed.php">
+  <input type="hidden" name="alreadyonurl" value="http://audacityteam.org/list/alreadyon.php">
+  <input type="hidden" name="notonurl" value="http://audacityteam.org/list/noton.php">
+  <input type="hidden" name="invalidurl" value="http://audacityteam.org/list/invalid.php">
+  <input type="hidden" name="domain" value="audacityteam.org">
+  <input type="hidden" name="emailit" value="1">
+
+  <label for="address">Email address</label>: <input name="address" id="address" class="text">
+  <input type="submit" name="submit" value="Add">
+  <input type="submit" name="unsub" value="Remove">
   </p>
+</form>
 
 </div>
 <hr>
@@ -186,8 +191,13 @@ for details.
     | <a href="./site-map">Site Map</a>
   </p>
   <p>
-	  <SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/59/badge_js'></SCRIPT>
+    <SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/59/badge_js'></SCRIPT>
+    <a href="https://plus.google.com/108226440145001840649?prsrc=3" style="text-decoration:none;">
+    &nbsp;&nbsp;&nbsp;
+    <img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:32px;height:32px;"/>
+    </a>      
     <a title="This site is under a Creative Commons Attribution 3.0 License." href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Attribution License" src="./images/creative-commons3.png"></a>
+  
   </p>
   <h2>View this page in a different language</h2>
   <p>

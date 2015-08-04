@@ -31,6 +31,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
+
 	<meta name="description" content="Download Logstash or the complete ELK stack for free and start collecting, searching, and analyzing your data with Elastic in minutes." />
 
 
@@ -38,6 +39,8 @@
 	<link rel="canonical" href="https://www.elastic.co/downloads/logstash" />
 
 
+
+	<meta property="og:image" content="/static/img/cluster-small.png" />
 
 
 
@@ -58,11 +61,12 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
 	<link type="text/css" rel="stylesheet" href="/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="/static/css/style.css?clr=125" />	
+	<link type="text/css" rel="stylesheet" href="/static/css/style.css?clr=129" />	
 	<script src="/static/js/skel.min.js"></script>
 	<script type="text/javascript">form_name = "downloads"</script>
-	<script src="/static/js/init.js?clr=125"></script>
+	<script src="/static/js/init.js?clr=129"></script>
 	<script src="/static/js/classie.js"></script>
+	<script src="/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -209,9 +213,9 @@
 					
 					<li><a href="#" class="m-search" id="header-search"></a></li>
 					
-					<li><a href="/guide" class="m-guide" id=""></a></li>
+					<li><a href="/guide" class="m-docs" id="mobile-docs"></a></li>
 					
-					<li><a href="/contact" class="m-contact" id=""></a></li>
+					<li><a href="/contact" class="m-contact" id="mobile-contact"></a></li>
 					
 				</ul>											
 				<nav class="nav-menu">
@@ -551,7 +555,7 @@
 			background: url("/assets/blt174b13be89ff803c/m-search-icon.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
-		.m-shortcuts li a.m-guide {
+		.m-shortcuts li a.m-docs {
 			background: url("/assets/blt5ba03f594a7d610a/m-guide-icon.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
@@ -629,43 +633,43 @@
 			
 				<div class="12u download-content-wrapper">
 					<header>
-						<h2>Logstash 1.5.2</h2>
+						<h2>Logstash 1.5.3</h2>
 					</header>
 					<ul class="downloads row">
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.2.zip" class="zip-link uppercase">ZIP</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.3.zip" class="zip-link uppercase">ZIP</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.2.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.2.tar.gz" class="zip-link uppercase">TAR.GZ</a>
-								
-								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.2.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.3.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.5.2-1_all.deb" class="zip-link uppercase">DEB</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.3.tar.gz" class="zip-link uppercase">TAR.GZ</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.5.2-1_all.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.5.3.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.5.2-1.noarch.rpm" class="zip-link uppercase">RPM</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.5.3-1_all.deb" class="zip-link uppercase">DEB</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.5.2-1.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.5.3-1_all.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.5.3-1.noarch.rpm" class="zip-link uppercase">RPM</a>
+								
+								
+								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.5.3-1.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 												
@@ -853,43 +857,43 @@
 			
 				<div class="12u download-content-wrapper">
 					<header>
-						<h2>Logstash 1.4.3</h2>
+						<h2>Logstash 1.4.4</h2>
 					</header>
 					<ul class="downloads row">
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.4.3-1-7e387fb_all.deb" class="zip-link uppercase">DEB</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.4.4-1-5608c19_all.deb" class="zip-link uppercase">DEB</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.4.3-1-7e387fb_all.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.4.3-1_7e387fb.noarch.rpm" class="zip-link uppercase">RPM</a>
-								
-								
-								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.4.3-1_7e387fb.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash_1.4.4-1-5608c19_all.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.3.zip" class="zip-link uppercase">ZIP</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.4.4-1_5608c19.noarch.rpm" class="zip-link uppercase">RPM</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.3.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.4.4-1_5608c19.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.3.tar.gz" class="zip-link uppercase">TAR.GZ</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.4.zip" class="zip-link uppercase">ZIP</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.3.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.4.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.4.tar.gz" class="zip-link uppercase">TAR.GZ</a>
+								
+								
+								<a href="https://download.elastic.co/logstash/logstash/logstash-1.4.4.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 												
@@ -958,34 +962,34 @@
 			
 				<div class="12u download-content-wrapper">
 					<header>
-						<h2>Logstash Contrib 1.4.3</h2>
+						<h2>Logstash Contrib 1.4.4</h2>
 					</header>
 					<ul class="downloads row">
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-contrib-1.4.3.tar.gz" class="zip-link uppercase">TAR</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-contrib-1.4.4.tar.gz" class="zip-link uppercase">TAR</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/logstash-contrib-1.4.3.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash-contrib_1.4.3-1-bf2ee84_all.deb" class="zip-link uppercase">DEB</a>
-								
-								
-								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash-contrib_1.4.3-1-bf2ee84_all.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/logstash-contrib-1.4.4.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-contrib-1.4.3-1_bf2ee84.noarch.rpm" class="zip-link uppercase">RPM</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash-contrib_1.4.4-1-7c0e8e6_all.deb" class="zip-link uppercase">DEB</a>
 								
 								
-								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-contrib-1.4.3-1_bf2ee84.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/logstash/logstash/packages/debian/logstash-contrib_1.4.4-1-7c0e8e6_all.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-contrib-1.4.4-1_7c0e8e6.noarch.rpm" class="zip-link uppercase">RPM</a>
+								
+								
+								<a href="https://download.elastic.co/logstash/logstash/packages/centos/logstash-contrib-1.4.4-1_7c0e8e6.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 												
@@ -1071,7 +1075,7 @@
 					
 						<li class="twitter grayscale"><a href="https://www.twitter.com/elastic" target="_blank" id="footer_twitter"></a></li>
 					
-						<li class="linkedin grayscale"><a href="https://www.linkedin.com/company/elastic.co" target="_blank" id="footer_linkedin"></a></li>
+						<li class="linkedin grayscale"><a href="https://www.linkedin.com/company/elastic-co" target="_blank" id="footer_linkedin"></a></li>
 					
 						<li class="xing grayscale"><a href="https://www.xing.com/companies/elastic.co" target="_blank" id="footer_xing"></a></li>
 					
@@ -1114,9 +1118,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/jquery.autocomplete.js"></script>
-<script src="/static/js/script.js?clr=113"></script>
+   	<script src="/static/js/jquery.autocomplete.js"></script>
+<script src="/static/js/script.js?clr=129"></script>
    	
 	
 		<script>
@@ -1142,7 +1145,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 	  	"@type": "Organization",
 	  	"name" : "Elastic",
 	  	"url": "https://www.elastic.co/",
-	  	"logo": "https://www.elastic.co/static/img/logo-elastic.png",
+	  	"logo": "https://www.elastic.co/static/img/logo-elastic-xsmall.png",
 		"sameAs" : [ "https://www.facebook.com/elastic.co",
 			"https://twitter.com/elastic",
 			"https://plus.google.com/105178019064686397293",

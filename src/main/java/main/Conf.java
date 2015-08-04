@@ -16,7 +16,7 @@ public class Conf {
         ));
         configurations.put("apache", new VersionParserConfiguration(
                 "https://httpd.apache.org/download.cgi",
-                "#apcontents ul:eq(5)",
+                "#apcontents > ul:nth-child(7)",
                 "(.*?) \\(released"
         ));
         configurations.put("debian", new VersionParserConfiguration(
@@ -177,8 +177,8 @@ public class Conf {
         ));
         configurations.put("windows", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Windows",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(9) > td",
-                "(.*?)\\.([0-9]+)(\\[| )"
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td",
+                ".*?\\(v(.*?)\\)"
         ));
         configurations.put("centos", new VersionParserConfiguration(
                 "http://wiki.centos.org/Download",
@@ -275,9 +275,9 @@ public class Conf {
                 "(.*?) "
         ));
         configurations.put("kde", new VersionParserConfiguration(
-                "https://www.kde.org/download/",
-                "#main > p:nth-child(25)",
-                "Please see the (.*?) Info Page"
+                "https://en.wikipedia.org/wiki/KDE_Software_Compilation",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
+                "(.*?) \\("
         ));
         configurations.put("docker", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Docker_(software)",
@@ -292,7 +292,7 @@ public class Conf {
         configurations.put("visualstudio", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
-                "\\((.*?)\\)"
+                "(.*?) \\("
         ));
         configurations.put("bower", new VersionParserConfiguration(
                 "https://www.npmjs.com/package/bower",
@@ -383,9 +383,9 @@ public class Conf {
                 "Download zsh (.*?) "
         ));
         configurations.put("ansible", new VersionParserConfiguration(
-                "http://docs.ansible.com/",
-                "#about-ansible > p:nth-child(7)",
-                "This documentation covers the current released version of Ansible \\((.*?)\\)"
+                "https://github.com/ansible/ansible/releases",
+                "#js-repo-pjax-container > div.release-timeline > ul > li:nth-child(1) > div > div > h3 > a > span",
+                "v(.*)"
         ));
         configurations.put("polymer", new VersionParserConfiguration(
                 "https://github.com/Polymer/polymer/releases",
@@ -485,7 +485,7 @@ public class Conf {
         ));
         configurations.put("chef", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Chef_(software)",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td > div > ul > li:nth-child(1)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td > div > ul > li:nth-child(1)",
                 ".*? (.*?) "
         ));
     }

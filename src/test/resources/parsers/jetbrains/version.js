@@ -22,7 +22,7 @@ function onloadVersionIDEADownload() {
 
 //Resharper
 var versionRSShort = "9";
-var versionRSLong = "9.1.1";
+var versionRSLong = "9.1.3";
 function versionRS(el) {
     if (el == "short") {
         document.write(versionRSShort);
@@ -42,7 +42,7 @@ function onloadVersionRSDownload() {
 
 //Resharper C++
 var versionRSCppShort = "1";
-var versionRSCppLong = "1.0.1";
+var versionRSCppLong = "1.0.3";
 function versionRSCpp(el) {
     if (el == "short") {
         document.write(versionRSCppShort);
@@ -54,7 +54,7 @@ function versionRSCpp(el) {
 
 //dotTrace
 var versionDTShort = "6";
-var versionDTLong = "6.1.1";
+var versionDTLong = "6.1.3";
 var versionDTMLong = "3.5";
 function versionDT(el) {
     if (el == "short") {
@@ -74,7 +74,7 @@ function onloadVersionDTDownload() {
 
 //dotMemory
 var versionDMShort = "4";
-var versionDMLong = "4.3.1";
+var versionDMLong = "4.3.3";
 function versionDM(el) {
     if (el == "short") {
         document.write(versionDMShort);
@@ -93,7 +93,7 @@ function onloadVersionDMDownload() {
 
 //dotCover
 var versionDCShort = "3";
-var versionDCLong = "3.1.1";
+var versionDCLong = "3.1.3";
 function versionDC(el) {
     if (el == "short") {
         document.write(versionDCShort);
@@ -112,7 +112,7 @@ function onloadVersionDCDownload() {
 
 //dotPeek
 var versionDPShort = "1";
-var versionDPLong = "1.4.1";
+var versionDPLong = "1.4.3";
 function versionDP(el) {
     if (el == "short") {
         document.write(versionDPShort);
@@ -130,8 +130,8 @@ function onloadVersionDPDownload() {
 }
 
 //TeamCity
-var versionTCShort = "9.0";
-var versionTCLong = "9.0.5";
+var versionTCShort = "9.1";
+var versionTCLong = "9.1.1";
 function versionTC(el) {
     if (el == "short") {
         document.write(versionTCShort);

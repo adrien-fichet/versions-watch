@@ -31,6 +31,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
+
 	<meta name="description" content="Download Elasticsearch or the complete ELK stack for free and start searching and analyzing in minutes with Elastic." />
 
 
@@ -38,6 +39,8 @@
 	<link rel="canonical" href="https://www.elastic.co/downloads/elasticsearch" />
 
 
+
+	<meta property="og:image" content="/static/img/cluster-small.png" />
 
 
 
@@ -58,11 +61,12 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
 	<link type="text/css" rel="stylesheet" href="/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="/static/css/style.css?clr=125" />	
+	<link type="text/css" rel="stylesheet" href="/static/css/style.css?clr=129" />	
 	<script src="/static/js/skel.min.js"></script>
 	<script type="text/javascript">form_name = "downloads"</script>
-	<script src="/static/js/init.js?clr=125"></script>
+	<script src="/static/js/init.js?clr=129"></script>
 	<script src="/static/js/classie.js"></script>
+	<script src="/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -209,9 +213,9 @@
 					
 					<li><a href="#" class="m-search" id="header-search"></a></li>
 					
-					<li><a href="/guide" class="m-guide" id=""></a></li>
+					<li><a href="/guide" class="m-docs" id="mobile-docs"></a></li>
 					
-					<li><a href="/contact" class="m-contact" id=""></a></li>
+					<li><a href="/contact" class="m-contact" id="mobile-contact"></a></li>
 					
 				</ul>											
 				<nav class="nav-menu">
@@ -551,7 +555,7 @@
 			background: url("/assets/blt174b13be89ff803c/m-search-icon.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
-		.m-shortcuts li a.m-guide {
+		.m-shortcuts li a.m-docs {
 			background: url("/assets/blt5ba03f594a7d610a/m-guide-icon.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 			background-size: contain;}
 	
@@ -628,43 +632,43 @@
 			
 				<div class="12u download-content-wrapper">
 					<header>
-						<h2>Elasticsearch 1.6.0</h2>
+						<h2>Elasticsearch 1.7.1</h2>
 					</header>
 					<ul class="downloads row">
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.zip" class="zip-link uppercase">zip</a>
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.zip" class="zip-link uppercase">zip</a>
 								
 								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.tar.gz" class="zip-link uppercase">tar</a>
-								
-								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.deb" class="zip-link uppercase">deb</a>
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.tar.gz" class="zip-link uppercase">tar</a>
 								
 								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 						
 							<li class="6u(small)">
 								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.noarch.rpm" class="zip-link uppercase">rpm</a>
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.deb" class="zip-link uppercase">deb</a>
 								
 								
-								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.deb.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.noarch.rpm" class="zip-link uppercase">rpm</a>
+								
+								
+								<a href="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.noarch.rpm.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
 								
 							</li>
 												
@@ -732,349 +736,32 @@
 					<div class="12u accordian">
 						<a href="" class="download-release-notes">See Release Notes</a>
 						<div class="download-release-wrapper accordcontent">
-							<h3>Breaking changes</h3><ul>
-<li>Benchmark:<ul><li>Benchmark api: removed leftovers <a href="http://github.com/elastic/elasticsearch/issues/10180">#10180</a></li>
-</ul></li>
-<li>Highlighting:<ul><li>Wildcard field names in highlighting should only return fields that can be highlighted <a href="http://github.com/elastic/elasticsearch/issues/11364">#11364</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9881">#9881</a>)</li>
-</ul></li>
-<li>Network:<ul><li>Remove unsafe options <a href="http://github.com/elastic/elasticsearch/issues/10360">#10360</a></li>
-</ul></li>
-<li>Snapshot/Restore:<ul><li>Fix FSRepository location configuration <a href="http://github.com/elastic/elasticsearch/issues/11284">#11284</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11068">#11068</a>)</li>
-</ul></li>
-</ul><h3>Deprecations</h3><ul>
-<li>CRUD:<ul><li>Deprecate async replication <a href="http://github.com/elastic/elasticsearch/issues/10161">#10161</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10114">#10114</a>)</li>
-</ul></li>
-<li>Java API:<ul><li>Query DSL: deprecate BytesFilterBuilder in favour of WrapperFilterBuilder <a href="http://github.com/elastic/elasticsearch/issues/11112">#11112</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10919">#10919</a>)</li>
-<li>Deprecate 
-<code>async</code> replication <a href="http://github.com/elastic/elasticsearch/issues/10642">#10642</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10114">#10114</a>, <a href="http://github.com/elastic/elasticsearch/issues/10171">#10171</a>)</li>
-</ul></li>
-<li>More Like This:<ul><li>Deprecate the More-Like-This API in favour of the MLT query <a href="http://github.com/elastic/elasticsearch/issues/10982">#10982</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10736">#10736</a>)</li>
-</ul></li>
-<li>Rivers:<ul><li>Deprecate rivers <a href="http://github.com/elastic/elasticsearch/issues/10503">#10503</a></li>
-<li>Warning in documentation for deprecation of rivers <a href="http://github.com/elastic/elasticsearch/issues/10423">#10423</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10345">#10345</a>)</li>
-</ul></li>
-<li>Network:<ul><li>Deprecated the thrift and memcached transports <a href="http://github.com/elastic/elasticsearch/issues/10167">#10167</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10166">#10166</a>)</li>
-</ul></li>
-<li>Parent/Child:<ul><li>Deprecate the 
-<code>top_children</code> query <a href="http://github.com/elastic/elasticsearch/issues/11022">#11022</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/6511">#6511</a>)</li>
-</ul></li>
-<li>Plugins:<ul><li>Plugins: deprecate addQuery methods that are going to be removed in 2.0 <a href="http://github.com/elastic/elasticsearch/issues/11532">#11532</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11481">#11481</a>)</li>
-</ul></li>
-<li>Scripting:<ul><li>Deprecate Groovy sandbox and related settings <a href="http://github.com/elastic/elasticsearch/issues/10478">#10478</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10156">#10156</a>)</li>
-</ul></li>
-<li>Search:<ul><li>Deprecate delete-by-query in client/transport/action APIs too <a href="http://github.com/elastic/elasticsearch/issues/10239">#10239</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10082">#10082</a>)</li>
-</ul></li>
-<li>Suggesters:<ul><li>Deprecate filter option in PhraseSuggester collate <a href="http://github.com/elastic/elasticsearch/issues/11445">#11445</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11195">#11195</a>)</li>
-</ul></li>
-</ul><h3>New features</h3><ul>
-<li>Logging:<ul><li>Add ability to specify a SizeBasedTriggeringPolicy for log configuration <a href="http://github.com/elastic/elasticsearch/issues/10373">#10373</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10371">#10371</a>)</li>
-</ul></li>
-<li>Mapping:<ul><li>Bring back 
-<code>numeric_resolution</code> <a href="http://github.com/elastic/elasticsearch/issues/10420">#10420</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10072">#10072</a>)</li>
-</ul></li>
-<li>REST:<ul><li>API: Add response filtering with 
-<code>filter_path</code> parameter <a href="http://github.com/elastic/elasticsearch/issues/10980">#10980</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/7401">#7401</a>)</li>
-</ul></li>
-<li>Recovery:<ul><li>Synced flush backport <a href="http://github.com/elastic/elasticsearch/issues/11417">#11417</a></li>
-<li>Move index sealing terminology to synced flush <a href="http://github.com/elastic/elasticsearch/issues/11336">#11336</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10032">#10032</a>, <a href="http://github.com/elastic/elasticsearch/issues/11179">#11179</a>, <a href="http://github.com/elastic/elasticsearch/issues/11251">#11251</a>)</li>
-<li>Seal indices for faster recovery  <a href="http://github.com/elastic/elasticsearch/issues/11179">#11179</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10032">#10032</a>)</li>
-</ul></li>
-<li>Scripting:<ul><li>Add support for fine-grained settings <a href="http://github.com/elastic/elasticsearch/issues/10116">#10116</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10274">#10274</a>, <a href="http://github.com/elastic/elasticsearch/issues/6418">#6418</a>)</li>
-</ul></li>
-<li>Search:<ul><li>Validate API: provide more verbose explanation <a href="http://github.com/elastic/elasticsearch/issues/10147">#10147</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/1412">#1412</a>, <a href="http://github.com/elastic/elasticsearch/issues/88247">#88247</a>)</li>
-</ul></li>
-<li>Settings:<ul><li>Add ability to prompt for selected settings on startup <a href="http://github.com/elastic/elasticsearch/issues/10918">#10918</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10838">#10838</a>)</li>
-<li>
-<code>bootstrap.mlockall</code> for Windows (VirtualLock) <a href="http://github.com/elastic/elasticsearch/issues/10887">#10887</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/8480">#8480</a>, <a href="http://github.com/elastic/elasticsearch/issues/9186">#9186</a>, <a href="http://github.com/elastic/elasticsearch/issues/9923">#9923</a>)</li>
-</ul></li>
-<li>Shadow Replicas:<ul><li>Allow shards on shared filesystems to be recovered on any node <a href="http://github.com/elastic/elasticsearch/issues/10960">#10960</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10932">#10932</a>)</li>
-</ul></li>
-<li>Stats:<ul><li>Add field stats api <a href="http://github.com/elastic/elasticsearch/issues/10523">#10523</a></li>
+							<h3>Deprecations</h3><ul>
+<li>Geo:<ul><li>Deprecate <code>validate_*</code> and <code>normalize_*</code> <a href="http://github.com/elastic/elasticsearch/issues/10248">#10248</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10170">#10170</a>)</li>
 </ul></li>
 </ul><h3>Enhancements</h3><ul>
-<li>Allocation:<ul><li>Async fetch of shard started and store during allocation <a href="http://github.com/elastic/elasticsearch/issues/11262">#11262</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/11101">#11101</a>, <a href="http://github.com/elastic/elasticsearch/issues/9502">#9502</a>)</li>
-<li>When using 
-<code>recover_on_any_node</code> on shared filesystem, respect Deciders <a href="http://github.com/elastic/elasticsearch/issues/11168">#11168</a></li>
-<li>Early terminate if the cluster can't be rebalanced <a href="http://github.com/elastic/elasticsearch/issues/9162">#9162</a></li>
-</ul></li>
-<li>Analysis:<ul><li>Document and test custom analyzer 
-<code>position_offset_gap</code> <a href="http://github.com/elastic/elasticsearch/issues/10934">#10934</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/1812">#1812</a>)</li>
-</ul></li>
-<li>CAT API:<ul><li>Add node id to _cat apis <a href="http://github.com/elastic/elasticsearch/issues/10246">#10246</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10226">#10226</a>)</li>
-</ul></li>
-<li>Cluster:<ul><li>Make 
-<code>routing_nodes</code> an independent metric option in cluster state api <a href="http://github.com/elastic/elasticsearch/issues/10412">#10412</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10352">#10352</a>)</li>
-<li>Add METADATA_READ and METADATA_WRITE blocks <a href="http://github.com/elastic/elasticsearch/issues/9203">#9203</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10521">#10521</a>, <a href="http://github.com/elastic/elasticsearch/issues/10522">#10522</a>, <a href="http://github.com/elastic/elasticsearch/issues/2833">#2833</a>, <a href="http://github.com/elastic/elasticsearch/issues/3703">#3703</a>, <a href="http://github.com/elastic/elasticsearch/issues/5855">#5855</a>, <a href="http://github.com/elastic/elasticsearch/issues/5876">#5876</a>, <a href="http://github.com/elastic/elasticsearch/issues/8102">#8102</a>)</li>
-</ul></li>
-<li>Core:<ul><li>Add node setting to send SegmentInfos debug output to System.out <a href="http://github.com/elastic/elasticsearch/issues/11546">#11546</a></li>
-<li>Reduce shard inactivity timeout to 5m <a href="http://github.com/elastic/elasticsearch/issues/11479">#11479</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/11179">#11179</a>, <a href="http://github.com/elastic/elasticsearch/issues/11336">#11336</a>)</li>
-<li>Fail shard if search execution uncovers corruption <a href="http://github.com/elastic/elasticsearch/issues/11440">#11440</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11419">#11419</a>)</li>
-<li>Acquire IndexWriter's 
-<code>write.lock</code> lock before shard deletion <a href="http://github.com/elastic/elasticsearch/issues/11127">#11127</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11097">#11097</a>)</li>
-<li>Refactor TransportShardReplicationOperationAction <a href="http://github.com/elastic/elasticsearch/issues/10749">#10749</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10032">#10032</a>)</li>
-<li>Make getFileStore a bit more defensive <a href="http://github.com/elastic/elasticsearch/issues/10696">#10696</a></li>
-<li>Ref count write operations on IndexShard <a href="http://github.com/elastic/elasticsearch/issues/10610">#10610</a></li>
-<li>Refresh if many deletes in a row use up too much version map RAM <a href="http://github.com/elastic/elasticsearch/issues/10312">#10312</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/7052">#7052</a>)</li>
-</ul></li>
-<li>Discovery:<ul><li>Prevent over allocation for multicast ping request <a href="http://github.com/elastic/elasticsearch/issues/10896">#10896</a></li>
-<li>Unicast Ping should close temporary connections after returning ping results <a href="http://github.com/elastic/elasticsearch/issues/10849">#10849</a></li>
-</ul></li>
-<li>Engine:<ul><li>Remove reflection call to waitForMerges <a href="http://github.com/elastic/elasticsearch/issues/10102">#10102</a></li>
-</ul></li>
-<li>Geo:<ul><li>Add merge conflicts to GeoShapeFieldMapper <a href="http://github.com/elastic/elasticsearch/issues/10533">#10533</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10513">#10513</a>, <a href="http://github.com/elastic/elasticsearch/issues/10514">#10514</a>)</li>
-<li>Coordinates can contain more than two elements (x,y) in GeoJSON parser. <a href="http://github.com/elastic/elasticsearch/issues/9542">#9542</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9540">#9540</a>)</li>
-</ul></li>
-<li>Index APIs:<ul><li>Add check to MetaData#concreteIndices to prevent NPE <a href="http://github.com/elastic/elasticsearch/issues/10342">#10342</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10339">#10339</a>)</li>
-</ul></li>
-<li>Indexed Scripts/Templates:<ul><li>Indexed scripts/templates: return response body when script is not found <a href="http://github.com/elastic/elasticsearch/issues/10396">#10396</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/7325">#7325</a>)</li>
-<li>Indexed Scripts/Templates: Return error message on 404 <a href="http://github.com/elastic/elasticsearch/issues/7335">#7335</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/7325">#7325</a>)</li>
-</ul></li>
-<li>Internal:<ul><li>Removed generic types from ContextAndHeaderHolder and  HasHeaders#putHeader() <a href="http://github.com/elastic/elasticsearch/issues/11231">#11231</a></li>
-<li>Wait forever (or one day) for indices to close <a href="http://github.com/elastic/elasticsearch/issues/10833">#10833</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10680">#10680</a>)</li>
-<li>Don't create a new BigArrays instance for every call of 
-<code>withCircuitBreaking</code> <a href="http://github.com/elastic/elasticsearch/issues/10800">#10800</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10798">#10798</a>)</li>
-<li>Change BigArrays to not extend AbstractComponent <a href="http://github.com/elastic/elasticsearch/issues/10798">#10798</a></li>
-<li>CommitStats doesn't need to allow for null values in commit user data <a href="http://github.com/elastic/elasticsearch/issues/10774">#10774</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10687">#10687</a>)</li>
-<li>Add 
-<code>fairness</code> option to KeyedLock. <a href="http://github.com/elastic/elasticsearch/issues/10703">#10703</a></li>
-<li>Fix string comparisons <a href="http://github.com/elastic/elasticsearch/issues/10204">#10204</a></li>
-<li>Remove unsafe field in BytesStreamInput <a href="http://github.com/elastic/elasticsearch/issues/10157">#10157</a></li>
-<li>Fix errors reported by error-prone <a href="http://github.com/elastic/elasticsearch/issues/9817">#9817</a></li>
-<li>Reduce the size of the search thread pool. <a href="http://github.com/elastic/elasticsearch/issues/9165">#9165</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9135">#9135</a>)</li>
-</ul></li>
-<li>Java API:<ul><li>Unify SearchResponse and BroadcastOperationResponse code around shards header <a href="http://github.com/elastic/elasticsearch/issues/11064">#11064</a></li>
-<li>Remove duplicated consistency level and replication type setters <a href="http://github.com/elastic/elasticsearch/issues/10188">#10188</a></li>
-</ul></li>
-<li>Logging:<ul><li>Display low disk watermark to be consistent with documentation <a href="http://github.com/elastic/elasticsearch/issues/11313">#11313</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10588">#10588</a>)</li>
-<li>Add index name to log statements when settings update fails <a href="http://github.com/elastic/elasticsearch/issues/11124">#11124</a></li>
-<li>Add logging of slow cluster state tasks <a href="http://github.com/elastic/elasticsearch/issues/10907">#10907</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10874">#10874</a>)</li>
-<li>Log sending translog operation batches to nodes <a href="http://github.com/elastic/elasticsearch/issues/10544">#10544</a></li>
-<li>Log only a summary line of filesystem detail for all path.data on node startup <a href="http://github.com/elastic/elasticsearch/issues/10527">#10527</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10502">#10502</a>)</li>
-<li>Add INFO logging saying whether each path.data is on an SSD <a href="http://github.com/elastic/elasticsearch/issues/10502">#10502</a></li>
-<li>Use static logger name in Engine.java <a href="http://github.com/elastic/elasticsearch/issues/10497">#10497</a></li>
-<li>Miscellaneous additional logging and cleanups <a href="http://github.com/elastic/elasticsearch/issues/10376">#10376</a></li>
-<li>Change logging to warning to match pattern <a href="http://github.com/elastic/elasticsearch/issues/9593">#9593</a></li>
-<li>Reduce apache (cloud-aws) logging when rootLogger is DEBUG <a href="http://github.com/elastic/elasticsearch/issues/8856">#8856</a></li>
-</ul></li>
-<li>Network:<ul><li>Default value for socket reuse should not be null <a href="http://github.com/elastic/elasticsearch/issues/11255">#11255</a></li>
-<li>Make Netty exceptionCaught method protected <a href="http://github.com/elastic/elasticsearch/issues/10464">#10464</a></li>
-<li>Remove content thread safe from REST layer <a href="http://github.com/elastic/elasticsearch/issues/10429">#10429</a></li>
-<li>Add getter for channel in NettyTransportChannel <a href="http://github.com/elastic/elasticsearch/issues/10319">#10319</a></li>
-<li>Schedule transport ping interval <a href="http://github.com/elastic/elasticsearch/issues/10189">#10189</a></li>
-<li>Return useful error message on potential HTTP connect to Transport port <a href="http://github.com/elastic/elasticsearch/issues/10108">#10108</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/2139">#2139</a>)</li>
-</ul></li>
-<li>Packaging:<ul><li>Export hostname as environment variable for plugin manager <a href="http://github.com/elastic/elasticsearch/issues/11399">#11399</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10902">#10902</a>, <a href="http://github.com/elastic/elasticsearch/issues/9474">#9474</a>)</li>
-<li>Exclude jackson-databind dependency <a href="http://github.com/elastic/elasticsearch/issues/10924">#10924</a></li>
-<li>Add common SystemD file for RPM/DEB package <a href="http://github.com/elastic/elasticsearch/issues/10725">#10725</a></li>
-<li>Standardization of packages structure and install <a href="http://github.com/elastic/elasticsearch/issues/10595">#10595</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10330">#10330</a>)</li>
-<li>Add properties files to configure startup and installation scripts <a href="http://github.com/elastic/elasticsearch/issues/10330">#10330</a></li>
-<li>service.bat file should explicitly use the Windows find command. <a href="http://github.com/elastic/elasticsearch/issues/9532">#9532</a></li>
-<li>Export the hostname as environment variable <a href="http://github.com/elastic/elasticsearch/issues/9474">#9474</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/8470">#8470</a>)</li>
-</ul></li>
-<li>Plugins:<ul><li>Use of default CONF_DIR/CONF_FILE in plugin install <a href="http://github.com/elastic/elasticsearch/issues/10721">#10721</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10673">#10673</a>, <a href="http://github.com/elastic/elasticsearch/issues/7946">#7946</a>)</li>
-<li>Always send current ES version when downloading plugins <a href="http://github.com/elastic/elasticsearch/issues/10131">#10131</a></li>
-</ul></li>
-<li>Query DSL:<ul><li>Function score: Add 
-<code>default</code> to 
-<code>field_value_factor</code> <a href="http://github.com/elastic/elasticsearch/issues/10845">#10845</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10841">#10841</a>)</li>
-</ul></li>
-<li>REST:<ul><li>Unify query_string parameters parsing <a href="http://github.com/elastic/elasticsearch/issues/11057">#11057</a></li>
-<li>HttpServer: Support relative plugin paths <a href="http://github.com/elastic/elasticsearch/issues/10975">#10975</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10958">#10958</a>)</li>
-<li>Remove global 
-<code>source</code> parameter from individual APIs in REST spec <a href="http://github.com/elastic/elasticsearch/issues/10863">#10863</a></li>
-<li>Better detection of CBOR <a href="http://github.com/elastic/elasticsearch/issues/10026">#10026</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/7640">#7640</a>)</li>
-<li>Remove 
-<code>indices_boost</code> URL param <a href="http://github.com/elastic/elasticsearch/issues/9244">#9244</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/6281">#6281</a>)</li>
-</ul></li>
-<li>Recovery:<ul><li>Reduce cluster update reroutes with async fetch <a href="http://github.com/elastic/elasticsearch/issues/11421">#11421</a></li>
-<li>Check if the index can be opened and is not corrupted on state listing <a href="http://github.com/elastic/elasticsearch/issues/11269">#11269</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11226">#11226</a>)</li>
-<li>Allow to recover into a folder containing a corrupted shard <a href="http://github.com/elastic/elasticsearch/issues/10558">#10558</a></li>
-<li>Only cancel recovery when primary completed relocation <a href="http://github.com/elastic/elasticsearch/issues/10218">#10218</a></li>
-</ul></li>
-<li>Scripting:<ul><li>Allow plugins to define custom operations that they use scripts for <a href="http://github.com/elastic/elasticsearch/issues/10419">#10419</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10347">#10347</a>)</li>
-</ul></li>
-<li>Search:<ul><li>Single value numeric queries shouldn't be handled by NumericRangeQuery <a href="http://github.com/elastic/elasticsearch/issues/10648">#10648</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10646">#10646</a>)</li>
-</ul></li>
-<li>Settings:<ul><li>Make prompt placeholders consistent with existing placeholders <a href="http://github.com/elastic/elasticsearch/issues/11514">#11514</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10918">#10918</a>, <a href="http://github.com/elastic/elasticsearch/issues/11455">#11455</a>)</li>
-</ul></li>
-<li>Shadow Replicas:<ul><li>Implement retries for ShadowEngine creation <a href="http://github.com/elastic/elasticsearch/issues/10688">#10688</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10637">#10637</a>)</li>
-<li>Allow rebalancing primary shards on shared filesystems <a href="http://github.com/elastic/elasticsearch/issues/10585">#10585</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10469">#10469</a>)</li>
-</ul></li>
-<li>Snapshot/Restore:<ul><li>Add support for applying setting filters when displaying repository settings (Backport to 1.6) <a href="http://github.com/elastic/elasticsearch/issues/11431">#11431</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11265">#11265</a>)</li>
-<li>Check that reading indices is allowed before creating their snapshots <a href="http://github.com/elastic/elasticsearch/issues/11133">#11133</a></li>
-<li>Don't throw an exception if repositories are unregistered with 
-<code>*</code> <a href="http://github.com/elastic/elasticsearch/issues/11113">#11113</a></li>
-<li>Improve the error message when attempting to snapshot a closed index <a href="http://github.com/elastic/elasticsearch/issues/10608">#10608</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10579">#10579</a>)</li>
-<li>AbstractBlobContainer.deleteByPrefix() should not list all blobs <a href="http://github.com/elastic/elasticsearch/issues/10366">#10366</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10344">#10344</a>)</li>
-<li>Batching of snapshot state updates <a href="http://github.com/elastic/elasticsearch/issues/10295">#10295</a></li>
-<li>Expand wildcards in snapshot <a href="http://github.com/elastic/elasticsearch/issues/9903">#9903</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/6097">#6097</a>)</li>
-</ul></li>
-<li>Stats:<ul><li>Add CommitStats to supply information about the current commit point <a href="http://github.com/elastic/elasticsearch/issues/10687">#10687</a></li>
-</ul></li>
-<li>Store:<ul><li>Consolidate directory lock obtain code <a href="http://github.com/elastic/elasticsearch/issues/11390">#11390</a></li>
-</ul></li>
-<li>Suggesters:<ul><li>Phrase Suggester Collate Enhancements <a href="http://github.com/elastic/elasticsearch/issues/10710">#10710</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9377">#9377</a>)</li>
-</ul></li>
-<li>Translog:<ul><li>Use buffered translog type also when sync is set to 0 <a href="http://github.com/elastic/elasticsearch/issues/10993">#10993</a></li>
-<li>Remove useless random translog directory selection <a href="http://github.com/elastic/elasticsearch/issues/10589">#10589</a></li>
-</ul></li>
-<li>Upgrade:<ul><li>Upgrade Jackson to 2.5.3 <a href="http://github.com/elastic/elasticsearch/issues/11307">#11307</a></li>
-<li>Upgrade to Netty 3.10.3 <a href="http://github.com/elastic/elasticsearch/issues/11304">#11304</a></li>
-<li>Update forbiddenapis to version 1.8 <a href="http://github.com/elastic/elasticsearch/issues/10555">#10555</a></li>
-<li>Upgrade to Jackson 2.5.1 <a href="http://github.com/elastic/elasticsearch/issues/10210">#10210</a></li>
-<li>Upgrade to Jackson 2.5.1 <a href="http://github.com/elastic/elasticsearch/issues/10134">#10134</a></li>
-</ul></li>
-<li>Upgrade API:<ul><li>Refactor upgrade API to use transport and write minimum compatible version that the index was upgraded to <a href="http://github.com/elastic/elasticsearch/issues/11333">#11333</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/11072">#11072</a>, <a href="http://github.com/elastic/elasticsearch/issues/11095">#11095</a>)</li>
-<li>Add upgrade_only_ancient_segments option to upgrade API <a href="http://github.com/elastic/elasticsearch/issues/10540">#10540</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10213">#10213</a>)</li>
+<li>Logging:<ul><li>Add -XX:+PrintGCDateStamps when using GC Logs <a href="http://github.com/elastic/elasticsearch/issues/11735">#11735</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11733">#11733</a>)</li>
 </ul></li>
 </ul><h3>Bug fixes</h3><ul>
-<li>Aggregations:<ul><li>Allow aggregations_binary to build and parse <a href="http://github.com/elastic/elasticsearch/issues/11473">#11473</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11457">#11457</a>)</li>
-<li>Fix geo bounds aggregation when longitude is 0 <a href="http://github.com/elastic/elasticsearch/issues/11090">#11090</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11085">#11085</a>)</li>
-<li>Fixes Infinite values return from geo_bounds with non-zero bucket-ordinals <a href="http://github.com/elastic/elasticsearch/issues/10917">#10917</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10804">#10804</a>)</li>
-<li>Fix 
-<code>_as_string</code> output to only show when format specified <a href="http://github.com/elastic/elasticsearch/issues/10571">#10571</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10284">#10284</a>)</li>
+<li>Aggregations:<ul><li>Fix cidr mask conversion issue for 0.0.0.0/0 and add tests #12005 <a href="http://github.com/elastic/elasticsearch/issues/12430">#12430</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12005">#12005</a>)</li>
 </ul></li>
-<li>Allocation:<ul><li>GatewayAllocator: reset rerouting flag after error <a href="http://github.com/elastic/elasticsearch/issues/11519">#11519</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11421">#11421</a>)</li>
+<li>Core:<ul><li>ThreadPools: schedule a timeout check after adding command to queue <a href="http://github.com/elastic/elasticsearch/issues/12319">#12319</a></li>
 </ul></li>
-<li>Analysis:<ul><li>Custom analyzer names and aliases must not start with _ <a href="http://github.com/elastic/elasticsearch/issues/11303">#11303</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9596">#9596</a>)</li>
-<li>Fix tokenizer settings in SynonymTokenFilterFactory <a href="http://github.com/elastic/elasticsearch/issues/10489">#10489</a></li>
+<li>Internal:<ul><li>IndicesStore shouldn't try to delete index after deleting a shard <a href="http://github.com/elastic/elasticsearch/issues/12487">#12487</a></li>
 </ul></li>
-<li>Bulk:<ul><li>Allow null values in the bulk action/metadata line parameters <a href="http://github.com/elastic/elasticsearch/issues/11459">#11459</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11458">#11458</a>)</li>
-<li>Throw exception if unrecognized parameter in bulk action/metadata line <a href="http://github.com/elastic/elasticsearch/issues/11331">#11331</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10977">#10977</a>)</li>
-<li>
-<code>_default_</code> mapping should be picked up from index template during auto create index from bulk API  <a href="http://github.com/elastic/elasticsearch/issues/10762">#10762</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10609">#10609</a>)</li>
-<li>Removed duplicate timeout param <a href="http://github.com/elastic/elasticsearch/issues/10205">#10205</a></li>
+<li>Plugins:<ul><li>Plugin script: Fix ES_HOME with spaces <a href="http://github.com/elastic/elasticsearch/issues/12507">#12507</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12504">#12504</a>)</li>
 </ul></li>
-<li>CAT API:<ul><li>_cat/nodes: Thread null handling through stats and info <a href="http://github.com/elastic/elasticsearch/issues/9938">#9938</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/6297">#6297</a>)</li>
+<li>Query DSL:<ul><li>Fix malformed query generation <a href="http://github.com/elastic/elasticsearch/issues/12328">#12328</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12327">#12327</a>)</li>
+<li>QueryString ignores maxDeterminizedStates when creating a WildcardQuery <a href="http://github.com/elastic/elasticsearch/issues/12269">#12269</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12266">#12266</a>)</li>
+<li>Fix RegexpQueryBuilder#maxDeterminizedStates <a href="http://github.com/elastic/elasticsearch/issues/12083">#12083</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11896">#11896</a>)</li>
 </ul></li>
-<li>CRUD:<ul><li>
-<code>detect_noop</code> now understands 
-<code>null</code> as a valid value <a href="http://github.com/elastic/elasticsearch/issues/11210">#11210</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11208">#11208</a>)</li>
-<li>The parent option on update request should be used for upsert only. <a href="http://github.com/elastic/elasticsearch/issues/9612">#9612</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/4538">#4538</a>)</li>
+<li>Scripting:<ul><li>Consistently name Groovy scripts with the same content <a href="http://github.com/elastic/elasticsearch/issues/12296">#12296</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12212">#12212</a>)</li>
 </ul></li>
-<li>Cache:<ul><li>Don't use bitset cache for children filters. <a href="http://github.com/elastic/elasticsearch/issues/10663">#10663</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10629">#10629</a>, <a href="http://github.com/elastic/elasticsearch/issues/10662">#10662</a>)</li>
+<li>Search:<ul><li><code>_only_nodes</code> preference parsed incorrectly  <a href="http://github.com/elastic/elasticsearch/issues/12460">#12460</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12389">#12389</a>)</li>
+<li>Copy headers from the MLT request before calling the multi-termvectors API <a href="http://github.com/elastic/elasticsearch/issues/12443">#12443</a></li>
 </ul></li>
-<li>Cluster:<ul><li>ClusterHealth shouldn't fail with "unexpected failure" if master steps down while waiting for events <a href="http://github.com/elastic/elasticsearch/issues/11493">#11493</a></li>
-</ul></li>
-<li>Core:<ul><li>Improve exception message when shard has a partial commit (segments_N file) due to prior disk full <a href="http://github.com/elastic/elasticsearch/issues/11539">#11539</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11249">#11249</a>)</li>
-<li>Use System.nanoTime for elapsed time <a href="http://github.com/elastic/elasticsearch/issues/11058">#11058</a></li>
-<li>Lucene merges should run on the target shard during recovery <a href="http://github.com/elastic/elasticsearch/issues/10463">#10463</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9226">#9226</a>)</li>
-<li>Increase default rate limiting for snapshot, restore and recovery to 40 MB/sec <a href="http://github.com/elastic/elasticsearch/issues/10185">#10185</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/6018">#6018</a>)</li>
-</ul></li>
-<li>Dates:<ul><li>Query string time zone not working <a href="http://github.com/elastic/elasticsearch/issues/10883">#10883</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10477">#10477</a>)</li>
-</ul></li>
-<li>Engine:<ul><li>Ignore 3x segment upgrade if unneeded <a href="http://github.com/elastic/elasticsearch/issues/11383">#11383</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11361">#11361</a>)</li>
-<li>Sync translog before closing engine <a href="http://github.com/elastic/elasticsearch/issues/10484">#10484</a></li>
-</ul></li>
-<li>Geo:<ul><li>Fix OOM for high precision exotic shapes <a href="http://github.com/elastic/elasticsearch/issues/10652">#10652</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10583">#10583</a>, <a href="http://github.com/elastic/elasticsearch/issues/2361">#2361</a>, <a href="http://github.com/elastic/elasticsearch/issues/9860">#9860</a>)</li>
-<li>Correct ShapeBuilder coordinate parser to ignore values in 3rd+ dimension <a href="http://github.com/elastic/elasticsearch/issues/10539">#10539</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10510">#10510</a>)</li>
-<li>Fix hole intersection at tangential coordinate <a href="http://github.com/elastic/elasticsearch/issues/10332">#10332</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9511">#9511</a>)</li>
-</ul></li>
-<li>Highlighting:<ul><li>Use analyzer set on the field <a href="http://github.com/elastic/elasticsearch/issues/8943">#8943</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/8757">#8757</a>)</li>
-</ul></li>
-<li>Index APIs:<ul><li>Remove expansion of empty index arguments in RoutingTable <a href="http://github.com/elastic/elasticsearch/issues/10148">#10148</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9081">#9081</a>)</li>
-</ul></li>
-<li>Indexed Scripts/Templates:<ul><li>Fix updating templates. <a href="http://github.com/elastic/elasticsearch/issues/10526">#10526</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10397">#10397</a>)</li>
-</ul></li>
-<li>Inner Hits:<ul><li>Fix multi level parent/child bug <a href="http://github.com/elastic/elasticsearch/issues/11199">#11199</a></li>
-<li>Make sure size=0 works on the inner_hits level. <a href="http://github.com/elastic/elasticsearch/issues/10388">#10388</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10358">#10358</a>)</li>
-<li>Make sure inner hits also works for nested fields defined in object field <a href="http://github.com/elastic/elasticsearch/issues/10353">#10353</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10334">#10334</a>)</li>
-<li>Fix bug where parse error is thrown if a inner filter is used in a nested filter/query. <a href="http://github.com/elastic/elasticsearch/issues/10309">#10309</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10308">#10308</a>)</li>
-<li>Fix nested stored field support. <a href="http://github.com/elastic/elasticsearch/issues/10235">#10235</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9766">#9766</a>)</li>
-</ul></li>
-<li>Internal:<ul><li>Make JNA optional for tests and move classes to bootstrap package <a href="http://github.com/elastic/elasticsearch/issues/11378">#11378</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11360">#11360</a>)</li>
-<li>Fix CompressedString.equals. <a href="http://github.com/elastic/elasticsearch/issues/11233">#11233</a></li>
-<li>ThreadPool: make sure no leaking threads are left behind in case of initialization failure <a href="http://github.com/elastic/elasticsearch/issues/11061">#11061</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9107">#9107</a>)</li>
-<li>Propagate headers &amp; contexts to sub-requests <a href="http://github.com/elastic/elasticsearch/issues/11060">#11060</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10979">#10979</a>)</li>
-<li>Fix NPE in PendingDelete#toString <a href="http://github.com/elastic/elasticsearch/issues/11032">#11032</a></li>
-<li>Search: FielddataTermsFilter equality is based on hash codes &nbsp;<a href="http://github.com/elastic/elasticsearch/issues/10728">#10728</a></li>
-<li>Ensure that explanation descriptions are not null on serialization <a href="http://github.com/elastic/elasticsearch/issues/10689">#10689</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10399">#10399</a>)</li>
-<li>Fix possible NPE in InternalClusterService$NotifyTimeout, the 
-<code>future</code> field is set from a different thread <a href="http://github.com/elastic/elasticsearch/issues/10630">#10630</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/3">#3</a>)</li>
-<li>Allow ActionListener to be called on the network thread <a href="http://github.com/elastic/elasticsearch/issues/10573">#10573</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10402">#10402</a>)</li>
-<li>Add missing hashCode method to RecoveryState#File <a href="http://github.com/elastic/elasticsearch/issues/10501">#10501</a></li>
-<li>Don't try to send a mapping refresh if there is no master <a href="http://github.com/elastic/elasticsearch/issues/10311">#10311</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10283">#10283</a>)</li>
-<li>Close all resources if doStart fails <a href="http://github.com/elastic/elasticsearch/issues/9898">#9898</a></li>
-</ul></li>
-<li>Java API:<ul><li>Add missing rewrite parameter to FuzzyQueryBuilder <a href="http://github.com/elastic/elasticsearch/issues/11139">#11139</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11130">#11130</a>)</li>
-<li>Ensure netty I/O thread is not blocked in TransportClient <a href="http://github.com/elastic/elasticsearch/issues/10644">#10644</a></li>
-<li>toString for SearchRequestBuilder and CountRequestBuilder <a href="http://github.com/elastic/elasticsearch/issues/9944">#9944</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/5555">#5555</a>, <a href="http://github.com/elastic/elasticsearch/issues/5576">#5576</a>)</li>
-</ul></li>
-<li>Logging:<ul><li>Add filename to corruption message <a href="http://github.com/elastic/elasticsearch/issues/10110">#10110</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10062">#10062</a>)</li>
-<li>Fix potential NPE in new tracer log if request timeout <a href="http://github.com/elastic/elasticsearch/issues/9994">#9994</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9286">#9286</a>)</li>
-</ul></li>
-<li>Mapping:<ul><li>
-<code>numeric_resolution</code> should only apply to dates provided as numbers. <a href="http://github.com/elastic/elasticsearch/issues/11002">#11002</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10995">#10995</a>)</li>
-<li>Unneccesary mapping refreshes caused by unordered fielddata settings <a href="http://github.com/elastic/elasticsearch/issues/10370">#10370</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10318">#10318</a>)</li>
-<li>Fixed an equality check in StringFieldMapper. <a href="http://github.com/elastic/elasticsearch/issues/10359">#10359</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10357">#10357</a>)</li>
-<li>Fix 
-<code>_field_names</code> to be disabled on pre 1.3.0 indexes <a href="http://github.com/elastic/elasticsearch/issues/10268">#10268</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9893">#9893</a>)</li>
-<li>Fix 
-<code>ignore_malformed</code> behaviour for ip fields <a href="http://github.com/elastic/elasticsearch/issues/10112">#10112</a></li>
-<li>Update dynamic fields in mapping on master even if parsing fails for the rest of the doc <a href="http://github.com/elastic/elasticsearch/issues/9874">#9874</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9851">#9851</a>)</li>
-</ul></li>
-<li>Network:<ul><li>Transport: fix racing condition in timeout handling <a href="http://github.com/elastic/elasticsearch/issues/10220">#10220</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10187">#10187</a>)</li>
-</ul></li>
-<li>Parent/Child:<ul><li>Fix 2 bugs in 
-<code>children</code> agg <a href="http://github.com/elastic/elasticsearch/issues/10263">#10263</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10158">#10158</a>, <a href="http://github.com/elastic/elasticsearch/issues/9544">#9544</a>, <a href="http://github.com/elastic/elasticsearch/issues/9958">#9958</a>)</li>
-</ul></li>
-<li>Percolator:<ul><li>Prevent PercolateResponse from serializing negative VLong <a href="http://github.com/elastic/elasticsearch/issues/11138">#11138</a></li>
-<li>Fix wrong use of currentFieldName outside of a parsing loop <a href="http://github.com/elastic/elasticsearch/issues/10307">#10307</a></li>
-</ul></li>
-<li>Plugins:<ul><li>Only load a plugin once from the classpath <a href="http://github.com/elastic/elasticsearch/issues/11301">#11301</a></li>
-<li>HTTP: Ensure url path expansion only works inside of plugins <a href="http://github.com/elastic/elasticsearch/issues/10815">#10815</a></li>
-</ul></li>
-<li>Query DSL:<ul><li>Score value is 0 in _explanation with random_score query &nbsp;<a href="http://github.com/elastic/elasticsearch/issues/10742">#10742</a></li>
-<li>Avoid NPE during query parsing <a href="http://github.com/elastic/elasticsearch/issues/10333">#10333</a></li>
-<li>Function score: Apply 
-<code>min_score</code> to sub query score if no function provided <a href="http://github.com/elastic/elasticsearch/issues/10326">#10326</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10253">#10253</a>)</li>
-<li>function_score: undo "Remove explanation of query score from functions" <a href="http://github.com/elastic/elasticsearch/issues/9826">#9826</a></li>
-</ul></li>
-<li>REST:<ul><li>
-<code>fielddata_fields</code> query string parameter was ignored. <a href="http://github.com/elastic/elasticsearch/issues/11368">#11368</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11025">#11025</a>)</li>
-<li>REST spec for termvector missing paths on 1.x branch <a href="http://github.com/elastic/elasticsearch/issues/11087">#11087</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11086">#11086</a>)</li>
-</ul></li>
-<li>Recovery:<ul><li>Don't write recoveryType twice <a href="http://github.com/elastic/elasticsearch/issues/11347">#11347</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/11179">#11179</a>, <a href="http://github.com/elastic/elasticsearch/issues/11335">#11335</a>)</li>
-<li>Decrement reference even if IndexShard#postRecovery barfs <a href="http://github.com/elastic/elasticsearch/issues/11201">#11201</a></li>
-<li>Fail recovery if retry recovery if resetRecovery fails <a href="http://github.com/elastic/elasticsearch/issues/11149">#11149</a></li>
-<li>Refactor state format to use incremental state IDs <a href="http://github.com/elastic/elasticsearch/issues/10316">#10316</a></li>
-<li>RecoveryState.File.toXContent reports file length as recovered bytes <a href="http://github.com/elastic/elasticsearch/issues/10310">#10310</a></li>
-<li>Fail shard when index service/mappings fails to instantiate <a href="http://github.com/elastic/elasticsearch/issues/10283">#10283</a></li>
-</ul></li>
-<li>Scripting:<ul><li>Allow script language to be null when parsing <a href="http://github.com/elastic/elasticsearch/issues/10976">#10976</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10926">#10926</a>)</li>
-</ul></li>
-<li>Search:<ul><li>Release search contexts after failed dfs or query phase for dfs queries <a href="http://github.com/elastic/elasticsearch/issues/11434">#11434</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11400">#11400</a>)</li>
-<li>Don't truncate TopDocs after rescoring <a href="http://github.com/elastic/elasticsearch/issues/11342">#11342</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/11277">#11277</a>, <a href="http://github.com/elastic/elasticsearch/issues/7707">#7707</a>)</li>
-</ul></li>
-<li>Search Templates:<ul><li>Fix JSON encoding for Mustache templates. <a href="http://github.com/elastic/elasticsearch/issues/10820">#10820</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/5473">#5473</a>)</li>
-</ul></li>
-<li>Settings:<ul><li>Prevent changing the number of replicas on a closed index <a href="http://github.com/elastic/elasticsearch/issues/11410">#11410</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9566">#9566</a>)</li>
-<li>Read configuration file with .yaml suffix <a href="http://github.com/elastic/elasticsearch/issues/10909">#10909</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9706">#9706</a>)</li>
-<li>Validate number_of_shards/_replicas without index setting prefix <a href="http://github.com/elastic/elasticsearch/issues/10701">#10701</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10693">#10693</a>)</li>
-<li>Fix handling of IndicesOptions in update settings REST API <a href="http://github.com/elastic/elasticsearch/issues/10030">#10030</a></li>
-</ul></li>
-<li>Snapshot/Restore:<ul><li>Sync up snapshot shard status on a master restart <a href="http://github.com/elastic/elasticsearch/issues/11450">#11450</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11314">#11314</a>)</li>
-<li>Fix check for locations in a repository path <a href="http://github.com/elastic/elasticsearch/issues/11426">#11426</a></li>
-<li>Don't reuse source index UUID on restore <a href="http://github.com/elastic/elasticsearch/issues/10367">#10367</a></li>
-<li>Separate repository registration <a href="http://github.com/elastic/elasticsearch/issues/10354">#10354</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10351">#10351</a>)</li>
-<li>Automatically add "index." prefix to the settings are changed on restore if the prefix is missing <a href="http://github.com/elastic/elasticsearch/issues/10269">#10269</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10133">#10133</a>)</li>
-</ul></li>
-<li>Store:<ul><li>Fix stream version check in ShardActiveRequest <a href="http://github.com/elastic/elasticsearch/issues/11407">#11407</a></li>
-<li>Ensure we mark store as corrupted if we fail to read the segments info <a href="http://github.com/elastic/elasticsearch/issues/11230">#11230</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11226">#11226</a>)</li>
-<li>Fix NPE when checking for active shards before deletion <a href="http://github.com/elastic/elasticsearch/issues/11110">#11110</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10172">#10172</a>)</li>
-<li>Shard not deleted after relocation if relocated shard is still in post recovery <a href="http://github.com/elastic/elasticsearch/issues/10172">#10172</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10018">#10018</a>)</li>
-</ul></li>
-<li>Suggesters:<ul><li>Ensure empty string completion inputs are not indexed <a href="http://github.com/elastic/elasticsearch/issues/11158">#11158</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10987">#10987</a>)</li>
-<li>Ensure collate option in PhraseSuggester only collates on local shard <a href="http://github.com/elastic/elasticsearch/issues/11156">#11156</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/9377">#9377</a>)</li>
-<li>Make GeoContext mapping idempotent <a href="http://github.com/elastic/elasticsearch/issues/10602">#10602</a> (issues: <a href="http://github.com/elastic/elasticsearch/issues/10581">#10581</a>, <a href="http://github.com/elastic/elasticsearch/issues/8937">#8937</a>)</li>
-<li>Return an HTTP error code when a suggest request failed instead of 200 <a href="http://github.com/elastic/elasticsearch/issues/10104">#10104</a></li>
-</ul></li>
-<li>Term Vectors:<ul><li>ShardTermVectorsService calls docFreq() on unpositioned TermsEnum&nbsp;<a href="http://github.com/elastic/elasticsearch/issues/10660">#10660</a></li>
-</ul></li>
-<li>Translog:<ul><li>Acquire index writer lock before renaming translog file <a href="http://github.com/elastic/elasticsearch/issues/11396">#11396</a></li>
-<li>Fail #snapshot if translog is closed <a href="http://github.com/elastic/elasticsearch/issues/10809">#10809</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/10807">#10807</a>)</li>
-</ul></li>
-<li>Upgrade API:<ul><li>Use the smallest version rather than the default version <a href="http://github.com/elastic/elasticsearch/issues/11475">#11475</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/11474">#11474</a>)</li>
+<li>Settings:<ul><li>Add explicit check that we have reached the end of the settings stream when parsing settings <a href="http://github.com/elastic/elasticsearch/issues/12451">#12451</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12382">#12382</a>)</li>
+<li>Copy the classloader from the original settings when checking for prompts <a href="http://github.com/elastic/elasticsearch/issues/12419">#12419</a> (issue: <a href="http://github.com/elastic/elasticsearch/issues/12340">#12340</a>)</li>
 </ul></li>
 </ul>
 						</div>	
@@ -1152,7 +839,7 @@
 					
 						<li class="twitter grayscale"><a href="https://www.twitter.com/elastic" target="_blank" id="footer_twitter"></a></li>
 					
-						<li class="linkedin grayscale"><a href="https://www.linkedin.com/company/elastic.co" target="_blank" id="footer_linkedin"></a></li>
+						<li class="linkedin grayscale"><a href="https://www.linkedin.com/company/elastic-co" target="_blank" id="footer_linkedin"></a></li>
 					
 						<li class="xing grayscale"><a href="https://www.xing.com/companies/elastic.co" target="_blank" id="footer_xing"></a></li>
 					
@@ -1195,9 +882,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/jquery.autocomplete.js"></script>
-<script src="/static/js/script.js?clr=113"></script>
+   	<script src="/static/js/jquery.autocomplete.js"></script>
+<script src="/static/js/script.js?clr=129"></script>
    	
 	
 		<script>
@@ -1223,7 +909,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 	  	"@type": "Organization",
 	  	"name" : "Elastic",
 	  	"url": "https://www.elastic.co/",
-	  	"logo": "https://www.elastic.co/static/img/logo-elastic.png",
+	  	"logo": "https://www.elastic.co/static/img/logo-elastic-xsmall.png",
 		"sameAs" : [ "https://www.facebook.com/elastic.co",
 			"https://twitter.com/elastic",
 			"https://plus.google.com/105178019064686397293",

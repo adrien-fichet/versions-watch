@@ -36,7 +36,19 @@
         <a href="/en/"><img class="fedoralogotext" src="/static/images/fedora-logotext.png" alt="Fedora Logo"></a>
         </div>
       </div>
-    </div><header id="head" class="downloadheader">
+    </div><div class="modal fade" id="regulations" role="dialog" aria-hidden="true" aria-labelledby="Export regulations">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h3 class="modal-title">Export regulations</h3>
+      </div>
+      <div class="modal-body text-justify">
+        <p>By downloading Fedora software, you acknowledge that you understand all of the following: Fedora software and technical information may be subject to the U.S. Export Administration Regulations (the “EAR”) and other U.S. and foreign laws and may not be exported, re-exported or transferred (a) to any country listed in Country Group E:1 in Supplement No. 1 to part 740 of the EAR (currently, Cuba, Iran, North Korea, Sudan &amp; Syria); (b) to any prohibited destination or to any end user who has been prohibited from participating in U.S. export transactions by any federal agency of the U.S. government; or (c) for use in connection with the design, development or production of nuclear, chemical or biological weapons, or rocket systems, space launch vehicles, or sounding rockets, or unmanned air vehicle systems. You may not download Fedora software or technical information if you are located in one of these countries or otherwise subject to these restrictions. You may not provide Fedora software or technical information to individuals or entities located in one of these countries or otherwise subject to these restrictions. You are also responsible for compliance with foreign law requirements applicable to the import, export and use of Fedora software and technical information.</p>
+      </div>
+    </div>
+  </div>
+</div><header id="head" class="downloadheader">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
@@ -49,20 +61,29 @@
   </header><div class="container download-container top-space">
       <div class="row">
         <div class="col-md-8 text-left bottom-space">
-	        <h3>What is a Live image?</h3>
-	        <p>The Fedora Workstation Live image allows you to make media for your computer that provides a complete, running Fedora Workstation you can run right away. You can use the Live image to test and play with Fedora without making changes to your hard disk. When you are ready, you can install Fedora to your hard disk from the Live image.</p>
-		<p>To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.</p>
-		
+          <h3>What is a Live image?</h3>
+          <p>The Fedora Workstation Live image allows you to make media for your computer that provides a complete, running Fedora Workstation you can run right away. You can use the Live image to test and play with Fedora without making changes to your hard disk. When you are ready, you can install Fedora to your hard disk from the Live image.</p>
+          <p>To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.</p>
+          
 	<h3>Documentation and other resources</h3>
 	<p>Before installing Fedora, you may want to confirm your system meets minimum requirements for Fedora. Consult <a href="http://docs.fedoraproject.org/release-notes">the online release notes</a> to see minimum requirements and recommendations.</p>
 	<p>There is also a <a href="http://docs.fedoraproject.org/install-guide">complete Installation Guide</a> available. We recommend you look through it before installing to your system, since it answers many common questions.</p>
 
-		
+          
   <h3>Other ways of obtaining media</h3>
   <p>You may purchase installation media for Fedora from <a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors">online vendors</a> or a <a href="http://fedoraproject.org/wiki/Distribution/LocalVendors">local vendor</a> in your area.</p>
   <p>Can't afford the price of installation media? Request Fedora installation media from the <a href="http://fedoraproject.org/freemedia/FreeMedia-form.html">Fedora Free Media Program</a>.</p>
 
-	      </div>
+          <hr>
+          
+  <div class="whiteregulation">
+    <div class="regulations-area">
+      <p><em>By clicking on and downloading Fedora, you agree to comply with the following terms and conditions.</em></p>
+      <p class="text-justify">By downloading Fedora software, you acknowledge that you understand all of the following: Fedora software and technical information may be subject to the U.S. Export Administration Regulations (the “EAR”) and other U.S. and foreign laws and may not... <a id="regulations-trigger" href="#">Read more ></a></p>
+    </div>
+  </div>
+
+        </div>
         <div class="col-md-3 text-left col-md-offset-1">
           <h3>Other Downloads</h3>
           <p><a class="ws-download-splash" href="https://download.fedoraproject.org/pub/fedora/linux/releases/22/Workstation/i386/iso/Fedora-Live-Workstation-i686-22-3.iso">32-bit 1.3GB Live image</a></p>
@@ -108,6 +129,7 @@
                                 <dd><a href="//fedoraproject.org/wiki/Overview">About Fedora</a></dd>
                                 <dd><a href="/en/sponsors">Sponsors</a></dd>
                                 <dd><a href="http://fedoramagazine.org">Fedora Magazine</a></dd>
+                                <dd><a href="https://fedoraproject.org/wiki/Legal:Main#Legal">Legal</a></dd>
                             </dl>
                             <ul class="list-inline">
                             <li>
@@ -210,12 +232,13 @@
     <script type="text/javascript" src="/static/js/openstack.js"></script>
     <script type="text/javascript" src="/static/js/checksum.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/regulations.js"></script>
     <script type="text/javascript" src="/static/js/jquery.uls.data.js"></script>
-	  <script type="text/javascript" src="/static/js/jquery.uls.data.utils.js"></script>
-	  <script type="text/javascript" src="/static/js/jquery.uls.lcd.js"></script>
-	  <script type="text/javascript" src="/static/js/jquery.uls.languagefilter.js"></script>
-	  <script type="text/javascript" src="/static/js/jquery.uls.regionfilter.js"></script>
-	  <script type="text/javascript" src="/static/js/jquery.uls.core.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.uls.data.utils.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.uls.lcd.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.uls.languagefilter.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.uls.regionfilter.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.uls.core.js"></script>
     
 		<!-- This file is generated, don't edit here -->
 		<script type="text/javascript">
