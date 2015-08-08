@@ -102,9 +102,9 @@ public class Conf {
                 "(.*?)(\\[[0-9]*\\])? / "
         ));
         configurations.put("ubuntu", new VersionParserConfiguration(
-                "http://www.ubuntu.com/download/desktop",
-                "#main-content > div.row.row-grey > div > div > div.eight-col.no-margin-bottom > h2",
-                "Ubuntu (.*)"
+                "https://en.wikipedia.org/wiki/Ubuntu_(operating_system)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td > a",
+                "(.*?) "
         ));
         configurations.put("nginx", new VersionParserConfiguration(
                 "http://nginx.org/en/download.html",
@@ -487,6 +487,11 @@ public class Conf {
                 "https://en.wikipedia.org/wiki/Chef_(software)",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td > div > ul > li:nth-child(1)",
                 ".*? (.*?) "
+        ));
+        configurations.put("vaadin", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Vaadin",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td",
+                "(.*?) "
         ));
     }
 

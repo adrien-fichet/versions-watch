@@ -121,6 +121,7 @@ Then :
 - [x] wireshark
 - [x] audacity
 - [x] chef
+- [x] vaadin
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd
