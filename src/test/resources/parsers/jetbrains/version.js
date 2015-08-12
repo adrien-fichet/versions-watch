@@ -255,8 +255,8 @@ function onloadVersionPyCharmEDU() {
 
 
 //YouTrack
-var versionYTShort = "6.0";
-var versionYTLong = "6.0.12634";
+var versionYTShort = "6.5";
+var versionYTLong = "6.5";
 function versionYT(el) {
     if (el == "short") {
         document.write(versionYTShort);
@@ -300,7 +300,7 @@ function onloadVersionWebStormDownload() {
 
 //PhpStorm
 var versionPhpStormShort = "9.0";
-var versionPhpStormLong = "9.0";
+var versionPhpStormLong = "9.0.1";
 function versionPhpStorm(el) {
     if (el == "short") {
         document.write(versionPhpStormShort);
@@ -340,13 +340,25 @@ function onloadVersionAppCodeDownload() {
 
 //Upsource
 var versionUpsourceShort = "2";
-var versionUpsourceLong = "2.0.2";
+var versionUpsourceLong = "2.0.3";
 function versionUpsource(el) {
     if (el == "short") {
         document.write(versionUpsourceShort);
     }
     if (el == "long") {
         document.write(versionUpsourceLong);
+    }
+}
+
+//Hub
+var versionHubShort = "1";
+var versionHubLong = "1.0";
+function versionHub(el) {
+    if (el == "short") {
+        document.write(versionHubShort);
+    }
+    if (el == "long") {
+        document.write(versionHubLong);
     }
 }
 

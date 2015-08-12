@@ -287,7 +287,7 @@ public class Conf {
         configurations.put("kali", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Kali_Linux",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
-                "(.*?)\\["
+                "(.*?)(\\[|\\()"
         ));
         configurations.put("visualstudio", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
