@@ -133,8 +133,8 @@ public class Conf {
         ));
         configurations.put("openssl", new VersionParserConfiguration(
                 "https://www.openssl.org/source/",
-                "body > table > tbody > tr:nth-child(3) > td:nth-child(3) > pre",
-                "openssl-(.*?).tar.gz \\(MD5\\) \\(SHA1\\) \\(SHA256\\) \\(PGP sign\\)  \\[LATEST\\]"
+                "#content > div > article > div > table > tbody > tr:nth-child(2) > td:nth-child(3) > a:nth-child(1)",
+                "openssl-(.*?).tar.gz"
         ));
         configurations.put("openssh", new VersionParserConfiguration(
                 "http://www.openssh.com/",
