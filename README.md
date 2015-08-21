@@ -132,3 +132,4 @@ Then :
 
 ### Ideas
 - version numbers should also be links to versions websites
+- display "Unknown" if the version does not match the usual pattern

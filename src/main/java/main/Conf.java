@@ -181,10 +181,9 @@ public class Conf {
                 ".*?\\(v(.*?)\\)"
         ));
         configurations.put("centos", new VersionParserConfiguration(
-                "http://wiki.centos.org/Download",
-                "#content > div:nth-child(14) > table > tbody > tr:nth-child(2) > td:nth-child(2)",
-                null,
-                new String[][]{{" \\(", "."}, {"\\)", ""}}
+                "https://en.wikipedia.org/wiki/CentOS",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td > p",
+                "(.*?) "
         ));
         configurations.put("fedora", new VersionParserConfiguration(
                 "https://getfedora.org/en/workstation/download/",
@@ -329,7 +328,7 @@ public class Conf {
         configurations.put("foreman", new VersionParserConfiguration(
                 "http://theforeman.org/",
                 "#latest-news > div > div > p:nth-child(2)",
-                "Foreman (.*?) has been released"
+                "Foreman (.*?) "
         ));
         configurations.put("wordpress", new VersionParserConfiguration(
                 "https://wordpress.org/",
@@ -354,7 +353,7 @@ public class Conf {
         configurations.put("opera", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Opera_(web_browser)",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
-                "Windows, OS X, Linux (.*)(\\.[0-9]+){2}"
+                "(.*)(\\.[0-9]+){2}"
         ));
         configurations.put("postgresql", new VersionParserConfiguration(
                 "http://www.postgresql.org/",
@@ -400,7 +399,7 @@ public class Conf {
         configurations.put("go", new VersionParserConfiguration(
                 "https://golang.org/",
                 "#footer",
-                "Build version go(([0-9]\\.){2}[0-9])\\."
+                "Build version go(([0-9]\\.){1,2}[0-9])\\."
         ));
         configurations.put("metasploit", new VersionParserConfiguration(
                 "https://github.com/rapid7/metasploit-framework/wiki/Downloads-by-Version",

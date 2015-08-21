@@ -22,7 +22,7 @@ function onloadVersionIDEADownload() {
 
 //Resharper
 var versionRSShort = "9";
-var versionRSLong = "9.1.3";
+var versionRSLong = "9.2";
 function versionRS(el) {
     if (el == "short") {
         document.write(versionRSShort);
@@ -42,7 +42,7 @@ function onloadVersionRSDownload() {
 
 //Resharper C++
 var versionRSCppShort = "1";
-var versionRSCppLong = "1.0.3";
+var versionRSCppLong = "1.1";
 function versionRSCpp(el) {
     if (el == "short") {
         document.write(versionRSCppShort);
@@ -54,7 +54,7 @@ function versionRSCpp(el) {
 
 //dotTrace
 var versionDTShort = "6";
-var versionDTLong = "6.1.3";
+var versionDTLong = "6.2";
 var versionDTMLong = "3.5";
 function versionDT(el) {
     if (el == "short") {
@@ -74,7 +74,7 @@ function onloadVersionDTDownload() {
 
 //dotMemory
 var versionDMShort = "4";
-var versionDMLong = "4.3.3";
+var versionDMLong = "4.4";
 function versionDM(el) {
     if (el == "short") {
         document.write(versionDMShort);
@@ -93,7 +93,7 @@ function onloadVersionDMDownload() {
 
 //dotCover
 var versionDCShort = "3";
-var versionDCLong = "3.1.3";
+var versionDCLong = "3.2";
 function versionDC(el) {
     if (el == "short") {
         document.write(versionDCShort);
@@ -112,7 +112,7 @@ function onloadVersionDCDownload() {
 
 //dotPeek
 var versionDPShort = "1";
-var versionDPLong = "1.4.3";
+var versionDPLong = "1.5";
 function versionDP(el) {
     if (el == "short") {
         document.write(versionDPShort);
@@ -300,7 +300,7 @@ function onloadVersionWebStormDownload() {
 
 //PhpStorm
 var versionPhpStormShort = "9.0";
-var versionPhpStormLong = "9.0.1";
+var versionPhpStormLong = "9.0.2";
 function versionPhpStorm(el) {
     if (el == "short") {
         document.write(versionPhpStormShort);
@@ -364,8 +364,8 @@ function versionHub(el) {
 
 
 //CLion
-var versionCLionShort = "1.0";
-var versionCLionLong = "1.0.5";
+var versionCLionShort = "1.1";
+var versionCLionLong = "1.1";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);
