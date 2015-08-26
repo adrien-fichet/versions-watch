@@ -49,14 +49,18 @@
   <meta name="theme-color" content="#cb3837">
 
   <link rel="canonical" href="https://www.npmjs.com/package/bower">
-  <link rel="stylesheet" media="all" href="/static/css/index.css">
+  <link rel="stylesheet" media="all" href="/static/css/index.b01ad601.css">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
 
+  <script src="/static/js/index.min.766cb00f.js"></script>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebSite" data-crumb="sSpCOCgczJaK0lEdsiI-H8j0Iv_JwTfJFriSO_3e7ks">
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="t5gUYgbgwrJUTkLa0OALGOndXO2SywJmixyPy7k1lxO">
   <meta itemprop="url" content="https://www.npmjs.com/">
 
   <div id="notification-banner" class="hidden">
@@ -131,7 +135,7 @@
       <input type="text" name="honey">
     </div>
     
-      <input type="hidden" name="crumb" value="sSpCOCgczJaK0lEdsiI-H8j0Iv_JwTfJFriSO_3e7ks"/>
+      <input type="hidden" name="crumb" value="t5gUYgbgwrJUTkLa0OALGOndXO2SywJmixyPy7k1lxO"/>
   </form>
 
   <div id="readme" class="markdown">
@@ -172,16 +176,11 @@ option shown below:</p>
 <p>Note that if you use TortoiseGit and if Bower keeps asking for your SSH
 password, you should add the following environment variable: <code>GIT_SSH - C:\Program Files\TortoiseGit\bin\TortoisePlink.exe</code>. Adjust the <code>TortoisePlink</code>
 path if needed.</p>
+<h3 id="user-content-ubuntu-users" class="deep-link"><a href="#ubuntu-users">Ubuntu users</a></h3>
+<p>To use Bower on Ubuntu, you might need to link <code>nodejs</code> executable to <code>node</code>:</p>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>sudo&#xA0;ln&#xA0;-s&#xA0;/usr/bin/nodejs&#xA0;/usr/bin/node</span></span></div></pre></code></pre>
 <h2 id="user-content-configuration" class="deep-link"><a href="#configuration">Configuration</a></h2>
 <p>Bower can be configured using JSON in a <code>.bowerrc</code> file. Read over available options at <a href="http://bower.io/docs/config">bower.io/docs/config</a>.</p>
-<h2 id="user-content-completion-experimental" class="deep-link"><a href="#completion-experimental">Completion (experimental)</a></h2>
-<p><em>NOTE</em>: Completion is still not implemented for the 1.0.0 release</p>
-<p>Bower now has an experimental <code>completion</code> command that is based on, and works
-similarly to the <a href="https://npmjs.org/doc/cli/completion.html">npm completion</a>. It is
-not available for Windows users.</p>
-<p>This command will output a Bash / ZSH script to put into your <code>~/.bashrc</code>,
-<code>~/.bash_profile</code>, or <code>~/.zshrc</code> file.</p>
-<pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;completion&#xA0;</span><span class="keyword operator shell"><span>&gt;&gt;</span></span><span>&#xA0;</span><span class="keyword operator shell"><span>~</span></span><span>/.bash_profile</span></span></div></pre></code></pre>
 <h2 id="user-content-support" class="deep-link"><a href="#support">Support</a></h2>
 <ul>
 <li><a href="http://stackoverflow.com/questions/tagged/bower">StackOverflow</a></li>
@@ -189,7 +188,7 @@ not available for Windows users.</p>
 <li><a href="http://webchat.freenode.net/?channels=bower">#bower</a> on Freenode</li>
 </ul>
 <h2 id="user-content-contributing" class="deep-link"><a href="#contributing">Contributing</a></h2>
-<p>We welcome contributions of all kinds from anyone. Please take a moment to
+<p>We welcome <a href="https://github.com/bower/bower/graphs/contributors">contributions</a> of all kinds from anyone. Please take a moment to
 review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">guidelines for contributing</a>.</p>
 <ul>
 <li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#bugs">Bug reports</a></li>
@@ -198,24 +197,8 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
 </ul>
 <p>Note that on Windows for tests to pass you need to configure Git before cloning:</p>
 <pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>git&#xA0;config&#xA0;--global&#xA0;core.autocrlf&#xA0;input</span></span></div></pre></code></pre>
-<h2 id="user-content-bower-team" class="deep-link"><a href="#bower-team">Bower Team</a></h2>
-<p>Bower is made by lots of people across the globe, contributions large and small. Our thanks to everyone who has played a part.</p>
-<h3 id="user-content-core-team" class="deep-link"><a href="#core-team">Core team</a></h3>
-<ul>
-<li><a href="https://github.com/satazor">@satazor</a></li>
-<li><a href="https://github.com/wibblymat">@wibblymat</a></li>
-<li><a href="https://github.com/paulirish">@paulirish</a></li>
-<li><a href="https://github.com/benschwarz">@benschwarz</a></li>
-<li><a href="https://github.com/svnlto">@svnlto</a></li>
-<li><a href="https://github.com/sheerun">@sheerun</a></li>
-</ul>
-<h3 id="user-content-bower-alumni" class="deep-link"><a href="#bower-alumni">Bower Alumni</a></h3>
-<ul>
-<li><a href="https://github.com/fat">@fat</a></li>
-<li><a href="https://github.com/maccman">@maccman</a></li>
-</ul>
 <h2 id="user-content-license" class="deep-link"><a href="#license">License</a></h2>
-<p>Copyright (c) 2015 Twitter and other contributors</p>
+<p>Copyright (c) 2015 Twitter and <a href="https://github.com/bower/bower/graphs/contributors">other contributors</a></p>
 <p>Licensed under the MIT License</p>
 
   </div>
@@ -236,15 +219,15 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
           <span>sheerun</span>
         </a>
           published
-          <span data-date="2015-04-01T07:40:31.107Z" data-date-format="relative">
-            2015-04-01T07:40:31.107Z
+          <span data-date="2015-08-25T20:39:48.951Z" data-date-format="relative">
+            2015-08-25T20:39:48.951Z
           </span>
       </li>
 
     <li>
-      <strong>1.4.1</strong>
+      <strong>1.5.2</strong>
       is the latest
-        of 63 releases
+        of 66 releases
     </li>
 
       <li>
@@ -302,15 +285,15 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
   <ul class="box">
 
       <li>
-        <strong class="pretty-number daily-downloads">73194</strong>
+        <strong class="pretty-number daily-downloads">112874</strong>
         downloads in the last day
       </li>
       <li>
-        <strong class="pretty-number weekly-downloads">393492</strong>
+        <strong class="pretty-number weekly-downloads">490881</strong>
         downloads in the last week
       </li>
       <li>
-        <strong class="pretty-number monthly-downloads">1601306</strong>
+        <strong class="pretty-number monthly-downloads">1702411</strong>
         downloads in the last month
       </li>
 
@@ -332,7 +315,7 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
       None
   </p>
 
-  <h3>Dependencies (43)</h3>
+  <h3>Dependencies (44)</h3>
   <p class="list-of-links">
           <a href="/package/which">which</a>,
           <a href="/package/user-home">user-home</a>,
@@ -365,6 +348,7 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
           <a href="/package/github">github</a>,
           <a href="/package/fstream-ignore">fstream-ignore</a>,
           <a href="/package/fstream">fstream</a>,
+          <a href="/package/deep-sort-object">deep-sort-object</a>,
           <a href="/package/decompress-zip">decompress-zip</a>,
           <a href="/package/configstore">configstore</a>,
           <a href="/package/chmodr">chmodr</a>,
@@ -382,105 +366,105 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
     <h3><a href="/browse/depended/bower">Dependents</a></h3>
     <p class="list-of-links dependents">
 
-          <a href="/package/assemble-package-manager">assemble-package-manager</a>,
+          <a href="/package/visualtesting-admin">visualtesting-admin</a>,
         
-          <a href="/package/happyplan">happyplan</a>,
+          <a href="/package/bower-install-lowest">bower-install-lowest</a>,
         
-          <a href="/package/show">show</a>,
+          <a href="/package/ng-peach">ng-peach</a>,
         
-          <a href="/package/grunt-bower-inline-loader">grunt-bower-inline-loader</a>,
+          <a href="/package/ng-contextmenu">ng-contextmenu</a>,
+        
+          <a href="/package/bb-cli">bb-cli</a>,
+        
+          <a href="/package/rapid-build">rapid-build</a>,
+        
+          <a href="/package/web-component-tester">web-component-tester</a>,
+        
+          <a href="/package/roadiejs-home">roadiejs-home</a>,
+        
+          <a href="/package/ah-dashboard-plugin">ah-dashboard-plugin</a>,
+        
+          <a href="/package/gulp-bower-assets">gulp-bower-assets</a>,
+        
+          <a href="/package/gvmsdk">gvmsdk</a>,
+        
+          <a href="/package/steroids">steroids</a>,
+        
+          <a href="/package/appbuilder">appbuilder</a>,
         
           <a href="/package/dolphinio">dolphinio</a>,
         
-          <a href="/package/genesis-skeleton">genesis-skeleton</a>,
+          <a href="/package/webplatform">webplatform</a>,
         
-          <a href="/package/sruhub">sruhub</a>,
+          <a href="/package/mortero">mortero</a>,
         
-          <a href="/package/generator-xframework">generator-xframework</a>,
+          <a href="/package/ryanaghdam-homepage">ryanaghdam-homepage</a>,
         
-          <a href="/package/grunt-bower-commands">grunt-bower-commands</a>,
+          <a href="/package/gulp-bower">gulp-bower</a>,
         
-          <a href="/package/cade-meu-fretado">cade-meu-fretado</a>,
+          <a href="/package/kankod-theme">kankod-theme</a>,
         
-          <a href="/package/bower-import">bower-import</a>,
-        
-          <a href="/package/web-caddy">web-caddy</a>,
-        
-          <a href="/package/fonzie">fonzie</a>,
+          <a href="/package/gh-badges">gh-badges</a>,
         
           <a href="/package/state-utils">state-utils</a>,
         
-          <a href="/package/karma-sinon-chai-raynode">karma-sinon-chai-raynode</a>,
+          <a href="/package/laravel-elixir-bowerbundle">laravel-elixir-bowerbundle</a>,
         
-          <a href="/package/rbower">rbower</a>,
+          <a href="/package/norma-bower">norma-bower</a>,
         
-          <a href="/package/crawlable-todos">crawlable-todos</a>,
+          <a href="/package/lithium-sdk">lithium-sdk</a>,
         
-          <a href="/package/generator-cordojo">generator-cordojo</a>,
+          <a href="/package/loopback-angular-admin">loopback-angular-admin</a>,
         
-          <a href="/package/generator-foundation-ext">generator-foundation-ext</a>,
+          <a href="/package/claymate">claymate</a>,
         
-          <a href="/package/hatchjs">hatchjs</a>,
+          <a href="/package/nocca">nocca</a>,
         
-          <a href="/package/yeask-me-base-adapter">yeask-me-base-adapter</a>,
+          <a href="/package/fbi">fbi</a>,
         
-          <a href="/package/grunt-google-cdn-shahata">grunt-google-cdn-shahata</a>,
+          <a href="/package/grunt-bower-task">grunt-bower-task</a>,
         
-          <a href="/package/bacn">bacn</a>,
+          <a href="/package/em-project-builder">em-project-builder</a>,
         
-          <a href="/package/fetch-bower">fetch-bower</a>,
+          <a href="/package/pulp">pulp</a>,
         
-          <a href="/package/generator-yui3">generator-yui3</a>,
+          <a href="/package/ember-cli">ember-cli</a>,
         
-          <a href="/package/grunt-browserify-bower">grunt-browserify-bower</a>,
+          <a href="/package/bb-cli-nightly">bb-cli-nightly</a>,
         
-          <a href="/package/primus-live">primus-live</a>,
+          <a href="/package/grunt-bower-concat">grunt-bower-concat</a>,
         
-          <a href="/package/hybris-utilities">hybris-utilities</a>,
+          <a href="/package/grunt-bower-install-simple">grunt-bower-install-simple</a>,
         
-          <a href="/package/lyria-template">lyria-template</a>,
+          <a href="/package/grunt-bowercopy">grunt-bowercopy</a>,
         
-          <a href="/package/generator-callum">generator-callum</a>,
+          <a href="/package/grunt-bower">grunt-bower</a>,
         
-          <a href="/package/jspm-bower">jspm-bower</a>,
+          <a href="/package/adapt-cli">adapt-cli</a>,
         
-          <a href="/package/backapp">backapp</a>,
+          <a href="/package/adapt-origin">adapt-origin</a>,
         
-          <a href="/package/packa">packa</a>,
+          <a href="/package/gulp-phantomcss">gulp-phantomcss</a>,
         
-          <a href="/package/grunt-bower-seamless-install">grunt-bower-seamless-install</a>,
+          <a href="/package/pyre">pyre</a>,
         
-          <a href="/package/bower2nix">bower2nix</a>,
+          <a href="/package/bauhausjs">bauhausjs</a>,
         
-          <a href="/package/grunt-polybrick">grunt-polybrick</a>,
+          <a href="/package/outdated">outdated</a>,
         
-          <a href="/package/axeman">axeman</a>,
+          <a href="/package/guesser">guesser</a>,
         
-          <a href="/package/chk-bower-pkg">chk-bower-pkg</a>,
+          <a href="/package/benderjs">benderjs</a>,
         
-          <a href="/package/prop_pkg">prop_pkg</a>,
+          <a href="/package/handybower">handybower</a>,
         
-          <a href="/package/staniol">staniol</a>,
+          <a href="/package/yeoman">yeoman</a>,
         
-          <a href="/package/covis">covis</a>,
+          <a href="/package/geojs">geojs</a>,
         
-          <a href="/package/ngprojecttest">ngprojecttest</a>,
-        
-          <a href="/package/ngproject">ngproject</a>,
-        
-          <a href="/package/grunt-bower-just-install">grunt-bower-just-install</a>,
-        
-          <a href="/package/mongorilla">mongorilla</a>,
-        
-          <a href="/package/defcon">defcon</a>,
-        
-          <a href="/package/defcon-plugins">defcon-plugins</a>,
-        
-          <a href="/package/defcon-event-log">defcon-event-log</a>,
-        
-          <a href="/package/djangorestframework-backbone-utils">djangorestframework-backbone-utils</a>,
-                  <a href="/package/login.webmaker.org">login.webmaker.org</a>,
-        <a href="/browse/depended/bower">and 407 more</a>
+          <a href="/package/humpback">humpback</a>,
+                  <a href="/package/ng-obelisk">ng-obelisk</a>,
+        <a href="/browse/depended/bower">and 410 more</a>
     </p>
 
   <script type="application/ld+json">
@@ -543,7 +527,7 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
             <li><a href="/policies/npm-license">npm License</a></li>
             <li><a href="/policies/privacy">Privacy Policy</a></li>
             <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
-            <li><a href="/policies/trademark">Trademark Policy</a></li>
+            <li><a href="/policies/">Other policies</a></li>
           </ul>
         </li>
       </ul>
@@ -558,12 +542,8 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
 
   </footer>
   
-  <script defer src="/static/js/index.min.js"></script>
-  <script defer src="/static/js/vendor.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <![endif]-->
+  <script defer src="/static/js/vendor.min.c2909ce7.js"></script>
 </body>
 </html>
 
-<!-- pid=26258 ee42b5bef3aed008bb670d11dfc3f2ec286eef89 https://www.npmjs.com www-9-west.internal.npmjs.com  -->
+<!-- pid=22179 fda17654e94a22465d71468e64cad09a8330120d https://www.npmjs.com www-10-west.internal.npmjs.com  -->
