@@ -45,12 +45,23 @@ var toggleMenu = function(){
 	    m.className = c.match( ' active' ) ? c.replace( ' active', '' ) : c + ' active';
 }
 </script>
+
+<style type="text/css">
+	@media screen and (max-width:768px) { .survey-wrapper { margin-bottom:20px; } #wporg-header { height: 160px; } #mobile-menu-button { top: 95px; } }
+	.survey-wrapper { width: 100%; height: 0; }
+	.survey-div { font-family: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;  font-weight: 600;display: block; margin: 0 auto;  font-size: 13px; color: #fff;height: 22px;width: 335px;text-align:center !important;background-color: #d54e21;border-radius: 0 0 4px 4px; }
+	.survey-div a { color: #fff; font-weight: 500; text-shadow: 1px 1px 3px #666; }
+</style>
+
 </head>
 
 <body id="wordpress-org" >
 <div id="wporg-header">
 	<div class="wrapper">
-	<a id="mobile-menu-button" class="" href="#" onclick="toggleMenu();"></a>
+		<div class="survey-wrapper"><div class="survey-div">
+		<a href="http://wp-survey.polldaddy.com/s/wp-2015">Have you taken the WordPress 2015 Survey yet?</a>
+	</div></div>
+		<a id="mobile-menu-button" class="" href="#" onclick="toggleMenu();"></a>
 	<h1><a href="//wordpress.org">WordPress.org</a></h1>				<div id="head-search">
 		<form action="//wordpress.org/search/do-search.php" method="get">
 			<label for="global-search" class="screen-reader-text">Search WordPress.org for:</label>
@@ -129,7 +140,7 @@ var toggleMenu = function(){
 		<div class="col-2">
 			<h4><a href="/showcase/">WordPress&nbsp;Users</a></h4>
 			<ul id="notable-users">
-				<li><a href='//wordpress.org/showcase/number10govuk/'><img src='//s.w.org/images/notableusers/10downingst-2x.png' alt='10downingst' width='130' height='57' /></a></li><li><a href='//wordpress.org/showcase/stylewatch-off-the-rack/'><img src='//s.w.org/images/notableusers/people-2x.png' alt='people' width='130' height='57' /></a></li><li><a href='//wordpress.org/showcase/the-rolling-stones/'><img src='//s.w.org/images/notableusers/rollingstones-2x.png' alt='rollingstones' width='130' height='57' /></a></li>			</ul>
+				<li><a href='//wordpress.org/showcase/tag/cnn/'><img src='//s.w.org/images/notableusers/cnn-2x.png' alt='cnn' width='130' height='57' /></a></li><li><a href='//wordpress.org/showcase/tag/new-york-times/'><img src='//s.w.org/images/notableusers/nytimes-2x.png' alt='nytimes' width='130' height='57' /></a></li><li><a href='//wordpress.org/showcase/motley-crue/'><img src='//s.w.org/images/notableusers/motleycrue-2x.png' alt='motleycrue' width='130' height='57' /></a></li>			</ul>
 			<p id="showcase-link"><a href="/showcase/">&hellip; and hundreds more</a></p>
 		</div>
 	</div>

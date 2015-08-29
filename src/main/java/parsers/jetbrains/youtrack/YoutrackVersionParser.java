@@ -13,6 +13,6 @@ public class YoutrackVersionParser extends VersionParser {
     }
 
     public String parseVersion() {
-        return jetbrainsVersionsParser.parseVersion(Pattern.compile("var versionYTLong = \"(.*)\";"));
+        return jetbrainsVersionsParser.parseVersion(Pattern.compile("var versionYTLong = \"([0-9]+\\.[0-9]+)\";"));
     }
 }
