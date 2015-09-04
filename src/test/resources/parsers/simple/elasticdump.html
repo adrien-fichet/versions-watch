@@ -49,7 +49,7 @@
   <meta name="theme-color" content="#cb3837">
 
   <link rel="canonical" href="https://www.npmjs.com/package/elasticdump">
-  <link rel="stylesheet" media="all" href="/static/css/index.981f192c.css">
+  <link rel="stylesheet" media="all" href="/static/css/index.ec9e50e5.css">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
   <!--[if lt IE 9]>
@@ -60,7 +60,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebSite" data-crumb="bulExoD5hEjUdPMiJ-coJG1_0EA0b2wrpGaC1aoFcJ6">
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="kwSjuGzD-8DoSK7znzSEDLB0RlX7dV6OjwLPx1bTZRX">
   <meta itemprop="url" content="https://www.npmjs.com/">
 
   <div id="notification-banner" class="hidden">
@@ -135,7 +135,7 @@
       <input type="text" name="honey">
     </div>
     
-      <input type="hidden" name="crumb" value="bulExoD5hEjUdPMiJ-coJG1_0EA0b2wrpGaC1aoFcJ6"/>
+      <input type="hidden" name="crumb" value="kwSjuGzD-8DoSK7znzSEDLB0RlX7dV6OjwLPx1bTZRX"/>
   </form>
 
   <div id="readme" class="markdown">
@@ -187,6 +187,7 @@ documents in the export. All documents in the export will unique and therefore n
 <li>If you need basic http auth, you can use it like this: <code>--input=http://name:password@production.es.com:9200/my_index</code></li>
 <li>if you choose a stdio output (<code>--output=$</code>), you can also request a more human-readable output with <code>--format=human</code></li>
 <li>if you choose a stdio output (<code>--output=$</code>), all logging output will be suppressed</li>
+<li>when using the <code>--bulk</code> option, aliases will be ignored and the documents you write will be linked thier original index name.  For example if you have an alias &quot;events&quot; which contains &quot;events-may-2015&quot; and &quot;events-june-2015&quot; and you bulk dump from one ES cluster to another <code>elasticdump --bulk --import http://localhost:9200/events --output http://other-server:9200</code>, you will have the source indicies, &quot;events-may-2015&quot; and &quot;events-june-2015&quot;, and not &quot;events&quot;.</li>
 </ul>
 <p>Inspired by https://github.com/crate/elasticsearch-inout-plugin and https://github.com/jprante/elasticsearch-knapsack</p>
 <p>Built at <a href="https://www.taskrabbit.com">TaskRabbit</a></p>
@@ -209,15 +210,15 @@ documents in the export. All documents in the export will unique and therefore n
           <span>evantahler</span>
         </a>
           published
-          <span data-date="2015-08-28T09:39:42.213Z" data-date-format="relative">
-            2015-08-28T09:39:42.213Z
+          <span data-date="2015-09-02T19:29:18.461Z" data-date-format="relative">
+            2015-09-02T19:29:18.461Z
           </span>
       </li>
 
     <li>
-      <strong>0.14.4</strong>
+      <strong>0.14.6</strong>
       is the latest
-        of 39 releases
+        of 41 releases
     </li>
 
       <li>
@@ -260,15 +261,15 @@ documents in the export. All documents in the export will unique and therefore n
   <ul class="box">
 
       <li>
-        <strong class="pretty-number daily-downloads">608</strong>
+        <strong class="pretty-number daily-downloads">150</strong>
         downloads in the last day
       </li>
       <li>
-        <strong class="pretty-number weekly-downloads">1277</strong>
+        <strong class="pretty-number weekly-downloads">1867</strong>
         downloads in the last week
       </li>
       <li>
-        <strong class="pretty-number monthly-downloads">4414</strong>
+        <strong class="pretty-number monthly-downloads">4948</strong>
         downloads in the last month
       </li>
 
@@ -388,4 +389,4 @@ documents in the export. All documents in the export will unique and therefore n
 </body>
 </html>
 
-<!-- pid=16867 32784c9abe2748d4d4f241c264edb25ebf61e7c4 https://www.npmjs.com www-10-west.internal.npmjs.com  -->
+<!-- pid=29024 0e5023b2e6e41482a8af641dbe0227ac611bb3b1 https://www.npmjs.com www-9-west.internal.npmjs.com  -->

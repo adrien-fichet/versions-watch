@@ -218,7 +218,7 @@ function onloadVersionWebIDEownload() {
 
 //PyCharm
 var versionPyCharmShort = "4.5";
-var versionPyCharmLong = "4.5.3";
+var versionPyCharmLong = "4.5.4";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -340,7 +340,7 @@ function onloadVersionAppCodeDownload() {
 
 //Upsource
 var versionUpsourceShort = "2";
-var versionUpsourceLong = "2.0.3";
+var versionUpsourceLong = "2.0.4";
 function versionUpsource(el) {
     if (el == "short") {
         document.write(versionUpsourceShort);
@@ -365,7 +365,7 @@ function versionHub(el) {
 
 //CLion
 var versionCLionShort = "1.1";
-var versionCLionLong = "1.1";
+var versionCLionLong = "1.1.1";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);
