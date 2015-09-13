@@ -122,6 +122,7 @@ Then :
 - [x] audacity
 - [x] chef
 - [x] vaadin
+- [x] kubernetes
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd

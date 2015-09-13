@@ -14,7 +14,7 @@ public class ExpectedVersions {
         expectedVersions.put("apache", "2.4.16");
         expectedVersions.put("debian", "8.2");
         expectedVersions.put("eclipse", "4.5");
-        expectedVersions.put("git", "2.5.1");
+        expectedVersions.put("git", "2.5.2");
         expectedVersions.put("javase", "8u60");
         expectedVersions.put("jenkins", "1.628");
         expectedVersions.put("mysql", "5.6");
@@ -34,7 +34,7 @@ public class ExpectedVersions {
         expectedVersions.put("nginx", "1.9.4");
         expectedVersions.put("elasticsearch", "1.7.1");
         expectedVersions.put("logstash", "1.5.4");
-        expectedVersions.put("kibana", "4.1.1");
+        expectedVersions.put("kibana", "4.1.2");
         expectedVersions.put("logstashforwarder", "0.4.0");
         expectedVersions.put("openssl", "0.9.8");
         expectedVersions.put("openssh", "7.1");
@@ -72,12 +72,12 @@ public class ExpectedVersions {
         expectedVersions.put("bower", "1.5.2");
         expectedVersions.put("angularjs", "1.4.5");
         expectedVersions.put("curator", "3.3.0");
-        expectedVersions.put("coreos", "794.0.0");
+        expectedVersions.put("coreos", "801.0.0");
         expectedVersions.put("safari", "8.0.8");
         expectedVersions.put("drupal", "7.39");
         expectedVersions.put("foreman", "1.8.3");
         expectedVersions.put("wordpress", "4.3");
-        expectedVersions.put("internetexplorer", "11.0.22");
+        expectedVersions.put("internetexplorer", "11.0.23");
         expectedVersions.put("nmap", "6.49");
         expectedVersions.put("edge", "20.10532");
         expectedVersions.put("opera", "31.0");
@@ -89,7 +89,7 @@ public class ExpectedVersions {
         expectedVersions.put("ansible", "1.9.4");
         expectedVersions.put("polymer", "1.1.2");
         expectedVersions.put("fail2ban", "0.9.3");
-        expectedVersions.put("go", "1.5");
+        expectedVersions.put("go", "1.5.1");
         expectedVersions.put("metasploit", "4.11.4");
         expectedVersions.put("varnish", "4.0.3");
         expectedVersions.put("perl", "5.22.0");
@@ -108,6 +108,7 @@ public class ExpectedVersions {
         expectedVersions.put("audacity", "2.1.1");
         expectedVersions.put("chef", "12.2.1");
         expectedVersions.put("vaadin", "7.5.5");
+        expectedVersions.put("kubernetes", "1.0.4");
     }
 
     public Map<String, String> getExpectedVersions() {

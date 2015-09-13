@@ -1,0 +1,1463 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Releases · kubernetes/kubernetes · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="kubernetes/kubernetes" name="twitter:title" /><meta content="kubernetes - Container Cluster Manager from Google" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/13629408?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/13629408?v=3&amp;s=400" property="og:image" /><meta content="kubernetes/kubernetes" property="og:title" /><meta content="https://github.com/kubernetes/kubernetes" property="og:url" /><meta content="kubernetes - Container Cluster Manager from Google" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_releases" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="4ECE7D82:3CF8:324DEDB:55F52A0A" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, releases#index" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="eXSbOARPOaUfPYJXwGcshzb1M9TO2aboKG0GcQA3qpJIpra9/BpVonrrfM9XugDCuq8+kY7+5g5TQ7CnhXYw+A==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-a14e3d6410d6fd1b2fa98e4e859a3bd1fb7c3b71f16c511481f068705c04d6a5.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-ddeb1c89541d4a66272d529e53eea795596f88651e3227883c8d99a59d7e0ec5.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="e025af83f90d59b969df6cecbfb86c10">
+
+        <link href="https://github.com/kubernetes/kubernetes/releases.atom" rel="alternate" title="kubernetes Release Notes" type="application/atom+xml" />
+  <link href="https://github.com/kubernetes/kubernetes/tags.atom" rel="alternate" title="kubernetes Tags" type="application/atom+xml" />
+
+  <meta name="description" content="kubernetes - Container Cluster Manager from Google">
+  <meta name="go-import" content="github.com/kubernetes/kubernetes git https://github.com/kubernetes/kubernetes.git">
+
+  <meta content="13629408" name="octolytics-dimension-user_id" /><meta content="kubernetes" name="octolytics-dimension-user_login" /><meta content="20580498" name="octolytics-dimension-repository_id" /><meta content="kubernetes/kubernetes" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="20580498" name="octolytics-dimension-repository_network_root_id" /><meta content="kubernetes/kubernetes" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/kubernetes/kubernetes/commits/master.atom" rel="alternate" title="Recent Commits to kubernetes:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production windows vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fkubernetes%2Fkubernetes%2Freleases" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/kubernetes/kubernetes/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/kubernetes/kubernetes/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fkubernetes%2Fkubernetes"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/kubernetes/kubernetes/watchers">
+    1,021
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fkubernetes%2Fkubernetes"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/kubernetes/kubernetes/stargazers">
+      10,199
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fkubernetes%2Fkubernetes"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/kubernetes/kubernetes/network" class="social-count">
+        2,519
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/kubernetes" class="url fn" itemprop="url" rel="author"><span itemprop="title">kubernetes</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/kubernetes/kubernetes" data-pjax="#js-repo-pjax-container">kubernetes</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/kubernetes/kubernetes/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/kubernetes/kubernetes" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /kubernetes/kubernetes">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/kubernetes/kubernetes/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /kubernetes/kubernetes/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/kubernetes/kubernetes/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /kubernetes/kubernetes/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/kubernetes/kubernetes/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /kubernetes/kubernetes/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/kubernetes/kubernetes/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /kubernetes/kubernetes/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/kubernetes/kubernetes/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /kubernetes/kubernetes/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/kubernetes/kubernetes.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/kubernetes/kubernetes" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="a9eb3895f9968ddce3282d2a1fd89e2cd9934b68" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="a8aBBeQ2KJf7fnSGhVSwQk7MXxomYNpVIvc0Tavei07e4HhK337uFvn0Qi+bBCplHfMFDHJDumNG/wv1pyWDyg==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="a9eb3895f9968ddce3282d2a1fd89e2cd9934b68" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="v8Rhs7UevyKfoCYWS8kupHFvjoWNW0y9fZ+czwq0dA+9hupllWL0j+cJwlAOBc6TeRjF475d8VBLpQA1ql7Xdg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+    <a href="https://windows.github.com" class="btn btn-sm sidebar-button" title="Save kubernetes/kubernetes to your computer and use it in GitHub Desktop." aria-label="Save kubernetes/kubernetes to your computer and use it in GitHub Desktop.">
+      <span class="octicon octicon-desktop-download"></span>
+      Clone in Desktop
+    </a>
+
+              <a href="/kubernetes/kubernetes/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of kubernetes/kubernetes as a zip file"
+                 title="Download the contents of kubernetes/kubernetes as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<div class="subnav" data-pjax>
+  <div class="subnav-links left" role="navigation">
+  <a href="/kubernetes/kubernetes/releases" aria-selected="true" class="js-selected-navigation-item selected subnav-item" data-selected-links="repo_releases /kubernetes/kubernetes/releases">Releases</a>
+  <a href="/kubernetes/kubernetes/tags" class="js-selected-navigation-item subnav-item" data-selected-links="repo_tags /kubernetes/kubernetes/tags">Tags</a>
+</div>
+
+
+  <div class="right">
+  </div>
+</div>
+
+<div class="release-timeline">
+
+
+
+      <div class="release label-prerelease">
+  <div class="release-meta">
+    <span class="release-label prerelease">
+        Pre-release
+    </span>
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.0.6" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.0.6</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/388061f00f0d9e4d641f9ed4971c775e1654579d">
+            <span class="octicon octicon-git-commit"></span>
+            388061f
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.0.6">Release 1.0.6</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-09-10T23:11:30Z" is="relative-time">Sep 10, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.0.6...master">
+            3117 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.0.6/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.0.6/examples">Examples</a></h2>
+
+<h2>Changes since 1.0.5</h2>
+
+<ul>
+<li>Second attempt at GCE tokens behavior to new format <a href="https://github.com/kubernetes/kubernetes/pull/13594" class="issue-link" title="Second attempt at GCE tokens behavior to new format">#13594</a> (ihmccreery)</li>
+<li>Fix mount issues in containerized Kubelet <a href="https://github.com/kubernetes/kubernetes/pull/9976" class="issue-link" title="Fix mount issues in containerized Kubelet">#9976</a> (smarterclayton)</li>
+<li>Docs: PullIfNotPresent -&gt; IfNotPresent; PullAlways -&gt; Always <a href="https://github.com/kubernetes/kubernetes/pull/13472" class="issue-link" title="Docs: PullIfNotPresent -&gt; IfNotPresent; PullAlways -&gt; Always">#13472</a> (justinsb)</li>
+<li>kubectl resource builder: don't check extension for single files <a href="https://github.com/kubernetes/kubernetes/pull/10866" class="issue-link" title="kubectl resource builder: don't check extension for single files">#10866</a> (jlowdermilk)</li>
+<li>Return an error from gce.EnsureTCPLoadBalancer with no hosts. <a href="https://github.com/kubernetes/kubernetes/pull/13336" class="issue-link" title="Return an error from gce.EnsureTCPLoadBalancer with no hosts.">#13336</a> (cjcullen)</li>
+<li>Don't take the proxy mutex in the traffic path <a href="https://github.com/kubernetes/kubernetes/pull/13345" class="issue-link" title="Don't take the proxy mutex in the traffic path">#13345</a> (thockin)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>a9e46f18ffd67602619cd2f88472c71a</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>289f9a11ea2f3cfcc6cbd50d29c3d16d4978b76c</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.0.6/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">116 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.6.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.6.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-prerelease">
+  <div class="release-meta">
+    <span class="release-label prerelease">
+        Pre-release
+    </span>
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.0.5" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.0.5</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/843c2c5d65278d57d138ff689b7de5151f058570">
+            <span class="octicon octicon-git-commit"></span>
+            843c2c5
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.0.5">Release 1.0.5</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-08-31T22:58:02Z" is="relative-time">Aug 31, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.0.5...master">
+            3117 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.0.5/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.0.5/examples">Examples</a></h2>
+
+<h2>Changes since 1.0.4</h2>
+
+<ul>
+<li>Update cadvisor dependency <a href="https://github.com/kubernetes/kubernetes/pull/12022" class="issue-link" title="Update cadvisor dependency">#12022</a> (piosz)</li>
+<li>Update Kubernetes cadvisor <a href="https://github.com/kubernetes/kubernetes/pull/13148" class="issue-link" title="Update Kubernetes cadvisor">#13148</a> (pwittrock)</li>
+<li>Fix vagrant kube-up <a href="https://github.com/kubernetes/kubernetes/pull/12514" class="issue-link" title="Fix vagrant kube-up">#12514</a> (derekwaynecarr)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>d993c33f885bcf79d7265ca716a52ffb</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>588b90a89881d0e5376f04dbd3104febc8b9986a</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.0.5/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">116 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.5.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.5.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-prerelease">
+  <div class="release-meta">
+    <span class="release-label prerelease">
+        Pre-release
+    </span>
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.1.0-alpha.1" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.1.0-alpha.1</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/9bae6636d5fcf436a3b14d219ced195e10e21fe8">
+            <span class="octicon octicon-git-commit"></span>
+            9bae663
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.1.0-alpha.1">Release v1.1.0-alpha.1</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@zmerlynn" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/4942464?v=3&amp;s=40" width="20" />
+        <a href="/zmerlynn">zmerlynn</a>
+        released this
+          <time datetime="2015-08-28T23:25:07Z" is="relative-time">Aug 28, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.1.0-alpha.1...master">
+            646 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.1.0-alpha.1/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.1.0-alpha.1/examples">Examples</a></h2>
+
+<h2>Changes since v1.1.0-alpha.0 (last PR <a href="https://github.com/kubernetes/kubernetes/pull/11103" class="issue-link" title="V1.0.0 merge to master">#11103</a>)</h2>
+
+<p>Release notes TBD, see <a href="https://github.com/kubernetes/kubernetes/issues/13343" class="issue-link" title="make-release-notes.sh bitrot after contrib move">#13343</a></p>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>e35c6549e18b6abc8a416eac6bd9f379</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>dcc4396b51c5aa4099265b7cc4982b9c681ba19a</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.1.0-alpha.1/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">173 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.1.0-alpha.1.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.1.0-alpha.1.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-latest">
+  <div class="release-meta">
+    <span class="release-label latest">
+        <a href="/kubernetes/kubernetes/releases/latest">Latest release</a>
+    </span>
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.0.4" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.0.4</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/65d28d5fd12345592405714c81cd03b9c41d41d9">
+            <span class="octicon octicon-git-commit"></span>
+            65d28d5
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.0.4">Release v1.0.4 Candidate</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@zmerlynn" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/4942464?v=3&amp;s=40" width="20" />
+        <a href="/zmerlynn">zmerlynn</a>
+        released this
+          <time datetime="2015-08-25T21:08:30Z" is="relative-time">Aug 25, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.0.4...master">
+            3117 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.0.4/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.0.4/examples">Examples</a></h2>
+
+<h2>Changes since 1.0.3</h2>
+
+<ul>
+<li>Handle full hostname when computing host tag on GCE <a href="https://github.com/kubernetes/kubernetes/pull/12438" class="issue-link" title="Handle full hostname when computing host tag on GCE">#12438</a> (derekparker)</li>
+<li>Be more lenient when deriving the node tag from a node name on GCE <a href="https://github.com/kubernetes/kubernetes/pull/13121" class="issue-link" title="Be more lenient when deriving the node tag from a node name on GCE">#13121</a> (a-robinson)</li>
+<li>Use external id when reconciling routes <a href="https://github.com/kubernetes/kubernetes/pull/12029" class="issue-link" title="Use external id when reconciling routes">#12029</a> (iterion)</li>
+<li>fix mig command for gce <a href="https://github.com/kubernetes/kubernetes/pull/13046" class="issue-link" title="fix mig command for gce">#13046</a> (jlowdermilk)</li>
+<li>Stop using deprecated gcloud commands <a href="https://github.com/kubernetes/kubernetes/pull/12897" class="issue-link" title="Stop using deprecated gcloud commands">#12897</a> (wojtek-t)</li>
+<li>Future-proof detect-minions for gke <a href="https://github.com/kubernetes/kubernetes/pull/13001" class="issue-link" title="Future-proof detect-minions for gke">#13001</a> (jlowdermilk)</li>
+<li>Don't register the master node into the cluster by default. <a href="https://github.com/kubernetes/kubernetes/pull/12840" class="issue-link" title="Don't register the master node into the cluster by default.">#12840</a> (roberthbailey)</li>
+<li>Fix kube-push using gcloud compute instance-groups managed set-instance-template <a href="https://github.com/kubernetes/kubernetes/pull/12541" class="issue-link" title="Fix kube-push using gcloud compute instance-groups managed set-instance-template">#12541</a> (dchen1107)</li>
+<li>Fix the node controller in an emulation of <a href="https://github.com/kubernetes/kubernetes/pull/12546" class="issue-link" title="Switch the order of delete, delete pods before deleting nodes.">#12546</a> (brendandburns)</li>
+<li>AWS: Fix security group races <a href="https://github.com/kubernetes/kubernetes/pull/11029" class="issue-link" title="AWS: Fix security group races">#11029</a> (justinsb)</li>
+<li>Set the right master port to kube-proxy in libvirt-coreos. <a href="https://github.com/kubernetes/kubernetes/pull/11804" class="issue-link" title="Set the right master port to kube-proxy in libvirt-coreos.">#11804</a> (sgotti)</li>
+<li>Fix libvirt-coreos cluster <a href="https://github.com/kubernetes/kubernetes/pull/11794" class="issue-link" title="Revert revert of #11379">#11794</a> (mikedanese)</li>
+<li>Vanity imports round 2 <a href="https://github.com/kubernetes/kubernetes/pull/12310" class="issue-link" title="Vanity imports round 2">#12310</a> (mikedanese)</li>
+<li>point shippable to new repository <a href="https://github.com/kubernetes/kubernetes/pull/12592" class="issue-link" title="point shippable to new repository">#12592</a> (mikedanese)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>a11a5dc27014bd9866af7184ca9c8a04</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>18783fce5e0698a6b81c3338d2d47fb539e4d444</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.0.4/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">116 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.4.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.4.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-">
+  <div class="release-meta">
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.0.3" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.0.3</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/61c6ac5f350253a4dc002aee97b7db7ff01ee4ca">
+            <span class="octicon octicon-git-commit"></span>
+            61c6ac5
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.0.3">Release 1.0.3</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-08-07T04:57:40Z" is="relative-time">Aug 7, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.0.3...master">
+            3117 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.0.1/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.0.1/examples">Examples</a></h2>
+
+<h3>Changes since 1.0.2</h3>
+
+<ul>
+<li>Troubleshooting for misplaced/misspelled fields <a href="https://github.com/kubernetes/kubernetes/pull/12296" class="issue-link" title="Troubleshooting for misplaced/misspelled fields">#12296</a> (erictune)</li>
+<li>Update GCE to container-vm-v20150806 <a href="https://github.com/kubernetes/kubernetes/pull/12366" class="issue-link" title="Update GCE to container-vm-v20150806">#12366</a> (zmerlynn)</li>
+<li>Add support for supervisord as a monit alternative. <a href="https://github.com/kubernetes/kubernetes/pull/12325" class="issue-link" title="Add support for supervisord as a monit alternative.">#12325</a> (brendandburns)</li>
+<li>Refactor the functions that generate auth for the kubelet and kubeproxy <a href="https://github.com/kubernetes/kubernetes/pull/11483" class="issue-link" title="Refactor the functions that generate auth for the kubelet and kubeproxy">#11483</a> (roberthbailey)</li>
+<li>Register the kubelet on the master node with an apiserver.  <a href="https://github.com/kubernetes/kubernetes/pull/12349" class="issue-link" title="Register the kubelet on the master node with an apiserver. ">#12349</a> (roberthbailey)</li>
+<li>Bump the heapster pod's memory limit from 200MiB to 300MiB. <a href="https://github.com/kubernetes/kubernetes/pull/12314" class="issue-link" title="Bump the heapster pod's memory limit from 200MiB to 300MiB.">#12314</a> (a-robinson)</li>
+<li>Also collect the monit and salt logs in our fluentd configs <a href="https://github.com/kubernetes/kubernetes/pull/12240" class="issue-link" title="Also collect the monit and salt logs in our fluentd configs">#12240</a> (a-robinson)</li>
+<li>Vagrant: virtualbox host-only network (eth1) not working after network restart <a href="https://github.com/kubernetes/kubernetes/pull/11390" class="issue-link" title="Vagrant: virtualbox host-only network (eth1) not working after network restart">#11390</a> (jfchevrette)</li>
+<li>Swich to new gcloud API for GCE MIGs <a href="https://github.com/kubernetes/kubernetes/pull/11692" class="issue-link" title="Swich to new gcloud API for GCE MIGs">#11692</a> (wojtek-t)</li>
+<li>Fix flaky PD test by adding wait for detach <a href="https://github.com/kubernetes/kubernetes/pull/11873" class="issue-link" title="Fix flaky PD test by adding wait for detach">#11873</a> (saad-ali)</li>
+<li>Make gce.ExternalID() use metadata server when requesting current external ID <a href="https://github.com/kubernetes/kubernetes/pull/12028" class="issue-link" title="Make gce.ExternalID() use metadata server when requesting current external ID">#12028</a> (cjcullen)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>12cfaa5f2bfe8605b3a859bc45131292</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>13d3125fe3b25808b4b4c07f2a350f4c02d44205</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.0.3/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">116 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.3.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.3.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-prerelease">
+  <div class="release-meta">
+    <span class="release-label prerelease">
+        Pre-release
+    </span>
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.0.2" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.0.2</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/e310e619fc1ac4f3238bf5ebe9e7033bf5d47ee2">
+            <span class="octicon octicon-git-commit"></span>
+            e310e61
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.0.2">Kubernetes v1.0.2</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-08-01T04:22:40Z" is="relative-time">Aug 1, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.0.2...master">
+            3117 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.0.1/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.0.1/examples">Examples</a></h2>
+
+<h3>Changes since 1.0.1</h3>
+
+<ul>
+<li>Enacting versioning.md <a href="https://github.com/kubernetes/kubernetes/pull/11941" class="issue-link" title="Enacting versioning.md">#11941</a> (zmerlynn)</li>
+<li>Support passing a header to the manifest URL in the kubelet. <a href="https://github.com/kubernetes/kubernetes/pull/12024" class="issue-link" title="Support passing a header to the manifest URL in the kubelet.">#12024</a> (a-robinson)</li>
+<li>Make the kubelet on a GCE master check instance metadata for manifests <a href="https://github.com/kubernetes/kubernetes/pull/11963" class="issue-link" title="Make the kubelet on a GCE master check instance metadata for manifests">#11963</a> (a-robinson)</li>
+<li>Fix fluentd configs to collect etcd logs on the master <a href="https://github.com/kubernetes/kubernetes/pull/12045" class="issue-link" title="Fix fluentd configs to collect etcd logs on the master">#12045</a> (a-robinson)</li>
+<li>e2e: Add test to pd that disk contents are preserved <a href="https://github.com/kubernetes/kubernetes/pull/11128" class="issue-link" title="e2e: Add test to pd that disk contents are preserved">#11128</a> (justinsb)</li>
+<li>Migrate tests to non-default namespaces <a href="https://github.com/kubernetes/kubernetes/pull/10986" class="issue-link" title="Migrate tests to non-default namespaces">#10986</a> (wojtek-t)</li>
+<li>Fix GCE PD attach/detach issues <a href="https://github.com/kubernetes/kubernetes/pull/11561" class="issue-link" title="Fix GCE PD attach/detach issues">#11561</a> (saad-ali)</li>
+<li>Extracting out the code to versionize docs from mark-new-version and fixing a bunch of issues <a href="https://github.com/kubernetes/kubernetes/pull/11622" class="issue-link" title="Extracting out the code to versionize docs from mark-new-version and fixing a bunch of issues">#11622</a> (nikhiljindal)</li>
+<li>Apply version subst multiple times per line <a href="https://github.com/kubernetes/kubernetes/pull/11865" class="issue-link" title="Apply version subst multiple times per line">#11865</a> (thockin)</li>
+<li>Linking to API object definitions from docs <a href="https://github.com/kubernetes/kubernetes/pull/11569" class="issue-link" title="Linking to API object definitions from docs">#11569</a> (nikhiljindal)</li>
+<li>Add a resync period for services in the service controller <a href="https://github.com/kubernetes/kubernetes/pull/11891" class="issue-link" title="Add a resync period for services in the service controller">#11891</a> (a-robinson)</li>
+<li>Add stub md files so gh-pages importer keeps them <a href="https://github.com/kubernetes/kubernetes/pull/11847" class="issue-link" title="Add stub md files so gh-pages importer keeps them">#11847</a> (thockin)</li>
+<li>Add whatisk8s.md to master <a href="https://github.com/kubernetes/kubernetes/pull/11842" class="issue-link" title="Add whatisk8s.md to master">#11842</a> (thockin)</li>
+<li>Vulnerability reporting doc. <a href="https://github.com/kubernetes/kubernetes/pull/11782" class="issue-link" title="Vulnerability reporting doc.">#11782</a> (erictune)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>a8cb95d08bfe9f2e11f5990b41037a6e</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>fb3b57031958b2604d2d7112133f147206803601</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.0.2/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">116 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.2.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.2.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+      <ul class="release-timeline-tags">
+          <li>
+            
+<span class="date">
+    <time datetime="2015-07-31T17:35:26Z" is="relative-time">Jul 31, 2015</time>
+
+  <span class="octicon octicon-tag"></span>
+</span>
+
+<div class="main">
+  
+
+<div class="tag-info commit js-details-container">
+  <h3>
+    <a href="/kubernetes/kubernetes/releases/tag/v1.1.0-alpha.0">
+      <span class="tag-name">v1.1.0-alpha.0</span>
+    </a>
+    <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+  </h3>
+
+  <div class="commit-desc">
+    <pre>Kubernetes pre-release branch v1.1.0-alpha.0
+</pre>
+  </div>
+
+  <ul class="tag-references">
+    <li class="commit">
+      <a href="/kubernetes/kubernetes/commit/1b370599ccf271741e657335c4943cb8c7dba28b">
+        <span class="octicon octicon-git-commit"></span>
+        1b37059
+      </a>
+    </li>
+
+    <li>
+      <a href="/kubernetes/kubernetes/archive/v1.1.0-alpha.0.zip" rel="nofollow">
+        <span class="octicon octicon-file-zip"></span>
+        zip
+      </a>
+    </li>
+
+    <li>
+      <a href="/kubernetes/kubernetes/archive/v1.1.0-alpha.0.tar.gz" rel="nofollow">
+        <span class="octicon octicon-file-zip"></span>
+        tar.gz
+      </a>
+    </li>
+
+
+  </ul>
+</div>
+
+</div>
+
+          </li>
+      </ul>
+
+
+
+
+
+
+      <div class="release label-">
+  <div class="release-meta">
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v1.0.1" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v1.0.1</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/6a5c06e3d1eb27a6310a09270e4a5fb1afa93e74">
+            <span class="octicon octicon-git-commit"></span>
+            6a5c06e
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v1.0.1">Release 1.0.1</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-07-17T22:48:36Z" is="relative-time">Jul 17, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v1.0.1...master">
+            3117 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2><a href="http://releases.k8s.io/v1.0.1/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v1.0.1/examples">Examples</a></h2>
+
+<h3>Changes since 1.0.0</h3>
+
+<ul>
+<li>Fix a backwards incompatability with service acounts <a href="https://github.com/kubernetes/kubernetes/pull/11389" class="issue-link" title="Add serviceAccount as an alias for serviceAccountName">#11389</a> (mbforbes)</li>
+<li>Stop Monit Addons on nodes <a href="https://github.com/kubernetes/kubernetes/pull/11320" class="issue-link" title="Stop monit kube-addon on nodes.">#11320</a> (dchen1107)</li>
+<li>Fix duplicate swagger nicknames <a href="https://github.com/kubernetes/kubernetes/pull/11258" class="issue-link" title="Add namespace to swagger nicknames to prevent duplicate nicknames">#11258</a> (nikhiljindal)</li>
+<li>Add monitoring and healthz based on tunnel health <a href="https://github.com/kubernetes/kubernetes/pull/11250" class="issue-link" title="Add monitoring and healthz based on tunnel health.">#11250</a> (brendandburns)</li>
+<li>Fix load-balancer firewall messages <a href="https://github.com/kubernetes/kubernetes/pull/11254" class="issue-link" title="Fix load-balancer firewall messages">#11254</a> (thockin)</li>
+<li>Fix get instance private ip in AWS <a href="https://github.com/kubernetes/kubernetes/pull/11241" class="issue-link" title="AWS: Restore (erroneously) removed get_instance_private_ip">#11241</a> (justinsb)</li>
+<li>Fix document generation <a href="https://github.com/kubernetes/kubernetes/pull/11113" class="issue-link" title="Fix mungedocs for absolute paths">#11113</a> (zmerlynn)</li>
+<li>Fix a scheduler race <a href="https://github.com/kubernetes/kubernetes/pull/11150" class="issue-link" title="Fix scheduler race">#11150</a> (bprashanth)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>e7c9f28bf4d2bebd54ca9372d76aaf5e</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>39e56947e3a42bbec0641486710dcd829123c472</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v1.0.1/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">113 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.1.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v1.0.1.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-">
+  <div class="release-meta">
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v0.21.4" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v0.21.4</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/3d43944bee17e7147c2ae59aa97a63fb5111d6b0">
+            <span class="octicon octicon-git-commit"></span>
+            3d43944
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v0.21.4">Release 0.21.4</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-07-17T04:41:49Z" is="relative-time">Jul 17, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v0.21.4...master">
+            3416 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2>Release 0.21.4</h2>
+
+<h2><a href="http://releases.k8s.io/v0.21.4/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v0.21.4/examples">Examples</a></h2>
+
+<h3>Changes since 0.21.3</h3>
+
+<ul>
+<li>Fix a backwards incompatability with service acounts <a href="https://github.com/kubernetes/kubernetes/pull/11389" class="issue-link" title="Add serviceAccount as an alias for serviceAccountName">#11389</a> (mbforbes)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>e9e2763612dbd30f386f9b5a8993a38b</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>56b2de2388c13afcb1c14325721fed74282a8252</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v0.21.4/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">112 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v0.21.4.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v0.21.4.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+
+
+      <div class="release label-">
+  <div class="release-meta">
+
+      <ul class="tag-references">
+        <li>
+          <a href="/kubernetes/kubernetes/tree/v0.21.3" class="css-truncate">
+            <span class="octicon octicon-tag"></span>
+            <span class="css-truncate-target">v0.21.3</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/kubernetes/kubernetes/commit/9411c5c55438658791ed204fb979e230be8a0dcd">
+            <span class="octicon octicon-git-commit"></span>
+            9411c5c
+          </a>
+        </li>
+      </ul>
+
+  </div><!-- /.meta -->
+
+  <div class="release-body commit open">
+    <div class="release-header">
+
+      <h1 class="release-title">
+        <a href="/kubernetes/kubernetes/releases/tag/v0.21.3">Release 0.21.3</a>
+      </h1>
+      <p class="release-authorship">
+        <img alt="@brendandburns" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/5751682?v=3&amp;s=40" width="20" />
+        <a href="/brendandburns">brendandburns</a>
+        released this
+          <time datetime="2015-07-16T00:10:45Z" is="relative-time">Jul 16, 2015</time>
+
+          &middot;
+
+          <a href="/kubernetes/kubernetes/compare/v0.21.3...master">
+            3416 commits</a>
+          to master
+          since this release
+      </p>
+    </div>
+
+      <div class="markdown-body">
+        <h2>Release 0.21.3</h2>
+
+<h2><a href="http://releases.k8s.io/v0.21.3/docs/README.md">Documentation</a></h2>
+
+<h2><a href="http://releases.k8s.io/v0.21.3/examples">Examples</a></h2>
+
+<h3>Changes since 0.21.2</h3>
+
+<ul>
+<li>Fix a problem with apiserver and target pools that could wipe target pool contents <a href="https://github.com/kubernetes/kubernetes/pull/11329" class="issue-link" title="Fix issue of comparing instance URLs with different project ID representations in GCE target pools">#11329</a> (a-robinson)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>binary</th>
+<th>hash alg</th>
+<th>hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>md5</td>
+<td><code>6cf508d4f6010c55ad3d3a9abd688f64</code></td>
+</tr>
+<tr>
+<td><code>kubernetes.tar.gz</code></td>
+<td>sha1</td>
+<td><code>7e55f8b4d2aa6c919c90b9b7ff0a8363a4f7d125</code></td>
+</tr>
+</tbody>
+</table>
+      </div>
+
+      <h2 class="release-downloads-header">Downloads</h2>
+      <ul class="release-downloads">
+          <li>
+            <a href="/kubernetes/kubernetes/releases/download/v0.21.3/kubernetes.tar.gz" rel="nofollow">
+              <small class="text-muted right">112 MB</small>
+              <span class="octicon octicon-package left text-muted"></span>
+              <strong>kubernetes.tar.gz</strong>
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v0.21.3.zip" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (zip)
+            </a>
+          </li>
+          <li>
+            <a href="/kubernetes/kubernetes/archive/v0.21.3.tar.gz" rel="nofollow">
+              <span class="octicon octicon-file-zip text-muted"></span>
+              <strong>Source code</strong> (tar.gz)
+            </a>
+          </li>
+      </ul>
+
+  </div><!-- /.release-body -->
+</div><!-- /.release -->
+
+
+</div>
+
+<div data-pjax class="paginate-container">
+  <div class="pagination"><span class="disabled">Previous</span><a href="https://github.com/kubernetes/kubernetes/releases?after=v0.21.3" rel="nofollow">Next</a></div>
+</div>
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div>
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.13308s from github-fe126-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2c67e846b237d12dc49d9ba38bef688797518db6c4fc7ec256caf871623c69e4.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-cdf2812e9b014c7112138481f998b4d18770faa142b62ce3c3223fbf481b6a94.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

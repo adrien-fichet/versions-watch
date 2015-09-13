@@ -500,6 +500,11 @@ public class Conf {
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(3) > td",
                 "(([0-9]+\\.){2}[0-9]+) "
         ));
+        configurations.put("kubernetes", new VersionParserConfiguration(
+                "https://github.com/kubernetes/kubernetes/releases",
+                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
+                "Release v(([0-9]+\\.){2}[0-9]+) "
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {
