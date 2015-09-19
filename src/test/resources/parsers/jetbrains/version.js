@@ -131,7 +131,7 @@ function onloadVersionDPDownload() {
 
 //TeamCity
 var versionTCShort = "9.1";
-var versionTCLong = "9.1.1";
+var versionTCLong = "9.1.3";
 function versionTC(el) {
     if (el == "short") {
         document.write(versionTCShort);
@@ -239,8 +239,8 @@ function onloadVersionPyCharmownload() {
 }
 
 //PyCharm Educational Edition
-var versionPyCharmEDUShort = "1.0";
-var versionPyCharmEDULong = "1.0.1";
+var versionPyCharmEDUShort = "2.0";
+var versionPyCharmEDULong = "2.0";
 function versionPyCharmEDU(el) {
     if (el == "short") {
         document.write(versionPyCharmEDUShort);

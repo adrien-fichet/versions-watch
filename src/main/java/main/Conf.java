@@ -336,7 +336,7 @@ public class Conf {
         configurations.put("foreman", new VersionParserConfiguration(
                 "http://theforeman.org/",
                 "#latest-news > div > div > p:nth-child(2)",
-                "Foreman (([0-9]+\\.){2}[0-9]+) "
+                "Foreman (([0-9]+\\.){1,2}[0-9]+) "
         ));
         configurations.put("wordpress", new VersionParserConfiguration(
                 "https://wordpress.org/",
@@ -482,8 +482,8 @@ public class Conf {
         ));
         configurations.put("wireshark", new VersionParserConfiguration(
                 "https://www.wireshark.org/download.html",
-                "#content > div:nth-child(1) > div.col.col-lg-8 > div:nth-child(1) > p",
-                "The current stable release of Wireshark is (([0-9]+\\.){2}[0-9]+)\\. "
+                "#accordion_download > div:nth-child(1) > div.panel-heading > a",
+                "Stable Release \\((([0-9]+\\.){2}[0-9]+)\\)"
         ));
         configurations.put("audacity", new VersionParserConfiguration(
                 "http://audacityteam.org/",
@@ -503,7 +503,7 @@ public class Conf {
         configurations.put("kubernetes", new VersionParserConfiguration(
                 "https://github.com/kubernetes/kubernetes/releases",
                 "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
-                "Release v(([0-9]+\\.){2}[0-9]+) "
+                "Release v?(([0-9]+\\.){2}[0-9]+)"
         ));
     }
 
