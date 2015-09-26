@@ -1,7 +1,7 @@
 //IDEA
 //IDEA
 var versionIDEAShort = "14.1";
-var versionIDEALong = "14.1.4";
+var versionIDEALong = "14.1.5";
 function versionIDEA(el) {
     if (el == "short") {
         document.write(versionIDEAShort);

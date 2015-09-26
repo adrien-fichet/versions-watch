@@ -45,6 +45,8 @@ public class SimpleVersionParser extends VersionParser {
 
             if (matcher.find()) {
                 versionText = matcher.group(1);
+            } else {
+                return UNKNOWN_VERSION;
             }
         }
 

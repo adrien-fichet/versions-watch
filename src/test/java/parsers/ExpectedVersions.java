@@ -8,7 +8,7 @@ public class ExpectedVersions {
 
     public ExpectedVersions() {
         expectedVersions = new HashMap<String, String>();
-        expectedVersions.put("idea", "14.1.4");
+        expectedVersions.put("idea", "14.1.5");
         expectedVersions.put("youtrack", "6.5");
         expectedVersions.put("spring", "4.2.1");
         expectedVersions.put("apache", "2.4.16");
@@ -16,7 +16,7 @@ public class ExpectedVersions {
         expectedVersions.put("eclipse", "4.5");
         expectedVersions.put("git", "2.5.3");
         expectedVersions.put("javase", "8u60");
-        expectedVersions.put("jenkins", "1.629");
+        expectedVersions.put("jenkins", "1.630");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "5.6.13");
@@ -31,7 +31,7 @@ public class ExpectedVersions {
         expectedVersions.put("hibernate", "5.0.1");
         expectedVersions.put("javascript", "ECMAScript 6");
         expectedVersions.put("ubuntu", "15.04");
-        expectedVersions.put("nginx", "1.9.4");
+        expectedVersions.put("nginx", "1.9.5");
         expectedVersions.put("elasticsearch", "1.7.2");
         expectedVersions.put("logstash", "1.5.4");
         expectedVersions.put("kibana", "4.1.2");
@@ -56,23 +56,23 @@ public class ExpectedVersions {
         expectedVersions.put("vim", "7.4");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.10.4");
-        expectedVersions.put("linux", "4.2");
+        expectedVersions.put("linux", "4.2.1");
         expectedVersions.put("xfce", "4.12");
-        expectedVersions.put("elasticdump", "0.15.0");
-        expectedVersions.put("solr", "5.3.0");
+        expectedVersions.put("elasticdump", "0.16.0");
+        expectedVersions.put("solr", "5.3.1");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "45.0");
-        expectedVersions.put("firefox", "40.0.3");
-        expectedVersions.put("gnomeshell", "3.17.91");
+        expectedVersions.put("firefox", "41.0");
+        expectedVersions.put("gnomeshell", "3.17.92");
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.8.1");
         expectedVersions.put("kali", "2.0");
         expectedVersions.put("visualstudio", "2015 RTM");
-        expectedVersions.put("bower", "1.5.2");
-        expectedVersions.put("angularjs", "1.4.5");
+        expectedVersions.put("bower", "1.5.3");
+        expectedVersions.put("angularjs", "1.4.6");
         expectedVersions.put("curator", "3.3.0");
-        expectedVersions.put("coreos", "808.0.0");
+        expectedVersions.put("coreos", "815.0.0");
         expectedVersions.put("safari", "8.0.8");
         expectedVersions.put("drupal", "7.39");
         expectedVersions.put("foreman", "1.9");
@@ -86,7 +86,7 @@ public class ExpectedVersions {
         expectedVersions.put("bootstrap", "3.3.5");
         expectedVersions.put("ruby", "2.2.3");
         expectedVersions.put("zsh", "5.0.7");
-        expectedVersions.put("ansible", "1.9.4");
+        expectedVersions.put("ansible", "1.9.2");
         expectedVersions.put("polymer", "1.1.2");
         expectedVersions.put("fail2ban", "0.9.3");
         expectedVersions.put("go", "1.5.1");
@@ -103,7 +103,7 @@ public class ExpectedVersions {
         expectedVersions.put("backbone", "1.2.3");
         expectedVersions.put("naxsi", "0.54");
         expectedVersions.put("memcached", "1.4.24");
-        expectedVersions.put("libreoffice", "5.0.1");
+        expectedVersions.put("libreoffice", "5.0.2");
         expectedVersions.put("wireshark", "1.12.7");
         expectedVersions.put("audacity", "2.1.1");
         expectedVersions.put("chef", "12.2.1");

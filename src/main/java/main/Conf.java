@@ -273,7 +273,7 @@ public class Conf {
         configurations.put("firefox", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Firefox",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td > p",
-                "(([0-9]+\\.){2}[0-9]+) \\("
+                "(([0-9]+\\.){1,2}[0-9]+) \\("
         ));
         configurations.put("gnomeshell", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/GNOME_Shell",
@@ -390,9 +390,9 @@ public class Conf {
                 "Download zsh (([0-9]+\\.){2}[0-9]+) "
         ));
         configurations.put("ansible", new VersionParserConfiguration(
-                "https://github.com/ansible/ansible/releases",
-                "#js-repo-pjax-container > div.release-timeline > ul > li:nth-child(1) > div > div > h3 > a > span",
-                "v(([0-9]+\\.){2}[0-9]+)"
+                "https://en.wikipedia.org/wiki/Ansible_(software)",
+                "#mw-content-text > table > tbody > tr:nth-child(3) > td",
+                "(([0-9]+\\.){2}[0-9]+) /"
         ));
         configurations.put("polymer", new VersionParserConfiguration(
                 "https://github.com/Polymer/polymer/releases",
@@ -411,7 +411,7 @@ public class Conf {
         ));
         configurations.put("metasploit", new VersionParserConfiguration(
                 "https://github.com/rapid7/metasploit-framework/wiki/Downloads-by-Version",
-                "#wiki-body > div > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(1) > a",
+                "#wiki-body > div > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(1) > a",
                 "metasploit-(([0-9]+\\.){2}[0-9]+)-"
         ));
         configurations.put("varnish", new VersionParserConfiguration(

@@ -226,12 +226,36 @@ h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover
 }
 h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, dt:hover > .elementid-permalink { visibility: visible }</style>
 <h1 id="lucenetm-news">Lucene<span style="vertical-align: super; font-size: xx-small">TM</span> News<a class="headerlink" href="#lucenetm-news" title="Permanent link">&para;</a></h1>
+<h2 id="24-september-2015-apache-lucene-531-and-apache-solr-531-available">24 September 2015 - Apache Lucene 5.3.1 and Apache Solr 5.3.1 Available<a class="headerlink" href="#24-september-2015-apache-lucene-531-and-apache-solr-531-available" title="Permanent link">&para;</a></h2>
+<p>The Lucene PMC is pleased to announce the release of Apache Lucene 5.3.1 and Apache Solr 5.3.1</p>
+<p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/java/5.3.1">http://www.apache.org/dyn/closer.lua/lucene/java/5.3.1</a>
+and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/solr/5.3.1">http://www.apache.org/dyn/closer.lua/lucene/solr/5.3.1</a></p>
+<h3 id="highlights-of-this-lucene-release-include">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include" title="Permanent link">&para;</a></h3>
+<h4 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Remove classloader hack in MorfologikFilter</li>
+<li>UsageTrackingQueryCachingPolicy no longer caches trivial queries like MatchAllDocsQuery</li>
+<li>Fixed BoostingQuery to rewrite wrapped queries</li>
+</ul>
+<h3 id="highlights-of-this-solr-release-include">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include" title="Permanent link">&para;</a></h3>
+<h4 id="bug-fixes_1">Bug Fixes<a class="headerlink" href="#bug-fixes_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>security.json is not loaded on server start</li>
+<li>RuleBasedAuthorization plugin does not work for the collection-admin-edit permission</li>
+<li>VelocityResponseWriter template encoding issue. Templates must be UTF-8 encoded</li>
+<li>SimplePostTool (also bin/post) -filetypes "*" now works properly in 'web' mode</li>
+<li>example/files update-script.js to be Java 7 and 8 compatible.</li>
+<li>SolrJ could not make requests to handlers with '/admin/' prefix</li>
+<li>Use of timeAllowed can cause incomplete filters to be cached and incorrect results to be returned on subsequent requests</li>
+<li>VelocityResponseWriter's $resource.get(key,baseName,locale) to use specified locale.</li>
+<li>Resolve XSS issue in Admin UI stats page</li>
+</ul>
 <h2 id="24-august-2015-apache-lucene-530-and-apache-solr-530-available">24 August 2015 - Apache Lucene 5.3.0 and Apache Solr 5.3.0 Available<a class="headerlink" href="#24-august-2015-apache-lucene-530-and-apache-solr-530-available" title="Permanent link">&para;</a></h2>
 <p>The Lucene PMC is pleased to announce the availability
 of Apache Lucene 5.3.0 and Apache Solr 5.3.0.</p>
 <p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/java/5.3.0">http://www.apache.org/dyn/closer.lua/lucene/java/5.3.0</a>
 and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/solr/5.3.0">http://www.apache.org/dyn/closer.lua/lucene/solr/5.3.0</a></p>
-<h3 id="highlights-of-this-lucene-release-include">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include" title="Permanent link">&para;</a></h3>
+<h3 id="highlights-of-this-lucene-release-include_1">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include_1" title="Permanent link">&para;</a></h3>
 <h4 id="api-changes">API Changes<a class="headerlink" href="#api-changes" title="Permanent link">&para;</a></h4>
 <ul>
 <li>PhraseQuery and BooleanQuery are now immutable</li>
@@ -256,7 +280,7 @@ and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lu
 <li>Faster intersection of the terms dictionary with very finite automata, which can be generated eg. by simple regexp queries</li>
 <li>Various bugfixes and optimizations since the 5.2.0 release.</li>
 </ul>
-<h3 id="highlights-of-this-solr-release-include">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include" title="Permanent link">&para;</a></h3>
+<h3 id="highlights-of-this-solr-release-include_1">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>In addition to many other improvements in the security framework, Solr now includes an AuthenticationPlugin implementing HTTP Basic Auth that stores credentials securely in ZooKeeper. This is a simple way to require a username and password for anyone accessing Solr’s admin screen or APIs.</li>
 <li>In built AuthorizationPlugin that provides fine grained control over implementing ACLs for various resources with permisssion rules which are stored in ZooKeeper.</li>
@@ -275,13 +299,13 @@ with the release for a full list of details.</p>
 <p>The Lucene PMC is pleased to announce the release of Apache Lucene 5.2.1 and Apache Solr 5.2.1</p>
 <p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/java/5.2.1">http://www.apache.org/dyn/closer.lua/lucene/java/5.2.1</a>
 and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/solr/5.2.1">http://www.apache.org/dyn/closer.lua/lucene/solr/5.2.1</a></p>
-<h3 id="highlights-of-this-lucene-release-include_1">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include_1" title="Permanent link">&para;</a></h3>
+<h3 id="highlights-of-this-lucene-release-include_2">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Fix class loading deadlock relating to Codec initialization, default codec and SPI discovery.</li>
 <li>NRT readers now reflect a new commit even if there is no change to the commit user data</li>
 <li>Queries now get a dummy Similarity when scores are not needed in order to not load unnecessary information like norms</li>
 </ul>
-<h3 id="highlights-of-this-solr-release-include_1">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include_1" title="Permanent link">&para;</a></h3>
+<h3 id="highlights-of-this-solr-release-include_2">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Fix javascript bug introduced by SOLR-7409 that breaks the dataimport screen in the admin UI</li>
 <li>Faceting on a numeric field with a unique() subfacet function on another numeric field can result in incorrect results or an exception</li>
@@ -300,7 +324,7 @@ with the release for a full list of details.</p>
 of Apache Lucene 5.2.0 and Apache Solr 5.2.0.</p>
 <p>Lucene can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/java/5.2.0">http://www.apache.org/dyn/closer.lua/lucene/java/5.2.0</a>
 and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lucene/solr/5.2.0">http://www.apache.org/dyn/closer.lua/lucene/solr/5.2.0</a></p>
-<h3 id="highlights-of-this-lucene-release-include_2">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include_2" title="Permanent link">&para;</a></h3>
+<h3 id="highlights-of-this-lucene-release-include_3">Highlights of this Lucene release include:<a class="headerlink" href="#highlights-of-this-lucene-release-include_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>Span queries now share document conjunction/intersection code with boolean queries, and use two-phased iterators for faster intersection by avoiding loading positions in certain cases.</p>
@@ -333,7 +357,7 @@ and Solr can be downloaded from <a href="http://www.apache.org/dyn/closer.lua/lu
 <p>Various bugfixes and optimizations since the 5.1.0 release.</p>
 </li>
 </ul>
-<h3 id="highlights-of-this-solr-release-include_2">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include_2" title="Permanent link">&para;</a></h3>
+<h3 id="highlights-of-this-solr-release-include_3">Highlights of this Solr release include:<a class="headerlink" href="#highlights-of-this-solr-release-include_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>Restore API allows restoring a core from an index backup.</p>
@@ -1030,15 +1054,15 @@ h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover
 <p><div class="button-green">
     <a href="core/mirrors-core-latest-redir.html?">Download</a>
     <div class="flap top">Click to begin</div>
-    <div class="flap bottom">of Apache Lucene 5.3.0</div>
+    <div class="flap bottom">of Apache Lucene 5.3.1</div>
   </div>
-  <div class="download-desc">Apache Lucene 5.3.0</div>
+  <div class="download-desc">Apache Lucene 5.3.1</div>
   <div class="button-orange">
     <a href="solr/mirrors-solr-latest-redir.html?">Download</a>
     <div class="flap top">Click to begin</div>
-    <div class="flap bottom">of Apache Solr 5.3.0</div>
+    <div class="flap bottom">of Apache Solr 5.3.1</div>
   </div>
-  <div class="download-desc">Apache Solr 5.3.0</div></p>
+  <div class="download-desc">Apache Solr 5.3.1</div></p>
 <h1 id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="./core/">Lucene Core (Java)</a></li>
