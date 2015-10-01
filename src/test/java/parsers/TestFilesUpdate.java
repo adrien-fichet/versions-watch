@@ -40,6 +40,7 @@ public class TestFilesUpdate {
             URL url=new URL(urlString);
             URLConnection conn = url.openConnection();
             conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0");
+            conn.setConnectTimeout(1000);
             conn.connect();
             FileUtils.copyInputStreamToFile(conn.getInputStream(), new File(resourcePath + dest));
         } catch (IOException e) {
