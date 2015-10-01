@@ -233,7 +233,7 @@ public class Conf {
         configurations.put("i3", new VersionParserConfiguration(
                 "https://i3wm.org/",
                 "#download > a",
-                "Download the latest version (([0-9]+\\.){2}[0-9]+)"
+                "Download the latest version (([0-9]+\\.){1,2}[0-9]+)"
         ));
         configurations.put("linux", new VersionParserConfiguration(
                 "https://www.kernel.org/",
@@ -324,9 +324,9 @@ public class Conf {
                 "Latest version is CoreOS (([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("safari", new VersionParserConfiguration(
-                "https://en.wikipedia.org/wiki/Safari_version_history",
-                "#mw-content-text > table:nth-child(13) > tbody > tr:last-child > td:nth-child(1)",
-                "(([0-9]+\\.){2}[0-9]+)"
+                "https://en.wikipedia.org/wiki/Safari_(web_browser)",
+                "#mw-content-text > table:nth-child(1) > tbody > tr:nth-child(5) > td > p:nth-child(1)",
+                "(([0-9]+\\.){1,2}[0-9]+) "
         ));
         configurations.put("drupal", new VersionParserConfiguration(
                 "https://www.drupal.org/download",
@@ -458,7 +458,7 @@ public class Conf {
         configurations.put("dart", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Dart_(programming_language)",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
-                "(([0-9]+\\.){2}[0-9]+)(\\[| )"
+                "(([0-9]+\\.){1,2}[0-9]+)(\\[| )"
         ));
         configurations.put("backbone", new VersionParserConfiguration(
                 "http://backbonejs.org/",
@@ -467,8 +467,8 @@ public class Conf {
         ));
         configurations.put("naxsi", new VersionParserConfiguration(
                 "https://github.com/nbs-system/naxsi/releases",
-                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
-                "naxsi-([0-9]+\\.[0-9]+)(rc[0-9]+)?"
+                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-meta > ul > li:nth-child(1) > a > span.css-truncate-target",
+                "(([0-9]+\\.[0-9]+)(rc[0-9]+)?)"
         ));
         configurations.put("memcached", new VersionParserConfiguration(
                 "http://memcached.org/",
