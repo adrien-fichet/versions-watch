@@ -237,59 +237,71 @@ Bram has visited the Vim charity project, read about it in his
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr>
     <td class="lightbg"><span class="txth1">&nbsp;&nbsp;Recent Script Updates</span></td>
-    <td nowrap class="lightbg" align="right"><small>&nbsp;5,146 scripts, 10,623,011 downloads&nbsp;</small></td>
+    <td nowrap class="lightbg" align="right"><small>&nbsp;5,148 scripts, 10,625,695 downloads&nbsp;</small></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 </table>
 <table cellpadding="0" cellspacing="0" border="0">
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-10-01]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5036">vim-chip8</a> : Syntax highlighting and indentation rules for Chip8 assembly.</td>
+    <td class="newsdate" nowrap valign="top">[2015-10-02]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5254">Typer</a> : This is VIM typing file plugin to simulate work</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.0) * add support for the XO-Chip
-* increase hex number length to 4 digits
-* add highlighting and indentation support for 'if ... begin' blocks
-* support nesting auto-indentation with loops and if statements
-* fix highlighting rules for 'scroll-down', 'scroll-left', and 'scroll-right'
-* include function highlighting for main chip8 functions by default
-* don't auto-indent labels until typing a sp... - <i>jackie kircher</i></td>
+    <td>(1.0) Initial upload - <i>Mikhail Brown</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-10-01]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5056">css_color</a> : Preview colours in source code while editing</td>
+    <td class="newsdate" nowrap valign="top">[2015-10-02]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5253">autolinker</a> : Automatic links for any filetype (e.g. for a markdown/latex based wiki)</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(66688d805b) support for JSON and YAML; correct terminal colours for colour keywords - <i>Aristotle Pagaltzis</i></td>
+    <td>(0.01) Initial upload - <i>Tom Link</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-09-30]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5252">vimagit</a> : vimagit is an attempt to reproduce the magnificent emacs Magit plugin to vim.</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.0) Initial upload - <i>Jerome Reybert</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-09-30]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5226">quick-scope</a> : Highlights the optimal characters to target for the &quot;f&quot; key and family</td>
+    <td class="newsdate" nowrap valign="top">[2015-10-02]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=1863">tlib</a> : Some utility functions</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(1.1.1) Fixed
-- Works after sourcing .vimrc
-- Works after changing colorscheme
- - <i>Brian Le</i></td>
+    <td>(1.14) - FIX #18: Make sure the scratch isn't readonly
+- FIX: display filter (properly handle backslashes)
+- Remove loaded_* guard from autoload files
+- tlib#notify#Echo(): minor changes
+- tlib#file#Edit() (used by tlib#agent#ViewFile)
+- tlib#buffer#GetList(): Buffer numbers are converted to numbers
+- tlib#sys: Change order of functions (move tlib#sys#IsCygwinBin to the (possibly FIX #19)
+- g:tlib#sys#ch... - <i>Tom Link</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-09-30]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=4749">vim-gains-nrepl</a> : Simple vim plugin for dealing with nrepl</td>
+    <td class="newsdate" nowrap valign="top">[2015-10-02]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=1173">tComment</a> : An extensible & universal comment plugin that also handles embedded filetypes</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.3) Ability to send repl output to a buffer. Minor bugfixes. - <i>Georgy Kibardin</i></td>
+    <td>(3.07) - FIX #137: Prefer // for rust comments
+- FIX #138: Support for jinja filetype (see <a target="_blank" href="https://github.com/Glench/Vim-Jinja2-Syntax">https://github.com/Glench/Vim-Jinja2-Syntax</A>)
+- FIX #140: s:MapOp(): Don't evaluate registers to define op functions
+- s:MapOp: Remove count argument
+- support Tupfile comments
+- Merge pull request #141 from cfillion/tup-comments
+- FIX #123: GuessFileType(): don't use indent(); properly handle tabs
+- GuessFileType()... - <i>Tom Link</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-10-02]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5101">enabler</a> : Load plugins/bundles as needed</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(1.00) - enabler#helptags#Generate(): Show message
+- enabler#Command(): Add extra check for &quot;AddUndefine()&quot;
+- Use case sensitive matches for filenames
+- enabler#AutoFiletype(): Call enabler#Plugin() with load_now = 1
+- NEW :Enablecommands, enabler#Commands()
+- NEW :Enableautocmd EVENT PATTERN PLUGIN[#GROUP]...
+- Support for ftbundles/ftplugins
+MD5 checksum: a51dfad95cc0d93ce59868deef5cf9fd - <i>Tom Link</i></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr><td colspan="2"><a href="scripts/index.php">more recent</a> | 
@@ -342,7 +354,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         <tr valign="top">
           <td class="sidebar" align='center'>
              &nbsp;<br>
-	     <a href="http://iccf-holland.org/clickkindle.html"><img src="/images/kindle_125x125.gif" alt="Buy a book, help Uganda, learn Vim"></a>
+	     <a href="http://iccf-holland.org/clickkindle.html"><img src="/images/kindle-fire-125x125.jpg" alt="Buy a book, help Uganda, learn Vim"></a>
 	     <br>
 	     <a href="http://iccf-holland.org/click1.html">Buy at Amazon<br>Help Uganda</a>
           </td>

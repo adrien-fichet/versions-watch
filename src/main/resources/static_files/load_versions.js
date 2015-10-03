@@ -175,7 +175,8 @@ var versions = [
       { "id": "maven", "name": "Maven" },
       { "id": "nexus", "name": "Nexus" },
       { "id": "libreoffice", "name": "LibreOffice" },
-      { "id": "audacity", "name": "Audacity" }
+      { "id": "audacity", "name": "Audacity" },
+      { "id": "abletonlive", "name": "Ableton Live" }
     ]
   }
 ];

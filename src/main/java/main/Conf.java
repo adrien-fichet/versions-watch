@@ -33,7 +33,7 @@ public class Conf {
         configurations.put("eclipse", new VersionParserConfiguration(
                 "http://www.eclipse.org/downloads",
                 "#descriptionText",
-                "Eclipse [a-zA-Z]+ \\(([0-9]+\\.[0-9]+)\\) Release"
+                "Eclipse [a-zA-Z0-9.]+ \\((([0-9]+\\.){1,2}[0-9]+)\\) Release"
         ));
         configurations.put("mysql", new VersionParserConfiguration(
                 "https://dev.mysql.com/doc/",
@@ -504,6 +504,11 @@ public class Conf {
                 "https://github.com/kubernetes/kubernetes/releases",
                 "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
                 "Release v?(([0-9]+\\.){2}[0-9]+)"
+        ));
+        configurations.put("abletonlive", new VersionParserConfiguration(
+                "https://en.wikipedia.org/wiki/Ableton_Live",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "(([0-9]+\\.){1,2}[0-9]+) /"
         ));
     }
 

@@ -13,13 +13,13 @@ public class ExpectedVersions {
         expectedVersions.put("spring", "4.2.1");
         expectedVersions.put("apache", "2.4.16");
         expectedVersions.put("debian", "8.2");
-        expectedVersions.put("eclipse", "4.5");
+        expectedVersions.put("eclipse", "4.5.1");
         expectedVersions.put("git", "2.6.0");
         expectedVersions.put("javase", "8u60");
         expectedVersions.put("jenkins", "1.631");
         expectedVersions.put("mysql", "5.6");
         expectedVersions.put("netbeans", "8.0.2");
-        expectedVersions.put("php", "5.6.13");
+        expectedVersions.put("php", "5.6.14");
         expectedVersions.put("puppet", "4.2.0");
         expectedVersions.put("sublimetext", "2.0.2");
         expectedVersions.put("subversion", "1.9.0");
@@ -44,7 +44,7 @@ public class ExpectedVersions {
         expectedVersions.put("gatling", "2.1.7");
         expectedVersions.put("scala", "2.11.7");
         expectedVersions.put("selenium", "2.47.1");
-        expectedVersions.put("virtualbox", "5.0.4");
+        expectedVersions.put("virtualbox", "5.0.6");
         expectedVersions.put("windows", "10.0.10240");
         expectedVersions.put("centos", "7.1");
         expectedVersions.put("fedora", "22");
@@ -63,14 +63,14 @@ public class ExpectedVersions {
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "45.0");
-        expectedVersions.put("firefox", "41.0");
+        expectedVersions.put("firefox", "41.0.1");
         expectedVersions.put("gnomeshell", "3.17.92");
         expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.8.1");
         expectedVersions.put("kali", "2.0");
         expectedVersions.put("visualstudio", "2015 RTM");
         expectedVersions.put("bower", "1.5.3");
-        expectedVersions.put("angularjs", "1.4.6");
+        expectedVersions.put("angularjs", "1.4.7");
         expectedVersions.put("curator", "3.3.0");
         expectedVersions.put("coreos", "815.0.0");
         expectedVersions.put("safari", "9.0");
@@ -85,13 +85,13 @@ public class ExpectedVersions {
         expectedVersions.put("lighttpd", "1.4.37");
         expectedVersions.put("bootstrap", "3.3.5");
         expectedVersions.put("ruby", "2.2.3");
-        expectedVersions.put("zsh", "5.0.7");
+        expectedVersions.put("zsh", "5.1.1");
         expectedVersions.put("ansible", "1.9.2");
         expectedVersions.put("polymer", "1.1.2");
         expectedVersions.put("fail2ban", "0.9.3");
         expectedVersions.put("go", "1.5.1");
         expectedVersions.put("metasploit", "4.11.4");
-        expectedVersions.put("varnish", "4.0.3");
+        expectedVersions.put("varnish", "4.1.0");
         expectedVersions.put("perl", "5.22.0");
         expectedVersions.put("lxc", "1.0");
         expectedVersions.put("nessus", "6.3.7");
@@ -109,6 +109,7 @@ public class ExpectedVersions {
         expectedVersions.put("chef", "12.2.1");
         expectedVersions.put("vaadin", "7.5.6");
         expectedVersions.put("kubernetes", "1.0.6");
+        expectedVersions.put("abletonlive", "9.2.2");
     }
 
     public Map<String, String> getExpectedVersions() {

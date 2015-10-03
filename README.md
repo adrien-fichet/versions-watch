@@ -123,13 +123,13 @@ Then :
 - [x] chef
 - [x] vaadin
 - [x] kubernetes
+- [x] ableton live
 - [ ] emberjs
 - [ ] openbox
 - [ ] openbsd
 - [ ] dropbox
 - [ ] salt
 - [ ] mercurial
-- [ ] ableton live
 
 ### Ideas
 - version numbers should also be links to versions websites
