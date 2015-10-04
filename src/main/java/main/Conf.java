@@ -516,9 +516,14 @@ public class Conf {
                 "(([0-9]+\\.){1,2}[0-9]+):"
         ));
         configurations.put("mercurial", new VersionParserConfiguration(
-                "http://www.mercurial-scm.org/sources.js",
+                "https://www.mercurial-scm.org/sources.js",
                 "*",
                 "Mercurial (([0-9]\\.){2}[0-9]+)? source release"
+        ));
+        configurations.put("rancheros", new VersionParserConfiguration(
+                "https://github.com/rancher/os",
+                "#readme > article > p:nth-child(7) > strong",
+                "v(([0-9]\\.){2}[0-9]+) - "
         ));
     }
 

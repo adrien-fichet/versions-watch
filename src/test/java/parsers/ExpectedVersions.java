@@ -112,6 +112,7 @@ public class ExpectedVersions {
         expectedVersions.put("abletonlive", "9.2.2");
         expectedVersions.put("openbox", "3.6.1");
         expectedVersions.put("mercurial", "3.5.2");
+        expectedVersions.put("rancheros", "0.3.3");
     }
 
     public Map<String, String> getExpectedVersions() {

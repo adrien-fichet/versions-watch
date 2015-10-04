@@ -9,7 +9,8 @@ var versions = [
       { "id": "centos", "name": "CentOS" },
       { "id": "fedora", "name": "Fedora" },
       { "id": "kali", "name": "Kali" },
-      { "id": "coreos", "name": "CoreOS" }
+      { "id": "coreos", "name": "CoreOS" },
+      { "id": "rancheros", "name": "Rancher OS" }
     ]
   }, {
     "category": { "id": "elk", "name": "ELK" },

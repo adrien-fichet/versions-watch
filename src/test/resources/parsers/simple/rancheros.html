@@ -1,0 +1,1731 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>rancher/os · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="rancher/os" name="twitter:title" /><meta content="os - The easiest way to run Docker in production" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/9343010?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/9343010?v=3&amp;s=400" property="og:image" /><meta content="rancher/os" property="og:title" /><meta content="https://github.com/rancher/os" property="og:url" /><meta content="os - The easiest way to run Docker in production" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="4ECE7D82:108C:15C99F1C:5610D273" name="octolytics-dimension-request_id" />
+
+<meta content="Rails, view, files#disambiguate" data-pjax-transient="true" name="analytics-event" />
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+    <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+
+
+
+
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+      <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="beugBqLSiVKbPIuYFs9/HOlMw//RUsbbBdIXnFy6X3CLT1APfORLtkKOj6S/VBnauFmCdVil6p4ybjLSVHs8pQ==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-7d448613a60a84dcd1e1f4f2d4939266979ea193aa79a9525436f58f3f66b98c.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-4a69aa85ab5a62a47bdaae736e455ee040443ccfb3564d1472a088d07f9a1cbd.css" media="all" rel="stylesheet" />
+    
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="a9fc5a900b5ca90c888ebebc183cea5a">
+
+      
+  <meta name="description" content="os - The easiest way to run Docker in production">
+  <meta name="go-import" content="github.com/rancher/os git https://github.com/rancher/os.git">
+
+  <meta content="9343010" name="octolytics-dimension-user_id" /><meta content="rancher" name="octolytics-dimension-user_login" /><meta content="28796010" name="octolytics-dimension-repository_id" /><meta content="rancher/os" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="28796010" name="octolytics-dimension-repository_network_root_id" /><meta content="rancher/os" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/rancher/os/commits/master.atom" rel="alternate" title="Recent Commits to os:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out   env-production windows vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Francher%2Fos" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/rancher/os/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/rancher/os/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Francher%2Fos"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/rancher/os/watchers">
+    122
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Francher%2Fos"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/rancher/os/stargazers">
+      1,597
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Francher%2Fos"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+
+    <a href="/rancher/os/network" class="social-count">
+      115
+    </a>
+  </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/rancher" class="url fn" itemprop="url" rel="author"><span itemprop="title">rancher</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/rancher/os" data-pjax="#js-repo-pjax-container">os</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline with-full-navigation">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/rancher/os/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/rancher/os" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /rancher/os">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/rancher/os/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /rancher/os/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/rancher/os/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /rancher/os/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/rancher/os/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /rancher/os/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/rancher/os/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /rancher/os/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3 class="text-small"><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/rancher/os.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3 class="text-small"><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/rancher/os" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<div class="clone-options text-small">You can clone with
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="e2ec3ecc857145d50c245920605ef8f9310d8f33" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/Le/WMq04SBbyUbyMyxbTJxaqM7Fw7puYF5BOuKYGJ/qy0rnE3xRdJw/TM3Q0YA81Jov4xY2qcPXJdsQ12/L0Q==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="e2ec3ecc857145d50c245920605ef8f9310d8f33" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ae1pkWsTM7Fqw7d2nVGdbbzCwe8OwsW91ZJzj9Uvqvld1QxftBujV03eBPDyO4f9KC8+w3oDsQimnyzlXVXRbQ==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</div>
+  <a href="https://windows.github.com" class="btn btn-sm sidebar-button" title="Save rancher/os to your computer and use it in GitHub Desktop." aria-label="Save rancher/os to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-desktop-download"></span>
+    Clone in Desktop
+  </a>
+
+              <a href="/rancher/os/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of rancher/os as a zip file"
+                 title="Download the contents of rancher/os as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<span id="js-show-full-navigation"></span>
+
+  <div class="repository-meta js-details-container ">
+    <div class="repository-description">
+      The easiest way to run Docker in production
+    </div>
+
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/rancher/os/commits/master">
+            <span class="octicon octicon-history"></span>
+            <span class="num text-emphasized">
+              721
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/rancher/os/branches">
+          <span class="octicon octicon-git-branch"></span>
+          <span class="num text-emphasized">
+            5
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/rancher/os/releases">
+          <span class="octicon octicon-tag"></span>
+          <span class="num text-emphasized">
+            39
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/rancher/os/graphs/contributors">
+    <span class="octicon octicon-organization"></span>
+    <span class="num text-emphasized">
+      18
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/rancher/os/search?l=go">
+                <span class="color-block language-color" style="background-color:#375eab;"></span>
+                <span class="lang">Go</span>
+                <span class="percent">80.4%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/rancher/os/search?l=bash">
+                <span class="color-block language-color" style="background-color:#89e051;"></span>
+                <span class="lang">Shell</span>
+                <span class="percent">13.3%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/rancher/os/search?l=python">
+                <span class="color-block language-color" style="background-color:#3572A5;"></span>
+                <span class="lang">Python</span>
+                <span class="percent">5.6%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/rancher/os/search?l=makefile">
+                <span class="color-block language-color" style="background-color:#427819;"></span>
+                <span class="lang">Makefile</span>
+                <span class="percent">0.7%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details">
+    <span class="language-color" aria-label="Go 80.4%" style="width:80.4%; background-color:#375eab;" itemprop="keywords">Go</span>
+    <span class="language-color" aria-label="Shell 13.3%" style="width:13.3%; background-color:#89e051;" itemprop="keywords">Shell</span>
+    <span class="language-color" aria-label="Python 5.6%" style="width:5.6%; background-color:#3572A5;" itemprop="keywords">Python</span>
+    <span class="language-color" aria-label="Makefile 0.7%" style="width:0.7%; background-color:#427819;" itemprop="keywords">Makefile</span>
+  </div>
+
+<include-fragment src="/rancher/os/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+
+  <div class="file-navigation in-mid-page">
+  <a href="/rancher/os/find/master"
+        class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s right"
+        data-pjax
+        data-hotkey="t"
+        aria-label="Quickly jump between files"
+        data-ga-click="Repository, find file, location:repo overview">
+    <span class="octicon octicon-list-unordered"></span>
+  </a>
+    <a href="/rancher/os/compare" aria-label="Compare, review, create a pull request" class="btn btn-sm btn-primary tooltipped tooltipped-se left compare-button" aria-label="Compare &amp; review" data-pjax data-ga-click="Repository, go to compare view, location:repo overview; icon:git-compare">
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/rancher/os/tree/0.4"
+               data-name="0.4"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="0.4">
+                0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/rancher/os/tree/broken-console"
+               data-name="broken-console"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="broken-console">
+                broken-console
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/rancher/os/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/rancher/os/tree/revert-524-installer-alpine"
+               data-name="revert-524-installer-alpine"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="revert-524-installer-alpine">
+                revert-524-installer-alpine
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/rancher/os/tree/revert-529-storage"
+               data-name="revert-529-storage"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="revert-529-storage">
+                revert-529-storage
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc9"
+                 data-name="v0.4.0-rc9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc9">v0.4.0-rc9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc8"
+                 data-name="v0.4.0-rc8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc8">v0.4.0-rc8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc7"
+                 data-name="v0.4.0-rc7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc7">v0.4.0-rc7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc6"
+                 data-name="v0.4.0-rc6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc6">v0.4.0-rc6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc5"
+                 data-name="v0.4.0-rc5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc5">v0.4.0-rc5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc4"
+                 data-name="v0.4.0-rc4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc4">v0.4.0-rc4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc3"
+                 data-name="v0.4.0-rc3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc3">v0.4.0-rc3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc2"
+                 data-name="v0.4.0-rc2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc2">v0.4.0-rc2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.4.0-rc1"
+                 data-name="v0.4.0-rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.4.0-rc1">v0.4.0-rc1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.3-rc1"
+                 data-name="v0.3.3-rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.3-rc1">v0.3.3-rc1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.3"
+                 data-name="v0.3.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.3">v0.3.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.2-rc3"
+                 data-name="v0.3.2-rc3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.2-rc3">v0.3.2-rc3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.2-rc2"
+                 data-name="v0.3.2-rc2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.2-rc2">v0.3.2-rc2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.2-rc1"
+                 data-name="v0.3.2-rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.2-rc1">v0.3.2-rc1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.2"
+                 data-name="v0.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.2">v0.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.1-rc4"
+                 data-name="v0.3.1-rc4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.1-rc4">v0.3.1-rc4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.1-rc3"
+                 data-name="v0.3.1-rc3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.1-rc3">v0.3.1-rc3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.1-rc2"
+                 data-name="v0.3.1-rc2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.1-rc2">v0.3.1-rc2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.1-rc1"
+                 data-name="v0.3.1-rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.1-rc1">v0.3.1-rc1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.1"
+                 data-name="v0.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.1">v0.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.0-rc4"
+                 data-name="v0.3.0-rc4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.0-rc4">v0.3.0-rc4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.0-rc3"
+                 data-name="v0.3.0-rc3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.0-rc3">v0.3.0-rc3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.0-rc2"
+                 data-name="v0.3.0-rc2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.0-rc2">v0.3.0-rc2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.0-rc1"
+                 data-name="v0.3.0-rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.0-rc1">v0.3.0-rc1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.3.0"
+                 data-name="v0.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.3.0">v0.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.2.1"
+                 data-name="v0.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.2.1">v0.2.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.2.0-rc3"
+                 data-name="v0.2.0-rc3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.2.0-rc3">v0.2.0-rc3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.2.0-rc2"
+                 data-name="v0.2.0-rc2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.2.0-rc2">v0.2.0-rc2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.2.0-rc1"
+                 data-name="v0.2.0-rc1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.2.0-rc1">v0.2.0-rc1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.2.0"
+                 data-name="v0.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.2.0">v0.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.1.2"
+                 data-name="v0.1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.1.2">v0.1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.1.1"
+                 data-name="v0.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.1.1">v0.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.1.0"
+                 data-name="v0.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.1.0">v0.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.0.7"
+                 data-name="v0.0.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.7">v0.0.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.0.6"
+                 data-name="v0.0.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.6">v0.0.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.0.5"
+                 data-name="v0.0.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.5">v0.0.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.0.3"
+                 data-name="v0.0.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.3">v0.0.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.0.2"
+                 data-name="v0.0.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.2">v0.0.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/rancher/os/tree/v0.0.1"
+                 data-name="v0.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.0.1">v0.0.1</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="breadcrumb"><span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/rancher/os" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">os</span></a></span></span><span class="separator">/</span>
+  <span class="tooltipped tooltipped-e disabled text-muted" aria-label="You must be signed in to make or propose changes">
+    <span class="octicon octicon-plus"></span>
+  </span>
+</div>
+</div>
+
+
+
+
+
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/rancher/os/commit/4899ccd89c1625c18d2d7b34ff61884ee529d040" class="message" data-pjax="true" title="Merge pull request #596 from ibuildthecloud/rkt
+
+Setup paths for rkt">Merge pull request</a> <a href="https://github.com/rancher/os/pull/596" class="issue-link" title="Setup paths for rkt">#596</a> <a href="/rancher/os/commit/4899ccd89c1625c18d2d7b34ff61884ee529d040" class="message" data-pjax="true" title="Merge pull request #596 from ibuildthecloud/rkt
+
+Setup paths for rkt">from ibuildthecloud/rkt</a>
+        <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+      <div class="commit-desc"><pre class="text-small">Setup paths for rkt</pre></div>
+    <div class="commit-meta">
+      <button aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link tooltipped tooltipped-s" data-clipboard-text="4899ccd89c1625c18d2d7b34ff61884ee529d040" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/rancher/os/commit/4899ccd89c1625c18d2d7b34ff61884ee529d040" class="sha-block" data-pjax>latest commit <span class="sha">4899ccd89c</span></a>
+
+      <div class="authorship">
+        <img alt="@ibuildthecloud" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/1754002?v=3&amp;s=40" width="20" />
+        <span class="author-name"><a href="/ibuildthecloud" rel="contributor">ibuildthecloud</a></span>
+        authored <time class="updated" datetime="2015-10-04T06:11:05Z" is="relative-time">Oct 3, 2015</time>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="file-wrap">
+  <a href="/rancher/os/tree/4899ccd89c1625c18d2d7b34ff61884ee529d040" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/Godeps" class="js-directory-link js-navigation-open" id="6ff1fd4c7b3bd7f44fb8b1e48708344f-a62ee3f1e49ebd67c25c2c0356ccb7f298d599ea" title="Godeps">Godeps</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/a504885311a7860bd109bd5f1d56c667d8c0f253" class="message" data-pjax="true" title="Bump docker-from-scratch to fix /dev/shm and /dev/mqueue">Bump docker-from-scratch to fix /dev/shm and /dev/mqueue</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-02T07:55:06Z" is="time-ago">Oct 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/assets" class="js-directory-link js-navigation-open" id="32bb636196f91ed59d7a49190e26b42c-1329b8fafaaacca2ffeb60cde9c59cb2ec5db805" title="assets">assets</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/950158823c3ef68e25f9aff9015f0fe39e5de150" class="message" data-pjax="true" title="run integration tests as part of the build">run integration tests as part of the build</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-04T14:30:16Z" is="time-ago">Sep 4, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/cmd" class="js-directory-link js-navigation-open" id="dfff0a7fa1a55c8c1a4966c19f6da452-2bea828ad64075d6200de24891a70f0774acdc0e" title="cmd">cmd</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/2966ef8e5d3c13f17921d63166cb672bcba01632" class="message" data-pjax="true" title="Fix loading network files from `ros service` compose commands">Fix loading network files from `ros service` compose commands</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-02T07:57:13Z" is="time-ago">Oct 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/compose" class="js-directory-link js-navigation-open" id="13b3f3e76ed018a105bdeac77aa8967e-6904ce29ddb5d459c907fd5caba4c31cb05499f4" title="compose">compose</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/2966ef8e5d3c13f17921d63166cb672bcba01632" class="message" data-pjax="true" title="Fix loading network files from `ros service` compose commands">Fix loading network files from `ros service` compose commands</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-02T07:57:13Z" is="time-ago">Oct 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/config" class="js-directory-link js-navigation-open" id="2245023265ae4cf87d02c8b6ba991139-430e104c28b6e9169108b77d1227804076ffbdbb" title="config">config</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/338abb758fa830058063d2faadcaef5605b34d3b" class="message" data-pjax="true" title="Reshuffle cloud-config
+
+Read files cloud-config.d in alphanumeric order, then cloud-config.yml
+`ros config` writes to cloud-config.yml (and cloud-config.d/private.yml - only private keys)
+
+Add (c *CloudConfig) Save() method, use it to save the changed config
+
+Read and apply metadata as part of LoadConfig()
+
+Simplify ros config export logic">Reshuffle cloud-config</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-30T18:59:22Z" is="time-ago">Sep 30, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/docker" class="js-directory-link js-navigation-open" id="05b6053c41a2130afd6fc3b158bda4e6-e553059bc379c8767e39cd3a43d626fa30e7ba58" title="docker">docker</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/04472c7552733ad31a8ebad58d238455c9f184b5" class="message" data-pjax="true" title="Do not link to services that do not exist in the project
+
+Fixes #495">Do not link to services that do not exist in the project</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-26T09:50:13Z" is="time-ago">Aug 26, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/docs" class="js-directory-link js-navigation-open" id="e3e2a9bfd88566b05001b02a3f51d286-3a33c3eecedde3e48000375772d3ee7c231e9138" title="docs">docs</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/76682ecf7499c6bbe256e8c4994db3224b93b891" class="message" data-pjax="true" title="Delete .DS_Store">Delete .DS_Store</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-04-24T08:29:35Z" is="time-ago">Apr 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/init" class="js-directory-link js-navigation-open" id="e37f0136aa3ffaf149b351f6a4c948e9-b7209709d8286e8c1b1b7ebc0ce5233692a3d87b" title="init">init</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/2966ef8e5d3c13f17921d63166cb672bcba01632" class="message" data-pjax="true" title="Fix loading network files from `ros service` compose commands">Fix loading network files from `ros service` compose commands</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-02T07:57:13Z" is="time-ago">Oct 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/scripts" class="js-directory-link js-navigation-open" id="d6c5855a62cf32a4dadbc2831f0f295f-74451dd801c940284dbfa016e882ecc56473a1a5" title="scripts">scripts</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/febd78f1dd46ec8671a1cc7193911db063b2aba1" class="message" data-pjax="true" title="Add helper script to convert Ubuntu deb to kernel tgz">Add helper script to convert Ubuntu deb to kernel tgz</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-02T08:02:44Z" is="time-ago">Oct 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/tests/integration" class="js-directory-link js-navigation-open" id="591b5cc833979c4c4397e50debdcd153-46eeefa31c6b4936ab799a7ab191b7121d863555" title="This path skips through empty directories"><span class="simplified-path">tests/</span>integration</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/43795fe28393cdb154f4b5f93471b125bea501e5" class="message" data-pjax="true" title="add integration test">add integration test</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-01T11:55:34Z" is="time-ago">Oct 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/tree/master/util" class="js-directory-link js-navigation-open" id="05c7e24700502a079cdd88012b5a76d3-1565d3faeb2ee5a491df3ff59347c684b0fbc716" title="util">util</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/338abb758fa830058063d2faadcaef5605b34d3b" class="message" data-pjax="true" title="Reshuffle cloud-config
+
+Read files cloud-config.d in alphanumeric order, then cloud-config.yml
+`ros config` writes to cloud-config.yml (and cloud-config.d/private.yml - only private keys)
+
+Add (c *CloudConfig) Save() method, use it to save the changed config
+
+Read and apply metadata as part of LoadConfig()
+
+Simplify ros config export logic">Reshuffle cloud-config</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-30T18:59:22Z" is="time-ago">Sep 30, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/.dockerignore" class="js-directory-link js-navigation-open" id="f7c5b4068637e2def526f9bbc7200c4e-4d50ab09c3bb93c6e8336dff811a61b4cc9834e6" title=".dockerignore">.dockerignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/950158823c3ef68e25f9aff9015f0fe39e5de150" class="message" data-pjax="true" title="run integration tests as part of the build">run integration tests as part of the build</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-04T14:30:16Z" is="time-ago">Sep 4, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/.dockerignore.docker" class="js-directory-link js-navigation-open" id="37537814909449c0185ec136a99b454f-0b3eb86daeda899ec744c6787aead3bb2ed595a6" title=".dockerignore.docker">.dockerignore.docker</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/950158823c3ef68e25f9aff9015f0fe39e5de150" class="message" data-pjax="true" title="run integration tests as part of the build">run integration tests as part of the build</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-04T14:30:16Z" is="time-ago">Sep 4, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/.drone.yml" class="js-directory-link js-navigation-open" id="3216dfff0ed3e301453e6799e8c367e2-35221626c7d5965033d66f2e6701ca2d2f769949" title=".drone.yml">.drone.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/4fd46348e913d84312005d28f9620dc2d5755ef8" class="message" data-pjax="true" title="update to rancher/dind:v0.6.0 in .drone.yml">update to rancher/dind:v0.6.0 in .drone.yml</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-13T08:25:46Z" is="time-ago">Aug 13, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/.gitignore" class="js-directory-link js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-f3fbff37aec6badf00a0c8cc84960a4d5b38da1f" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/ab8236bdac946b338d2a52fe1e4b3cdfa31eaaac" class="message" data-pjax="true" title="Support kernels from local directories, but just remote URLs">Support kernels from local directories, but just remote URLs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-01T22:39:20Z" is="time-ago">Oct 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/.package" class="js-directory-link js-navigation-open" id="72268258360b8ad29634f96bb17f3666-f6668c739e3f1857221c920c53e57a5423fc1f5c" title=".package">.package</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/df4a126175a00b50984be2a1959f9bf32e780cd5" class="message" data-pjax="true" title="Initial commit">Initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-09T04:38:37Z" is="time-ago">Feb 8, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/.wrap-docker-args" class="js-directory-link js-navigation-open" id="04411f71ec4fd6a7221ec33e984ec6cc-3c1a8ef1d5418b676fd33b49a124f96a0ade6255" title=".wrap-docker-args">.wrap-docker-args</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/df4a126175a00b50984be2a1959f9bf32e780cd5" class="message" data-pjax="true" title="Initial commit">Initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-09T04:38:37Z" is="time-ago">Feb 9, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/Dockerfile" class="js-directory-link js-navigation-open" id="3254677a7917c6c01f55212f86c57fbf-c73403e26226080e3804d3a08936a0078aa79f03" title="Dockerfile">Dockerfile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/bce7845dc51372de19ac28d9805c135f3cea5761" class="message" data-pjax="true" title="factor out build configuration to build.conf">factor out build configuration to build.conf</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-08T07:14:06Z" is="time-ago">Sep 8, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/Dockerfile.build" class="js-directory-link js-navigation-open" id="d92c0cc6cc3b84dda3c92547bcf56981-ffff4c42f825130480287d767a53810f5aa11e4f" title="Dockerfile.build">Dockerfile.build</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/f1c7aa38c14ab14387f13e06282425adc832c9ba" class="message" data-pjax="true" title="add rancher/os (os-installer) Dockerfile
+
+and installer scripts">add rancher/os (os-installer) Dockerfile</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-14T13:23:50Z" is="time-ago">Aug 14, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/Dockerfile.build-base" class="js-directory-link js-navigation-open" id="170bb2721f78cde1f731dab0d5e2cdac-596590349e812e29472bfb314ab80c18e884abb1" title="Dockerfile.build-base">Dockerfile.build-base</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/25fa1b769d8b6cfd64ed4dde68fe5583f280d1af" class="message" data-pjax="true" title="add `--qind` to `scripts/run` and `scripts/ssh`
+
+also add `--fresh` to `scripts/run` to run with a clean state HDD,
+make `--qemu` the default in `scripts/run` and `scripts/ssh`">add `--qind` to `scripts/run` and `scripts/ssh`</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-23T05:20:28Z" is="time-ago">Sep 23, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/LICENSE" class="js-directory-link js-navigation-open" id="9879d6db96fd29134fc802214163b95a-f433b1a53f5b830a205fd2df78e2b34974656c7b" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/01212c71641fcf1ca70d74bbff9959d548c1526d" class="message" data-pjax="true" title="Remove incorrect copyright">Remove incorrect copyright</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-25T17:22:56Z" is="time-ago">Feb 25, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/Makefile" class="js-directory-link js-navigation-open" id="b67911656ef5d18c4ae36cb6741b7965-9d408ddeb3f2f648e05dd76c83eecbc1b35daadf" title="Makefile">Makefile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/39e2e6c3b39914bff070e717983904500248b1a6" class="message" data-pjax="true" title="speed up the full build by swapping lzma with gzip if run with --dev flag">speed up the full build by swapping lzma with gzip if run with --dev …</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-23T05:22:55Z" is="time-ago">Sep 23, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/Makefile.docker" class="js-directory-link js-navigation-open" id="e7e166af33e1367c8f0e4565a1eb67b8-067aa0e3db8988c338cb9f5f0b5d7aa2b7713d51" title="Makefile.docker">Makefile.docker</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/ab8236bdac946b338d2a52fe1e4b3cdfa31eaaac" class="message" data-pjax="true" title="Support kernels from local directories, but just remote URLs">Support kernels from local directories, but just remote URLs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-01T22:39:20Z" is="time-ago">Oct 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/README.md" class="js-directory-link js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-e47051cb336034f3ca61b8ae3a0153597dacc7ff" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/1a6482956eaeeb671bed0f2b0451e8bda0839580" class="message" data-pjax="true" title="Update README.md">Update README.md</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-11T20:47:14Z" is="time-ago">Jul 11, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/build.conf" class="js-directory-link js-navigation-open" id="afc9a7492d16f123d31765d8deae0fc7-bb07bc6ede83d979bab4f32c8278b59708df03e0" title="build.conf">build.conf</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/2058b47fa1a071e3440190399fb06e66a4e99a51" class="message" data-pjax="true" title="bump kernel to Ubuntu-4.2.0-14.16">bump kernel to Ubuntu-4.2.0-14.16</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-01T19:27:35Z" is="time-ago">Oct 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/build.sh" class="js-directory-link js-navigation-open" id="0b83f9dedf40d7356e5ca147a077acb4-4bcfcbfbb9f3bef1bfdb3cf1251bf03151a8c3ca" title="build.sh">build.sh</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/39e2e6c3b39914bff070e717983904500248b1a6" class="message" data-pjax="true" title="speed up the full build by swapping lzma with gzip if run with --dev flag">speed up the full build by swapping lzma with gzip if run with --dev …</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-23T05:22:55Z" is="time-ago">Sep 23, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/main.go" class="js-directory-link js-navigation-open" id="7ddfb3e035b42cd70649cc33393fe32c-0d1bcfd7932580b53b53a194bbd6b5a59649c0c8" title="main.go">main.go</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/72be1d11e6207e007f37f380f7fe416e84d2f960" class="message" data-pjax="true" title="Revert &quot;Revert &quot;Storage&quot;&quot;
+
+This reverts commit 7b2bf9327106e3c25341a2f901f2e5c3367116c7.">Revert "Revert "Storage""</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-27T19:24:26Z" is="time-ago">Aug 27, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/os-config.yml" class="js-directory-link js-navigation-open" id="7f7999fe090d8cf6b38a3150bfa8073c-5d794a04b850a6dc381f4163a737466751b63467" title="os-config.yml">os-config.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/7f15ca482942fa20b5e832c647ecc0a0d408ad5d" class="message" data-pjax="true" title="Setup paths for rkt">Setup paths for rkt</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-04T06:07:56Z" is="time-ago">Oct 3, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/rancher/os/blob/master/releases.yml" class="js-directory-link js-navigation-open" id="6f977150a5d019cfbd16bb7264480d6d-837e11c206a9fcabf082f11e13bf6bb8a3970b1c" title="releases.yml">releases.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/rancher/os/commit/60399d5fe10004fdc53552477b395d0440a495f5" class="message" data-pjax="true" title="bump releases.yml">bump releases.yml</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-30T20:06:20Z" is="time-ago">Oct 1, 2015</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <div id="readme" class="boxed-group flush clearfix announce instapaper_body md">
+    <h3>
+      <span class="octicon octicon-book"></span>
+      README.md
+    </h3>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-rancheros" class="anchor" href="#rancheros" aria-hidden="true"><span class="octicon octicon-link"></span></a>RancherOS</h1>
+
+<p>The smallest, easiest way to run Docker in production at scale.  Everything in RancherOS is a container managed by Docker.  This includes system services such as udev and rsyslog.  RancherOS includes only the bare minimum amount of software needed to run Docker.  This keeps the binary download of RancherOS to about 20MB.  Everything else can be pulled in dynamically through Docker.</p>
+
+<h2><a id="user-content-how-this-works" class="anchor" href="#how-this-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How this works</h2>
+
+<p>Everything in RancherOS is a Docker container.  We accomplish this by launching two instances of
+Docker.  One is what we call the system Docker which runs as PID 1.  System Docker then launches
+a container that runs the user Docker.  The user Docker is then the instance that gets primarily
+used to create containers.  We created this separation because it seemed logical and also
+it would really be bad if somebody did <code>docker rm -f $(docker ps -qa)</code> and deleted the entire OS.</p>
+
+<p><a href="/rancher/os/blob/master/docs/rancheros.png" target="_blank"><img src="/rancher/os/raw/master/docs/rancheros.png" alt="How it works" title="How it works" style="max-width:100%;"></a></p>
+
+<h2><a id="user-content-latest-release" class="anchor" href="#latest-release" aria-hidden="true"><span class="octicon octicon-link"></span></a>Latest Release</h2>
+
+<p><strong>v0.3.3 - Docker 1.7 - Linux 3.19.2</strong></p>
+
+<h3><a id="user-content-iso" class="anchor" href="#iso" aria-hidden="true"><span class="octicon octicon-link"></span></a>ISO</h3>
+
+<p><a href="https://releases.rancher.com/os/latest/rancheros.iso">https://releases.rancher.com/os/latest/rancheros.iso</a><br>
+<a href="https://releases.rancher.com/os/v0.3.3/rancheros.iso">https://releases.rancher.com/os/v0.3.3/rancheros.iso</a>  </p>
+
+<h3><a id="user-content-additional-downloads" class="anchor" href="#additional-downloads" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Downloads</h3>
+
+<p><a href="https://releases.rancher.com/os/latest/machine-rancheros.iso">https://releases.rancher.com/os/latest/machine-rancheros.iso</a><br>
+<a href="https://releases.rancher.com/os/latest/iso-checksums.txt">https://releases.rancher.com/os/latest/iso-checksums.txt</a><br>
+<a href="https://releases.rancher.com/os/latest/rancheros-033-gce-01.tar.gz">https://releases.rancher.com/os/latest/rancheros-033-gce-01.tar.gz</a><br>
+<a href="https://releases.rancher.com/os/latest/vmlinuz">https://releases.rancher.com/os/latest/vmlinuz</a><br>
+<a href="https://releases.rancher.com/os/latest/initrd">https://releases.rancher.com/os/latest/initrd</a>  </p>
+
+<p><a href="https://releases.rancher.com/os/v0.3.3/machine-rancheros.iso">https://releases.rancher.com/os/v0.3.3/machine-rancheros.iso</a><br>
+<a href="https://releases.rancher.com/os/v0.3.3/iso-checksums.txt">https://releases.rancher.com/os/v0.3.3/iso-checksums.txt</a><br>
+<a href="https://releases.rancher.com/os/v0.3.3/rancheros-033-gce-01.tar.gz">https://releases.rancher.com/os/v0.3.3/rancheros-033-gce-01.tar.gz</a><br>
+<a href="https://releases.rancher.com/os/v0.3.3/vmlinuz">https://releases.rancher.com/os/v0.3.3/vmlinuz</a><br>
+<a href="https://releases.rancher.com/os/v0.3.3/initrd">https://releases.rancher.com/os/v0.3.3/initrd</a>  </p>
+
+<p><strong>Note</strong>: you can use <code>http</code> instead of <code>https</code> in the above URLs, e.g. for iPXE.  </p>
+
+<h3><a id="user-content-amazon" class="anchor" href="#amazon" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amazon</h3>
+
+<p>We have 2 different <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html">virtualization types of AMIs</a>. SSH keys are added to the <strong><code>rancher</code></strong> user, so you must log in using the <strong>rancher</strong> user.</p>
+
+<p><strong>Paravirtual</strong></p>
+
+<table><thead>
+<tr>
+<th>Region</th>
+<th>Type</th>
+<th>AMI</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ap-northeast-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchInstanceWizard:ami=ami-748a2774">ami-748a2774</a></td>
+</tr>
+<tr>
+<td>ap-southeast-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchInstanceWizard:ami=ami-3ae8e968">ami-3ae8e968</a></td>
+</tr>
+<tr>
+<td>ap-southeast-2</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchInstanceWizard:ami=ami-3531750f">ami-3531750f</a></td>
+</tr>
+<tr>
+<td>eu-central-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=eu-central-1#launchInstanceWizard:ami=ami-d2b982cf">ami-d2b982cf</a></td>
+</tr>
+<tr>
+<td>eu-west-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchInstanceWizard:ami=ami-fcb7f78b">ami-fcb7f78b</a></td>
+</tr>
+<tr>
+<td>sa-east-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchInstanceWizard:ami=ami-6361ec7e">ami-6361ec7e</a></td>
+</tr>
+<tr>
+<td>us-east-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchInstanceWizard:ami=ami-8f2eede4">ami-8f2eede4</a></td>
+</tr>
+<tr>
+<td>us-west-1</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchInstanceWizard:ami=ami-77a15133">ami-77a15133</a></td>
+</tr>
+<tr>
+<td>us-west-2</td>
+<td>PV</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchInstanceWizard:ami=ami-bfbfb98f">ami-bfbfb98f</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>HVM</strong></p>
+
+<p>HVM was introduced in v0.3.0 and only supports v0.3.0+.</p>
+
+<table><thead>
+<tr>
+<th>Region</th>
+<th>Type</th>
+<th>AMI</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ap-northeast-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchInstanceWizard:ami=ami-788a2778">ami-788a2778</a></td>
+</tr>
+<tr>
+<td>ap-southeast-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchInstanceWizard:ami=ami-26e8e974">ami-26e8e974</a></td>
+</tr>
+<tr>
+<td>ap-southeast-2</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchInstanceWizard:ami=ami-2b317511">ami-2b317511</a></td>
+</tr>
+<tr>
+<td>eu-central-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=eu-central-1#launchInstanceWizard:ami=ami-c8b982d5">ami-c8b982d5</a></td>
+</tr>
+<tr>
+<td>eu-west-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchInstanceWizard:ami=ami-e0b7f797">ami-e0b7f797</a></td>
+</tr>
+<tr>
+<td>sa-east-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchInstanceWizard:ami=ami-9f61ec82">ami-9f61ec82</a></td>
+</tr>
+<tr>
+<td>us-east-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchInstanceWizard:ami=ami-772dee1c">ami-772dee1c</a></td>
+</tr>
+<tr>
+<td>us-west-1</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchInstanceWizard:ami=ami-19a1515d">ami-19a1515d</a></td>
+</tr>
+<tr>
+<td>us-west-2</td>
+<td>HVM</td>
+<td><a href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchInstanceWizard:ami=ami-c5bfb9f5">ami-c5bfb9f5</a></td>
+</tr>
+</tbody></table>
+
+<h3><a id="user-content-google-compute-engine-experimental" class="anchor" href="#google-compute-engine-experimental" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Compute Engine (Experimental)</h3>
+
+<p>We are providing a disk image that users can download and import for use in Google Compute Engine. The image can be obtained from the release artifacts for RancherOS v0.3.0 or later.</p>
+
+<p><a href="https://github.com/rancher/os/releases/download/v0.3.3/rancheros-033-gce-01.tar.gz">Download Image</a></p>
+
+<p>Please follow the directions at our <a href="http://os.docs.rancher.com/docs/running-rancheros/cloud/gce/">docs to launch in GCE</a>. </p>
+
+<h4><a id="user-content-known-issuestodos" class="anchor" href="#known-issuestodos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known issues/ToDos</h4>
+
+<ul>
+<li>Add GCE daemon support. (Manages users)</li>
+</ul>
+
+<h2><a id="user-content-documentation-for-rancheros" class="anchor" href="#documentation-for-rancheros" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation for RancherOS</h2>
+
+<p>Please refer to our <a href="http://os.docs.rancher.com/">RancherOS Documentation</a> website to read all about RancherOS. It has detailed information on how RancherOS works, getting-started and other details.</p>
+
+<h2><a id="user-content-support-discussion-and-community" class="anchor" href="#support-discussion-and-community" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support, Discussion, and Community</h2>
+
+<p>If you need any help with RancherOS or Rancher, please join us at either our <a href="http://forums.rancher.com">Rancher forums</a> or <a href="http://webchat.freenode.net/?channels=rancher">#rancher IRC channel</a> where most of our team hangs out at.</p>
+
+<p>Please submit any <strong>RancherOS</strong> bugs, issues, and feature requests to <a href="//github.com/rancher/os/issues">rancher/os</a>.</p>
+
+<p>Please submit any <strong>Rancher</strong> bugs, issues, and feature requests to <a href="//github.com/rancher/rancher/issues">rancher/rancher</a>.</p>
+
+<h1><a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>Copyright (c) 2014-2015 <a href="http://rancher.com">Rancher Labs, Inc.</a></p>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p>
+
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+</article>
+  </div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div>
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.04944s from github-fe135-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-f8473dece7242da6a20d52313634881b3975c52cebaa1e6c38157c0f26185691.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-9bf3a99f7b06f8e8d606ad33352aa232d1ad05ffe6f160d9a26af7e38b2b60e5.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

@@ -125,12 +125,12 @@ Then :
 - [x] kubernetes
 - [x] ableton live
 - [x] openbox
+- [x] mercurial
+- [x] rancher os
 - [ ] emberjs
 - [ ] openbsd
 - [ ] dropbox
 - [ ] salt
-- [ ] mercurial
-- [ ] rancher os
 
 ### Ideas
 - version numbers should also be links to versions websites
