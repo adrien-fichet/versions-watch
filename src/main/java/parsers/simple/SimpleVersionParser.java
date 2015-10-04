@@ -26,6 +26,7 @@ public class SimpleVersionParser extends VersionParser {
         return Jsoup.connect(url)
                 .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0")
                 .timeout(10000)
+                .ignoreContentType(true)
                 .get();
     }
 
@@ -36,6 +37,7 @@ public class SimpleVersionParser extends VersionParser {
         try {
             versionText = loadDocument().select(versionCssSelector).first().text();
         } catch (IOException e) {
+            System.out.println(e.getMessage());
             return UNKNOWN_VERSION;
         }
 

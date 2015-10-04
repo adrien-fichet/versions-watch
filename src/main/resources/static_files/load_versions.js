@@ -145,7 +145,8 @@ var versions = [
     "category": { "id": "scm", "name": "SCMs" },
     "items": [
       { "id": "git", "name": "Git" },
-      { "id": "subversion", "name": "Subversion" }
+      { "id": "subversion", "name": "Subversion" },
+      { "id": "mercurial", "name": "Mercurial" }
     ]
   }, {
     "category": { "id": "databases", "name": "Databases" },

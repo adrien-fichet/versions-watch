@@ -515,6 +515,11 @@ public class Conf {
                 "#mw-content-text > div:nth-child(5) > p > big",
                 "(([0-9]+\\.){1,2}[0-9]+):"
         ));
+        configurations.put("mercurial", new VersionParserConfiguration(
+                "http://www.mercurial-scm.org/sources.js",
+                "*",
+                "Mercurial (([0-9]\\.){2}[0-9]+)? source release"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

@@ -111,6 +111,7 @@ public class ExpectedVersions {
         expectedVersions.put("kubernetes", "1.0.6");
         expectedVersions.put("abletonlive", "9.2.2");
         expectedVersions.put("openbox", "3.6.1");
+        expectedVersions.put("mercurial", "3.5.2");
     }
 
     public Map<String, String> getExpectedVersions() {
