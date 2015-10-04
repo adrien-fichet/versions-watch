@@ -325,7 +325,7 @@ public class Conf {
         ));
         configurations.put("safari", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Safari_(web_browser)",
-                "#mw-content-text > table:nth-child(1) > tbody > tr:nth-child(5) > td > p:nth-child(1)",
+                "#mw-content-text > table:nth-child(1) > tbody > tr:nth-child(5) > td",
                 "(([0-9]+\\.){1,2}[0-9]+) "
         ));
         configurations.put("drupal", new VersionParserConfiguration(
@@ -509,6 +509,11 @@ public class Conf {
                 "https://en.wikipedia.org/wiki/Ableton_Live",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
                 "(([0-9]+\\.){1,2}[0-9]+) /"
+        ));
+        configurations.put("openbox", new VersionParserConfiguration(
+                "http://openbox.org/wiki/Openbox:Download",
+                "#mw-content-text > div:nth-child(5) > p > big",
+                "(([0-9]+\\.){1,2}[0-9]+):"
         ));
     }
 

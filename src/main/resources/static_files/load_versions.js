@@ -158,7 +158,8 @@ var versions = [
     "category": { "id": "windowmanagers", "name": "Window managers" },
     "items": [
       { "id": "i3", "name": "i3" },
-      { "id": "awesome", "name": "Awesome" }
+      { "id": "awesome", "name": "Awesome" },
+      { "id": "openbox", "name": "Openbox" }
     ]
   }, {
     "category": { "id": "desktopenvironments", "name": "Desktop environments" },

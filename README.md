@@ -124,12 +124,13 @@ Then :
 - [x] vaadin
 - [x] kubernetes
 - [x] ableton live
+- [x] openbox
 - [ ] emberjs
-- [ ] openbox
 - [ ] openbsd
 - [ ] dropbox
 - [ ] salt
 - [ ] mercurial
+- [ ] rancher os
 
 ### Ideas
 - version numbers should also be links to versions websites
