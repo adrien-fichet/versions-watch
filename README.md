@@ -127,8 +127,8 @@ Then :
 - [x] openbox
 - [x] mercurial
 - [x] rancher os
+- [x] openbsd
 - [ ] emberjs
-- [ ] openbsd
 - [ ] dropbox
 - [ ] salt
 

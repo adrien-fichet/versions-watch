@@ -391,7 +391,7 @@ public class Conf {
         ));
         configurations.put("ansible", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Ansible_(software)",
-                "#mw-content-text > table > tbody > tr:nth-child(3) > td",
+                "#mw-content-text > table > tbody > tr:nth-child(4) > td",
                 "(([0-9]+\\.){2}[0-9]+) /"
         ));
         configurations.put("polymer", new VersionParserConfiguration(
@@ -524,6 +524,11 @@ public class Conf {
                 "https://github.com/rancher/os",
                 "#readme > article > p:nth-child(7) > strong",
                 "v(([0-9]\\.){2}[0-9]+) - "
+        ));
+        configurations.put("openbsd", new VersionParserConfiguration(
+                "http://www.openbsd.org/",
+                "body > table > tbody > tr:nth-child(1) > td:nth-child(3) > p:nth-child(6) > a",
+                "OpenBSD ([0-9]+\\.[0-9]+)"
         ));
     }
 

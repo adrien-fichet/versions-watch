@@ -10,7 +10,8 @@ var versions = [
       { "id": "fedora", "name": "Fedora" },
       { "id": "kali", "name": "Kali" },
       { "id": "coreos", "name": "CoreOS" },
-      { "id": "rancheros", "name": "Rancher OS" }
+      { "id": "rancheros", "name": "Rancher OS" },
+      { "id": "openbsd", "name": "OpenBSD" }
     ]
   }, {
     "category": { "id": "elk", "name": "ELK" },
