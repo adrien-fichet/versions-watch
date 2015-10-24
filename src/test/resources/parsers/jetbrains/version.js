@@ -240,7 +240,7 @@ function onloadVersionPyCharmownload() {
 
 //PyCharm Educational Edition
 var versionPyCharmEDUShort = "2.0";
-var versionPyCharmEDULong = "2.0.1";
+var versionPyCharmEDULong = "2.0.2";
 function versionPyCharmEDU(el) {
     if (el == "short") {
         document.write(versionPyCharmEDUShort);
@@ -372,5 +372,18 @@ function versionCLion(el) {
     }
     if (el == "long") {
         document.write(versionCLionLong);
+    }
+}
+
+
+//DBE
+var versionDBEShort = "1.0";
+var versionDBELong = "1.0";
+function versionDBE(el) {
+    if (el == "short") {
+        document.write(versionDBEShort);
+    }
+    if (el == "long") {
+        document.write(versionDBELong);
     }
 }

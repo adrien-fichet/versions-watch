@@ -37,8 +37,8 @@ public class Conf {
         ));
         configurations.put("mysql", new VersionParserConfiguration(
                 "https://dev.mysql.com/doc/",
-                "#rowid-0 > td:nth-child(2)",
-                "([0-9]+\\.[0-9]+)"
+                "#fp-docs-banner > div > div:nth-child(2) > a:nth-child(1) > span",
+                "MySQL ([0-9]+\\.[0-9]+)"
         ));
         configurations.put("jenkins", new VersionParserConfiguration(
                 "https://jenkins-ci.org",
@@ -203,7 +203,7 @@ public class Conf {
         configurations.put("sqlite", new VersionParserConfiguration(
                 "https://www.sqlite.org/",
                 "body > div > table:nth-child(6) > tbody > tr > td:nth-child(5) > ul:nth-child(3) > li > a",
-                "Version (([0-9]+\\.){2}[0-9]+)\\.[0-9]+"
+                "Version (([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("grunt", new VersionParserConfiguration(
                 "http://gruntjs.com/",
@@ -355,8 +355,8 @@ public class Conf {
         ));
         configurations.put("edge", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Edge",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
-                "Windows [0-9]+ ([0-9]+\\.[0-9]+)(\\.[0-9]+){2} [a-zA-Z]+"
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
+                "Windows [0-9]+ ([0-9]+\\.[0-9]+)(\\.[0-9]+){2} "
         ));
         configurations.put("opera", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Opera_(web_browser)",
@@ -518,7 +518,7 @@ public class Conf {
         configurations.put("mercurial", new VersionParserConfiguration(
                 "https://www.mercurial-scm.org/sources.js",
                 "*",
-                "Mercurial (([0-9]\\.){2}[0-9]+)? source release"
+                "Mercurial (([0-9]\\.){1,2}[0-9]+)?(-rc)? source release"
         ));
         configurations.put("rancheros", new VersionParserConfiguration(
                 "https://github.com/rancher/os",
