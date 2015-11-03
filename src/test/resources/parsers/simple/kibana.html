@@ -49,12 +49,12 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
 	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
+	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css?clr=223" />	
 	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
 	<script type="text/javascript">form_name = "downloads" ; cdn_url="https://static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://static-www.elastic.co/static/js/init.js?clr=223"></script>
 	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
@@ -232,7 +232,7 @@
 									
 									<li><a href="/products/elasticsearch" id="nav_elasticsearch" >elasticsearch</a></li>
 									
-									<li><a href="/found" id="nav_hosted-elasticsearch" >hosted elasticsearch</a></li>
+									<li><a href="/found" id="nav_hosted-elasticsearch" >elasticsearch as a service</a></li>
 									
 									<li><a href="/products/logstash" id="nav_logstash" >logstash</a></li>
 									
@@ -253,10 +253,6 @@
 								</ul>
 								
 							
-								<h3><a href="/found" id="nav_found" >Found</a></h3>
-
-								
-							
 								<h3><a href="/subscriptions" id="nav_subscriptions" >Subscriptions</a></h3>
 
 								
@@ -271,6 +267,8 @@
 									<li><a href="/videos" id="nav_videos" >videos</a></li>
 									
 									<li><a href="/training" id="nav_training" >training</a></li>
+									
+									<li><a href="/services" id="nav_services" >services</a></li>
 									
 									<li><a href="/blog" id="nav_learn_blog" >blog</a></li>
 									
@@ -384,7 +382,7 @@
 							
 								<li><a href="/products/elasticsearch" id="nav_elasticsearch" >elasticsearch</a></li>								
 							
-								<li><a href="/found" id="nav_hosted-elasticsearch" >hosted elasticsearch</a></li>								
+								<li><a href="/found" id="nav_hosted-elasticsearch" >elasticsearch as a service</a></li>								
 							
 								<li><a href="/products/logstash" id="nav_logstash" >logstash</a></li>								
 							
@@ -401,17 +399,6 @@
 								<li><a href="/products/hadoop" id="nav_hadoop" >hadoop</a></li>								
 							
 								<li><a href="/downloads" id="nav_downloads" >downloads</a></li>								
-								
-						</ul>							
-					</li>
-					
-					<li>
-						
-							
-						
-						<a href="/found" id="nav_found"   >Found</a>
-						
-						<ul class="dropdown">
 								
 						</ul>							
 					</li>
@@ -440,6 +427,8 @@
 								<li><a href="/videos" id="nav_videos" >videos</a></li>								
 							
 								<li><a href="/training" id="nav_training" >training</a></li>								
+							
+								<li><a href="/services" id="nav_services" >services</a></li>								
 							
 								<li><a href="/blog" id="nav_learn_blog" >blog</a></li>								
 							
@@ -652,6 +641,121 @@
 			
 				<div class="12u download-content-wrapper">
 					<header>
+						<h2>Kibana 4.2.0</h2>
+					</header>
+					<ul class="downloads row">
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-windows.zip" class="zip-link uppercase">Windows</a>
+								
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-windows.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-darwin-x64.tar.gz" class="zip-link uppercase">Mac</a>
+								
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-darwin-x64.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-linux-x64.tar.gz" class="zip-link uppercase">Linux 64-bit</a>
+								
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-linux-x64.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+						
+							<li class="6u(small)">
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-linux-x86.tar.gz" class="zip-link uppercase">Linux 32-bit</a>
+								
+								
+								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-linux-x86.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
+								
+							</li>
+												
+					</ul>
+					<p class="note">Compatible with Elasticsearch 2.x</p>
+					
+					
+					<div class="divider3"><!-- . --></div>
+						<header>
+							<h2>Installation Steps</h2>
+						</header>
+						<ul class="installation-steps">
+														
+								<li>
+									<div class="install-step-img">
+										<img src="/assets/bltd4638a57d7be6db9/download-kibana-step1.png" alt="" />
+									</div>
+									<div class="install-step-desc">
+										<p>Download and unzip Kibana 4
+</p>
+<p><em>Note: Kibana 4.2.0 requires Elasticsearch 2.0.
+	</em>
+</p>
+									</div>
+								</li>
+														
+								<li>
+									<div class="install-step-img">
+										<img src="/assets/blt9083e1311c5bf168/download-kibana-step2.png" alt="" />
+									</div>
+									<div class="install-step-desc">
+										<ul class="list_arrows">
+	<li>Extract your archive</li>
+	<li>    Open <em>config/kibana.yml</em> in an editor</li>
+	<li>    Set the <em>elasticsearch.url</em> to point at your Elasticsearch instance</li>
+	<li>    Run <em>./bin/kibana</em> (or <em>bin\kibana.bat</em> on Windows)</li>
+</ul>
+									</div>
+								</li>
+														
+								<li>
+									<div class="install-step-img">
+										<img src="/assets/blt07cb66a3e6ac976c/download-kibana-step3.png" alt="" />
+									</div>
+									<div class="install-step-desc">
+										<ul class="list_arrows">
+	<li>Point your browser at <em>http://yourhost.com:5601</em></li>
+	<li>    Check out the <a href="https://github.com/elastic/kibana/blob/v4.2.0/README.md" target="_blank">README.md</a></li>
+</ul>
+									</div>
+								</li>
+							
+						</ul>
+						<div class="divider2"><!-- . --></div>
+					
+
+					
+						<ul class="downloads-resources">
+							
+								<li><a href="https://github.com/elasticsearch/kibana" target="_blank">View GitHub Project</a></li>
+							
+								
+								<li><a href="/guide/en/kibana/current/index.html">Documentation</a></li>
+							
+							
+							
+							<li><a href="/downloads/past-releases">Past Releases</a>
+						</ul>
+						
+					
+					
+				<!-- </div> -->
+				
+				
+				</div>	
+			
+				<div class="12u download-content-wrapper">
+					<header>
 						<h2>Kibana 4.1.2</h2>
 					</header>
 					<ul class="downloads row">
@@ -693,7 +797,7 @@
 							</li>
 												
 					</ul>
-					<p class="note"></p>
+					<p class="note">Compatible with Elasticsearch 1.4.4 - 1.7</p>
 					
 					
 					<div class="divider3"><!-- . --></div>
@@ -707,118 +811,8 @@
 										<img src="/assets/bltd4638a57d7be6db9/download-kibana-step1.png" alt="" />
 									</div>
 									<div class="install-step-desc">
-										<p>Download and unzip Kibana 4</p>
-									</div>
-								</li>
-														
-								<li>
-									<div class="install-step-img">
-										<img src="/assets/blt9083e1311c5bf168/download-kibana-step2.png" alt="" />
-									</div>
-									<div class="install-step-desc">
-										<ul class="list_arrows">
-	<li>Extract your archive</li>
-	<li>    Open <em>config/kibana.yml</em> in an editor</li>
-	<li>    Set the <em>elasticsearch_url</em> to point at your Elasticsearch instance</li>
-	<li>    Run <em>./bin/kibana</em> (or <em>bin\kibana.bat</em> on windows)</li>
-</ul>
-									</div>
-								</li>
-														
-								<li>
-									<div class="install-step-img">
-										<img src="/assets/blt07cb66a3e6ac976c/download-kibana-step3.png" alt="" />
-									</div>
-									<div class="install-step-desc">
-										<ul class="list_arrows">
-	<li>Point your browser at <em>http://yourhost.com:5601</em></li>
-	<li>    Check out the <a href="https://github.com/elastic/kibana/blob/v4.1.1/README.md" target="_blank">README.md</a></li>
-</ul>
-									</div>
-								</li>
-							
-						</ul>
-						<div class="divider2"><!-- . --></div>
-					
-
-					
-						<ul class="downloads-resources">
-							
-								<li><a href="https://github.com/elasticsearch/kibana" target="_blank">View GitHub Project</a></li>
-							
-								
-								<li><a href="/guide/en/kibana/current/index.html">Documentation</a></li>
-							
-							
-							
-							<li><a href="/downloads/past-releases">Past Releases</a>
-						</ul>
-						
-					
-					
-				<!-- </div> -->
-				
-				
-				</div>	
-			
-				<div class="12u download-content-wrapper">
-					<header>
-						<h2>Kibana 4.2.0 Beta 2</h2>
-					</header>
-					<ul class="downloads row">
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-windows.zip" class="zip-link uppercase">Windows</a>
-								
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-windows.zip.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-darwin-x64.tar.gz" class="zip-link uppercase">Mac</a>
-								
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-darwin-x64.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-linux-x86.tar.gz" class="zip-link uppercase">Linux 32-bit</a>
-								
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-linux-x86.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-						
-							<li class="6u(small)">
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-linux-x64.tar.gz" class="zip-link uppercase">Linux 64-bit</a>
-								
-								
-								<a href="https://download.elastic.co/kibana/kibana/kibana-4.2.0-beta2-linux-x64.tar.gz.sha1.txt" class="sha1" target='_blank' }}>sha1</a>
-								
-							</li>
-												
-					</ul>
-					<p class="note"></p>
-					
-					
-					<div class="divider3"><!-- . --></div>
-						<header>
-							<h2>Installation Steps</h2>
-						</header>
-						<ul class="installation-steps">
-														
-								<li>
-									<div class="install-step-img">
-										<img src="/assets/bltd4638a57d7be6db9/download-kibana-step1.png" alt="" />
-									</div>
-									<div class="install-step-desc">
-										<p>Download and unzip Kibana 4
+										<p>Download and unzip Kibana 4</p><p><em>
+	Note: Kibana 4.1.2 requires Elasticsearch 1.4.4 to 1.7.x</em>
 </p>
 									</div>
 								</li>
@@ -830,9 +824,10 @@
 									<div class="install-step-desc">
 										<ul class="list_arrows">
 	<li>Extract your archive</li>
-	<li>    Open <em>config/kibana.yml</em> in an editor</li>
-	<li>    Set the <em>elasticsearch.url</em> to point at your Elasticsearch instance</li>
-	<li>    Run <em>./bin/kibana</em> (or <em>bin\kibana.bat</em> on windows)</li>
+<li>Open <em>config/kibana.yml</em> in an editor</li>
+<li>Set the <em>elasticsearch.url</em> to point at your Elasticsearch instance</li>
+<li>Run <em>./bin/kibana</em> (<em>orbin\kibana.bat</em> on Windows)
+</li>
 </ul>
 									</div>
 								</li>
@@ -844,7 +839,7 @@
 									<div class="install-step-desc">
 										<ul class="list_arrows">
 	<li>Point your browser at <em>http://yourhost.com:5601</em></li>
-	<li>    Check out the <a href="https://github.com/elastic/kibana/blob/v4.2.0-beta1/README.md" target="_blank">README.md</a></li>
+	<li>    Check out the <a href="https://github.com/elastic/kibana/blob/v4.1.2/README.md" target="_blank">README.md</a></li>
 </ul>
 									</div>
 								</li>
@@ -859,7 +854,7 @@
 								<li><a href="https://github.com/elasticsearch/kibana" target="_blank">View GitHub Project</a></li>
 							
 								
-								<li><a href="/guide/en/kibana/current/index.html">Documentation</a></li>
+								<li><a href="/guide/en/kibana/4.1/index.html">Documentation</a></li>
 							
 							
 							
@@ -1028,3 +1023,4 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 	}
 </script>	
 </body>
+

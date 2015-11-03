@@ -1,7 +1,6 @@
 //IDEA
-//IDEA
-var versionIDEAShort = "14.1";
-var versionIDEALong = "14.1.5";
+var versionIDEAShort = "15.0";
+var versionIDEALong = "15.0";
 function versionIDEA(el) {
     if (el == "short") {
         document.write(versionIDEAShort);
@@ -10,19 +9,10 @@ function versionIDEA(el) {
         document.write(versionIDEALong);
     }
 }
-function onloadVersionIDEA() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionIDEALong);
-}
-function onloadVersionIDEADownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionIDEALong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionIDEALong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionIDEALong);
-    document.getElementById('kit_').innerHTML = document.getElementById('kit_').innerHTML.replace(/#Numberversion/gi, versionIDEALong);
-}
 
-//Resharper
-var versionRSShort = "9";
-var versionRSLong = "9.2";
+//Resharper Ultimate (including ReSharper, ReSharper C++, dotCover, dotMemory, dotTrace, dotPeek)
+var versionRSShort = "10";
+var versionRSLong = "10.0";
 function versionRS(el) {
     if (el == "short") {
         document.write(versionRSShort);
@@ -30,103 +20,6 @@ function versionRS(el) {
     if (el == "long") {
         document.write(versionRSLong);
     }
-}
-function onloadVersionRS() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionRSLong);
-}
-function onloadVersionRSDownload() {
-    document.getElementById('full_').innerHTML = document.getElementById('full_').innerHTML.replace(/#Numberversion/gi, versionRSLong);
-    document.getElementById('cSharp_').innerHTML = document.getElementById('cSharp_').innerHTML.replace(/#Numberversion/gi, versionRSLong);
-    document.getElementById('vb_').innerHTML = document.getElementById('vb_').innerHTML.replace(/#Numberversion/gi, versionRSLong);
-}
-
-//Resharper C++
-var versionRSCppShort = "1";
-var versionRSCppLong = "1.1";
-function versionRSCpp(el) {
-    if (el == "short") {
-        document.write(versionRSCppShort);
-    }
-    if (el == "long") {
-        document.write(versionRSCppLong);
-    }
-}
-
-//dotTrace
-var versionDTShort = "6";
-var versionDTLong = "6.2";
-var versionDTMLong = "3.5";
-function versionDT(el) {
-    if (el == "short") {
-        document.write(versionDTShort);
-    }
-    if (el == "long") {
-        document.write(versionDTLong);
-    }
-}
-function onloadVersionDT() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionDTLong);
-}
-function onloadVersionDTDownload() {
-    document.getElementById('win32_').innerHTML = document.getElementById('win32_').innerHTML.replace(/#Numberversion/gi, versionDTLong);
-    document.getElementById('win64_').innerHTML = document.getElementById('win64_').innerHTML.replace(/#Numberversion/gi, versionDTLong);
-}
-
-//dotMemory
-var versionDMShort = "4";
-var versionDMLong = "4.4";
-function versionDM(el) {
-    if (el == "short") {
-        document.write(versionDMShort);
-    }
-    if (el == "long") {
-        document.write(versionDMLong);
-    }
-}
-function onloadVersionDM() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionDMLong);
-}
-function onloadVersionDMDownload() {
-    document.getElementById('win32_').innerHTML = document.getElementById('win32_').innerHTML.replace(/#Numberversion/gi, versionDMLong);
-    document.getElementById('win64_').innerHTML = document.getElementById('win64_').innerHTML.replace(/#Numberversion/gi, versionDMLong);
-}
-
-//dotCover
-var versionDCShort = "3";
-var versionDCLong = "3.2";
-function versionDC(el) {
-    if (el == "short") {
-        document.write(versionDCShort);
-    }
-    if (el == "long") {
-        document.write(versionDCLong);
-    }
-}
-function onloadVersionDC() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionDCLong);
-}
-function onloadVersionDCDownload() {
-    document.getElementById('win32_').innerHTML = document.getElementById('win32_').innerHTML.replace(/#Numberversion/gi, versionDCLong);
-    document.getElementById('win64_').innerHTML = document.getElementById('win64_').innerHTML.replace(/#Numberversion/gi, versionDCLong);
-}
-
-//dotPeek
-var versionDPShort = "1";
-var versionDPLong = "1.5";
-function versionDP(el) {
-    if (el == "short") {
-        document.write(versionDPShort);
-    }
-    if (el == "long") {
-        document.write(versionDPLong);
-    }
-}
-function onloadVersionDP() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionDPLong);
-}
-function onloadVersionDPDownload() {
-    document.getElementById('win32_').innerHTML = document.getElementById('win32_').innerHTML.replace(/#Numberversion/gi, versionDPLong);
-    document.getElementById('win64_').innerHTML = document.getElementById('win64_').innerHTML.replace(/#Numberversion/gi, versionDPLong);
 }
 
 //TeamCity
@@ -140,20 +33,11 @@ function versionTC(el) {
         document.write(versionTCLong);
     }
 }
-function onloadVersionTC() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionTCLong);
-}
-function onloadVersionTCownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionTCLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionTCLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionTCLong);
-    document.getElementById('j2ee_').innerHTML = document.getElementById('j2ee_').innerHTML.replace(/#Numberversion/gi, versionTCLong);
-}
-
 
 //RubyMine
-var versionRubyShort = "7.1";
-var versionRubyLong = "7.1.4";
+var versionRubyShort = "8";
+var versionRubyLong = "8.0.0";
+var versionRubyMac = "8.0.0-custom-jdk-bundled"
 function versionRuby(el) {
     if (el == "short") {
         document.write(versionRubyShort);
@@ -161,15 +45,9 @@ function versionRuby(el) {
     if (el == "long") {
         document.write(versionRubyLong);
     }
-}
-function onloadVersionRM() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionRubyLong);
-}
-function onloadVersionRMDownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionRubyLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionRubyLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionRubyLong);
-    document.getElementById('kit_').innerHTML = document.getElementById('kit_').innerHTML.replace(/#Numberversion/gi, versionRubyLong);
+    if (el == "mac") {
+        document.write(versionRubyMac);
+    }
 }
 
 //MPS
@@ -183,16 +61,6 @@ function versionMPS(el) {
         document.write(versionMPSLong);
     }
 }
-function onloadVersionMPS() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionMPSLong);
-}
-function onloadVersionMPSownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionMPSLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionMPSLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionMPSLong);
-    document.getElementById('src_').innerHTML = document.getElementById('src_').innerHTML.replace(/#Numberversion/gi, versionMPSLong);
-    document.getElementById('tools_').innerHTML = document.getElementById('tools_').innerHTML.replace(/#Numberversion/gi, versionMPSLong);
-}
 
 //Web IDE
 var versionWebIDEShort = "1.0";
@@ -205,20 +73,10 @@ function versionWebIDE(el) {
         document.write(versionWebIDELong);
     }
 }
-function onloadVersionWebIDE() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionWebIDELong);
-}
-function onloadVersionWebIDEownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionWebIDELong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionWebIDELong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionWebIDELong);
-    document.getElementById('src_').innerHTML = document.getElementById('src_').innerHTML.replace(/#Numberversion/gi, versionWebIDELong);
-    document.getElementById('tools_').innerHTML = document.getElementById('tools_').innerHTML.replace(/#Numberversion/gi, versionWebIDELong);
-}
 
 //PyCharm
-var versionPyCharmShort = "4.5";
-var versionPyCharmLong = "4.5.4";
+var versionPyCharmShort = "5.0";
+var versionPyCharmLong = "5.0";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -227,20 +85,10 @@ function versionPyCharm(el) {
         document.write(versionPyCharmLong);
     }
 }
-function onloadVersionPyCharm() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionPyCharmLong);
-}
-function onloadVersionPyCharmownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionPyCharmLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionPyCharmLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionPyCharmLong);
-    document.getElementById('src_').innerHTML = document.getElementById('src_').innerHTML.replace(/#Numberversion/gi, versionPyCharmLong);
-    document.getElementById('tools_').innerHTML = document.getElementById('tools_').innerHTML.replace(/#Numberversion/gi, versionPyCharmLong);
-}
 
 //PyCharm Educational Edition
 var versionPyCharmEDUShort = "2.0";
-var versionPyCharmEDULong = "2.0.2";
+var versionPyCharmEDULong = "2.0.1";
 function versionPyCharmEDU(el) {
     if (el == "short") {
         document.write(versionPyCharmEDUShort);
@@ -249,10 +97,6 @@ function versionPyCharmEDU(el) {
         document.write(versionPyCharmEDULong);
     }
 }
-function onloadVersionPyCharmEDU() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionPyCharmEDULong);
-}
-
 
 //YouTrack
 var versionYTShort = "6.5";
@@ -265,21 +109,10 @@ function versionYT(el) {
         document.write(versionYTLong);
     }
 }
-function onloadVersionYT() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionYTLong);
-}
-function onloadVersionYTownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionYTLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionYTLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionYTLong);
-    document.getElementById('src_').innerHTML = document.getElementById('src_').innerHTML.replace(/#Numberversion/gi, versionYTLong);
-    document.getElementById('tools_').innerHTML = document.getElementById('tools_').innerHTML.replace(/#Numberversion/gi, versionYTLong);
-}
-
 
 //WebStorm
-var versionWebStormShort = "10.0";
-var versionWebStormLong = "10.0.4";
+var versionWebStormShort = "11.0";
+var versionWebStormLong = "11.0";
 function versionWebStorm(el) {
     if (el == "short") {
         document.write(versionWebStormShort);
@@ -288,19 +121,10 @@ function versionWebStorm(el) {
         document.write(versionWebStormLong);
     }
 }
-function onloadVersionWebStorm() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionWebStormLong);
-}
-function onloadVersionWebStormDownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionWebStormLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionWebStormLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionWebStormLong);
-}
-
 
 //PhpStorm
-var versionPhpStormShort = "9.0";
-var versionPhpStormLong = "9.0.2";
+var versionPhpStormShort = "10.0";
+var versionPhpStormLong = "10.0";
 function versionPhpStorm(el) {
     if (el == "short") {
         document.write(versionPhpStormShort);
@@ -309,18 +133,10 @@ function versionPhpStorm(el) {
         document.write(versionPhpStormLong);
     }
 }
-function onloadVersionPhpStorm() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionPhpStormLong);
-}
-function onloadVersionPhpStormDownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionPhpStormLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionPhpStormLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionPhpStormLong);
-}
 
 //AppCode
-var versionAppCodeShort = "3.2";
-var versionAppCodeLong = "3.2";
+var versionAppCodeShort = "3.3";
+var versionAppCodeLong = "3.3";
 function versionAppCode(el) {
     if (el == "short") {
         document.write(versionAppCodeShort);
@@ -328,14 +144,6 @@ function versionAppCode(el) {
     if (el == "long") {
         document.write(versionAppCodeLong);
     }
-}
-function onloadVersionAppCode() {
-    document.body.innerHTML = document.body.innerHTML.replace(/#Numberversion/gi, versionAppCodeLong);
-}
-function onloadVersionAppCodeDownload() {
-    document.getElementById('win_').innerHTML = document.getElementById('win_').innerHTML.replace(/#Numberversion/gi, versionAppCodeLong);
-    document.getElementById('mac_').innerHTML = document.getElementById('mac_').innerHTML.replace(/#Numberversion/gi, versionAppCodeLong);
-    document.getElementById('linux_').innerHTML = document.getElementById('linux_').innerHTML.replace(/#Numberversion/gi, versionAppCodeLong);
 }
 
 //Upsource
@@ -362,10 +170,9 @@ function versionHub(el) {
     }
 }
 
-
 //CLion
-var versionCLionShort = "1.1";
-var versionCLionLong = "1.1.1";
+var versionCLionShort = "1.2";
+var versionCLionLong = "1.2";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);
@@ -375,15 +182,14 @@ function versionCLion(el) {
     }
 }
 
-
-//DBE
-var versionDBEShort = "1.0";
-var versionDBELong = "1.0";
-function versionDBE(el) {
+//0xDBE
+var version0xDbeShort = "1";
+var version0xDbeLong = "1.0";
+function version0xDbe(el) {
     if (el == "short") {
-        document.write(versionDBEShort);
+        document.write(version0xDbeShort);
     }
     if (el == "long") {
-        document.write(versionDBELong);
+        document.write(version0xDbeLong);
     }
 }

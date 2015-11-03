@@ -13,6 +13,6 @@ public class IdeaVersionParser extends VersionParser {
     }
 
     public String parseVersion() {
-        return jetbrainsVersionsParser.parseVersion(Pattern.compile("var versionIDEALong = \"(([0-9]+\\.){2}[0-9]+)\";"));
+        return jetbrainsVersionsParser.parseVersion(Pattern.compile("var versionIDEALong = \"(([0-9]+\\.){1,2}[0-9]+)\";"));
     }
 }
