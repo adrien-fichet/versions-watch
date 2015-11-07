@@ -134,3 +134,19 @@ Then :
 
 ### Ideas
 - version numbers should also be links to versions websites
+
+### Add a certificate to the JDK keystore
+```
+# list existing certificates (default keystore password is 'changeit')
+JDK='/usr/lib/jvm/java-8-openjdk-amd64'
+${JDK}/bin/keytool  -list -keystore ${JDK}/jre/lib/security/cacerts
+
+# download certificate from website (for example, www.kernel.org) 
+WEBSITE='www.kernel.org'
+openssl s_client -showcerts -connect ${WEBSITE}:443 </dev/null 2>/dev/null|openssl x509 -outform PEM >${WEBSITE}.pem
+
+# import certificate to the JDK keystore
+${JDK}/bin/keytool -keystore ${JDK}/jre/lib/security/cacerts -importcert -alias ${WEBSITE} -file ${WEBSITE}.pem
+
+```
+
