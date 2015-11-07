@@ -14,7 +14,7 @@ public class ExpectedVersions {
         expectedVersions.put("apache", "2.4.17");
         expectedVersions.put("debian", "8.2");
         expectedVersions.put("eclipse", "4.5.1");
-        expectedVersions.put("git", "2.6.2");
+        expectedVersions.put("git", "2.6.3");
         expectedVersions.put("javase", "8u65");
         expectedVersions.put("jenkins", "1.636");
         expectedVersions.put("mysql", "5.7");
@@ -56,17 +56,17 @@ public class ExpectedVersions {
         expectedVersions.put("vim", "7.4");
         expectedVersions.put("awesome", "3.5.6");
         expectedVersions.put("i3", "4.11");
-        expectedVersions.put("linux", "4.2.4");
+        expectedVersions.put("linux", "4.3");
         expectedVersions.put("xfce", "4.12");
         expectedVersions.put("elasticdump", "0.16.0");
         expectedVersions.put("solr", "5.3.1");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "46.0");
-        expectedVersions.put("firefox", "41.0.2");
+        expectedVersions.put("firefox", "42.0");
         expectedVersions.put("gnomeshell", "3.19.1");
         expectedVersions.put("kde", "4.14.6");
-        expectedVersions.put("docker", "1.8.3");
+        expectedVersions.put("docker", "1.9.0");
         expectedVersions.put("kali", "2.0");
         expectedVersions.put("visualstudio", "2015 RTM");
         expectedVersions.put("bower", "1.6.5");
@@ -90,7 +90,7 @@ public class ExpectedVersions {
         expectedVersions.put("polymer", "1.2.1");
         expectedVersions.put("fail2ban", "0.9.3");
         expectedVersions.put("go", "1.5.1");
-        expectedVersions.put("metasploit", "4.11.4");
+        expectedVersions.put("metasploit", "4.11.5");
         expectedVersions.put("varnish", "4.1.0");
         expectedVersions.put("perl", "5.22.0");
         expectedVersions.put("lxc", "1.0");

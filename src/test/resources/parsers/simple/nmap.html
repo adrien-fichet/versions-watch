@@ -318,8 +318,8 @@ as traditional gzip.
 <P>Detailed Linux/BSD/Solaris compilation instructions and options are <a href="book/inst-source.html">provided here</a>, though this usually does the trick:
 
 <PRE>
-bzip2 -cd nmap-6.49BETA5.tar.bz2 | tar xvf -
-cd nmap-6.49BETA5
+bzip2 -cd nmap-6.49BETA6.tar.bz2 | tar xvf -
+cd nmap-6.49BETA6
 ./configure
 make
 su root
@@ -335,7 +335,7 @@ make install
 <P>
 <!--<B>Latest <u>development</u> Nmap release tarball:</B> <A HREF="https://nmap.org/dist/nmap-6.20BETA1.tar.bz2" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.20BETA1.tar.bz2']);">nmap-6.20BETA1.tar.bz2</A> (or <A HREF="https://nmap.org/dist/nmap-6.20BETA1.tgz" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.20BETA1.tgz']);">gzip compressed</A>)<br>-->
 
-<B>Latest <!--<u>stable</u>--> Nmap release tarball:</B> <A HREF="https://nmap.org/dist/nmap-6.49BETA5.tar.bz2" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA5.tar.bz2']);">nmap-6.49BETA5.tar.bz2</A> (or <A HREF="https://nmap.org/dist/nmap-6.49BETA5.tgz" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA5.tgz']);">gzip compressed</A>)
+<B>Latest <!--<u>stable</u>--> Nmap release tarball:</B> <A HREF="https://nmap.org/dist/nmap-6.49BETA6.tar.bz2" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA6.tar.bz2']);">nmap-6.49BETA6.tar.bz2</A> (or <A HREF="https://nmap.org/dist/nmap-6.49BETA6.tgz" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA6.tgz']);">gzip compressed</A>)
 
 <P>
 <A NAME="windows"></A>
@@ -359,7 +359,7 @@ complexity of the Windows zip files with a self-installer:
 
 <P>
 <!-- <b>Latest <u>development</u> release self-installer:</b> <a href="https://nmap.org/dist/nmap-6.20BETA1-setup.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.20BETA1-setup.exe']);">nmap-6.20BETA1-setup.exe</a> -->
-<br><b>Latest <!--<u>stable</u>--> release self-installer:</b> <a href="https://nmap.org/dist/nmap-6.49BETA5-setup-xp.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA5-setup-xp.exe']);">nmap-6.49BETA5-setup-xp.exe</a>
+<br><b>Latest <!--<u>stable</u>--> release self-installer:</b> <a href="https://nmap.org/dist/nmap-6.49BETA6-setup.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA6-setup.exe']);">nmap-6.49BETA6-setup.exe</a>
 
 <P>We have written <a
 href="book/inst-windows.html#inst-win-exec">post-install usage
@@ -379,7 +379,7 @@ system</A>.  Also, you need to run the <a href="http://www.winpcap.org">Winpcap<
 
 <p>
 <!--<b>Latest <u>development</u> command-line zipfile:</b> <A HREF="https://nmap.org/dist/nmap-6.20BETA1-win32.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.20BETA1-win32.zip']);">nmap-6.20BETA1-win32.zip</A><br>-->
-<b>Latest <!--<u>stable</u>--> command-line zipfile:</b> <A HREF="https://nmap.org/dist/nmap-6.49BETA5-win32-xp.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA5-win32-xp.zip']);">nmap-6.49BETA5-win32-xp.zip</A>
+<b>Latest <!--<u>stable</u>--> command-line zipfile:</b> <A HREF="https://nmap.org/dist/nmap-6.49BETA6-win32.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA6-win32.zip']);">nmap-6.49BETA6-win32.zip</A>
 
 <P>
 <A NAME="linux-rpm"></A>
@@ -393,10 +393,10 @@ installing our RPM packages</a>, though these simple commands usually do
 the trick:
 
 <PRE>
-rpm -vhU https://nmap.org/dist/nmap-6.49BETA5-1.x86_64.rpm
-rpm -vhU https://nmap.org/dist/zenmap-6.49BETA5-1.noarch.rpm
-rpm -vhU https://nmap.org/dist/ncat-6.49BETA5-1.x86_64.rpm
-rpm -vhU https://nmap.org/dist/nping-0.6.49BETA5-1.x86_64.rpm
+rpm -vhU https://nmap.org/dist/nmap-6.49BETA6-1.x86_64.rpm
+rpm -vhU https://nmap.org/dist/zenmap-6.49BETA6-1.noarch.rpm
+rpm -vhU https://nmap.org/dist/ncat-6.49BETA6-1.x86_64.rpm
+rpm -vhU https://nmap.org/dist/nping-0.6.49BETA6-1.x86_64.rpm
 </PRE>
 
 You can also download and install the RPMs yourself:<BR>
@@ -414,14 +414,14 @@ Source RPM (includes Zenmap and Ncat): <A HREF="https://nmap.org/dist/nmap-6.20B
 -->
 
 <p><b>Latest <!--<u>stable</u>--> release:</b><br>
-<b>x86-64 (64-bit Linux)</b> <a href="/">Nmap</a> RPM: <A HREF="https://nmap.org/dist/nmap-6.49BETA5-1.x86_64.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA5-1.i686.rpm']);">nmap-6.49BETA5-1.x86_64.rpm</A><BR>
-<b>x86-64 (64-bit Linux)</b> <a href="ncat/">Ncat</a> RPM: <A HREF="https://nmap.org/dist/ncat-6.49BETA5-1.x86_64.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'ncat-6.49BETA5-1.x86_64.rpm']);">ncat-6.49BETA5-1.x86_64.rpm</A><BR>
-<b>x86-64 (64-bit Linux)</b> <a href="nping/">Nping</a> RPM: <A HREF="https://nmap.org/dist/nping-0.6.49BETA5-1.x86_64.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA5-1.x86_64.rpm']);">nping-0.6.49BETA5-1.x86_64.rpm</A><BR>
-<b>i686 (32-bit Linux)</b> <a href="/">Nmap</a> RPM: <A HREF="https://nmap.org/dist/nmap-6.49BETA5-1.i686.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA5-1.i686.rpm']);">nmap-6.49BETA5-1.i686.rpm</A><BR>
-<b>i686 (32-bit Linux)</b> <a href="ncat/">Ncat</a> RPM: <A HREF="https://nmap.org/dist/ncat-6.49BETA5-1.i686.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'ncat-6.49BETA5-1.i686.rpm']);">ncat-6.49BETA5-1.i686.rpm</A><BR>
-<b>i686 (32-bit Linux)</b> <a href="nping/">Nping</a> RPM: <A HREF="https://nmap.org/dist/nping-0.6.49BETA5-1.i686.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA5-1.i686.rpm']);">nping-0.6.49BETA5-1.i686.rpm</A><BR>
-Optional <a href="zenmap/">Zenmap GUI</a> (all platforms): <A HREF="https://nmap.org/dist/zenmap-6.49BETA5-1.noarch.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA5-1.x86_64.rpm']);">zenmap-6.49BETA5-1.noarch.rpm</A><BR>
-Source RPM (includes Nmap, Zenmap, Ncat, and Nping): <A HREF="https://nmap.org/dist/nmap-6.49BETA5-1.src.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA5-1.x86_64.rpm']);">nmap-6.49BETA5-1.src.rpm</A>
+<b>x86-64 (64-bit Linux)</b> <a href="/">Nmap</a> RPM: <A HREF="https://nmap.org/dist/nmap-6.49BETA6-1.x86_64.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA6-1.i686.rpm']);">nmap-6.49BETA6-1.x86_64.rpm</A><BR>
+<b>x86-64 (64-bit Linux)</b> <a href="ncat/">Ncat</a> RPM: <A HREF="https://nmap.org/dist/ncat-6.49BETA6-1.x86_64.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'ncat-6.49BETA6-1.x86_64.rpm']);">ncat-6.49BETA6-1.x86_64.rpm</A><BR>
+<b>x86-64 (64-bit Linux)</b> <a href="nping/">Nping</a> RPM: <A HREF="https://nmap.org/dist/nping-0.6.49BETA6-1.x86_64.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA6-1.x86_64.rpm']);">nping-0.6.49BETA6-1.x86_64.rpm</A><BR>
+<b>i686 (32-bit Linux)</b> <a href="/">Nmap</a> RPM: <A HREF="https://nmap.org/dist/nmap-6.49BETA6-1.i686.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA6-1.i686.rpm']);">nmap-6.49BETA6-1.i686.rpm</A><BR>
+<b>i686 (32-bit Linux)</b> <a href="ncat/">Ncat</a> RPM: <A HREF="https://nmap.org/dist/ncat-6.49BETA6-1.i686.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'ncat-6.49BETA6-1.i686.rpm']);">ncat-6.49BETA6-1.i686.rpm</A><BR>
+<b>i686 (32-bit Linux)</b> <a href="nping/">Nping</a> RPM: <A HREF="https://nmap.org/dist/nping-0.6.49BETA6-1.i686.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA6-1.i686.rpm']);">nping-0.6.49BETA6-1.i686.rpm</A><BR>
+Optional <a href="zenmap/">Zenmap GUI</a> (all platforms): <A HREF="https://nmap.org/dist/zenmap-6.49BETA6-1.noarch.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA6-1.x86_64.rpm']);">zenmap-6.49BETA6-1.noarch.rpm</A><BR>
+Source RPM (includes Nmap, Zenmap, Ncat, and Nping): <A HREF="https://nmap.org/dist/nmap-6.49BETA6-1.src.rpm" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nping-0.6.49BETA6-1.x86_64.rpm']);">nmap-6.49BETA6-1.src.rpm</A>
 
 <P>
 <A NAME="macosx"></A>
@@ -436,7 +436,7 @@ page</a> for more details. Users of PowerPC (PPC) Mac machines, which Apple ceas
 
 <!--<b>Latest <u>development</u> release universal installer:</b> <A HREF="https://nmap.org/dist/nmap-6.20BETA1.dmg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.20BETA1.dmg']);">nmap-6.20BETA1.dmg</A><BR>-->
 
-<b>Latest <!--<u>stable</u>--> release installer:</b> <A HREF="https://nmap.org/dist/nmap-6.49BETA5.dmg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA5.dmg']);">nmap-6.49BETA5.dmg</A><BR>
+<b>Latest <!--<u>stable</u>--> release installer:</b> <A HREF="https://nmap.org/dist/nmap-6.49BETA6-1.dmg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Nmap', 'nmap-6.49BETA6-1.dmg']);">nmap-6.49BETA6-1.dmg</A><BR>
 
 <P><A NAME="other"></A>
 <h2 class="purpleheader">Other Operating Systems</h2>

@@ -238,7 +238,7 @@ public class Conf {
         configurations.put("linux", new VersionParserConfiguration(
                 "https://www.kernel.org/",
                 "#latest_link > a",
-                "(([0-9]+\\.){2}[0-9]+)"
+                "(([0-9]+\\.){1,2}[0-9]+)"
         ));
         configurations.put("xfce", new VersionParserConfiguration(
                 "http://www.xfce.org/download",
