@@ -128,6 +128,7 @@ Then :
 - [x] mercurial
 - [x] rancher os
 - [x] openbsd
+- [x] blender
 - [ ] emberjs
 - [ ] dropbox
 - [ ] salt

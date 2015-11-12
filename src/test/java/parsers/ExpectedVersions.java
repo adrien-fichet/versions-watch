@@ -8,7 +8,7 @@ public class ExpectedVersions {
 
     public ExpectedVersions() {
         expectedVersions = new HashMap<String, String>();
-        expectedVersions.put("idea", "15.0");
+        expectedVersions.put("idea", "15.0.1");
         expectedVersions.put("youtrack", "6.5");
         expectedVersions.put("spring", "4.2.2");
         expectedVersions.put("apache", "2.4.17");
@@ -16,7 +16,7 @@ public class ExpectedVersions {
         expectedVersions.put("eclipse", "4.5.1");
         expectedVersions.put("git", "2.6.3");
         expectedVersions.put("javase", "8u65");
-        expectedVersions.put("jenkins", "1.636");
+        expectedVersions.put("jenkins", "1.638");
         expectedVersions.put("mysql", "5.7");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "5.6.15");
@@ -39,12 +39,12 @@ public class ExpectedVersions {
         expectedVersions.put("openssl", "0.9.8");
         expectedVersions.put("openssh", "7.1");
         expectedVersions.put("zabbix", "2.4");
-        expectedVersions.put("nagios", "4.0.8");
+        expectedVersions.put("nagios", "4.1.1");
         expectedVersions.put("cobertura", "2.1.1");
         expectedVersions.put("gatling", "2.1.7");
         expectedVersions.put("scala", "2.11.7");
         expectedVersions.put("selenium", "2.48.2");
-        expectedVersions.put("virtualbox", "5.0.8");
+        expectedVersions.put("virtualbox", "5.0.10");
         expectedVersions.put("windows", "10.0.10240");
         expectedVersions.put("centos", "7.1");
         expectedVersions.put("fedora", "23");
@@ -79,7 +79,7 @@ public class ExpectedVersions {
         expectedVersions.put("wordpress", "4.3");
         expectedVersions.put("internetexplorer", "11.0.24");
         expectedVersions.put("nmap", "6.49");
-        expectedVersions.put("edge", "20.10240");
+        expectedVersions.put("edge", "25.10586");
         expectedVersions.put("opera", "33.0");
         expectedVersions.put("postgresql", "9.4.5");
         expectedVersions.put("lighttpd", "1.4.37");
@@ -108,12 +108,13 @@ public class ExpectedVersions {
         expectedVersions.put("audacity", "2.1.1");
         expectedVersions.put("chef", "12.5.1");
         expectedVersions.put("vaadin", "7.5.8");
-        expectedVersions.put("kubernetes", "1.0.7");
+        expectedVersions.put("kubernetes", "1.1.1");
         expectedVersions.put("abletonlive", "9.5");
         expectedVersions.put("openbox", "3.6.1");
-        expectedVersions.put("mercurial", "3.6");
+        expectedVersions.put("mercurial", "3.6.1");
         expectedVersions.put("rancheros", "0.4.0");
         expectedVersions.put("openbsd", "5.8");
+        expectedVersions.put("blender", "2.76b");
     }
 
     public Map<String, String> getExpectedVersions() {

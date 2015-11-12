@@ -180,7 +180,8 @@ var versions = [
       { "id": "nexus", "name": "Nexus" },
       { "id": "libreoffice", "name": "LibreOffice" },
       { "id": "audacity", "name": "Audacity" },
-      { "id": "abletonlive", "name": "Ableton Live" }
+      { "id": "abletonlive", "name": "Ableton Live" },
+      { "id": "blender", "name": "Blender" }
     ]
   }
 ];

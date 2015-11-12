@@ -530,6 +530,11 @@ public class Conf {
                 "body > table > tbody > tr:nth-child(1) > td:nth-child(3) > p:nth-child(6) > a",
                 "OpenBSD ([0-9]+\\.[0-9]+)"
         ));
+        configurations.put("blender", new VersionParserConfiguration(
+                "https://www.blender.org/",
+                "#carousel > div.container.relative.hidden-xs.hidden-sm > div > a > button",
+                "Blender ([0-9]+\\.[0-9]+[a-z]?)"
+        ));
     }
 
     public Map<String, VersionParserConfiguration> getConfigurations() {

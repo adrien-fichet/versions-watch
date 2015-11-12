@@ -184,7 +184,7 @@ These scripts can be uploaded and maintained using Vim online.
 <tr>
     <td class="lightbg"><span class="txth1">&nbsp;&nbsp;News</span></td>
     <td nowrap class="lightbg" align="right"><small>&nbsp;Vim
-7.4.909
+7.4.922
     is the current version&nbsp;</small></td>
 </tr>
 </table>
@@ -239,51 +239,68 @@ Bram has visited the Vim charity project, read about it in his
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr>
     <td class="lightbg"><span class="txth1">&nbsp;&nbsp;Recent Script Updates</span></td>
-    <td nowrap class="lightbg" align="right"><small>&nbsp;5,159 scripts, 10,705,540 downloads&nbsp;</small></td>
+    <td nowrap class="lightbg" align="right"><small>&nbsp;5,162 scripts, 10,713,222 downloads&nbsp;</small></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 </table>
 <table cellpadding="0" cellspacing="0" border="0">
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-11-07]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5263">Never Optimal Wiki</a> : a minimalistic pure vim personal wiki</td>
+    <td class="newsdate" nowrap valign="top">[2015-11-11]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5268">fountainflow.vim</a> : Convert Fountain screenplay files to HTML and LibreOffice</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.3.1) - correct bug introduced in 0.3: vim's isdirectory() doesn't understand ~, so substitute by full $HOME path when necessary - <i>Dalker .</i></td>
+    <td>(1.0) Initial upload - <i>Saeger Ryman</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-11-06]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=4649">proguard.vim</a> : Syntax highlighting for ProGuard configuration files</td>
-</tr>
-<tr>
-    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(2) Add some more directives. - <i>David Reiss</i></td>
-</tr>
-<tr>
-    <td class="newsdate" nowrap valign="top">[2015-11-05]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=5265">wimproved.vim</a> : Better fullscreen and more on Windows.</td>
+    <td class="newsdate" nowrap valign="top">[2015-11-11]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5252">vimagit</a> : A new way to use git with vim.</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.1.0) Initial upload - <i>Killian Koenig</i></td>
+    <td>(1.4.2) Some bug fixes and performance improvements.
+
+Enhancements:
+
+* smarter way to handle magit buffer:
+&nbsp;&nbsp;&nbsp;&nbsp; - improve some internal mechanisms, which should improve performances for huge repositories
+&nbsp;&nbsp;&nbsp;&nbsp; - by default, do not show untracked/deleted/added/renamed files diffs (ref #28)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; see g:magit_default_show_all_files new behavior
+* add g:magit_default_sections to let user choose which ... - <i>Jerome Reybert</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-11-04]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=3375">notes.vim</a> : Easy note taking in Vim</td>
+    <td class="newsdate" nowrap valign="top">[2015-11-11]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5267">simple_playground.vim</a> : make vim be language playgrounds</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.33.4)  • Make :SearchNotes work properly without vim-shell (fixes #53):
-&nbsp;&nbsp; <a target="_blank" href="http://github.com/xolox/vim-notes/commit/e465a0a">http://github.com/xolox/vim-notes/commit/e465a0a</A> - <i>Peter Odding</i></td>
+    <td>(0.1.0) Initial upload - <i>Sarunyoo Chobpanich</i></td>
 </tr>
 <tr>
-    <td class="newsdate" nowrap valign="top">[2015-11-02]</td>
-    <td>&nbsp;<a href="scripts/script.php?script_id=1536">remind</a> : remind syntax</td>
+    <td class="newsdate" nowrap valign="top">[2015-11-10]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=5266">vim-maildrop</a> : Syntax highlighting for Courier maildrop filters</td>
 </tr>
 <tr>
     <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
-    <td>(0.7) updated email and link - <i>Davide Alberani</i></td>
+    <td>(1.0) Initial upload - <i>Sirtaj Singh Kang</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2015-11-09]</td>
+    <td>&nbsp;<a href="scripts/script.php?script_id=2033">trag</a> : A language-aware source code scanner (with support for git grep, ack, ag, sift)</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(2.00) - Require tlib 1.14; use tlib#file#Edit()
+- Move ftplugin/* -&gt; autoload/trag/ft/*
+- trag#ScanWithGrepDefs() etc.
+- a:leader .'+' map -&gt; :Tragcw
+- trag#ScanWithGrepDefs(): Return values(qfl)
+- Misc fixes
+- GrepWith_external(): strip text
+- trag#utils#GrepaddFiles(): Use shellescape()
+- Support for sift (<a target="_blank" href="https://sift-tool.org">https://sift-tool.org</A>)
+- Support for markdown
+- Move qfl/loclist browser to tlib; require tlib 1... - <i>Tom Link</i></td>
 </tr>
 <tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
 <tr><td colspan="2"><a href="scripts/index.php">more recent</a> | 
@@ -336,7 +353,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         <tr valign="top">
           <td class="sidebar" align='center'>
              &nbsp;<br>
-	     <a href="http://iccf-holland.org/click5.html"><img src="/images/oualline.jpg" alt="Buy a book, help Uganda, learn Vim"></a>
+	     <a href="http://iccf-holland.org/click5.html"><img src="/images/gepackt.jpg" alt="Buy a book, help Uganda, learn Vim"></a>
 	     <br>
 	     <a href="http://iccf-holland.org/click1.html">Buy at Amazon<br>Help Uganda</a>
           </td>

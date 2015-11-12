@@ -1,6 +1,6 @@
 //IDEA
 var versionIDEAShort = "15.0";
-var versionIDEALong = "15.0";
+var versionIDEALong = "15.0.1";
 function versionIDEA(el) {
     if (el == "short") {
         document.write(versionIDEAShort);
@@ -24,7 +24,7 @@ function versionRS(el) {
 
 //TeamCity
 var versionTCShort = "9.1";
-var versionTCLong = "9.1.3";
+var versionTCLong = "9.1.4";
 function versionTC(el) {
     if (el == "short") {
         document.write(versionTCShort);
@@ -36,8 +36,8 @@ function versionTC(el) {
 
 //RubyMine
 var versionRubyShort = "8";
-var versionRubyLong = "8.0.0";
-var versionRubyMac = "8.0.0-custom-jdk-bundled"
+var versionRubyLong = "8.0.1";
+var versionRubyMac = "8.0.1-custom-jdk-bundled"
 function versionRuby(el) {
     if (el == "short") {
         document.write(versionRubyShort);
@@ -76,7 +76,7 @@ function versionWebIDE(el) {
 
 //PyCharm
 var versionPyCharmShort = "5.0";
-var versionPyCharmLong = "5.0";
+var versionPyCharmLong = "5.0.1";
 function versionPyCharm(el) {
     if (el == "short") {
         document.write(versionPyCharmShort);
@@ -112,7 +112,7 @@ function versionYT(el) {
 
 //WebStorm
 var versionWebStormShort = "11.0";
-var versionWebStormLong = "11.0";
+var versionWebStormLong = "11.0.1";
 function versionWebStorm(el) {
     if (el == "short") {
         document.write(versionWebStormShort);
@@ -124,7 +124,7 @@ function versionWebStorm(el) {
 
 //PhpStorm
 var versionPhpStormShort = "10.0";
-var versionPhpStormLong = "10.0";
+var versionPhpStormLong = "10.0.1";
 function versionPhpStorm(el) {
     if (el == "short") {
         document.write(versionPhpStormShort);
@@ -136,7 +136,7 @@ function versionPhpStorm(el) {
 
 //AppCode
 var versionAppCodeShort = "3.3";
-var versionAppCodeLong = "3.3";
+var versionAppCodeLong = "3.3.1";
 function versionAppCode(el) {
     if (el == "short") {
         document.write(versionAppCodeShort);
@@ -172,7 +172,7 @@ function versionHub(el) {
 
 //CLion
 var versionCLionShort = "1.2";
-var versionCLionLong = "1.2";
+var versionCLionLong = "1.2.1";
 function versionCLion(el) {
     if (el == "short") {
         document.write(versionCLionShort);
