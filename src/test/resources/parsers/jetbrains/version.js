@@ -12,7 +12,7 @@ function versionIDEA(el) {
 
 //Resharper Ultimate (including ReSharper, ReSharper C++, dotCover, dotMemory, dotTrace, dotPeek)
 var versionRSShort = "10";
-var versionRSLong = "10.0";
+var versionRSLong = "10.0.1";
 function versionRS(el) {
     if (el == "short") {
         document.write(versionRSShort);

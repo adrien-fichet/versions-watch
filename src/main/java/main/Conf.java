@@ -102,7 +102,7 @@ public class Conf {
         ));
         configurations.put("javascript", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/JavaScript",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
                 "([0-9A-Za-z ]+)(\\[[0-9]*\\])? / "
         ));
         configurations.put("ubuntu", new VersionParserConfiguration(

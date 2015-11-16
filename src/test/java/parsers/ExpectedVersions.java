@@ -10,7 +10,7 @@ public class ExpectedVersions {
         expectedVersions = new HashMap<String, String>();
         expectedVersions.put("idea", "15.0.1");
         expectedVersions.put("youtrack", "6.5");
-        expectedVersions.put("spring", "4.2.2");
+        expectedVersions.put("spring", "4.2.3");
         expectedVersions.put("apache", "2.4.17");
         expectedVersions.put("debian", "8.2");
         expectedVersions.put("eclipse", "4.5.1");
@@ -45,7 +45,7 @@ public class ExpectedVersions {
         expectedVersions.put("scala", "2.11.7");
         expectedVersions.put("selenium", "2.48.2");
         expectedVersions.put("virtualbox", "5.0.10");
-        expectedVersions.put("windows", "10.0.10240");
+        expectedVersions.put("windows", "10.0.10586");
         expectedVersions.put("centos", "7.1");
         expectedVersions.put("fedora", "23");
         expectedVersions.put("proxmox", "4.0");
@@ -58,14 +58,14 @@ public class ExpectedVersions {
         expectedVersions.put("i3", "4.11");
         expectedVersions.put("linux", "4.3");
         expectedVersions.put("xfce", "4.12");
-        expectedVersions.put("elasticdump", "0.16.0");
+        expectedVersions.put("elasticdump", "0.16.1");
         expectedVersions.put("solr", "5.3.1");
         expectedVersions.put("jquery", "2.1.4");
         expectedVersions.put("nexus", "2.11");
         expectedVersions.put("googlechrome", "46.0");
         expectedVersions.put("firefox", "42.0");
         expectedVersions.put("gnomeshell", "3.19.1");
-        expectedVersions.put("kde", "4.14.6");
+        expectedVersions.put("kde", "4.14.3");
         expectedVersions.put("docker", "1.9.0");
         expectedVersions.put("kali", "2.0");
         expectedVersions.put("visualstudio", "2015 RTM");
