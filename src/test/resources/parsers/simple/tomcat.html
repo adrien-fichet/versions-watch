@@ -60,6 +60,9 @@
 <a href="./whichversion.html">Which version?</a>
 </li>
 <li>
+<a href="./download-90.cgi">Tomcat 9.0</a>
+</li>
+<li>
 <a href="./download-80.cgi">Tomcat 8.0</a>
 </li>
 <li>
@@ -86,6 +89,9 @@
 <h2>Documentation</h2>
 <ul>
 <li>
+<a href="./tomcat-9.0-doc/index.html">Tomcat 9.0</a>
+</li>
+<li>
 <a href="./tomcat-8.0-doc/index.html">Tomcat 8.0</a>
 </li>
 <li>
@@ -105,6 +111,9 @@
 </li>
 <li>
 <a href="./migration.html">Migration Guide</a>
+</li>
+<li>
+<a href="./presentations.html">Presentations</a>
 </li>
 </ul>
 </div>
@@ -230,7 +239,7 @@ mapping between the specifications and the respective Apache Tomcat versions is:
   <td>TBD (3.1?)</td>
   <td>TBD (1.2?)</td>
   <td>9.0.x</td>
-  <td>None</td>
+  <td>9.0.0.M1 (alpha)</td>
   <td>8 and later</td>
 
 </tr>
@@ -350,11 +359,11 @@ the associated release notes.</p>
 
 <p>Please note that although we offer downloads and documentation of older
 releases, such as Apache Tomcat 6.x, we strongly encourage users to use the
-latest stable version of Apache Tomcat whenever possible.  We recognize that upgrading
-across major versions may not be a trivial task, and some support is still
-offered on the mailing list for users of old versions.  However, because of the
-community-driven support approach, the older your version the less people would
-be interested or able to support you.
+latest stable version of Apache Tomcat whenever possible.  We recognize that
+upgrading across major versions may not be a trivial task, and some support is
+still offered on the mailing list for users of old versions.  However, because
+of the community-driven support approach, the older your version, fewer people
+will be interested or able to support you.
 </p>
 
 
@@ -363,10 +372,13 @@ be interested or able to support you.
 <div class="text">
 
 
-<p>Almost every Tomcat release is initially released as an Alpha release. After a week or
-so of testing a vote is held to gather views on the stability of the release.  If a
-major issue is identified during testing, then the vote may not take place and the
-release will remain as an Alpha release.</p>
+<p>When voting for a release, reviewers specify the stability level that they
+consider the release has reached. Initial releases of a new major version
+typically process from Alpha, through Beta to Stable over a period of several
+months. However, the Stable level is only available once the Java specifications
+the release implements have been finalised. This means a release that in all
+other respects is considered stable, may still be labelled as Beta if the
+specifications are not final.</p>
 
 
 <p>The download pages will always show the latest stable release and any newer
@@ -375,9 +387,10 @@ marked on the download pages.</p>
 
 
 <p>Stability is a subjective judgement and you should always read carefully the
-release notes for any version you intend to make use of.  If you are an early adopter
-of a release, we would love to hear your opinion about its stability as part of the
-vote: it takes place on the <a href="lists.html">development mailing list</a>.</p>
+release notes for any version you intend to make use of.  If you are an early
+adopter of a release, we would love to hear your opinion about its stability as
+part of the vote: it takes place on the <a href="lists.html">development mailing
+list</a>.</p>
 
 
 <p>
@@ -387,14 +400,15 @@ expected to run stably for any length of time.</p>
 
 
 <p>
-<strong>Beta</strong> releases may contain some untested functionality and/or a
-number of relatively minor bugs. Beta releases are not expected to run stably.</p>
+<strong>Beta</strong> releases may contain some untested functionality and/or
+a number of relatively minor bugs. Beta releases are not expected to run stably.
+</p>
 
 
 <p>
-<strong>Stable</strong> releases may contain a small number of relatively minor
-bugs. Stable releases are intended for production use and are expected to run
-stably for extended periods of time.</p>
+<strong>Stable</strong> releases may contain a small number of relatively
+minor bugs. Stable releases are intended for production use and are expected to
+run stably for extended periods of time.</p>
 
 
 </div>
@@ -403,16 +417,23 @@ stably for extended periods of time.</p>
 
 
 <p>
-<strong>Apache Tomcat 9.x</strong> is the current focus of development, It
-builds on Tomcat 8.0.x and will implement the <strong>Servlet 4.0</strong>,
+<strong>Apache Tomcat 9.x</strong> is the current focus of development, it
+builds on Tomcat 8.0.x and implements the current draft of the <strong>Servlet
+4.0</strong> specification and will also implement the
 <strong>JSP 2.4?</strong>, <strong>EL 3.1?</strong> and
-<strong>Web Socket 1.2?</strong> specifications. In addition to that, it
-includes the following significant improvements:
+<strong>Web Socket 1.2?</strong> specifications once work starts on updating
+those specifications for Java EE 8. In addition to this, it includes the
+following significant improvements:
 </p>
 
 <ul>
 
-<li>TBD (9.0.x is work in progress)</li>
+<li>Adds support for HTTP/2 (requires the APR/native library)</li>
+
+<li>Adds support for TLS virtual hosting</li>
+
+<li>Adds support for using OpenSSL for TLS support with the JSSE connectors (NIO
+    and NIO2)</li>
 
 </ul>
 

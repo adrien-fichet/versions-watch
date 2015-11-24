@@ -129,6 +129,7 @@ Then :
 - [x] rancher os
 - [x] openbsd
 - [x] blender
+- [x] symfony
 - [ ] emberjs
 - [ ] dropbox
 - [ ] salt

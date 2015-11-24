@@ -147,8 +147,8 @@ function versionAppCode(el) {
 }
 
 //Upsource
-var versionUpsourceShort = "2";
-var versionUpsourceLong = "2.0.4";
+var versionUpsourceShort = "2.5";
+var versionUpsourceLong = "2.5";
 function versionUpsource(el) {
     if (el == "short") {
         document.write(versionUpsourceShort);

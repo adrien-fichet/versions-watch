@@ -267,7 +267,7 @@ public class Conf {
         ));
         configurations.put("googlechrome", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Google_Chrome",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td > p:nth-child(2)",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td > p:nth-child(2)",
                 "([0-9]+\\.[0-9]+)(\\.[0-9]+){2} \\("
         ));
         configurations.put("firefox", new VersionParserConfiguration(
@@ -534,6 +534,11 @@ public class Conf {
                 "https://www.blender.org/",
                 "#carousel > div.container.relative.hidden-xs.hidden-sm > div > a > button",
                 "Blender ([0-9]+\\.[0-9]+[a-z]?)"
+        ));
+        configurations.put("symfony", new VersionParserConfiguration(
+                "http://symfony.com/download",
+                "#version-tab > h3 > strong",
+                "Symfony ([0-9]+\\.[0-9]+)"
         ));
     }
 
