@@ -182,7 +182,10 @@ var versions = [
       { "id": "libreoffice", "name": "LibreOffice" },
       { "id": "audacity", "name": "Audacity" },
       { "id": "abletonlive", "name": "Ableton Live" },
-      { "id": "blender", "name": "Blender" }
+      { "id": "blender", "name": "Blender" },
+      { "id": "rabbitmq", "name": "RabbitMQ" },
+      { "id": "celery", "name": "Celery" },
+      { "id": "flower", "name": "Flower" }
     ]
   }
 ];

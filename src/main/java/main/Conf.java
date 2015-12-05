@@ -132,7 +132,7 @@ public class Conf {
         ));
         configurations.put("logstashforwarder", new VersionParserConfiguration(
                 "https://github.com/elastic/logstash-forwarder/releases",
-                "#js-repo-pjax-container > div.release-timeline > ul > li > .main",
+                "#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.release-timeline > ul > li:nth-child(1) > div > div > h3",
                 "v(([0-9]+\\.){2}[0-9]+) "
         ));
         configurations.put("openssl", new VersionParserConfiguration(
@@ -298,7 +298,7 @@ public class Conf {
         configurations.put("visualstudio", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(4) > td",
-                "([0-9]+ RTM) \\("
+                "([0-9]+ (RTM|Update [0-9]+)) \\("
         ));
         configurations.put("bower", new VersionParserConfiguration(
                 "https://www.npmjs.com/package/bower",
@@ -312,9 +312,8 @@ public class Conf {
         ));
         configurations.put("curator", new VersionParserConfiguration(
                 "https://github.com/elastic/curator/releases",
-                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body." +
-                        "commit.open > div.release-header > h1 > a",
-                "(([0-9]+\\.){2}[0-9]+) \\("
+                "#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.release-timeline > div.release.label-latest > div.release-meta > ul > li:nth-child(1) > a > span.css-truncate-target",
+                "v(([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("coreos", new VersionParserConfiguration(
                 "https://coreos.com/",
@@ -396,7 +395,7 @@ public class Conf {
         ));
         configurations.put("polymer", new VersionParserConfiguration(
                 "https://github.com/Polymer/polymer/releases",
-                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
+                "#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.release-timeline > div.release.label-latest > div.release-meta > ul > li:nth-child(1) > a > span.css-truncate-target",
                 "v(([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("fail2ban", new VersionParserConfiguration(
@@ -467,7 +466,7 @@ public class Conf {
         ));
         configurations.put("naxsi", new VersionParserConfiguration(
                 "https://github.com/nbs-system/naxsi/releases",
-                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-meta > ul > li:nth-child(1) > a > span.css-truncate-target",
+                "#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.release-timeline > div.release.label-latest > div.release-meta > ul > li:nth-child(1) > a > span.css-truncate-target",
                 "(([0-9]+\\.[0-9]+)(rc[0-9]+)?)"
         ));
         configurations.put("memcached", new VersionParserConfiguration(
@@ -502,8 +501,8 @@ public class Conf {
         ));
         configurations.put("kubernetes", new VersionParserConfiguration(
                 "https://github.com/kubernetes/kubernetes/releases",
-                "#js-repo-pjax-container > div.release-timeline > div.release.label-latest > div.release-body.commit.open > div.release-header > h1 > a",
-                "Release v?(([0-9]+\\.){2}[0-9]+)"
+                "#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.release-timeline > div.release.label-latest > div.release-meta > ul > li:nth-child(1) > a > span.css-truncate-target",
+                "v?(([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("abletonlive", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Ableton_Live",
@@ -539,6 +538,21 @@ public class Conf {
                 "http://symfony.com/download",
                 "#version-tab > h3 > strong",
                 "Symfony ([0-9]+\\.[0-9]+)"
+        ));
+        configurations.put("rabbitmq", new VersionParserConfiguration(
+                "https://www.rabbitmq.com/download.html",
+                "#left-content > p",
+                "The latest release of RabbitMQ is (([0-9]+\\.){2}[0-9]+)"
+        ));
+        configurations.put("celery", new VersionParserConfiguration(
+                "https://pypi.python.org/pypi/celery/",
+                "#content > div.section > table:nth-child(6) > tbody > tr:nth-child(1) > td",
+                "(([0-9]\\.){2}[0-9]+) \\([a-zA-Z]+\\)"
+        ));
+        configurations.put("flower", new VersionParserConfiguration(
+                "https://flower.readthedocs.org/en/latest/",
+                "body > div:nth-child(1) > ul > li.nav-item.nav-item-0 > a",
+                "Flower (([0-9]+\\.){2}[0-9]+) documentation"
         ));
     }
 

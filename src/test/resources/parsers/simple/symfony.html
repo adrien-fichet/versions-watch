@@ -169,6 +169,13 @@
         </a>
 
                     </li>
+    <li >
+                            
+        <a href="/search">
+            Search
+        </a>
+
+                    </li>
                         </ul>
 
                         <div id="header-download-sticky" class="hidden-xs">
@@ -278,7 +285,7 @@
             English
                             <span class="arrow"><img src="/images/common/picto/down_arrow_white.png" alt="" /></span>
                     </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
             <div class="other_version">
                 <ul>
                                                                         <li>
@@ -304,6 +311,11 @@
                                                                                                 <li>
                                 <a href="/cs/download">
                                     Czech
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/nl/download">
+                                    Dutch
                                 </a>
                             </li>
                                                                                                                                             <li>
@@ -388,7 +400,7 @@
             });
 </script>
                                                                             <div class="ads">
-                                            <a id="ad-blackfire" href="https://blackfire.io"><img src="/images/blackfire-profiler.png?v=4" class="img-responsive" alt="Blackfire Profiler Fire up your PHP Apps Performance" /></a>
+                                            <a id="ad-blackfire" href="https://blackfire.io/24-days"><img src="/images/blackfire-profiler.png?v=4" class="img-responsive" alt="Blackfire Profiler Fire up your PHP Apps Performance" /></a>
                                             <a id="ad-insight" href="https://insight.sensiolabs.com"><img src="/images/sensiolabsinsight.png?v=4" class="img-responsive" alt="PHP Project Quality Done Right" /></a>
                                         </div>
                                                                                                 </div>
@@ -399,26 +411,18 @@
                                     <div id="download-framework">
         <h1>Using the Symfony <br/> full-stack framework</h1>
 
-        <div class="box box-secondary">
-
-            <strong>NOTE</strong>: At this moment, the latest stable version and the
-            latest long-term support version correspond to the same Symfony 2.7 version.
-            The next stable version (Symfony 2.8) will be released on November 2015.
-
-        </div>
-
         <ul id="nav-version" class="nav nav-tabs">
             <li id="version-tab" class="active version-stable">
                 <h3 data-toggle="tab" data-target="#version-stable">
-                        Use <strong>Symfony 2.7</strong>
+                        Use <strong>Symfony 3.0</strong>
     <br>
     for the latest features
 
 
                     <small>
-                        <a href="/roadmap?version=2.7#checker">
+                        <a href="/roadmap?version=3.0#checker">
                             end of support
-                            <span class="date">May 2018</span>
+                            <span class="date">July 2016</span>
                         </a>
                     </small>
                 </h3>
@@ -426,15 +430,15 @@
             </li>
             <li class="version-lts">
                 <h3 data-toggle="tab" data-target="#version-lts">
-                        Use <strong>Symfony 2.7</strong>
+                        Use <strong>Symfony 2.8</strong>
     <br>
     for long-term support
 
 
                     <small>
-                        <a href="/roadmap?version=2.7#checker">
+                        <a href="/roadmap?version=2.8#checker">
                             end of support
-                            <span class="date">May 2018</span>
+                            <span class="date">Nov. 2018</span>
                         </a>
                     </small>
                 </h3>
@@ -495,15 +499,29 @@
                             Copy
                         </button>
                     </div>
+
+                    <div class="third-party-services">
+                        <div class="service">
+                            <img class="icon" src="/images/v5/download/icon-platformsh.png?v=4" >
+                            <a href="https://accounts.platform.sh/platform/trial/symfony/setup?branch=3.0">Deploy to Platform.sh</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="version-lts" class="console tab-pane fade">
                     <div class="command clearfix">
-                        $ <span class="text-to-copy">symfony new my_project 2.7</span>
+                        $ <span class="text-to-copy">symfony new my_project 2.8</span>
                         <button class="hidden-xs btn btn-copy pull-right">
                             <span class="icon-clipboard"></span>
                             Copy
                         </button>
+                    </div>
+
+                    <div class="third-party-services">
+                        <div class="service">
+                            <img class="icon" src="/images/v5/download/icon-platformsh.png?v=4" >
+                            <a href="https://accounts.platform.sh/platform/trial/symfony/setup?branch=2.8">Deploy to Platform.sh</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -512,18 +530,23 @@
 
     <div class="download-more">
         <div class="row">
-            <div id="download-notifications" class="col-sm-6">
+            <div id="download-demo-application" class="col-sm-6">
                 <div class="download-more-item">
                     <img src="/images/v5/pictos/demoapp.svg?v=4" />
                     <h4>Symfony Demo application</h4>
-                        <p>
-        The best Symfony learning resource and the reference to develop
-        applications following the official best practices.
-    </p>
-    <p>
-        <a href="https://github.com/symfony/symfony-demo">Download it for free</a>
-    </p>
-
+                    <p>
+                        The best Symfony learning resource and the reference to
+                        develop applications following the official best practices.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-6 preferred">
+                            <a href="https://github.com/symfony/symfony-demo">Download</a>
+                        </div>
+                        <div class="col-sm-6 third-party-service">
+                            <img class="icon" src="/images/v5/download/icon-platformsh.png?v=4" >
+                            <a href="https://accounts.platform.sh/platform/trial/symfony/setup?branch=demo">Deploy to Platform.sh</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -679,25 +702,25 @@
 <ul class="event_list">
             <li>
             <h3>
-                <a href="/blog/newsflash-symfonycon-paris-2015-is-less-than-two-weeks-away-it-s-now-awards-time">
-                    Newsflash: SymfonyCon Paris 2015 is less than two weeks away, it&#039;s now Awards time!
-                    <span class="place_date">November 23, 2015</span>
+                <a href="/blog/symfony-3-0-0-released">
+                    Symfony 3.0.0 released
+                    <span class="place_date">November 30, 2015</span>
                 </a>
             </h3>
         </li>
             <li>
             <h3>
-                <a href="/blog/symfony-2-7-7-released">
-                    Symfony 2.7.7 released
-                    <span class="place_date">November 23, 2015</span>
+                <a href="/blog/symfony-2-8-0-released">
+                    Symfony 2.8.0 released
+                    <span class="place_date">November 30, 2015</span>
                 </a>
             </h3>
         </li>
             <li>
             <h3>
-                <a href="/blog/symfony-2-6-12-released">
-                    Symfony 2.6.12 released
-                    <span class="place_date">November 23, 2015</span>
+                <a href="/blog/a-week-of-symfony-465-23-29-november-2015">
+                    A week of symfony #465 (23-29 November 2015)
+                    <span class="place_date">November 29, 2015</span>
                 </a>
             </h3>
         </li>
@@ -743,24 +766,24 @@
 
 <ul class="event_list">
         <li>
-        <a href="http://training.sensiolabs.com/en/training/courses?search_training%5Blevel%5D%5B0%5D=2&amp;search_training%5Bduration%5D=4&amp;search_training%5BavailableLanguages%5D%5B0%5D=fr&amp;search_training%5BavailableLanguages%5D%5B1%5D=en&amp;search_training%5Bkeywords%5D=Pr%C3%A9paration+%C3%A0+la+certification+Symfony&amp;search_training%5Bfrom%5D=11/25/2015&amp;search_training%5Bto%5D=11/27/2015">
-            Symfony Certification: Intensive Prep
-            <br />
-            <span class="place_date">Clichy - 2015-11-25</span>
-        </a>
-    </li>
-        <li>
-        <a href="http://training.sensiolabs.com/en/training/courses?search_training%5Blevel%5D%5B0%5D=1&amp;search_training%5Bduration%5D=2&amp;search_training%5BavailableLanguages%5D%5B0%5D=fr&amp;search_training%5BavailableLanguages%5D%5B1%5D=en&amp;search_training%5BavailableLanguages%5D%5B2%5D=de&amp;search_training%5BavailableLanguages%5D%5B3%5D=es&amp;search_training%5Bkeywords%5D=Ma%C3%AEtrise+de+Symfony2&amp;search_training%5Bfrom%5D=11/25/2015&amp;search_training%5Bto%5D=11/26/2015">
-            Mastering Symfony2
-            <br />
-            <span class="place_date">Clichy - 2015-11-25</span>
-        </a>
-    </li>
-        <li>
         <a href="http://training.sensiolabs.com/en/training/courses?search_training%5Blevel%5D%5B0%5D=0&amp;search_training%5Bduration%5D=4&amp;search_training%5BavailableLanguages%5D%5B0%5D=fr&amp;search_training%5BavailableLanguages%5D%5B1%5D=en&amp;search_training%5BavailableLanguages%5D%5B2%5D=de&amp;search_training%5BavailableLanguages%5D%5B3%5D=es&amp;search_training%5Bkeywords%5D=D%C3%A9veloppement+Web+avec+Symfony2&amp;search_training%5Bfrom%5D=12/08/2015&amp;search_training%5Bto%5D=12/11/2015">
             Web Development with Symfony2
             <br />
             <span class="place_date">London - 2015-12-08</span>
+        </a>
+    </li>
+        <li>
+        <a href="http://training.sensiolabs.com/en/training/courses?search_training%5Blevel%5D%5B0%5D=0&amp;search_training%5Bduration%5D=2&amp;search_training%5BavailableLanguages%5D%5B0%5D=fr&amp;search_training%5BavailableLanguages%5D%5B1%5D=en&amp;search_training%5BavailableLanguages%5D%5B2%5D=de&amp;search_training%5BavailableLanguages%5D%5B3%5D=es&amp;search_training%5Bkeywords%5D=D%C3%A9marrer+avec+Symfony2&amp;search_training%5Bfrom%5D=12/08/2015&amp;search_training%5Bto%5D=12/09/2015">
+            Getting Started with Symfony2
+            <br />
+            <span class="place_date">London - 2015-12-08</span>
+        </a>
+    </li>
+        <li>
+        <a href="http://training.sensiolabs.com/en/training/courses?search_training%5Blevel%5D%5B0%5D=1&amp;search_training%5Bduration%5D=2&amp;search_training%5BavailableLanguages%5D%5B0%5D=fr&amp;search_training%5BavailableLanguages%5D%5B1%5D=en&amp;search_training%5BavailableLanguages%5D%5B2%5D=de&amp;search_training%5BavailableLanguages%5D%5B3%5D=es&amp;search_training%5Bkeywords%5D=Ma%C3%AEtrise+de+Symfony2&amp;search_training%5Bfrom%5D=12/10/2015&amp;search_training%5Bto%5D=12/11/2015">
+            Mastering Symfony2
+            <br />
+            <span class="place_date">London - 2015-12-10</span>
         </a>
     </li>
     </ul>
@@ -1117,5 +1140,5 @@
     );
 </script>
 
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b10765e88c","applicationID":"3535762","transactionName":"ZVVSYEdRWkACVEJRC1wfcVdBWVtdTGRTVhdbX2NNWFZbXRpgU1oXW0RVdllfU3EWWVJUAQhyXFtSCllWDUI=","queueTime":0,"applicationTime":109,"atts":"SRJRFg9LSU4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b10765e88c","applicationID":"3535762","transactionName":"ZVVSYEdRWkACVEJRC1wfcVdBWVtdTGRTVhdbX2NNWFZbXRpgU1oXW0RVdllfU3EWWVJUAQhyXFtSCllWDUI=","queueTime":0,"applicationTime":118,"atts":"SRJRFg9LSU4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>

@@ -85,32 +85,33 @@
 
 <div class="entry">
 	<div class="entrytitle">
-		<h2><a href="/2015/8/30/1.4.37/">1.4.37</a></h2>
-		<h3>August 30, 2015</h3>
+		<h2><a href="/2015/12/5/1.4.38/">1.4.38</a></h2>
+		<h3>December 05, 2015</h3>
 	</div>
 
 	<div class="entrybody">
-		<p>In good tradition every (second) release is followed by another one to fix the regressions. Sorry&#8230;<br />
-So this release contains mostly regression fixes for 1.4.36 and other bug fixes.</p>
+		<p>We should have released sooner (due to <a href="http://redmine.lighttpd.net/issues/2670">#2670</a>) &#8211; let&#8217;s hope we got it right this time :)</p>
 <h2>Important changes</h2>
-<p>1.4.37 contains some regression fixes for 1.4.36, and cmake, scons and FreeBSD (and maybe other BSDs) related fixes. Static builds (for now scons only) have been improved. mmap handling in mod_cgi was improved, also the network mmap backend now handles <span class="caps">SIGBUS</span> (<span class="caps">SIGBUS</span> is triggered if a file gets smaller while reading; there are still some other places this can happen).</p>
-<p>The internal <span class="caps">API</span> changed again, so please be careful with 3rd party plugins.</p>
-<p>The test suite on our jenkins instance is now also run for scons (including static and fullstatic builds) and FreeBSD, hopefully preventing the kind of regressions especially FreeBSD had with 1.4.36 in future releases.</p>
+<ul>
+	<li>mod_secdownload now requires an algorithm option to be set</li>
+	<li>fix a header parse bug (<a href="http://redmine.lighttpd.net/issues/2670">#2670</a>)</li>
+	<li>sendfile support for darwin (just select &#8220;sendfile&#8221; as backend)</li>
+</ul>
 <h2>Downloads</h2>
 <ul>
-	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.37.tar.gz">lighttpd-1.4.37.tar.gz</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.37.tar.gz.asc"><span class="caps">GPG</span> signature</a>)
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.38.tar.gz">lighttpd-1.4.38.tar.gz</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.38.tar.gz.asc"><span class="caps">GPG</span> signature</a>)
 	<ul>
-		<li>SHA256: <code>db6107396fbf8f37f9c6a7e6445c4e67bb6c12bcc9fd2a305da9a6b8b2c68515</code></li>
+		<li>SHA256: <code>eb3c689f83ee3545dc688d99e36011b28145a1727bb6d17c94c5ed6684edcdd1</code></li>
 	</ul></li>
-	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.37.tar.xz">lighttpd-1.4.37.tar.xz</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.37.tar.xz.asc"><span class="caps">GPG</span> signature</a>)
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.38.tar.xz">lighttpd-1.4.38.tar.xz</a> (<a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.38.tar.xz.asc"><span class="caps">GPG</span> signature</a>)
 	<ul>
-		<li>SHA256: <code>804e6f60567ca1da2b3927f92b7e9332b93aca9560f282ca135b86b7558979bd</code></li>
+		<li>SHA256: <code>4912568b7befcf3f552ca4668bd7f38cd85f42a22944359d00816ec27eb1e504</code></li>
 	</ul></li>
-	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.37.sha256sum">SHA256 checksums</a></li>
+	<li><a href="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.38.sha256sum">SHA256 checksums</a></li>
 </ul>
 	</div>
 
-	<div class="entrymore"><a href="/2015/8/30/1.4.37/">Read more ...</a></div>
+	<div class="entrymore"><a href="/2015/12/5/1.4.38/">Read more ...</a></div>
 </div>
 
 

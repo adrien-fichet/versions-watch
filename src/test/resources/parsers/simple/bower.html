@@ -5,7 +5,7 @@
   <title>bower</title>
 
     <meta name="description" content="The browser package manager">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="bower">
     <meta name="twitter:url" content="https://www.npmjs.com/package/bower">
     <meta name="twitter:title" content="npm: bower">
     <meta name="twitter:description" content="The browser package manager">
@@ -49,7 +49,7 @@
   <meta name="theme-color" content="#cb3837">
 
   <link rel="canonical" href="https://www.npmjs.com/package/bower">
-  <link rel="stylesheet" media="all" href="/static/css/index.bc97e562.css">
+  <link rel="stylesheet" media="all" href="/static/css/index.d8a5905b.css">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
   <!--[if lt IE 9]>
@@ -57,11 +57,11 @@
   <![endif]-->
 
 
-  <script src="/static/js/index.min.bbabe967.js"></script>
+  <script src="/static/js/index.min.ee2d72f1.js"></script>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebSite" data-crumb="YRIQdWIjvmsDHQ-FG85tmIlj5NZjx-HNeaJMyPSW0e-">
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="n2NYQeMV27sBLicdbVQjPRBnNjNBOuP6PscAWqSz0hb">
   <meta itemprop="url" content="https://www.npmjs.com/">
 
     <nav>
@@ -120,16 +120,22 @@
       <input type="text" autocomplete="off" name="honey">
     </div>
     
-      <input type="hidden" name="crumb" value="YRIQdWIjvmsDHQ-FG85tmIlj5NZjx-HNeaJMyPSW0e-"/>
+      <input type="hidden" name="crumb" value="n2NYQeMV27sBLicdbVQjPRBnNjNBOuP6PscAWqSz0hb"/>
   </form>
 
   <div id="readme" class="markdown">
-      <h1 id="user-content-bower" class="deep-link package-name-redundant"><a href="#bower">Bower</a></h1>
-<p><a href="https://travis-ci.org/bower/bower"><img src="https://travis-ci.org/bower/bower.svg?branch=master" class="badge"></a> <a href="https://ci.appveyor.com/project/sheerun/bower/history"><img src="https://ci.appveyor.com/api/projects/status/jr6vfra8w84plh2g/branch/master?svg=true"></a> <a href="https://coveralls.io/r/bower/bower?branch=master"><img src="https://img.shields.io/coveralls/bower/bower.svg" class="badge"></a></p>
-<p><img src="http://bower.io/img/bower-logo.png"></p>
+      <h1 id="user-content-bower-a-package-manager-for-the-web" class="deep-link package-name-redundant"><a href="#bower-a-package-manager-for-the-web">Bower - A package manager for the web</a></h1>
 <blockquote>
-<p>A package manager for the web</p>
+<p>Bower needs resources for its maintenance. Please fill <a href="http://goo.gl/forms/P1ndzCNoiG"><strong>Support Declaration</strong></a> if you think you can help.</p>
 </blockquote>
+<p><a href="https://travis-ci.org/bower/bower"><img src="https://travis-ci.org/bower/bower.svg?branch=master" class="badge"></a>
+<a href="https://ci.appveyor.com/project/sheerun/bower/history"><img src="https://ci.appveyor.com/api/projects/status/jr6vfra8w84plh2g/branch/master?svg=true"></a>
+<a href="https://coveralls.io/r/bower/bower?branch=master"><img src="https://img.shields.io/coveralls/bower/bower.svg" class="badge"></a>
+<a href="https://gitter.im/bower/bower?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" class="badge"></a>
+<a href="http://issuestats.com/github/bower/bower"><img src="http://issuestats.com/github/bower/bower/badge/pr?style=flat"></a>
+<a href="http://issuestats.com/github/bower/bower"><img src="http://issuestats.com/github/bower/bower/badge/issue?style=flat"></a></p>
+<img height="300" src="http://bower.io/img/bower-logo.png">
+<hr>
 <p>Bower offers a generic, unopinionated solution to the problem of <strong>front-end package management</strong>, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack. There are no system wide dependencies, no dependencies are shared between different apps, and the dependency tree is flat.</p>
 <p>Bower runs over Git, and is package-agnostic. A packaged component can be made up of any type of asset, and use any type of transport (e.g., AMD, CommonJS, etc.).</p>
 <p><strong>View complete docs on <a href="http://bower.io">bower.io</a></strong></p>
@@ -150,27 +156,22 @@ packages require it to be fetched and installed.</p>
 <pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;uninstall&#xA0;</span><span class="keyword operator shell"><span>&lt;</span></span><span>package-name</span><span class="keyword operator shell"><span>&gt;</span></span></span></div></pre></code></pre>
 <h3 id="user-content-prezto-and-oh-my-zsh-users" class="deep-link"><a href="#prezto-and-oh-my-zsh-users">prezto and oh-my-zsh users</a></h3>
 <p>On <code>prezto</code> or <code>oh-my-zsh</code>, do not forget to <code>alias bower=&apos;noglob bower&apos;</code> or <code>bower install jquery\#1.9.1</code></p>
-<h3 id="user-content-running-commands-with-sudo" class="deep-link"><a href="#running-commands-with-sudo">Running commands with sudo</a></h3>
-<p>Bower is a user command, there is no need to execute it with superuser permissions.
-However, if you still want to run commands with sudo, use <code>--allow-root</code> option.</p>
+<h3 id="user-content-never-run-bower-with-sudo" class="deep-link"><a href="#never-run-bower-with-sudo">Never run Bower with sudo</a></h3>
+<p>Bower is a user command, there is no need to execute it with superuser permissions.</p>
 <h3 id="user-content-windows-users" class="deep-link"><a href="#windows-users">Windows users</a></h3>
 <p>To use Bower on Windows, you must install
-<a href="http://msysgit.github.io/">msysgit</a> correctly. Be sure to check the
-option shown below:</p>
-<p><img src="http://f.cl.ly/items/2V2O3i1p3R2F1r2v0a12/mysgit.png"></p>
+<a href="http://git-for-windows.github.io/">Git for Windows</a> correctly. Be sure to check the
+options shown below:</p>
+<img src="https://cloud.githubusercontent.com/assets/10702007/10532690/d2e8991a-7386-11e5-9a57-613c7f92e84e.png" width="534" height="418">
+<img src="https://cloud.githubusercontent.com/assets/10702007/10532694/dbe8857a-7386-11e5-9bd0-367e97644403.png" width="534" height="418">
 <p>Note that if you use TortoiseGit and if Bower keeps asking for your SSH
 password, you should add the following environment variable: <code>GIT_SSH - C:\Program Files\TortoiseGit\bin\TortoisePlink.exe</code>. Adjust the <code>TortoisePlink</code>
 path if needed.</p>
+<h3 id="user-content-ubuntu-users" class="deep-link"><a href="#ubuntu-users">Ubuntu users</a></h3>
+<p>To use Bower on Ubuntu, you might need to link <code>nodejs</code> executable to <code>node</code>:</p>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>sudo&#xA0;ln&#xA0;-s&#xA0;/usr/bin/nodejs&#xA0;/usr/bin/node</span></span></div></pre></code></pre>
 <h2 id="user-content-configuration" class="deep-link"><a href="#configuration">Configuration</a></h2>
 <p>Bower can be configured using JSON in a <code>.bowerrc</code> file. Read over available options at <a href="http://bower.io/docs/config">bower.io/docs/config</a>.</p>
-<h2 id="user-content-completion-experimental" class="deep-link"><a href="#completion-experimental">Completion (experimental)</a></h2>
-<p><em>NOTE</em>: Completion is still not implemented for the 1.0.0 release</p>
-<p>Bower now has an experimental <code>completion</code> command that is based on, and works
-similarly to the <a href="https://npmjs.org/doc/cli/completion.html">npm completion</a>. It is
-not available for Windows users.</p>
-<p>This command will output a Bash / ZSH script to put into your <code>~/.bashrc</code>,
-<code>~/.bash_profile</code>, or <code>~/.zshrc</code> file.</p>
-<pre><code class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&#xA0;bower&#xA0;completion&#xA0;</span><span class="keyword operator shell"><span>&gt;&gt;</span></span><span>&#xA0;</span><span class="keyword operator shell"><span>~</span></span><span>/.bash_profile</span></span></div></pre></code></pre>
 <h2 id="user-content-support" class="deep-link"><a href="#support">Support</a></h2>
 <ul>
 <li><a href="http://stackoverflow.com/questions/tagged/bower">StackOverflow</a></li>
@@ -178,33 +179,17 @@ not available for Windows users.</p>
 <li><a href="http://webchat.freenode.net/?channels=bower">#bower</a> on Freenode</li>
 </ul>
 <h2 id="user-content-contributing" class="deep-link"><a href="#contributing">Contributing</a></h2>
-<p>We welcome contributions of all kinds from anyone. Please take a moment to
+<p>We welcome <a href="https://github.com/bower/bower/graphs/contributors">contributions</a> of all kinds from anyone. Please take a moment to
 review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">guidelines for contributing</a>.</p>
 <ul>
-<li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#bugs">Bug reports</a></li>
+<li><a href="https://github.com/bower/bower/wiki/Report-a-Bug">Bug reports</a></li>
 <li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#features">Feature requests</a></li>
 <li><a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md#pull-requests">Pull requests</a></li>
 </ul>
 <p>Note that on Windows for tests to pass you need to configure Git before cloning:</p>
 <pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>git&#xA0;config&#xA0;--global&#xA0;core.autocrlf&#xA0;input</span></span></div></pre></code></pre>
-<h2 id="user-content-bower-team" class="deep-link"><a href="#bower-team">Bower Team</a></h2>
-<p>Bower is made by lots of people across the globe, contributions large and small. Our thanks to everyone who has played a part.</p>
-<h3 id="user-content-core-team" class="deep-link"><a href="#core-team">Core team</a></h3>
-<ul>
-<li><a href="https://github.com/satazor">@satazor</a></li>
-<li><a href="https://github.com/wibblymat">@wibblymat</a></li>
-<li><a href="https://github.com/paulirish">@paulirish</a></li>
-<li><a href="https://github.com/benschwarz">@benschwarz</a></li>
-<li><a href="https://github.com/svnlto">@svnlto</a></li>
-<li><a href="https://github.com/sheerun">@sheerun</a></li>
-</ul>
-<h3 id="user-content-bower-alumni" class="deep-link"><a href="#bower-alumni">Bower Alumni</a></h3>
-<ul>
-<li><a href="https://github.com/fat">@fat</a></li>
-<li><a href="https://github.com/maccman">@maccman</a></li>
-</ul>
 <h2 id="user-content-license" class="deep-link"><a href="#license">License</a></h2>
-<p>Copyright (c) 2015 Twitter and other contributors</p>
+<p>Copyright (c) 2015 Twitter and <a href="https://github.com/bower/bower/graphs/contributors">other contributors</a></p>
 <p>Licensed under the MIT License</p>
 
   </div>
@@ -220,20 +205,20 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
 	<ul class="box">
 
       <li class="last-publisher">
-          <a href="/~vladikoff">
-            <img src="https://s.gravatar.com/avatar/13b097b3a9dfacddbda2dff787593452?size=100&amp;default=retro" alt="vladikoff" />
-            <span>vladikoff</span>
+          <a href="/~sheerun">
+            <img src="https://s.gravatar.com/avatar/306b63b79c78a1b67e1789790ad2db86?size=100&amp;default=retro" alt="sheerun" />
+            <span>sheerun</span>
           </a>
           published
-          <span data-date="2015-11-24T17:08:28.686Z" data-date-format="relative">
-            2015-11-24T17:08:28.686Z
+          <span data-date="2015-12-04T21:27:06.135Z" data-date-format="relative">
+            2015-12-04T21:27:06.135Z
           </span>
       </li>
 
     <li>
-      <strong>1.4.2</strong>
+      <strong>1.6.9</strong>
       is the latest
-        of 75 releases
+        of 79 releases
     </li>
 
       <li>
@@ -296,15 +281,15 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
     <ul class="box">
 
         <li>
-          <strong class="pretty-number daily-downloads">83478</strong>
+          <strong class="pretty-number daily-downloads">89924</strong>
           downloads in the last day
         </li>
         <li>
-          <strong class="pretty-number weekly-downloads">534665</strong>
+          <strong class="pretty-number weekly-downloads">559049</strong>
           downloads in the last week
         </li>
         <li>
-          <strong class="pretty-number monthly-downloads">2089770</strong>
+          <strong class="pretty-number monthly-downloads">2273549</strong>
           downloads in the last month
         </li>
 
@@ -328,10 +313,10 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
 
   <h3>Keywords</h3>
   <p class="list-of-links">
-      None
+        <a href="/browse/keyword/bower">bower</a>
   </p>
 
-  <h3>Dependencies (43)</h3>
+  <h3>Dependencies (46)</h3>
   <p class="list-of-links">
           <a href="/package/which">which</a>,
           <a href="/package/user-home">user-home</a>,
@@ -352,6 +337,7 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
           <a href="/package/nopt">nopt</a>,
           <a href="/package/mout">mout</a>,
           <a href="/package/mkdirp">mkdirp</a>,
+          <a href="/package/md5-hex">md5-hex</a>,
           <a href="/package/lru-cache">lru-cache</a>,
           <a href="/package/lockfile">lockfile</a>,
           <a href="/package/junk">junk</a>,
@@ -364,6 +350,8 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
           <a href="/package/github">github</a>,
           <a href="/package/fstream-ignore">fstream-ignore</a>,
           <a href="/package/fstream">fstream</a>,
+          <a href="/package/fs-write-stream-atomic">fs-write-stream-atomic</a>,
+          <a href="/package/destroy">destroy</a>,
           <a href="/package/decompress-zip">decompress-zip</a>,
           <a href="/package/configstore">configstore</a>,
           <a href="/package/chmodr">chmodr</a>,
@@ -381,17 +369,93 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
     <h3><a href="/browse/depended/bower">Dependents</a></h3>
     <p class="list-of-links dependents">
 
-          <a href="/package/caracal">caracal</a>,
+          <a href="/package/p2-theme-core">p2-theme-core</a>,
         
-          <a href="/package/cellsjs">cellsjs</a>,
+          <a href="/package/web-component-tester">web-component-tester</a>,
         
-          <a href="/package/sequence-viewer">sequence-viewer</a>,
+          <a href="/package/ng-peach">ng-peach</a>,
+        
+          <a href="/package/carmel">carmel</a>,
+        
+          <a href="/package/forester-explorer">forester-explorer</a>,
+        
+          <a href="/package/forester">forester</a>,
+        
+          <a href="/package/octavius">octavius</a>,
+        
+          <a href="/package/fpm">fpm</a>,
         
           <a href="/package/msq-appbase">msq-appbase</a>,
         
-          <a href="/package/dolphinio">dolphinio</a>,
+          <a href="/package/a-pollo">a-pollo</a>,
+        
+          <a href="/package/foundation-cli">foundation-cli</a>,
+        
+          <a href="/package/peach.css">peach.css</a>,
+        
+          <a href="/package/masterpkg">masterpkg</a>,
+        
+          <a href="/package/cellsjs">cellsjs</a>,
+        
+          <a href="/package/download.jqueryui.com">download.jqueryui.com</a>,
+        
+          <a href="/package/seed-js">seed-js</a>,
         
           <a href="/package/wix-gruntfile">wix-gruntfile</a>,
+        
+          <a href="/package/markvi">markvi</a>,
+        
+          <a href="/package/dimeshift">dimeshift</a>,
+        
+          <a href="/package/yeoman">yeoman</a>,
+        
+          <a href="/package/webplatform">webplatform</a>,
+        
+          <a href="/package/bower-resolve">bower-resolve</a>,
+        
+          <a href="/package/oss-specs">oss-specs</a>,
+        
+          <a href="/package/dolphinio">dolphinio</a>,
+        
+          <a href="/package/superpanel">superpanel</a>,
+        
+          <a href="/package/mortero">mortero</a>,
+        
+          <a href="/package/gulp-bower">gulp-bower</a>,
+        
+          <a href="/package/libgrabber">libgrabber</a>,
+        
+          <a href="/package/gulp-zkflow-angular">gulp-zkflow-angular</a>,
+        
+          <a href="/package/websdk">websdk</a>,
+        
+          <a href="/package/sequence-viewer">sequence-viewer</a>,
+        
+          <a href="/package/couchappjs">couchappjs</a>,
+        
+          <a href="/package/kong-dashboard">kong-dashboard</a>,
+        
+          <a href="/package/bb-cli">bb-cli</a>,
+        
+          <a href="/package/pulp">pulp</a>,
+        
+          <a href="/package/angular-cookie">angular-cookie</a>,
+        
+          <a href="/package/appbuilder">appbuilder</a>,
+        
+          <a href="/package/bedrock-requirejs">bedrock-requirejs</a>,
+        
+          <a href="/package/grunt-version-check">grunt-version-check</a>,
+        
+          <a href="/package/reditor">reditor</a>,
+        
+          <a href="/package/generator-beyond">generator-beyond</a>,
+        
+          <a href="/package/bower-install-lowest">bower-install-lowest</a>,
+        
+          <a href="/package/jspm-bower-endpoint">jspm-bower-endpoint</a>,
+        
+          <a href="/package/caracal">caracal</a>,
         
           <a href="/package/vui-breadcrumbs">vui-breadcrumbs</a>,
         
@@ -399,86 +463,10 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
         
           <a href="/package/vui-link">vui-link</a>,
         
-          <a href="/package/peach.css">peach.css</a>,
+          <a href="/package/repocop">repocop</a>,
         
-          <a href="/package/ng-peach">ng-peach</a>,
-        
-          <a href="/package/oss-specs">oss-specs</a>,
-        
-          <a href="/package/vui-typography">vui-typography</a>,
-        
-          <a href="/package/cmbweb">cmbweb</a>,
-        
-          <a href="/package/pulp">pulp</a>,
-        
-          <a href="/package/grunt-bower-task">grunt-bower-task</a>,
-        
-          <a href="/package/gulp-bower">gulp-bower</a>,
-        
-          <a href="/package/grunt-bower-concat">grunt-bower-concat</a>,
-        
-          <a href="/package/a-pollo">a-pollo</a>,
-        
-          <a href="/package/lithium-sdk">lithium-sdk</a>,
-        
-          <a href="/package/grunt-bower-installer">grunt-bower-installer</a>,
-        
-          <a href="/package/grunt-bower">grunt-bower</a>,
-        
-          <a href="/package/grunt-bowercopy">grunt-bowercopy</a>,
-        
-          <a href="/package/grunt-bower-install-simple">grunt-bower-install-simple</a>,
-        
-          <a href="/package/grunt-bower-clean">grunt-bower-clean</a>,
-        
-          <a href="/package/octavius">octavius</a>,
-        
-          <a href="/package/nota">nota</a>,
-        
-          <a href="/package/bakari-builder">bakari-builder</a>,
-        
-          <a href="/package/nextprot">nextprot</a>,
-        
-          <a href="/package/mouflon">mouflon</a>,
-        
-          <a href="/package/foundation-cli">foundation-cli</a>,
-        
-          <a href="/package/ember-cli">ember-cli</a>,
-        
-          <a href="/package/polymer-ts-gen">polymer-ts-gen</a>,
-        
-          <a href="/package/feature-viewer">feature-viewer</a>,
-        
-          <a href="/package/five-bells-visualization">five-bells-visualization</a>,
-        
-          <a href="/package/yourlocalcousin">yourlocalcousin</a>,
-        
-          <a href="/package/appbuilder">appbuilder</a>,
-        
-          <a href="/package/carmel">carmel</a>,
-        
-          <a href="/package/em-project-builder">em-project-builder</a>,
-        
-          <a href="/package/gh-badges">gh-badges</a>,
-        
-          <a href="/package/bower-installer">bower-installer</a>,
-        
-          <a href="/package/bupdate">bupdate</a>,
-        
-          <a href="/package/kulor-cli">kulor-cli</a>,
-        
-          <a href="/package/rapid-build">rapid-build</a>,
-        
-          <a href="/package/alerts-factory">alerts-factory</a>,
-        
-          <a href="/package/dynamodb-gui">dynamodb-gui</a>,
-        
-          <a href="/package/markvi">markvi</a>,
-        
-          <a href="/package/ecs-grunt-plugin">ecs-grunt-plugin</a>,
-        
-          <a href="/package/web-component-tester">web-component-tester</a>,
-                  <a href="/package/geojs">geojs</a>,
+          <a href="/package/ng-obelisk">ng-obelisk</a>,
+                  <a href="/package/ember-crossfilter">ember-crossfilter</a>,
         <a href="/browse/depended/bower">and more</a>
     </p>
 
@@ -489,7 +477,7 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
       "name": "bower",
       "description": "The browser package manager",
       "url": "https://www.npmjs.com/package/bower",
-      "keywords": "",
+      "keywords": "bower",
       "applicationCategory": "DeveloperApplication",
       "offers": {
          "@type": "Offer",
@@ -565,4 +553,4 @@ review the <a href="https://github.com/bower/bower/blob/master/CONTRIBUTING.md">
 </body>
 </html>
 
-<!-- pid=24110 e8adb12dff27b5f03da0d0ffa5996068f479801f https://www.npmjs.com www-9-west.internal.npmjs.com  -->
+<!-- pid=10884 9ca928e9cadd92da715784e5ee8e1a64e41527cb https://www.npmjs.com www-12-west.internal.npmjs.com  -->

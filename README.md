@@ -130,9 +130,17 @@ Then :
 - [x] openbsd
 - [x] blender
 - [x] symfony
+- [x] rabbitmq
+- [x] celery
+- [x] flower
 - [ ] emberjs
 - [ ] dropbox
 - [ ] salt
+- [ ] supervisor
+- [ ] grafana
+- [ ] mongodb
+- [ ] genghis
+- [ ] statsd
 
 ### Ideas
 - version numbers should also be links to versions websites
