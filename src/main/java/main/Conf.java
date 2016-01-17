@@ -43,7 +43,7 @@ public class Conf {
         configurations.put("jenkins", new VersionParserConfiguration(
                 "https://jenkins-ci.org",
                 "#release > dl > dd:nth-child(2) > div:nth-child(1) > a > strong",
-                "Latest and greatest \\(([0-9]+\\.[0-9]+)\\)"
+                "Latest: ([0-9]+\\.[0-9]+)"
         ));
         configurations.put("puppet", new VersionParserConfiguration(
                 "http://docs.puppetlabs.com/references/stable/",
@@ -102,7 +102,7 @@ public class Conf {
         ));
         configurations.put("javascript", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/JavaScript",
-                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
+                "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(5) > td",
                 "([0-9A-Za-z ]+)(\\[[0-9]*\\])? / "
         ));
         configurations.put("ubuntu", new VersionParserConfiguration(
@@ -162,8 +162,8 @@ public class Conf {
         ));
         configurations.put("gatling", new VersionParserConfiguration(
                 "http://gatling.io/views/docs.html",
-                "h1",
-                "Latest release : Gatling (([0-9]+\\.){2}[0-9]+)"
+                "body > section > div > section > div > h1",
+                "Latest release: Gatling (([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("scala", new VersionParserConfiguration(
                 "http://www.scala-lang.org/",
@@ -183,7 +183,7 @@ public class Conf {
         configurations.put("windows", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Windows",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(8) > td",
-                ".*?\\(v(([0-9]+\\.){2}[0-9]+)\\)"
+                ".*?\\(v([0-9]+\\.[0-9]+)(\\.[0-9]+){1,2}\\)"
         ));
         configurations.put("centos", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/CentOS",
@@ -247,7 +247,7 @@ public class Conf {
         ));
         configurations.put("elasticdump", new VersionParserConfiguration(
                 "https://www.npmjs.com/package/elasticdump",
-                "body > div.container.content > div.sidebar > ul:nth-child(2) > li:nth-child(2) > strong",
+                "body > div.container.content > div.sidebar > ul:nth-child(3) > li:nth-child(2) > strong",
                 "(([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("solr", new VersionParserConfiguration(
@@ -302,7 +302,7 @@ public class Conf {
         ));
         configurations.put("bower", new VersionParserConfiguration(
                 "https://www.npmjs.com/package/bower",
-                "body > div.container.content > div.sidebar > ul:nth-child(2) > li:nth-child(2) > strong",
+                "body > div.container.content > div.sidebar > ul:nth-child(3) > li:nth-child(2) > strong",
                 "(([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("angularjs", new VersionParserConfiguration(
@@ -386,7 +386,7 @@ public class Conf {
         configurations.put("zsh", new VersionParserConfiguration(
                 "http://zsh.sourceforge.net/Arc/source.html",
                 "body > p:nth-child(4)",
-                "Download zsh (([0-9]+\\.){2}[0-9]+) "
+                "Download zsh (([0-9]+\\.){1,2}[0-9]+) "
         ));
         configurations.put("ansible", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Ansible_(software)",

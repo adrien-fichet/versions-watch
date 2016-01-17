@@ -137,8 +137,7 @@ a:visited { color: #734559 }
 
 
 <table border="0" width="100%">
-<tr><td valign="top">
-<h3>Welcome</h3>
+<tr><td valign="top" width="65%">
 <p>SQLite is a software library that implements a
 <a href="selfcontained.html">self-contained</a>, 
 <a href="serverless.html">serverless</a>,
@@ -154,41 +153,72 @@ The source code for SQLite is in the
 <hr style="color: #044a64" height="2">
 
 <h3>Sponsors</h3>
-<p>Ongoing development and maintenance of SQLite is
-sponsored in part by <a href="consortium.html">SQLite Consortium</a>
-members, including:</p>
+<p>Continuing enhancement and maintenance of SQLite is made possible
+by <a href="consortium.html">SQLite Consortium</a> members, including:</p>
 
 <a name="consortium_members"></a>
 <center>
 <table border="0" cellpadding="15">
-
-
+<tr>
+  <td><a id='a0'><img id='i0'></a></td>
+  <td><a id='a1'><img id='i1'></a></td>
+</tr>
+<tr>
+  <td><a id='a2'><img id='i2'></a></td>
+  <td><a id='a3'><img id='i3'></a></td>
+</tr>
+<tr>
+  <td><a id='a4'><img id='i4'></a></td>
+  <td><a id='a5'><img id='i5'></a></td>
+</tr>
+</table></center>
 <script language="JavaScript">
-  var sponsor = new Array()
-  sponsor[0] = '<tr><td align="center"> <a href="https://www.mozilla.com/"> <img src="images/foreignlogos/mozilla.gif" alt="mozilla.com" border="0"> </a></td><td> <a href="https://www.mozilla.com/">Mozilla</a> - Working to preserve  choice and innovation on the internet.</td></tr>'
+  var sponsors = [{
+    "name":"Mozilla",
+    "href":"https://www.mozilla.com/",
+    "src":"mozilla.gif",
+    "wx":0
+  },{
+    "name":"Bloomberg",
+    "href":"https://www.bloomberg.com/",
+    "src":"bloomberg.gif",
+    "wx":0
+  },{
+    "name":"Bentley",
+    "href":"https://www.bentley.com/",
+    "src":"bentley.gif",
+    "wx":0
+  },{
+    "name":"NDS",
+    "href":"http://www.nds-association.org/",
+    "src":"nds.png",
+    "wx":0
+  },{
+    "name":"Expensify",
+    "href":"https://www.expensify.com/",
+    "src":"expensify.png",
+    "wx":225,
+    "hx":32
+  },{
+    "name":"Facebook",
+    "href":"https://www.facebook.com/",
+    "src":"fb.gif",
+    "wx":0
+  }];
 
-  sponsor[1] = '<tr><td align="center"> <a href="https://www.bloomberg.com/"> <img src="images/foreignlogos/bloomberg.gif" alt="bloomberg.com" border="0"> </a></td><td> <a href="https://www.bloomberg.com/">Bloomberg</a> -  A world leader in financial-information technology.</td></tr>'
-
-  sponsor[2] = '<tr><td align="center"> <a href="https://www.bentley.com/"> <img src="images/foreignlogos/bentley.gif" alt="bentley.com" border="0"> </a></td><td> <a href="https://www.bentley.com/">Bentley</a> - Comprehensive software  solutions for Sustaining Infrastructure.</td></tr>'
-
-  sponsor[3] = '<tr><td align="center"> <a href="http://www.nds-association.org/"> <img src="images/foreignlogos/nds.png" alt="nds-association.org" border="0"> </a></td><td> <a href="http://www.nds-association.org/">NDS</a> - The leading map standard  for automotive infotainment and autonomous driving.</td></tr>'
-
-  sponsor[4] = '<tr><td align="center"> <a href="https://www.expensify.com/"> <img src="images/foreignlogos/expensify.png" width="225" height="32"  alt="expensify.org" border="0"> </a></td><td> <a href="https://www.expensify.com/">Expensify</a> -  We power the most exciting companies in the world using SQLite. </td></tr>'
-
-  count = 5
-  while( count>0 ){
-    i = Math.floor(Math.random()*6)
-    if( sponsor[i]!=null ){
-      document.write(sponsor[i])
-      sponsor[i] = null
-      count--
+  for(var i=0; i<sponsors.length; i++){sponsors[i].idx = Math.random();}
+  sponsors.sort(function(a,b){return a.idx-b.idx});
+  for(var i=0; i<sponsors.length; i++){
+    var e = document.getElementById("a"+i);
+    e.href = sponsors[i].href;
+    var x = document.getElementById("i"+i);
+    x.src = "images/foreignlogos/"+sponsors[i].src;
+    if(sponsors[i].wx>0){
+      x.width = sponsors[i].wx;
+      x.height = sponsors[i].hx;
     }
   }
 </script>
-
-
-</table>
-</center>
 
 
 </td>
@@ -197,7 +227,7 @@ members, including:</p>
 <h3>Current Status</h3>
 
 <p><ul>
-<li><a href="releaselog/3_9_2.html">Version 3.9.2</a>
+<li><a href="releaselog/3_10_1.html">Version 3.10.1</a>
 of SQLite is recommended for all new development.
 </li>
 </ul></p>
@@ -208,7 +238,6 @@ of SQLite is recommended for all new development.
 <li> <a href="features.html">Features</a> </li>
 <li> <a href="whentouse.html">When to use SQLite</a> </li>
 <li> <a href="faq.html">Frequently Asked Questions</a> </li>
-<li> <a href="famous.html">Well-known Users</a> </li>
 <li> <a href="quickstart.html">Getting Started</a> </li>
 <li> <a href="lang.html">SQL Syntax</a>
 <ul>

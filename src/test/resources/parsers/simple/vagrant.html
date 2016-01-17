@@ -11,17 +11,17 @@
 
 		<!-- lib styles -->
 		<link href="/stylesheets/bootstrap-8082a218.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/vagrantup-5741341a.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/vagrantup-42af7e46.css" media="screen" rel="stylesheet" type="text/css" />
 
 		<!-- lib js -->
-		<script src="/javascripts/jquery-e11bfb4b.js" type="text/javascript"></script>
-		<script src="/javascripts/modernizr-70ddcfce.js" type="text/javascript"></script>
+		<script src="/javascripts/jquery-eb3bceb4.js" type="text/javascript"></script>
+		<script src="/javascripts/modernizr-a79ed93f.js" type="text/javascript"></script>
 		<script src="/javascripts/bootstrap.min-98cc7a22.js" type="text/javascript"></script>
-		<script src="/javascripts/backstretch-f9c163c1.js" type="text/javascript"></script>
-		<script src="/javascripts/vagrantup-423100d4.js" type="text/javascript"></script>
+		<script src="/javascripts/backstretch-625c361d.js" type="text/javascript"></script>
+		<script src="/javascripts/vagrantup-9a13cdf4.js" type="text/javascript"></script>
 
 		<!-- fonts -->
-		<link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300,600' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="//use.typekit.net/xfs6zus.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -33,20 +33,59 @@
 		 <!-- wrap everything -->
 		 <div class="wrapper">
 
-			 <!-- nav -->
-
-			 <nav>
-			 <!-- vagrant logo -->
-			 <a class="vagrant-logo" href="/">Vagrant</a>
-			 <!-- nav -->
-			 <ul class="pull-right unstyled">
-				 <li class="pill"><a href="/vmware">VMware Integration</a></li>
-				 <li><a href="/downloads.html">Downloads</a></li>
-				 <li><a href="https://docs.vagrantup.com/">Documentation</a></li>
-				 <li><a href="/blog.html">Blog</a></li>
-				 <li><a href="/about.html">About</a></li>
-			 </ul>
-			 </nav>
+			<!-- nav -->
+      <div id="header" class="navigation">
+  			<div class="container-fluid">
+  			 <!-- vagrant logo -->
+         <div class="navbar-header">
+            <div class="navbar-brand">
+    			    <a class="logo" href="/">Vagrant</a>
+              <a class="by-hashicorp" href="https://hashicorp.com/"><span class="svg-wrap">by</span><svg class="svg-by" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="-1337.4 1130.1 73.8 16.1" xml:space="preserve" enable-background="new -1337.4 1130.1 73.8 16.1">
+  <g>
+    <path d="M-1329.6 1142.4v-4.9h-4.3v4.9h-2.2v-11.6h2.2v4.8h4.3v-4.8h2.2v11.6H-1329.6z"/>
+    <path d="M-1318.8 1142.4h-1.7l-0.2-0.6c-0.8 0.5-1.7 0.8-2.5 0.8 -1.6 0-2.2-1.1-2.2-2.5 0-1.7 0.8-2.4 2.5-2.4h2v-0.9c0-0.9-0.3-1.3-1.6-1.3 -0.8 0-1.6 0.1-2.4 0.3l-0.3-1.6c0.8-0.2 2-0.4 2.9-0.4 2.7 0 3.5 0.9 3.5 3.1V1142.4zM-1321 1139.2h-1.6c-0.7 0-0.9 0.2-0.9 0.8 0 0.6 0.2 0.9 0.9 0.9 0.6 0 1.2-0.2 1.6-0.4V1139.2z"/>
+    <path d="M-1314.2 1142.6c-0.9 0-2.1-0.2-2.9-0.5l0.3-1.6c0.7 0.2 1.7 0.4 2.5 0.4 0.9 0 1.1-0.2 1.1-0.9 0-0.5-0.1-0.8-1.5-1.1 -2.1-0.5-2.3-1-2.3-2.7s0.8-2.5 3.2-2.5c0.8 0 1.8 0.1 2.5 0.3l-0.2 1.7c-0.6-0.1-1.7-0.2-2.3-0.2 -0.9 0-1.1 0.2-1.1 0.7 0 0.7 0.1 0.7 1.2 1 2.4 0.6 2.6 0.9 2.6 2.7C-1311.1 1141.6-1311.6 1142.6-1314.2 1142.6z"/>
+    <path d="M-1304.3 1142.4v-5.9c0-0.5-0.2-0.7-0.7-0.7s-1.4 0.3-2.2 0.7v5.9h-2.1v-12l2.1-0.3v4.4c0.9-0.5 2.2-0.8 3.1-0.8 1.4 0 1.9 1 1.9 2.5v6.2H-1304.3L-1304.3 1142.4z"/>
+    <path d="M-1300.1 1132.7v-2.5h2.1v2.5H-1300.1zM-1300.1 1142.4v-8.5h2.1v8.5H-1300.1z"/>
+    <path d="M-1296 1134c0-2.1 1.2-3.4 4.1-3.4 1.1 0 2.2 0.1 3.2 0.4l-0.2 1.9c-0.9-0.2-2-0.3-2.8-0.3 -1.5 0-2 0.5-2 1.8v4.5c0 1.2 0.5 1.8 2 1.8 0.8 0 1.9-0.1 2.8-0.3l0.2 1.9c-1 0.2-2.1 0.4-3.2 0.4 -2.9 0-4.1-1.2-4.1-3.4V1134z"/>
+    <path d="M-1283.8 1142.6c-2.9 0-3.7-1.6-3.7-3.3v-2.1c0-1.7 0.8-3.4 3.7-3.4s3.7 1.6 3.7 3.4v2.1C-1280.1 1141-1280.9 1142.6-1283.8 1142.6zM-1283.8 1135.6c-1.1 0-1.6 0.5-1.6 1.5v2.3c0 1 0.4 1.5 1.6 1.5 1.1 0 1.6-0.5 1.6-1.5v-2.4C-1282.2 1136.1-1282.7 1135.6-1283.8 1135.6z"/>
+    <path d="M-1273.9 1135.7c-0.8 0.4-1.5 0.8-2.3 1.2v5.5h-2.1v-8.5h1.8l0.1 0.9c0.5-0.3 1.5-0.9 2.2-1.1L-1273.9 1135.7z"/>
+    <path d="M-1265.6 1139.6c0 1.9-0.8 3-2.8 3 -0.8 0-1.6-0.1-2.3-0.2v3.5l-2.1 0.3V1134h1.7l0.2 0.7c0.8-0.5 1.6-0.9 2.7-0.9 1.7 0 2.6 1 2.6 2.9V1139.6L-1265.6 1139.6zM-1270.6 1140.5c0.6 0.1 1.3 0.2 1.9 0.2 0.8 0 1.1-0.4 1.1-1.1v-3c0-0.7-0.3-1.1-1-1.1 -0.7 0-1.4 0.3-1.9 0.8L-1270.6 1140.5 -1270.6 1140.5z"/>
+  </g>
+  <g class="svg-bg-line">
+    <rect x="-1268" y="1145" width="4.3" height="1"/>
+    <rect x="-1338" y="1145" width="63" height="1"/>
+  </g>
+</svg>
+<svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Isolation_Mode" x="0px" y="0px" viewBox="-344 273 29.4 32" xml:space="preserve" enable-background="new -344 273 29.4 32">
+  <g>
+    <polygon points="-326.2 296.7 -321.4 294.1 -321.4 275.8 -326.2 273 -326.2 286.6 -332.4 286.6 -332.4 281.3 -337.3 283.9 -337.3 302.2 -332.4 305 -332.4 291.4 -326.2 291.4 "/>
+    <polygon points="-319.1 277.1 -319.1 295.6 -326.2 299.5 -326.2 305 -314.6 298.3 -314.6 279.7 "/>
+    <polygon points="-332.4 273 -344 279.7 -344 298.3 -339.5 300.9 -339.5 282.4 -332.4 278.6 "/>
+  </g>
+</svg>
+Hashicorp</a>
+            </div>
+            <button class="navbar-toggle" type="button">
+  						<span class="bar"></span>
+  						<span class="bar"></span>
+  						<span class="bar"></span>
+  					</button>
+          </div>
+          <div class="buttons">
+  					<nav class="navigation-links" role="navigation">
+              <ul class="main-links nav navbar-nav">
+                <li class="pill"><a href="/vmware">VMware Integration</a></li>
+                <li><a href="/downloads.html">Downloads</a></li>
+                <li><a href="https://atlas.hashicorp.com/boxes/search">Boxes</a></li>
+                <li><a href="https://docs.vagrantup.com/">Docs</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/about.html">About</a></li>
+              </ul>
+  					</nav>
+  				</div>
+  			 </div>
+      </div>
 
 			 	<div class="page inner">
 		<!-- background color -->
@@ -82,16 +121,16 @@
   <div class="description">
     <p>
       Below are the available downloads for the latest version of Vagrant
-      (1.7.4). Please download the proper package for your
+      (1.8.1). Please download the proper package for your
       operating system and architecture.
     </p>
     <p>
       You can find the
-      <a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_SHA256SUMS">
-        SHA256 checksums for Vagrant 1.7.4
+      <a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_SHA256SUMS">
+        SHA256 checksums for Vagrant 1.8.1
       </a>
       online and you can
-      <a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_SHA256SUMS.sig">
+      <a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_SHA256SUMS.sig">
         verify the checksums signature file
       </a>
       which has been signed using <a href="https://hashicorp.com/security.html" target="_TOP">HashiCorp's GPG key</a>.
@@ -108,7 +147,7 @@
           <h2 class="os-name">Mac OS X</h2>
           <ul>
             
-              <li><a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4.dmg">Universal (32 and 64-bit)</a></li>
+              <li><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg">Universal (32 and 64-bit)</a></li>
             
           </ul>
           <div class="clearfix"></div>
@@ -124,7 +163,7 @@
           <h2 class="os-name">Windows</h2>
           <ul>
             
-              <li><a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4.msi">Universal (32 and 64-bit)</a></li>
+              <li><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.msi">Universal (32 and 64-bit)</a></li>
             
           </ul>
           <div class="clearfix"></div>
@@ -135,14 +174,14 @@
     
     <div class="row">
       <div class="col-md-12 download">
-        <div class="icon pull-left"><img src="/images/icons/icon_debian-8facafe0.png" /></div>
+        <div class="icon pull-left"><img src="/images/icons/icon_debian-6fd929fe.png" /></div>
         <div class="details">
           <h2 class="os-name">Debian</h2>
           <ul>
             
-              <li><a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_i686.deb">32-bit</a></li>
+              <li><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_i686.deb">32-bit</a></li>
             
-              <li><a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_x86_64.deb">64-bit</a></li>
+              <li><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb">64-bit</a></li>
             
           </ul>
           <div class="clearfix"></div>
@@ -158,9 +197,9 @@
           <h2 class="os-name">Centos</h2>
           <ul>
             
-              <li><a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_i686.rpm">32-bit</a></li>
+              <li><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_i686.rpm">32-bit</a></li>
             
-              <li><a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_x86_64.rpm">64-bit</a></li>
+              <li><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.rpm">64-bit</a></li>
             
           </ul>
           <div class="clearfix"></div>
@@ -185,6 +224,31 @@
 	</div> <!-- /.page.inner -->
 
 
+       <!-- Overlay for fixed mobile-nav -->
+<div class="mobile-nav-overlay"></div>
+
+<!-- Material mobile-nav -->
+<aside id="mobile-nav" class="mobile-nav mobile-nav-default mobile-nav-fixed-right" role="navigation">
+    <!-- mobile-nav header -->
+    <div class="mobile-nav-header header-cover">
+        <!-- mobile-nav brand image -->
+        <div class="mobile-nav-image">
+            <img src="/images/logo-header@2x-9879864d.png" width="169px" height="46px">
+        </div>
+    </div>
+
+    <!-- mobile-nav navigation -->
+    <ul class="main nav mobile-nav-nav">
+      <li class="pill"><a href="/vmware">VMware Integration</a></li>
+      <li><a href="/downloads.html">Downloads</a></li>
+      <li><a href="https://atlas.hashicorp.com/boxes/search">Boxes</a></li>
+      <li><a href="https://docs.vagrantup.com/">Documentation</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+</aside>
+
+       
 			 <!-- footer -->
 			 <footer>
 			 <div class="container">
@@ -195,6 +259,10 @@
 							 <li><a href="https://docs.vagrantup.com/">Documentation</a></li>
 							 <li><a href="/about.html">About</a></li>
 							 <li><a href="/support.html">Support</a></li>
+							 
+								
+								<li class="li-under"><a href="https://github.com/mitchellh/vagrant/blob/master/website/www/source/downloads.html.erb">Edit this page</a></li>
+							 
 							 <a href="/downloads.html">
 								 <li class="button inline-button">Download</li>
 							 </a>
@@ -214,9 +282,11 @@
 				 </div> <!-- /row -->
 
 				 <div class="row">
-					 <h6 class="legal">
-						 Copyright &copy; 2015 HashiCorp
-					 </h6>
+					<div class="span12">
+						<h6 class="legal">
+							 Copyright &copy; 2015 HashiCorp
+						</h6>
+					 </div> <!-- /span -->
 				 </div> <!-- row -->
 			 </div> <!-- container -->
 			 </footer>
@@ -224,10 +294,15 @@
 			 <!-- close .wrapper -->
 		 </div>
 
+     <script src="/javascripts/lib/Base-ef2cd4c2.js" type="text/javascript"></script>
+     <script src="/javascripts/Sidebar-23fdd1d4.js" type="text/javascript"></script>
+
 		 <!-- load scripts -->
 		 <!-- load full-width image into any div with class="big-background -->
 		 <script>
-			 $(".big-background").backstretch("assets/photos/full_width.jpg");
+			$(".big-background").backstretch("assets/photos/full_width.jpg");
+
+  	  new Sidebar();
 		 </script>
 
 		 <!-- Google analytics -->
@@ -265,4 +340,3 @@
 		 </script>
 	 </body>
  </html>
-
