@@ -391,7 +391,7 @@ public class Conf {
         configurations.put("ansible", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Ansible_(software)",
                 "#mw-content-text > table > tbody > tr:nth-child(4) > td",
-                "(([0-9]+\\.){2}[0-9]+) /"
+                "(([0-9]+\\.){2,3}[0-9]+) /"
         ));
         configurations.put("polymer", new VersionParserConfiguration(
                 "https://github.com/Polymer/polymer/releases",
@@ -486,7 +486,7 @@ public class Conf {
         ));
         configurations.put("audacity", new VersionParserConfiguration(
                 "http://audacityteam.org/",
-                "#download_sub > a > h1",
+                "#download_sub > h1 > a",
                 "Download Audacity (([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("chef", new VersionParserConfiguration(

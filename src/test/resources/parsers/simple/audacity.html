@@ -1,21 +1,204 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
 <head>
-  <title>Audacity: Free Audio Editor and Recorder</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta name="keywords" content="Audacity audio software recording editing sounds">
-  <link rel="shortcut icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./style.css" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Audacity&reg;</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://audacityteam.org/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://audacityteam.org/wp-content/themes/twentyfourteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="Audacity&reg; &raquo; Feed" href="http://audacityteam.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Audacity&reg; &raquo; Comments Feed" href="http://audacityteam.org/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/audacityteam.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toolbar.css-css'  href='http://audacityteam.org/wp-content/plugins/google-language-translator/css/toolbar.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style.css-css'  href='http://audacityteam.org/wp-content/plugins/google-language-translator/css/style.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-lato-css'  href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://audacityteam.org/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-style-css'  href='http://audacityteam.org/wp-content/themes/twentyfourteen/style.css?ver=4.4.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='http://audacityteam.org/wp-content/themes/twentyfourteen/css/ie.css?ver=20131205' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://audacityteam.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-content/plugins/google-language-translator/js/flags.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-content/plugins/google-language-translator/js/toolbar.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-content/plugins/google-language-translator/js/load-toolbar.js?ver=4.4.1'></script>
+<link rel='https://api.w.org/' href='http://audacityteam.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://audacityteam.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://audacityteam.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.1" />
+<link rel="canonical" href="http://audacityteam.org/" />
+<link rel='shortlink' href='http://audacityteam.org/' />
+<style type="text/css">p.hello { font-size:12px; color:darkgray; }#google_language_translator, #flags { text-align:left; }#google_language_translator { clear:both; }#flags { width:165px; }#flags a { display:inline-block; margin-right:2px; }.goog-tooltip {display: none !important;}.goog-tooltip:hover {display: none !important;}.goog-text-highlight {background-color: transparent !important; border: none !important; box-shadow: none !important;}#google_language_translator { width:auto !important; }#google_language_translator {color: transparent;}body { top:0px !important; }</style></head>
 
-  <!-- Google+ : This part needs to be within <head>. The badge is shown in the footer. -->
-   <link href="https://plus.google.com/108226440145001840649" rel="Audacity Team" />
-  <!-- end Google+ -->
-</head>
-<body>
-<p><a class="skip" href="#content">Jump to page content</a></p>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<body class="home page page-id-6 page-template-default masthead-fixed footer-widgets grid">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="http://audacityteam.org/" rel="home">Audacity&reg;</a></h1>
+
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container">Search</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<div class="menu-mainmenu-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-101"><a href="http://audacityteam.org/">Home</a></li>
+<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-102"><a href="http://audacityteam.org/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="http://audacityteam.org/about/features/">Features</a></li>
+	<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a href="http://audacityteam.org/about/screenshots/">Screenshots</a></li>
+	<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="http://audacityteam.org/about/news/">News</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="http://audacityteam.org/about/license/">License</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="http://audacityteam.org/about/credits/">Credits</a></li>
+	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="http://audacityteam.org/about/links/">Links</a></li>
+</ul>
+</li>
+<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113"><a href="http://audacityteam.org/download/">Download</a>
+<ul class="sub-menu">
+	<li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="http://audacityteam.org/download/windows/">Windows</a></li>
+	<li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="http://audacityteam.org/download/mac/">Mac</a></li>
+	<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116"><a href="http://audacityteam.org/download/linux/">Linux</a></li>
+	<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="http://audacityteam.org/download/source/">Source</a></li>
+	<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="http://audacityteam.org/download/release-notes/">Release Notes</a></li>
+	<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="http://audacityteam.org/download/plug-ins/">Plug-Ins</a></li>
+	<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="http://audacityteam.org/download/obtain-a-cd/">Obtain a CD</a></li>
+	<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><a href="http://audacityteam.org/download/distributors/">Distributors</a></li>
+</ul>
+</li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-126"><a href="http://audacityteam.org/help/">Help</a>
+<ul class="sub-menu">
+	<li id="menu-item-127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a href="http://audacityteam.org/help/faq/">FAQ</a></li>
+	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="http://audacityteam.org/help/documentation/">Documentation</a></li>
+	<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a href="http://audacityteam.org/help/nyquist/">Nyquist</a></li>
+</ul>
+</li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-109"><a href="http://audacityteam.org/contact/">Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="http://audacityteam.org/contact/mailing-lists/">Mailing Lists</a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="http://audacityteam.org/contact/privacy-policy/">Privacy Policy</a></li>
+</ul>
+</li>
+<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-122"><a href="http://audacityteam.org/community/">Get Involved</a>
+<ul class="sub-menu">
+	<li id="menu-item-123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="http://audacityteam.org/community/users/">Users</a></li>
+	<li id="menu-item-124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="http://audacityteam.org/community/developers/">Developers</a></li>
+	<li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="http://audacityteam.org/community/translators/">Translators</a></li>
+</ul>
+</li>
+<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="http://audacityteam.org/donate/">Donate</a></li>
+</ul></div>			</nav>
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				<form role="search" method="get" class="search-form" action="http://audacityteam.org/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+<div id="main-content" class="main-content">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			
+<article id="post-6" class="post-6 page type-page status-publish hentry">
+	<header class="entry-header"><h1 class="entry-title">Home</h1></header><!-- .entry-header -->
+	<div class="entry-content">
+		<div id="about">
+<h4 style="text-align: center;">Audacity® is free, open source, cross-platform software for recording and editing sounds.</h4>
+<div id="screenshot"><a title="Screenshots" href="/about/screenshots"><img style="float: right;" src="http://www.audacity.audio/wp-content/uploads/2015/11/Audacity-212-Windows-tiny.png" alt="Screenshots" /></a></div>
+<p>Audacity is available for <a href="/download/windows">Windows®</a>, <a href="/download/mac">Mac®</a>, <a href="/download/linux">GNU/Linux®</a> and other operating systems. Check our <a href="/about/features">feature list</a>, <a href="http://wiki.audacityteam.org/">wiki</a> and <a href="http://forum.audacityteam.org/">forum</a>.</p>
+</div>
+<p>&nbsp;</p>
+<div id="download">
+<div id="download_sub">
+<h1><a href="http://www.fosshub.com/Audacity.html/audacity-win-2.1.2.exe">Download Audacity 2.1.2</a></h1>
+<h3>for Windows 8/7/Vista/XP (Windows 10 requires <a href="http://wiki.audacityteam.org/wiki/Windows_10_OS">appropriate drivers</a>)</h3>
+</div>
+<div id="download_sub">
+<p><a href="/download/windows">Other Audacity Downloads for Windows</a></p>
+</div>
+<div id="download_sub">
+<p><a href="/download/">All Audacity Downloads</a></p>
+</div>
+</div>
+<div id="news">
+<div class="newsitem">
+<div id="news">
+<div class="newsitem">
+<h3>Jan 20th, 2016: Audacity 2.1.2 Released</h3>
+<p><a href="/download">Audacity 2.1.2</a> replaces all previous versions.</p>
+<p>We&#8217;ve made several improvements to the spectrogram view of tracks which are particularly valuable for vocal work. Thanks to Paul Licameli.</p>
+<ul>
+<li>New option &#8216;Spectral Reassignment&#8217;. This algorithm deduces a &#8216;finer&#8217; spectrogram for vocal work.</li>
+<li>Improvements to Pitch (EAC) &#8211; cleaner (sharper) display.</li>
+<li>Spectrogram Settings are now available per-track.</li>
+</ul>
+</div>
+<p>We put a lot of work into upgrading the key wxWidgets library we use from version 2.8.12 to version 3.0.2. This fixes many bugs in Audacity on Linux. Thanks particularly to Martin Steghöfer, Leland Lucius, David Avery.</p>
+<div class="newsitem">
+<p style="padding-left: 30px;">Because there was so much work involved in moving to wx3 we were unable to make many of the other changes we wanted to make for 2.1.2.  Fuller details on the changes since 2.1.1 can be found in the <a href="http://wiki.audacityteam.org/wiki/Release_Notes_2.1.2">2.1.2 Release Notes.</a></p>
+</div>
+</div>
+<form id="notify" style="padding-left: 30px;" action="http://scripts.dreamhost.com/add_list.cgi" method="post">
+<h3 id="announce" style="padding-left: 30px;"></h3>
+</form>
+</div>
+</div>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	<div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Audacity&reg;</h1>			<div class="textwidget">A free audio editor and recorder.
+</div>
+		</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Quick Links&#8230;</h1>			<div class="textwidget"><ul style="list-style-type:disc;list-style-position: inside">
+<li><a href="/download/windows/">Windows Download</a>
+<li><a href="/download/">All Downloads</a>
+<li><a href="http://manual.audacityteam.org/o/">Audacity Manual</a>
+<li><a href="http://manual.audacityteam.org/o/man/faq.html">Frequently Asked Questions</a>
+
+</ul></div>
+		</aside><aside id="text-10" class="widget widget_text"><h1 class="widget-title">Find</h1>			<div class="textwidget"><script src="https://apis.google.com/js/platform.js" async defer></script>
 <!-- Google Custom Search Engine -->
 <!-- search box code -->
    <form action="http://www.google.com" id="cse-search-box" target="blank">
@@ -27,7 +210,7 @@
 
             <input type="hidden" name="cx" value="partner-pub-2386514291404644:6498816767" />
             <input type="hidden" name="ie" value="UTF-8" />
-            <input type="text" name="q" size="45" />
+            <input type="text" name="q" size="20" />
             <input type="submit" name="sa" value="Search" />
          </div>
        </td></tr>
@@ -47,162 +230,102 @@
             <script src="http://www.google.com/cse/api/partner-pub-2386514291404644/cse/6498816767/queries/js?oe=UTF-8&amp;callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
         end popular queries code
    -->
-<!-- end Google Custom Search Engine -->
+<!-- end Google Custom Search Engine --></div>
+		</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Translate</h1>			<div class="textwidget"><div id="flags" class="size18"><ul id="sortable" class="ui-sortable" style="float:left"><li id='English'><a title='English' class='notranslate flag en English'></a></li></ul></div><div id="google_language_translator"></div></div>
+		</aside><aside id="text-8" class="widget widget_text"><h1 class="widget-title">New Versions</h1>			<div class="textwidget"><em>To get an announcement email when there is a new version of Audacity, subscribe to our:</em><br><br> 
 
-<h1><a href="./"><img title="Audacity: Free Sound Editor and Recording Software" alt="Audacity: Free Sound Editor and Recording Software" src="./images/Audacity-logo-r_50pct.jpg"></a></h1>
-<!--<div align="right">
-   <a title="Audacity Store, for Audacity-logo shirts, bags and ceramic mugs" href="http://audacitystore.com/">
-   <img src="../images/Audacity Store_banner_50pct.jpg" alt="Audacity Store, for Audacity-logo shirts, bags and ceramic mugs" />
-   </a>
-   <br>
-</div>-->
+<a href="http://lists.audacityteam.org/cgi-bin/mailman/listinfo/audacity-announce">audacity-announce email list.</a></div>
+		</aside></div><!-- #content-sidebar -->
+</div><!-- #main-content -->
 
-<div id="sitenav">
-  <h2>Site Navigation</h2>
-  <ul>
-    <li class="selected">Home</li><li><a href="./about/">About</a></li><li><a href="./download/">Download</a></li><li><a href="./help/">Help</a></li><li><a href="./contact/">Contact Us</a></li><li><a href="./community/">Get Involved</a></li><li><a href="./donate/">Donate</a></li>  </ul>
-</div>
+<div id="secondary">
+	
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="text-3" class="widget widget_text">			<div class="textwidget"><img src="http://www.audacity.audio/wp-content/uploads/2015/11/small-audacity.png"></img></div>
+		</aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h1 class="widget-title">Main Pages</h1><div class="menu-minimenu-container"><ul id="menu-minimenu" class="menu"><li id="menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-258"><a href="http://audacityteam.org/download/">Download</a>
+<ul class="sub-menu">
+	<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="http://audacityteam.org/download/windows/">Windows</a></li>
+	<li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="http://audacityteam.org/download/mac/">Mac</a></li>
+	<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://audacityteam.org/download/linux/">Linux</a></li>
+</ul>
+</li>
+<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-273"><a href="http://audacityteam.org/help/">Help</a>
+<ul class="sub-menu">
+	<li id="menu-item-274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a title="Frequently Asked Questions" href="http://audacityteam.org/help/faq/">Frequently Asked Questions</a></li>
+	<li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-276"><a href="http://audacityteam.org/help/documentation/">Documentation</a></li>
+</ul>
+</li>
+<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-269"><a href="http://audacityteam.org/community/">Get Involved</a>
+<ul class="sub-menu">
+	<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="http://audacityteam.org/community/users/">Users</a></li>
+	<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="http://audacityteam.org/community/developers/">Developers</a></li>
+	<li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="http://audacityteam.org/community/translators/">Translators</a></li>
+</ul>
+</li>
+<li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a href="http://audacityteam.org/about/credits/">Credits</a></li>
+<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://audacityteam.org/contact/">Contact</a></li>
+</ul></div></aside>		<aside id="recent-posts-4" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://audacityteam.org/audacity-2-1-2-released/">Audacity 2.1.2 Released</a>
+						</li>
+					<li>
+				<a href="http://audacityteam.org/audacity-2-1-1-released/">Audacity 2.1.1 Released</a>
+						</li>
+					<li>
+				<a href="http://audacityteam.org/audacity-2-1-0-released/">Audacity 2.1.0 Released</a>
+						</li>
+					<li>
+				<a href="http://audacityteam.org/special-interest-groups/">Special Interest Groups</a>
+						</li>
+					<li>
+				<a href="http://audacityteam.org/audacity-2-0-6-released/">Audacity 2.0.6 Released</a>
+						</li>
+				</ul>
+		</aside>		<aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+						<li><a href="http://audacityteam.org/wp-login.php">Log in</a></li>
+			<li><a href="http://audacityteam.org/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://audacityteam.org/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href='http://audacityteam.org/2016/01/'>January 2016</a></li>
+	<li><a href='http://audacityteam.org/2015/07/'>July 2015</a></li>
+	<li><a href='http://audacityteam.org/2015/03/'>March 2015</a></li>
+	<li><a href='http://audacityteam.org/2014/09/'>September 2014</a></li>
+	<li><a href='http://audacityteam.org/2014/07/'>July 2014</a></li>
+	<li><a href='http://audacityteam.org/2014/06/'>June 2014</a></li>
+	<li><a href='http://audacityteam.org/2012/03/'>March 2012</a></li>
+	<li><a href='http://audacityteam.org/2009/09/'>September 2009</a></li>
+	<li><a href='http://audacityteam.org/2008/09/'>September 2008</a></li>
+		</ul>
+		</aside>	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
 
+		</div><!-- #main -->
 
-<div id="content" class="afternav">
+		<footer id="colophon" class="site-footer" role="contentinfo">
 
-<div id="about">
-  <h2>Audacity&reg; is free, open source, cross-platform software for recording and editing sounds.</h2>
-  <div id="screenshot">
-    <!-- TODO: Auto-select or randomly rotate screenshot? -->
-    <a title="Screenshots" href="about/screenshots"><img alt="Screenshots" src="about/images/audacity-windows-small.jpg"></a>
-  </div>
-  <p>
-    Audacity is available for <a href="download/windows">Windows&reg;</a>, 
-         <a href="download/mac">Mac&reg;</a>, <a href="download/linux">GNU/Linux&reg</a>; and other operating systems. 
-    Check our <a href="about/features">feature list</a>, 
-    <a href="http://wiki.audacityteam.org/">wiki</a>, and 
-    <a href="http://forum.audacityteam.org/">forum</a>.</p>
-</div>
+			
+<div id="supplementary">
+	<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+		<aside id="text-17" class="widget widget_text">			<div class="textwidget"></div>
+		</aside><aside id="text-12" class="widget widget_text">			<div class="textwidget"><br>
+<br>  
+<p style="text-align:right">
+    <!--SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/59/badge_js'></SCRIPT-->
 
-<div id="download">
-  <center>
-  <div id="download_sub">
-    <a href="http://www.fosshub.com/Audacity.html/audacity-win-2.1.1.exe">
-      <h1>Download Audacity 2.1.1</h1> <p><h3>for Windows 8/7/Vista/XP</h3></p></a>  </div>
-
-  <div id="download_sub"><p><a href="download/windows">Other Audacity Downloads for Windows</a></p></div>
-  <div id="download_sub">
-    <p>
-      <a href="download/">All Audacity Downloads</a>
-    </p>
-  </div>
-  </center>
-</div>
-
-<div style="clear: both;"> </div>
-
-<div id="news">
-  <div class="newsitem"><h3>July 15, 2015: Audacity 2.1.1 Released</h3>
-<p>
-<a href="/download">Audacity 2.1.1</a> replaces all previous versions. 
-</p>
-
-<p>
-  <ul>
-    <li>The most visible new feature is 
-    <a href="http://manual.audacityteam.org/o/man/scrubbing_and_seeking.html">
-       scrubbing and seeking,
-    </a>including backwards play.
-    Updates to 
-    <a href="http://manual.audacityteam.org/o/man/timeline.html#tqp">
-       Quick-Play
-    </a> also help with finding a precise position in the audio.
-    </li>
-    <li>You can now install plug-ins without restarting Audacity or add and remove any effect or generator
-    from the menus.</li>
-    <li>Over 50 bugs have been addressed with this release.  Edits are now processed much faster in longer projects of a few hours duration.</li>
-    <li> Effects now have presets.  A new Limiter replaces the Hard Limiter effect.  There's a new version of Vocal Removal, a cross-fade effect for combining clips on the same track and 'classic filters' available as an opt-in effect.</li>
-  </ul>
-</p>
-
-<p>
-  There's also been lots of work behind the scenes, including VI usability enhancements and upgrade to new libraries.  Fuller details on the changes since 2.1.0 can be found in the 
-    <a href="http://wiki.audacityteam.org/wiki/Release_Notes_2.1.1">
-       2.1.1 Release Notes.
-    </a>
-</p>
-
-</div>  <h4>
-    <a href="about/news">
-      More news items...    </a>
-  </h4>
-</div>
-
-<form id="notify" method="post" action="http://scripts.dreamhost.com/add_list.cgi">
-  <h3 id="announce">Get Notified of New Versions</h3>
-  <p>
-  <input type="hidden" name="list" value="audacity-announce">
-  <input type="hidden" name="url" value="http://audacityteam.org/list/subscribed.php">
-  <input type="hidden" name="emailconfirmurl" value="http://audacityteam.org/list/emailconfirm.php">
-  <input type="hidden" name="unsuburl" value="http://audacityteam.org/list/unsubscribed.php">
-  <input type="hidden" name="alreadyonurl" value="http://audacityteam.org/list/alreadyon.php">
-  <input type="hidden" name="notonurl" value="http://audacityteam.org/list/noton.php">
-  <input type="hidden" name="invalidurl" value="http://audacityteam.org/list/invalid.php">
-  <input type="hidden" name="domain" value="audacityteam.org">
-  <input type="hidden" name="emailit" value="1">
-
-  <label for="address">Email address</label>: <input name="address" id="address" class="text">
-  <input type="submit" name="submit" value="Add">
-  <input type="submit" name="unsub" value="Remove">
-  </p>
-</form>
-
-</div>
-<hr>
-<div id="adsense_home_page" style="border:2px solid black">
-  <center>
-    <!-- Google AdSense -->
-    <script type="text/javascript">
-    <!--
-    google_ad_client = "ca-pub-2386514291404644";
-    /* AdSense_home_page */
-    google_ad_slot = "7680997128";
-    google_ad_width = 728;
-    google_ad_height = 90;
-    //-->
-    </script>
-    <script type="text/javascript"
-    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-    </script>
-    <!-- end Google AdSense -->
-
-    <p>
-      <a href="/contact/privacy#advertising">
-        <font size="-2">
-          Audacity Team's Advertisements Policy        </font>
-      </a>
-    </p>
-  </center>
-<!-- NO </div> here! footer.inc.php has it at top. -->
-
-</div>
-<div id="footer">
-  <hr>
-  <h2>Page Footer</h2>
-  <p>
-    <a href="./contact/privacy">Privacy</a>
-    | <a href="./copyright">Copyright</a>
-    | <a href="./site-map">Site Map</a>
-  </p>
-  <p>
-    <SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/59/badge_js'></SCRIPT>
-    <a href="https://plus.google.com/108226440145001840649?prsrc=3" style="text-decoration:none;">
+    <a title="This site is under a Creative Commons Attribution 3.0 License." href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Attribution License" src="/wp-content/uploads/2015/11/creative-commons3.png"></a>
+     
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+  
+  <a href="https://plus.google.com/108226440145001840649?prsrc=3" style="text-decoration:none;">
     &nbsp;&nbsp;&nbsp;
     <img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:32px;height:32px;"/>
-    </a>      
-    <a title="This site is under a Creative Commons Attribution 3.0 License." href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Attribution License" src="./images/creative-commons3.png"></a>
-  
+    </a>  
   </p>
-  <h2>View this page in a different language</h2>
-  <p>
-    <a lang="af" href="?lang=af">Afrikaans</a> | <a lang="cs" href="?lang=cs">Česky</a> | <a lang="hr" href="?lang=hr">Croatian</a> | <a lang="de" href="?lang=de">Deutsch</a> | <a lang="el" href="?lang=el">Ελληνικά</a> | English | <a lang="es" href="?lang=es">Español</a> | <a lang="eu" href="?lang=eu">Euskara</a> | <a lang="fr" href="?lang=fr">Français</a> | <a lang="hi" href="?lang=hi">हिन्दी</a> | <a lang="it" href="?lang=it">Italiano</a> | <a lang="hu" href="?lang=hu">Magyar</a> | <a lang="nb" href="?lang=nb">Norsk (Bokmål)</a> | <a lang="nl" href="?lang=nl">Nederlands</a> | <a lang="pl" href="?lang=pl">Polski</a> | <a lang="pt-PT" href="?lang=pt-PT">Português</a> | <a lang="pt-BR" href="?lang=pt-BR">Português (Brasil)</a> | <a lang="ro" href="?lang=ro">Română</a> | <a lang="ru" href="?lang=ru">Русский</a> | <a lang="sk" href="?lang=sk">Slovak</a> | <a lang="sl" href="?lang=sl">Slovenščina</a> | <a lang="fi" href="?lang=fi">Suomi</a> | <a lang="sv" href="?lang=sv">Svenska</a> | <a lang="tr" href="?lang=tr">Türkçe</a> | <a lang="uk" href="?lang=uk">Ukrainian</a> | <a lang="vi" href="?lang=vi">Vietnamese</a> | <a lang="ja" href="?lang=ja">日本語</a> | <a lang="zh-CN" href="?lang=zh-CN">中文(简)</a> | <a lang="zh-TW" href="?lang=zh-TW">中文(繁)</a>  </p>
-</div>
+
+
+
 <!-- License metadata -->
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -217,13 +340,30 @@
      <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
   </License>
 </rdf:RDF>
--->
+--></div>
+		</aside><aside id="text-15" class="widget widget_text">			<div class="textwidget"><h1>Audacity 2.1.2</h1> 
+Released: 20th-Jan-2016
+</div>
+		</aside>	</div><!-- #footer-sidebar -->
+</div><!-- #supplementary -->
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-230676-1";
-urchinTracker();
-</script>
+			<div class="site-info">
+								<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
 
-</body></html>
+	    <script>jQuery(document).ready(function(a){a("a.nturl").on("click",function(){function l(){doGoogleLanguageTranslator(default_lang+"|"+default_lang)}function n(){doGoogleLanguageTranslator(default_lang+"|"+lang_prefix)}default_lang="en",lang_prefix=a(this).attr("class").split(" ")[2],lang_prefix==default_lang?l():n()}),a("a.flag").on("click",function(){function l(){doGoogleLanguageTranslator(default_lang+"|"+default_lang)}function n(){doGoogleLanguageTranslator(default_lang+"|"+lang_prefix)}default_lang="en",lang_prefix=a(this).attr("class").split(" ")[2],a(".tool-container").hide(),lang_prefix==default_lang?l():n()}),0==a("body > #google_language_translator").length&&a("#glt-footer").html("<div id='google_language_translator'></div>")});</script>
+
+    <div id="glt-translate-trigger"><span class="notranslate">Translate &raquo;</span></div><div id="glt-toolbar"></div><div id='glt-footer'></div><script type='text/javascript'>function GoogleLanguageTranslatorInit() { new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_language_translator');}</script><script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit'></script><script type='text/javascript' src='http://audacityteam.org/wp-includes/js/masonry.min.js?ver=3.1.2'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-content/themes/twentyfourteen/js/functions.js?ver=20150315'></script>
+<script type='text/javascript' src='http://audacityteam.org/wp-includes/js/wp-embed.min.js?ver=4.4.1'></script>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Object Caching 2102/2109 objects using disk
+
+ Served from: audacityteam.org @ 2016-01-23 08:17:13 by W3 Total Cache -->

@@ -15,8 +15,8 @@ public class ExpectedVersions {
         expectedVersions.put("debian", "8.2");
         expectedVersions.put("eclipse", "4.5.1");
         expectedVersions.put("git", "2.7.0");
-        expectedVersions.put("javase", "8u65");
-        expectedVersions.put("jenkins", "1.644");
+        expectedVersions.put("javase", "8u71");
+        expectedVersions.put("jenkins", "1.645");
         expectedVersions.put("mysql", "5.7");
         expectedVersions.put("netbeans", "8.0.2");
         expectedVersions.put("php", "7.0.2");
@@ -43,13 +43,13 @@ public class ExpectedVersions {
         expectedVersions.put("cobertura", "2.1.1");
         expectedVersions.put("gatling", "2.1.7");
         expectedVersions.put("scala", "2.11.7");
-        expectedVersions.put("selenium", "2.49.0");
-        expectedVersions.put("virtualbox", "5.0.12");
+        expectedVersions.put("selenium", "2.49.1");
+        expectedVersions.put("virtualbox", "5.0.14");
         expectedVersions.put("windows", "10.0");
         expectedVersions.put("centos", "7.2");
         expectedVersions.put("fedora", "23");
         expectedVersions.put("proxmox", "4.1");
-        expectedVersions.put("sqlite", "3.10.1");
+        expectedVersions.put("sqlite", "3.10.2");
         expectedVersions.put("grunt", "0.4.5");
         expectedVersions.put("emacs", "24.5");
         expectedVersions.put("python", "3.5.1");
@@ -58,11 +58,11 @@ public class ExpectedVersions {
         expectedVersions.put("i3", "4.11");
         expectedVersions.put("linux", "4.4");
         expectedVersions.put("xfce", "4.12");
-        expectedVersions.put("elasticdump", "0.16.2");
+        expectedVersions.put("elasticdump", "0.18.0");
         expectedVersions.put("solr", "5.4.0");
         expectedVersions.put("jquery", "2.2.0");
         expectedVersions.put("nexus", "2.11");
-        expectedVersions.put("googlechrome", "47.0");
+        expectedVersions.put("googlechrome", "48.0");
         expectedVersions.put("firefox", "43.0.4");
         expectedVersions.put("gnomeshell", "3.19.3");
         expectedVersions.put("kde", "4.14.3");
@@ -72,10 +72,10 @@ public class ExpectedVersions {
         expectedVersions.put("bower", "1.7.2");
         expectedVersions.put("angularjs", "1.4.8");
         expectedVersions.put("curator", "3.4.0");
-        expectedVersions.put("coreos", "928.0.0");
-        expectedVersions.put("safari", "9.0.2");
+        expectedVersions.put("coreos", "935.0.0");
+        expectedVersions.put("safari", "9.0.3");
         expectedVersions.put("drupal", "8.0");
-        expectedVersions.put("foreman", "1.9");
+        expectedVersions.put("foreman", "1.10.0");
         expectedVersions.put("wordpress", "4.4");
         expectedVersions.put("internetexplorer", "11.0.27");
         expectedVersions.put("nmap", "7.01");
@@ -86,7 +86,7 @@ public class ExpectedVersions {
         expectedVersions.put("bootstrap", "3.3.6");
         expectedVersions.put("ruby", "2.3.0");
         expectedVersions.put("zsh", "5.2");
-        expectedVersions.put("ansible", "1.9.4");
+        expectedVersions.put("ansible", "2.0.0.2");
         expectedVersions.put("polymer", "1.2.3");
         expectedVersions.put("fail2ban", "0.9.3");
         expectedVersions.put("go", "1.5.3");
@@ -105,19 +105,19 @@ public class ExpectedVersions {
         expectedVersions.put("memcached", "1.4.25");
         expectedVersions.put("libreoffice", "5.0.4");
         expectedVersions.put("wireshark", "2.0.1");
-        expectedVersions.put("audacity", "2.1.1");
+        expectedVersions.put("audacity", "2.1.2");
         expectedVersions.put("chef", "12.5.1");
         expectedVersions.put("vaadin", "7.6.1");
         expectedVersions.put("kubernetes", "1.1.4");
         expectedVersions.put("abletonlive", "9.5");
         expectedVersions.put("openbox", "3.6.1");
-        expectedVersions.put("mercurial", "3.6.3");
+        expectedVersions.put("mercurial", "3.7");
         expectedVersions.put("rancheros", "0.4.2");
         expectedVersions.put("openbsd", "5.8");
         expectedVersions.put("blender", "2.76b");
         expectedVersions.put("symfony", "3.0");
         expectedVersions.put("rabbitmq", "3.6.0");
-        expectedVersions.put("celery", "3.1.19");
+        expectedVersions.put("celery", "3.1.20");
         expectedVersions.put("flower", "0.9.0");
     }
 
