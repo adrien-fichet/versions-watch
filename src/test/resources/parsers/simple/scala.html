@@ -466,322 +466,1025 @@ for (Person person : people) {
     <div class="row">
       <div class="span7">
   <h2 class="whats-new">What's New</h2>
+  <!-- This is a horrendous way to filter out elements in an array. Blasphemy. Blame Liquid. -->
   
-    <div class="news-item newsbox left">
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
       
-        <div class="news-category">announcement</div>
       
-      
-        <div class="news-title"><a href="/news/2016-schedule">2016 Scala Release Schedule update</a></div>
-      
-      
-      <div class="news-date"><img src="/resources/img/date-icon.png" alt="date icon" /> Wednesday, December 09, 2015</div>
-      
-        <div class="news-body"><p>With 2016 rapidly approaching, it&#8217;s time for an update on our plans for Scala next year!</p>
+      <div class="news-item newsbox left">
+        
+          <div class="news-category">blog</div>
+        
+        
+          <div class="news-title"><a href="/blog/2016/02/17/scaling-dot-soundness.html">Scaling DOT to Scala - Soundness</a></div>
+        
+        
+        <div class="news-date"><img src="/resources/img/date-icon.png" alt="date icon" /> Wednesday, February 17, 2016</div>
+        
+          <div class="news-body"><p>In my <a href="http://www.scala-lang.org/blog/2016/02/03/essence-of-scala.html">last
+blog post</a>
+I introduced DOT, a minimal calculus that underlies much of Scala.
+DOT is much more than an academic exercise, because it gives us
+guidelines on how to design a sound type system for full Scala.</p>
 
-<p><strong>Scala 2.11:</strong> We expect to conclude the 2.11.x series with 2.11.8 in Q1 2016 and 2.11.9 in Q3 2016.</p>
+<h2 id="recap-the-problem-of-bad-bounds">Recap: The Problem of Bad Bounds</h2>
 
-<p><strong>Scala 2.12:</strong> Our current focus is to have 2.12.0-RC1 out by the end of Q2. First, we&#8217;ll have two more 2.12 milestones:
-M4 by the end of January (new trait encoding!), and M5 before Scala Days NYC (feature freeze).
-Our <a href="https://github.com/scala/scala/milestones">GitHub milestones page</a> has projected dates,
-and will be updated with milestone details as they develop.</p>
+<p>As was argued in the previous blog post, the danger a path-dependent type
+system like Scala&#8217;s faces is inconsistent bounds or aliases. For
+instance, you might have a type alias</p>
 
-<p><a href="http://scala-lang.org/news/2.12-roadmap">Big compiler changes</a> are underway, between the new encodings for
-lambdas and traits that take full advantage of Java 8, and the new optimizer. Both milestones will be an excellent
-opportunity to give 2.12 a spin before we cut RC1 (expected end of May). We&#8217;re eager to hear your experience with 2.12,
-both online and in person at Scala Days NYC and Berlin!</p>
+<pre><code>  type T = String
+</code></pre>
 
-<h2 id="participation">Participation</h2>
-<p>As always, getting new Scala versions out the door is a collective effort between Typesafe, EPFL, and the Scala user community.</p>
+<p>in scope in some part of the program, but in another part the same
+type member <code>T</code> is known as</p>
 
-<p>Areas where participation is welcome include:</p>
+<pre><code>  type T = Int
+</code></pre>
+
+<p>If you connect the two parts, you end up allowing assigning a <code>String</code>
+to an <code>Int</code> and vice versa, which is unsound - it will crash at
+runtime with a <code>ClassCastException</code>. The problem is that there
+is no obvious, practical, compile time analysis for DOT or
+Scala that ensures that all types have good bounds. Types can contain
+abstract type members with bounds that can be refined elsewhere and
+several independent refinements might lead together to a bad bound
+problem.  Barring a whole program analysis there is no specific
+point in the program where we can figure this out straightforwardly.</p>
+
+<p>In DOT, the problem is resolved by insisting that every path prefix <code>p</code>
+of a type <code>p.T</code> is at runtime a concrete value. That way, we only have
+to check for good bounds when objects are <em>created</em> with <code>new</code>, and
+that check is easy: When objects are created, we know their class and
+we can insist that all nested types in that class are aliases or
+have consistent bounds. So far so good.</p>
+
+<h2 id="loopholes-caused-by-scaling-up">Loopholes Caused by Scaling Up</h2>
+
+<p>But if we want to scale up the DOT result for full Scala, several
+loopholes open up. These come all down to the fact that the prefix of
+a type selection might <em>not</em> be a value that&#8217;s constructed with a
+<code>new</code> at run time.  The loopholes can be classified into three
+categories:</p>
+
+<ol>
+  <li>
+    <p>The prefix value might be lazy, and never instantiated to anything, as in:</p>
+
+    <pre><code>lazy val p: S = p
+... p.T ...
+</code></pre>
+
+    <p>Note that trying to access the lazy value <code>p</code> would result in an infinite loop. But using <code>p</code> in a type does not force its evaluation, so we might never evaluate <code>p</code>. Since <code>p</code> is not initialized with a <code>new</code>, bad bounds for <code>T</code> would go undetected.</p>
+  </li>
+  <li>
+    <p>The prefix value might be initialized to <code>null</code>, as in</p>
+
+    <pre><code>val p: S = null
+... p.T ...
+</code></pre>
+
+    <p>The problem here is similar to the first one. <code>p</code> is not initialized
+with a <code>new</code> so we know nothing about the bounds of <code>T</code>.</p>
+  </li>
+  <li>
+    <p>The prefix might be a type <code>T</code> in a type projection <code>T # A</code>, where <code>T</code>
+is not associated with a runtime value.</p>
+  </li>
+</ol>
+
+<p>We can in fact construct soundness issues in all of these cases. Look
+at the discussion for issues <a href="https://github.com/lampepfl/dotty/issues/50">#50</a>
+and <a href="https://github.com/lampepfl/dotty/issues/1050">#1050</a> in the
+<a href="https://github.com/lampepfl/dotty/issues/1050">dotty</a> repository
+on GitHub. All issues work fundamentally in the same way: Construct a type <code>S</code>
+which has a type member <code>T</code> with bad bounds, say</p>
+
+<pre><code>Any &lt;: T &lt;: Nothing
+</code></pre>
+
+<p>Then, use the left subtyping to turn an expression of type <code>Any</code> into
+an expression of type <code>T</code> and use the right subtyping to turn that
+expression into an expression of type <code>Nothing</code>:</p>
+
+<pre><code>def f(x: Any): p.T = x
+def g(x: p.T): Nothing = x
+</code></pre>
+
+<p>Taken together, <code>g(f(x))</code> will convert every expression into an
+expression of type <code>Nothing</code>. Since <code>Nothing</code> is a subtype of every
+other type, this means you can convert an arbitrary expression to have
+any type you choose. Such a feat is an impossible promise, of
+course. The promise is usually broken at run-time by failing with a
+<code>ClassCastException</code>.</p>
+
+<h2 id="plugging-the-loopholes">Plugging the Loopholes</h2>
+
+<p>To get back to soundness we need to plug the loopholes. Some of the
+necessary measures are taken in pull request <a href="https://github.com/lampepfl/dotty/issues/1051">#1051</a>.
+That pull request</p>
 
 <ul>
-  <li>Library authors: we encourage you to publish your libraries for 2.12.0-M3 and later milestones.
- If you do publish, please <a href="https://github.com/scala/make-release-notes/blob/2.12.x/projects-2.12.md">list your library</a>.</li>
-  <li>Library authors: if (the latest version of) your library isn&#8217;t included in the 2.12 community build,
- we have <a href="https://github.com/scala/community-builds/wiki">documented</a> how to add it. We’ll be happy to help,
- as the community build is helping us catch more regressions than ever. As always, we&#8217;re counting on your help with testing
- before we go into RC mode! (The <a href="https://github.com/scala/community-builds/blob/2.12.x/common.conf">2.12 community build config</a> 
- lists which version of each built project, and whether its test suite is being exercised.)</li>
-  <li>Reviewing <a href="https://github.com/scala/scala/pulls">pull requests in the Scala repository</a>, where 2.12.x is now the default branch.
- Strong motivation will be needed before we merge anything but important bug fixes to the 2.11.x branch.</li>
-  <li>Documentation updates and reviewing help are much appreciated at the <a href="https://github.com/scala/scala-lang/pulls">scala-lang</a> 
- and <a href="https://github.com/scala/scala.github.com/pulls">docs.scala-lang</a> repos.</li>
+  <li>tightens the rules for overrides of lazy values: lazy values
+cannot override or implement non-lazy values,</li>
+  <li>tightens the rules which lazy values can appear in paths: they
+must be final and must have concrete types with known consistent bounds,</li>
+  <li>allows type projections <code>T # A</code> only if <code>T</code> is a concrete type
+with known consistent bounds.</li>
 </ul>
 
-<p>You can talk to us about 2.12 on the <a href="https://groups.google.com/forum/%23!forum/scala-internals">scala-internals mailing list</a> 
-and the <a href="https://gitter.im/scala/contributors">scala/contributors Gitter room</a>.
-(An <a href="http://www.scala-lang.org/community/">expanded community page</a> on the Scala site lists these and other forums and resources.)</p>
+<p>It looks like this is sufficient to plug soundness problems (1) and
+(3). To plug (2), we need to make the type system track nullability in
+more detail than we do it now. Nullability tracking is a nice feature
+in its own right, but now we have an added incentive for implementing
+it: it would help to ensure type soundness.</p>
 
-<p>Your feedback will inform any revisions needed to the schedule described here.
-We&#8217;ll keep you informed as we continue to refine <a href="https://github.com/scala/scala/milestones">our release schedule</a>.</p>
+<p>There&#8217;s one sub-case of nullability checking which is much harder to do
+than the others. An object reference <code>x.f</code> might be <code>null</code> at run time
+because the field <code>f</code> is not yet initialized. This can lead to a
+soundness problem, but in a more roundabout way than the other issues
+we have identified. In fact, Scala guarantees that in a program that
+runs to completion without aborting, every field will eventually be
+initialized, so every non-null field will have good bounds. Therefore,
+the only way an initialized field <code>f</code> could cause a soundness problem
+is if the program in question would never get to initialize <code>f</code>,
+either because it goes into an infinite loop or because it aborts with
+an exception or <code>System.exit</code> call before reaching the initialization
+point of <code>f</code>. It&#8217;s a valid question whether type soundness guarantees
+should extend to this class of &#8220;strange&#8221; programs. We might want to
+draw the line here and resort to runtime checks or exclude &#8220;strange&#8221;
+programs from any soundness guarantees we can give. The research community
+has coined the term <a href="http://soundiness.org/">soundiness</a> for
+this kind of approach and has <a href="http://cacm.acm.org/magazines/2015/2/182650-in-defense-of-soundiness/fulltext">advocated</a> for it.</p>
 
-<h2 id="timing">Timing</h2>
-<p>Below is a recap of our timeline, future and past. The 2.12.x milestones follow 2.11.x&#8217;s schedule,
-with about a year for development between M1 and RC1. Because 2.11.x will be the last release that supports Java 6,
-we&#8217;ve worked extra hard to improve 2.11.x before shifting our focus to 2.12.x, with a half dozen releases in one year
-(the same number of 2.10.x releases took twice as long). For a while now, 2.11.x has had to take a back seat while we
-make the last push to complete 2.12.0-RC1 according to this schedule.</p>
+<p>The necessary restrictions on type projection <code>T # A</code> are problematic
+because they invalidate some idioms in type-level programming. For
+instance, the cute trick of making Scala&#8217;s type system Turing complete
+by having it <a href="https://michid.wordpress.com/2010/01/29/scala-type-level-encoding-of-the-ski-calculus/">simulate SK
+combinators</a>
+would no longer work since that one relies on unrestricted type
+projections. The same holds for some of the encodings of type-level
+arithmetic.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>&#160;</th>
-      <th>&#160;</th>
-      <th>&#160;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Future 2.12.x</strong></td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.12.0-M4</td>
-      <td><em>Jan 25, 2016</em></td>
-      <td>ca. 12 work-weeks after M3</td>
-    </tr>
-    <tr>
-      <td>2.12.0-M5</td>
-      <td><em>Apr 25, 2016</em></td>
-      <td>one year after M1, as in 2.11.x</td>
-    </tr>
-    <tr>
-      <td>2.12.0-RC1</td>
-      <td><em>May 30, 2016</em></td>
-      <td>one month after last milestone</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td><strong>Future 2.11.x</strong></td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.11.8    </td>
-      <td><em>Feb 8, 2016</em></td>
-      <td>between 2.12.0-M4 and M5</td>
-    </tr>
-    <tr>
-      <td>2.11.9    </td>
-      <td><em>Q3, 2016</em></td>
-      <td>last planned 2.11.x release, &gt;2 years after 2.11.1</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td><strong>Past 2.12.x</strong></td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.12.0-M1  </td>
-      <td><em>May 4, 2015</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.12.0-M2  </td>
-      <td><em>Jul 15, 2015</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.12.0-M3  </td>
-      <td><em>Oct 6, 2015</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td><strong>Past 2.11.x</strong></td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.11.0-M1  </td>
-      <td><em>Jan 7, 2013</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.11.0-M7  </td>
-      <td><em>Nov 18, 2013</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.11.0-M8  </td>
-      <td><em>Jan 21, 2014</em></td>
-      <td>one year after M1</td>
-    </tr>
-    <tr>
-      <td>2.11.0-RC1  </td>
-      <td><em>Feb 28, 2014</em></td>
-      <td>one month after last milestone</td>
-    </tr>
-    <tr>
-      <td>2.11.0      </td>
-      <td><em>Apr 16, 2014</em></td>
-      <td>six weeks after RC1</td>
-    </tr>
-    <tr>
-      <td>2.11.1      </td>
-      <td><em>May 20, 2014</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.11.7      </td>
-      <td><em>Jun 23, 2015</em></td>
-      <td>just 1 year after 2.11.1! (2.10.1-2.10.5 took two years)</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td><strong>2.10.x</strong></td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>&#160;</td>
-      <td>&#160;</td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.10.0</td>
-      <td><em>Dec 19, 2012</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.10.1</td>
-      <td><em>Mar 12, 2013</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.10.2</td>
-      <td><em>Jun 6, 2013</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.10.3</td>
-      <td><em>Sep 27, 2013</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.10.4</td>
-      <td><em>Mar 18, 2014</em></td>
-      <td>&#160;</td>
-    </tr>
-    <tr>
-      <td>2.10.5</td>
-      <td><em>Mar 4, 2015</em></td>
-      <td>EOL two years after 2.10.1</td>
-    </tr>
-    <tr>
-      <td>2.10.6</td>
-      <td><em>Sep 18, 2015</em></td>
-      <td>resolve license incompatibility</td>
-    </tr>
-  </tbody>
-</table>
+<p>To ease the transition, we will continue for a while to allow unrestricted type
+projections under a flag, even though they are potentially
+unsound. In the current dotty compiler, that flag is a language import
+<code>-language:Scala2</code>, but it could be something different for other
+compilers, e.g. <code>-unsafe</code>.  Maybe we can find rules that are less
+restrictive than the ones we have now, and are still sound.  But one
+aspect should be non-negotiable: Any fundamental deviations from the
+principles laid down by DOT needs to be proven mechanically correct
+just like DOT was. We have achieved a lot with the DOT proofs, so we
+should make sure not to back-slide. And if the experience of the past
+10 years has taught us one thing, it is that the meta theory of type
+systems has many more surprises in store than one might think. That&#8217;s
+why mechanical proofs are essential.</p>
 
 </div>
-      
-    </div>
-    <div class="shadow">
-      
-        <div class="more"><a href="/news/2016-schedule">more...</a></div>
-      
-    </div>
+        
+      </div>
+      <div class="shadow">
+        
+          <div class="more"><a href="/blog/2016/02/17/scaling-dot-soundness.html">more...</a></div>
+        
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
 </div>
 <div class="span5 newsbox right">
   <h2 class="recently">Recently...</h2>
   <div class="recent-news-items">
-  
+    <!-- This is a horrendous way to filter out elements in an array. Blasphemy. Blame Liquid. -->
+    
+    
     
       
     
-  
+      
     
-      <div class="recent-news-item">
-        
-          <div class="recent-news-title"><a href="/news/2.12.0-M3">Scala 2.12.0-M3 is now available!</a></div>
-        
-        
-        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Tuesday, October 06, 2015
-        
-          <span class="recent-news-category">announcement</span>
-        </div>
-        
-          <div class="recent-news-body">We are pleased to announce the availability of Scala 2.12.0-M3! Significant changes since M2 include: The REPL received a robust and flexible implementation of tab-completion...</div>
-        
-      </div>
+      
     
-  
+      
     
-      <div class="recent-news-item">
-        
-          <div class="recent-news-title"><a href="/news/2.10.6">Scala 2.10.6 is now available!</a></div>
-        
-        
-        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Friday, September 18, 2015
-        
-          <span class="recent-news-category">announcement</span>
-        </div>
-        
-          <div class="recent-news-body">Scala 2.10.6 resolves a license incompatibility in scala.util.Sorting, but is otherwise identical to Scala 2.10.5. A total of three pending backports were merged. We strongly...</div>
-        
-      </div>
+      
     
-  
+      
     
-      <div class="recent-news-item">
-        
-          <div class="recent-news-title"><a href="/news/2.12.0-M2">Scala 2.12.0-M2 is now available!</a></div>
-        
-        
-        <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Tuesday, July 14, 2015
-        
-          <span class="recent-news-category">announcement</span>
-        </div>
-        
-          <div class="recent-news-body">We are pleased to announce the availability of Scala 2.12.0-M2! We would like to highlight the following changes since M1: Java 8 is now required....</div>
-        
-      </div>
+      
     
-  
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+        
+          <div class="recent-news-item">
+            
+              <div class="recent-news-title"><a href="/blog/2016/02/03/essence-of-scala.html">The Essence of Scala</a></div>
+            
+            
+            <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Wednesday, February 03, 2016
+            
+              <span class="recent-news-category">blog</span>
+            </div>
+            
+              <div class="recent-news-body">What do you get if you boil Scala on a slow flame and wait until all incidental features evaporate and only the most concentrated essence...</div>
+            
+          </div>
+        
+      
+    
+      
+    
+      
+        
+        
+          <div class="recent-news-item">
+            
+              <div class="recent-news-title"><a href="/blog/2016/01/11/minutes-from-jan-2016.html">Minutes from Jan 2016 SIP/SLIP Meeting</a></div>
+            
+            
+            <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Monday, January 11, 2016
+            
+              <span class="recent-news-category">blog</span>
+            </div>
+            
+              <div class="recent-news-body">SIP/SLIP meeting, January 2016 A video recording of this meeting is available. Welcomes and apologies Today we have @SethTisue, @sjrd, @heathermiller, @non and @odersky January...</div>
+            
+          </div>
+        
+      
+    
+      
+        
+        
+          <div class="recent-news-item">
+            
+              <div class="recent-news-title"><a href="/blog/2016/01/02/new-year-resolutions.html">New Year Resolutions</a></div>
+            
+            
+            <div class="recent-news-date"><img style="margin-top: -3px;" src="/resources/img/recent-date-icon.png" alt="date-icon" /> Saturday, January 02, 2016
+            
+              <span class="recent-news-category">blog</span>
+            </div>
+            
+              <div class="recent-news-body">For most of us, the change of the year is an occasion for thinking about what we missed doing last year and where we want...</div>
+            
+          </div>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
   <!-- <a class="more-news">More News</div> -->
   <a class="rss" href="/feed/index.xml"><img src="/resources/img/rss-icon.png" alt="date-icon" ></a>
@@ -789,12 +1492,11 @@ make the last push to complete 2.12.0-RC1 according to this schedule.</p>
 <div class="span12">
   <div class="post-news">
     For more, visit our<br/>
-    <a class="archive-btn" href="/news/" title="News archive">News archive</a>
+    <a class="archive-btn" href="/news/" title="Archive">News archive</a>
     or
     <a class="archive-btn" href="/blog/" title="News archive">Blog</a>
   </div>
 </div>
-
     </div>
   </div>
 </div>
@@ -854,7 +1556,7 @@ make the last push to complete 2.12.0-RC1 according to this schedule.</p>
     <ul>
       <li><h5>Scala</h5></li>
       <li><a href="/blog">Blog</a></li>
-      <li><a href="/news">News &amp; Announcements</a></li>
+      <li><a href="/news">Archive</a></li>
       <li><a href="/conduct.html">Code of Conduct</a></li>
       <li><a href="/license.html">License</a></li>
     </ul>

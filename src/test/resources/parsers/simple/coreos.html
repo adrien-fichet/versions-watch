@@ -9,10 +9,10 @@
  
 <meta itemprop="name" content="CoreOS">
 <meta itemprop="description" content="CoreOS creates and maintains open source projects for Linux Containers.">
-<meta itemprop="image" content="http://coreos.com/assets/images/brand/CoreOS-twitter-embed.png">
+<meta itemprop="image" content="http://coreos.com/assets/images/brand/CoreOS-twitter-embed.jpg">
  
 <meta property="og:title" content="CoreOS"/>
-<meta property="og:image" content="http://coreos.com/assets/images/brand/CoreOS-twitter-embed.png"/>
+<meta property="og:image" content="http://coreos.com/assets/images/brand/CoreOS-twitter-embed.jpg"/>
 <meta property="og:description" content="CoreOS creates and maintains open source projects for Linux Containers."/>
 <title>CoreOS is Linux for Massive Server Deployments</title>
  
@@ -23,6 +23,8 @@
  
 <meta name="ac-discovery" content="coreos.com/etcd https://github.com/coreos/etcd/releases/download/{version}/etcd-{version}-{os}-{arch}.{ext}">
 <meta name="ac-discovery-pubkeys" content="coreos.com/etcd https://coreos.com/dist/pubkeys/aci-pubkeys.gpg">
+<meta name="ac-discovery" content="coreos.com/bootcfg https://github.com/coreos/coreos-baremetal/releases/download/{version}/bootcfg-{version}-{os}-{arch}.{ext}">
+<meta name="ac-discovery-pubkeys" content="coreos.com/bootcfg https://coreos.com/dist/pubkeys/app-signing-pubkey.gpg">
  
 <link href="/assets/css/coreos.css" rel="stylesheet">
  
@@ -231,11 +233,17 @@ Running the World's Containers
 <a href="/" data-category="Main Navigation" data-event="Home">Home</a>
 </li>
 <li class="dropdown co-m-dropdown co-m-main-nav-products co-p-main-nav-toplevel co-p-main-nav-toplevel ">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-category="Main Navigation" data-event="Products: Overview">Products <span class="caret"></span></a>
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-category="Main Navigation" data-event="Products: Open Dropdown">Products <span class="caret"></span></a>
 <ul class="dropdown-menu co-m-dropdown-menu co-m-dropdown-menu-categories co-m-dropdown-menu-categories-expanded" role="menu">
 <li role="presentation" class="dropdown-header">Enterprise Kubernetes</li>
 <li class="co-m-dropdown-menu-categories-category">
 <ul class="co-m-dropdown-menu-categories-sublinks co-m-main-nav-products-sublink">
+<li>
+<a href="https://tectonic.com/starter" data-category="Product Dropdown" data-event="Tectonic: Enterprise">Tectonic Starter</a>
+</li>
+<li>
+<a href="https://tectonic.com/lab" data-category="Product Dropdown" data-event="Tectonic: Lab">Tectonic Lab</a>
+</li>
 <li>
 <a href="https://tectonic.com/enterprise" data-category="Product Dropdown" data-event="Tectonic: Enterprise">Tectonic Enterprise</a>
 </li>
@@ -269,10 +277,10 @@ Running the World's Containers
 <li>
 <a href="https://tectonic.com/training" data-category="Product Dropdown" data-event="Training: Kubernetes">Kubernetes Hands-On</a>
 </li>
-<li>
-<a href="https://tectonic.com/training" data-category="Product Dropdown" data-event="Training: Tectonic">Tectonic Hands-On</a>
-</li>
 </ul>
+</li>
+<li class="co-m-main-nav-products-overview-link">
+<a href="/products" data-category="Product Dropdown" data-event="Products: Overview">All Products</a>
 </li>
 </ul>
 </li>
@@ -358,7 +366,7 @@ Running the World's Containers
 </div>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-6 co-xs-12">
-<div class="co-p-homepage-release-text">Latest version is CoreOS 935.0.0</div>
+<div class="co-p-homepage-release-text">Latest version is CoreOS 976.0.0</div>
 <a href="/releases" class="co-p-homepage-release-link" data-category="Main Download" data-event="Releases">
 Release Notes
 <span class="fa fa-angle-double-right"></span>
@@ -544,7 +552,7 @@ Update Philosophy
 </div>
 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 co-p-homepage-projects-project">
 <div class="co-p-homepage-projects-project-content">
-<a href="https://github.com/coreos/rkt" data-category="Main Project Logo" data-event="Github: rkt">
+<a href="/rkt" data-category="Main Project Logo" data-event="Github: rkt">
 <div class="co-p-homepage-projects-project-logo">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="xMidYMin" height="40px" viewBox="0 0 253.846 106.509" enable-background="new 0 0 253.846 106.509" xml:space="preserve">
 <g>
@@ -571,7 +579,7 @@ Update Philosophy
 </div>
 </a>
 <div class="co-p-homepage-projects-project-details">
-<div class="co-p-homepage-projects-project-details-category">Container Runtime</div>
+<div class="co-p-homepage-projects-project-details-category">Container Engine</div>
 <a href="https://github.com/coreos/rkt" class="co-p-homepage-projects-project-details-link" data-category="Main Project Icon" data-event="Github: rkt">
 <span class="fa fa-github"></span>
 </a>
@@ -1217,69 +1225,78 @@ for updates about CoreOS projects
   </div>
 </div>
 
-<div class="co-p-homepage-social">
+<div class="co-p-homepage-social" id="customers">
   <div class="container">
-    <div class="row co-p-homepage-social-row">
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 co-p-homepage-social-quote">
+    <div class="co-p-homepage-social-header co-m-text-light">CoreOS is trusted in production</div>
+
+    <div class="row co-p-homepage-social-logos">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="co-p-homepage-social-logo">
+          <div class="co-p-homepage-social-image" id="logo-viacom"></div>
+          <a href="https://www.youtube.com/watch?v=OLwzSHBtxhI&list=PLlh6TqkU8kg_Eydfk1Nyt6iK7wM8v9bRA&index=7" class="co-p-homepage-social-link"><span class="fa fa-play-circle-o"></span>Watch the video</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="co-p-homepage-social-logo">
+          <div class="co-p-homepage-social-image" id="logo-ca"></div>
+          <a href="https://www.youtube.com/watch?v=1-SbSa_rwOg&list=PLlh6TqkU8kg_Eydfk1Nyt6iK7wM8v9bRA&index=5" class="co-p-homepage-social-link"><span class="fa fa-play-circle-o"></span>Watch the video</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="co-p-homepage-social-logo">
+          <div class="co-p-homepage-social-image" id="logo-salesforce"></div>
+          <a href="https://youtu.be/Op1981rbOCc?list=PLlh6TqkU8kg8Ld0Zu1aRWATiqBkxseZ9g" class="co-p-homepage-social-link"><span class="fa fa-play-circle-o"></span>Watch the video</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="co-p-homepage-social-logo">
+          <div class="co-p-homepage-social-image" id="logo-verizon-labs"></div>
+          <a href="https://www.youtube.com/watch?v=uwssG6eHYBQ&list=PLlh6TqkU8kg_Eydfk1Nyt6iK7wM8v9bRA&index=8" class="co-p-homepage-social-link"><span class="fa fa-play-circle-o"></span>Watch the video</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="co-p-homepage-social-subheader co-m-text-light">Containers on CoreOS are powering ISE's high-throughput, low-latency financial exchange</div>
+    <div class="row co-p-homepage-social-row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+        <div class="co-p-homepge-social-video-large">
+          <iframe src="https://www.youtube.com/embed/vEpV56iglyc?rel=0&amp;showinfo=0#t=1277" frameborder="0" allowfullscreen></iframe>
+          <div class="caption">ISE presenting at the Tectonic Summit</div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 co-p-homepage-social-quote">
         <div class="co-m-customer-quote">
           <div class="co-m-customer-quote-body co-m-customer-triangle-sw">
             <div class="co-m-customer-triangle"></div>
             <div class="co-m-customer-quote-open">&ldquo;</div>
-            <div class="co-m-customer-quote-content">We believe CoreOS has emerged as a top company to watch in next-generation infrastructure.</div>
+            <div class="co-m-customer-quote-content"><p>On the Linux side, everything in AWS is CoreOS. On the physical side, 20% is CoreOS, and growing.</p>
+            <p>We really look at that [CoreOS] number growing significantly over this next year. We did some of these benchmarks to see if our production trading systems could leverage this type of infrastructure, and it was highly successful for us, and we look forward to using it more in our other environments.</p></div>
             <div class="co-m-customer-quote-close">&rdquo;</div>
           </div>
           <div>
             <div class="co-m-customer-quote-picture">
-              <img src="/assets/images/photos/greg-atlassian.png">
+              <img src="/assets/images/photos/RobCornish.jpg">
             </div>
             <div class="co-m-customer-quote-name">
-              <strong>Greg Warden</strong><br/>
-              Head of Engineering Services
+              <strong>Robert Cornish</strong><br/>
+              CTO
+            </div>
+            <div class="co-m-customer-quote-picture">
+              <img src="/assets/images/photos/Paul_Morgan.jpg">
+            </div>
+            <div class="co-m-customer-quote-name">
+              <strong>Paul Morgan</strong><br/>
+              Systems Architect
             </div>
             <div class="co-m-customer-quote-logo">
-              <img src="/assets/images/media/atlassian-logo.png"/>
+              <img src="/assets/images/partners/ise.png"/>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <div class="row co-p-homepage-social-logos">
-          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 co-p-homepage-social-logos-box">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 co-p-homepage-social-logos-logo">
-                <img src="/assets/images/media/memsql-logo.png" alt="MemSQL">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 co-p-homepage-social-logos-logo">
-                <img src="/assets/images/media/deis-logo.png" alt="Deis">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 co-p-homepage-social-logos-text">
-                Companies using CoreOS technologies
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 co-p-homepage-social-logos-logo">
-                <img src="/assets/images/media/rackspace.png" alt="Rackspace">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 co-p-homepage-social-logos-logo">
-                <img src="/assets/images/partners/cloudfoundry-vertical.png" alt="CloudFoundry">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 co-p-homepage-social-logos-more">
-            <a href="https://twitter.com/coreoslinux/timelines/567849960016990208" class="btn-icon-right" data-category="Homepage Customers" data-event="Twitter Collection">
-              <span class="co-p-homepage-social-logos-more-text">Tweets about CoreOS</span>
-              <span class="fa fa-chevron-right"></span>
-              <span class="fa fa-chevron-right co-p-homepage-social-logos-more-hide"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
+
   </div>
 </div>
 
@@ -3493,6 +3510,370 @@ for updates about CoreOS projects
         
 
         
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
+          
+        
+          
+      
+
+        <!-- Calculate date display variables -->
+        
+        
+
+        <!-- Convert to unix timestamp for comparison -->
+        
+        
+
+        
            
           
           <!-- Current events -->
@@ -3500,14 +3881,14 @@ for updates about CoreOS projects
             <div class="row">
               <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="co-m-event-meetup-box">
-                  <div class="co-m-event-meetup-box-month">Jan</div>
-                  <div class="co-m-event-meetup-box-day">23</div>
+                  <div class="co-m-event-meetup-box-month">Mar</div>
+                  <div class="co-m-event-meetup-box-day">8</div>
                 </div>
               </div>
               <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                <div class="co-m-event-meetup-title"><a href="https://www.socallinuxexpo.org/scale/14x/presentations/etcd-cornerstone-distributed-systems-containers" data-category="Homepage Events" data-event="Meetup URL">SCALE 14x: etcd: A Cornerstone of Distributed Systems For Containers</a></div>
-                <div class="co-m-event-meetup-location">Pasadena, California</div>
-                <div class="co-m-event-meetup-date">Saturday, Jan 23 at 4:30 PM</div>
+                <div class="co-m-event-meetup-title"><a href="http://connect.linaro.org/bkk16/schedule/" data-category="Homepage Events" data-event="Meetup URL">Linaro Connect Bangkok: Keynote</a></div>
+                <div class="co-m-event-meetup-location">Bangkok, Thailand</div>
+                <div class="co-m-event-meetup-date">Tuesday, Mar 8 at 9:00 AM</div>
               </div>
             </div>
           </div>            
@@ -3531,14 +3912,14 @@ for updates about CoreOS projects
             <div class="row">
               <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="co-m-event-meetup-box">
-                  <div class="co-m-event-meetup-box-month">Jan</div>
-                  <div class="co-m-event-meetup-box-day">24</div>
+                  <div class="co-m-event-meetup-box-month">Mar</div>
+                  <div class="co-m-event-meetup-box-day">10</div>
                 </div>
               </div>
               <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                <div class="co-m-event-meetup-title"><a href="http://atcontainer.com/" data-category="Homepage Events" data-event="Meetup URL">Container Technology Conference</a></div>
-                <div class="co-m-event-meetup-location">Beijing, China</div>
-                <div class="co-m-event-meetup-date">Sunday, Jan 24 at 9:00 AM</div>
+                <div class="co-m-event-meetup-title"><a href="http://sched.co/67eX" data-category="Homepage Events" data-event="Meetup URL">KubeCon Europe 2016: Integrated trusted computing in Kubernetes</a></div>
+                <div class="co-m-event-meetup-location">London, England</div>
+                <div class="co-m-event-meetup-date">Thursday, Mar 10 at 9:00 AM</div>
               </div>
             </div>
           </div>            
@@ -3562,29 +3943,17 @@ for updates about CoreOS projects
             <div class="row">
               <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="co-m-event-meetup-box">
-                  <div class="co-m-event-meetup-box-month">Jan</div>
-                  <div class="co-m-event-meetup-box-day">27</div>
+                  <div class="co-m-event-meetup-box-month">Mar</div>
+                  <div class="co-m-event-meetup-box-day">11</div>
                 </div>
               </div>
               <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                <div class="co-m-event-meetup-title"><a href="http://www.meetup.com/Tacoma-Technical-Operations-Meetup/events/227943974/" data-category="Homepage Events" data-event="Meetup URL">Tacoma Technical Operations Meetup</a></div>
-                <div class="co-m-event-meetup-location">Tacoma, Washington</div>
-                <div class="co-m-event-meetup-date">Wednesday, Jan 27 at 7:00 PM</div>
+                <div class="co-m-event-meetup-title"><a href="http://sched.co/68lU" data-category="Homepage Events" data-event="Meetup URL">KubeCon Europe 2016: Day 2 Keynote: Pushing Kubernetes Forward</a></div>
+                <div class="co-m-event-meetup-location">London, England</div>
+                <div class="co-m-event-meetup-date">Friday, Mar 11 at 9:00 AM</div>
               </div>
             </div>
           </div>            
-        
-          
-      
-
-        <!-- Calculate date display variables -->
-        
-        
-
-        <!-- Convert to unix timestamp for comparison -->
-        
-        
-
         
           
       
@@ -3691,7 +4060,7 @@ for updates about CoreOS projects
           <h4>Products</h4>
           <ul>
             <li><a href="https://tectonic.com/enterprise" data-category="Footer" data-event="Tectonic: Enterprise">Tectonic Enterprise</a></li>
-            <li><a href="/products/premium-manged-linux" data-category="Footer" data-event="Products: Managed Linux">Premium Managed Linux</a></li>
+            <li><a href="/products/premium-managed-linux" data-category="Footer" data-event="Products: Managed Linux">Premium Managed Linux</a></li>
             <li><a href="https://tectonic.com/quay-enterprise" data-category="Footer" data-event="Products: Quay Enterprise">Quay Enterprise</a></li>
             <li><a href="/training" data-category="Footer" data-event="Training: Overview">Training Classes</a></li>
             <li><a href="/products/coreupdate" data-category="Footer" data-event="Products: CoreUpdate">CoreUpdate</a></li>
@@ -3740,7 +4109,7 @@ for updates about CoreOS projects
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 
 <!-- Dependencies for docs.js -->
-<script src="/assets/js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="/assets/js/jquery-ui-1.11.4.custom.js"></script>
 <script src="/assets/js/jquery.tocify.js"></script>
 
 <!-- Activate tooltips -->

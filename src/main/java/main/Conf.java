@@ -47,13 +47,13 @@ public class Conf {
         ));
         configurations.put("puppet", new VersionParserConfiguration(
                 "http://docs.puppetlabs.com/references/stable/",
-                "#content > div > div > div h1",
-                "(([0-9]+\\.){2}[0-9]+) References"
+                "#content > div > div > div > h1",
+                "Puppet (([0-9]+\\.){1,2}[0-9]+) Reference Manual"
         ));
         configurations.put("netbeans", new VersionParserConfiguration(
                 "https://netbeans.org/community/releases/roadmap.html",
                 "#middle > table > tbody > tr > td:nth-child(1) > div.f-page-auto-cell > center > table > tbody > tr:nth-child(4) > td:nth-child(1)",
-                "(([0-9]+\\.){2}[0-9]+)"
+                "(([0-9]+\\.){1,2}[0-9]+)"
         ));
         configurations.put("php", new VersionParserConfiguration(
                 "https://php.net/downloads.php",
@@ -68,7 +68,8 @@ public class Conf {
         configurations.put("sublimetext", new VersionParserConfiguration(
                 "https://www.sublimetext.com/",
                 "#download-container > p",
-                "Version (([0-9]+\\.){2}[0-9]+), "
+                "Sublime Text ([0-9]+, Build [0-9]+), ",
+                new String[][]{{", Build ", "."}}
         ));
         configurations.put("javase", new VersionParserConfiguration(
                 "http://www.oracle.com/technetwork/java/javase/downloads/index.html",
@@ -202,8 +203,8 @@ public class Conf {
         ));
         configurations.put("sqlite", new VersionParserConfiguration(
                 "https://www.sqlite.org/",
-                "body > div > table:nth-child(6) > tbody > tr > td:nth-child(5) > ul:nth-child(3) > li > a",
-                "Version (([0-9]+\\.){2}[0-9]+)"
+                "body > div > table:nth-child(6) > tbody > tr > td:nth-child(5) > ul:nth-child(3) > li > a:nth-child(1)",
+                "version (([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("grunt", new VersionParserConfiguration(
                 "http://gruntjs.com/",
@@ -293,7 +294,8 @@ public class Conf {
         configurations.put("kali", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Kali_Linux",
                 "#mw-content-text > table.infobox.vevent > tbody > tr:nth-child(6) > td",
-                "([0-9]+\\.[0-9]+)(\\[|\\()"
+                "([0-9]+-[0-9]+)(\\[|\\()",
+                new String[][]{{"-", "."}}
         ));
         configurations.put("visualstudio", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
@@ -390,7 +392,7 @@ public class Conf {
         ));
         configurations.put("ansible", new VersionParserConfiguration(
                 "https://en.wikipedia.org/wiki/Ansible_(software)",
-                "#mw-content-text > table > tbody > tr:nth-child(4) > td",
+                "#mw-content-text > table > tbody > tr:nth-child(5) > td",
                 "(([0-9]+\\.){2,3}[0-9]+) /"
         ));
         configurations.put("polymer", new VersionParserConfiguration(
@@ -486,7 +488,7 @@ public class Conf {
         ));
         configurations.put("audacity", new VersionParserConfiguration(
                 "http://audacityteam.org/",
-                "#download_sub > h1 > a",
+                "#download > h1 > a",
                 "Download Audacity (([0-9]+\\.){2}[0-9]+)"
         ));
         configurations.put("chef", new VersionParserConfiguration(

@@ -1,22 +1,105 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
+  <script nonce='cffef8a891c361991423e7421ff75f835e925b198b4c74903f6338a8c4e4c4fa85d111794e38fa733ff5ea6eb6e8e8ce7acad2b3d995a38d65a3f8a5810b4789' type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ba86f45fc4","applicationID":"9556514","applicationTime":378.566039,"transactionName":"M1BXZxFZVkQFURBdVwoafVITURdwIWZLG0gFVl5SBF0XTBRTB19ZA1BI","queueTime":0,"ttGuid":"140a2c57c2149a0","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
   <title>bower</title>
 
     <meta name="description" content="The browser package manager">
+    <meta property="og:description" content="The browser package manager">
+    <meta property="og:title" content="bower">
+    <meta property="og:url" content="https://www.npmjs.com/package/bower">
+    <meta property="og:site_name" content="npm">
     <meta name="keywords" content="bower">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="https://www.npmjs.com/package/bower">
     <meta name="twitter:title" content="npm: bower">
     <meta name="twitter:description" content="The browser package manager">
-
-
+  
+  
   <meta http-equiv="cleartype" content="on" />
-
+  
   <meta name="apple-mobile-web-app-capable" content="no">
-  <meta name="description" content="npm is the package manager for javascript">
+  
+  
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  
+  <meta name="x-npm:ga:id" content="UA-47041310-1">
+  <meta name="x-npm:ga:dimensions" content="{&quot;aboveChrome&quot;:&quot;dimension1&quot;,&quot;belowHeader&quot;:&quot;dimension3&quot;,&quot;packagePage&quot;:&quot;dimension2&quot;}">
+  
+  <link rel="canonical" href="https://www.npmjs.com/package/bower">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
 
+    <link rel="stylesheet" media="all" href="/static/css/index.c929724b.css">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+  
+    <script src="/static/js/index.min.473b6d2f.js"></script>
+  
+    <style>
+      .marketing {
+  margin: 0px;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  padding: 0px 0px;
+  font-size: 15px;
+  font-style: normal;
+  fond-variant: normal;
+  fort-weight: normal;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  line-height: 22.5px;
+  }
+  
+  .marketing a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #cb3837;
+  }
+  
+  .marketing h3 {
+  display: block;
+  margin: 0;
+  padding: 20px 0 10px 0;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a {
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a:hover {
+  color: #cb3837;
+  }
+  
+  .marketing p {
+  line-height: 22.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  
+  .marketing p a {
+  white-space: nowrap;
+  }
+  
+  #marketing-texthed {
+  margin-left: 10px;
+  }
+    </style>
   <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
@@ -49,55 +132,73 @@
   <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
   <meta name="theme-color" content="#cb3837">
 
-  <link rel="canonical" href="https://www.npmjs.com/package/bower">
-  <link rel="stylesheet" media="all" href="/static/css/index.8183d065.css">
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <![endif]-->
-
-
-  <script src="/static/js/index.min.e41ddaf7.js"></script>
-
 </head>
 
-<body itemscope itemtype="http://schema.org/WebSite" data-crumb="f0ijNTutUSQ19Zyk9feD4on6aDVA6bdS7_ypVeEw7pP">
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="nJqfuMscmABJX4pwumT87v_RXU0c98QONGbGW1EWdFp">
   <meta itemprop="url" content="https://www.npmjs.com/">
 
-    <nav>
-        <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
-        <a href="/npm/on-site">npm On-Site</a>
-        <a href="/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a>
-        <a href="/npm/open-source">npm Open Source</a>
-        <a href="https://docs.npmjs.com">documentation</a>
-        <a href="/support">support</a>
-    </nav>
 
-  <header>
-    <div id='npm-logo'>
-      <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+  <header class="anonymous">
+    <!-- logo -->
+    <div class="header-item brand-container">
+      <div class="logo-container" id='npm-logo'>
+        <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+      </div>
+    </div>
+    <!-- /logo -->
+
+
+    <!-- search -->
+    <div class="header-item header-search-container">
+      <form class="site-search" id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <div id="site-search-container">
+            <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+        </div>
+        <input type="submit"/>
+      </form>
     </div>
 
-
-      <div id="user-info" class="anonymous">
-          <a href="/login"><img alt="" src="/static/images/wombat-avatar-small.png" /></a>
-          <ul class="single">
-              <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+    <!-- menu 1 -->
+    <div class="header-item user-info-container">
+      <div class="user-info">
+          <ul class="user-info-salutation single">
+            <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+            <li><a href="/login"><span class="a11y-only">log in</span><span class="icon icon-wombat-head-login"></a></li>
           </ul>
+      </div> <!-- .user-info -->
+    </div>
+    <!-- /menu 1 -->
 
+    <!-- menu 2 -->
+    <div class="header-item header-nav-menu-container">
+      <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+      <div class="nav-menu-container" role="navigation">
+        <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+          <img alt="mobile navigation menu" src="/static/images/mobile-menu.png" />
+        </a>
+
+
+        <div class="drop-down-menu-container" role="menu">
+          <nav id="product-navigation" class="product-navigation drop-down-menu">
+            <ul class="drop-down-menu-section products-list">
+              <li><a href="/npm/on-site">npm On-Site</a></li>
+              <li><a href="/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a></li>
+              <li><a href="/npm/open-source">npm Open Source</a></li>
+              <li><a href="https://docs.npmjs.com">documentation</a></li>
+              <li><a href="/support">support</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+    </div>
+    <!-- /menu 2 -->
 
 
-    <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-      <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
-      <div id="site-search-container">
-          <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
-      </div>
-      <input type="submit" id="site-search-submit" />
-    </form>
 
   </header>
+
 
     <div class="container content">
       
@@ -113,7 +214,7 @@
     <input type="hidden" name="name" value="bower">
     <input id="star-input" type="checkbox" name="isStarred" value="true" >
     <label for="star-input" class="icon-star"></label>
-      <input type="hidden" name="crumb" value="f0ijNTutUSQ19Zyk9feD4on6aDVA6bdS7_ypVeEw7pP"/>
+      <input type="hidden" name="crumb" value="nJqfuMscmABJX4pwumT87v_RXU0c98QONGbGW1EWdFp"/>
   </form>
 
   <div id="readme" class="markdown">
@@ -189,32 +290,34 @@ path if needed.</p>
 </div>
 
 <div class="sidebar">
-    <div class="marketing"><h3 id="-orgs-are-here-http-npm-me-f5-"><a href="http://npm.me/f5">Orgs are here</a></h3>
-<p><a href="http://npm.me/f5" title="Manage developer teams with varying permisisons and multiple projects"><img src="https://partners.npmjs.com/mktg/20160105/orgs-342x100-white.png" alt="Manage developer teams with varying permisisons and multiple projects" style="min-width: 100%; max-width: 100%;"></a><br />
-<strong>npm Private Packages for Organizations:</strong> Manage developer teams with varying permisisons and multiple projects.&nbsp; <a href="http://npm.me/f5">Learn&nbsp;more&nbsp;»</a></p>
-</div>
+
+    <div class="promotion" data-promotion-id="524" data-promotion-spot="packagePage"><div class="marketing">
+<h3 id="marketing-texthed"><a href="http://npm.me/f2" title="npm On-Site">Private npm Registry</a></h3>
+
+<p>Host your own private, on-premises npm registry with npm On-Site.  <a href="http://npm.me/f2" title="npm On-Site">Learn more</a>…</p></div></div>
 
     <div class="autoselect-wrapper npm-install icon-download">
       <input type="text" value="npm install bower" readonly>
       <p><a href="/package/bower/tutorial">how? learn more</a></p>
     </div>
 
-	<ul class="box">
+  <ul class="box">
+
       <li class="last-publisher">
-          <a href="/~vladikoff">
-            <img src="https://s.gravatar.com/avatar/13b097b3a9dfacddbda2dff787593452?size=100&amp;default=retro" alt="vladikoff" />
-            <span>vladikoff</span>
+          <a href="/~sheerun">
+            <img src="https://s.gravatar.com/avatar/306b63b79c78a1b67e1789790ad2db86?size=100&amp;default=retro" alt="sheerun" />
+            <span>sheerun</span>
           </a>
           published
-          <span data-date="2015-12-31T02:09:32.462Z" data-date-format="relative">
-            2015-12-31T02:09:32.462Z
+          <span data-date="2016-01-27T17:23:48.077Z" data-date-format="relative">
+            2016-01-27T17:23:48.077Z
           </span>
       </li>
 
     <li>
-      <strong>1.7.2</strong>
+      <strong>1.7.7</strong>
       is the latest
-        of 84 releases
+        of 87 releases
     </li>
 
       <li>
@@ -223,9 +326,10 @@ path if needed.</p>
 
 
       <li>
-          <a href="http://opensource.org/licenses/MIT">MIT</a>
-        <span> license</span>
+          <a href="http://spdx.org/licenses/MIT">MIT</a>
+          <img class="osi" alt="Licensed on OSI-approved terms" src="/static/images/osi.svg">®
       </li>
+
   </ul>
 
     <h3 title="collaborators">
@@ -276,15 +380,15 @@ path if needed.</p>
     <ul class="box">
 
         <li>
-          <strong class="pretty-number daily-downloads">86079</strong>
+          <strong class="pretty-number daily-downloads">32899</strong>
           downloads in the last day
         </li>
         <li>
-          <strong class="pretty-number weekly-downloads">534086</strong>
+          <strong class="pretty-number weekly-downloads">549956</strong>
           downloads in the last week
         </li>
         <li>
-          <strong class="pretty-number monthly-downloads">1904256</strong>
+          <strong class="pretty-number monthly-downloads">2316642</strong>
           downloads in the last month
         </li>
 
@@ -311,158 +415,112 @@ path if needed.</p>
         <a href="/browse/keyword/bower">bower</a>
   </p>
 
-  <h3>Dependencies (47)</h3>
+  <h3>Dependencies </h3>
   <p class="list-of-links">
-          <a href="/package/which">which</a>,
-          <a href="/package/user-home">user-home</a>,
-          <a href="/package/update-notifier">update-notifier</a>,
-          <a href="/package/tmp">tmp</a>,
-          <a href="/package/tar-fs">tar-fs</a>,
-          <a href="/package/stringify-object">stringify-object</a>,
-          <a href="/package/shell-quote">shell-quote</a>,
-          <a href="/package/semver-utils">semver-utils</a>,
-          <a href="/package/semver">semver</a>,
-          <a href="/package/rimraf">rimraf</a>,
-          <a href="/package/retry">retry</a>,
-          <a href="/package/request-progress">request-progress</a>,
-          <a href="/package/request">request</a>,
-          <a href="/package/q">q</a>,
-          <a href="/package/promptly">promptly</a>,
-          <a href="/package/p-throttler">p-throttler</a>,
-          <a href="/package/opn">opn</a>,
-          <a href="/package/nopt">nopt</a>,
-          <a href="/package/mout">mout</a>,
-          <a href="/package/mkdirp">mkdirp</a>,
-          <a href="/package/md5-hex">md5-hex</a>,
-          <a href="/package/lru-cache">lru-cache</a>,
-          <a href="/package/lockfile">lockfile</a>,
-          <a href="/package/junk">junk</a>,
-          <a href="/package/is-root">is-root</a>,
-          <a href="/package/insight">insight</a>,
-          <a href="/package/inquirer">inquirer</a>,
-          <a href="/package/handlebars">handlebars</a>,
-          <a href="/package/graceful-fs">graceful-fs</a>,
-          <a href="/package/glob">glob</a>,
-          <a href="/package/github">github</a>,
-          <a href="/package/fstream-ignore">fstream-ignore</a>,
-          <a href="/package/fstream">fstream</a>,
-          <a href="/package/fs-write-stream-atomic">fs-write-stream-atomic</a>,
-          <a href="/package/destroy">destroy</a>,
-          <a href="/package/decompress-zip">decompress-zip</a>,
-          <a href="/package/configstore">configstore</a>,
-          <a href="/package/chmodr">chmodr</a>,
-          <a href="/package/chalk">chalk</a>,
-          <a href="/package/cardinal">cardinal</a>,
-          <a href="/package/bower-registry-client">bower-registry-client</a>,
-          <a href="/package/bower-logger">bower-logger</a>,
-          <a href="/package/bower-json">bower-json</a>,
-          <a href="/package/bower-endpoint-parser">bower-endpoint-parser</a>,
-          <a href="/package/bower-config">bower-config</a>,
-          <a href="/package/archy">archy</a>,
-                <a href="/package/abbrev">abbrev</a>
+      None
   </p>
 
     <h3><a href="/browse/depended/bower">Dependents</a></h3>
     <p class="list-of-links dependents">
 
-          <a href="/package/wix-gruntfile">wix-gruntfile</a>,
-        
-          <a href="/package/vui-input">vui-input</a>,
-        
-          <a href="/package/vui-table">vui-table</a>,
-        
-          <a href="/package/dgeni-alive">dgeni-alive</a>,
-        
-          <a href="/package/organic-emailpreview">organic-emailpreview</a>,
+          <a href="/package/gript">gript</a>,
         
           <a href="/package/debowerify">debowerify</a>,
         
-          <a href="/package/bb-cli">bb-cli</a>,
+          <a href="/package/wix-gruntfile">wix-gruntfile</a>,
         
-          <a href="/package/masterpkg">masterpkg</a>,
+          <a href="/package/gulp-rainbow">gulp-rainbow</a>,
         
-          <a href="/package/fuzzyclipboard">fuzzyclipboard</a>,
+          <a href="/package/gulp-library">gulp-library</a>,
         
-          <a href="/package/express-db-manager">express-db-manager</a>,
-        
-          <a href="/package/angular-cz-courseware">angular-cz-courseware</a>,
-        
-          <a href="/package/vui-image-action">vui-image-action</a>,
-        
-          <a href="/package/webplatform">webplatform</a>,
-        
-          <a href="/package/superpanel">superpanel</a>,
-        
-          <a href="/package/an-dev">an-dev</a>,
-        
-          <a href="/package/download.jqueryui.com">download.jqueryui.com</a>,
-        
-          <a href="/package/@atlassian/aui">@atlassian/aui</a>,
-        
-          <a href="/package/mean-cli">mean-cli</a>,
+          <a href="/package/@micahgodbolt/grunt-phantomcss">@micahgodbolt/grunt-phantomcss</a>,
         
           <a href="/package/ember-cli">ember-cli</a>,
         
-          <a href="/package/five-bells-visualization">five-bells-visualization</a>,
-        
-          <a href="/package/upd">upd</a>,
-        
           <a href="/package/ng-peach">ng-peach</a>,
         
-          <a href="/package/gulp-zkflow-angular">gulp-zkflow-angular</a>,
+          <a href="/package/gps-server">gps-server</a>,
         
-          <a href="/package/enb-bem-grid">enb-bem-grid</a>,
+          <a href="/package/bucket-collector">bucket-collector</a>,
         
-          <a href="/package/jquery-vui-collapsible-section">jquery-vui-collapsible-section</a>,
+          <a href="/package/fetch-bower">fetch-bower</a>,
         
-          <a href="/package/nhsm">nhsm</a>,
+          <a href="/package/bower2nix">bower2nix</a>,
         
-          <a href="/package/gulp-bower">gulp-bower</a>,
+          <a href="/package/octavius">octavius</a>,
         
-          <a href="/package/generator-koast">generator-koast</a>,
+          <a href="/package/@backbase/collection">@backbase/collection</a>,
         
-          <a href="/package/libgrabber">libgrabber</a>,
+          <a href="/package/dgeni-alive">dgeni-alive</a>,
         
-          <a href="/package/epochtalk">epochtalk</a>,
+          <a href="/package/date_picker">date_picker</a>,
         
-          <a href="/package/react-vui-dropdown">react-vui-dropdown</a>,
+          <a href="/package/courseware">courseware</a>,
         
-          <a href="/package/vui-dropdown">vui-dropdown</a>,
+          <a href="/package/gcsj">gcsj</a>,
         
-          <a href="/package/grunt-drupal-bootstrap">grunt-drupal-bootstrap</a>,
+          <a href="/package/ng-contextmenu">ng-contextmenu</a>,
         
-          <a href="/package/dflow">dflow</a>,
+          <a href="/package/ng-video">ng-video</a>,
         
-          <a href="/package/vui-field">vui-field</a>,
+          <a href="/package/@atlassian/aui">@atlassian/aui</a>,
         
-          <a href="/package/vui-link">vui-link</a>,
+          <a href="/package/bedrock-requirejs">bedrock-requirejs</a>,
         
-          <a href="/package/oss-specs">oss-specs</a>,
+          <a href="/package/an-dev">an-dev</a>,
         
-          <a href="/package/geojs">geojs</a>,
+          <a href="/package/slaven">slaven</a>,
         
-          <a href="/package/a-pollo">a-pollo</a>,
+          <a href="/package/angular-cz-courseware">angular-cz-courseware</a>,
         
-          <a href="/package/lithium-sdk">lithium-sdk</a>,
+          <a href="/package/edx-ui-toolkit">edx-ui-toolkit</a>,
         
-          <a href="/package/vui-button">vui-button</a>,
-        
-          <a href="/package/vui-typography">vui-typography</a>,
+          <a href="/package/peach.css">peach.css</a>,
         
           <a href="/package/dimeshift">dimeshift</a>,
         
-          <a href="/package/@deck/presenter">@deck/presenter</a>,
+          <a href="/package/oss-specs">oss-specs</a>,
         
-          <a href="/package/tryton-sao">tryton-sao</a>,
+          <a href="/package/masterpkg">masterpkg</a>,
         
-          <a href="/package/webcrawler">webcrawler</a>,
+          <a href="/package/@nodecg/bundle-manager">@nodecg/bundle-manager</a>,
         
-          <a href="/package/dolphin-cli">dolphin-cli</a>,
+          <a href="/package/bakari-builder">bakari-builder</a>,
         
-          <a href="/package/jsnbt">jsnbt</a>,
+          <a href="/package/vui-list">vui-list</a>,
         
-          <a href="/package/pallet">pallet</a>,
-                  <a href="/package/google-cdn">google-cdn</a>,
+          <a href="/package/node-motion">node-motion</a>,
+        
+          <a href="/package/vui-table">vui-table</a>,
+        
+          <a href="/package/preen">preen</a>,
+        
+          <a href="/package/grunt-bower-task">grunt-bower-task</a>,
+        
+          <a href="/package/gulp-bower">gulp-bower</a>,
+        
+          <a href="/package/grunt-bower-concat">grunt-bower-concat</a>,
+        
+          <a href="/package/grunt-bower-wordpress">grunt-bower-wordpress</a>,
+        
+          <a href="/package/smaas-cli">smaas-cli</a>,
+        
+          <a href="/package/expresscion-portal">expresscion-portal</a>,
+        
+          <a href="/package/grunt-bower">grunt-bower</a>,
+        
+          <a href="/package/seeds">seeds</a>,
+        
+          <a href="/package/gulp-bower-version">gulp-bower-version</a>,
+        
+          <a href="/package/upd">upd</a>,
+        
+          <a href="/package/ember-cli-cookie">ember-cli-cookie</a>,
+        
+          <a href="/package/chiffchaff-reporter-www">chiffchaff-reporter-www</a>,
+        
+          <a href="/package/zlo">zlo</a>,
+                  <a href="/package/fpm">fpm</a>,
         <a href="/browse/depended/bower">and more</a>
     </p>
 
@@ -503,7 +561,7 @@ path if needed.</p>
               <li><a href="http://status.npmjs.org/">Registry Status</a></li>
               <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
               <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
-              <li><a href="/security">Security</a></li>
+              <li><a href="/policies/security">Security</a></li>
             </ul>
           </li>
 
@@ -536,17 +594,17 @@ path if needed.</p>
     </div>
 
     <div class="container centered">
-      <a href="/" id="npm-loves-you">
+      <a class="npm-loves-you" href="/">
         npm loves you
       </a>
     </div>
 
   </footer>
   
-  <script defer src="/static/js/vendor.min.76ac749e.js"></script>
+  <script defer src="/static/js/vendor.min.a3c53b90.js"></script>
   <script defer async src="https://cdn.optimizely.com/js/3318080746.js"></script>
   <script defer async src='//img.en25.com/i/elqCfg.min.js'></script><!-- Eloqua -->
 </body>
 </html>
 
-<!-- pid=15132 bb7429b95729b0a8c86d4b21011b580fc41d3f39 https://www.npmjs.com www-11-west.internal.npmjs.com  -->
+<!-- pid=3861 bb6aad3db25a2c899045e368152bc0d55e9de860 https://www.npmjs.com www-13-west.internal.npmjs.com  -->

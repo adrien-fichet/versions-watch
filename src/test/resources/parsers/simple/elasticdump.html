@@ -1,22 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
+  <script nonce='a1069f7a11a3c8033f46f88a82503f4c22499c7a0f1e850552fa505b5a75af0461198ebcda52f307421ffae341fea570b540148710a4d51bdf840ac6a014871b' type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ba86f45fc4","applicationID":"9556514","applicationTime":571.812088,"transactionName":"M1BXZxFZVkQFURBdVwoafVITURdwIWZLG0gFVl5SBF0XTBRTB19ZA1BI","queueTime":0,"ttGuid":"ef8e1349526728","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
   <title>elasticdump</title>
 
     <meta name="description" content="import and export tools for elasticsearch">
+    <meta property="og:description" content="import and export tools for elasticsearch">
+    <meta property="og:title" content="elasticdump">
+    <meta property="og:url" content="https://www.npmjs.com/package/elasticdump">
+    <meta property="og:site_name" content="npm">
     <meta name="keywords" content="elastic dump,elastic-dump,cluster,elasitic,migartion,migrate,transfer,export,import,elasticdump,dump,elasticsearch">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="https://www.npmjs.com/package/elasticdump">
     <meta name="twitter:title" content="npm: elasticdump">
     <meta name="twitter:description" content="import and export tools for elasticsearch">
-
-
+  
+  
   <meta http-equiv="cleartype" content="on" />
-
+  
   <meta name="apple-mobile-web-app-capable" content="no">
-  <meta name="description" content="npm is the package manager for javascript">
+  
+  
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  
+  <meta name="x-npm:ga:id" content="UA-47041310-1">
+  <meta name="x-npm:ga:dimensions" content="{&quot;aboveChrome&quot;:&quot;dimension1&quot;,&quot;belowHeader&quot;:&quot;dimension3&quot;,&quot;packagePage&quot;:&quot;dimension2&quot;}">
+  
+  <link rel="canonical" href="https://www.npmjs.com/package/elasticdump">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
 
+    <link rel="stylesheet" media="all" href="/static/css/index.c929724b.css">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+  
+    <script src="/static/js/index.min.473b6d2f.js"></script>
+  
+    <style>
+      .marketing {
+  margin: 0px;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  padding: 0px 10px 0px 0px;
+  font-size: 15px;
+  font-style: normal;
+  fond-variant: normal;
+  fort-weight: normal;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  line-height: 22.5px;
+  }
+  
+  .marketing a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #cb3837;
+  }
+  
+  .marketing h3 {
+  display: block;
+  margin: 0;
+  padding: 20px 0 10px 0;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a {
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a:hover {
+  color: #cb3837;
+  }
+  
+  .marketing p {
+  line-height: 22.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  
+  .marketing p a {
+  white-space: nowrap;
+  }
+  
+  #marketing-texthed {
+  margin-left: 10px;
+  
+  /* oh look, it’s 518! */
+  }
+    </style>
   <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
@@ -49,55 +134,73 @@
   <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
   <meta name="theme-color" content="#cb3837">
 
-  <link rel="canonical" href="https://www.npmjs.com/package/elasticdump">
-  <link rel="stylesheet" media="all" href="/static/css/index.8183d065.css">
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <![endif]-->
-
-
-  <script src="/static/js/index.min.e41ddaf7.js"></script>
-
 </head>
 
-<body itemscope itemtype="http://schema.org/WebSite" data-crumb="PIIRkcxhqRFQLMTIeMnTbKgIatDxfMnuuV1F5GC-6Or">
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="LGoWD0gE59wWURwlOi00uZZBpZM_R4cK5Ko7IX6g5yJ">
   <meta itemprop="url" content="https://www.npmjs.com/">
 
-    <nav>
-        <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
-        <a href="/npm/on-site">npm On-Site</a>
-        <a href="/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a>
-        <a href="/npm/open-source">npm Open Source</a>
-        <a href="https://docs.npmjs.com">documentation</a>
-        <a href="/support">support</a>
-    </nav>
 
-  <header>
-    <div id='npm-logo'>
-      <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+  <header class="anonymous">
+    <!-- logo -->
+    <div class="header-item brand-container">
+      <div class="logo-container" id='npm-logo'>
+        <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+      </div>
+    </div>
+    <!-- /logo -->
+
+
+    <!-- search -->
+    <div class="header-item header-search-container">
+      <form class="site-search" id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <div id="site-search-container">
+            <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+        </div>
+        <input type="submit"/>
+      </form>
     </div>
 
-
-      <div id="user-info" class="anonymous">
-          <a href="/login"><img alt="" src="/static/images/wombat-avatar-small.png" /></a>
-          <ul class="single">
-              <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+    <!-- menu 1 -->
+    <div class="header-item user-info-container">
+      <div class="user-info">
+          <ul class="user-info-salutation single">
+            <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+            <li><a href="/login"><span class="a11y-only">log in</span><span class="icon icon-wombat-head-login"></a></li>
           </ul>
+      </div> <!-- .user-info -->
+    </div>
+    <!-- /menu 1 -->
 
+    <!-- menu 2 -->
+    <div class="header-item header-nav-menu-container">
+      <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+      <div class="nav-menu-container" role="navigation">
+        <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+          <img alt="mobile navigation menu" src="/static/images/mobile-menu.png" />
+        </a>
+
+
+        <div class="drop-down-menu-container" role="menu">
+          <nav id="product-navigation" class="product-navigation drop-down-menu">
+            <ul class="drop-down-menu-section products-list">
+              <li><a href="/npm/on-site">npm On-Site</a></li>
+              <li><a href="/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a></li>
+              <li><a href="/npm/open-source">npm Open Source</a></li>
+              <li><a href="https://docs.npmjs.com">documentation</a></li>
+              <li><a href="/support">support</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+    </div>
+    <!-- /menu 2 -->
 
 
-    <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-      <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
-      <div id="site-search-container">
-          <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
-      </div>
-      <input type="submit" id="site-search-submit" />
-    </form>
 
   </header>
+
 
     <div class="container content">
       
@@ -113,7 +216,7 @@
     <input type="hidden" name="name" value="elasticdump">
     <input id="star-input" type="checkbox" name="isStarred" value="true" >
     <label for="star-input" class="icon-star"></label>
-      <input type="hidden" name="crumb" value="PIIRkcxhqRFQLMTIeMnTbKgIatDxfMnuuV1F5GC-6Or"/>
+      <input type="hidden" name="crumb" value="LGoWD0gE59wWURwlOi00uZZBpZM_R4cK5Ko7IX6g5yJ"/>
   </form>
 
   <div id="readme" class="markdown">
@@ -123,6 +226,8 @@
 <p><img src="https://raw.github.com/taskrabbit/elasticsearch-dump/master/elasticdump.jpg"></p>
 <p class="badge-only"><a href="https://npmjs.org/package/elasticdump"><img src="https://nodei.co/npm/elasticdump.png?downloads=true" class="badge"></a></p>
 <p><a href="http://travis-ci.org/taskrabbit/elasticsearch-dump"><img src="https://secure.travis-ci.org/taskrabbit/elasticsearch-dump.png?branch=master" class="badge"></a>  <a href="https://codeclimate.com/github/taskrabbit/elasticsearch-dump"><img src="https://codeclimate.com/github/taskrabbit/elasticsearch-dump/badges/gpa.svg"></a></p>
+<h2 id="user-content-version-100-warning" class="deep-link"><a href="#version-100-warning">Version <code>1.0.0</code> Warning!</a></h2>
+<p>Version <code>1.0.0</code> of Elasticdump changes the format of the files created by the dump.  Files created with version <code>0.x.x</code> of this tool are likely not to work with versions going forward.  To learn more about the breaking changes, vist the release notes for version <a href="https://github.com/taskrabbit/elasticsearch-dump/releases/tag/v1.0.0"><code>1.0.0</code></a>.  If you recive an &quot;out of memory&quot; error, this is probaly the cause.</p>
 <h2 id="user-content-installing" class="deep-link"><a href="#installing">Installing</a></h2>
 <p>(local)</p>
 <pre><code class="highlight bash"><pre class="editor editor-colors"><div class="line"><span class="text"><span>npm&#xA0;install&#xA0;elasticdump</span></span></div><div class="line"><span class="text"><span>./bin/elasticdump</span></span></div></pre></code></pre>
@@ -170,13 +275,26 @@ be parsed for index and type.</p>
 <p>Example:</p>
 <pre><code class="highlight bash"><pre class="editor editor-colors"><div class="line"><span class="text"><span>#&#xA0;Copy&#xA0;an&#xA0;index&#xA0;from&#xA0;production&#xA0;to&#xA0;staging&#xA0;with&#xA0;mappings:</span></span></div><div class="line"><span class="text"><span>docker&#xA0;run&#xA0;--rm&#xA0;-ti&#xA0;elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=</span><span class="markup underline link hyperlink"><span>http://staging.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=mapping</span></span></div><div class="line"><span class="text"><span>docker&#xA0;run&#xA0;--rm&#xA0;-ti&#xA0;elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=</span><span class="markup underline link hyperlink"><span>http://staging.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=data</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>#&#xA0;Backup&#xA0;index&#xA0;data&#xA0;to&#xA0;a&#xA0;file&#xA0;(ie&#xA0;:&#xA0;stored&#xA0;in&#xA0;/tmp/myESdumps)&#xA0;:</span></span></div><div class="line"><span class="text"><span>docker&#xA0;run&#xA0;--rm&#xA0;-ti&#xA0;-v&#xA0;/tmp/myESdumps:/data&#xA0;elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=/data/my_index_mapping.json&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=mapping</span></span></div><div class="line"><span class="text"><span>docker&#xA0;run&#xA0;--rm&#xA0;-ti&#xA0;-v&#xA0;/tmp/myESdumps:/data&#xA0;elasticdump&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--input=</span><span class="markup underline link hyperlink"><span>http://production.es.com:9200/my_index</span></span><span>&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--output=/data/my_index.json&#xA0;\</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;--type=data</span></span></div></pre></code></pre>
 <h2 id="user-content-options" class="deep-link"><a href="#options">Options</a></h2>
-<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>Usage:&#xA0;elasticdump&#xA0;--input&#xA0;[SOURCE]&#xA0;--output&#xA0;[DESTINATION]&#xA0;[OPTIONS]</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>--input&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Source&#xA0;location&#xA0;(required)</span></span></div><div class="line"><span class="text"><span>--input-index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Source&#xA0;index&#xA0;and&#xA0;type</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;all,&#xA0;example:&#xA0;index/type)</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>--output&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Destination&#xA0;location&#xA0;(required)</span></span></div><div class="line"><span class="text"><span>--output-index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Destination&#xA0;index&#xA0;and&#xA0;type</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;all,&#xA0;example:&#xA0;index/type)</span></span></div><div class="line"><span class="text"><span>--limit&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;How&#xA0;many&#xA0;objects&#xA0;to&#xA0;move&#xA0;in&#xA0;bulk&#xA0;per&#xA0;operation</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;100)</span></span></div><div class="line"><span class="text"><span>--debug&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Display&#xA0;the&#xA0;elasticsearch&#xA0;commands&#xA0;being&#xA0;used</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--type&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;What&#xA0;are&#xA0;we&#xA0;exporting?</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;data,&#xA0;options:&#xA0;[data,&#xA0;mapping,&#xA0;analyzer])</span></span></div><div class="line"><span class="text"><span>--delete&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Delete&#xA0;documents&#xA0;one-by-one&#xA0;from&#xA0;the&#xA0;input&#xA0;as&#xA0;they&#xA0;are</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;moved.&#xA0;&#xA0;Will&#xA0;not&#xA0;delete&#xA0;the&#xA0;source&#xA0;index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--searchBody&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Preform&#xA0;a&#xA0;partial&#xA0;extract&#xA0;based&#xA0;on&#xA0;search&#xA0;results</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(when&#xA0;ES&#xA0;is&#xA0;the&#xA0;input,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;default:&#xA0;&apos;{&quot;query&quot;:&#xA0;{&#xA0;&quot;match_all&quot;:&#xA0;{}&#xA0;}&#xA0;}&apos;)</span></span></div><div class="line"><span class="text"><span>--sourceOnly&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Output&#xA0;only&#xA0;the&#xA0;json&#xA0;contained&#xA0;within&#xA0;the&#xA0;document&#xA0;_source</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Normal:&#xA0;{&quot;_index&quot;:&quot;&quot;,&quot;_type&quot;:&quot;&quot;,&quot;_id&quot;:&quot;&quot;,&#xA0;&quot;_source&quot;:{SOURCE}}</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;sourceOnly:&#xA0;{SOURCE}</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;default:&#xA0;false</span></span></div><div class="line"><span class="text"><span>--jsonLines&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Do&#xA0;not&#xA0;include&#xA0;leading&#xA0;&apos;[&apos;,&#xA0;trailing&#xA0;&apos;]&apos;&#xA0;and&#xA0;separating&#xA0;&apos;,&apos;&#xA0;chararacters&#xA0;in&#xA0;output</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Note:&#xA0;Most&#xA0;useful&#xA0;in&#xA0;conjunction&#xA0;with&#xA0;sourceOnly&#xA0;to&#xA0;create&#xA0;a&#xA0;file&#xA0;of&#xA0;a&#xA0;single&#xA0;JSON&#xA0;entry&#xA0;per&#xA0;line</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;default:&#xA0;false</span></span></div><div class="line"><span class="text"><span>--all&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Load/store&#xA0;documents&#xA0;from&#xA0;ALL&#xA0;indexes</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--bulk&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Leverage&#xA0;elasticsearch&#xA0;Bulk&#xA0;API&#xA0;when&#xA0;writing&#xA0;documents</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--ignore-errors&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Will&#xA0;continue&#xA0;the&#xA0;read/write&#xA0;loop&#xA0;on&#xA0;write&#xA0;error</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--scrollTime&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Time&#xA0;the&#xA0;nodes&#xA0;will&#xA0;hold&#xA0;the&#xA0;requested&#xA0;search&#xA0;in&#xA0;order.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;10m)</span></span></div><div class="line"><span class="text"><span>--maxSockets&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;How&#xA0;many&#xA0;simultaneous&#xA0;HTTP&#xA0;requests&#xA0;can&#xA0;we&#xA0;process&#xA0;make?</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;5&#xA0;[node&#xA0;&lt;=&#xA0;v0.10.x]&#xA0;/</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Infinity&#xA0;[node&#xA0;&gt;=&#xA0;v0.11.x]&#xA0;)</span></span></div><div class="line"><span class="text"><span>--bulk-use-output-index-name&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Force&#xA0;use&#xA0;of&#xA0;destination&#xA0;index&#xA0;name&#xA0;(the&#xA0;actual&#xA0;output&#xA0;URL)</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;as&#xA0;destination&#xA0;while&#xA0;bulk&#xA0;writing&#xA0;to&#xA0;ES.&#xA0;Allows</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;leveraging&#xA0;Bulk&#xA0;API&#xA0;copying&#xA0;data&#xA0;inside&#xA0;the&#xA0;same</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;elasticsearch&#xA0;instance.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--timeout&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Integer&#xA0;containing&#xA0;the&#xA0;number&#xA0;of&#xA0;milliseconds&#xA0;to&#xA0;wait&#xA0;for</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;a&#xA0;request&#xA0;to&#xA0;respond&#xA0;before&#xA0;aborting&#xA0;the&#xA0;request.&#xA0;Passed</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;directly&#xA0;to&#xA0;the&#xA0;request&#xA0;library.&#xA0;If&#xA0;used&#xA0;in&#xA0;bulk&#xA0;writing,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;it&#xA0;will&#xA0;result&#xA0;in&#xA0;the&#xA0;entire&#xA0;batch&#xA0;not&#xA0;being&#xA0;written.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Mostly&#xA0;used&#xA0;when&#xA0;you&#xA0;don&apos;t&#xA0;care&#xA0;too&#xA0;much&#xA0;if&#xA0;you&#xA0;lose&#xA0;some</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;data&#xA0;when&#xA0;importing&#xA0;but&#xA0;rather&#xA0;have&#xA0;speed.</span></span></div><div class="line"><span class="text"><span>--skip</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Integer&#xA0;containing&#xA0;the&#xA0;number&#xA0;of&#xA0;rows&#xA0;you&#xA0;wish&#xA0;to&#xA0;skip</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;ahead&#xA0;from&#xA0;the&#xA0;input&#xA0;transport.&#xA0;&#xA0;When&#xA0;importing&#xA0;a&#xA0;large</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;index,&#xA0;things&#xA0;can&#xA0;go&#xA0;wrong,&#xA0;be&#xA0;it&#xA0;connectivity,&#xA0;crashes,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;someone&#xA0;forgetting&#xA0;to&#xA0;`screen`,&#xA0;etc.&#xA0;&#xA0;This&#xA0;allows&#xA0;you&#xA0;to</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;start&#xA0;the&#xA0;dump&#xA0;again&#xA0;from&#xA0;the&#xA0;last&#xA0;known&#xA0;line&#xA0;written&#xA0;(as</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;logged&#xA0;by&#xA0;the&#xA0;`offset`&#xA0;in&#xA0;the&#xA0;output).&#xA0;&#xA0;Please&#xA0;be&#xA0;advised</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;that&#xA0;since&#xA0;no&#xA0;sorting&#xA0;is&#xA0;specified&#xA0;when&#xA0;the&#xA0;dump&#xA0;is</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;initially&#xA0;created,&#xA0;there&apos;s&#xA0;no&#xA0;real&#xA0;way&#xA0;to&#xA0;guarantee&#xA0;that</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;the&#xA0;skipped&#xA0;rows&#xA0;have&#xA0;already&#xA0;been&#xA0;written/parsed.&#xA0;&#xA0;This&#xA0;is</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;more&#xA0;of&#xA0;an&#xA0;option&#xA0;for&#xA0;when&#xA0;you&#xA0;want&#xA0;to&#xA0;get&#xA0;most&#xA0;data&#xA0;as</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;possible&#xA0;in&#xA0;the&#xA0;index&#xA0;without&#xA0;concern&#xA0;for&#xA0;losing&#xA0;some&#xA0;rows</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;in&#xA0;the&#xA0;process,&#xA0;similar&#xA0;to&#xA0;the&#xA0;`timeout`&#xA0;option.</span></span></div><div class="line"><span class="text"><span>--inputTransport&#xA0;&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Provide&#xA0;a&#xA0;custom&#xA0;js&#xA0;file&#xA0;to&#xA0;us&#xA0;as&#xA0;the&#xA0;input&#xA0;transport</span></span></div><div class="line"><span class="text"><span>--outputTransport&#xA0;&#xA0;&#xA0;</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Provide&#xA0;a&#xA0;custom&#xA0;js&#xA0;file&#xA0;to&#xA0;us&#xA0;as&#xA0;the&#xA0;output&#xA0;transport</span></span></div><div class="line"><span class="text"><span>--toLog</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;When&#xA0;using&#xA0;a&#xA0;custom&#xA0;outputTransport,&#xA0;should&#xA0;log&#xA0;lines</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;be&#xA0;appended&#xA0;to&#xA0;the&#xA0;output&#xA0;stream?</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;true,&#xA0;except&#xA0;for&#xA0;`$`)</span></span></div><div class="line"><span class="text"><span>--help</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;This&#xA0;page</span></span></div></pre></code></pre>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>elasticdump:&#xA0;Import&#xA0;and&#xA0;export&#xA0;tools&#xA0;for&#xA0;elasticsearch</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>Usage:&#xA0;elasticdump&#xA0;--input&#xA0;SOURCE&#xA0;--output&#xA0;DESTINATION&#xA0;[OPTIONS]</span></span></div><div class="line"><span class="text"><span>&#xA0;</span></span></div><div class="line"><span class="text"><span>--input</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Source&#xA0;location&#xA0;(required)</span></span></div><div class="line"><span class="text"><span>--input-index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Source&#xA0;index&#xA0;and&#xA0;type</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;all,&#xA0;example:&#xA0;index/type)</span></span></div><div class="line"><span class="text"><span>--output</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Destination&#xA0;location&#xA0;(required)</span></span></div><div class="line"><span class="text"><span>--output-index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Destination&#xA0;index&#xA0;and&#xA0;type</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;all,&#xA0;example:&#xA0;index/type)</span></span></div><div class="line"><span class="text"><span>--limit</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;How&#xA0;many&#xA0;objects&#xA0;to&#xA0;move&#xA0;in&#xA0;bulk&#xA0;per&#xA0;operation</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;limit&#xA0;is&#xA0;approximate&#xA0;for&#xA0;file&#xA0;streams</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;100)</span></span></div><div class="line"><span class="text"><span>--debug</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Display&#xA0;the&#xA0;elasticsearch&#xA0;commands&#xA0;being&#xA0;used</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--type</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;What&#xA0;are&#xA0;we&#xA0;exporting?</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;data,&#xA0;options:&#xA0;[data,&#xA0;mapping])</span></span></div><div class="line"><span class="text"><span>--delete</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Delete&#xA0;documents&#xA0;one-by-one&#xA0;from&#xA0;the&#xA0;input&#xA0;as&#xA0;they&#xA0;are</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;moved.&#xA0;&#xA0;Will&#xA0;not&#xA0;delete&#xA0;the&#xA0;source&#xA0;index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--searchBody</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Preform&#xA0;a&#xA0;partial&#xA0;extract&#xA0;based&#xA0;on&#xA0;search&#xA0;results</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(when&#xA0;ES&#xA0;is&#xA0;the&#xA0;input,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;&apos;{&quot;query&quot;:&#xA0;{&#xA0;&quot;match_all&quot;:&#xA0;{}&#xA0;}&#xA0;}&apos;))</span></span></div><div class="line"><span class="text"><span>--sourceOnly</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Output&#xA0;only&#xA0;the&#xA0;json&#xA0;contained&#xA0;within&#xA0;the&#xA0;document&#xA0;_source</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Normal:&#xA0;{&quot;_index&quot;:&quot;&quot;,&quot;_type&quot;:&quot;&quot;,&quot;_id&quot;:&quot;&quot;,&#xA0;&quot;_source&quot;:{SOURCE}}</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;sourceOnly:&#xA0;{SOURCE}</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--all</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Load/store&#xA0;documents&#xA0;from&#xA0;ALL&#xA0;indexes</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--bulk</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Leverage&#xA0;elasticsearch&#xA0;Bulk&#xA0;API&#xA0;when&#xA0;writing&#xA0;documents</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--ignore-errors</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Will&#xA0;continue&#xA0;the&#xA0;read/write&#xA0;loop&#xA0;on&#xA0;write&#xA0;error</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--scrollTime</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Time&#xA0;the&#xA0;nodes&#xA0;will&#xA0;hold&#xA0;the&#xA0;requested&#xA0;search&#xA0;in&#xA0;order.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;10m)</span></span></div><div class="line"><span class="text"><span>--maxSockets</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;How&#xA0;many&#xA0;simultaneous&#xA0;HTTP&#xA0;requests&#xA0;can&#xA0;we&#xA0;process&#xA0;make?</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;5&#xA0;[node&#xA0;&lt;=&#xA0;v0.10.x]&#xA0;/</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Infinity&#xA0;[node&#xA0;&gt;=&#xA0;v0.11.x]&#xA0;)</span></span></div><div class="line"><span class="text"><span>--bulk-mode</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;The&#xA0;mode&#xA0;can&#xA0;be&#xA0;index,&#xA0;delete&#xA0;or&#xA0;update.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&apos;index&apos;:&#xA0;Add&#xA0;or&#xA0;replace&#xA0;documents&#xA0;on&#xA0;the&#xA0;destination&#xA0;index.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&apos;delete&apos;:&#xA0;Delete&#xA0;documents&#xA0;on&#xA0;destination&#xA0;index.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&apos;update&apos;:&#xA0;Use&#xA0;&apos;doc_as_upsert&apos;&#xA0;option&#xA0;with&#xA0;bulk&#xA0;update&#xA0;API&#xA0;to&#xA0;do&#xA0;partial&#xA0;update.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;index)</span></span></div><div class="line"><span class="text"><span>--bulk-use-output-index-name</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Force&#xA0;use&#xA0;of&#xA0;destination&#xA0;index&#xA0;name&#xA0;(the&#xA0;actual&#xA0;output&#xA0;URL)</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;as&#xA0;destination&#xA0;while&#xA0;bulk&#xA0;writing&#xA0;to&#xA0;ES.&#xA0;Allows</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;leveraging&#xA0;Bulk&#xA0;API&#xA0;copying&#xA0;data&#xA0;inside&#xA0;the&#xA0;same</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;elasticsearch&#xA0;instance.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;false)</span></span></div><div class="line"><span class="text"><span>--timeout</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Integer&#xA0;containing&#xA0;the&#xA0;number&#xA0;of&#xA0;milliseconds&#xA0;to&#xA0;wait&#xA0;for</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;a&#xA0;request&#xA0;to&#xA0;respond&#xA0;before&#xA0;aborting&#xA0;the&#xA0;request.&#xA0;Passed</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;directly&#xA0;to&#xA0;the&#xA0;request&#xA0;library.&#xA0;If&#xA0;used&#xA0;in&#xA0;bulk&#xA0;writing,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;it&#xA0;will&#xA0;result&#xA0;in&#xA0;the&#xA0;entire&#xA0;batch&#xA0;not&#xA0;being&#xA0;written.</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Mostly&#xA0;used&#xA0;when&#xA0;you&#xA0;don&apos;t&#xA0;care&#xA0;too&#xA0;much&#xA0;if&#xA0;you&#xA0;lose&#xA0;some</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;data&#xA0;when&#xA0;importing&#xA0;but&#xA0;rather&#xA0;have&#xA0;speed.</span></span></div><div class="line"><span class="text"><span>--skip</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Integer&#xA0;containing&#xA0;the&#xA0;number&#xA0;of&#xA0;rows&#xA0;you&#xA0;wish&#xA0;to&#xA0;skip</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;ahead&#xA0;from&#xA0;the&#xA0;input&#xA0;transport.&#xA0;&#xA0;When&#xA0;importing&#xA0;a&#xA0;large</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;index,&#xA0;things&#xA0;can&#xA0;go&#xA0;wrong,&#xA0;be&#xA0;it&#xA0;connectivity,&#xA0;crashes,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;someone&#xA0;forgetting&#xA0;to&#xA0;`screen`,&#xA0;etc.&#xA0;&#xA0;This&#xA0;allows&#xA0;you</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;to&#xA0;start&#xA0;the&#xA0;dump&#xA0;again&#xA0;from&#xA0;the&#xA0;last&#xA0;known&#xA0;line&#xA0;written</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(as&#xA0;logged&#xA0;by&#xA0;the&#xA0;`offset`&#xA0;in&#xA0;the&#xA0;output).&#xA0;&#xA0;Please&#xA0;be</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;advised&#xA0;that&#xA0;since&#xA0;no&#xA0;sorting&#xA0;is&#xA0;specified&#xA0;when&#xA0;the</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;dump&#xA0;is&#xA0;initially&#xA0;created,&#xA0;there&apos;s&#xA0;no&#xA0;real&#xA0;way&#xA0;to</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;guarantee&#xA0;that&#xA0;the&#xA0;skipped&#xA0;rows&#xA0;have&#xA0;already&#xA0;been</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;written/parsed.&#xA0;&#xA0;This&#xA0;is&#xA0;more&#xA0;of&#xA0;an&#xA0;option&#xA0;for&#xA0;when</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;you&#xA0;want&#xA0;to&#xA0;get&#xA0;most&#xA0;data&#xA0;as&#xA0;possible&#xA0;in&#xA0;the&#xA0;index</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;without&#xA0;concern&#xA0;for&#xA0;losing&#xA0;some&#xA0;rows&#xA0;in&#xA0;the&#xA0;process,</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;similar&#xA0;to&#xA0;the&#xA0;`timeout`&#xA0;option.</span></span></div><div class="line"><span class="text"><span>--inputTransport</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Provide&#xA0;a&#xA0;custom&#xA0;js&#xA0;file&#xA0;to&#xA0;us&#xA0;as&#xA0;the&#xA0;input&#xA0;transport</span></span></div><div class="line"><span class="text"><span>--outputTransport</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Provide&#xA0;a&#xA0;custom&#xA0;js&#xA0;file&#xA0;to&#xA0;us&#xA0;as&#xA0;the&#xA0;output&#xA0;transport</span></span></div><div class="line"><span class="text"><span>--toLog</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;When&#xA0;using&#xA0;a&#xA0;custom&#xA0;outputTransport,&#xA0;should&#xA0;log&#xA0;lines</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;be&#xA0;appended&#xA0;to&#xA0;the&#xA0;output&#xA0;stream?</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;(default:&#xA0;true,&#xA0;except&#xA0;for&#xA0;`$`)</span></span></div><div class="line"><span class="text"><span>--help</span></span></div><div class="line"><span class="text"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;This&#xA0;page</span></span></div></pre></code></pre>
 <h2 id="user-content-elasticsearchs-scan-and-scroll-method" class="deep-link"><a href="#elasticsearchs-scan-and-scroll-method">Elasticsearch&apos;s scan and scroll method</a></h2>
 <p>Elasticsearch provides a scan and scroll method to fetch all documents of an index. This method is much safer to use since
 it will maintain the result set in cache for the given period of time. This means it will be a lot faster to export the data
 and more important it will keep the result set in order. While dumping the result set in batches it won&apos;t export duplicate
 documents in the export. All documents in the export will unique and therefore no missing documents.</p>
 <p>NOTE: only works for output</p>
+<h2 id="user-content-multielasticdump" class="deep-link"><a href="#multielasticdump">MultiElasticDump</a></h2>
+<p>This package also ships with a second binary, <code>multielasticdump</code>.  This is a wrapper for the normal elasticdump binary, which provides a limited option set, but will run elasticdump in parallel across many indexes at once.  It runs a process which forks into <code>n</code> (default your running host&apos;s # of CPUs) subprocesses running elasticdump.</p>
+<p>The limited option set includes:</p>
+<ul>
+<li><code>parallel</code>:   <code>os.cpus()</code>,</li>
+<li><code>match</code>:      <code>&apos;^.*$&apos;</code>,</li>
+<li><code>input</code>:      <code>null</code>,</li>
+<li><code>output</code>:     <code>null</code>,</li>
+<li><code>scrollTime</code>: <code>&apos;10m&apos;</code>,</li>
+<li><code>limit</code>:      <code>100</code>,</li>
+<li><code>offset</code>:     <code>100</code>,</li>
+</ul>
+<p>In this mode, <code>--input</code> MUST be a URL for the base location of an ElasticSearch server (<a href="http://localhost:9200">http://localhost:9200</a>) and <code>--output</code> MUST be a directory. The new options, <code>--parallel</code> is how many forks should be run simultaneously and <code>--match</code> is used to filter which indexes should be dumped (regex).  Each index that does match will have a data, mapping, and analyzer file created.</p>
 <h2 id="user-content-notes" class="deep-link"><a href="#notes">Notes</a></h2>
 <ul>
 <li>this tool is likley to require Elasticsearch version 1.0.0 or higher</li>
@@ -184,7 +302,7 @@ documents in the export. All documents in the export will unique and therefore n
 <li>when exporting from elasticsearch, you can have export an entire index (<code>--input=&quot;http://localhost:9200/index&quot;</code>) or a type of object from that index (<code>--input=&quot;http://localhost:9200/index/type&quot;</code>).  This requires ElasticSearch 1.2.0 or higher</li>
 <li>If elasticsearch is in a sub-directory, index and type must be provided with a separate argument (<code>--input=&quot;http://localhost:9200/sub/directory --input-index=index/type&quot;</code>). Using <code>--input-index=/</code> will include all indices and types.</li>
 <li>we are using the <code>put</code> method to write objects.  This means new objects will be created and old objects with the same ID will be updated</li>
-<li>the <code>file</code> transport will overwrite any existing files</li>
+<li>the <code>file</code> transport will not overwrite any existing files, it will throw an exception of the file already exists</li>
 <li>If you need basic http auth, you can use it like this: <code>--input=http://name:password@production.es.com:9200/my_index</code></li>
 <li>if you choose a stdio output (<code>--output=$</code>), you can also request a more human-readable output with <code>--format=human</code></li>
 <li>if you choose a stdio output (<code>--output=$</code>), all logging output will be suppressed</li>
@@ -198,32 +316,34 @@ documents in the export. All documents in the export will unique and therefore n
 </div>
 
 <div class="sidebar">
-    <div class="marketing"><h3 id="-"> </h3>
-<p><a href="http://npm.me/b5" title="Use this behind your firewall."><img src="https://partners.npmjs.com/mktg/20160113/onsite-lblue-342.png" alt="Use this behind your firewall." style="min-width: 100%; max-width: 100%; position: relative; top: -10px;"></a>
-<strong>Use this behind your firewall.</strong> Host your own private npm registry.&nbsp; <a href="http://npm.me/b5" title="npm On-Site">Try&nbsp;npm&nbsp;On-Site&nbsp;»</a></p>
-</div>
+
+    <div class="promotion" data-promotion-id="518" data-promotion-spot="packagePage"><div class="marketing">
+<h3 id="marketing-texthed"><a href="http://npm.me/v2" title="npm3 Non-determinism">same dependencies, different dependency trees?</a></h3>
+
+<p>npm3 does not install dependencies in a deterministic way, but this has no implications for your application.  <a href="http://npm.me/v2" title="npm3 Non-determinism">Learn more&hellip;</a></p></div></div>
 
     <div class="autoselect-wrapper npm-install icon-download">
       <input type="text" value="npm install elasticdump" readonly>
       <p><a href="/package/elasticdump/tutorial">how? learn more</a></p>
     </div>
 
-	<ul class="box">
+  <ul class="box">
+
       <li class="last-publisher">
           <a href="/~evantahler">
             <img src="https://s.gravatar.com/avatar/173e23850a81c3f494ae957e1417c02d?size=100&amp;default=retro" alt="evantahler" />
             <span>evantahler</span>
           </a>
           published
-          <span data-date="2016-01-22T05:52:41.409Z" data-date-format="relative">
-            2016-01-22T05:52:41.409Z
+          <span data-date="2016-03-01T15:28:52.474Z" data-date-format="relative">
+            2016-03-01T15:28:52.474Z
           </span>
       </li>
 
     <li>
-      <strong>0.18.0</strong>
+      <strong>1.1.0</strong>
       is the latest
-        of 47 releases
+        of 52 releases
     </li>
 
       <li>
@@ -231,10 +351,7 @@ documents in the export. All documents in the export will unique and therefore n
       </li>
 
 
-      <li>
-          <strong>none</strong>
-        <span> license</span>
-      </li>
+
   </ul>
 
     <h3 title="collaborators">
@@ -265,15 +382,15 @@ documents in the export. All documents in the export will unique and therefore n
     <ul class="box">
 
         <li>
-          <strong class="pretty-number daily-downloads">403</strong>
+          <strong class="pretty-number daily-downloads">525</strong>
           downloads in the last day
         </li>
         <li>
-          <strong class="pretty-number weekly-downloads">2241</strong>
+          <strong class="pretty-number weekly-downloads">6139</strong>
           downloads in the last week
         </li>
         <li>
-          <strong class="pretty-number monthly-downloads">6763</strong>
+          <strong class="pretty-number monthly-downloads">18127</strong>
           downloads in the last month
         </li>
 
@@ -311,9 +428,8 @@ documents in the export. All documents in the export will unique and therefore n
         <a href="/browse/keyword/elasticsearch">elasticsearch</a>
   </p>
 
-  <h3>Dependencies (4)</h3>
+  <h3>Dependencies (3)</h3>
   <p class="list-of-links">
-          <a href="/package/line-reader">line-reader</a>,
           <a href="/package/JSONStream">JSONStream</a>,
           <a href="/package/request">request</a>,
                 <a href="/package/optimist">optimist</a>
@@ -321,7 +437,9 @@ documents in the export. All documents in the export will unique and therefore n
 
     <h3><a href="/browse/depended/elasticdump">Dependents</a></h3>
     <p class="list-of-links dependents">
-          <a href="/package/kibana4-backup">kibana4-backup</a>    </p>
+
+          <a href="/package/@buggyorg/component-library">@buggyorg/component-library</a>,
+                  <a href="/package/kibana4-backup">kibana4-backup</a>    </p>
 
   <script type="application/ld+json">
     {
@@ -360,7 +478,7 @@ documents in the export. All documents in the export will unique and therefore n
               <li><a href="http://status.npmjs.org/">Registry Status</a></li>
               <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
               <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
-              <li><a href="/security">Security</a></li>
+              <li><a href="/policies/security">Security</a></li>
             </ul>
           </li>
 
@@ -393,17 +511,17 @@ documents in the export. All documents in the export will unique and therefore n
     </div>
 
     <div class="container centered">
-      <a href="/" id="npm-loves-you">
+      <a class="npm-loves-you" href="/">
         npm loves you
       </a>
     </div>
 
   </footer>
   
-  <script defer src="/static/js/vendor.min.76ac749e.js"></script>
+  <script defer src="/static/js/vendor.min.a3c53b90.js"></script>
   <script defer async src="https://cdn.optimizely.com/js/3318080746.js"></script>
   <script defer async src='//img.en25.com/i/elqCfg.min.js'></script><!-- Eloqua -->
 </body>
 </html>
 
-<!-- pid=15163 bb7429b95729b0a8c86d4b21011b580fc41d3f39 https://www.npmjs.com www-11-west.internal.npmjs.com  -->
+<!-- pid=1435 bb6aad3db25a2c899045e368152bc0d55e9de860 https://www.npmjs.com www-14-west.internal.npmjs.com  -->

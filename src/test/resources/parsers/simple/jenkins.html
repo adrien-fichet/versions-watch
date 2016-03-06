@@ -24,18 +24,23 @@ An extendable open source automation server
 </div>
 </div>
 </div>
-<!-- starting partial navbar.html.haml -->
+<!-- starting partial legacy/navbar.html.haml -->
 <div class='clearfloat' id='navbar'>
 <div id='page-bar'>
 <ul class='menu'>
 <li class='leaf first'>
+<a href='/2.0' title='Jenkins 2.0'>
+2.0 Preview
+</a>
+</li>
+<li class='leaf'>
 <a href='/node' title='Blog'>
 Blog
 </a>
 </li>
 <li class='expanded'>
 <a href='/' title=''>
-Connect
+Participate
 </a>
 <ul class='menu'>
 <li class='leaf first'>
@@ -63,14 +68,81 @@ Event Calendar
 Office Hours
 </a>
 </li>
-<li class='leaf last'>
+<li class='leaf'>
+<a href='http://jenkins.meetup.com/' title='Meetups'>
+Meetups
+</a>
+</li>
+<li class='leaf'>
 <a href='https://reddit.com/r/jenkinsci' title='Latest Jenkins related news on /r/jenkinsci'>
-reddit
+/r/jenkinsci
+</a>
+</li>
+<li class='leaf last'>
+<a href='https://wiki.jenkins-ci.org/display/JENKINS/Google+Summer+Of+Code+2016' title='Google Summer of Code'>
+Google Summer of Code
 </a>
 </li>
 </ul>
 </li>
+<li class='expanded'>
+<a href='/' title='View use-case specific docs'>
+Use-cases
+</a>
+<ul class='menu'>
 <li class='leaf'>
+<a href='/solutions/android'>
+Android
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/c'>
+C/C++
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/docker'>
+Docker
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/embedded'>
+Embedded
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/github'>
+GitHub
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/java'>
+Java
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/pipeline'>
+Continuous Delivery
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/python'>
+Python
+</a>
+</li>
+<li class='leaf'>
+<a href='/solutions/ruby'>
+Ruby
+</a>
+</li>
+</ul>
+</li>
+<li class='expanded'>
+<a href='/' title='Contribute to project'>
+Resources
+</a>
+<ul class='menu'>
+<li class='leaf first'>
 <a href='https://wiki.jenkins-ci.org/display/JENKINS/Issue+Tracking' title='JIRA for Jenkins'>
 Bug Tracker
 </a>
@@ -80,10 +152,12 @@ Bug Tracker
 Wiki
 </a>
 </li>
-<li class='leaf'>
+<li class='leaf last'>
 <a href='https://ci.jenkins-ci.org/' title='Jenkins own Jenkins install'>
 CI
 </a>
+</li>
+</ul>
 </li>
 <li class='leaf'>
 <a href='/conduct' title='Jenkins project Code of Conduct'>
@@ -97,14 +171,14 @@ Press
 </li>
 <li class='leaf'>
 <a href='/donate' title='Donate to Jenkins'>
-Donation
+Donate
 </a>
 </li>
 </ul>
 </div>
 </div>
 
-<!-- ending partial navbar.html.haml -->
+<!-- ending partial legacy/navbar.html.haml -->
 </div>
 <div class='clearfloat' id='page'>
 <div class='clearfloat' id='top'>
@@ -126,7 +200,7 @@ for virtually any project
 </p>
 </div>
 </div>
-<!-- starting partial download.html.haml -->
+<!-- starting partial legacy/download.html.haml -->
 <link href='/assets/bower/jquery-ui/themes/base/all.css' media='screen' rel='stylesheet'>
 <script src='/assets/bower/jquery/jquery.min.js'></script>
 <script src='/assets/bower/jquery-ui/jquery-ui.min.js'></script>
@@ -159,7 +233,7 @@ Java Web Archive (.war)
 <a href='http://mirrors.jenkins-ci.org/war/latest/jenkins.war'>
 <strong>
 Latest:
-1.645
+1.651
 </strong>
 </a>
 </div>
@@ -234,7 +308,7 @@ past releases
 <a href='http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war'>
 <strong>
 Older but stable:
-1.625.3
+1.642.2
 </strong>
 </a>
 </div>
@@ -330,8 +404,8 @@ Older but stable:
   .ui-widget-content .tab a { color: #D24939 !important; }
 </style>
 
-<!-- ending partial download.html.haml -->
-<!-- starting partial book.html.haml -->
+<!-- ending partial legacy/download.html.haml -->
+<!-- starting partial legacy/book.html.haml -->
 <div class='block block-block even' id='block-block-15'>
 <div class='content'>
 <center>
@@ -348,8 +422,8 @@ Buy the book!
 </div>
 </div>
 
-<!-- ending partial book.html.haml -->
-<!-- starting partial resources.html.haml -->
+<!-- ending partial legacy/book.html.haml -->
+<!-- starting partial legacy/resources.html.haml -->
 <div class='block block-block odd' id='block-block-8'>
 <h3>
 Resources
@@ -380,10 +454,10 @@ Jenkins-on-Jenkins
 </div>
 </div>
 
-<!-- ending partial resources.html.haml -->
+<!-- ending partial legacy/resources.html.haml -->
 
 <!-- ending partial sidebar.html.haml -->
-<!-- starting partial blogrollup.html.haml -->
+<!-- starting partial legacy/blogrollup.html.haml -->
 <div class='block block-block even' id='block-block-15'>
 <h3>
 Recent Blog Posts
@@ -392,33 +466,33 @@ Recent Blog Posts
 <div class='item-list'>
 <ul>
 <li class='post'>
-<a href='/blog/2016/01/10/beautiful-jenkins-dashboard/'>
-A beautiful Jenkins dashboard
+<a href='/blog/2016/03/03/gsoc2016-announcement/'>
+Jenkins joins the Google Summer of Code 2016
 </a>
 </li>
 <li class='post'>
-<a href='/blog/2016/01/07/official-code-of-conduct/'>
-Jenkins Code of Conduct
+<a href='/blog/2016/03/02/toulousejam-hackergarten/'>
+Jenkins Hackergarten : mercredi 9 mars 2016 à Toulouse
 </a>
 </li>
 <li class='post'>
-<a href='/blog/2016/01/05/new-website/'>
-A new Jenkins website
+<a href='/blog/2016/02/29/jenkins2-alphas/'>
+Jenkins 2.0 alphas released
 </a>
 </li>
 <li class='post'>
-<a href='/blog/2016/01/04/jenkins-at-scale14x/'>
-Jenkins at SCaLE 14x
+<a href='/blog/2016/02/24/jenkins-security-update/'>
+Jenkins security updates
 </a>
 </li>
 <li class='post'>
-<a href='/blog/2015/12/21/december-jam-world-tour-toulouse-france/'>
-December JAM World Tour: Toulouse, France
+<a href='/blog/2016/02/19/january-2016-sf-jam/'>
+January 2016 San Francisco JAM Report
 </a>
 </li>
 <li class='post'>
-<a href='/blog/2015/12/18/join-us-at-the-jenkins-2-0-contributor-summit/'>
-Join us at the Jenkins 2.0 Contributor Summit!
+<a href='/blog/2016/02/06/scale14x-conference-report/'>
+SCaLE 14x Conference Report
 </a>
 </li>
 </ul>
@@ -426,7 +500,7 @@ Join us at the Jenkins 2.0 Contributor Summit!
 </div>
 </div>
 
-<!-- ending partial blogrollup.html.haml -->
+<!-- ending partial legacy/blogrollup.html.haml -->
 </div>
 <div class='main-content with-sidebar' id='content'>
 <div id='content-top'>
@@ -575,11 +649,6 @@ Awards
 &nbsp;
 <a href='https://github.com/jenkins-infra/jenkins.io/commits/master/content//index.html.haml' title='View /index.html.haml history on GitHub'>
 [Page history]
-</a>
-</div>
-<div id='creativecommons'>
-<a href='https://creativecommons.org/licenses/by-sa/4.0/'>
-<img src='https://licensebuttons.net/l/by-sa/4.0/88x31.png'>
 </a>
 </div>
 </body>
