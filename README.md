@@ -1,5 +1,12 @@
 [![Build Status](https://api.travis-ci.org/sniksnp/versions-watch.svg?branch=master)](https://travis-ci.org/sniksnp/versions-watch)
 
+### How to build this project & run it on Docker
+```
+mvn clean install
+docker build -t sniksnp/versions-watch .
+docker run -d -p 80:8080 sniksnp/versions-watch
+```
+
 ### How to add a new version
 ```
 If the new version can be retrieved using SimpleVersionParser :
